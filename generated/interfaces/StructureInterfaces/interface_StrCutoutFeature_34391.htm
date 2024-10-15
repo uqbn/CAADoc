@@ -1,0 +1,173 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>StructureInterfaces StrCutoutFeature (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../StructureInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('StrCutoutFeature','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('StrCutoutFeature','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('StrCutoutFeature','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('StrCutoutFeature','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>StrCutoutFeature<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_StrCutoutFeature_34391','StrCutoutFeature','0');</script>
+<b><i> Represents a Cutout Feature.</i></b><br>
+
+ CutoutType,Direction,Surface,DeirectionElement can be redefined.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Contour"><b>Contour</b></a>
+<dd>  Returns or Sets the Contour Sketch for Current Cutout.
+ <dt>
+    <a href="#CutoutType"><b>CutoutType</b></a>
+<dd>  Returns or Sets the CutoutType for Current Cutout.
+ <dt>
+    <a href="#Direction"><b>Direction</b></a>
+<dd>  Returns or Sets the Direction Vector for Current Cutout.
+ <dt>
+    <a href="#DirectionElement"><b>DirectionElement</b></a>
+<dd>  Returns or Sets the Element used for defining for Current Cutout.
+ <dt>
+    <a href="#ReferenceSurface"><b>ReferenceSurface</b></a>
+<dd>  Returns or Sets the Reference Surface used for defining for Current Cutout.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetObject"><b>GetObject</b></a>
+<dd>  Retrieves the Structure object on which the cutout is applied on.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Contour"><dt>
+
+<table><tr><td>o Property <b>Contour</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or Sets the Contour Sketch for Current Cutout.   
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim NewContour As Reference
+ Set NewContour = rootProduct.CreateReferenceFromName("Product1/New/!Sketch.2")
+ ExistingCutout.<font color="red">Contour</font> =NewContour
+ </pre>
+</dl>
+</dl>
+<a name="CutoutType"><dt>
+
+<table><tr><td>o Property <b>CutoutType</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or Sets the CutoutType for Current Cutout.   
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim Type As String
+ Type = Cutout1.<font color="red">CutoutType</font>
+ </pre>
+</dl>
+</dl>
+<a name="Direction"><dt>
+
+<table><tr><td>o Property <b>Direction</b>(<td>) As <script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or Sets the Direction Vector for Current Cutout.If we are in CATStrBeforeForming mode, it gives NULL. 
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim GetDir(3)
+ GetDir(3) = Cutoutctr.<font color="red">Direction</font>
+ Dim x, y, z As Double
+ x = GetDir(0)
+ y = GetDir(1)
+ z = GetDir(2)
+ 'For Setting Direction
+ Dim Setdir(3) 
+ Setdir(0) = 0.5
+ Setdir(1) = 0.5
+ Setdir(2) = 0.5
+ Cutout1.Direction =Setdir
+ </pre>
+</dl>
+</dl>
+<a name="DirectionElement"><dt>
+
+<table><tr><td>o Property <b>DirectionElement</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or Sets the Element used for defining for Current Cutout.If we are in CATStrBeforeForming mode, it gives NULL. 
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim DirOfCutOut As Reference
+ Set DirOfCutOut = Cutout2.<font color="red">DirectionElement</font>
+ </pre>
+</dl>
+</dl>
+<a name="ReferenceSurface"><dt>
+
+<table><tr><td>o Property <b>ReferenceSurface</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or Sets the Reference Surface used for defining for Current Cutout.
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim SurForCutout As Reference
+ Set SurForCutout = Cutout2.<font color="red">ReferenceSurface</font>
+ </pre>
+</dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetObject"><dt>
+
+<table><tr><td>o Func <b>GetObject</b>(<td>) As <script type="text/javascript"> activateLink('Product','Product')</script> </table></dt>
+<dl>
+  <dd>
+ Retrieves the Structure object on which the cutout is applied on.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oObject</tt>
+   <dd> [out]   Product
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok.
+ <dl>
+ <dt>Example</dt>:
+ <dd>
+  This example gives the product on which cutout is applied.
+ <pre>
+ Dim Prod As Product
+ Set Prod = Cutout1.GetObject
+ </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

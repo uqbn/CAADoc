@@ -1,0 +1,131 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>MechanicalModelerUI Class CATPrtUpdateCom</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../MechanicalModelerUI.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATPrtUpdateCom','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATPrtUpdateCom','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATPrtUpdateCom','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATPrtUpdateCom','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>MechanicalModelerUI Class CATPrtUpdateCom</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATPrtUpdateCom_28361','CATPrtUpdateCom','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATPrtUpdateCom</b>
+</p>
+<p>
+<b><i> Class to update the part or a selected feature.</i></b><br>
+
+ <b>Role</b>: This class is the command to update a feature or a part in the user interface.
+ The update diagnosis dialog box is automatically displayed if an update error occurs.
+ This command should be run at the end of a command that creates or modifies a feature. In this case, 
+ do not call delete on it, because it is automatically deleted when the father command is deleted. 
+ On the other hand, it should not be used in a batch code, where <a href="#" onClick="openLink('CATISpecObject','Update');return false">CATISpecObject.Update</a> is enough.
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATPrtUpdateCom(CATString*)"><b>CATPrtUpdateCom</b></a>(CATString*)
+<dd>  Runs the command.
+ <dt> o 
+    <a href="#CATPrtUpdateCom(CATISpecObject_var,int,int,int,CATCommandMode)"><b>CATPrtUpdateCom</b></a>(CATISpecObject_var,int,int,int,CATCommandMode)
+<dd>  Runs the command.
+</dl>
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATPrtUpdateCom"></a><a name="CATPrtUpdateCom(CATString*)"></a> <dt> o <b>CATPrtUpdateCom</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATPrtUpdateCom</b>(<td><script type="text/javascript"> activateLink('CATString','CATString*')</script> <td><tt>iArg</tt><td><tt>= NULL</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Runs the command.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iArg</tt>
+   <dd> The string specifying what has to be updated.
+ <br><b>Legal values</b>:
+ <ul>
+ <li>"PartUpdate" : updates the whole part and the external references. A progress bar is displayed.</li>
+ <li>"PartUpdateKeepReport" : same as "PartUpdate", except a better management of the update diagnosis report, if the feature is modified after pressing the "Edit" button.</li>
+ <li>"AutoUpdate" : updates the whole part, if the automatic update option is checked, else only the UI active feature in manual update.</li>
+ <li>"AutoUpdateKeepReport" : same as "AutoUpdate", except a better management of the update diagnosis report, if the feature is modified after pressing the "Edit" button.</li>
+ <li>"FeatureUpdate" : updates only the selected feature (</dd>
+<a href="#" onClick="openLink('CATCSO','');return false">CATCSO</a> ).</li> </ul>
+</dl>
+</dl>
+</dl>
+<a name="CATPrtUpdateCom"></a><a name="CATPrtUpdateCom(CATISpecObject_var,int,int,int,CATCommandMode)"></a> <dt> o <b>CATPrtUpdateCom</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATPrtUpdateCom</b>(<td><script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject_var')</script> <td><tt>iObjectToUpdate</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iAutoUpdate</tt><td><tt>= 0</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCreation</tt><td><tt>= 0</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iVisu</tt><td><tt>= 1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATCommandMode','CATCommandMode')</script> <td><tt>iStartMode</tt><td><tt>= CATCommandModeUndefined </tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Runs the command.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iObjectToUpdate</tt>
+   <dd> The object to update. It may be NULL_var, then the UI active object is updated.
+ </dd>
+    <dt><tt> iAutoUpdate</tt>
+   <dd> The automatic update flag.
+ <br><b>Legal values</b>: 
+ <ul>
+ <li>0 to update the iObjectToUpdate only.</li>
+ <li>1 to update the part in automatic update mode or the iObjectToUpdate in manual update mode.</li>
+ </ul>
+ </dd>
+    <dt><tt> iCreation</tt>
+   <dd> The current action on the feature. It may be returned by </dd>
+<a href="#" onClick="openLink('CATMMUIPanelStateCmd','GetMode');return false">CATMMUIPanelStateCmd.GetMode</a> . <br><b>Legal values</b>:
+ <ul>
+ <li>1 if the object iObjectToUpdate is being created.</li>
+ <li>0 if it is being edited.</li>
+ </ul>
+ 
+    <dt><tt> iVisu</tt>
+   <dd> Not used argument.
+ </dd>
+    <dt><tt> iStartMode</tt>
+   <dd> The start mode of the command. 
+ <br>It is is better to use CATCommandModeUndefined. Thus, the command may be lauched from another command without cancelling it. 
+ Moreover, the error report is displayed only in this mode.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATPrtUpdateCom.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATMechanicalModelerUI</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

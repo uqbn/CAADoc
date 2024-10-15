@@ -1,0 +1,170 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATStrFunctionalInterfaces SfmOperationFactory (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATStrFunctionalInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SfmOperationFactory','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmOperationFactory','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SfmOperationFactory','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmOperationFactory','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SfmOperationFactory<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SfmOperationFactory_55637','SfmOperationFactory','0');</script>
+<b><i> Gets the Operation Factory.</i></b><br>
+ 
+<dl>
+<dt><b>Example:<b>
+<dd>
+ This Example Retrieves SfmOperationFactory from Part.
+ <pre>
+ Set part1 = partDocument1.Part
+ Dim Factory As SfmOperationFactory
+ Set Factory =  part1.GetCustomerFactory("SfmOperationFactory")
+ </pre>
+ </dl><hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetAvailableSlotsFromCatalog"><b>GetAvailableSlotsFromCatalog</b></a>
+<dd>  Gets the list of available Slots from catalog for a given Profile(Stiffener/Member).
+ <dt>
+    <a href="#GetEndcutManager"><b>GetEndcutManager</b></a>
+<dd>  Gets the Endcut Manager.
+ <dt>
+    <a href="#GetSlotParameters"><b>GetSlotParameters</b></a>
+<dd>  Gets the Slot Parameters and Names for a slot from catalog.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetAvailableSlotsFromCatalog"><dt>
+
+<table><tr><td>o Func <b>GetAvailableSlotsFromCatalog</b>(<td><script type="text/javascript"> activateLink('SfmProfile','SfmProfile')</script> <td><tt>iSfmProfile</tt>) As <script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> </table></dt>
+<dl>
+  <dd>
+ Gets the list of available Slots from catalog for a given Profile(Stiffener/Member).
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSfmProfile</tt>
+   <dd> [in]     The given profile.
+ </dd>
+    <dt><tt> oListofSlotNames</tt>
+   <dd> [out]   The List of Slots available.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+ <dl>
+ <dt><b>Example:<b>
+ <dd>
+ This Example retrieves the list of avaliable Slots.
+ <pre>
+ Dim FactoryObj As SfmOperationFactory
+ Set FactoryObj = PartObj.GetCustomerFactory("SfmOperationFactory")
+ Dim ListOfAvailableSlots() As Variant
+ ListOfAvailableSlots = SlotFactoryObj.<font color="red">GetAvailableSlotsFromCatalog(SfmProfileObj)</font>
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="GetEndcutManager"><dt>
+
+<table><tr><td>o Func <b>GetEndcutManager</b>(<td>) As <script type="text/javascript"> activateLink('SfmEndcutManager','SfmEndcutManager')</script> </table></dt>
+<dl>
+  <dd>
+ Gets the Endcut Manager.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oSfmEndcutManager</tt>
+   <dd> [out]   The retrieved Manager.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+ <dl>
+ <dt><b>Example:<b>
+ <dd>
+ This Example retrieves the Endcut Manager from the Factory.
+ <pre>
+ Dim FactoryObj As SfmOperationFactory
+ Set FactoryObj = PartObj.GetCustomerFactory("SfmOperationFactory")
+ Dim EndCutManagerObj As SfmEndcutManager
+ Set EndCutManagerObj = FactoryObj.<font color="red">GetEndcutManager</font>
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="GetSlotParameters"><dt>
+
+<table><tr><td>o Sub <b>GetSlotParameters</b>(<td><script type="text/javascript"> activateLink('SfmProfile','SfmProfile')</script> <td><tt>iSfmProfile</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iSlotName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SfmConnectionParameters','SfmConnectionParameters')</script> <td><tt>oListSlotParameters</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oListSlotParamNames</tt>)</table></dt>
+<dl>
+  <dd>
+ Gets the Slot Parameters and Names for a slot from catalog.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSfmProfile</tt>
+   <dd> [in]     The given profile.
+ </dd>
+    <dt><tt> iSlotName</tt>
+   <dd> [in]   Name of the Slot.
+ </dd>
+    <dt><tt> oListSlotParameters</tt>
+   <dd> [out]   The Slot UDF Parameters with deafult values.
+ </dd>
+    <dt><tt> oListSlotParamNames</tt>
+   <dd> [out]   Slot Parameter Names.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+ <dl>
+ <dt><b>Example:<b>
+ <dd>
+ This Example retrieves Parameters for Slot.
+ <pre>
+ Dim FactoryObj As SfmOperationFactory
+ Set FactoryObj = PartObj.GetCustomerFactory("SfmOperationFactory")
+ Dim oListSlotParams As SfmConnectionParameters
+ Dim oListSlotPramNames() As Variant
+ SlotFactoryObj.<font color="red">GetSlotParameters SfmProfileObj, "Tee_Slot_thru_Plate", oListSlotParams, oListSlotPramNames</font>
+ 'Reading Slot Param Values
+ Dim UDFParam As Parameter
+ ParamCount = oListSlotParams.Count
+ For i = 1 To ParamCount
+ Set UDFParam = oListSlotParams.Item(i)
+ ParamName = oListSlotPramNames(i - 1)
+ ParamValue = UDFParam.ValueAsString
+ End If
+ Next
+ </pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,242 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces Interface CATISamViewManager</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISamViewManager','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamViewManager','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISamViewManager','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamViewManager','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisInterfaces Interface CATISamViewManager</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISamViewManager_40956','CATISamViewManager','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISamViewManager</b>
+</p>
+<p>
+<b><i> Manages analysis object views.</i></b><br>
+
+ <p>
+ Makes components ready to communicate with their visualization (graphical
+ representation) and their graph attachement. It creates, modifies and deletes 
+ the view (Graph and Visualization) of an analysis feature.
+ <p>
+ This interface manages the CATIModelEvents and CATIRedrawEvent.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AddObjectView(CATI3DGeoVisu*)"><b>AddObjectView</b></a>(CATI3DGeoVisu*)
+<dd>  Adds temporary object to current feature visualization.
+ <dt> o 
+    <a href="#AttachToView(int)"><b>AttachToView</b></a>(int)
+<dd>  Informs that the object is connected at least once.
+ <dt> o 
+    <a href="#CreateView(CATBaseUnknown*,int)"><b>CreateView</b></a>(CATBaseUnknown*,int)
+<dd>  Creates the view.
+ <dt> o 
+    <a href="#DeleteView(int)"><b>DeleteView</b></a>(int)
+<dd>  Disconnect the view.
+ <dt> o 
+    <a href="#DetachFromView(int)"><b>DetachFromView</b></a>(int)
+<dd>  Informs that the object is no more connected.
+ <dt> o 
+    <a href="#GetAddedObjectsView(CATLISTV(CATBaseUnknown_var)&amp;)"><b>GetAddedObjectsView</b></a>(CATLISTV(CATBaseUnknown_var)&amp;)
+<dd>  Retrieves temporary object to current feature visualization.
+ <dt> o 
+    <a href="#ModifyView(int)"><b>ModifyView</b></a>(int)
+<dd>  Updates the view.
+ <dt> o 
+    <a href="#RemoveObjectView(CATI3DGeoVisu*)"><b>RemoveObjectView</b></a>(CATI3DGeoVisu*)
+<dd>  Removes temporary object to current feature visualization.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AddObjectView"></a><a name="AddObjectView(CATI3DGeoVisu*)"></a> <dt> o <b>AddObjectView</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AddObjectView</b>(<td><script type="text/javascript"> activateLink('CATI3DGeoVisu','CATI3DGeoVisu*')</script> <td><tt>iObject</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Adds temporary object to current feature visualization.
+ This method can be used for example to attach a command in the represenation of the feature.
+ To to this connect a  
+<a href="#" onClick="openLink('CATI3DGeoVisu','');return false">CATI3DGeoVisu</a> implementation of your command  in the 
+<a href="#" onClick="openLink('CATStateCommand','Activate');return false">CATStateCommand.Activate</a>  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iObject</tt>
+   <dd> The object to connect.</dd>
+</dl>
+</dl>
+</dl>
+<a name="AttachToView"></a><a name="AttachToView(int)"></a> <dt> o <b>AttachToView</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>AttachToView</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iTypeView</tt><td><tt>= 0</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Informs that the object is connected at least once.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iTypeView:</tt>
+   <dd> The connection kind. <br><b>Legal values</b>: 
+ <ul>
+ <li><font color="red">0</font color="red"> Manage all views. </li>
+ <li><font color="red">1</font color="red"> Manage 2D and 3D the visualization.</li>
+ <li><font color="red">2</font color="red"> Manage the Graph.</li></ul></dd>
+</dl>
+</dl>
+</dl>
+<a name="CreateView"></a><a name="CreateView(CATBaseUnknown*,int)"></a> <dt> o <b>CreateView</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>CreateView</b>(<td><script type="text/javascript"> activateLink('CATBaseUnknown','CATBaseUnknown*')</script> <td><tt>iFather</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iTypeView</tt><td><tt>= 0</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates the view.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt>  iFather:</tt>
+   <dd> The connecting father. </dd>
+    <dt><tt> iTypeView:</tt>
+   <dd> The connection kind. <br><b>Legal values</b>: 
+ <ul>
+ <li><font color="red">0</font color="red"> Manage all views. </li>
+ <li><font color="red">1</font color="red"> Manage 2D and 3D the visualization.</li>
+ <li><font color="red">2</font color="red"> Manage the Graph.</li></ul></dd>
+</dl>
+</dl>
+</dl>
+<a name="DeleteView"></a><a name="DeleteView(int)"></a> <dt> o <b>DeleteView</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>DeleteView</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iTypeView</tt><td><tt>= 0</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Disconnect the view.
+ Should not be called. This is managed by us.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iTypeView:</tt>
+   <dd> The connection kind. <br><b>Legal values</b>: 
+ <ul>
+ <li><font color="red">0</font color="red"> Manage all views. </li>
+ <li><font color="red">1</font color="red"> Manage 2D and 3D the visualization.</li>
+ <li><font color="red">2</font color="red"> Manage the Graph.</li></ul></dd>
+</dl>
+</dl>
+</dl>
+<a name="DetachFromView"></a><a name="DetachFromView(int)"></a> <dt> o <b>DetachFromView</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>DetachFromView</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iTypeView</tt><td><tt>= 0</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Informs that the object is no more connected.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iTypeView:</tt>
+   <dd> The connection kind. <br><b>Legal values</b>: 
+ <ul>
+ <li><font color="red">0</font color="red"> Manage all views. </li>
+ <li><font color="red">1</font color="red"> Manage 2D and 3D the visualization.</li>
+ <li><font color="red">2</font color="red"> Manage the Graph.</li></ul></dd>
+</dl>
+</dl>
+</dl>
+<a name="GetAddedObjectsView"></a><a name="GetAddedObjectsView(CATLISTV(CATBaseUnknown_var)&amp;)"></a> <dt> o <b>GetAddedObjectsView</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetAddedObjectsView</b>(<td><script type="text/javascript"> activateLink('CATLISTV(CATBaseUnknown_var)','CATLISTV(CATBaseUnknown_var)&amp;')</script> <td><tt>oObjectList</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves temporary object to current feature visualization.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oObjectList</tt>
+   <dd> The liust of connected objects.</dd>
+</dl>
+</dl>
+</dl>
+<a name="ModifyView"></a><a name="ModifyView(int)"></a> <dt> o <b>ModifyView</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ModifyView</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iTypeView</tt><td><tt>= 0</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Updates the view.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iTypeView:</tt>
+   <dd> The connection kind. <br><b>Legal values</b>: 
+ <ul>
+ <li><font color="red">0</font color="red"> Manage all views. </li>
+ <li><font color="red">1</font color="red"> Manage 2D and 3D the visualization.</li>
+ <li><font color="red">2</font color="red"> Manage the Graph.</li></ul></dd>
+</dl>
+</dl>
+</dl>
+<a name="RemoveObjectView"></a><a name="RemoveObjectView(CATI3DGeoVisu*)"></a> <dt> o <b>RemoveObjectView</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RemoveObjectView</b>(<td><script type="text/javascript"> activateLink('CATI3DGeoVisu','CATI3DGeoVisu*')</script> <td><tt>iObject</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Removes temporary object to current feature visualization.
+ This method can be used for example to attach a command in the represenation of the feature.
+ To to this connect a  
+<a href="#" onClick="openLink('CATI3DGeoVisu','');return false">CATI3DGeoVisu</a> implementation of your command  in the 
+<a href="#" onClick="openLink('CATCommand','Cancel');return false">CATCommand.Cancel</a> or 
+<a href="#" onClick="openLink('CATStateCommand','Desactivate');return false">CATStateCommand.Desactivate</a> 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iObject</tt>
+   <dd> The object to disconnect.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISamViewManager.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisInterface</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

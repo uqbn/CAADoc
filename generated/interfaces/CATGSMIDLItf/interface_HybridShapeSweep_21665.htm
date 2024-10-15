@@ -1,0 +1,162 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATGSMIDLItf HybridShapeSweep (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATGSMIDLItf.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('HybridShapeSweep','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapeSweep','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('HybridShapeSweep','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapeSweep','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>HybridShapeSweep<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_HybridShapeSweep_21665','HybridShapeSweep','0');</script>
+<b><i> Represents the hybrid shape Sweep feature object.</i></b><br>
+
+ <b>Role</b>: Declare  hybrid shape Sweep root feature object. 
+ All interfaces for different type of sweep derivates HybridShapeSweep. 
+ <p> Use the CATIAHybridShapeFactory to create a HybridShapeSweep objects.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeFactory','');return false">HybridShapeFactory</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#C0VerticesMode"><b>C0VerticesMode</b></a>
+<dd>  Returns  or sets the management mode of C0 vertices as twisted areas.
+ <dt>
+    <a href="#FillTwistedAreas"><b>FillTwistedAreas</b></a>
+<dd>  Returns or sets the fill twisted areas mode.
+ <dt>
+    <a href="#SetbackValue"><b>SetbackValue</b></a>
+<dd>  Returns or sets the setback value.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddCutPoints"><b>AddCutPoints</b></a>
+<dd>  Sets two cut points on the master guide.
+ <dt>
+    <a href="#AddFillPoints"><b>AddFillPoints</b></a>
+<dd>  Sets two fill points on the master guide.
+ <dt>
+    <a href="#GetCutPoint"><b>GetCutPoint</b></a>
+<dd>  <dt>
+    <a href="#GetFillPoint"><b>GetFillPoint</b></a>
+<dd>  <dt>
+    <a href="#RemoveAllCutPoints"><b>RemoveAllCutPoints</b></a>
+<dd>  Removes all cut points.
+ <dt>
+    <a href="#RemoveAllFillPoints"><b>RemoveAllFillPoints</b></a>
+<dd>  Removes all fill points.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="C0VerticesMode"><dt>
+
+<table><tr><td>o Property <b>C0VerticesMode</b>(<td>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+ Returns  or sets the management mode of C0 vertices as twisted areas.
+ <br> TRUE or FALSE.
+</dl>
+<a name="FillTwistedAreas"><dt>
+
+<table><tr><td>o Property <b>FillTwistedAreas</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the fill twisted areas mode.
+</dl>
+<a name="SetbackValue"><dt>
+
+<table><tr><td>o Property <b>SetbackValue</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the setback value.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddCutPoints"><dt>
+
+<table><tr><td>o Sub <b>AddCutPoints</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iElement1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iElement2</tt>)</table></dt>
+<dl>
+  <dd>
+ Sets two cut points on the master guide. These points define a zone to be kept
+ on the final swept surface.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iElement1</tt>
+   <dd>      First / start cut point.
+   </dd>
+    <dt><tt> iElement2</tt>
+   <dd>      Second / end cut point.</dd>
+</dl>
+</dl>
+</dl>
+<a name="AddFillPoints"><dt>
+
+<table><tr><td>o Sub <b>AddFillPoints</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iElement1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iElement2</tt>)</table></dt>
+<dl>
+  <dd>
+ Sets two fill points on the master guide. These points define a zone to be filled
+ on the final swept surface.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iElement1</tt>
+   <dd>      First / start fill point.
+   </dd>
+    <dt><tt> iElement2</tt>
+   <dd>      Second / end fill point.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetCutPoint"><dt>
+
+<table><tr><td>o Func <b>GetCutPoint</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iRank</tt>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="GetFillPoint"><dt>
+
+<table><tr><td>o Func <b>GetFillPoint</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iRank</tt>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="RemoveAllCutPoints"><dt>
+
+<table><tr><td>o Sub <b>RemoveAllCutPoints</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Removes all cut points.
+</dl>
+<a name="RemoveAllFillPoints"><dt>
+
+<table><tr><td>o Sub <b>RemoveAllFillPoints</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Removes all fill points.
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

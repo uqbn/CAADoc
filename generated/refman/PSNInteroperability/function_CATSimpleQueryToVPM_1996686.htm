@@ -1,0 +1,75 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PSNInteroperability Global Function CATSimpleQueryToVPM</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../PSNInteroperability.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>PSNInteroperability Global Function CATSimpleQueryToVPM</h1>
+
+<br><dt><table><tr><td>  <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>CATSimpleQueryToVPM</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script> <td><tt>iEnv</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script> <td><tt>iTable</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script> <td><tt>istring</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListOfCATUnicodeString','CATListOfCATUnicodeString&amp;')</script> <td><tt>oListOfName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListOfCATUnicodeString','CATListOfCATUnicodeString&amp;')</script> <td><tt>oListOfCoid</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListOfCATUnicodeString','CATListOfCATUnicodeString&amp;')</script> <td><tt>oListOfCompid</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListOfCATUnicodeString','CATListOfCATUnicodeString&amp;')</script> <td><tt>oListOfCaenv</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListOfCATUnicodeString','CATListOfCATUnicodeString&amp;')</script> <td><tt>oListOfCatab</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Simple query on the specified table in the specified environment
+
+ <br><b>Role:</b>This method does a simple query to the ENOVIAVpm V4 for a specified search string
+ in the specified table and environment
+
+<p>If needed, your Imakefile.mk should include the module: <b>CATPinServices</b> </p>
+<p>
+  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEnv</tt>
+   <dd>    The environment to search in
+<br> For instance <tt>"VPMENV  "</tt>
+  </dd>
+    <dt><tt> iTable</tt>
+   <dd>    the name of the table to search in
+ <br> For instance <tt>"DOCUMENT      "</tt> 
+  </dd>
+    <dt><tt> istring</tt>
+   <dd>    the string criteria for search
+  </dd>
+    <dt><tt> oListOfName</tt>
+   <dd>    Output parameter consisting of list of PDMName matching the string criteria
+  </dd>
+    <dt><tt> oListOfCoid</tt>
+   <dd>    Output parameter consisting of list of coid corresponding to the names searched
+  </dd>
+    <dt><tt> oListOfCompid</tt>
+   <dd>    Output parameter consisting of list of compid corresponding to the names searched
+  </dd>
+    <dt><tt> oListOfCaenv</tt>
+   <dd>    Output parameter consisting of list of environment name corresponding to the names searched
+  </dd>
+    <dt><tt> oListOfCatab</tt>
+   <dd>    Output parameter consisting of list of table name corresponding to the names searched
+
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     <ul>
+    <li><tt>S_OK</tt>: Search successful</li> 
+    <li><tt>E_FAIL</tt>: Error in the search criteria specified </li> 
+   </ul>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATBatchServices.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

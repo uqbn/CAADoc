@@ -1,0 +1,224 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATxPDMInterfaces Class CATxPDMSessionUIServices</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATxPDMInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATxPDMSessionUIServices','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATxPDMSessionUIServices','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATxPDMSessionUIServices','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATxPDMSessionUIServices','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATxPDMInterfaces Class CATxPDMSessionUIServices</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATxPDMSessionUIServices_42623','CATxPDMSessionUIServices','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATxPDMSessionUIServices</b>
+</p>
+<p>
+<b><i> Class for PDM to manage interactive feedbacks of PDM in CATIA Session.</i></b><br>
+
+ <p>All the methods pre-requisites the PX1 license </p>
+
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIxPDMItem','');return false">CATIxPDMItem</a>, CATIxPDMSessionServices
+</dl>
+</p>
+<hr>
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#ConnectToPX1()"><b>ConnectToPX1</b></a>()
+<dd>  Activate all PX1 interactive feedbacks.
+ <dt> o 
+    <a href="#ConnectToPX1(char*)"><b>ConnectToPX1</b></a>(char*)
+<dd>  Activate all PX1 interactive feedbacks.
+ <dt> o 
+    <a href="#DisconnectFromPX1()"><b>DisconnectFromPX1</b></a>()
+<dd>  Disconnect from PX1.
+ <dt> o 
+    <a href="#DisconnectFromPX1(char*)"><b>DisconnectFromPX1</b></a>(char*)
+<dd>  Disconnect from PX1.
+ <dt> o 
+    <a href="#GetCurrentDirectory(CATUnicodeString&amp;)"><b>GetCurrentDirectory</b></a>(CATUnicodeString&amp;)
+<dd>  Retrieve current directory.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="ConnectToPX1"></a><a name="ConnectToPX1()"></a> <dt> o <b>ConnectToPX1</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ConnectToPX1</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Activate all PX1 interactive feedbacks.
+ <br><b>Role:</b>This method activates PX1 interactive feedbacks.
+ After connection, a specific icon will be automatically added on all item with Read-Only
+ status on disk. When you check-out or check-in a file, you have to update
+ its read-write status on disk and to call CATxPDMSessionServices#RefreshItemInformation
+ to update interactive display.
+ You have to call this method when you connect to your PDM.
+ 
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <ul>
+   <li><tt>S_OK</tt>: Connection successfull. </li> 
+   <li><tt>S_FALSE</tt>: Already connected. </li> 
+   <li><tt>E_FAIL</tt>: The method has failed. The possible <b>returned errors </b> (listed by their identifier) are:</li>
+   <ul>
+      <li><tt>InputERR_1001:</tt></li>
+       The PX1 licence is not available.
+  </ul>
+  </ul>
+</dl>
+</dl>
+<a name="ConnectToPX1"></a><a name="ConnectToPX1(char*)"></a> <dt> o <b>ConnectToPX1</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ConnectToPX1</b>(<td> const <script type="text/javascript"> activateLink('char','char*')</script> <td><tt>iPX1SessionIdentifier</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Activate all PX1 interactive feedbacks.
+ <br><b>Role:</b>This method activates PX1 interactive feedbacks.
+ After connection, a specific icon will be automatically added on all item with Read-Only
+ status on disk. When you check-out or check-in a file, you have to update
+ its read-write status on disk and to call CATxPDMSessionServices#RefreshItemInformation
+ to update interactive display.
+ You have to call this method when you connect to your PDM.
+ 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPX1SessionIdentifier</tt>
+   <dd>   This parameter is necessary to support several connection from different PDMs at same time.
+   PX1 will be effectively disconnected only when all PDMs are disconnected.
+   Same identifier should be used for connect and disconnect.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <ul>
+   <li><tt>S_OK</tt>: Connection successfull. </li> 
+   <li><tt>S_FALSE</tt>: Already connected. </li> 
+   <li><tt>E_FAIL</tt>: The method has failed. The possible <b>returned errors </b> (listed by their identifier) are:</li>
+   <ul>
+      <li><tt>InputERR_1001:</tt></li>
+       The PX1 licence is not available.
+  </ul>
+  </ul>
+</dl>
+</dl>
+<a name="DisconnectFromPX1"></a><a name="DisconnectFromPX1()"></a> <dt> o <b>DisconnectFromPX1</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>DisconnectFromPX1</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Disconnect from PX1.
+ <br><b>Role:</b>This method disconnect from PX1 interactive feedbacks.
+ All specific icons are removed. You have to call this method when you disconnect
+ from your PDM.
+ 
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <ul>
+   <li><tt>S_OK</tt>: Disconnect successfull. </li> 
+   <li><tt>E_FAIL</tt>: The method has failed. The possible <b>returned errors </b> (listed by their identifier) are:</li>
+   <ul>
+      <li><tt>InputERR_1001:</tt></li>
+       The PX1 licence is not available.
+  </ul>
+  </ul>
+</dl>
+</dl>
+<a name="DisconnectFromPX1"></a><a name="DisconnectFromPX1(char*)"></a> <dt> o <b>DisconnectFromPX1</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>DisconnectFromPX1</b>(<td> const <script type="text/javascript"> activateLink('char','char*')</script> <td><tt>iPX1SessionIdentifier</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Disconnect from PX1.
+ <br><b>Role:</b>This method disconnect from PX1 interactive feedbacks.
+ All specific icons are removed. You have to call this method when you disconnect
+ from your PDM.
+ 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPX1SessionIdentifier</tt>
+   <dd>   This parameter is necessary to support several connection from different PDMs at same time.
+   PX1 will be effectively disconnected only when all PDMs are disconnected.
+   Same identifier should be used for connect and disconnect.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <ul>
+   <li><tt>S_OK</tt>: Disconnect successfull. </li> 
+   <li><tt>S_FALSE</tt>: Disconnect successfull but still connected by another PDM. </li> 
+   <li><tt>E_FAIL</tt>: The method has failed. The possible <b>returned errors </b> (listed by their identifier) are:</li>
+   <ul>
+      <li><tt>InputERR_1001:</tt></li>
+       The PX1 licence is not available.
+  </ul>
+  </ul>
+</dl>
+</dl>
+<a name="GetCurrentDirectory"></a><a name="GetCurrentDirectory(CATUnicodeString&amp;)"></a> <dt> o <b>GetCurrentDirectory</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetCurrentDirectory</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oCurrentDirectory</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieve current directory.
+ <br><b>Role:</b>This method retrieve current directory : last directory used for file operations like
+ Open or Save. This method should be used if you want to initialize your panel with same directory
+ than standard interactive Open and Save commands. Notice that this directory is only an interactive
+ default, it does not mean that all file will be opened or saved in this directory.
+ This directory could be null if no file selection has been performed in session.
+ 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oCurrentDirectory</tt>
+   <dd>   The current directory used in interactive file selection box.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <ul>
+   <li><tt>S_OK</tt>: Directory successfully returned. </li> 
+   <li><tt>E_FAIL</tt>: Impossible to retrieve the directory:</li>
+  </ul>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATxPDMSessionUIServices.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATxPDMInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

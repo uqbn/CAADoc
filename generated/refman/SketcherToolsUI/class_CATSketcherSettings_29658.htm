@@ -1,0 +1,1483 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>SketcherToolsUI Class CATSketcherSettings</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../SketcherToolsUI.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATSketcherSettings','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSketcherSettings','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATSketcherSettings','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSketcherSettings','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SketcherToolsUI Class CATSketcherSettings</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATSketcherSettings_29658','CATSketcherSettings','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATSketcherSettings</b>
+</p>
+<p>
+<b><i> Classe abstraite definissant le comportement (en lecture ou en ecriture) des settings (accessibles
+ par le menu Outils/Options) d'une application de type Sketcher.</i></b><br>
+
+ Il ne peut exister qu'une seule instance de settings pour le sketcher a un instant donne. Chaque
+ application doit mettre a jour cette information lorsqu'elle prend la main. Si elle ne peut pas le faire
+ alors elle doit positionner les settings courants a <tt>NULL</tt> afin d'activer le protocole gere par
+ l'interface <tt>CATISketcherSettings</tt>.
+ Cette classe exporte 5 evenements dont les types sont accessible par
+ les methodes : GridModification()
+                CpltModification()
+                SnapModification()
+                Visu3DUIModification()
+                GeomUIModification()
+                MultiModification()
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> CATISketcherSettings
+</dl>
+</p>
+<hr>
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATDeclareCBEvent(GridModification)"><b>CATDeclareCBEvent</b></a>(GridModification)
+<dd>  Definit l'evenement qui permet de suivre les modifications de settings associes a la grille.
+ <dt> o 
+    <a href="#CATDeclareCBEvent(SnapModification)"><b>CATDeclareCBEvent</b></a>(SnapModification)
+<dd>  Definit l'evenement qui permet de suivre les modifications de settings associes au snap sur la grille.
+ <dt> o 
+    <a href="#CATDeclareCBEvent(CpltModification)"><b>CATDeclareCBEvent</b></a>(CpltModification)
+<dd>  Definit l'evenement qui permet de suivre les modifications de settings associes au Smartpick.
+ <dt> o 
+    <a href="#CATDeclareCBEvent(MultiModification)"><b>CATDeclareCBEvent</b></a>(MultiModification)
+<dd>  Definit l'evenement qui permet de suivre les modifications de settings associes a plusieurs des categories 
+ precedentes.
+ <dt> o 
+    <a href="#CATDeclareCBEvent(GeomUIModification)"><b>CATDeclareCBEvent</b></a>(GeomUIModification)
+<dd>  Definit l'evenement qui permet de suivre les modifications de settings associes a la gestion des gemetries.
+ <dt> o 
+    <a href="#CATDeclareCBEvent(Visu3DUIModification)"><b>CATDeclareCBEvent</b></a>(Visu3DUIModification)
+<dd>  Definit l'evenement qui permet de suivre les modifications de settings associes au comportement visuel.
+ <dt> o 
+    <a href="#GetAllowDistortions(void)"><b>GetAllowDistortions</b></a>(void)
+<dd>  Renvoie le mode de disproportion de la grille.
+ <dt> o 
+    <a href="#GetColorConstructElts(unsigned int*,unsigned int*,unsigned int*)"><b>GetColorConstructElts</b></a>(unsigned int*,unsigned int*,unsigned int*)
+<dd>  Renvoie la couleur des elements de construction
+ 
+ <dt> o 
+    <a href="#GetColorDiagElts(CAT2DCstDiag,unsigned int*,unsigned int*,unsigned int*)"><b>GetColorDiagElts</b></a>(CAT2DCstDiag,unsigned int*,unsigned int*,unsigned int*)
+<dd>  Renvoie les codes de couleurs par type de diagnostique
+ 
+ <dt> o 
+    <a href="#GetColorIsolatedElts(unsigned int*,unsigned int*,unsigned int*)"><b>GetColorIsolatedElts</b></a>(unsigned int*,unsigned int*,unsigned int*)
+<dd>  Renvoie la couleur des elements isolés
+ 
+ <dt> o 
+    <a href="#GetColorProtectedElts(unsigned int*,unsigned int*,unsigned int*)"><b>GetColorProtectedElts</b></a>(unsigned int*,unsigned int*,unsigned int*)
+<dd>  Renvoie la couleur des elements protégés
+ 
+ <dt> o 
+    <a href="#GetColorSmartPick(unsigned int*,unsigned int*,unsigned int*)"><b>GetColorSmartPick</b></a>(unsigned int*,unsigned int*,unsigned int*)
+<dd>  Renvoie la couleur des elements de l'assistant
+ 
+ <dt> o 
+    <a href="#GetCreateCenter(void)"><b>GetCreateCenter</b></a>(void)
+<dd>  Renvoie le mode de creation ou non des centres des cercles et des ellipses (boutton a cocher).
+ <dt> o 
+    <a href="#GetCreateConstraint(void)"><b>GetCreateConstraint</b></a>(void)
+<dd>  Renvoie le mode de creation ou non des contraintes detectees par l'assistant (boutton a cocher).
+ <dt> o 
+    <a href="#GetDiagElts(void)"><b>GetDiagElts</b></a>(void)
+<dd>  Renvoie le mode de visualisation des diagnostique des éléments contraint.
+ <dt> o 
+    <a href="#GetDirHorVert(void)"><b>GetDirHorVert</b></a>(void)
+<dd>  Renvoie le mode de detection de l'assistant pour la creation d'elements
+ horizontaux ou a la verticaux (boutton a cocher).
+ <dt> o 
+    <a href="#GetDirParallel(void)"><b>GetDirParallel</b></a>(void)
+<dd>  Renvoie le mode de detection de l'assistant pour la creation d'elements 
+ parallele a un autre (boutton a cocher).
+ <dt> o 
+    <a href="#GetDirPerpend(void)"><b>GetDirPerpend</b></a>(void)
+<dd>  Renvoie le mode de detection de l'assistant pour la creation d'elements 
+ perpendiculaire a un autre (boutton a cocher).
+ <dt> o 
+    <a href="#GetDirTangent(void)"><b>GetDirTangent</b></a>(void)
+<dd>  Renvoie le mode de detection de l'assistant pour la creation d'elements 
+ tangent a un autre (boutton a cocher).
+ <dt> o 
+    <a href="#GetDragElts(void)"><b>GetDragElts</b></a>(void)
+<dd>  Renvoie le mode de 'dragging' des elements dans le sketch (boutton a cocher).
+ <dt> o 
+    <a href="#GetDragMode(void)"><b>GetDragMode</b></a>(void)
+<dd>  Renvoie le mode de 'dragging' des elements dans le sketch (radio-button).
+ <dt> o 
+    <a href="#GetDragWithEndPts(void)"><b>GetDragWithEndPts</b></a>(void)
+<dd>  Renvoie le mode de 'dragging' des elements dans le sketch (boutton a cocher).
+ <dt> o 
+    <a href="#GetGridGroundMode(void)"><b>GetGridGroundMode</b></a>(void)
+<dd>  Renvoie le mode de visualisation de la grille ombre ou non (boutton a cocher).
+ <dt> o 
+    <a href="#GetGridPrimSpac(void)"><b>GetGridPrimSpac</b></a>(void)
+<dd>  Renvoie le pas principal de la grille em MKS (m) (zone de saisie).
+ <dt> o 
+    <a href="#GetGridSecStep(void)"><b>GetGridSecStep</b></a>(void)
+<dd>  Renvoie le nombre de subdivisions du pas principal (zone de saisie).
+ <dt> o 
+    <a href="#GetGridSnapMode(void)"><b>GetGridSnapMode</b></a>(void)
+<dd>  Renvoie le mode de creation des points sur la grille ou non (boutton a cocher).
+ <dt> o 
+    <a href="#GetGridVPrimSpac(void)"><b>GetGridVPrimSpac</b></a>(void)
+<dd>  Renvoie le pas principal de la grille suivant V em MKS (m) (zone de saisie).
+ <dt> o 
+    <a href="#GetGridVSecStep(void)"><b>GetGridVSecStep</b></a>(void)
+<dd>  Renvoie le nombre de subdivisions suivant V du pas principal (zone de saisie).
+ <dt> o 
+    <a href="#GetGridVisuMode(void)"><b>GetGridVisuMode</b></a>(void)
+<dd>  Renvoie le mode d'affichage de la grille (boutton a cocher).
+ <dt> o 
+    <a href="#GetPosHorVertTo(void)"><b>GetPosHorVertTo</b></a>(void)
+<dd>  Renvoie le mode de detection de l'assistant pour la creation des elements
+ a l'horizontal ou a la vertical des autres elements (boutton a cocher).
+ <dt> o 
+    <a href="#GetPosSupports(void)"><b>GetPosSupports</b></a>(void)
+<dd>  Renvoie le mode de detection de passage sur les supports d'elements.
+ <dt> o 
+    <a href="#GetShowPosition()"><b>GetShowPosition</b></a>()
+<dd>  Renvoie l'etat d'affichage des parametres de position (H et V) situes dans la tool bar
+ 
+ <dt> o 
+    <a href="#GetShowPositionOnCursor()"><b>GetShowPositionOnCursor</b></a>()
+<dd>  Renvoie l'etat d'affichage des parametres de position (H et V) situes sous le curseur
+ 
+ <dt> o 
+    <a href="#GetSketcherSettings(void)"><b>GetSketcherSettings</b></a>(void)
+<dd>  Renvoie les settings de l'application de type Sketcher courante.
+ <dt> o 
+    <a href="#GetValidateConstraint(void)"><b>GetValidateConstraint</b></a>(void)
+<dd>  Renvoie le mode de creation ou non des contraintes si au moins un parametre est saisie dans
+ la toolbar "Sketcher Information" (boutton a cocher).
+ <dt> o 
+    <a href="#GetValidateCstType(CAT2DCstType)"><b>GetValidateCstType</b></a>(CAT2DCstType)
+<dd>  Renvoie le mode de creation ou non de la contrainte passee par parametre
+ 
+ <dt> o 
+    <a href="#GetViewNormalTo(void)"><b>GetViewNormalTo</b></a>(void)
+<dd>  Renvoie le mode d'entree dans le sketch (boutton a cocher).
+ <dt> o 
+    <a href="#SaveRepository(void)"><b>SaveRepository</b></a>(void)
+<dd>  Sauvegarde du repository des settings du sketcher.
+ <dt> o 
+    <a href="#SetAllowDistortions(int,int)"><b>SetAllowDistortions</b></a>(int,int)
+<dd>  Definit le mode de disproportions de la grille.
+ <dt> o 
+    <a href="#SetColorConstructElts(unsigned int,unsigned int,unsigned int,int)"><b>SetColorConstructElts</b></a>(unsigned int,unsigned int,unsigned int,int)
+<dd>  Definit la couleur des elements de construction
+ 
+ <dt> o 
+    <a href="#SetColorDiagElts(CAT2DCstDiag,unsigned int,unsigned int,unsigned int,int)"><b>SetColorDiagElts</b></a>(CAT2DCstDiag,unsigned int,unsigned int,unsigned int,int)
+<dd>  Definit les codes de couleurs par type de diagnostique
+ 
+ <dt> o 
+    <a href="#SetColorIsolatedElts(unsigned int,unsigned int,unsigned int,int)"><b>SetColorIsolatedElts</b></a>(unsigned int,unsigned int,unsigned int,int)
+<dd>  Definit la couleur des elements isolés
+ 
+ <dt> o 
+    <a href="#SetColorProtectedElts(unsigned int,unsigned int,unsigned int,int)"><b>SetColorProtectedElts</b></a>(unsigned int,unsigned int,unsigned int,int)
+<dd>  Definit la couleur des elements protégés
+ 
+ <dt> o 
+    <a href="#SetColorSmartPick(unsigned int,unsigned int,unsigned int,int)"><b>SetColorSmartPick</b></a>(unsigned int,unsigned int,unsigned int,int)
+<dd>  Definit la couleur des elements de l'assistant
+ 
+ <dt> o 
+    <a href="#SetCreateCenter(int,int)"><b>SetCreateCenter</b></a>(int,int)
+<dd>  Definit le mode de creation ou non des centres des cercles et des ellipses.
+ <dt> o 
+    <a href="#SetCreateConstraint(int,int)"><b>SetCreateConstraint</b></a>(int,int)
+<dd>  Definit le mode de creation ou non des contraintes detectees par l'assistant.
+ <dt> o 
+    <a href="#SetDiagElts(int,int)"><b>SetDiagElts</b></a>(int,int)
+<dd>  Definit le mode de visualisation des diagnostique des éléments contraint.
+ <dt> o 
+    <a href="#SetDirHorVert(int,int)"><b>SetDirHorVert</b></a>(int,int)
+<dd>  Definit le mode de detection de l'assistant pour la creation d'elements
+ horizontaux ou a la verticaux.
+ <dt> o 
+    <a href="#SetDirParallel(int,int)"><b>SetDirParallel</b></a>(int,int)
+<dd>  Definit le mode de detection de l'assistant pour la creation d'elements 
+ parallele aun autre (boutton a cocher).
+ <dt> o 
+    <a href="#SetDirPerpend(int,int)"><b>SetDirPerpend</b></a>(int,int)
+<dd>  Definit le mode de detection de l'assistant pour la creation d'elements 
+ perpendiculaire aun autre (boutton a cocher).
+ <dt> o 
+    <a href="#SetDirTangent(int,int)"><b>SetDirTangent</b></a>(int,int)
+<dd>  Definit le mode de detection de l'assistant pour la creation d'elements 
+ tangent aun autre (boutton a cocher).
+ <dt> o 
+    <a href="#SetDragElts(int,int)"><b>SetDragElts</b></a>(int,int)
+<dd>   Definit le mode de deplacement des elements dans le sketch
+ 
+ <dt> o 
+    <a href="#SetDragMode(int,int)"><b>SetDragMode</b></a>(int,int)
+<dd>  Definit le mode de deplacement des elements dans le sketch
+ 
+ <dt> o 
+    <a href="#SetDragWithEndPts(int,int)"><b>SetDragWithEndPts</b></a>(int,int)
+<dd>  Definit le mode de deplacement des elements dans le sketch
+ 
+ <dt> o 
+    <a href="#SetGridGroundMode(int,int)"><b>SetGridGroundMode</b></a>(int,int)
+<dd>  Definit l'etat de visualisation de la grille en mode ombre.
+ <dt> o 
+    <a href="#SetGridPrimSpac(double,int)"><b>SetGridPrimSpac</b></a>(double,int)
+<dd>  Definit le pas principal de la grille em MKS (m).
+ <dt> o 
+    <a href="#SetGridSecStep(int,int)"><b>SetGridSecStep</b></a>(int,int)
+<dd>  Definit le nombre de subdivisions du pas principal.
+ <dt> o 
+    <a href="#SetGridSnapMode(int,int)"><b>SetGridSnapMode</b></a>(int,int)
+<dd>  Definit l'etat de creation des points sur la grille.
+ <dt> o 
+    <a href="#SetGridVPrimSpac(double,int)"><b>SetGridVPrimSpac</b></a>(double,int)
+<dd>  Definit le pas principal suivant V de la grille em MKS (m).
+ <dt> o 
+    <a href="#SetGridVSecStep(int,int)"><b>SetGridVSecStep</b></a>(int,int)
+<dd>  Definit le nombre de subdivisions suivant V du pas principal.
+ <dt> o 
+    <a href="#SetGridVisuMode(int,int)"><b>SetGridVisuMode</b></a>(int,int)
+<dd>  Definit l'etat d'affichage de la grille.
+ <dt> o 
+    <a href="#SetPosHorVertTo(int,int)"><b>SetPosHorVertTo</b></a>(int,int)
+<dd>  Definit le mode de detection de l'assistant pour la creation des elements
+ a l'horizontal ou a la vertical des autres elements.
+ <dt> o 
+    <a href="#SetPosSupports(int,int)"><b>SetPosSupports</b></a>(int,int)
+<dd>  Definit le mode de detection de passage sur les supports d'elements.
+ <dt> o 
+    <a href="#SetShowPosition(int,int)"><b>SetShowPosition</b></a>(int,int)
+<dd>  Definit l'etat d'affichage des parametres de position (H et V) situes dans la tool bar
+ 
+ <dt> o 
+    <a href="#SetShowPositionOnCursor(int,int)"><b>SetShowPositionOnCursor</b></a>(int,int)
+<dd>  Definit l'etat d'affichage des parametres de position (H et V) situes sur le curseur
+ 
+ <dt> o 
+    <a href="#SetSketcherSettings(CATSketcherSettings*)"><b>SetSketcherSettings</b></a>(CATSketcherSettings*)
+<dd>  Force l'initialisation des settings d'une application de type Sketcher.
+ <dt> o 
+    <a href="#SetValidateConstraint(int,int)"><b>SetValidateConstraint</b></a>(int,int)
+<dd>  Definit le mode de creation ou non des contraintes si au moins un parametre est saisie dans
+ la toolbar "Sketcher Information".
+ <dt> o 
+    <a href="#SetViewNormalTo(int,int)"><b>SetViewNormalTo</b></a>(int,int)
+<dd>  Definit le mode d'entree dans le sketch.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="CATDeclareCBEvent"></a><a name="CATDeclareCBEvent(GridModification)"></a> <dt> o <b>CATDeclareCBEvent</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATDeclareCBEvent</b>(<td><script type="text/javascript"> activateLink('GridModification','GridModification')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit l'evenement qui permet de suivre les modifications de settings associes a la grille.
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATDeclareCBEvent','');return false">CATDeclareCBEvent</a>
+</dl>
+</dl>
+<a name="CATDeclareCBEvent"></a><a name="CATDeclareCBEvent(SnapModification)"></a> <dt> o <b>CATDeclareCBEvent</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATDeclareCBEvent</b>(<td><script type="text/javascript"> activateLink('SnapModification','SnapModification')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit l'evenement qui permet de suivre les modifications de settings associes au snap sur la grille.
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATDeclareCBEvent','');return false">CATDeclareCBEvent</a>
+</dl>
+</dl>
+<a name="CATDeclareCBEvent"></a><a name="CATDeclareCBEvent(CpltModification)"></a> <dt> o <b>CATDeclareCBEvent</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATDeclareCBEvent</b>(<td><script type="text/javascript"> activateLink('CpltModification','CpltModification')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit l'evenement qui permet de suivre les modifications de settings associes au Smartpick.
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATDeclareCBEvent','');return false">CATDeclareCBEvent</a>
+</dl>
+</dl>
+<a name="CATDeclareCBEvent"></a><a name="CATDeclareCBEvent(MultiModification)"></a> <dt> o <b>CATDeclareCBEvent</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATDeclareCBEvent</b>(<td><script type="text/javascript"> activateLink('MultiModification','MultiModification')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit l'evenement qui permet de suivre les modifications de settings associes a plusieurs des categories 
+ precedentes.
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATDeclareCBEvent','');return false">CATDeclareCBEvent</a>
+</dl>
+</dl>
+<a name="CATDeclareCBEvent"></a><a name="CATDeclareCBEvent(GeomUIModification)"></a> <dt> o <b>CATDeclareCBEvent</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATDeclareCBEvent</b>(<td><script type="text/javascript"> activateLink('GeomUIModification','GeomUIModification')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit l'evenement qui permet de suivre les modifications de settings associes a la gestion des gemetries.
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATDeclareCBEvent','');return false">CATDeclareCBEvent</a>
+</dl>
+</dl>
+<a name="CATDeclareCBEvent"></a><a name="CATDeclareCBEvent(Visu3DUIModification)"></a> <dt> o <b>CATDeclareCBEvent</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATDeclareCBEvent</b>(<td><script type="text/javascript"> activateLink('Visu3DUIModification','Visu3DUIModification')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit l'evenement qui permet de suivre les modifications de settings associes au comportement visuel.
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATDeclareCBEvent','');return false">CATDeclareCBEvent</a>
+</dl>
+</dl>
+<a name="GetAllowDistortions"></a><a name="GetAllowDistortions(void)"></a> <dt> o <b>GetAllowDistortions</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetAllowDistortions</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le mode de disproportion de la grille.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, si sa valeur est differente de zero, il est possible
+ d'avoir une grille en H et V differentes.
+</dl>
+</dl>
+<a name="GetColorConstructElts"></a><a name="GetColorConstructElts(unsigned int*,unsigned int*,unsigned int*)"></a> <dt> o <b>GetColorConstructElts</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>GetColorConstructElts</b>(<td><script type="text/javascript"> activateLink('unsigned int','unsigned int*')</script> <td><tt>iRed</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int*')</script> <td><tt>iGreen</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int*')</script> <td><tt>iBlue</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie la couleur des elements de construction
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int * iRed </tt> [out] code rouge de la couleur
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int * iGreen </tt> [out] code vert de la couleur
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int * iBlue </tt> [out] code bleu de la couleur</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetColorDiagElts"></a><a name="GetColorDiagElts(CAT2DCstDiag,unsigned int*,unsigned int*,unsigned int*)"></a> <dt> o <b>GetColorDiagElts</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>GetColorDiagElts</b>(<td><script type="text/javascript"> activateLink('CAT2DCstDiag','CAT2DCstDiag')</script> <td><tt>iDiag</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int*')</script> <td><tt>iRed</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int*')</script> <td><tt>iGreen</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int*')</script> <td><tt>iBlue</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie les codes de couleurs par type de diagnostique
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> CAT2DCstDiag iDiag </tt> [in] type de diagnostique
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int * iRed </tt> [out] code rouge de la couleur
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int * iGreen </tt> [out] code vert de la couleur
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int * iBlue </tt> [out] code bleu de la couleur</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetColorIsolatedElts"></a><a name="GetColorIsolatedElts(unsigned int*,unsigned int*,unsigned int*)"></a> <dt> o <b>GetColorIsolatedElts</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>GetColorIsolatedElts</b>(<td><script type="text/javascript"> activateLink('unsigned int','unsigned int*')</script> <td><tt>iRed</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int*')</script> <td><tt>iGreen</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int*')</script> <td><tt>iBlue</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie la couleur des elements isolés
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int * iRed </tt> [out] code rouge de la couleur
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int * iGreen </tt> [out] code vert de la couleur
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int * iBlue </tt> [out] code bleu de la couleur</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetColorProtectedElts"></a><a name="GetColorProtectedElts(unsigned int*,unsigned int*,unsigned int*)"></a> <dt> o <b>GetColorProtectedElts</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>GetColorProtectedElts</b>(<td><script type="text/javascript"> activateLink('unsigned int','unsigned int*')</script> <td><tt>iRed</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int*')</script> <td><tt>iGreen</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int*')</script> <td><tt>iBlue</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie la couleur des elements protégés
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int * iRed </tt> [out] code rouge de la couleur
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int * iGreen </tt> [out] code vert de la couleur
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int * iBlue </tt> [out] code bleu de la couleur</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetColorSmartPick"></a><a name="GetColorSmartPick(unsigned int*,unsigned int*,unsigned int*)"></a> <dt> o <b>GetColorSmartPick</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>GetColorSmartPick</b>(<td><script type="text/javascript"> activateLink('unsigned int','unsigned int*')</script> <td><tt>iRed</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int*')</script> <td><tt>iGreen</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int*')</script> <td><tt>iBlue</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie la couleur des elements de l'assistant
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int * iRed </tt> [out] code rouge de la couleur
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int * iGreen </tt> [out] code vert de la couleur
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int * iBlue </tt> [out] code bleu de la couleur</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetCreateCenter"></a><a name="GetCreateCenter(void)"></a> <dt> o <b>GetCreateCenter</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetCreateCenter</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le mode de creation ou non des centres des cercles et des ellipses (boutton a cocher).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, si sa valeur est differente de zero, on cree les centres automatiquement.
+</dl>
+</dl>
+<a name="GetCreateConstraint"></a><a name="GetCreateConstraint(void)"></a> <dt> o <b>GetCreateConstraint</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetCreateConstraint</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le mode de creation ou non des contraintes detectees par l'assistant (boutton a cocher).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, si sa valeur est differente de zero, la creation est active.
+</dl>
+</dl>
+<a name="GetDiagElts"></a><a name="GetDiagElts(void)"></a> <dt> o <b>GetDiagElts</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetDiagElts</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le mode de visualisation des diagnostique des éléments contraint.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, si sa valeur est differente de zero, visualisation des diagnostique par code de couleurs.
+</dl>
+</dl>
+<a name="GetDirHorVert"></a><a name="GetDirHorVert(void)"></a> <dt> o <b>GetDirHorVert</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetDirHorVert</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le mode de detection de l'assistant pour la creation d'elements
+ horizontaux ou a la verticaux (boutton a cocher).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, si sa valeur est differente de zero, la detection est active.
+</dl>
+</dl>
+<a name="GetDirParallel"></a><a name="GetDirParallel(void)"></a> <dt> o <b>GetDirParallel</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetDirParallel</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le mode de detection de l'assistant pour la creation d'elements 
+ parallele a un autre (boutton a cocher).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, si sa valeur est differente de zero, la detection est active.
+</dl>
+</dl>
+<a name="GetDirPerpend"></a><a name="GetDirPerpend(void)"></a> <dt> o <b>GetDirPerpend</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetDirPerpend</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le mode de detection de l'assistant pour la creation d'elements 
+ perpendiculaire a un autre (boutton a cocher).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, si sa valeur est differente de zero, la detection est active.
+</dl>
+</dl>
+<a name="GetDirTangent"></a><a name="GetDirTangent(void)"></a> <dt> o <b>GetDirTangent</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetDirTangent</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le mode de detection de l'assistant pour la creation d'elements 
+ tangent a un autre (boutton a cocher).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, si sa valeur est differente de zero, la detection est active.
+</dl>
+</dl>
+<a name="GetDragElts"></a><a name="GetDragElts(void)"></a> <dt> o <b>GetDragElts</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetDragElts</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le mode de 'dragging' des elements dans le sketch (boutton a cocher).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, si sa valeur est differente de zero, deplacement des elements possible.
+</dl>
+</dl>
+<a name="GetDragMode"></a><a name="GetDragMode(void)"></a> <dt> o <b>GetDragMode</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetDragMode</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le mode de 'dragging' des elements dans le sketch (radio-button).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>
+ 0 - Dragging Standard
+ 1 - Dragging déplacements Minimum
+ 2 - Dragging en Relaxation
+</dl>
+</dl>
+<a name="GetDragWithEndPts"></a><a name="GetDragWithEndPts(void)"></a> <dt> o <b>GetDragWithEndPts</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetDragWithEndPts</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le mode de 'dragging' des elements dans le sketch (boutton a cocher).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, si sa valeur est differente de zero, deplacement des elements en incluant les points limites.
+</dl>
+</dl>
+<a name="GetGridGroundMode"></a><a name="GetGridGroundMode(void)"></a> <dt> o <b>GetGridGroundMode</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetGridGroundMode</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le mode de visualisation de la grille ombre ou non (boutton a cocher).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, si sa valeur est differente de zero, la grille est ombre.
+</dl>
+</dl>
+<a name="GetGridPrimSpac"></a><a name="GetGridPrimSpac(void)"></a> <dt> o <b>GetGridPrimSpac</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('double','double')</script>  <b>GetGridPrimSpac</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le pas principal de la grille em MKS (m) (zone de saisie).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>double</tt>, donnant la valeur du pas principal en MKS (m).
+</dl>
+</dl>
+<a name="GetGridSecStep"></a><a name="GetGridSecStep(void)"></a> <dt> o <b>GetGridSecStep</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetGridSecStep</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le nombre de subdivisions du pas principal (zone de saisie).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, donnant la valeur du nombre de subdivisions.
+</dl>
+</dl>
+<a name="GetGridSnapMode"></a><a name="GetGridSnapMode(void)"></a> <dt> o <b>GetGridSnapMode</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetGridSnapMode</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le mode de creation des points sur la grille ou non (boutton a cocher).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, si sa valeur est differente de zero, la creation des points
+ sur la grille est actif.
+</dl>
+</dl>
+<a name="GetGridVPrimSpac"></a><a name="GetGridVPrimSpac(void)"></a> <dt> o <b>GetGridVPrimSpac</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('double','double')</script>  <b>GetGridVPrimSpac</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le pas principal de la grille suivant V em MKS (m) (zone de saisie).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>double</tt>, donnant la valeur du pas principal en MKS (m).
+</dl>
+</dl>
+<a name="GetGridVSecStep"></a><a name="GetGridVSecStep(void)"></a> <dt> o <b>GetGridVSecStep</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetGridVSecStep</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le nombre de subdivisions suivant V du pas principal (zone de saisie).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, donnant la valeur du nombre de subdivisions.
+</dl>
+</dl>
+<a name="GetGridVisuMode"></a><a name="GetGridVisuMode(void)"></a> <dt> o <b>GetGridVisuMode</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetGridVisuMode</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le mode d'affichage de la grille (boutton a cocher).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, si sa valeur est differente de zero, la grille est visible.
+</dl>
+</dl>
+<a name="GetPosHorVertTo"></a><a name="GetPosHorVertTo(void)"></a> <dt> o <b>GetPosHorVertTo</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetPosHorVertTo</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le mode de detection de l'assistant pour la creation des elements
+ a l'horizontal ou a la vertical des autres elements (boutton a cocher).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, si sa valeur est differente de zero, la detection est active.
+</dl>
+</dl>
+<a name="GetPosSupports"></a><a name="GetPosSupports(void)"></a> <dt> o <b>GetPosSupports</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetPosSupports</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le mode de detection de passage sur les supports d'elements.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, si sa valeur est differente de zero, la detection est active.
+</dl>
+</dl>
+<a name="GetShowPosition"></a><a name="GetShowPosition()"></a> <dt> o <b>GetShowPosition</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetShowPosition</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie l'etat d'affichage des parametres de position (H et V) situes dans la tool bar
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  A <tt>int</tt>
+ <b>Legal Values</b>:
+ <dl>
+ <dt> <tt>0</tt> <dd> Les parametres de position ne sont pas affiches dans la tool bar
+ <dt> <tt>1</tt> <dd> Les parametres de position sont affiches dans la tool bar
+ </dl>
+</dl>
+</dl>
+<a name="GetShowPositionOnCursor"></a><a name="GetShowPositionOnCursor()"></a> <dt> o <b>GetShowPositionOnCursor</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetShowPositionOnCursor</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie l'etat d'affichage des parametres de position (H et V) situes sous le curseur
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  A <tt>int</tt>
+ <b>Legal Values</b>:
+ <dl>
+ <dt> <tt>0</tt> <dd> Les parametres de position ne sont pas affiches sur le curseur
+ <dt> <tt>1</tt> <dd> Les parametres de position sont affiches sur le curseur
+ </dl>
+</dl>
+</dl>
+<a name="GetSketcherSettings"></a><a name="GetSketcherSettings(void)"></a> <dt> o <b>GetSketcherSettings</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('CATSketcherSettings','CATSketcherSettings *')</script>  <b>GetSketcherSettings</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie les settings de l'application de type Sketcher courante. Si il n'existe pas de 
+ settings courants alors les settings geres par l'objet UIActif courant (grace a son adhesion a 
+ l'interface CATISketcherSettings) sont retournes
+</dl>
+<a name="GetValidateConstraint"></a><a name="GetValidateConstraint(void)"></a> <dt> o <b>GetValidateConstraint</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetValidateConstraint</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le mode de creation ou non des contraintes si au moins un parametre est saisie dans
+ la toolbar "Sketcher Information" (boutton a cocher).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, si sa valeur est differente de zero, on cree les contraintes automatiquement.
+</dl>
+</dl>
+<a name="GetValidateCstType"></a><a name="GetValidateCstType(CAT2DCstType)"></a> <dt> o <b>GetValidateCstType</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetValidateCstType</b>(<td><script type="text/javascript"> activateLink('CAT2DCstType','CAT2DCstType')</script> <td><tt>iCstType</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le mode de creation ou non de la contrainte passee par parametre
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> CAT2DCstType iCstType </tt> [in] etat d'affichage de la grille
+ (si il est different de zero, la grille est affichee).
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, si sa valeur est differente de zero, on cree les contraintes automatiquement.
+</dl>
+</dl>
+<a name="GetViewNormalTo"></a><a name="GetViewNormalTo(void)"></a> <dt> o <b>GetViewNormalTo</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetViewNormalTo</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Renvoie le mode d'entree dans le sketch (boutton a cocher).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, si sa valeur est differente de zero, on rentre dans le sketcher 
+ en vue // au plan de Sketch, sinon le point de vue ne change pas.
+</dl>
+</dl>
+<a name="SaveRepository"></a><a name="SaveRepository(void)"></a> <dt> o <b>SaveRepository</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SaveRepository</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sauvegarde du repository des settings du sketcher.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>HRESULT</tt>.
+</dl>
+</dl>
+<a name="SetAllowDistortions"></a><a name="SetAllowDistortions(int,int)"></a> <dt> o <b>SetAllowDistortions</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetAllowDistortions</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCheck</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit le mode de disproportions de la grille.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> int iCheck </tt> [in] specifie le mode de disproportion.
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetColorConstructElts"></a><a name="SetColorConstructElts(unsigned int,unsigned int,unsigned int,int)"></a> <dt> o <b>SetColorConstructElts</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetColorConstructElts</b>(<td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iRed</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iGreen</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iBlue</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit la couleur des elements de construction
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int iRed </tt> [in] code rouge de la couleur
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int iGreen </tt> [in] code vert de la couleur
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int iBlue </tt> [in] code bleu de la couleur</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetColorDiagElts"></a><a name="SetColorDiagElts(CAT2DCstDiag,unsigned int,unsigned int,unsigned int,int)"></a> <dt> o <b>SetColorDiagElts</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetColorDiagElts</b>(<td><script type="text/javascript"> activateLink('CAT2DCstDiag','CAT2DCstDiag')</script> <td><tt>iDiag</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iRed</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iGreen</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iBlue</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit les codes de couleurs par type de diagnostique
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> CAT2DCstDiag iDiag </tt> [in] type de diagnostique
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int iRed </tt> [in] code rouge de la couleur <tt>(0<=iRed<=255)</tt>
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int iGreen </tt> [in] code vert de la couleur <tt>(0<=iGreen<=255)</tt>
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int iBlue </tt> [in] code bleu de la couleur <tt>(0<=iBlue<=255)</tt></dd>
+</dl>
+</dl>
+</dl>
+<a name="SetColorIsolatedElts"></a><a name="SetColorIsolatedElts(unsigned int,unsigned int,unsigned int,int)"></a> <dt> o <b>SetColorIsolatedElts</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetColorIsolatedElts</b>(<td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iRed</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iGreen</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iBlue</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit la couleur des elements isolés
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int iRed </tt> [in] code rouge de la couleur
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int iGreen </tt> [in] code vert de la couleur
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int iBlue </tt> [in] code bleu de la couleur</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetColorProtectedElts"></a><a name="SetColorProtectedElts(unsigned int,unsigned int,unsigned int,int)"></a> <dt> o <b>SetColorProtectedElts</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetColorProtectedElts</b>(<td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iRed</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iGreen</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iBlue</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit la couleur des elements protégés
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int iRed </tt> [in] code rouge de la couleur
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int iGreen </tt> [in] code vert de la couleur
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int iBlue </tt> [in] code bleu de la couleur</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetColorSmartPick"></a><a name="SetColorSmartPick(unsigned int,unsigned int,unsigned int,int)"></a> <dt> o <b>SetColorSmartPick</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetColorSmartPick</b>(<td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iRed</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iGreen</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iBlue</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit la couleur des elements de l'assistant
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int iRed </tt> [in] code rouge de la couleur
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int iGreen </tt> [in] code vert de la couleur
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> unsigned int iBlue </tt> [in] code bleu de la couleur</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetCreateCenter"></a><a name="SetCreateCenter(int,int)"></a> <dt> o <b>SetCreateCenter</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetCreateCenter</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCheck</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit le mode de creation ou non des centres des cercles et des ellipses.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> int iCheck </tt> [in] specifie le le mode de creation ou non des centres
+ (si il est different de zero, on cree les centres automatiquement).
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetCreateConstraint"></a><a name="SetCreateConstraint(int,int)"></a> <dt> o <b>SetCreateConstraint</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetCreateConstraint</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCheck</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit le mode de creation ou non des contraintes detectees par l'assistant.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> int iCheck </tt> [in] specifie le mode de creation
+ (si il est different de zero, la creation est active).
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetDiagElts"></a><a name="SetDiagElts(int,int)"></a> <dt> o <b>SetDiagElts</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetDiagElts</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCheck</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit le mode de visualisation des diagnostique des éléments contraint.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Un <tt>int</tt>, si sa valeur est differente de zero, visualisation des diagnostique par code de couleurs.
+</dl>
+</dl>
+<a name="SetDirHorVert"></a><a name="SetDirHorVert(int,int)"></a> <dt> o <b>SetDirHorVert</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetDirHorVert</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCheck</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit le mode de detection de l'assistant pour la creation d'elements
+ horizontaux ou a la verticaux.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> int iCheck </tt> [in] specifie la detection (si il est different de zero, la detection est active).
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetDirParallel"></a><a name="SetDirParallel(int,int)"></a> <dt> o <b>SetDirParallel</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetDirParallel</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCheck</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit le mode de detection de l'assistant pour la creation d'elements 
+ parallele aun autre (boutton a cocher).
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> int iCheck </tt> [in] specifie la detection (si il est different de zero, la detection est active).
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetDirPerpend"></a><a name="SetDirPerpend(int,int)"></a> <dt> o <b>SetDirPerpend</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetDirPerpend</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCheck</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit le mode de detection de l'assistant pour la creation d'elements 
+ perpendiculaire aun autre (boutton a cocher).
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> int iCheck </tt> [in] specifie la detection (si il est different de zero, la detection est active).
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetDirTangent"></a><a name="SetDirTangent(int,int)"></a> <dt> o <b>SetDirTangent</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetDirTangent</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCheck</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit le mode de detection de l'assistant pour la creation d'elements 
+ tangent aun autre (boutton a cocher).
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> int iCheck </tt> [in] specifie la detection (si il est different de zero, la detection est active).
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetDragElts"></a><a name="SetDragElts(int,int)"></a> <dt> o <b>SetDragElts</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetDragElts</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCheck</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Definit le mode de deplacement des elements dans le sketch
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> int iCheck </tt> [in] mode de deplacement des elements dans le sketch
+ (si il est different de zero, deplacement des elements possible.)
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetDragMode"></a><a name="SetDragMode(int,int)"></a> <dt> o <b>SetDragMode</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetDragMode</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iDragMode</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit le mode de deplacement des elements dans le sketch
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> int iDragMode </tt> [in] mode de deplacement des elements dans le sketch
+ 0 - Dragging Standard
+ 1 - Dragging déplacements Minimum
+ 2 - Dragging en Relaxation
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetDragWithEndPts"></a><a name="SetDragWithEndPts(int,int)"></a> <dt> o <b>SetDragWithEndPts</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetDragWithEndPts</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCheck</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit le mode de deplacement des elements dans le sketch
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> int iCheck </tt> [in] mode de deplacement des elements dans le sketch
+ (si il est different de zero, deplacement des elements en incluant les points limites.).
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetGridGroundMode"></a><a name="SetGridGroundMode(int,int)"></a> <dt> o <b>SetGridGroundMode</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetGridGroundMode</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCheck</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit l'etat de visualisation de la grille en mode ombre.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> int iCheck </tt> [in] etat de visualisation de la grille en mode ombre
+ (si il est different de zero, la grille est affichee en mode ombree).
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetGridPrimSpac"></a><a name="SetGridPrimSpac(double,int)"></a> <dt> o <b>SetGridPrimSpac</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetGridPrimSpac</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iSpacing</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit le pas principal de la grille em MKS (m).
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> double iSpacing </tt> [in] specifie la valeur du pas principal en MKS (m).
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetGridSecStep"></a><a name="SetGridSecStep(int,int)"></a> <dt> o <b>SetGridSecStep</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetGridSecStep</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iStep</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit le nombre de subdivisions du pas principal.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> int iStep </tt> [in] specifie la valeur du nombre de subdivisions.
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetGridSnapMode"></a><a name="SetGridSnapMode(int,int)"></a> <dt> o <b>SetGridSnapMode</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetGridSnapMode</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCheck</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit l'etat de creation des points sur la grille.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> int iCheck </tt> [in] etat de creation des points sur la grille
+ (si il est different de zero, la creation des points sur la grille est active).
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetGridVPrimSpac"></a><a name="SetGridVPrimSpac(double,int)"></a> <dt> o <b>SetGridVPrimSpac</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetGridVPrimSpac</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iSpacing</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit le pas principal suivant V de la grille em MKS (m).
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> double iSpacing </tt> [in] specifie la valeur du pas principal en MKS (m).
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetGridVSecStep"></a><a name="SetGridVSecStep(int,int)"></a> <dt> o <b>SetGridVSecStep</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetGridVSecStep</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iStep</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit le nombre de subdivisions suivant V du pas principal.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> int iStep </tt> [in] specifie la valeur du nombre de subdivisions.
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetGridVisuMode"></a><a name="SetGridVisuMode(int,int)"></a> <dt> o <b>SetGridVisuMode</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetGridVisuMode</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCheck</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit l'etat d'affichage de la grille.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> int iCheck </tt> [in] etat d'affichage de la grille
+ (si il est different de zero, la grille est affichee).
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetPosHorVertTo"></a><a name="SetPosHorVertTo(int,int)"></a> <dt> o <b>SetPosHorVertTo</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetPosHorVertTo</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCheck</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit le mode de detection de l'assistant pour la creation des elements
+ a l'horizontal ou a la vertical des autres elements.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> int iCheck </tt> [in] specifie la detection (si il est different de zero, la detection est active).
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetPosSupports"></a><a name="SetPosSupports(int,int)"></a> <dt> o <b>SetPosSupports</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetPosSupports</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCheck</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit le mode de detection de passage sur les supports d'elements.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> int iCheck </tt> [in] specifie la detection (si il est different de zero, la detection est active).
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetShowPosition"></a><a name="SetShowPosition(int,int)"></a> <dt> o <b>SetShowPosition</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetShowPosition</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iShow</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit l'etat d'affichage des parametres de position (H et V) situes dans la tool bar
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt>unsigned</tt>
+   <dd> int iShow</tt> [in] Statut d'affichage
+ <b>Valeurs legales </b>:
+ <dl>
+ <dt> <tt>0</tt> <dd> Les parametres de la position ne doivent pas etre affiches
+ <dt> <tt>1</tt> <dd> Les parametres de la position doivent etre affiches
+ </dl>
+ </dd>
+    <dt><tt> <tt>int</tt>
+   <dd> iEvt</tt> [in] precise si un evenement doit etre emis ou non.
+ <b>Valeurs legales </b>:
+ <dl>
+ <dt> <tt>0</tt> <dd> Aucun evenement ne sera emis
+ <dt> <tt>1</tt> <dd> Un evenement sera emis
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="SetShowPositionOnCursor"></a><a name="SetShowPositionOnCursor(int,int)"></a> <dt> o <b>SetShowPositionOnCursor</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetShowPositionOnCursor</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iShow</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit l'etat d'affichage des parametres de position (H et V) situes sur le curseur
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt>unsigned</tt>
+   <dd> int iShow</tt> [in] Statut d'affichage
+ <b>Valeurs legales </b>:
+ <dl>
+ <dt> <tt>0</tt> <dd> Les parametres de la position n'apparaissent pas
+ <dt> <tt>1</tt> <dd> Les parametres de la position apparaissent
+ </dl>
+ </dd>
+    <dt><tt> <tt>int</tt>
+   <dd> iEvt</tt> [in] precise si un evenement doit etre emis ou non.
+ <b>Valeurs legales </b>:
+ <dl>
+ <dt> <tt>0</tt> <dd> Aucun evenement ne sera emis
+ <dt> <tt>1</tt> <dd> Un evenement sera emis
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="SetSketcherSettings"></a><a name="SetSketcherSettings(CATSketcherSettings*)"></a> <dt> o <b>SetSketcherSettings</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('void','void')</script>  <b>SetSketcherSettings</b>(<td><script type="text/javascript"> activateLink('CATSketcherSettings','CATSketcherSettings*')</script> <td><tt>iSettings</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Force l'initialisation des settings d'une application de type Sketcher.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt>CATSketcherSettings</tt>
+   <dd> * iSettings</tt> [in] L'instance concrete de settings que l'on veut rendre courante. Cet argument peut etre
+ <tt>NULL</tt> afin d'activer la gestion des settings par l'interface CATISketcherSettings.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetValidateConstraint"></a><a name="SetValidateConstraint(int,int)"></a> <dt> o <b>SetValidateConstraint</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetValidateConstraint</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCheck</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit le mode de creation ou non des contraintes si au moins un parametre est saisie dans
+ la toolbar "Sketcher Information".
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> int iCheck </tt> [in] mode de creation des contraintes
+ (si il est different de zero, on cree les contraintes automatiquement).
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetViewNormalTo"></a><a name="SetViewNormalTo(int,int)"></a> <dt> o <b>SetViewNormalTo</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetViewNormalTo</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCheck</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEvt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Definit le mode d'entree dans le sketch.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt></tt>
+   <dd> int iCheck </tt> [in] specifie le mode d'entree dans le sketch 
+ (si il est different de zero, on rentre dans le sketcher en vue // au plan de Sketch,
+ sinon le point de vue ne change pas.).
+ </dd>
+    <dt><tt> <tt></tt>
+   <dd> int iEvt </tt> [in] precise si un evenement doit etre emis sur le sketch courant
+ (si il est different de zero, l'evenement est emis).</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATSketcherSettings.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATSktSettings</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

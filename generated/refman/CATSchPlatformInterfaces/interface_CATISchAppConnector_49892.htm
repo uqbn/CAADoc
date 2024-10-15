@@ -1,0 +1,301 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Interface CATISchAppConnector</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISchAppConnector','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchAppConnector','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISchAppConnector','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchAppConnector','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Interface CATISchAppConnector</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISchAppConnector_49892','CATISchAppConnector','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATISchAppConnector</b>
+</p>
+<p>
+<b><i> Interface to mangage application connector object behaviors.</i></b><br>
+ 
+ <b>Role</b>: To specify application connector behaviors such as
+ connect and disconnect.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AppConnect(CATISchAppConnector*,CATISchAppConnection**)"><b>AppConnect</b></a>(CATISchAppConnector*,CATISchAppConnection**)
+<dd>  Connect to an input connector.
+ <dt> o 
+    <a href="#AppConnectBranch(CATISchAppConnector*,CATISchAppConnection**)"><b>AppConnectBranch</b></a>(CATISchAppConnector*,CATISchAppConnection**)
+<dd>  Connect to an input connector for Branch.
+ <dt> o 
+    <a href="#AppDisconnect(CATISchAppConnector*)"><b>AppDisconnect</b></a>(CATISchAppConnector*)
+<dd>  Disconnect from an input connector.
+ <dt> o 
+    <a href="#AppGetAssociatedConnectable(CATISchAppConnectable**)"><b>AppGetAssociatedConnectable</b></a>(CATISchAppConnectable**)
+<dd>  Find the application object that owns this connector.
+ <dt> o 
+    <a href="#AppIsCntrConnected(CATBoolean*)"><b>AppIsCntrConnected</b></a>(CATBoolean*)
+<dd>  Query whether the connector has been connected.
+ <dt> o 
+    <a href="#AppListCompatibleTypes(CATICStringList**)"><b>AppListCompatibleTypes</b></a>(CATICStringList**)
+<dd>  Find all the class types of connector that are compatible with
+ this connector for connections.
+ <dt> o 
+    <a href="#AppListConnections(CATICStringList*,CATIUnknownList**)"><b>AppListConnections</b></a>(CATICStringList*,CATIUnknownList**)
+<dd>  Find all the connections that include this connector.
+ <dt> o 
+    <a href="#AppOKToNoShowConnectedCntr(CATBoolean*)"><b>AppOKToNoShowConnectedCntr</b></a>(CATBoolean*)
+<dd>  Query whether it is OK to no show the connector after it is connected.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AppConnect"></a><a name="AppConnect(CATISchAppConnector*,CATISchAppConnection**)"></a> <dt> o <b>AppConnect</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppConnect</b>(<td><script type="text/javascript"> activateLink('CATISchAppConnector','CATISchAppConnector*')</script> <td><tt>iCntrToConnect</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATISchAppConnection','CATISchAppConnection**')</script> <td><tt>oConnection</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Connect to an input connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCntrToConnect</tt>
+   <dd>   A schematic connector object to connect to
+ </dd>
+    <dt><tt> oConnection</tt>
+   <dd>   Connection created
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppConnectBranch"></a><a name="AppConnectBranch(CATISchAppConnector*,CATISchAppConnection**)"></a> <dt> o <b>AppConnectBranch</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppConnectBranch</b>(<td><script type="text/javascript"> activateLink('CATISchAppConnector','CATISchAppConnector*')</script> <td><tt>iCntrToConnect</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATISchAppConnection','CATISchAppConnection**')</script> <td><tt>oConnection</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Connect to an input connector for Branch.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCntrToConnect</tt>
+   <dd>   A schematic connector object to connect to
+ </dd>
+    <dt><tt> oConnection</tt>
+   <dd>   Connection created
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppDisconnect"></a><a name="AppDisconnect(CATISchAppConnector*)"></a> <dt> o <b>AppDisconnect</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppDisconnect</b>(<td><script type="text/javascript"> activateLink('CATISchAppConnector','CATISchAppConnector*')</script> <td><tt>iCntrToDisConnect</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Disconnect from an input connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCntrToDisconnect</tt>
+   <dd>   A schematic connector object to disconnect from
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppGetAssociatedConnectable"></a><a name="AppGetAssociatedConnectable(CATISchAppConnectable**)"></a> <dt> o <b>AppGetAssociatedConnectable</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppGetAssociatedConnectable</b>(<td><script type="text/javascript"> activateLink('CATISchAppConnectable','CATISchAppConnectable**')</script> <td><tt>oConnectable</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Find the application object that owns this connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oConnectable</tt>
+   <dd>   An application object that the connector belongs to.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppIsCntrConnected"></a><a name="AppIsCntrConnected(CATBoolean*)"></a> <dt> o <b>AppIsCntrConnected</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppIsCntrConnected</b>(<td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean*')</script> <td><tt>oBYes</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Query whether the connector has been connected. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oBYes</tt>
+   <dd>   If TRUE, then it is connected
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppListCompatibleTypes"></a><a name="AppListCompatibleTypes(CATICStringList**)"></a> <dt> o <b>AppListCompatibleTypes</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppListCompatibleTypes</b>(<td><script type="text/javascript"> activateLink('CATICStringList','CATICStringList**')</script> <td><tt>oLCntrCompatClassTypes</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Find all the class types of connector that are compatible with
+ this connector for connections.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLCntrCompatClassTypes</tt>
+   <dd>   A list of all the class types of connectors that are compatible
+   with this connector for connections.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppListConnections"></a><a name="AppListConnections(CATICStringList*,CATIUnknownList**)"></a> <dt> o <b>AppListConnections</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppListConnections</b>(<td><script type="text/javascript"> activateLink('CATICStringList','CATICStringList*')</script> <td><tt>iLCntnClassFilter</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oLConnections</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Find all the connections that include this connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLCntnClassFilter</tt>
+   <dd>   A list of all the class types for filtering the output connection
+   list.
+ </dd>
+    <dt><tt> oLConnections</tt>
+   <dd>   A list of connections that include this connector
+   (members are CATISchAppConnection interface pointers).
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppOKToNoShowConnectedCntr"></a><a name="AppOKToNoShowConnectedCntr(CATBoolean*)"></a> <dt> o <b>AppOKToNoShowConnectedCntr</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppOKToNoShowConnectedCntr</b>(<td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean*')</script> <td><tt>oBYes</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Query whether it is OK to no show the connector after it is connected.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oBYes</tt>
+   <dd>   If TRUE, then it is OK to no show.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISchAppConnector.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

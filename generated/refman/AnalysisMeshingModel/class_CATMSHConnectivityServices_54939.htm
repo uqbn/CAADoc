@@ -1,0 +1,105 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>AnalysisMeshingModel Class CATMSHConnectivityServices</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../AnalysisMeshingModel.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATMSHConnectivityServices','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATMSHConnectivityServices','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATMSHConnectivityServices','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATMSHConnectivityServices','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>AnalysisMeshingModel Class CATMSHConnectivityServices</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATMSHConnectivityServices_54939','CATMSHConnectivityServices','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATMSHConnectivityServices</b>
+</p>
+<p>
+<b><i> Class used to access to finite element connectivities.</i></b><br>
+
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIMSHConnectivity','');return false">CATIMSHConnectivity</a>
+</dl>
+</p>
+<hr>
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetConnectivity(char*)"><b>GetConnectivity</b></a>(char*)
+<dd>  Retreives a finite element connectivity from its name.
+ <dt> o 
+    <a href="#GetFirstConnectivity()"><b>GetFirstConnectivity</b></a>()
+<dd>  Returns the first finite element connectivity.
+ <dt> o 
+    <a href="#GetNumberOfConnectivities()"><b>GetNumberOfConnectivities</b></a>()
+<dd>  Retreives the total number of defined finite element connectivities.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetConnectivity"></a><a name="GetConnectivity(char*)"></a> <dt> o <b>GetConnectivity</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('CATIMSHConnectivity','CATIMSHConnectivity *')</script>  <b>GetConnectivity</b>(<td> const <script type="text/javascript"> activateLink('char','char*')</script> <td><tt>iName</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Retreives a finite element connectivity from its name.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iName</tt>
+   <dd>   The name of the connectivity.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    The connectivity.
+ <br><b>Lifecycle rules deviation</b>: No AddRef is done on returned value.
+</dl>
+</dl>
+<a name="GetFirstConnectivity"></a><a name="GetFirstConnectivity()"></a> <dt> o <b>GetFirstConnectivity</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('CATIMSHConnectivity','const CATIMSHConnectivity *')</script>  <b>GetFirstConnectivity</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the first finite element connectivity.
+ <br>See 
+<a href="#" onClick="openLink('CATIMSHConnectivity','');return false">CATIMSHConnectivity</a> method to scan the other connectivities.
+</dl>
+<a name="GetNumberOfConnectivities"></a><a name="GetNumberOfConnectivities()"></a> <dt> o <b>GetNumberOfConnectivities</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('int','int')</script>  <b>GetNumberOfConnectivities</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Retreives the total number of defined finite element connectivities.
+</dl>
+<hr>
+ This object is included in the file: <b>CATMSHConnectivityServices.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAmtModel</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

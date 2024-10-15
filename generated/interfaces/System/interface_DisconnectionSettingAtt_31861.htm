@@ -1,0 +1,114 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>System DisconnectionSettingAtt (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../System.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('DisconnectionSettingAtt','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('DisconnectionSettingAtt','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('DisconnectionSettingAtt','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('DisconnectionSettingAtt','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>DisconnectionSettingAtt<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_DisconnectionSettingAtt_31861','DisconnectionSettingAtt','0');</script>
+<b><i> Represents the base object to handle the parameters of automatic disconnection.</i></b><br>
+
+ If the automatic disconnection is enable, the V5 session will be kill after a 
+ user-defined duration of inactivity.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#ActivationState"><b>ActivationState</b></a>
+<dd>  Returns or sets the activation state of automatic disconnection.
+ <dt>
+    <a href="#InactivityDuration"><b>InactivityDuration</b></a>
+<dd>  Returns or sets the inactivity duration.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetActivationStateInfo"><b>GetActivationStateInfo</b></a>
+<dd>  Retrieves informations about the activation mode of automatic disconnection.
+ <dt>
+    <a href="#GetInactivityDurationInfo"><b>GetInactivityDurationInfo</b></a>
+<dd>  Retrieves environment informations for inactivity duration.
+ <dt>
+    <a href="#SetActivationStateLock"><b>SetActivationStateLock</b></a>
+<dd>  Locks or unlocks the activation mode of automatic disconnection.
+ <dt>
+    <a href="#SetInactivityDurationLock"><b>SetInactivityDurationLock</b></a>
+<dd>  Locks or unlocks the inactivity duration.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="ActivationState"><dt>
+
+<table><tr><td>o Property <b>ActivationState</b>(<td>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the activation state of automatic disconnection.
+ <br><b>Role</b>:Returns or sets the activation mode of automatic disconnection.
+</dl>
+<a name="InactivityDuration"><dt>
+
+<table><tr><td>o Property <b>InactivityDuration</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the inactivity duration.
+ <br><b>Role</b>: Returns or sets the timeout in seconds before the automatic
+ disconnection when no activity has been detected, if the mechanism is enabled.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetActivationStateInfo"><dt>
+
+<table><tr><td>o Func <b>GetActivationStateInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>AdminLevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oLocked</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+ Retrieves informations about the activation mode of automatic disconnection.
+ <br>Refer to 
+<a href="#" onClick="openLink('SettingController','');return false">SettingController</a> for a detailled description.
+</dl>
+<a name="GetInactivityDurationInfo"><dt>
+
+<table><tr><td>o Func <b>GetInactivityDurationInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>AdminLevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oLocked</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+ Retrieves environment informations for inactivity duration.
+ <br>Refer to 
+<a href="#" onClick="openLink('SettingController','');return false">SettingController</a> for a detailled description.
+</dl>
+<a name="SetActivationStateLock"><dt>
+
+<table><tr><td>o Sub <b>SetActivationStateLock</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLocked</tt>)</table></dt>
+<dl>
+  <dd>
+ Locks or unlocks the activation mode of automatic disconnection.
+ <br>Refer to 
+<a href="#" onClick="openLink('SettingController','');return false">SettingController</a> for a detailled description.
+</dl>
+<a name="SetInactivityDurationLock"><dt>
+
+<table><tr><td>o Sub <b>SetInactivityDurationLock</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLocked</tt>)</table></dt>
+<dl>
+  <dd>
+ Locks or unlocks the inactivity duration.
+ <br>Refer to 
+<a href="#" onClick="openLink('SettingController','');return false">SettingController</a> for a detailled description.
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Interface CATISchComponentGroup</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISchComponentGroup','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchComponentGroup','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISchComponentGroup','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchComponentGroup','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Interface CATISchComponentGroup</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISchComponentGroup_54325','CATISchComponentGroup','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISchComponentGroup</b>
+</p>
+<p>
+<b><i> Interface to manage Schematic component's group membership.</i></b><br>
+
+ <b>Role</b>: To add, remove, and list component group members.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AddMember(CATISchAppConnectable*)"><b>AddMember</b></a>(CATISchAppConnectable*)
+<dd>  Add a member to the component group.
+ <dt> o 
+    <a href="#ListMembers(CATIUnknownList**)"><b>ListMembers</b></a>(CATIUnknownList**)
+<dd>  List all connectable members in the group.
+ <dt> o 
+    <a href="#RemoveMember(CATISchAppConnectable*)"><b>RemoveMember</b></a>(CATISchAppConnectable*)
+<dd>  Remove a member to the component group.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AddMember"></a><a name="AddMember(CATISchAppConnectable*)"></a> <dt> o <b>AddMember</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AddMember</b>(<td><script type="text/javascript"> activateLink('CATISchAppConnectable','CATISchAppConnectable*')</script> <td><tt>iCntblToAdd</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Add a member to the component group.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCntblToAdd</tt>
+   <dd>   The application connectable to be added to the group
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="ListMembers"></a><a name="ListMembers(CATIUnknownList**)"></a> <dt> o <b>ListMembers</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ListMembers</b>(<td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oLCntbl</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ List all connectable members in the group.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLGRR</tt>
+   <dd>   A list of connectables.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="RemoveMember"></a><a name="RemoveMember(CATISchAppConnectable*)"></a> <dt> o <b>RemoveMember</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RemoveMember</b>(<td><script type="text/javascript"> activateLink('CATISchAppConnectable','CATISchAppConnectable*')</script> <td><tt>iCntblToRemove</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Remove a member to the component group.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCntbleToRemove</tt>
+   <dd>   The application connectable to be removed from the group
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISchComponentGroup.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

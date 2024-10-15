@@ -1,0 +1,62 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMOperatorsInterfaces Global Function CATCGMCreateSolidPyramid</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMOperatorsInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>GMOperatorsInterfaces Global Function CATCGMCreateSolidPyramid</h1>
+
+<br><dt><table><tr><td>  <script type="text/javascript"> activateLink('CATICGMSolidPyramid',' CATICGMSolidPyramid *')</script>  <b>CATCGMCreateSolidPyramid</b>(<td><script type="text/javascript"> activateLink('CATGeoFactory','CATGeoFactory*')</script> <td><tt>iFactory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATTopData','CATTopData*')</script> <td><tt>iData</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathPoint','CATMathPoint&amp;')</script> <td><tt>iPt1</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathPoint','CATMathPoint&amp;')</script> <td><tt>iPt2</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathPoint','CATMathPoint&amp;')</script> <td><tt>iPt3</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathPoint','CATMathPoint&amp;')</script> <td><tt>iTop</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ 
+<dl>
+  <dt> <b>Deprecated:</b> 
+  <dd>  V5R21 CATCGMTopCreateSolidPyramid
+ Constructs an operator that creates a topological pyramid.
+ 
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFactory</tt>
+   <dd> The pointer to the factory of the geometry.
+ </dd>
+    <dt><tt> iData</tt>
+   <dd> The pointer to the data defining the software configuration and the journal. 
+ If the journal inside <tt>iData</tt> is <tt>NULL</tt>, it is not filled.
+ </dd>
+    <dt><tt> iPt1</tt>
+   <dd> The first point of the base.
+ </dd>
+    <dt><tt> iPt2</tt>
+   <dd> The second point of the base.
+ </dd>
+    <dt><tt> iPt3</tt>
+   <dd> The third point of the base.
+ </dd>
+    <dt><tt> iTop</tt>
+   <dd> The point defining the top of the pyramid.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  [out, IUnknown#Release] The pointer to the created operator. To be released with the <tt>Release</tt> method after use.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATICGMSolidPyramid.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGMOperatorsInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

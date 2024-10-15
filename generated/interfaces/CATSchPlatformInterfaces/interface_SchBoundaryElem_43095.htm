@@ -1,0 +1,131 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchBoundaryElem (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchBoundaryElem','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchBoundaryElem','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchBoundaryElem','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchBoundaryElem','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchBoundaryElem<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchBoundaryElem_43095','SchBoundaryElem','0');</script>
+<b><i>  Manage a boundary element of a schematic zone.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetBoundaryPoints"><b>GetBoundaryPoints</b></a>
+<dd>  Get the definition points (segments end points) of one side of the
+ boundary.
+ <dt>
+    <a href="#GetEndPoints"><b>GetEndPoints</b></a>
+<dd>  Get the end points (segments end points) of one side of the
+ boundary.
+ <dt>
+    <a href="#ListGRRZoneOwners"><b>ListGRRZoneOwners</b></a>
+<dd>  Get the list of owners of this zone.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetBoundaryPoints"><dt>
+
+<table><tr><td>o Sub <b>GetBoundaryPoints</b>(<td><script type="text/javascript"> activateLink('SchListOfDoubles','SchListOfDoubles')</script> <td><tt>oLDbPts</tt>)</table></dt>
+<dl>
+  <dd>
+ Get the definition points (segments end points) of one side of the
+ boundary. If the side is a curve, these points are the end points 
+ of the chords approximating the curve.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLDbPts</tt>
+   <dd>   A list of X-Y coordinates of the points. 2 doubles per point.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchBoundaryElem
+ Dim objArg1 As SchListOfDoubles
+  ...
+ objThisIntf.<font color="red">GetBoundaryPoints</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+<a name="GetEndPoints"><dt>
+
+<table><tr><td>o Sub <b>GetEndPoints</b>(<td><script type="text/javascript"> activateLink('SchListOfDoubles','SchListOfDoubles')</script> <td><tt>oLDb4Pts</tt>)</table></dt>
+<dl>
+  <dd>
+ Get the end points (segments end points) of one side of the
+ boundary.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLDb4Pts</tt>
+   <dd>   An array of 4 doubles.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchBoundaryElem
+ Dim objArg1 As SchListOfDoubles
+  ...
+ objThisIntf.<font color="red">GetEndPoints</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+<a name="ListGRRZoneOwners"><dt>
+
+<table><tr><td>o Func <b>ListGRRZoneOwners</b>(<td>) As <script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> </table></dt>
+<dl>
+  <dd>
+ Get the list of owners of this zone.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLGRRZoneOwners</tt>
+   <dd>   A list of GRRZone which has included this boundary element.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchBoundaryElem
+ Dim objArg1 As SchListOfObjects
+  ...
+ Set objArg1 = objThisIntf.<font color="red">ListGRRZoneOwners</font>
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

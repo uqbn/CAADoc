@@ -1,0 +1,77 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATInstantCollabDesignCAAItf Interface CATIColInvariantId</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATInstantCollabDesignCAAItf.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIColInvariantId','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIColInvariantId','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIColInvariantId','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIColInvariantId','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATInstantCollabDesignCAAItf Interface CATIColInvariantId</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIColInvariantId_54512','CATIColInvariantId','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATIColInvariantId</b>
+</p>
+<p>
+<b><i>	Interface to be implemented by the objects which are to be invariant or have an invariant id along V5 session<br>
+	<u>Example :</u>
+	<li>reference planes : they have always the same id and the features are invariant</li>
+	<li>parameters node : it has always the same id but the feature is not invariant</li></i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetInvariantId(CATUuid&amp;)"><b>GetInvariantId</b></a>(CATUuid&amp;)
+<dd> 	Get an invariant Id for that feature
+ <dt> o 
+    <a href="#IsAnInvariantFeature()"><b>IsAnInvariantFeature</b></a>()
+<dd> 	Is the feature always the same along V5 Session ?
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetInvariantId"></a><a name="GetInvariantId(CATUuid&amp;)"></a> <dt> o <b>GetInvariantId</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetInvariantId</b>(<td><script type="text/javascript"> activateLink('CATUuid','CATUuid&amp;')</script> <td><tt>oUUID</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+	Get an invariant Id for that feature
+</dl>
+<a name="IsAnInvariantFeature"></a><a name="IsAnInvariantFeature()"></a> <dt> o <b>IsAnInvariantFeature</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>IsAnInvariantFeature</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+	Is the feature always the same along V5 Session ?
+</dl>
+<hr>
+ This object is included in the file: <b>CATIColInvariantId.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATInstantCollabDesignItf</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

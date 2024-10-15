@@ -1,0 +1,208 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces AnalysisSets (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('AnalysisSets','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisSets','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('AnalysisSets','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisSets','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>AnalysisSets<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_AnalysisSets_32714','AnalysisSets','0');</script>
+<b><i>   The collection of analysis sets.</i></b><br>
+
+ <p><hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Add"><b>Add</b></a>
+<dd>  Creates a new analysis set and adds it to the analysis sets collection.
+ <dt>
+    <a href="#AddExistingSet"><b>AddExistingSet</b></a>
+<dd>  Adds an existing analysis set to the analysis sets collection.
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns an analysis set using its index or its name from the analysis sets collection.
+ <dt>
+    <a href="#ItemByType"><b>ItemByType</b></a>
+<dd>  Returns an analysis set using its type from the analysis sets collection.
+ <dt>
+    <a href="#Remove"><b>Remove</b></a>
+<dd>  Removes a set using its index or its name from the set collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Add"><dt>
+
+<table><tr><td>o Func <b>Add</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATAnalysisSetType','CATAnalysisSetType')</script> <td><tt>iSetType</tt>) As <script type="text/javascript"> activateLink('AnalysisSet','AnalysisSet')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new analysis set and adds it to the analysis sets collection.<br>
+ The analysis set will be aggregated on the Analysis Model
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iType</tt>
+   <dd> The type of the set to create.
+ </dd>
+    <dt><tt> iSetType</tt>
+   <dd> The category of the set for update.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The created Analysis Set
+ 
+  <dt> <b>Example:</b> 
+  <dd>  This example create <tt>ThisAnalysisSet</tt> in the <tt>analysisSets</tt>analysis <br>
+ sets collection. The set to create is supposed to be a load set defined as an input of <br>
+ the case for the update.
+ <pre>
+ Dim ThisAnalysisSet As AnalysisSet
+ Set ThisAnalysisSet = analysisSets.Add("LoadSet", 0)
+ </pre>
+</dl>
+</dl>
+<a name="AddExistingSet"><dt>
+
+<table><tr><td>o Sub <b>AddExistingSet</b>(<td><script type="text/javascript"> activateLink('AnalysisSet','AnalysisSet')</script> <td><tt>iSet</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATAnalysisSetType','CATAnalysisSetType')</script> <td><tt>iSetType</tt>)</table></dt>
+<dl>
+  <dd>
+ Adds an existing analysis set to the analysis sets collection.<br>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSet</tt>
+   <dd> The Existing Analysis Set.
+ </dd>
+    <dt><tt> iSetType</tt>
+   <dd> The category of the set for update.
+
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  This example adds <tt>ThisAnalysisSet</tt> in the <tt>analysisSets</tt>analysis <br>
+ sets collection. The set to add is supposed to be a restrain set defined as an input of <br>
+ the case for the update.
+ <pre>
+ Dim ThisAnalysisSet As AnalysisSet
+ ...
+ analysisSets.AddExistingSet(ThisAnalysisSet, 0)
+ </pre>
+</dl>
+</dl>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATAnalysisSetSearchType','CATAnalysisSetSearchType')</script> <td><tt>iSerachType</tt>) As <script type="text/javascript"> activateLink('AnalysisSet','AnalysisSet')</script> </table></dt>
+<dl>
+  <dd>
+ Returns an analysis set using its index or its name from the analysis sets collection. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the analysis set to retrieve from
+   the collection of analysis sets.
+   As a numerics, this index is the rank of the analysis set
+   in the collection.
+   The index of the first analysis set in the collection is 1, and
+   the index of the last analysis set is Count.
+   As a string, it is the name you assigned to the analysis set using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property or when creating it using   the 
+<a href="#" onClick="openLink('','Add');return false">Add</a> method. 
+    <dt><tt> iSerachType</tt>
+   <dd>   The criterion of searching the set. </dd>
+<a href="#" onClick="openLink('CATAnalysisSetType','CATAnalysisSetSearchType');return false">CATAnalysisSetType.CATAnalysisSetSearchType</a> 
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved analysis set
+ 
+  <dt> <b>Example:</b> 
+  <dd>  This example retrieves in <tt>ThisAnalysisSet</tt> the third analysis set,
+ and in <tt>ThatAnalysisSet</tt> the analysis set named
+ <tt>MySet</tt> in the analysis set collection of an Analysis Case of analysis model.
+ <pre>
+ Dim ThisAnalysisSet As AnalysisSet
+ Set ThisAnalysisSet = analysisCase.AnalysisSets.<font color="red">Item</font>(3,1)
+ Dim ThatAnalysisSet As AnalysisSet
+ Set ThatAnalysisSet = analysisCase.AnalysisSets.<font color="red">Item</font>("MySet")
+ </pre>
+</dl>
+</dl>
+<a name="ItemByType"><dt>
+
+<table><tr><td>o Func <b>ItemByType</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iType</tt>) As <script type="text/javascript"> activateLink('AnalysisSet','AnalysisSet')</script> </table></dt>
+<dl>
+  <dd>
+ Returns an analysis set using its type from the analysis sets collection. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iType</tt>
+   <dd>   The type of the set required for the search
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved analysis set
+ 
+  <dt> <b>Example:</b> 
+  <dd>  This example retrieves in <tt>ThisAnalysisSet</tt> the "LoadSet" analysis set 
+ in the analysis set collection.
+ <pre>
+ Dim ThisAnalysisSet As AnalysisSet
+ Set ThisAnalysisSet = analysisCase.AnalysisSets.<font color="red">ItemByType</font>("LoadSet")
+ </pre>
+</dl>
+</dl>
+<a name="Remove"><dt>
+
+<table><tr><td>o Sub <b>Remove</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes a set using its index or its name from the set collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the set to retrieve from
+   the collection of sets.
+   As a numeric, this index is the rank of the set
+   in the collection. The index of the first set in the collection is 1,
+   and the index of the last set is Count.
+   As a string, it is the name you assigned to the set using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property.
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

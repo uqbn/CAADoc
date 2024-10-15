@@ -1,0 +1,137 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>MecModInterfaces Sketches (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../MecModInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Sketches','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Sketches','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Sketches','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Sketches','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Sketches<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Sketches_19049','Sketches','0');</script>
+<b><i> The body's collection of sketches not yet used by any shape.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Add"><b>Add</b></a>
+<dd>  Creates a new sketch and adds it to the sketch collection.
+ <dt>
+    <a href="#GetBoundary"><b>GetBoundary</b></a>
+<dd>  Returns a boundary using its label.
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns a sketch using its index or its name from the Sketches
+ collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Add"><dt>
+
+<table><tr><td>o Func <b>Add</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iPlane</tt>) As <script type="text/javascript"> activateLink('Sketch','Sketch')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new sketch and adds it to the sketch collection.
+ The sketch creation implies to specify a supporting plane.
+ Once created, the sketch exists, but is empty.
+ You must use the 
+<a href="#" onClick="openLink('Sketch','OpenEdition');return false">Sketch.OpenEdition</a> method to begin to edit it. 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPlane</tt>
+   <dd>   The sketch supporting plane<br>
+ The following </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object is supported:  
+<a href="#" onClick="openLink('PlanarFace','');return false">PlanarFace</a>. 
+  <dt> <b>Returns:</b> 
+  <dd>  oNewSketch   The created sketch
+ <! @sample >
+ <dt><b>Example:</b>
+ <dd>
+ This example creates the <tt>newSketch</tt> sketch on the XY plane
+ of the <tt>myPart</tt> part:
+ <pre>
+ Set XYPlane = myPart.OriginElements.PlaneXY()
+ Set newSketch = myPart.Sketches.<font color="red">Add</font>(XYPlane)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="GetBoundary"><dt>
+
+<table><tr><td>o Func <b>GetBoundary</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iLabel</tt>) As <script type="text/javascript"> activateLink('Boundary','Boundary')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a boundary using its label.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLabel</tt>
+   <dd>   Identification of the </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object.   See 
+<a href="#" onClick="openLink('Reference','DisplayName');return false">Reference.DisplayName</a>. 
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved boundary
+</dl>
+</dl>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('Sketch','Sketch')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a sketch using its index or its name from the Sketches
+ collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the sketch to retrieve from
+   the collection of sketches.
+   As a numerics, this index is the rank of the sketch
+   in the collection.
+   The index of the first sketch in the collection is 1, and
+   the index of the last sketch is Count.
+   As a string, it is the name you assigned to the sketch using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property. 
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved sketch <! @sample >
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves the last item in the collection sketches.
+ <pre>
+ Set lastSketch = sketchList.<font color="red">Item</font>(sketchList.Count)
+ </pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

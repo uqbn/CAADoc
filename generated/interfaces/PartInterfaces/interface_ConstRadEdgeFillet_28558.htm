@@ -1,0 +1,148 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PartInterfaces ConstRadEdgeFillet (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../PartInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('ConstRadEdgeFillet','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ConstRadEdgeFillet','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('ConstRadEdgeFillet','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ConstRadEdgeFillet','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ConstRadEdgeFillet<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_ConstRadEdgeFillet_28558','ConstRadEdgeFillet','0');</script>
+<b><i> Represents the edge fillet shape with a constant radius.</i></b><br>
+
+ The resulting shape is made up of
+ edge fillets built with a constant radius.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#ObjectsToFillet"><b>ObjectsToFillet</b></a>
+<dd>  Returns the collection of reference elements to be filleted.
+ <dt>
+    <a href="#Radius"><b>Radius</b></a>
+<dd>  Returns the edge fillet constant radius.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddObjectToFillet"><b>AddObjectToFillet</b></a>
+<dd>  Adds a new sub-element to be filleted.
+ <dt>
+    <a href="#WithdrawObjectToFillet"><b>WithdrawObjectToFillet</b></a>
+<dd>  Withdraws a sub-element from those to be filleted.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="ObjectsToFillet"><dt>
+
+<table><tr><td>o Property <b>ObjectsToFillet</b>(<td>) As <script type="text/javascript"> activateLink('References','References')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the collection of reference elements to be filleted.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>elements</tt>
+ the reference elements to be filleted of the
+ constant radius edge fillet <tt>firstCstEdgeFillet</tt>:
+ <pre>
+ Set elements = firstCstEdgeFillet.<font color="red">ObjectsToFillet</font>
+ </pre>
+ </dl>
+</dl>
+<a name="Radius"><dt>
+
+<table><tr><td>o Property <b>Radius</b>(<td>) As <script type="text/javascript"> activateLink('Length','Length')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the edge fillet constant radius.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>radius</tt>
+ the radius of the
+ constant radius edge fillet <tt>firstCstEdgeFillet</tt>:
+ <pre>
+ Set radius = firstCstEdgeFillet.<font color="red">Radius</font>
+ </pre>
+ </dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddObjectToFillet"><dt>
+
+<table><tr><td>o Sub <b>AddObjectToFillet</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iObjectToFillet</tt>)</table></dt>
+<dl>
+  <dd>
+ Adds a new sub-element to be filleted.
+ This sub-element is usually an edge.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iObjectToFillet</tt>
+   <dd>   The sub-element to be filleted<br>
+ The following </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object is supported:  
+<a href="#" onClick="openLink('TriDimFeatEdge','');return false">TriDimFeatEdge</a>. <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example adds a new geometrical element
+ <tt>element</tt>
+ to be filleted by the constant radius edge fillet
+ <tt>firstCstEdgeFillet</tt>:
+ <pre>
+ firstCstEdgeFillet.<font color="red">AddObjectToFillet</font>(element)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="WithdrawObjectToFillet"><dt>
+
+<table><tr><td>o Sub <b>WithdrawObjectToFillet</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iObjectToWithdraw</tt>)</table></dt>
+<dl>
+  <dd>
+ Withdraws a sub-element from those to be filleted.
+ This sub-element is usually an edge.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iObjectToWithdraw</tt>
+   <dd>   The sub-element to withdraw<br>
+ The following </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object is supported:  
+<a href="#" onClick="openLink('TriDimFeatEdge','');return false">TriDimFeatEdge</a>. <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example withdraws the geometrical element
+ <tt>element</tt> from those to be
+ filleted by the constant radius edge fillet <tt>firstCstEdgeFillet</tt>:
+ <pre>
+ firstCstEdgeFillet.<font color="red">WithdrawObjectToFillet</font>(element)
+ </pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

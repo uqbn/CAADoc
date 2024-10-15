@@ -1,0 +1,126 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>XMLParser Interface CATISAXXMLFilter</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../XMLParser.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISAXXMLFilter','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISAXXMLFilter','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISAXXMLFilter','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISAXXMLFilter','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>XMLParser Interface CATISAXXMLFilter</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISAXXMLFilter_18766','CATISAXXMLFilter','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATISAXXMLFilter</b>
+</p>
+<p>
+<b><i> Interface for an XML filter.</i></b><br>
+
+
+ <p>An XML filter is like an XML reader, except that it obtains its
+ events from another XML reader rather than a primary source like
+ an XML document or database.  Filters can modify a stream of
+ events as they pass on to the final application.</p>
+
+ <p>The <a href="#" onClick="openLink('CATSAXDefaultXMLFilter','');return false">CATSAXDefaultXMLFilter</a> helper class provides a convenient base for creating SAX2 filters, by passing on all 
+<a href="#" onClick="openLink('CATISAXEntityResolver','');return false">CATISAXEntityResolver</a>,  
+<a href="#" onClick="openLink('CATISAXDTDHandler','');return false">CATISAXDTDHandler</a>, 
+<a href="#" onClick="openLink('CATISAXContentHandler','');return false">CATISAXContentHandler</a> and 
+<a href="#" onClick="openLink('CATISAXErrorHandler','');return false">CATISAXErrorHandler</a> events automatically.</p>
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATISAXXMLReader','');return false">CATISAXXMLReader</a>, <a href="#" onClick="openLink('CATSAXDefaultXMLFilter','');return false">CATSAXDefaultXMLFilter</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetParent(CATISAXXMLReader_var&amp;)"><b>GetParent</b></a>(CATISAXXMLReader_var&amp;)
+<dd>  Retrieves the parent reader.
+ <dt> o 
+    <a href="#SetParent(CATISAXXMLReader_var&amp;)"><b>SetParent</b></a>(CATISAXXMLReader_var&amp;)
+<dd>  Sets the parent reader.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetParent"></a><a name="GetParent(CATISAXXMLReader_var&amp;)"></a> <dt> o <b>GetParent</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetParent</b>(<td><script type="text/javascript"> activateLink('CATISAXXMLReader_var','CATISAXXMLReader_var&amp;')</script> <td><tt>oParent</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the parent reader.
+
+ <p>This method allows the application to query the parent reader (which may be another filter). 
+ It is generally a bad idea to perform any operations on the parent reader directly: 
+ they should all pass through this filter.</p>
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oParent</tt>
+   <dd> The parent reader, or <tt>NULL_var</tt> if none has been set.
+
+ </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('','SetParent');return false">SetParent</a>
+</dl>
+</dl>
+<a name="SetParent"></a><a name="SetParent(CATISAXXMLReader_var&amp;)"></a> <dt> o <b>SetParent</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetParent</b>(<td> const <script type="text/javascript"> activateLink('CATISAXXMLReader_var','CATISAXXMLReader_var&amp;')</script> <td><tt>iParent</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the parent reader.
+
+ <p>This method allows the application to link the filter to a parent reader (which may be another filter). 
+ The argument may not be <tt>NULL_var</tt>.</p>
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iParent</tt>
+   <dd> The parent reader.
+
+ </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('','SetParent');return false">SetParent</a>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISAXXMLFilter.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATXMLParserItf</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

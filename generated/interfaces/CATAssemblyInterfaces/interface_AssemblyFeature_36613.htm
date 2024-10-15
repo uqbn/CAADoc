@@ -1,0 +1,150 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAssemblyInterfaces AssemblyFeature (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATAssemblyInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('AssemblyFeature','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AssemblyFeature','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('AssemblyFeature','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AssemblyFeature','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>AssemblyFeature<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_AssemblyFeature_36613','AssemblyFeature','0');</script>
+<b><i> Represents the AssemblyFeature object.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddAffectedComponent"><b>AddAffectedComponent</b></a>
+<dd>  Adds a component to the affected component list.
+ <dt>
+    <a href="#AffectedComponentsCount"><b>AffectedComponentsCount</b></a>
+<dd>  Returns the affected component list count.
+ <dt>
+    <a href="#ListAffectedComponents"><b>ListAffectedComponents</b></a>
+<dd>  Retrieves the affected component list.
+ <dt>
+    <a href="#RemoveAffectedComponent"><b>RemoveAffectedComponent</b></a>
+<dd>  Removes a component from the affected component list.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddAffectedComponent"><dt>
+
+<table><tr><td>o Sub <b>AddAffectedComponent</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iComponent</tt>)</table></dt>
+<dl>
+  <dd>
+ Adds a component to the affected component list.
+ An update of the aggregating Product is necessary 
+ to apply the Assembly Feature to this component.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt>  iComponent</tt>
+   <dd>   The component to affect
+ <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example adds the component <tt>ProdToAffect</tt> to 
+ the affected component list of the AssemblyFeature <tt>assemblyFeat</tt>.
+ <pre>
+ assemblyFeat.<font color="red">AddAffectedComponent</font>( ProdToAffect )
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="AffectedComponentsCount"><dt>
+
+<table><tr><td>o Func <b>AffectedComponentsCount</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the affected component list count.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example retrieves the affected component list count of 
+ the AssemblyFeature <tt>assemblyFeat</tt> in <tt>affectedListSize</tt>.
+ <pre>
+ affectedListSize = assemblyFeat.<font color="red">AffectedComponentsCount</font>
+ </pre>
+ </dl>
+</dl>
+<a name="ListAffectedComponents"><dt>
+
+<table><tr><td>o Sub <b>ListAffectedComponents</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oListOfComponents</tt>)</table></dt>
+<dl>
+  <dd>
+ Retrieves the affected component list.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oListOfComponents</tt>
+   <dd>   The retrieved list.
+   <br>
+   The array must be previously initialized
+   using the </dd>
+</dl>
+<a href="#" onClick="openLink('','AffectedComponentsCount');return false">AffectedComponentsCount</a> method. <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example retrieves the affected component list of 
+ the AssemblyFeature <tt>assemblyFeat</tt> in <tt>affectedList</tt>.
+ <pre>
+ affectedListSize = assemblyFeat.AffectedComponentsCount
+ Dim affectedList(affectedListSize-1) 
+ assemblyFeat.<font color="red">ListAffectedComponents</font>(affectedList)
+ </pre>
+</dl>
+</dl>
+<a name="RemoveAffectedComponent"><dt>
+
+<table><tr><td>o Sub <b>RemoveAffectedComponent</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iComponent</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes a component from the affected component list.
+ An update of the aggregating Product is necessary
+ to remove the generated feature from this component.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt>  iComponent</tt>
+   <dd>   The affected component to remove
+ <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example removes the component <tt>ProdToRemove</tt> from 
+ the affected component list of the AssemblyFeature <tt>assemblyFeat</tt>.
+ <pre>
+ assemblyFeat.<font color="red">RemoveAffectedComponent</font>( ProdToRemove )
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

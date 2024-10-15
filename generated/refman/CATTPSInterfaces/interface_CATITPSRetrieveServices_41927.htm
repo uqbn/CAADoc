@@ -1,0 +1,82 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATTPSInterfaces Interface CATITPSRetrieveServices</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATTPSInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATITPSRetrieveServices','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATITPSRetrieveServices','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATITPSRetrieveServices','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATITPSRetrieveServices','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATTPSInterfaces Interface CATITPSRetrieveServices</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATITPSRetrieveServices_41927','CATITPSRetrieveServices','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATITPSRetrieveServices</b>
+</p>
+<p>
+<b><i> Interface for services related to retrieving TPSs.</i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#RetrieveTPSsFromPath(CATPathElement*,CATIProduct*,CATITPSList**)"><b>RetrieveTPSsFromPath</b></a>(CATPathElement*,CATIProduct*,CATITPSList**)
+<dd>  Retrieves all the TPSs that are linked to a geometry selected.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="RetrieveTPSsFromPath"></a><a name="RetrieveTPSsFromPath(CATPathElement*,CATIProduct*,CATITPSList**)"></a> <dt> o <b>RetrieveTPSsFromPath</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RetrieveTPSsFromPath</b>(<td> const <script type="text/javascript"> activateLink('CATPathElement','CATPathElement*')</script> <td><tt>ipPath</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATIProduct','CATIProduct*')</script> <td><tt>ipiProd</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATITPSList','CATITPSList**')</script> <td><tt>opiTPSList</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves all the TPSs that are linked to a geometry selected.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ipPath</tt>
+   <dd>     Selection Path.
+   </dd>
+    <dt><tt> ipiProd</tt>
+   <dd>     A product that appears in the path element ipPath.
+     Used to limits research of TPSs to the level of product structure
+     defined by ipiProd.
+     If NULL search of TPSs is done at all level of the product struture.
+   </dd>
+    <dt><tt> opiTPSList</tt>
+   <dd>     List of TPSs linked to selection path.
+     Warning: the TPSs can belongs to different tolerancing Set.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATITPSRetrieveServices.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

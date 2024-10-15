@@ -1,0 +1,103 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATTPSInterfaces Interface CATITPS</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATTPSInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATITPS','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATITPS','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATITPS','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATITPS','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATTPSInterfaces Interface CATITPS</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATITPS_17497','CATITPS','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATITPS</b>
+</p>
+<p>
+<b><i> Interface for the Technological Product Specification (TPS) objects.</i></b><br>
+
+ Leaf entity in the Design Pattern Composite.
+ TPS modeler enables definition of specification related to surfaces.
+ The link with the topologic/geometric element is defined thanks to TTRS.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATITTRS','');return false">CATITTRS</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetSet(CATITPSSet**)"><b>GetSet</b></a>(CATITPSSet**)
+<dd>  Retrieves tolerancing set the TPS belongs too.
+ <dt> o 
+    <a href="#GetTTRS(CATITTRSList**)"><b>GetTTRS</b></a>(CATITTRSList**)
+<dd>  Retrieves a CATITTRSList to read a list of features
+ upon which is applied the current specification.
+ <dt> o 
+    <a href="#SetTTRS(CATITTRSList*)"><b>SetTTRS</b></a>(CATITTRSList*)
+<dd>  Sets the TTRS list associated to the Specification.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetSet"></a><a name="GetSet(CATITPSSet**)"></a> <dt> o <b>GetSet</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetSet</b>(<td><script type="text/javascript"> activateLink('CATITPSSet','CATITPSSet**')</script> <td><tt>oSet</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves tolerancing set the TPS belongs too.
+</dl>
+<a name="GetTTRS"></a><a name="GetTTRS(CATITTRSList**)"></a> <dt> o <b>GetTTRS</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetTTRS</b>(<td><script type="text/javascript"> activateLink('CATITTRSList','CATITTRSList**')</script> <td><tt>oTTRS</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves a CATITTRSList to read a list of features
+ upon which is applied the current specification.
+
+ Note that this list may have a null count; in such a case,
+ we have to consider this specification as a TPS applied to
+ the whole part.
+
+ Result of this call will mostly be a singleton, but it can
+ also happen situations where the list size is higher than 1;
+ this way, we have defined a specification related to
+ several surfaces (regarless the order in which the surfaces
+ are stored)
+</dl>
+<a name="SetTTRS"></a><a name="SetTTRS(CATITTRSList*)"></a> <dt> o <b>SetTTRS</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetTTRS</b>(<td> const <script type="text/javascript"> activateLink('CATITTRSList','CATITTRSList*')</script> <td><tt>iTTRS</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the TTRS list associated to the Specification.
+</dl>
+<hr>
+ This object is included in the file: <b>CATITPS.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

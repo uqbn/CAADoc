@@ -1,0 +1,113 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ManufacturingInterfaces Interface CATIMfgTool</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ManufacturingInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMfgTool','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgTool','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMfgTool','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgTool','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ManufacturingInterfaces Interface CATIMfgTool</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMfgTool_35655','CATIMfgTool','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIMfgTool</b>
+</p>
+<p>
+<b><i>    Interface dedicated to tool object management.</i></b><br>
+
+ <b>Role</b>: This interface offers services to manage the tools parameters.<br>
+ Common attributes are declared in CATMfgToolConstant.<br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#ComputeToolNumber(int&amp;)"><b>ComputeToolNumber</b></a>(int&amp;)
+<dd>  Computes tool number for the tool object.
+ <dt> o 
+    <a href="#GetAPTParameters(double&amp;,double&amp;,double&amp;,double&amp;,double&amp;,double&amp;,double&amp;)"><b>GetAPTParameters</b></a>(double&amp;,double&amp;,double&amp;,double&amp;,double&amp;,double&amp;,double&amp;)
+<dd>  Retrieves the tool APT parameters.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="ComputeToolNumber"></a><a name="ComputeToolNumber(int&amp;)"></a> <dt> o <b>ComputeToolNumber</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ComputeToolNumber</b>(<td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>oNumber</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Computes tool number for the tool object. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oNumber</tt>
+   <dd>     The computed tool number</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetAPTParameters"></a><a name="GetAPTParameters(double&amp;,double&amp;,double&amp;,double&amp;,double&amp;,double&amp;,double&amp;)"></a> <dt> o <b>GetAPTParameters</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetAPTParameters</b>(<td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oD</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oR</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oE</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oF</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oA</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oB</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oH</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the tool APT parameters.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oD</tt>
+   <dd>     The cutter diameter at tool tip point 
+ </dd>
+    <dt><tt> oR</tt>
+   <dd>     The cutter radius 
+ </dd>
+    <dt><tt> oE</tt>
+   <dd>     The horizontal distance between radius center point and center of cutter 
+ </dd>
+    <dt><tt> oF</tt>
+   <dd>     The vertical distance between radius center point and center of cutter
+ </dd>
+    <dt><tt> oA</tt>
+   <dd>     The angle of cutter at tip point 
+ </dd>
+    <dt><tt> oB</tt>
+   <dd>     The angle of cutter
+ </dd>
+    <dt><tt> oh</tt>
+   <dd>     The cutter height</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMfgTool.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>MfgItfEnv</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

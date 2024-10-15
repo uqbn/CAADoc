@@ -1,0 +1,157 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>InteractiveInterfaces Interface CATIIniSearchNameCriterion</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../InteractiveInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIIniSearchNameCriterion','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIIniSearchNameCriterion','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIIniSearchNameCriterion','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIIniSearchNameCriterion','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>InteractiveInterfaces Interface CATIIniSearchNameCriterion</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIIniSearchNameCriterion_58885','CATIIniSearchNameCriterion','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIIniSearchNameCriterion</b>
+</p>
+<p>
+<b><i> Interface to define a name-based search criterion.</i></b><br>
+ 
+ <b>Role:</b> This interface enables the complete definition of
+ a search criterion on names as displayed in the Edit/Properties command, 
+ and supported by the <a href="#" onClick="openLink('CATIAlias','');return false">CATIAlias</a> interface.
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#SetParameters(CATUnicodeString&amp;,CATBoolean,CATIniSearchEnumeration::Comparison)"><b>SetParameters</b></a>(CATUnicodeString&amp;,CATBoolean,CATIniSearchEnumeration::Comparison)
+<dd>  Sets all the parameters of the criterion.
+ <dt> o 
+    <a href="#SetParameters(CATUnicodeString&amp;,CATBoolean,CATBoolean,CATIniSearchEnumeration::Comparison)"><b>SetParameters</b></a>(CATUnicodeString&amp;,CATBoolean,CATBoolean,CATIniSearchEnumeration::Comparison)
+<dd>  Sets all the parameters of the criterion.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="SetParameters"></a><a name="SetParameters(CATUnicodeString&amp;,CATBoolean,CATIniSearchEnumeration::Comparison)"></a> <dt> o <b>SetParameters</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetParameters</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script> <td><tt>iCaseSensitivity</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIniSearchEnumeration::Comparison','CATIniSearchEnumeration::Comparison')</script> <td><tt>iOperatingSign</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets all the parameters of the criterion.
+ <br><b>Role:</b> This method completely defines all the 
+ parameters of the name-based search criterion.
+ <br><br>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iName</tt>
+   <dd>    The name that is being looked for. 
+    The </dd>
+<a href="#" onClick="openLink('CATIIniSearchServices','GetWildCardCharacter');return false">CATIIniSearchServices.GetWildCardCharacter</a> method gives the wild     card character that replaces from 0 to n characters. If this character
+    is a character by itself, enclose it within single quotes. 
+    If the quote character is a character by itself, double it.
+    The easiest is to use the 
+<a href="#" onClick="openLink('CATIIniSearchServices','CorrectString');return false">CATIIniSearchServices.CorrectString</a>    service.
+    <br><b>Example:</b><br> If you are looking for objects that are called
+    <tt>You're a *</tt>, the string passed should be <tt>You''re a '*'</tt>.
+ 
+    <dt><tt> iCaseSensitivity</tt>
+   <dd>    If the case of iName is to be respected, the value must be TRUE.
+    Otherwise, it must be set to FALSE.
+    <br><b>Example:</b><br> If you are looking for objects whose name contains the 
+    <tt>Shell</tt> string, without objects whose name contains the <tt>shell</tt>
+    string, the value should be set to TRUE.
+ </dd>
+    <dt><tt> iOperatingSign</tt>
+   <dd>    The value corresponding to the desired operating sign.
+    <br>The only authorized values are Equal and Different.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>      <ul><li>E_FAIL if the criterion is not correctly set up: usually if iName is a 
+    0-length CATUnicodeString, or if the iOperatingSign is not correct.</li>
+    <li>S_OK otherwise.</li></ul>
+</dl>
+</dl>
+<a name="SetParameters"></a><a name="SetParameters(CATUnicodeString&amp;,CATBoolean,CATBoolean,CATIniSearchEnumeration::Comparison)"></a> <dt> o <b>SetParameters</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetParameters</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script> <td><tt>iCaseSensitivity</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script> <td><tt>iCodeSensitivity</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIniSearchEnumeration::Comparison','CATIniSearchEnumeration::Comparison')</script> <td><tt>iOperatingSign</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets all the parameters of the criterion.
+ <br><b>Role:</b> This method completely defines all the 
+ parameters of the name-based search criterion.
+ <br><br>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iName</tt>
+   <dd>    The name that is being looked for. 
+    The </dd>
+<a href="#" onClick="openLink('CATIIniSearchServices','GetWildCardCharacter');return false">CATIIniSearchServices.GetWildCardCharacter</a> method gives the wild     card character that replaces from 0 to n characters. If this character
+    is a character by itself, enclose it within single quotes. 
+    If the quote character is a character by itself, double it.
+    The easiest is to use the 
+<a href="#" onClick="openLink('CATIIniSearchServices','CorrectString');return false">CATIIniSearchServices.CorrectString</a>    service.
+    <br><b>Example:</b><br> If you are looking for objects that are called
+    <tt>You're a *</tt>, the string passed should be <tt>You''re a '*'</tt>.
+ 
+    <dt><tt> iCaseSensitivity</tt>
+   <dd>    If the case of iName is to be respected, the value must be TRUE.
+    Otherwise, it must be set to FALSE.
+    <br><b>Example:</b><br> If you are looking for objects whose name contains the 
+    <tt>Shell</tt> string, without objects whose name contains the <tt>shell</tt>
+    string, the value should be set to TRUE.
+ </dd>
+    <dt><tt> iCodeSensitivity</tt>
+   <dd>    Some languages (Japanese for example) use two different unicode values for the
+    same character depending on whether the user types it using Double-byte
+    or Single-byte.
+    If such characters must be considered as different, the value must be TRUE.
+    Otherwise, it must be set to FALSE.
+ </dd>
+    <dt><tt> iOperatingSign</tt>
+   <dd>    The value corresponding to the desired operating sign.
+    <br>The only authorized values are Equal and Different.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>      <ul><li>E_FAIL if the criterion is not correctly set up: usually if iName is a 
+    0-length CATUnicodeString, or if the iOperatingSign is not correct.</li>
+    <li>S_OK otherwise.</li></ul>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIIniSearchNameCriterion.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATInteractiveInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

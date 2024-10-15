@@ -1,0 +1,112 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PLMSecuritySSOBase Interface PLMISecSSOCLogContentProvider</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../PLMSecuritySSOBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('PLMISecSSOCLogContentProvider','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PLMISecSSOCLogContentProvider','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('PLMISecSSOCLogContentProvider','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PLMISecSSOCLogContentProvider','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PLMSecuritySSOBase Interface PLMISecSSOCLogContentProvider</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_PLMISecSSOCLogContentProvider_59831','PLMISecSSOCLogContentProvider','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>PLMISecSSOCLogContentProvider</b>
+</p>
+<p>
+<b><i> This interface allows to customize
+ the content of the audit log on authentication events wihtin a c++ process.</i></b><br>
+
+
+ It must be reimplemented on the SSOCLogContentProvider late type as shown bellow:
+
+ SSOCLogContentProvider	PLMISecSSOCLogContentProvider	libName
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#onAuthenticationFailure(CATUnicodeString&amp;,CATUnicodeString&amp;)"><b>onAuthenticationFailure</b></a>(CATUnicodeString&amp;,CATUnicodeString&amp;)
+<dd>  Writes to the authentication audit log when autentication failed.
+ <dt> o 
+    <a href="#onAuthenticationSuccess(CATUnicodeString&amp;,CATUnicodeString&amp;)"><b>onAuthenticationSuccess</b></a>(CATUnicodeString&amp;,CATUnicodeString&amp;)
+<dd>  Writes to the authentication audit log when autentication is successful.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="onAuthenticationFailure"></a><a name="onAuthenticationFailure(CATUnicodeString&amp;,CATUnicodeString&amp;)"></a> <dt> o <b>onAuthenticationFailure</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>onAuthenticationFailure</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iUsername</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oLogContent</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Writes to the authentication audit log when autentication failed.
+ <br>This method is called whenever an autentication has failed.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iUsername</tt>
+   <dd>   The SSO username used to perform the authentication
+ </dd>
+    <dt><tt> oLogContent</tt>
+   <dd>   Authentication data to be logged
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    S_OK if the method succeeded,a nd E_FAIL otherwise
+</dl>
+</dl>
+<a name="onAuthenticationSuccess"></a><a name="onAuthenticationSuccess(CATUnicodeString&amp;,CATUnicodeString&amp;)"></a> <dt> o <b>onAuthenticationSuccess</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>onAuthenticationSuccess</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iUsername</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oLogContent</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Writes to the authentication audit log when autentication is successful.
+ <br>This method is called whenever an autentication has been performed succesfully.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iUsername</tt>
+   <dd>   The SSO username used to perform the authentication
+ </dd>
+    <dt><tt> oLogContent</tt>
+   <dd>   Authentication data to be logged
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    S_OK if the method succeeded,a nd E_FAIL otherwise
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>PLMISecSSOCLogContentProvider.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>PLMSecSSOBaseCpp</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

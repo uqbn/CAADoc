@@ -1,0 +1,137 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>MecModInterfaces FixTogethers (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../MecModInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('FixTogethers','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('FixTogethers','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('FixTogethers','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('FixTogethers','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>FixTogethers<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_FixTogethers_23185','FixTogethers','0');</script>
+<b><i> A collection of all the FixTogether objects contained in the product.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Add"><b>Add</b></a>
+<dd>  Creates a new FixTogether and adds it to the FixTogethers collection.
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns a FixTogether using its index or its name from the FixTogethers
+ collection.
+ <dt>
+    <a href="#Remove"><b>Remove</b></a>
+<dd>  Removes a FixTogether from the FixTogethers collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Add"><dt>
+
+<table><tr><td>o Func <b>Add</b>(<td>) As <script type="text/javascript"> activateLink('FixTogether','FixTogether')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new FixTogether and adds it to the FixTogethers collection.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The created FixTogether <! @sample >
+ <dt><b>Example:</b>
+ <dd>
+ The following example creates a FixTogether <tt>newFixTogether</tt>
+ in the FixTogether collection.
+ <pre>
+ Set newFixTogether = fixTogethers.<font color="red">Add</font>
+ </pre>
+</dl>
+</dl>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('FixTogether','FixTogether')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a FixTogether using its index or its name from the FixTogethers
+ collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the FixTogether to retrieve from
+   the collection of FixTogether.
+   As a numerics, this index is the rank of the FixTogether
+   in the collection.
+   The index of the first FixTogether in the collection is 1, and
+   the index of the last FixTogether is Count.
+   As a string, it is the name you assigned to the FixTogether using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property. 
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved FixTogether <dt><b>Example:</b>
+ <dd>
+ This example retrieves in <tt>thisFixTogether</tt> the fifth FixTogether
+ in the collection and in <tt>thatFixTogether</tt> the FixTogether
+ named <tt>MyFixTogether</tt> in the FixTogether collection of the <tt>product</tt>
+ product.
+ <pre>
+ Set fixTogetherColl = product.FixTogethers
+ Set thisFixTogether = fixTogetherColl.<font color="red">Item</font>(5)
+ Set thatFixTogether = fixTogetherColl.<font color="red">Item</font>("MyFixTogether")
+ </pre>
+</dl>
+</dl>
+<a name="Remove"><dt>
+
+<table><tr><td>o Sub <b>Remove</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes a FixTogether from the FixTogethers collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the FixTogether to remove from the FixTogethers
+   collection.
+   As a numerics, this index is the rank of the FixTogether
+   in the collection.
+   The index of the first FixTogether in the collection is 1, and
+   the index of the last FixTogether is Count.
+   As a string, it is the name you assigned to the FixTogether using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property. <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example removes the last FixTogether in the collection. 
+ <pre>
+ fixTogetherColl.<font color="red">Remove</font>(fixTogetherColl.Count)
+ </pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

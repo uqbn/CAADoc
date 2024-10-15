@@ -1,0 +1,126 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PartInterfaces ThickSurface (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../PartInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('ThickSurface','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ThickSurface','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('ThickSurface','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ThickSurface','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ThickSurface<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_ThickSurface_19952','ThickSurface','0');</script>
+<b><i> Represents the ThickSurface feature.</i></b><br>
+
+ It thicks surface using an offset element
+ (such as a surface or a skin) and two offset values
+ TopOffset and Botoffset.
+  TopOffset is the offset between the offset element and the
+  top skin of the feature. 
+  BotOffset is the offset between the offset element and the
+  bottom skin of the feature.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#BotOffset"><b>BotOffset</b></a>
+<dd>  Returns the value of the bottom offset.
+ <dt>
+    <a href="#OffsetSide"><b>OffsetSide</b></a>
+<dd>  Returns the offset direction (defines in regards of the normal
+ direction) .
+ <dt>
+    <a href="#TopOffset"><b>TopOffset</b></a>
+<dd>  Returns the value of the top offset.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#swap_OffsetSide"><b>swap_OffsetSide</b></a>
+<dd>  Swap the side of the offset.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="BotOffset"><dt>
+
+<table><tr><td>o Property <b>BotOffset</b>(<td>) As <script type="text/javascript"> activateLink('Length','Length')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the value of the bottom offset.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>botoffset</tt> the bottom 
+ offset of the thicksurface <tt>firstThickSurface</tt>:
+ <pre>
+ Set botoffset = firstThickSurface.<font color="red">BotOffset</font>
+ </pre>
+ </dl>
+</dl>
+<a name="OffsetSide"><dt>
+
+<table><tr><td>o Property <b>OffsetSide</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the offset direction (defines in regards of the normal
+ direction) .
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>offsetside</tt> the side
+ of the ThickSurface <tt>firstThickSurface</tt>:
+ <pre>
+ Set offsetside = firstThickSurface.<font color="red">OffsetSide</font>
+ </pre>
+ </dl>
+</dl>
+<a name="TopOffset"><dt>
+
+<table><tr><td>o Property <b>TopOffset</b>(<td>) As <script type="text/javascript"> activateLink('Length','Length')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the value of the top offset.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>topoffset</tt> the top offset
+ of the ThickSurface <tt>firstThickSurface</tt>:
+ <pre>
+ Set topoffset = firstThickSurface.<font color="red">TopOffset</font>
+ </pre>
+ </dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="swap_OffsetSide"><dt>
+
+<table><tr><td>o Sub <b>swap_OffsetSide</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Swap the side of the offset.
+ <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example changes the side of the 
+ ThickSurface <tt>firstThickSurface</tt>:
+ <pre>
+ call firstThickSurface.<font color="red">swap_OffsetSide</font>()
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,203 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchGRRFactory (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchGRRFactory','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchGRRFactory','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchGRRFactory','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchGRRFactory','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchGRRFactory<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchGRRFactory_40304','SchGRRFactory','0');</script>
+<b><i>  Factory to create graphical representations of schematic objects.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#CreateGRRCntr"><b>CreateGRRCntr</b></a>
+<dd>  Create the graphical representation of a Schematic Connector.
+ <dt>
+    <a href="#CreateGRRGroup"><b>CreateGRRGroup</b></a>
+<dd>  Create the graphical representation of a Schematic Group.
+ <dt>
+    <a href="#CreateGRRRoute"><b>CreateGRRRoute</b></a>
+<dd>  Create the graphical representation of a Schematic Route.
+ <dt>
+    <a href="#CreateGRRRouteEllipse"><b>CreateGRRRouteEllipse</b></a>
+<dd>  Create the graphical representation of a Schematic Route Ellipse.
+ <dt>
+    <a href="#CreateGRRZone"><b>CreateGRRZone</b></a>
+<dd>  Create the graphical representation of a Schematic Zone.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="CreateGRRCntr"><dt>
+
+<table><tr><td>o Func <b>CreateGRRCntr</b>(<td>) As <script type="text/javascript"> activateLink('SchGRRCntr','SchGRRCntr')</script> </table></dt>
+<dl>
+  <dd>
+ Create the graphical representation of a Schematic Connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oGRRCntr</tt>
+   <dd>   The graphical representation of the connector 
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRFactory
+ Dim objArg1 As SchGRRCntr
+  ...
+ Set objArg1 = objThisIntf.<font color="red">CreateGRRCntr</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="CreateGRRGroup"><dt>
+
+<table><tr><td>o Func <b>CreateGRRGroup</b>(<td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>iLPrimitive</tt>) As <script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> </table></dt>
+<dl>
+  <dd>
+ Create the graphical representation of a Schematic Group.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLPrimitives</tt>
+   <dd>   A list of 2D drafting detail pointers 
+   Members are CATI2DDetail interface poiners.
+ </dd>
+    <dt><tt> oGRRGroup</tt>
+   <dd>   The graphical representation of the Group
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRFactory
+ Dim objArg1 As SchListOfObjects
+ Dim objArg2 As AnyObject
+  ...
+ Set objArg2 = objThisIntf.<font color="red">CreateGRRGroup</font>(objArg1)
+ </pre>
+
+</dl>
+</dl>
+<a name="CreateGRRRoute"><dt>
+
+<table><tr><td>o Sub <b>CreateGRRRoute</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iLDbLinePath</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchGRRRoute','SchGRRRoute')</script> <td><tt>oGRRRoute</tt>)</table></dt>
+<dl>
+  <dd>
+ Create the graphical representation of a Schematic Route.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLDbPtPath</tt>
+   <dd>   A list of X-Y coordinates of points defining the Route. 
+   2 doubles per point.
+ </dd>
+    <dt><tt> oGRRRoute</tt>
+   <dd>   The graphical representation of the Route 
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRFactory
+ Dim dbVar1(x) As CATSafeArrayVariant
+ Dim objArg3 As SchGRRRoute
+  ...
+ objThisIntf.<font color="red">CreateGRRRoute</font>dbVar1,objArg3
+ </pre>
+
+</dl>
+</dl>
+<a name="CreateGRRRouteEllipse"><dt>
+
+<table><tr><td>o Sub <b>CreateGRRRouteEllipse</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iDbXYSeedPt</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchGRRRouteEllipse','SchGRRRouteEllipse')</script> <td><tt>oGRRRouteEllipse</tt>)</table></dt>
+<dl>
+  <dd>
+ Create the graphical representation of a Schematic Route Ellipse.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDbXYSeedPt</tt>
+   <dd>   X-Y coordinate of the seed point for the ellipse.  If NULL,
+   the seed point will not be set.
+ </dd>
+    <dt><tt> oGRRRouteEllipse</tt>
+   <dd>   The graphical representation of the Route Ellipse
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRFactory
+ Dim dbVar1(X) As CATSafeArrayVariant
+ Dim objArg2 As SchGRRRouteEllipse
+  ...
+ objThisIntf.<font color="red">CreateGRRRouteEllipse</font>dbVar1,objArg2
+ </pre>
+
+</dl>
+</dl>
+<a name="CreateGRRZone"><dt>
+
+<table><tr><td>o Func <b>CreateGRRZone</b>(<td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>iLPrimitive</tt>) As <script type="text/javascript"> activateLink('SchGRRZone','SchGRRZone')</script> </table></dt>
+<dl>
+  <dd>
+ Create the graphical representation of a Schematic Zone.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLPrimitives</tt>
+   <dd>   A list of 2D drafting object pointers defining the zone boundaries.
+ </dd>
+    <dt><tt> oGRRZone</tt>
+   <dd>   The graphical representation of the Zone
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRFactory
+ Dim objArg1 As SchListOfObjects
+ Dim objArg2 As SchGRRZone
+  ...
+ Set objArg2 = objThisIntf.<font color="red">CreateGRRZone</font>(objArg1)
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

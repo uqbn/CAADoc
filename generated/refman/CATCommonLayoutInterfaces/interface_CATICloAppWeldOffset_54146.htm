@@ -1,0 +1,103 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATCommonLayoutInterfaces Interface CATICloAppWeldOffset</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATCommonLayoutInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATICloAppWeldOffset','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICloAppWeldOffset','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATICloAppWeldOffset','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICloAppWeldOffset','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATCommonLayoutInterfaces Interface CATICloAppWeldOffset</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATICloAppWeldOffset_54146','CATICloAppWeldOffset','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATICloAppWeldOffset</b>
+</p>
+<p>
+<b><i> This interface provides the users the opportunity to calculate the  
+ weld offset for an application.</i></b><br>
+  When implement, users must define 
+ a .dic file tying the interface to the application objects.   
+ For example:
+ <p><b>CATPiping       CATICloAppWeldOffset          libxxxx</b></p>
+  
+ If not implemented, the default calculation will be used.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetWeldOffset(wchar_t*,double,double,double,double,double,double*)"><b>GetWeldOffset</b></a>(wchar_t*,double,double,double,double,double,double*)
+<dd>  Calculate the weld offset.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetWeldOffset"></a><a name="GetWeldOffset(wchar_t*,double,double,double,double,double,double*)"></a> <dt> o <b>GetWeldOffset</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetWeldOffset</b>(<td> const <script type="text/javascript"> activateLink('wchar_t','wchar_t*')</script> <td><tt>iaWeldEndStyle</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('double','double')</script> <td><tt>idRunInsideRadius</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('double','double')</script> <td><tt>idRunOutsideRadius</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('double','double')</script> <td><tt>idBranchInsideRadius</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('double','double')</script> <td><tt>idBranchOutsideRadius</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('double','double')</script> <td><tt>idWeldGap</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double*')</script> <td><tt>odWeldOffset</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Calculate the weld offset.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iaWeldEndStyle</tt>
+   <dd>   Weld EndStyle
+ </dd>
+    <dt><tt> idRunInsideRadius</tt>
+   <dd>   Inside radius of the run
+ </dd>
+    <dt><tt> idRunOutsideRadius</tt>
+   <dd>   Outside radius of the run
+ </dd>
+    <dt><tt> idBranchInsideRadius</tt>
+   <dd>   Inside radius of the branch
+ </dd>
+    <dt><tt> idBranchInsideRadius</tt>
+   <dd>   Inside radius of the branch
+ </dd>
+    <dt><tt> idWeldGap</tt>
+   <dd>   Weld gap defined in the weld part
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    A boolean value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>TRUE</dt>
+     <dd>operation is successful, offset is set</dd>
+     <dt>FALSE</dt>
+     <dd>offset is not set</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATICloAppWeldOffset.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

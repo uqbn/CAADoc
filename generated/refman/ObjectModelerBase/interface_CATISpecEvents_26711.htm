@@ -1,0 +1,115 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ObjectModelerBase Interface CATISpecEvents</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ObjectModelerBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISpecEvents','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISpecEvents','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISpecEvents','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISpecEvents','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ObjectModelerBase Interface CATISpecEvents</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISpecEvents_26711','CATISpecEvents','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISpecEvents</b>
+</p>
+<p>
+<b><i> Interface to subscribe to features events management.</i></b><br>
+
+ <b> Note : </b> everybody is allowed to subscribe to those events,but it is prohibited to re-emit them.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetAttrNotification()"><b>GetAttrNotification</b></a>()
+<dd>  Returns notification of feature's synchronisation.
+ <dt> o 
+    <a href="#GetAttrStructNotification()"><b>GetAttrStructNotification</b></a>()
+<dd>  Returns notification of add/remove of attributes on a feature.
+ <dt> o 
+    <a href="#GetAttrValNotification()"><b>GetAttrValNotification</b></a>()
+<dd>  Returns notification of attribute's value modification.
+ <dt> o 
+    <a href="#GetCompoValNotification()"><b>GetCompoValNotification</b></a>()
+<dd>  Returns notification of feature's data modification ( name, userId ).
+ <dt> o 
+    <a href="#GetCreationNotification()"><b>GetCreationNotification</b></a>()
+<dd>  Returns notification of features creation in the feature modeler.
+ <dt> o 
+    <a href="#GetDeleteNotification()"><b>GetDeleteNotification</b></a>()
+<dd>  Returns notification of features deletion in the feature modeler.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetAttrNotification"></a><a name="GetAttrNotification()"></a> <dt> o <b>GetAttrNotification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCallbackEvent','CATCallbackEvent')</script>  <b>GetAttrNotification</b>(<td>)<script type="text/javascript"> activateLink('0','= 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns notification of feature's synchronisation.
+</dl>
+<a name="GetAttrStructNotification"></a><a name="GetAttrStructNotification()"></a> <dt> o <b>GetAttrStructNotification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCallbackEvent','CATCallbackEvent')</script>  <b>GetAttrStructNotification</b>(<td>)<script type="text/javascript"> activateLink('0','= 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns notification of add/remove of attributes on a feature.
+</dl>
+<a name="GetAttrValNotification"></a><a name="GetAttrValNotification()"></a> <dt> o <b>GetAttrValNotification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCallbackEvent','CATCallbackEvent')</script>  <b>GetAttrValNotification</b>(<td>)<script type="text/javascript"> activateLink('0','= 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns notification of attribute's value modification.
+</dl>
+<a name="GetCompoValNotification"></a><a name="GetCompoValNotification()"></a> <dt> o <b>GetCompoValNotification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCallbackEvent','CATCallbackEvent')</script>  <b>GetCompoValNotification</b>(<td>)<script type="text/javascript"> activateLink('0','= 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns notification of feature's data modification ( name, userId ).
+</dl>
+<a name="GetCreationNotification"></a><a name="GetCreationNotification()"></a> <dt> o <b>GetCreationNotification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCallbackEvent','CATCallbackEvent')</script>  <b>GetCreationNotification</b>(<td>)<script type="text/javascript"> activateLink('0','= 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns notification of features creation in the feature modeler.
+</dl>
+<a name="GetDeleteNotification"></a><a name="GetDeleteNotification()"></a> <dt> o <b>GetDeleteNotification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCallbackEvent','CATCallbackEvent')</script>  <b>GetDeleteNotification</b>(<td>)<script type="text/javascript"> activateLink('0','= 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns notification of features deletion in the feature modeler.
+</dl>
+<hr>
+ This object is included in the file: <b>CATISpecEvents.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATObjectModelerBase</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

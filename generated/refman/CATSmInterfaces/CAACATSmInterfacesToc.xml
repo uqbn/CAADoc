@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="CATIStmCatalogSHMObjectSettingAtt" href="interface_CATIStmCatalogSHMObjectSettingAtt_67272.htm" />
+<ITEM type="interface" name="CATIStmViewCharacteristicCurvesSettingAtt" href="interface_CATIStmViewCharacteristicCurvesSettingAtt_99870.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Enumerations" type="enum"  ctype="enum" >
+</ITEM>
+</Root>

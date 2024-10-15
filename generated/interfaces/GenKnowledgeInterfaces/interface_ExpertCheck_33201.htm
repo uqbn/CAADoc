@@ -1,0 +1,114 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GenKnowledgeInterfaces ExpertCheck (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../GenKnowledgeInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('ExpertCheck','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ExpertCheck','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('ExpertCheck','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ExpertCheck','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ExpertCheck<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_ExpertCheck_33201','ExpertCheck','0');</script>
+<b><i> Represents the edition part of a check.</i></b><br>
+
+
+ The following example shows how to access the Check check1
+ from an existing RuleSet RS1 of the RuleBase RB1
+ <pre>
+ Dim CATDocs As Document
+ Set CATDocs   = CATIA.Documents
+ Dim partdoc As PartDocument
+ Set partdoc   = CATDocs.Add("CATPart")
+ Dim part As Part
+ Set part      = partdoc.Part
+ Dim relations As Relations
+ Set relations = part.Relations
+ Dim Rulebase As ExpertRuleBaseRuntime
+ Set RuleBase  = relations.Item("RB1")
+ Dim Ruleset As ExpertRuleSetRuntime
+ Set RuleSet	 = RuleBase.RuleSet.ExpertRuleBaseComponentRuntimes.Item("RS1")
+ Dim Check1 As ExpertCheckRuntime
+ Set Check1	 = RuleSet.ExpertRuleBaseComponentRuntimes.Item("Check1")
+ </pre>
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('Relations','');return false">Relations</a>, <a href="#" onClick="openLink('ExpertRuleBase','');return false">ExpertRuleBase</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Body"><b>Body</b></a>
+<dd>  Returns or sets the body of a Check.
+ <dt>
+    <a href="#Language"><b>Language</b></a>
+<dd>  Returns or sets the language of a check.
+ <dt>
+    <a href="#Variables"><b>Variables</b></a>
+<dd>  Returns or sets the variable scope of an Expert Check.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Body"><dt>
+
+<table><tr><td>o Property <b>Body</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the body of a Check.
+
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ <pre>
+ Check1.Body = "H.Diameter > 20mm AND GetSubString(P.Name, 1, 6) == ""myPad."""
+ </pre>
+ </dl>
+</dl>
+<a name="Language"><dt>
+
+<table><tr><td>o Property <b>Language</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the language of a check.
+
+ <dl>
+ <dt>1<dd>KWE language
+ <dt>2<dd>VB Script
+ </dl>
+</dl>
+<a name="Variables"><dt>
+
+<table><tr><td>o Property <b>Variables</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the variable scope of an Expert Check.
+
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ <pre>
+ Check1.Variables = "H:Hole; P: Pad"
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

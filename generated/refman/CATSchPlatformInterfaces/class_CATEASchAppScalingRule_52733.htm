@@ -1,0 +1,110 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Class CATEASchAppScalingRule</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATEASchAppScalingRule','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEASchAppScalingRule','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATEASchAppScalingRule','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEASchAppScalingRule','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Class CATEASchAppScalingRule</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATEASchAppScalingRule_52733','CATEASchAppScalingRule','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATEASchAppScalingRule</b>
+</p>
+<p>
+<b><i> Super class to be derived for implementation of interface CATISchAppScalingRule.</i></b><br>
+
+ <b>Role</b>: Adaptor</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATEASchAppScalingRule()"><b>CATEASchAppScalingRule</b></a>()
+<dd>  Constructs an empty CATEASchAppScalingRule.
+ <dt> o 
+    <a href="#~CATEASchAppScalingRule()"><b>~CATEASchAppScalingRule</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AppGetScalingPriority(int*)"><b>AppGetScalingPriority</b></a>(int*)
+<dd>  Get a priority number to indicate the adjustment (moving)
+ priority of this object during scaling.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATEASchAppScalingRule"></a><a name="CATEASchAppScalingRule()"></a> <dt> o <b>CATEASchAppScalingRule</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATEASchAppScalingRule</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs an empty CATEASchAppScalingRule.
+</dl>
+<a name="~CATEASchAppScalingRule"></a><a name="~CATEASchAppScalingRule()"></a> <dt> o <b>~CATEASchAppScalingRule</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATEASchAppScalingRule</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AppGetScalingPriority"></a><a name="AppGetScalingPriority(int*)"></a> <dt> o <b>AppGetScalingPriority</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppGetScalingPriority</b>(<td><script type="text/javascript"> activateLink('int','int*')</script> <td><tt>oPriority</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Get a priority number to indicate the adjustment (moving)
+ priority of this object during scaling.  
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oPriority</tt>
+   <dd>   1 to 99.  The lower the number, the higher the processing
+   priority. For example, an object with priority 1 is processed
+   first and will not move while connected objects adjust. 
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATEASchAppScalingRule.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATSchItfCPP</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

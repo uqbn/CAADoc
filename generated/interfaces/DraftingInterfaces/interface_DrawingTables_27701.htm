@@ -1,0 +1,156 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>DraftingInterfaces DrawingTables (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../DraftingInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('DrawingTables','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('DrawingTables','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('DrawingTables','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('DrawingTables','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>DrawingTables<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_DrawingTables_27701','DrawingTables','0');</script>
+<b><i> A collection of all the drawing tables currently managed by a
+ drawing view of drawing sheet in a drawing document.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Add"><b>Add</b></a>
+<dd>  Creates a drawing table and adds it to the DrawingTables collection.
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns a drawing table using its index from the DrawingTables collection.
+ <dt>
+    <a href="#Remove"><b>Remove</b></a>
+<dd>  Removes a drawing table from the DrawingTables collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Add"><dt>
+
+<table><tr><td>o Func <b>Add</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iPositionX</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iPositionY</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iNumberOfRow</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iNumberOfColumn</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iRowHeight</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iColumnWidth</tt>) As <script type="text/javascript"> activateLink('DrawingTable','DrawingTable')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a drawing table and adds it to the DrawingTables collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPositionX,iPositionY</tt>
+   <dd>   The drawing table x and y coordinates, expressed in millimeters,
+   with respect to the drawing view coordinate system
+ </dd>
+    <dt><tt> iNumberOfRow,iNumberOfColumn</tt>
+   <dd>   The drawing table number of rows and columns
+ </dd>
+    <dt><tt> iRowHeight,iColumnWidth</tt>
+   <dd>   The row height and the column width
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The created drawing table <!-- @sample -->
+ </dl>
+ <dt><b>Example:</b>
+ <dd>
+ The following example creates an empty drawing table
+ and retrieves it in <tt>MyTable</tt> in the drawing table collection of
+ the active view <tt>MyView</tt> of the drawing sheet <tt>MySheet<tt>.
+ <pre>
+ Dim MyView As DrawingView
+ Set MyView = MySheet.Views.<font color="red">ActiveView</font>
+ Dim MyTable As DrawingTable
+ Set MyTable = MyView.Tables.<font color="red">Add</font>(100., 100., 2, 2, 20., 50.)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('DrawingTable','DrawingTable')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a drawing table using its index from the DrawingTables collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index of the drawing table to retrieve from the collection of drawing tables.
+   As a numerics, this index is the rank of the drawing table in the collection.
+   The index of the first drawing table in the collection is 1, and
+   the index of the last drawing table is Count.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved drawing table <!-- @sample -->
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves in <tt>ThisDrawingTable</tt> the second drawing table,
+ in the drawing view collection of the active view
+ in the active sheet, in the active document supposed to be a drawing document.
+ <pre>
+ Dim MyView  As DrawingView
+ Set MyView  = MySheet.Views.<font color="red">ActiveView</font>
+ Dim ThisDrawingTable As DrawingTable
+ Set ThisDrawingTable = MyView.Tables.<font color="red">Item</font>(2)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="Remove"><dt>
+
+<table><tr><td>o Sub <b>Remove</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iIndex</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes a drawing table from the DrawingTables collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index of the drawing table to remove from
+   the collection of drawing tables.
+   As a numerics, this index is the rank of the drawing table
+   in the collection.
+   The index of the first drawing table in the collection is 1, and
+   the index of the last drawing table is Count.
+ <!-- @sample -->
+ </dl>
+ <dt><b>Example:</b>
+ <dd>
+ The following example removes the third drawing table
+ in the drawing table collection of the active view
+ of the active document, supposed to be a drawing document.
+ <pre>
+ Dim MyView As DrawingView
+ Set MyView  = MySheet.Views.<font color="red">ActiveView</font>
+ MyView.DrawingTables.<font color="red">Remove</font>(3)
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,118 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>DMAPSInterfaces Resource (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../DMAPSInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Resource','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Resource','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Resource','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Resource','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Resource<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Resource_17345','Resource','0');</script>
+<b><i> The object that represents a resource.</i></b><br>
+ <br>
+ It also allows to get the real resource object.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#ChildrenTSAs"><b>ChildrenTSAs</b></a>
+<dd>   This property returns the interface which manages the children TSA of the given resource/system.
+ <dt>
+    <a href="#InputProducts"><b>InputProducts</b></a>
+<dd>  This property returns the interface which manages the items or input products/components assigned to the given resource/system
+ <dt>
+    <a href="#NextResources"><b>NextResources</b></a>
+<dd>   This property returns the interface which manages the downstream product flow hierarchy on the given resource.
+ <dt>
+    <a href="#OutputProducts"><b>OutputProducts</b></a>
+<dd>  This property returns the interface which manages the output products/components of the given resource/system
+ <dt>
+    <a href="#PreviousResources"><b>PreviousResources</b></a>
+<dd>   This property returns the interface which manages the upstream product flow hierarchy on the given resource.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetObject"><b>GetObject</b></a>
+<dd>  This method returns the IDL Interface for the specified interface 
+ identifier.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="ChildrenTSAs"><dt>
+
+<table><tr><td>o Property <b>ChildrenTSAs</b>(<td>) As <script type="text/javascript"> activateLink('Activities','Activities')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+  This property returns the interface which manages the children TSA of the given resource/system.
+</dl>
+<a name="InputProducts"><dt>
+
+<table><tr><td>o Property <b>InputProducts</b>(<td>) As <script type="text/javascript"> activateLink('Items','Items')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ This property returns the interface which manages the items or input products/components assigned to the given resource/system
+</dl>
+<a name="NextResources"><dt>
+
+<table><tr><td>o Property <b>NextResources</b>(<td>) As <script type="text/javascript"> activateLink('ResourceCollection','ResourceCollection')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+  This property returns the interface which manages the downstream product flow hierarchy on the given resource.
+ This returns the collection of resources which are "Next" to the given resource in the resource product flow links
+</dl>
+<a name="OutputProducts"><dt>
+
+<table><tr><td>o Property <b>OutputProducts</b>(<td>) As <script type="text/javascript"> activateLink('Outputs','Outputs')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ This property returns the interface which manages the output products/components of the given resource/system
+</dl>
+<a name="PreviousResources"><dt>
+
+<table><tr><td>o Property <b>PreviousResources</b>(<td>) As <script type="text/javascript"> activateLink('ResourceCollection','ResourceCollection')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+  This property returns the interface which manages the upstream product flow hierarchy on the given resource.
+ This returns the collection of resources which are "Previous" to the given resource in the resource product flow links
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetObject"><dt>
+
+<table><tr><td>o Func <b>GetObject</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iInterfaceName</tt>) As <script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> </table></dt>
+<dl>
+  <dd>
+ This method returns the IDL Interface for the specified interface 
+ identifier.<br>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iInterfaceName</tt>
+   <dd> The name of the interface to query. 
+ </dd>
+    <dt><tt> oObject</tt>
+   <dd> The pointer to the queried interface.</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

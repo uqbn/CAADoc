@@ -1,0 +1,307 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PartInterfaces Interface CATIThick</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../PartInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIThick','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIThick','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIThick','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIThick','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PartInterfaces Interface CATIThick</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIThick_16695','CATIThick','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIThick</b>
+</p>
+<p>
+<b><i> Class to define methods relative to the thickness feature.</i></b><br>
+
+ <b>Role</b>: A thickness feature is defined with a list of faces
+ to be thicken and an offset value.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AddFaceToThicken(CATISpecObject_var)"><b>AddFaceToThicken</b></a>(CATISpecObject_var)
+<dd>  Adds a face to thickness specifications.
+ <dt> o 
+    <a href="#AddFaceWithDifferentThickness(CATISpecObject_var,double)"><b>AddFaceWithDifferentThickness</b></a>(CATISpecObject_var,double)
+<dd>  Adds a face with different thicknesses to thickness specifications.
+ <dt> o 
+    <a href="#GetFacesWithDifferentThickness()"><b>GetFacesWithDifferentThickness</b></a>()
+<dd>  Returns the list of faces with different thickness.
+ <dt> o 
+    <a href="#GetNbOfFacesWithDifferentThickness()"><b>GetNbOfFacesWithDifferentThickness</b></a>()
+<dd>  Get number of faces with different thickness.
+ <dt> o 
+    <a href="#GetNbOfNonOffsetFaces()"><b>GetNbOfNonOffsetFaces</b></a>()
+<dd>  Get number of non offset faces.
+ <dt> o 
+    <a href="#GetNbOfThickSpec()"><b>GetNbOfThickSpec</b></a>()
+<dd>  Get number of specified faces.
+ <dt> o 
+    <a href="#GetNonOffsetFaces()"><b>GetNonOffsetFaces</b></a>()
+<dd>  Returns the list of non offset faces.
+ <dt> o 
+    <a href="#GetOffset()"><b>GetOffset</b></a>()
+<dd>  Returns the value of the offset.
+ <dt> o 
+    <a href="#GetThickParameters(int,CATISpecObject_var&amp;,CATICkeParm_var&amp;)"><b>GetThickParameters</b></a>(int,CATISpecObject_var&amp;,CATICkeParm_var&amp;)
+<dd>  Returns a face and the corresponding thickness parameter
+ 
+ <dt> o 
+    <a href="#GetThickSpec()"><b>GetThickSpec</b></a>()
+<dd>  Returns the list of specified faces.
+ <dt> o 
+    <a href="#ModifyOffset(double)"><b>ModifyOffset</b></a>(double)
+<dd>  Modifies the value of the offset.
+ <dt> o 
+    <a href="#RemoveFaceWithDifferentThickness(CATISpecObject_var)"><b>RemoveFaceWithDifferentThickness</b></a>(CATISpecObject_var)
+<dd>  Removes a face with different thicknesses to thickness specifications.
+ <dt> o 
+    <a href="#RemoveNonOffsetFace(CATISpecObject_var)"><b>RemoveNonOffsetFace</b></a>(CATISpecObject_var)
+<dd>  Removes a non offset face to thickness specifications.
+ <dt> o 
+    <a href="#WithdrawFaceToThicken(CATISpecObject_var)"><b>WithdrawFaceToThicken</b></a>(CATISpecObject_var)
+<dd>  Removes a face to thickness specifications.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AddFaceToThicken"></a><a name="AddFaceToThicken(CATISpecObject_var)"></a> <dt> o <b>AddFaceToThicken</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>AddFaceToThicken</b>(<td> const <script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject_var')</script> <td><tt>iFace</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Adds a face to thickness specifications. This face indicates
+ which faces must be thicken.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFace</tt>
+   <dd>   Init Face for tangency propagation.</dd>
+</dl>
+</dl>
+</dl>
+<a name="AddFaceWithDifferentThickness"></a><a name="AddFaceWithDifferentThickness(CATISpecObject_var,double)"></a> <dt> o <b>AddFaceWithDifferentThickness</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>AddFaceWithDifferentThickness</b>(<td> const <script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject_var')</script> <td><tt>iFace</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iOffset</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Adds a face with different thicknesses to thickness specifications.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFace</tt>
+   <dd>   Init Face for tangency propagation.
+ </dd>
+    <dt><tt> iOffset</tt>
+   <dd>   Value of the offset.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetFacesWithDifferentThickness"></a><a name="GetFacesWithDifferentThickness()"></a> <dt> o <b>GetFacesWithDifferentThickness</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATLISTV(CATISpecObject_var)','CATLISTV(CATISpecObject_var) *')</script>  <b>GetFacesWithDifferentThickness</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the list of faces with different thickness.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The list.
+</dl>
+</dl>
+<a name="GetNbOfFacesWithDifferentThickness"></a><a name="GetNbOfFacesWithDifferentThickness()"></a> <dt> o <b>GetNbOfFacesWithDifferentThickness</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetNbOfFacesWithDifferentThickness</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get number of faces with different thickness.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The number of faces with different thickness.
+</dl>
+</dl>
+<a name="GetNbOfNonOffsetFaces"></a><a name="GetNbOfNonOffsetFaces()"></a> <dt> o <b>GetNbOfNonOffsetFaces</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetNbOfNonOffsetFaces</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get number of non offset faces.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The number of non offset faces.
+</dl>
+</dl>
+<a name="GetNbOfThickSpec"></a><a name="GetNbOfThickSpec()"></a> <dt> o <b>GetNbOfThickSpec</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetNbOfThickSpec</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get number of specified faces.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The number of specified faces.
+</dl>
+</dl>
+<a name="GetNonOffsetFaces"></a><a name="GetNonOffsetFaces()"></a> <dt> o <b>GetNonOffsetFaces</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATLISTV(CATISpecObject_var)','CATLISTV(CATISpecObject_var) *')</script>  <b>GetNonOffsetFaces</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the list of non offset faces.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The list.
+</dl>
+</dl>
+<a name="GetOffset"></a><a name="GetOffset()"></a> <dt> o <b>GetOffset</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('double','double')</script>  <b>GetOffset</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the value of the offset.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The offset value.
+</dl>
+</dl>
+<a name="GetThickParameters"></a><a name="GetThickParameters(int,CATISpecObject_var&amp;,CATICkeParm_var&amp;)"></a> <dt> o <b>GetThickParameters</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>GetThickParameters</b>(<td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iInt</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATISpecObject_var','CATISpecObject_var&amp;')</script> <td><tt>oFace</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATICkeParm_var','CATICkeParm_var&amp;')</script> <td><tt>oParm</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns a face and the corresponding thickness parameter
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iInt</tt>
+   <dd>   If iInt = 0, oFace and oParm correspond to the default specifications.
+   If iInt > 0, oFace and oParm correspond to the different thicknesses.  
+ </dd>
+    <dt><tt> oFace</tt>
+   <dd>   Init Face for tangency propagation. 
+ </dd>
+    <dt><tt> oParm</tt>
+   <dd>   Thickness parameter.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetThickSpec"></a><a name="GetThickSpec()"></a> <dt> o <b>GetThickSpec</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATLISTV(CATISpecObject_var)','CATLISTV(CATISpecObject_var) *')</script>  <b>GetThickSpec</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the list of specified faces. 
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The list.
+</dl>
+</dl>
+<a name="ModifyOffset"></a><a name="ModifyOffset(double)"></a> <dt> o <b>ModifyOffset</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>ModifyOffset</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iOffset</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the value of the offset.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iOffset</tt>
+   <dd>   New value of the offset.</dd>
+</dl>
+</dl>
+</dl>
+<a name="RemoveFaceWithDifferentThickness"></a><a name="RemoveFaceWithDifferentThickness(CATISpecObject_var)"></a> <dt> o <b>RemoveFaceWithDifferentThickness</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>RemoveFaceWithDifferentThickness</b>(<td> const <script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject_var')</script> <td><tt>iFace</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Removes a face with different thicknesses to thickness specifications.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFace</tt>
+   <dd>   Init Face for tangency propagation.</dd>
+</dl>
+</dl>
+</dl>
+<a name="RemoveNonOffsetFace"></a><a name="RemoveNonOffsetFace(CATISpecObject_var)"></a> <dt> o <b>RemoveNonOffsetFace</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>RemoveNonOffsetFace</b>(<td> const <script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject_var')</script> <td><tt>iFace</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Removes a non offset face to thickness specifications.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFace</tt>
+   <dd>   Non offset face.</dd>
+</dl>
+</dl>
+</dl>
+<a name="WithdrawFaceToThicken"></a><a name="WithdrawFaceToThicken(CATISpecObject_var)"></a> <dt> o <b>WithdrawFaceToThicken</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>WithdrawFaceToThicken</b>(<td> const <script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject_var')</script> <td><tt>iFace</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Removes a face to thickness specifications. This face indicates
+ which faces must be thicken.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFace</tt>
+   <dd>   Init Face for tangency propagation.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIThick.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATPartInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

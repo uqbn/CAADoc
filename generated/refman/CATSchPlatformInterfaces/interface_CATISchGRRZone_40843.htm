@@ -1,0 +1,170 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Interface CATISchGRRZone</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISchGRRZone','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchGRRZone','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISchGRRZone','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchGRRZone','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Interface CATISchGRRZone</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISchGRRZone_40843','CATISchGRRZone','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISchGRRZone</b>
+</p>
+<p>
+<b><i> Interface to manage a Schematic zone graphical representation object.</i></b><br>
+ 
+ <b>Role</b>: Defines Schematic zone graphical representation object behaviors</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AddBoundaryElement(CATISchBoundaryElem*)"><b>AddBoundaryElement</b></a>(CATISchBoundaryElem*)
+<dd>  Add a boundary element to the zone.
+ <dt> o 
+    <a href="#IsBoundaryValid(CATBoolean*)"><b>IsBoundaryValid</b></a>(CATBoolean*)
+<dd>  Check whether the boundary of this zone graphical representation is valid.
+ <dt> o 
+    <a href="#ListBoundaryElements(CATIUnknownList**)"><b>ListBoundaryElements</b></a>(CATIUnknownList**)
+<dd>  List all boundary elements of this zone graphical representation.
+ <dt> o 
+    <a href="#RemoveBoundaryElement(CATISchBoundaryElem*)"><b>RemoveBoundaryElement</b></a>(CATISchBoundaryElem*)
+<dd>  Remove a boundary element to the zone.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AddBoundaryElement"></a><a name="AddBoundaryElement(CATISchBoundaryElem*)"></a> <dt> o <b>AddBoundaryElement</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AddBoundaryElement</b>(<td><script type="text/javascript"> activateLink('CATISchBoundaryElem','CATISchBoundaryElem*')</script> <td><tt>iZoneBndyToAdd</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Add a boundary element to the zone.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iZoneBndy</tt>
+   <dd>   The geometric boundary elements to be added.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="IsBoundaryValid"></a><a name="IsBoundaryValid(CATBoolean*)"></a> <dt> o <b>IsBoundaryValid</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>IsBoundaryValid</b>(<td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean*')</script> <td><tt>BIsValid</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Check whether the boundary of this zone graphical representation is valid.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLZoneBndy</tt>
+   <dd>   Set to TRUE if the boundary is a closed polygon
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="ListBoundaryElements"></a><a name="ListBoundaryElements(CATIUnknownList**)"></a> <dt> o <b>ListBoundaryElements</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ListBoundaryElements</b>(<td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oLZoneBndy</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ List all boundary elements of this zone graphical representation.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLZoneBndy</tt>
+   <dd>   List of geometric boundaries of this zone graphical representation
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="RemoveBoundaryElement"></a><a name="RemoveBoundaryElement(CATISchBoundaryElem*)"></a> <dt> o <b>RemoveBoundaryElement</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RemoveBoundaryElement</b>(<td><script type="text/javascript"> activateLink('CATISchBoundaryElem','CATISchBoundaryElem*')</script> <td><tt>iZoneBndyToRemove</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Remove a boundary element to the zone.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iZoneBndy</tt>
+   <dd>   The geometric boundary elements to be added.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISchGRRZone.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

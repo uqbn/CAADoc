@@ -1,0 +1,106 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>VPMInterfaces Interface CATIAVPMProductClass</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../VPMInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIAVPMProductClass','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIAVPMProductClass','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIAVPMProductClass','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIAVPMProductClass','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>VPMInterfaces Interface CATIAVPMProductClass</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIAVPMProductClass_30730','CATIAVPMProductClass','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIAVPMProductClass</b>
+</p>
+<p>
+<b><i> Class containing products.</i></b><br>
+
+ <b>Role</b>: A Product Class role is to create Product Root Class objects,
+ and it is also a container for those Product Root Class.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AggregateProductRootClass(CATUnicodeString&amp;,CATIAVPMProductRootClass*&amp;)"><b>AggregateProductRootClass</b></a>(CATUnicodeString&amp;,CATIAVPMProductRootClass*&amp;)
+<dd>  Creates a ProductRootClass.
+ <dt> o 
+    <a href="#GetProductRootClassList(CATLISTV(CATBaseUnknown_var)&amp;)"><b>GetProductRootClassList</b></a>(CATLISTV(CATBaseUnknown_var)&amp;)
+<dd>  Gets product root class list.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AggregateProductRootClass"></a><a name="AggregateProductRootClass(CATUnicodeString&amp;,CATIAVPMProductRootClass*&amp;)"></a> <dt> o <b>AggregateProductRootClass</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AggregateProductRootClass</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>id</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIAVPMProductRootClass','CATIAVPMProductRootClass*&amp;')</script> <td><tt>ProductRootClass</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates a ProductRootClass.
+
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> id</tt>
+   <dd> , product class id.</dd>
+    <dt><tt> ProductRootClass,</tt>
+   <dd> the created product root class.</dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  S_OK The method succeeds.
+
+  <dt> <b>Returns:</b> 
+  <dd>  E_FAIL The method fails.
+</dl>
+</dl>
+<a name="GetProductRootClassList"></a><a name="GetProductRootClassList(CATLISTV(CATBaseUnknown_var)&amp;)"></a> <dt> o <b>GetProductRootClassList</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetProductRootClassList</b>(<td><script type="text/javascript"> activateLink('CATLISTV(CATBaseUnknown_var)','CATLISTV(CATBaseUnknown_var)&amp;')</script> <td><tt>oPRCList</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets product root class list.
+
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oPRCList</tt>
+   <dd> , the list of product root class.</dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  S_OK The method succeeds.
+
+  <dt> <b>Returns:</b> 
+  <dd>  E_FAIL The method fails.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIAVPMProductClass.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>GUIDVPMInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

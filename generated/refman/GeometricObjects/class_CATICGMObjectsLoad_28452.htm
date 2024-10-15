@@ -1,0 +1,122 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GeometricObjects Class CATICGMObjectsLoad</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GeometricObjects.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATICGMObjectsLoad','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMObjectsLoad','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATICGMObjectsLoad','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMObjectsLoad','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GeometricObjects Class CATICGMObjectsLoad</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATICGMObjectsLoad_28452','CATICGMObjectsLoad','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATICGMObjectsLoad</b>
+</p>
+<p>
+<b><i>   Load list of CGM Objects belonging to the same geofactory from a CATCGMStream .</i></b><br>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATICGMObjectsLoad(CATCGMStream&amp;)"><b>CATICGMObjectsLoad</b></a>(CATCGMStream&amp;)
+<dd>  Constructs an CATICGMObjectsLoad operator.
+ <dt> o 
+    <a href="#~CATICGMObjectsLoad()"><b>~CATICGMObjectsLoad</b></a>()
+<dd>   Destructor
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Load(CATGeoFactory*&amp;,CATLISTP(CATICGMObject)&amp;,CATCGMObjectsUnserialize)"><b>Load</b></a>(CATGeoFactory*&amp;,CATLISTP(CATICGMObject)&amp;,CATCGMObjectsUnserialize)
+<dd>  Run Load.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATICGMObjectsLoad"></a><a name="CATICGMObjectsLoad(CATCGMStream&amp;)"></a> <dt> o <b>CATICGMObjectsLoad</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATICGMObjectsLoad</b>(<td><script type="text/javascript"> activateLink('CATCGMStream','CATCGMStream&amp;')</script> <td><tt>iStreamArea</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs an CATICGMObjectsLoad operator.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iStreamArea</tt>
+   <dd>   The stream from which the factory is read.</dd>
+</dl>
+</dl>
+</dl>
+<a name="~CATICGMObjectsLoad"></a><a name="~CATICGMObjectsLoad()"></a> <dt> o <b>~CATICGMObjectsLoad</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>~CATICGMObjectsLoad</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Destructor
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Load"></a><a name="Load(CATGeoFactory*&amp;,CATLISTP(CATICGMObject)&amp;,CATCGMObjectsUnserialize)"></a> <dt> o <b>Load</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>Load</b>(<td><script type="text/javascript"> activateLink('CATGeoFactory','CATGeoFactory*&amp;')</script> <td><tt>ioCATGeoFactory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTP(CATICGMObject)','CATLISTP(CATICGMObject)&amp;')</script> <td><tt>ioFullFederatorObjects</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATCGMObjectsUnserialize','CATCGMObjectsUnserialize')</script> <td><tt>iHowToLoad</tt><td><tt>= CatCGMObjectsUnserialize_Full</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Run Load.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioCATGeoFactory</tt>
+   <dd>   The pointer to the geometrical factory to be loaded.
+   it must be defined as non null input if <tt>iHowToLoad</tt> is set to <tt>CatCGMObjectsUnserialize_Complementary</tt>.
+ </dd>
+    <dt><tt> ioFullFederatorObjects</tt>
+   <dd>   The set to the loaded federating geometrical objects.
+   it is not defined if <tt>iHowToLoad</tt> is set to <tt>CatCGMObjectsUnserialize_Complementary</tt>.
+ </dd>
+    <dt><tt> iHowToLoad</tt>
+   <dd>    The pointer to the geometrical factory to be loaded.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The result of the operation.
+ <br><b>Legal values</b>:
+ <dl>
+ <dt><tt>S_OK</tt>   <dd> if operation succeed.
+ <dt><tt>E_FAIL</tt> <dd> if operation fails.
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATICGMObjectsPersistency.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>GeometricObjects</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

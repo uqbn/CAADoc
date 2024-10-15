@@ -1,0 +1,204 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>SMTInterfaces DMOThicknesses (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../SMTInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('DMOThicknesses','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('DMOThicknesses','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('DMOThicknesses','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('DMOThicknesses','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>DMOThicknesses<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_DMOThicknesses_21434','DMOThicknesses','0');</script>
+<b><i>   Interface to access a CATIADMOThicknesses and compute Thicknesses</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Add"><b>Add</b></a>
+<dd>  Creates a new Silhouette and adds it to the DMOThicknesses collection.
+ <dt>
+    <a href="#ComputeAThickness"><b>ComputeAThickness</b></a>
+<dd>  Compute a thickness on the selected products.
+ <dt>
+    <a href="#ComputeAThicknessWithAReference"><b>ComputeAThicknessWithAReference</b></a>
+<dd>  Compute a thickness on the selected products, according to a reference product.
+ <dt>
+    <a href="#ComputeThickness"><b>ComputeThickness</b></a>
+<dd>  Compute a thickness on the selected products.
+ <dt>
+    <a href="#ComputeThicknessWithReference"><b>ComputeThicknessWithReference</b></a>
+<dd>  Compute a thickness on the selected products, according to a reference product.
+ <dt>
+    <a href="#ThicknessShapeName"><b>ThicknessShapeName</b></a>
+<dd>  Returns the name of the associated shape.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Add"><dt>
+
+<table><tr><td>o Func <b>Add</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProductToThickness</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iThickness1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iThickness2</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iUseConstraints</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iConstraints</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iShapeName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iActivatedShape</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iDefaultShape</tt>) As <script type="text/javascript"> activateLink('DMOThickness','DMOThickness')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new Silhouette and adds it to the DMOThicknesses collection.
+ <b>This function is deprecated.</b>
+</dl>
+<a name="ComputeAThickness"><dt>
+
+<table><tr><td>o Func <b>ComputeAThickness</b>(<td><script type="text/javascript"> activateLink('Group','Group')</script> <td><tt>GroupOfSelectedProducts</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iThickness1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iThickness2</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iUseConstraints</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iConstraints</tt>) As <script type="text/javascript"> activateLink('Document','Document')</script> </table></dt>
+<dl>
+  <dd>
+ Compute a thickness on the selected products.
+ <b>This method is deprecated.</b>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> GroupOfSelectedProducts</tt>
+   <dd>   The selected products on which you want to perform the thickness.
+ </dd>
+    <dt><tt> iThickness1</tt>
+   <dd>   First thickness value.
+ </dd>
+    <dt><tt> iThickness2</tt>
+   <dd>   Second thickness value. <b>Old way</b>
+ </dd>
+    <dt><tt> iUseConstraints</tt>
+   <dd>   Do we use normals constraints or not ?
+ </dd>
+    <dt><tt> iConstraints</tt>
+   <dd>   Constraints array.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     ThicknessDocument: Document containing the result.
+</dl>
+</dl>
+<a name="ComputeAThicknessWithAReference"><dt>
+
+<table><tr><td>o Func <b>ComputeAThicknessWithAReference</b>(<td><script type="text/javascript"> activateLink('Group','Group')</script> <td><tt>iGroupOfSelectedProducts</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iReferenceProduct</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iThickness1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iThickness2</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iUseConstraints</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iConstraints</tt>) As <script type="text/javascript"> activateLink('Document','Document')</script> </table></dt>
+<dl>
+  <dd>
+ Compute a thickness on the selected products, according to a reference product.
+ <b>This method is deprecated.</b>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGroupOfSelectedProducts</tt>
+   <dd>   The selected products on which you want to perform the thickness.
+ </dd>
+    <dt><tt> iReferenceProduct</tt>
+   <dd>   The reference product.
+ </dd>
+    <dt><tt> iThickness1</tt>
+   <dd>   First thickness value.
+ </dd>
+    <dt><tt> iThickness2</tt>
+   <dd>   Second thickness value. <b>Old way</b>
+ </dd>
+    <dt><tt> iUseConstraints</tt>
+   <dd>   Do we use normals constraints or not ?
+ </dd>
+    <dt><tt> iConstraints</tt>
+   <dd>   Constraints array.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     ThicknessDocument: Document containing the result.
+</dl>
+</dl>
+<a name="ComputeThickness"><dt>
+
+<table><tr><td>o Func <b>ComputeThickness</b>(<td><script type="text/javascript"> activateLink('Group','Group')</script> <td><tt>GroupOfSelectedProducts</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iThickness1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iThickness2</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iUseConstraints</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iConstraints</tt>) As <script type="text/javascript"> activateLink('Document','Document')</script> </table></dt>
+<dl>
+  <dd>
+ Compute a thickness on the selected products.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> GroupOfSelectedProducts</tt>
+   <dd>   The selected products on which you want to perform the thickness.
+ </dd>
+    <dt><tt> iThickness1</tt>
+   <dd>   First thickness value.
+ </dd>
+    <dt><tt> iThickness2</tt>
+   <dd>   Second thickness value.
+ </dd>
+    <dt><tt> iUseConstraints</tt>
+   <dd>   Do we use normals constraints or not ?
+ </dd>
+    <dt><tt> iConstraints</tt>
+   <dd>   Constraints array.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     ThicknessDocument: Document containing the result.
+</dl>
+</dl>
+<a name="ComputeThicknessWithReference"><dt>
+
+<table><tr><td>o Func <b>ComputeThicknessWithReference</b>(<td><script type="text/javascript"> activateLink('Group','Group')</script> <td><tt>iGroupOfSelectedProducts</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iReferenceProduct</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iThickness1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iThickness2</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iUseConstraints</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iConstraints</tt>) As <script type="text/javascript"> activateLink('Document','Document')</script> </table></dt>
+<dl>
+  <dd>
+ Compute a thickness on the selected products, according to a reference product.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGroupOfSelectedProducts</tt>
+   <dd>   The selected products on which you want to perform the thickness.
+ </dd>
+    <dt><tt> iReferenceProduct</tt>
+   <dd>   The reference product.
+ </dd>
+    <dt><tt> iThickness1</tt>
+   <dd>   First thickness value.
+ </dd>
+    <dt><tt> iThickness2</tt>
+   <dd>   Second thickness value.
+ </dd>
+    <dt><tt> iUseConstraints</tt>
+   <dd>   Do we use normals constraints or not ?
+ </dd>
+    <dt><tt> iConstraints</tt>
+   <dd>   Constraints array.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     ThicknessDocument: Document containing the result.
+</dl>
+</dl>
+<a name="ThicknessShapeName"><dt>
+
+<table><tr><td>o Func <b>ThicknessShapeName</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the name of the associated shape.
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

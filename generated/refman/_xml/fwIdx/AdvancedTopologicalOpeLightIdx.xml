@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="AdvancedTopologicalOpeLight" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="0" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="CATTopologicalFill" initial="C" htmlFileName="class_CATTopologicalFill_52509" fatherClass="CATTopOperator" fatherId="32562" DSCharacteristic="class" id="52509" abstract="Class defining the topological operator that fills a space defined by a set of wires." />
+<constructor />
+<method name="Check" htmlFileName="class_CATTopologicalFill_52509" containerName="CATTopologicalFill" containerType="class" id="57520" status="18" isProperty="0" initial="C" argList="()" abstract="Checks the computation." />
+<method name="GetCenterPoint" htmlFileName="class_CATTopologicalFill_52509" containerName="CATTopologicalFill" containerType="class" id="74669" status="18" isProperty="0" initial="G" argList="(CATVertex&amp;amp;)" abstract="Returns the center point inside the hole to fill." />
+<method name="GetFillType" htmlFileName="class_CATTopologicalFill_52509" containerName="CATTopologicalFill" containerType="class" id="65489" status="18" isProperty="0" initial="G" argList="()" abstract="Returns the fill type." />
+<method name="GetG0MaxAccuracy" htmlFileName="class_CATTopologicalFill_52509" containerName="CATTopologicalFill" containerType="class" id="67778" status="18" isProperty="0" initial="G" argList="()" abstract=" Returns  the maximum admissible continuity gap on the result." />
+<method name="GetG0MaxDeviation" htmlFileName="class_CATTopologicalFill_52509" containerName="CATTopologicalFill" containerType="class" id="69615" status="18" isProperty="0" initial="G" argList="()" abstract="Returns the maximum continuity gap on the result." />
+<method name="GetG1MaxDeviation" htmlFileName="class_CATTopologicalFill_52509" containerName="CATTopologicalFill" containerType="class" id="70781" status="18" isProperty="0" initial="G" argList="()" abstract="Returns the maximum  tangency gap (in radians) on the result." />
+<method name="GetResult" htmlFileName="class_CATTopologicalFill_52509" containerName="CATTopologicalFill" containerType="class" id="60744" status="18" isProperty="0" initial="G" argList="()" abstract="Returns the result of &lt;tt&gt;this&lt;/tt&gt; operator." />
+<method name="ResetCenterPoint" htmlFileName="class_CATTopologicalFill_52509" containerName="CATTopologicalFill" containerType="class" id="67403" status="18" isProperty="0" initial="R" argList="()" abstract="Lets the algorithm define the default center point." />
+<method name="Run" htmlFileName="class_CATTopologicalFill_52509" containerName="CATTopologicalFill" containerType="class" id="54818" status="18" isProperty="0" initial="R" argList="()" abstract="Runs &lt;tt&gt;this&lt;/tt&gt; operator (&lt;tt&gt;ADVANCED&lt;/tt&gt; mode)." />
+<method name="SetCenterPoint" htmlFileName="class_CATTopologicalFill_52509" containerName="CATTopologicalFill" containerType="class" id="74669" status="18" isProperty="0" initial="S" argList="(CATVertex&amp;amp;)" abstract="Defines the center point inside the hole to fill (&lt;tt&gt;ADVANCED mode&lt;/tt&gt;)." />
+<method name="SetFlatFaceMode" htmlFileName="class_CATTopologicalFill_52509" containerName="CATTopologicalFill" containerType="class" id="68316" status="18" isProperty="0" initial="S" argList="(CATLONG32)" abstract="Activates the flat face mode." />
+<method name="SetInputValidationMode" htmlFileName="class_CATTopologicalFill_52509" containerName="CATTopologicalFill" containerType="class" id="81884" status="18" isProperty="0" initial="S" argList="(CATLONG32)" abstract="Checks whether holes must be detected in the input wires (&lt;tt&gt;ADVANCED mode&lt;/tt&gt;)." />
+<method name="SetTransitionContinuity" htmlFileName="class_CATTopologicalFill_52509" containerName="CATTopologicalFill" containerType="class" id="95714" status="18" isProperty="0" initial="S" argList="(CATLONG32,CATLONG32)" abstract="Defines the continuity criteria to take into account for a given wire (&lt;tt&gt;ADVANCED mode&lt;/tt&gt;)." />
+<enum name="CATFillType" htmlFileName="class_CATTopologicalFill_52509" containerName="CATTopologicalFill" containerType="class" initial="C" id="58805" abstract="Defines the fill type." />
+<function name="CATCreateTopologicalFillLight" htmlFileName="function_CATCreateTopologicalFillLight_191090" id="191090" status="4" isProperty="0" initial="C" argList="(CATGeoFactory*,CATTopData*,CATLONG32,CATBody**)" abstract="" deprecated="V5R14" />
+</fw>

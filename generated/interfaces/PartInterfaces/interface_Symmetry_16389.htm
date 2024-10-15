@@ -1,0 +1,71 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PartInterfaces Symmetry (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../PartInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Symmetry','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Symmetry','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Symmetry','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Symmetry','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Symmetry<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Symmetry_16389','Symmetry','0');</script>
+<b><i> Represents the shape symmetry feature object.</i></b><br>
+ This solid feature is created from 
+ an underlying HybridShapeSymmetry aggregated by the Symmetry.
+ <b>Role</b>: To access the data of the symmetry shape feature object.
+ The data includes:
+ <ul>
+ <li> The element to be transformed </li>
+ <li> The reference element which can be a point, a line or a plane </li>
+ </ul>
+ Use the CATIAShapeFactory to create ShapeFeature object.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('ShapeFactory','');return false">ShapeFactory</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#HybridShape"><b>HybridShape</b></a>
+<dd>  Gets the underlying HybridShapeSymmetry.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="HybridShape"><dt>
+
+<table><tr><td>o Property <b>HybridShape</b>(<td>) As <script type="text/javascript"> activateLink('HybridShape','HybridShape')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Gets the underlying HybridShapeSymmetry.
+<dl>
+ <dt><b>Example:</b>
+ <dd>The following example explains how to retrieve the underlying HybridShape Symmetry
+ <pre>
+  Dim oHybridShape as AnyObject
+  Set oHybridShape=oSymmetry.HybridShape
+  oHybridShape.SectionCoupling = 2
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

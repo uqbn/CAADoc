@@ -1,0 +1,234 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>XMLParser Interface CATISAXInputSource</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../XMLParser.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISAXInputSource','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISAXInputSource','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISAXInputSource','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISAXInputSource','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>XMLParser Interface CATISAXInputSource</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISAXInputSource_23000','CATISAXInputSource','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISAXInputSource</b>
+</p>
+<p>
+<b><i> Interface to represent a single input source for an XML entity.</i></b><br>
+
+
+ <p>This interface encapsulates information about an input source in a
+ single object, which may include a public identifier or a system
+ identifier</p>
+
+ <p>There are two places where the application will deliver this input
+ source to the parser: as the argument to the <a href="#" onClick="openLink('CATISAXParser','Parse');return false">CATISAXParser.Parse</a> method, or as the return value of the 
+<a href="#" onClick="openLink('CATISAXEntityResolver','ResolveEntity');return false">CATISAXEntityResolver.ResolveEntity</a> method.</p>
+ <p>A 
+<a href="#" onClick="openLink('CATISAXInputSource','');return false">CATISAXInputSource</a> encapsulates particular types of input sources. Implementations are provided for URL input sources, memory buffer input sources, and so on.</p>
+
+ <p>A 
+<a href="#" onClick="openLink('CATISAXInputSource','');return false">CATISAXInputSource</a> object belongs to the application: the parser never modifies them in any way. They are always passed by const reference so
+ the parser will make a copy of any input sources that it must keep 
+ around beyond the call.</p>
+
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATISAXParser','Parse');return false">CATISAXParser.Parse</a>, <a href="#" onClick="openLink('CATISAXEntityResolver','ResolveEntity');return false">CATISAXEntityResolver.ResolveEntity</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetEncoding(CATUnicodeString&amp;)"><b>GetEncoding</b></a>(CATUnicodeString&amp;)
+<dd>  Retrieves the name of the encoding that is to be forced.
+ <dt> o 
+    <a href="#GetPublicId(CATUnicodeString&amp;)"><b>GetPublicId</b></a>(CATUnicodeString&amp;)
+<dd>  Retrieves the public identifier for this input source.
+ <dt> o 
+    <a href="#GetSystemId(CATUnicodeString&amp;)"><b>GetSystemId</b></a>(CATUnicodeString&amp;)
+<dd>  Retrieves the system identifier for this input source.
+ <dt> o 
+    <a href="#SetEncoding(CATUnicodeString&amp;)"><b>SetEncoding</b></a>(CATUnicodeString&amp;)
+<dd>  Sets the encoding which will be required for use with the XML text read
+ via a stream opened by this input source.
+ <dt> o 
+    <a href="#SetPublicId(CATUnicodeString&amp;)"><b>SetPublicId</b></a>(CATUnicodeString&amp;)
+<dd>  Sets the public identifier for this input source.
+ <dt> o 
+    <a href="#SetSystemId(CATUnicodeString&amp;)"><b>SetSystemId</b></a>(CATUnicodeString&amp;)
+<dd>  Sets the system identifier for this input source.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetEncoding"></a><a name="GetEncoding(CATUnicodeString&amp;)"></a> <dt> o <b>GetEncoding</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetEncoding</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oEncoding</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the name of the encoding that is to be forced.
+ An input source can be set to force the parser to assume a particular
+ encoding for the data that input source reprsents, via the #href SetEncoding method.
+ If the encoding has never been forced, it returns an empty 
+<a href="#" onClick="openLink('CATUnicodeString','');return false">CATUnicodeString</a> .
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oEncoding</tt>
+   <dd>  The forced encoding (can be an empty </dd>
+<a href="#" onClick="openLink('CATUnicodeString','');return false">CATUnicodeString</a> if no forced encoding was given).
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('','SetEncoding');return false">SetEncoding</a>
+</dl>
+</dl>
+</dl>
+<a name="GetPublicId"></a><a name="GetPublicId(CATUnicodeString&amp;)"></a> <dt> o <b>GetPublicId</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetPublicId</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oPublicId</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the public identifier for this input source.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oPublicId</tt>
+   <dd> The public identifier (can be an empty </dd>
+<a href="#" onClick="openLink('CATUnicodeString','');return false">CATUnicodeString</a> if no public identifier was given).
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('','SetPublicId');return false">SetPublicId</a>
+</dl>
+</dl>
+</dl>
+<a name="GetSystemId"></a><a name="GetSystemId(CATUnicodeString&amp;)"></a> <dt> o <b>GetSystemId</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetSystemId</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oSystemId</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the system identifier for this input source.
+
+ <p>If the system ID is a URL, it will be fully resolved.</p>
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oSystemId</tt>
+   <dd> The system identifier. </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('','SetSystemId');return false">SetSystemId</a>
+</dl>
+</dl>
+<a name="SetEncoding"></a><a name="SetEncoding(CATUnicodeString&amp;)"></a> <dt> o <b>SetEncoding</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetEncoding</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iEncoding</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the encoding which will be required for use with the XML text read
+ via a stream opened by this input source.
+
+ <p>This is usually not set, allowing the encoding to be sensed in the
+ usual XML way. However, in some cases, the encoding in the file is known
+ to be incorrect because of intermediate transcoding, for instance
+ encapsulation within a MIME document.
+ 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEncoding</tt>
+   <dd> The name of the encoding to force.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetPublicId"></a><a name="SetPublicId(CATUnicodeString&amp;)"></a> <dt> o <b>SetPublicId</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetPublicId</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iPublicId</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the public identifier for this input source.
+
+ <p>The public identifier is always optional: if the application writer
+ includes one, it will be provided as part of the location information.</p>
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPublicId</tt>
+   <dd> The public identifier as a string.
+ </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATISAXLocator','GetPublicId');return false">CATISAXLocator.GetPublicId</a>, <a href="#" onClick="openLink('CATSAXParseException','GetPublicId');return false">CATSAXParseException.GetPublicId</a>, <a href="#" onClick="openLink('','GetPublicId');return false">GetPublicId</a>
+</dl>
+</dl>
+<a name="SetSystemId"></a><a name="SetSystemId(CATUnicodeString&amp;)"></a> <dt> o <b>SetSystemId</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetSystemId</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iSystemId</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the system identifier for this input source.
+
+ </p>The system id is always required. The public id may be used to map
+ to another system id, but the system id must always be present as a fall
+ back.
+
+ <p>If the system ID is a URL, it must be fully resolved.</p>
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSystemId</tt>
+   <dd> The system identifier as a string.
+
+ </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('','GetSystemId');return false">GetSystemId</a>, <a href="#" onClick="openLink('CATISAXLocator','GetSystemId');return false">CATISAXLocator.GetSystemId</a>, <a href="#" onClick="openLink('CATSAXParseException','GetSystemId');return false">CATSAXParseException.GetSystemId</a>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISAXInputSource.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATXMLParserItf</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

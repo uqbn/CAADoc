@@ -1,0 +1,134 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>SketcherInterfaces Interface CATI2DCstPoint</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../SketcherInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATI2DCstPoint','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATI2DCstPoint','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATI2DCstPoint','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATI2DCstPoint','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SketcherInterfaces Interface CATI2DCstPoint</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATI2DCstPoint_28564','CATI2DCstPoint','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATI2DCstPoint</b>
+</p>
+<p>
+<b><i> 2D Spline Control Point Management.</i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetCurvature(double*)"><b>GetCurvature</b></a>(double*)
+<dd>  Get Curvature coordinates.
+ <dt> o 
+    <a href="#GetCurvature(IID&amp;,void**)"><b>GetCurvature</b></a>(IID&amp;,void**)
+<dd>  Get Curvature norm as a CATICkeParm.
+ <dt> o 
+    <a href="#GetTangent()"><b>GetTangent</b></a>()
+<dd>  Get Tangent Direction.
+ <dt> o 
+    <a href="#SetCurvature(double*)"><b>SetCurvature</b></a>(double*)
+<dd>  Define Curvature coordinates.
+ <dt> o 
+    <a href="#SetCurvature(CATICkeParm_var&amp;)"><b>SetCurvature</b></a>(CATICkeParm_var&amp;)
+<dd>  Define Curvature norm as a CATICkeParm.
+ <dt> o 
+    <a href="#SetTangent(double*)"><b>SetTangent</b></a>(double*)
+<dd>  Set Tangent Direction.
+ <dt> o 
+    <a href="#UnsetCurvature()"><b>UnsetCurvature</b></a>()
+<dd>  Unset Curvature.
+ <dt> o 
+    <a href="#UnsetTangent()"><b>UnsetTangent</b></a>()
+<dd>  Unset Tangent Direction.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetCurvature"></a><a name="GetCurvature(double*)"></a> <dt> o <b>GetCurvature</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetCurvature</b>(<td><script type="text/javascript"> activateLink('double','double*')</script> <td><tt>oCurvature</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get Curvature coordinates.
+</dl>
+<a name="GetCurvature"></a><a name="GetCurvature(IID&amp;,void**)"></a> <dt> o <b>GetCurvature</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetCurvature</b>(<td> const <script type="text/javascript"> activateLink('IID','IID&amp;')</script> <td><tt>iid</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('void','void**')</script> <td><tt>oObj</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get Curvature norm as a CATICkeParm.
+</dl>
+<a name="GetTangent"></a><a name="GetTangent()"></a> <dt> o <b>GetTangent</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATI2DDirection','CATI2DDirection_var')</script>  <b>GetTangent</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get Tangent Direction.
+</dl>
+<a name="SetCurvature"></a><a name="SetCurvature(double*)"></a> <dt> o <b>SetCurvature</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetCurvature</b>(<td> const <script type="text/javascript"> activateLink('double','double*')</script> <td><tt>iCurvature</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Define Curvature coordinates.
+</dl>
+<a name="SetCurvature"></a><a name="SetCurvature(CATICkeParm_var&amp;)"></a> <dt> o <b>SetCurvature</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetCurvature</b>(<td> const <script type="text/javascript"> activateLink('CATICkeParm_var','CATICkeParm_var&amp;')</script> <td><tt>iparam</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Define Curvature norm as a CATICkeParm.
+</dl>
+<a name="SetTangent"></a><a name="SetTangent(double*)"></a> <dt> o <b>SetTangent</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetTangent</b>(<td> const <script type="text/javascript"> activateLink('double','double*')</script> <td><tt>iDirection</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Set Tangent Direction.
+</dl>
+<a name="UnsetCurvature"></a><a name="UnsetCurvature()"></a> <dt> o <b>UnsetCurvature</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>UnsetCurvature</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Unset Curvature.
+</dl>
+<a name="UnsetTangent"></a><a name="UnsetTangent()"></a> <dt> o <b>UnsetTangent</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>UnsetTangent</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Unset Tangent Direction.
+</dl>
+<hr>
+ This object is included in the file: <b>CATI2DCstPoint.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATSketcherInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>MecModInterfaces Interface CATIFVertex</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../MecModInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIFVertex','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIFVertex','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIFVertex','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIFVertex','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>MecModInterfaces Interface CATIFVertex</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIFVertex_21668','CATIFVertex','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIFVertex</b>
+</p>
+<p>
+<b><i> Interface to manage a selecting object of FVertex type.</i></b><br>
+
+ <b>Role:</b> This interface manages a selecting object ( <a href="#" onClick="openLink('CATIBRepAccess','');return false">CATIBRepAccess</a> ) of FVertex type. A <tt>FVertex</tt> is a vertex on a 2D or 3D topological object
+ ( 
+<a href="#" onClick="openLink('CATBody','');return false">CATBody</a> ). It is the extremity of at least two egdes of one or several faces. These faces can be retrieved by the 
+<a href="#" onClick="openLink('','GetRSurs');return false">GetRSurs</a> method.
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetRSurs()"><b>GetRSurs</b></a>()
+<dd>  Returns the selecting objects associated with the adjacent faces.
+ <dt> o 
+    <a href="#GetVertices()"><b>GetVertices</b></a>()
+<dd>  Returns the geometrical vertices corresponding to the FVertex.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetRSurs"></a><a name="GetRSurs()"></a> <dt> o <b>GetRSurs</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATLISTP(CATIBRepAccess)','CATLISTP(CATIBRepAccess)')</script>  <b>GetRSurs</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the selecting objects associated with the adjacent faces.
+</dl>
+<a name="GetVertices"></a><a name="GetVertices()"></a> <dt> o <b>GetVertices</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATLISTP(CATVertex)','CATLISTP(CATVertex)')</script>  <b>GetVertices</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the geometrical vertices corresponding to the FVertex.
+</dl>
+<hr>
+ This object is included in the file: <b>CATIFVertex.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATMecModInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

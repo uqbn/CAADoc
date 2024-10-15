@@ -1,0 +1,65 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMOperatorsInterfaces Global Function CATCGMCreateCrvFittingToNurbsCrv</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMOperatorsInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>GMOperatorsInterfaces Global Function CATCGMCreateCrvFittingToNurbsCrv</h1>
+
+<br><dt><table><tr><td>  <script type="text/javascript"> activateLink('CATICGMCrvFittingToNurbsCrv','CATICGMCrvFittingToNurbsCrv *')</script>  <b>CATCGMCreateCrvFittingToNurbsCrv</b>(<td><script type="text/javascript"> activateLink('CATGeoFactory','CATGeoFactory*')</script> <td><tt>iFactory</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATCurve','CATCurve*')</script> <td><tt>iCurve</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATCrvLimits','CATCrvLimits&amp;')</script> <td><tt>iLimits</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iMaxDeviation</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLONG32','CATLONG32')</script> <td><tt>iRationalAllowed</tt><td><tt>= 1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSkillValue','CATSkillValue')</script> <td><tt>iMode</tt><td><tt>= BASIC</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ 
+<dl>
+  <dt> <b>Deprecated:</b> 
+  <dd>  V5R21 CATCGMCreateCrvFittingToNurbsCrv(CATGeoFactory  *, CATSoftwareConfiguration * ,
+ Creates the geometric operator that computes a (possibly approximated) NURBS representation of a CATCurve.
+ 
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFactory</tt>
+   <dd> The pointer to the factory of the geometry.
+ </dd>
+    <dt><tt> iCurve</tt>
+   <dd> The pointer to the curve to convert.
+ </dd>
+    <dt><tt> iLimits</tt>
+   <dd> The maximum limits to take into account on the input curve.
+ </dd>
+    <dt><tt> iMaxDeviation</tt>
+   <dd> The maximum deviation between the input and result curves.
+ </dd>
+    <dt><tt> iRationalAllowed</tt>
+   <dd> <tt>1</tt> if the result curve can be rational, 
+ <tt>0</tt> if the result curve must not be rational.
+ </dd>
+    <dt><tt> iMode</tt>
+   <dd> The mode of use.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  [out, IUnknown#Release] The pointer to the created operator. To be released with the <tt>Release</tt> method after use.
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATICGMCrvFittingToNurbsCrv','');return false">CATICGMCrvFittingToNurbsCrv</a>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATICGMCrvFittingToNurbsCrv.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGMOperatorsInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

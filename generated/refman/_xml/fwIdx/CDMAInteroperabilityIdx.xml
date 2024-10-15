@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="CDMAInteroperability" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="0" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="CATIPDMUEPrePostProcessSave" initial="C" htmlFileName="interface_CATIPDMUEPrePostProcessSave_59294" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="59294" abstract=" Interface to enable the user to forbid the save of certain documents and to know which documents have been saved in VPM." />
+<method name="PostProcess" htmlFileName="interface_CATIPDMUEPrePostProcessSave_59294" containerName="CATIPDMUEPrePostProcessSave" containerType="interface" id="90708" status="18" isProperty="0" initial="P" argList="(CATLISTP(CATDocument)*)" abstract="Allows the user to know which documents have been saved in VPM." />
+<method name="PreProcess" htmlFileName="interface_CATIPDMUEPrePostProcessSave_59294" containerName="CATIPDMUEPrePostProcessSave" containerType="interface" id="173981" status="18" isProperty="0" initial="P" argList="(CATLISTP(CATDocument)*,CATLISTP(CATDocument)*&amp;amp;)" abstract="Allows the user to forbid the save of certain documents." />
+<class name="CATIPDMUESave" initial="C" htmlFileName="interface_CATIPDMUESave_30922" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="30922" abstract=" Interface to enable some user specific check operations on the files." />
+<method name="OnSave" htmlFileName="interface_CATIPDMUESave_30922" containerName="CATIPDMUESave" containerType="interface" id="54861" status="18" isProperty="0" initial="O" argList="(CATDocument*,HRESULT*)" abstract="Allows the user to perform some operations on the file to save." />
+<class name="CATIVPMAccess" initial="C" htmlFileName="interface_CATIVPMAccess_31425" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="31425" abstract="CATIVPMAccess allows to retrieve data from a ENOVIAvpm V4 database." />
+<method name="ExtractLFToFile" htmlFileName="interface_CATIVPMAccess_31425" containerName="CATIVPMAccess" containerType="interface" id="107499" status="18" isProperty="0" initial="E" argList="(int&amp;amp;,char*,CATUnicodeString&amp;amp;)" abstract="Extracts a long field from the ENOVIAvpm V4 database to a file." />
+<method name="ExtractLFToMemory" htmlFileName="interface_CATIVPMAccess_31425" containerName="CATIVPMAccess" containerType="interface" id="100704" status="18" isProperty="0" initial="E" argList="(int&amp;amp;,char*,int&amp;amp;,char*&amp;amp;)" abstract="Extracts a long field from the ENOVIAvpm V4 database and opens it in memory ." />
+<method name="ReadDone" htmlFileName="interface_CATIVPMAccess_31425" containerName="CATIVPMAccess" containerType="interface" id="60355" status="18" isProperty="0" initial="R" argList="(CATUnicodeString&amp;amp;)" abstract="Post-treatment once the document associated to the long field has been read." />
+</fw>

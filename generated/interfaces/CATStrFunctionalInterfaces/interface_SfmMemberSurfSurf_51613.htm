@@ -1,0 +1,170 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATStrFunctionalInterfaces SfmMemberSurfSurf (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATStrFunctionalInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SfmMemberSurfSurf','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmMemberSurfSurf','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SfmMemberSurfSurf','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmMemberSurfSurf','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SfmMemberSurfSurf<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SfmMemberSurfSurf_51613','SfmMemberSurfSurf','0');</script>
+<b><i> Interface to manage Member created by the intersection of two surfaces.</i></b><br>
+
+ <b>Role</b>: To manage member created by the intersection of two surfaces.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#FirstSurface"><b>FirstSurface</b></a>
+<dd>  Returns or sets the SuperMember's first surface.
+ <dt>
+    <a href="#FirstSurfaceOffset"><b>FirstSurfaceOffset</b></a>
+<dd>  Returns or sets the SuperMember's first surface offset.
+ <dt>
+    <a href="#FirstSurfaceOffsetParam"><b>FirstSurfaceOffsetParam</b></a>
+<dd>  <dt>
+    <a href="#FirstSurfaceOrientation"><b>FirstSurfaceOrientation</b></a>
+<dd>  Returns or sets the SuperMember's first surface orientation.
+ <dt>
+    <a href="#SecondSurface"><b>SecondSurface</b></a>
+<dd>  Returns the SuperMember's second surface.
+ <dt>
+    <a href="#SecondSurfaceOffset"><b>SecondSurfaceOffset</b></a>
+<dd>  Returns or sets the SuperMember's second surface offset.
+ <dt>
+    <a href="#SecondSurfaceOffsetParam"><b>SecondSurfaceOffsetParam</b></a>
+<dd>  <dt>
+    <a href="#SecondSurfaceOrientation"><b>SecondSurfaceOrientation</b></a>
+<dd>  Returns or sets the SuperMember's second surface orientation.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="FirstSurface"><dt>
+
+<table><tr><td>o Property <b>FirstSurface</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the SuperMember's first surface.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>FirstSurface</code> the first surface of the <code>SuperMember</code> feature.
+ <pre>
+ Dim Surface As Reference
+ Set Surface = SuperMember.<font color="red">FirstSurface</font>
+ </pre>
+ </dl>
+</dl>
+<a name="FirstSurfaceOffset"><dt>
+
+<table><tr><td>o Property <b>FirstSurfaceOffset</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the SuperMember's first surface offset.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>Offset</code> the first surface offset of the <code>SuperMember</code> feature.
+ <pre>
+ Dim Offset As Double
+ Set Offset = SuperMember.<font color="red">FirstSurfaceOffset</font>
+ </pre>
+ </dl>
+</dl>
+<a name="FirstSurfaceOffsetParam"><dt>
+
+<table><tr><td>o Property <b>FirstSurfaceOffsetParam</b>(<td>) As <script type="text/javascript"> activateLink('Length','Length')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="FirstSurfaceOrientation"><dt>
+
+<table><tr><td>o Property <b>FirstSurfaceOrientation</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the SuperMember's first surface orientation.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>Orient</code> the first surface orientation for <code>SuperMember</code> feature.
+ <pre>
+ Dim Orient As Integer
+ Set Orient = SuperMember.<font color="red">FirstSurfaceOrientation</font>
+ </pre>
+ </dl>
+</dl>
+<a name="SecondSurface"><dt>
+
+<table><tr><td>o Property <b>SecondSurface</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the SuperMember's second surface.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>Surface</code> the second surface of the <code>SuperMember</code> feature.
+ <pre>
+ Dim Surface As Reference
+ Set Surface = SuperMember.<font color="red">SecondSurface</font>
+ </pre>
+ </dl>
+</dl>
+<a name="SecondSurfaceOffset"><dt>
+
+<table><tr><td>o Property <b>SecondSurfaceOffset</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the SuperMember's second surface offset.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>Offset</code> the second surface offset of the <code>SuperMember</code> feature.
+ <pre>
+ Dim Offset As Double
+ Set Offset = SuperMember.<font color="red">SecondSurfaceOffset</font>
+ </pre>
+ </dl>
+</dl>
+<a name="SecondSurfaceOffsetParam"><dt>
+
+<table><tr><td>o Property <b>SecondSurfaceOffsetParam</b>(<td>) As <script type="text/javascript"> activateLink('Length','Length')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="SecondSurfaceOrientation"><dt>
+
+<table><tr><td>o Property <b>SecondSurfaceOrientation</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the SuperMember's second surface orientation.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>Orient</code> the second surface orientation for <code>SuperMember</code> feature.
+ <pre>
+ Dim Orient As Integer
+ Set Orient = SuperMember.<font color="red">SecondSurfaceOrientation</font>
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

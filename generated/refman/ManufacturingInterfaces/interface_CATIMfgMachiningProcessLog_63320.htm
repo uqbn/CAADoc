@@ -1,0 +1,134 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ManufacturingInterfaces Interface CATIMfgMachiningProcessLog</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ManufacturingInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMfgMachiningProcessLog','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgMachiningProcessLog','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMfgMachiningProcessLog','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgMachiningProcessLog','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ManufacturingInterfaces Interface CATIMfgMachiningProcessLog</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMfgMachiningProcessLog_63320','CATIMfgMachiningProcessLog','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATIMfgMachiningProcessLog</b>
+</p>
+<p>
+<b><i> Interface to trace machining process instantiation.</i></b><br>
+
+ <b>Role</b>: This interface offers services to report instantiation
+ of a machining process to a log file or to console window.<br></p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Activate(CATBoolean)"><b>Activate</b></a>(CATBoolean)
+<dd>  Activates or desactivates the generation of the traces.
+ <dt> o 
+    <a href="#IsActive(CATBoolean&amp;)"><b>IsActive</b></a>(CATBoolean&amp;)
+<dd>  Tells if the traces are generated during instantiation or not.
+ <dt> o 
+    <a href="#Trace(int,CATListOfCATUnicodeString&amp;)"><b>Trace</b></a>(int,CATListOfCATUnicodeString&amp;)
+<dd>  Traces the instantiation of a machining process.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Activate"></a><a name="Activate(CATBoolean)"></a> <dt> o <b>Activate</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>Activate</b>(<td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script> <td><tt>iActive</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Activates or desactivates the generation of the traces.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iActive</tt>
+   <dd>      The active flag
+   <br><b>Legal values</b>:
+   <ul>
+   <li>=CATTrue  : to generate the traces </li>
+   <li>=CATFalse : to stop the generation of the traces </li>
+   </ul></dd>
+</dl>
+</dl>
+</dl>
+<a name="IsActive"></a><a name="IsActive(CATBoolean&amp;)"></a> <dt> o <b>IsActive</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>IsActive</b>(<td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean&amp;')</script> <td><tt>oActive</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Tells if the traces are generated during instantiation or not.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oActive</tt>
+   <dd>      The active flag
+   <br><b>Legal values</b>:
+   <ul>
+   <li>=CATTrue  : traces are generated  </li>
+   <li>=CATFalse : traces are not generated </li>
+   </ul></dd>
+</dl>
+</dl>
+</dl>
+<a name="Trace"></a><a name="Trace(int,CATListOfCATUnicodeString&amp;)"></a> <dt> o <b>Trace</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>Trace</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iContext</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATListOfCATUnicodeString','CATListOfCATUnicodeString&amp;')</script> <td><tt>iTraces</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Traces the instantiation of a machining process.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iContext</tt>
+   <dd>      The computation step of the machining process instantiation.
+   <br><b>Legal values</b>:
+   <ul>
+   <li>=1 : Check evaluation </li>
+   <li>=2 : Tooling Query execution </li>
+   <li>=3 : Formula solving </li>
+   <li>=otherwise : for future use </li>
+   </ul>
+   </dd>
+    <dt><tt> iTraces</tt>
+   <dd>      Information about Machining Process instantiation.
+   </ul></dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMfgMachiningProcessLog.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>MfgItfEnv</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

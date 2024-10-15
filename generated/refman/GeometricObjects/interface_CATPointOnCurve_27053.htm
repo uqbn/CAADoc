@@ -1,0 +1,146 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GeometricObjects Interface CATPointOnCurve</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GeometricObjects.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATPointOnCurve','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATPointOnCurve','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATPointOnCurve','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATPointOnCurve','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GeometricObjects Interface CATPointOnCurve</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATPointOnCurve_27053','CATPointOnCurve','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATPointOnCurve</b>
+</p>
+<p>
+<b><i> Interface representing a point lying on curve.</i></b><br>
+
+ <br><b>Role</b>: A CATPointOnCurve can be seen as 1 coordinate (called curve parameter) in the space of
+ the curve.
+<br>The CATPointOnCurve is created through the <tt>CreatePointOnCurve</tt>
+ method of the <tt>CATGeoFactory</tt> interface and deleted with the <tt>Remove</tt> method.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetCurve()"><b>GetCurve</b></a>()
+<dd>  Returns the underlying CATCurve of <tt>this</tt> CATPointOnCurve.
+ <dt> o 
+    <a href="#GetParam()"><b>GetParam</b></a>()
+<dd>  Returns the corresponding parameter on the curve.
+ <dt> o 
+    <a href="#GetParam(CATCrvParam&amp;)"><b>GetParam</b></a>(CATCrvParam&amp;)
+<dd>  Returns the corresponding parameter on the curve.
+ <dt> o 
+    <a href="#SetCurve(CATCurve*)"><b>SetCurve</b></a>(CATCurve*)
+<dd>  Modifies the underlying CATCurve of <tt>this</tt> CATPointOnCurve.
+ <dt> o 
+    <a href="#SetParam(CATCrvParam&amp;)"><b>SetParam</b></a>(CATCrvParam&amp;)
+<dd>  Modifies the parameter of <tt>this</tt> CATPointOnCurve.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetCurve"></a><a name="GetCurve()"></a> <dt> o <b>GetCurve</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCurve','CATCurve *')</script>  <b>GetCurve</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the underlying CATCurve of <tt>this</tt> CATPointOnCurve.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  A pointer to the supporting curve.
+</dl>
+</dl>
+<a name="GetParam"></a><a name="GetParam()"></a> <dt> o <b>GetParam</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCrvParam','CATCrvParam')</script>  <b>GetParam</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the corresponding parameter on the curve. 
+ User preferably the signature which returns a CATCrvParam in output argument.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The CATCrvParam
+</dl>
+</dl>
+<a name="GetParam"></a><a name="GetParam(CATCrvParam&amp;)"></a> <dt> o <b>GetParam</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>GetParam</b>(<td><script type="text/javascript"> activateLink('CATCrvParam','CATCrvParam&amp;')</script> <td><tt>oParam</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the corresponding parameter on the curve.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oParam</tt>
+   <dd> The parameter of the curve.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetCurve"></a><a name="SetCurve(CATCurve*)"></a> <dt> o <b>SetCurve</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetCurve</b>(<td><script type="text/javascript"> activateLink('CATCurve','CATCurve*')</script> <td><tt>iNewSupport</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the underlying CATCurve of <tt>this</tt> CATPointOnCurve.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNewSupport</tt>
+   <dd> A pointer to the new supporting curve.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetParam"></a><a name="SetParam(CATCrvParam&amp;)"></a> <dt> o <b>SetParam</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetParam</b>(<td> const <script type="text/javascript"> activateLink('CATCrvParam','CATCrvParam&amp;')</script> <td><tt>iNewParam</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the parameter of <tt>this</tt> CATPointOnCurve.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNewParam</tt>
+   <dd> The new value of the parameter</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATPointOnCurve.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGeometricObjects</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

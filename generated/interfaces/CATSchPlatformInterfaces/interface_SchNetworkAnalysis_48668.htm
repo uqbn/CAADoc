@@ -1,0 +1,141 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchNetworkAnalysis (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchNetworkAnalysis','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchNetworkAnalysis','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchNetworkAnalysis','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchNetworkAnalysis','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchNetworkAnalysis<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchNetworkAnalysis_48668','SchNetworkAnalysis','0');</script>
+<b><i>  Represents a schematic network.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#FindPaths"><b>FindPaths</b></a>
+<dd>  Given a start and end object in the network, this method returns
+ a list of network objects each representing a path connecting the
+ the 2 input objects.
+ <dt>
+    <a href="#ListExtremityObjects"><b>ListExtremityObjects</b></a>
+<dd>  List the extremity objects of the network.
+ <dt>
+    <a href="#ListNetworkObjects"><b>ListNetworkObjects</b></a>
+<dd>  List the connected objects in the network.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="FindPaths"><dt>
+
+<table><tr><td>o Func <b>FindPaths</b>(<td><script type="text/javascript"> activateLink('SchAppConnectable','SchAppConnectable')</script> <td><tt>iFromObject</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchAppConnectable','SchAppConnectable')</script> <td><tt>iToObject</tt>) As <script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> </table></dt>
+<dl>
+  <dd>
+ Given a start and end object in the network, this method returns
+ a list of network objects each representing a path connecting the
+ the 2 input objects.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFromObject</tt>
+   <dd>   The connectable to start from.
+ </dd>
+    <dt><tt> iToObject</tt>
+   <dd>   The connectable to finish at.
+ </dd>
+    <dt><tt> oLNetworks</tt>
+   <dd>   Pointer to a list of networks.
+   (Members are CATISchNetworkAnalysis interface pointers).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchNetworkAnalysis
+ Dim objArg1 As SchAppConnectable
+ Dim objArg2 As SchAppConnectable
+ Dim objArg3 As SchListOfObjects
+  ...
+ Set objArg3 = objThisIntf.<font color="red">FindPaths</font>(objArg1,objArg2)
+ </pre>
+
+</dl>
+</dl>
+<a name="ListExtremityObjects"><dt>
+
+<table><tr><td>o Func <b>ListExtremityObjects</b>(<td>) As <script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> </table></dt>
+<dl>
+  <dd>
+ List the extremity objects of the network.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLExtremityObjs</tt>
+   <dd>   Pointer to a list of extremity objects of the network 
+    (Members are CATISchAppConnectable interface pointers).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchNetworkAnalysis
+ Dim objArg1 As SchListOfObjects
+  ...
+ Set objArg1 = objThisIntf.<font color="red">ListExtremityObjects</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="ListNetworkObjects"><dt>
+
+<table><tr><td>o Func <b>ListNetworkObjects</b>(<td>) As <script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> </table></dt>
+<dl>
+  <dd>
+ List the connected objects in the network.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLNetworkObjs</tt>
+   <dd>   Pointer to a list of all connected objects in the network.
+   (Members are CATISchAppConnectable interface pointers)
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchNetworkAnalysis
+ Dim objArg1 As SchListOfObjects
+  ...
+ Set objArg1 = objThisIntf.<font color="red">ListNetworkObjects</font>
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

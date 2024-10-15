@@ -1,0 +1,178 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Interface CATISchAppCntrFlow</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISchAppCntrFlow','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchAppCntrFlow','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISchAppCntrFlow','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchAppCntrFlow','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Interface CATISchAppCntrFlow</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISchAppCntrFlow_47710','CATISchAppCntrFlow','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATISchAppCntrFlow</b>
+</p>
+<p>
+<b><i> Interface to mangage Application Connector Flow property.</i></b><br>
+ 
+ <b>Role</b>: To query and modify Application Connector Flow property.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AppGetFlowCapability(CATSchCntrFlowCapability*)"><b>AppGetFlowCapability</b></a>(CATSchCntrFlowCapability*)
+<dd>  Query the application Flow Capability property of this connector.
+ <dt> o 
+    <a href="#AppGetFlowReality(CATSchCntrFlowReality*)"><b>AppGetFlowReality</b></a>(CATSchCntrFlowReality*)
+<dd>  Query the application Flow Reality property of this connector.
+ <dt> o 
+    <a href="#AppSetFlowCapability(CATSchCntrFlowCapability)"><b>AppSetFlowCapability</b></a>(CATSchCntrFlowCapability)
+<dd>  Set the application Flow Capability property of this connector.
+ <dt> o 
+    <a href="#AppSetFlowReality(CATSchCntrFlowReality)"><b>AppSetFlowReality</b></a>(CATSchCntrFlowReality)
+<dd>  Set the application Flow Reality property of this connector.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AppGetFlowCapability"></a><a name="AppGetFlowCapability(CATSchCntrFlowCapability*)"></a> <dt> o <b>AppGetFlowCapability</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppGetFlowCapability</b>(<td><script type="text/javascript"> activateLink('CATSchCntrFlowCapability','CATSchCntrFlowCapability*')</script> <td><tt>oEFlowCapability</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Query the application Flow Capability property of this connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oEFlowCapability</tt>
+   <dd>   Flow Capability.
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATSchCntrFlowCapability','');return false">CATSchCntrFlowCapability</a>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppGetFlowReality"></a><a name="AppGetFlowReality(CATSchCntrFlowReality*)"></a> <dt> o <b>AppGetFlowReality</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppGetFlowReality</b>(<td><script type="text/javascript"> activateLink('CATSchCntrFlowReality','CATSchCntrFlowReality*')</script> <td><tt>oEFlowReality</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Query the application Flow Reality property of this connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oEFlowReality</tt>
+   <dd>   Flow Reality.
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATSchCntrFlowReality','');return false">CATSchCntrFlowReality</a>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppSetFlowCapability"></a><a name="AppSetFlowCapability(CATSchCntrFlowCapability)"></a> <dt> o <b>AppSetFlowCapability</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppSetFlowCapability</b>(<td><script type="text/javascript"> activateLink('CATSchCntrFlowCapability','CATSchCntrFlowCapability')</script> <td><tt>iEFlowCapability</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Set the application Flow Capability property of this connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEFlowCapability</tt>
+   <dd>   Flow Capability property to be set.
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATSchCntrFlowCapability','');return false">CATSchCntrFlowCapability</a>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppSetFlowReality"></a><a name="AppSetFlowReality(CATSchCntrFlowReality)"></a> <dt> o <b>AppSetFlowReality</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppSetFlowReality</b>(<td><script type="text/javascript"> activateLink('CATSchCntrFlowReality','CATSchCntrFlowReality')</script> <td><tt>iEFlowReality</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Set the application Flow Reality property of this connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEFlowReality</tt>
+   <dd>   Flow Reality property to be set.
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATSchCntrFlowReality','');return false">CATSchCntrFlowReality</a>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISchAppCntrFlow.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

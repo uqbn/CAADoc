@@ -1,0 +1,116 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>Visualization Notification CATModelNotification</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../Visualization.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATModelNotification','notification','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATModelNotification','notification','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATModelNotification','notification','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATModelNotification','notification','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Visualization Notification CATModelNotification</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATModelNotification_29483','CATModelNotification','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATModelNotification</b>
+</p>
+<p>
+<b><i> Class representing basic visualization events.</i></b><br>
+
+ 
+ <b>Role</b>: Providing a visualization event basic class aimed at defining model events. Whenever objects' change happens, 
+ objects send a specialized visualization event to warn the "<tt>Visualization world</tt>". 
+ That means the way provided in CATIAV5 to update the graphical representations of one object is to send
+ a visualization event, which is defined by this class.
+ <p>
+ That 's the reason why when one object's color is changed or when its shape is modified , it sends a visu event.
+  Refer to the <a href="#" onClick="openLink('CATIModelEvents','');return false">CATIModelEvents</a> interface to have details about the management of the visualization events  and their mechanism.
+ <p>
+ Examples of visualization  events are 
+<a href="#" onClick="openLink('CATModelEntityNotification','');return false">CATModelEntityNotification</a>, 
+<a href="#" onClick="openLink('CATCreate','');return false">CATCreate</a>, 
+<a href="#" onClick="openLink('CATModify','');return false">CATModify</a>. 
+
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATNotification','');return false">CATNotification</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATModelNotification()"><b>CATModelNotification</b></a>()
+<dd>  Default Constructor.
+ <dt> o 
+    <a href="#~CATModelNotification()"><b>~CATModelNotification</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Clone()"><b>Clone</b></a>()
+<dd>   Returns a pointer to a new CATModelNotification event which is the clone of the current one.
+ <dt> o 
+    <a href="#GetId()"><b>GetId</b></a>()
+<dd>  Returns its identifier.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATModelNotification"></a><a name="CATModelNotification()"></a> <dt> o <b>CATModelNotification</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATModelNotification</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Default Constructor.
+</dl>
+<a name="~CATModelNotification"></a><a name="~CATModelNotification()"></a> <dt> o <b>~CATModelNotification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATModelNotification</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Clone"></a><a name="Clone()"></a> <dt> o <b>Clone</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATModelNotification','CATModelNotification*')</script>  <b>Clone</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Returns a pointer to a new CATModelNotification event which is the clone of the current one.
+</dl>
+<a name="GetId"></a><a name="GetId()"></a> <dt> o <b>GetId</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('int','int')</script>  <b>GetId</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns its identifier.
+</dl>
+<hr>
+ This object is included in the file: <b>CATModelNotification.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATVisualization</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

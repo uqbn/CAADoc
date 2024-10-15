@@ -1,0 +1,81 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisVisuInterfaces Interface CATISamImageOutput</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisVisuInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISamImageOutput','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamImageOutput','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISamImageOutput','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamImageOutput','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisVisuInterfaces Interface CATISamImageOutput</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISamImageOutput_50982','CATISamImageOutput','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISamImageOutput</b>
+</p>
+<p>
+<b><i> Analysis Images outputs.</i></b><br>
+
+ <b>Role: </b> Analysis <i>Images</i> is the result visualization of 
+ the collector characteristics.
+ Query this interface in order to get the collector characteristics of an existing <i>Image</i>.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetCharacCollectors(CATAnalysisCharacCollector**&amp;)"><b>GetCharacCollectors</b></a>(CATAnalysisCharacCollector**&amp;)
+<dd>  Retrieves the collector characteristics for each entity dimensions (1D,2D,3D).
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetCharacCollectors"></a><a name="GetCharacCollectors(CATAnalysisCharacCollector**&amp;)"></a> <dt> o <b>GetCharacCollectors</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetCharacCollectors</b>(<td> const <script type="text/javascript"> activateLink('CATAnalysisCharacCollector','CATAnalysisCharacCollector**&amp;')</script> <td><tt>oCharacCollectors</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the collector characteristics for each entity dimensions (1D,2D,3D).
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oCharacCollectors.</tt>
+   <dd>   A pointer to the collector characteristics. 
+   The number of CATAnalysisCharacCollector is 3, one per dimension.
+   The charac collector for one given dimension can be NULL.
+   The charac collector will be filtered whith the entities corresponding whith the given dimension.
+   The CATISamImage must be uptodate.
+   Release has to be called on each CATAnalysisCharacCollector object.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISamImageOutput.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATSamVisuUUID</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,204 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ManufacturingInterfaces Interface CATIMfgDesignHoleParameters</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ManufacturingInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMfgDesignHoleParameters','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgDesignHoleParameters','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMfgDesignHoleParameters','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgDesignHoleParameters','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ManufacturingInterfaces Interface CATIMfgDesignHoleParameters</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMfgDesignHoleParameters_66303','CATIMfgDesignHoleParameters','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATIMfgDesignHoleParameters</b>
+</p>
+<p>
+<b><i> Interface to retrieve parameters from a design hole.</i></b><br>
+
+ <br><b>Role</b>: CATIMfgDesignHoleParameters has methods to retrieve parameters
+ from a design hole.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetDepth(CATICkeParm_var&amp;)"><b>GetDepth</b></a>(CATICkeParm_var&amp;)
+<dd>  Retrieves the depth of the hole.
+ <dt> o 
+    <a href="#GetDiameter(CATICkeParm_var&amp;)"><b>GetDiameter</b></a>(CATICkeParm_var&amp;)
+<dd>  Retrieves the diameter of the hole.
+ <dt> o 
+    <a href="#GetDirection(double&amp;,double&amp;,double&amp;)"><b>GetDirection</b></a>(double&amp;,double&amp;,double&amp;)
+<dd>  Retrieves the direction of the hole.
+ <dt> o 
+    <a href="#GetOrigin(double&amp;,double&amp;,double&amp;)"><b>GetOrigin</b></a>(double&amp;,double&amp;,double&amp;)
+<dd>  Retrieves the origin of the hole.
+ <dt> o 
+    <a href="#get_Parameter(CATString&amp;,int&amp;)"><b>get_Parameter</b></a>(CATString&amp;,int&amp;)
+<dd>  Retrieves a parameter of the hole from its name.
+ <dt> o 
+    <a href="#get_Parameter(CATString&amp;,double&amp;)"><b>get_Parameter</b></a>(CATString&amp;,double&amp;)
+<dd>  Retrieves a parameter of the hole from its name.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetDepth"></a><a name="GetDepth(CATICkeParm_var&amp;)"></a> <dt> o <b>GetDepth</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetDepth</b>(<td><script type="text/javascript"> activateLink('CATICkeParm_var','CATICkeParm_var&amp;')</script> <td><tt>oDepth</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the depth of the hole. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDepth</tt>
+   <dd>   The depth of the hole</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetDiameter"></a><a name="GetDiameter(CATICkeParm_var&amp;)"></a> <dt> o <b>GetDiameter</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetDiameter</b>(<td><script type="text/javascript"> activateLink('CATICkeParm_var','CATICkeParm_var&amp;')</script> <td><tt>oDiameter</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the diameter of the hole. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDiameter</tt>
+   <dd>   The diameter of the hole</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetDirection"></a><a name="GetDirection(double&amp;,double&amp;,double&amp;)"></a> <dt> o <b>GetDirection</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetDirection</b>(<td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oX</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oY</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oZ</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the direction of the hole. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oX</tt>
+   <dd>   The first component of the direction  
+ </dd>
+    <dt><tt> oY</tt>
+   <dd>   The second component of the direction  
+ </dd>
+    <dt><tt> oZ</tt>
+   <dd>   The third component of the direction</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetOrigin"></a><a name="GetOrigin(double&amp;,double&amp;,double&amp;)"></a> <dt> o <b>GetOrigin</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetOrigin</b>(<td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oX</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oY</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oZ</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the origin of the hole. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oX</tt>
+   <dd>   The first coordinate of the origin  
+ </dd>
+    <dt><tt> oY</tt>
+   <dd>   The second coordinate of the origin  
+ </dd>
+    <dt><tt> oZ</tt>
+   <dd>   The third coordinate of the origin</dd>
+</dl>
+</dl>
+</dl>
+<a name="get_Parameter"></a><a name="get_Parameter(CATString&amp;,int&amp;)"></a> <dt> o <b>get_Parameter</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>get_Parameter</b>(<td> const <script type="text/javascript"> activateLink('CATString','CATString&amp;')</script> <td><tt>iParameterName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>oParameter</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves a parameter of the hole from its name. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iParameterName</tt>
+   <dd>   The name of the parameter 
+   <br><b>Legal values</b>: The parameter name can be
+   <dl>
+     <dt><tt>THSens</tt>    <dd>The hole thread side. (0: right threaded 1: left threaded) 
+     <dt><tt>Extension</tt> <dd>The hole extension. (1: blind 2: through)
+   </dl>
+ </dd>
+    <dt><tt> oParameter</tt>
+   <dd>   The value of the parameter</dd>
+</dl>
+</dl>
+</dl>
+<a name="get_Parameter"></a><a name="get_Parameter(CATString&amp;,double&amp;)"></a> <dt> o <b>get_Parameter</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>get_Parameter</b>(<td> const <script type="text/javascript"> activateLink('CATString','CATString&amp;')</script> <td><tt>iParameterName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oParameter</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves a parameter of the hole from its name. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iParameterName</tt>
+   <dd>   The name of the parameter
+   <br><b>Legal values</b>: The parameter name can be
+   <dl>
+     <dt><tt>Diameter</tt>   <dd>The hole diameter 
+     <dt><tt>Depth</tt>      <dd>The hole depth
+     <dt><tt>CBDiameter</tt> <dd>The hole head diameter
+     <dt><tt>CBDepth</tt>    <dd>The hole head depth
+     <dt><tt>CSAngle</tt>    <dd>The hole head angle
+     <dt><tt>THDiameter</tt> <dd>The hole thread diameter
+     <dt><tt>THDepth</tt>    <dd>The hole thread depth
+     <dt><tt>THPitch</tt>    <dd>The hole thread pitch
+   </dl>
+ </dd>
+    <dt><tt> oParameter</tt>
+   <dd>   The value of the parameter</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMfgDesignHoleParameters.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>MfgItfEnv</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

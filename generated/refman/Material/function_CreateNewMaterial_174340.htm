@@ -1,0 +1,63 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>Material Global Function CreateNewMaterial</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../Material.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>Material Global Function CreateNewMaterial</h1>
+
+<br><dt><table><tr><td>  <script type="text/javascript"> activateLink('int',' int')</script>  <b>CreateNewMaterial</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATDocument','CATDocument*')</script> <td><tt>iMatDocument</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIMaterialFeature','CATIMaterialFeature**')</script> <td><tt>oMaterial</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Creates a new material in a material catalog document.
+  <br><b>Role</b>: This method creates a new material and after the creation, the new material
+ should be set in a family using the 
+<a href="#" onClick="openLink('CATIFamilyFeature','SetMaterial');return false">CATIFamilyFeature.SetMaterial</a> method. 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iName</tt>
+   <dd>   The name of the material to create.
+ </dd>
+    <dt><tt> iMatDocument</tt>
+   <dd>   The material catalog document (such document is stored in a file suffixed by CATMaterial) in which the material will be created.
+ </dd>
+    <dt><tt> oMaterial</tt>
+   <dd>   The material object created. 
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An integer value. 
+   <br><b>Legal values</b>:
+   <dl>
+     <dt> 0</dt>
+     <dd>The material has been successfully created in the catalog</dd>
+     <dt> 1</dt>
+     <dd>The material has been successfully created in the catalog but has been renamed to avoid name conflict</dd>
+     <dt>-1</dt>
+     <dd>A wrong or missing material name has been detected</dd>
+     <dt>-2</dt>
+     <dd>A wrong or missing document argument has been detected</dd>
+     <dt>-5</dt>
+     <dd>The material factories are not found</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATMaterialServices.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

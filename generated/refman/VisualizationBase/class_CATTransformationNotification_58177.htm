@@ -1,0 +1,94 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>VisualizationBase Notification CATTransformationNotification</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../VisualizationBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATTransformationNotification','notification','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATTransformationNotification','notification','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATTransformationNotification','notification','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATTransformationNotification','notification','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>VisualizationBase Notification CATTransformationNotification</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATTransformationNotification_58177','CATTransformationNotification','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATTransformationNotification</b>
+</p>
+<p>
+<b><i> Class to notify the interactive manipulation of visualized objects.</i></b><br>
+
+ <b>Role</b>: This notification sent by a <a href="#" onClick="openLink('CATManipulator','');return false">CATManipulator</a> is used to retrieve mathematic transformation data from the mouse move.
+ It can be decoded in a callback method 
+ through the SendCommandSpecificObject method.
+</p>
+<hr>
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetTransformation()"><b>GetTransformation</b></a>()
+<dd>  Returns the mathematic transformation of the movement.
+ <dt> o 
+    <a href="#IsRotation(CATMathLine&amp;,CATAngle&amp;)"><b>IsRotation</b></a>(CATMathLine&amp;,CATAngle&amp;)
+<dd>  Get the rotation characteristics.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetTransformation"></a><a name="GetTransformation()"></a> <dt> o <b>GetTransformation</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATMathTransformation','const CATMathTransformation &')</script>  <b>GetTransformation</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the mathematic transformation of the movement.
+ This transformation reflect the mouse move since the last recieved
+ notification.
+</dl>
+<a name="IsRotation"></a><a name="IsRotation(CATMathLine&amp;,CATAngle&amp;)"></a> <dt> o <b>IsRotation</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>IsRotation</b>(<td><script type="text/javascript"> activateLink('CATMathLine','CATMathLine&amp;')</script> <td><tt>oAxis</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATAngle','CATAngle&amp;')</script> <td><tt>oAngle</tt>)<script type="text/javascript"> activateLink('const',' const')</script>  </table></dt>
+<dl>
+  <dd>
+ Get the rotation characteristics.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oAxis</tt>
+   <dd>    The rotation axis wich is the line defined to the manipulator
+   by </dd>
+<a href="#" onClick="openLink('CAT3DManipulator','SetRotationLine');return false">CAT3DManipulator.SetRotationLine</a> (with the same orientation). 
+    <dt><tt> oAngle</tt>
+   <dd>    The rotation angle since the last recieved notification.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATTransformationNotification.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATViz</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

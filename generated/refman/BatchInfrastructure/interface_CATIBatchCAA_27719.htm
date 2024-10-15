@@ -1,0 +1,168 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>BatchInfrastructure Interface CATIBatchCAA</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../BatchInfrastructure.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIBatchCAA','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIBatchCAA','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIBatchCAA','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIBatchCAA','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>BatchInfrastructure Interface CATIBatchCAA</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIBatchCAA_27719','CATIBatchCAA','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIBatchCAA</b>
+</p>
+<p>
+<b><i> Interface giving access to the xml files of your batch.</i></b><br>
+
+ <b>Role</b>: to be used within your batch to retrieve the data contained in the descriptor and parameters XML files.
+ It allows your batch to know its inputs ans its ouputs and other informations about your batch.
+   <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIBatchElementCAA','');return false">CATIBatchElementCAA</a>, <a href="#" onClick="openLink('CATIBatchElementsCAA','');return false">CATIBatchElementsCAA</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#get_Description(CATUnicodeString&amp;)"><b>get_Description</b></a>(CATUnicodeString&amp;)
+<dd>   Retrieves the description of the batch.
+ <dt> o 
+    <a href="#get_InputParametersCAA(CATIBatchElementCAA*&amp;)"><b>get_InputParametersCAA</b></a>(CATIBatchElementCAA*&amp;)
+<dd>   Retrieves an interface describing your inputs.
+ <dt> o 
+    <a href="#get_Name(CATUnicodeString&amp;)"><b>get_Name</b></a>(CATUnicodeString&amp;)
+<dd>   Retrieves the name of the batch.
+ <dt> o 
+    <a href="#get_OutputParametersCAA(CATIBatchElementCAA*&amp;)"><b>get_OutputParametersCAA</b></a>(CATIBatchElementCAA*&amp;)
+<dd>   Retrieves an interface describing your outputs.
+ <dt> o 
+    <a href="#get_UUID(CATUnicodeString&amp;)"><b>get_UUID</b></a>(CATUnicodeString&amp;)
+<dd>   Retrieves the uuid of the running batch.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="get_Description"></a><a name="get_Description(CATUnicodeString&amp;)"></a> <dt> o <b>get_Description</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>get_Description</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oDescription</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Retrieves the description of the batch.
+ <br><b>Role</b>: This method retrieves the attribute "description" of the "batch" node in your XML descriptor file.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDescription</tt>
+   <dd>  description to be retrieved
+</dd>
+</dl>
+</dl>
+</dl>
+<a name="get_InputParametersCAA"></a><a name="get_InputParametersCAA(CATIBatchElementCAA*&amp;)"></a> <dt> o <b>get_InputParametersCAA</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>get_InputParametersCAA</b>(<td><script type="text/javascript"> activateLink('CATIBatchElementCAA','CATIBatchElementCAA*&amp;')</script> <td><tt>oInputParameters</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Retrieves an interface describing your inputs.
+ <br><b>Role</b>: This method retrieves an interface CATIBatchElementCAA representing the 
+ InputParameters node in your XML parameter file.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oInputParameters</tt>
+   <dd>  Interface to be retrieved
+</dd>
+</dl>
+</dl>
+</dl>
+<a name="get_Name"></a><a name="get_Name(CATUnicodeString&amp;)"></a> <dt> o <b>get_Name</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>get_Name</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oName</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Retrieves the name of the batch.
+ <br><b>Role</b>: This method retrieves the attribute "name" of the "batch" node in your XML descriptor file.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oName</tt>
+   <dd>  name to be retrieved
+</dd>
+</dl>
+</dl>
+</dl>
+<a name="get_OutputParametersCAA"></a><a name="get_OutputParametersCAA(CATIBatchElementCAA*&amp;)"></a> <dt> o <b>get_OutputParametersCAA</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>get_OutputParametersCAA</b>(<td><script type="text/javascript"> activateLink('CATIBatchElementCAA','CATIBatchElementCAA*&amp;')</script> <td><tt>oOutputParameters</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Retrieves an interface describing your outputs.
+ <br><b>Role</b>: This method retrieves an interface CATIBatchElementCAA representing the 
+ OutputParameters node in your XML parameter file.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oOutputParameters</tt>
+   <dd>  Interface to be retrieved
+</dd>
+</dl>
+</dl>
+</dl>
+<a name="get_UUID"></a><a name="get_UUID(CATUnicodeString&amp;)"></a> <dt> o <b>get_UUID</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>get_UUID</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oUUID</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Retrieves the uuid of the running batch.
+ <br><b>Role</b>: This method retrieves the uuid generated for a each batch execution.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oUUID</tt>
+   <dd>  uuid to be retrieved
+</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIBatchCAA.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATIABatImpl</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

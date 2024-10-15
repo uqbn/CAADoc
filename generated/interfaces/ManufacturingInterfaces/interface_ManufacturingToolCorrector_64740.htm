@@ -1,0 +1,129 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ManufacturingInterfaces ManufacturingToolCorrector (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../ManufacturingInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('ManufacturingToolCorrector','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ManufacturingToolCorrector','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('ManufacturingToolCorrector','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ManufacturingToolCorrector','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ManufacturingToolCorrector<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_ManufacturingToolCorrector_64740','ManufacturingToolCorrector','0');</script>
+<b><i> Manufacturing tool corrector.</i></b><br>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Diameter"><b>Diameter</b></a>
+<dd>  Gives the corrector diameter tool diameter.
+ <dt>
+    <a href="#LengthNumber"><b>LengthNumber</b></a>
+<dd>  Gives the corrector length number.
+ <dt>
+    <a href="#Number"><b>Number</b></a>
+<dd>  Gives the corrector number.
+ <dt>
+    <a href="#Point"><b>Point</b></a>
+<dd>  Gives the corrector type point.
+ <dt>
+    <a href="#RadiusNumber"><b>RadiusNumber</b></a>
+<dd>  Gives the corrector radius number.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetValues"><b>GetValues</b></a>
+<dd>  Gives the corrector values.
+ <dt>
+    <a href="#SetValues"><b>SetValues</b></a>
+<dd>  Defines the corrector values.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Diameter"><dt>
+
+<table><tr><td>o Property <b>Diameter</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Gives the corrector diameter tool diameter.<br>
+ Returns HRESULT.<br>
+</dl>
+<a name="LengthNumber"><dt>
+
+<table><tr><td>o Property <b>LengthNumber</b>(<td>) As <script type="text/javascript"> activateLink('short','short')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Gives the corrector length number.<br>
+ Returns HRESULT.<br>
+</dl>
+<a name="Number"><dt>
+
+<table><tr><td>o Property <b>Number</b>(<td>) As <script type="text/javascript"> activateLink('short','short')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Gives the corrector number.<br>
+ Returns HRESULT.<br>
+</dl>
+<a name="Point"><dt>
+
+<table><tr><td>o Property <b>Point</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Gives the corrector type point.<br>
+ oPoint  : Type point (Ex: P1, ..., P9) <br>
+ Returns HRESULT.<br>
+</dl>
+<a name="RadiusNumber"><dt>
+
+<table><tr><td>o Property <b>RadiusNumber</b>(<td>) As <script type="text/javascript"> activateLink('short','short')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Gives the corrector radius number.<br>
+ Returns HRESULT.<br>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetValues"><dt>
+
+<table><tr><td>o Sub <b>GetValues</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oPoint</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('short','short')</script> <td><tt>oNumber</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('short','short')</script> <td><tt>oLengthNumber</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('short','short')</script> <td><tt>oRadiusNumber</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>oDiameter</tt>)</table></dt>
+<dl>
+  <dd>
+ Gives the corrector values.<br>
+ oPoint  : Type point (Ex: P1, ..., P9) <br>
+ oNumber : Corrector Number <br>
+ oLengthNumber : Corrector Length Number <br>
+ oRadiusNumber : Corrector Radius Number <br>
+ oDiameter     : Tool Diameter where corrector applyes (if non fixed corrector)<br>
+ Returns HRESULT.<br>
+</dl>
+<a name="SetValues"><dt>
+
+<table><tr><td>o Sub <b>SetValues</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oPoint</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('short','short')</script> <td><tt>oNumber</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('short','short')</script> <td><tt>oLengthNumber</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('short','short')</script> <td><tt>oRadiusNumber</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>oDiameter</tt>)</table></dt>
+<dl>
+  <dd>
+ Defines the corrector values.<br>
+ iPoint  : Type point (Ex: P1, ..., P9) <br>
+ iNumber : Corrector Number <br>
+ iLengthNumber : Corrector Length Number <br>
+ iRadiusNumber : Corrector Radius Number <br>
+ iDiameter     : Tool Diameter where corrector applyes (if non fixed corrector)<br>
+ Returns HRESULT.<br>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

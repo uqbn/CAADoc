@@ -1,0 +1,144 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSmInterfaces Interface CATIStmCatalogSHMObjectSettingAtt</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSmInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIStmCatalogSHMObjectSettingAtt','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIStmCatalogSHMObjectSettingAtt','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIStmCatalogSHMObjectSettingAtt','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIStmCatalogSHMObjectSettingAtt','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSmInterfaces Interface CATIStmCatalogSHMObjectSettingAtt</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIStmCatalogSHMObjectSettingAtt_67272','CATIStmCatalogSHMObjectSettingAtt','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIStmCatalogSHMObjectSettingAtt</b>
+</p>
+<p>
+<b><i> Interface to CATIA Sheet Metal Aerospace General setting controller object.</i></b><br>
+
+ <b>Role</b>: The CATIA Sheet Metal Aerospace General setting controller is dedicated to manage the
+ setting parameters displayed in the Sheet Metal Aerospace General property page.
+ To access this property page:
+ <ul>
+  <li>Click the <b>Options</b> command in the <b>Tools</b> menu</li>
+  <li>Click + left of </b>Mechanical Design</b> to unfold the workbench list</li>   
+  <li>Click <b>General</b></li>
+ </ul>
+ <p>Retrieve a pointer to CATIStmCatalogSHMObjectSettingAtt as follows:
+ <pre>
+ CATIStmCatalogSHMObjectSettingAtt * pIStmCatalogSHMObjectSettingCtrl;
+ HRESULT rc = E_FAIL;
+ rc = ::CATInstantiateComponent("CATIStmCatalogSHMObjectSettingCtrl",
+                                IID_CATIStmCatalogSHMObjectSettingAtt,
+                                (void**) & pIStmCatalogSHMObjectSettingCtrl);
+ </pre></p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetSHMStdProfPath(CATUnicodeString&amp;)"><b>GetSHMStdProfPath</b></a>(CATUnicodeString&amp;)
+<dd>  Retrieves the Standard Profile Catalog File setting parameter value.
+ <dt> o 
+    <a href="#GetSHMStdProfPathInfo(CATSettingInfo*)"><b>GetSHMStdProfPathInfo</b></a>(CATSettingInfo*)
+<dd>   Retrieves information about the Standard Profile Catalog File setting parameter.
+ <dt> o 
+    <a href="#SetSHMStdProfPath(CATUnicodeString&amp;)"><b>SetSHMStdProfPath</b></a>(CATUnicodeString&amp;)
+<dd>  Sets the Standard Profile Catalog File setting parameter value.
+ <dt> o 
+    <a href="#SetSHMStdProfPathLock(unsigned char)"><b>SetSHMStdProfPathLock</b></a>(unsigned char)
+<dd>   Locks or unlocks the Standard Profile Catalog File parameter.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetSHMStdProfPath"></a><a name="GetSHMStdProfPath(CATUnicodeString&amp;)"></a> <dt> o <b>GetSHMStdProfPath</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetSHMStdProfPath</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oSHMStdProfPath</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the Standard Profile Catalog File setting parameter value.
+ <br><b>Role</b>: The Standard Profile Catalog File setting parameter stores the path 
+   to the CATIA Catalog file used by the Catalog Browser whenever it is involved in
+   Aerospace Sheet Metal commands, such as cutout or corner relief. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oSHMStdProfPath</tt>
+   <dd> [out]   a valid path to a CATIA Catalog file
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    S_OK if the Standard Profile Catalog File setting parameter value
+   is successfully retrieved, and E_FAIL otherwise
+</dl>
+</dl>
+<a name="GetSHMStdProfPathInfo"></a><a name="GetSHMStdProfPathInfo(CATSettingInfo*)"></a> <dt> o <b>GetSHMStdProfPathInfo</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetSHMStdProfPathInfo</b>(<td><script type="text/javascript"> activateLink('CATSettingInfo','CATSettingInfo*')</script> <td><tt>oInfo</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Retrieves information about the Standard Profile Catalog File setting parameter.
+ <br>Refer to 
+<a href="#" onClick="openLink('CATSysSettingController','');return false">CATSysSettingController</a> for a detailed description.
+</dl>
+<a name="SetSHMStdProfPath"></a><a name="SetSHMStdProfPath(CATUnicodeString&amp;)"></a> <dt> o <b>SetSHMStdProfPath</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetSHMStdProfPath</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iSHMStdProfPath</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the Standard Profile Catalog File setting parameter value.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSHMStdProfPath</tt>
+   <dd> [in]   The Standard Profile Catalog File setting parameter value.
+ <br><b>Legal values</b>: a valid path to a CATIA Catalog file.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    S_OK if the Standard Profile Catalog File setting parameter value
+   is successfully set, and E_FAIL otherwise
+</dl>
+</dl>
+<a name="SetSHMStdProfPathLock"></a><a name="SetSHMStdProfPathLock(unsigned char)"></a> <dt> o <b>SetSHMStdProfPathLock</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetSHMStdProfPathLock</b>(<td><script type="text/javascript"> activateLink('unsigned char','unsigned char')</script> <td><tt>iLocked</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Locks or unlocks the Standard Profile Catalog File parameter.
+ <br>Refer to 
+<a href="#" onClick="openLink('CATSysSettingController','');return false">CATSysSettingController</a> for a detailed description.
+</dl>
+<hr>
+ This object is included in the file: <b>CATIStmCatalogSHMObjectSettingAtt.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATSmInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

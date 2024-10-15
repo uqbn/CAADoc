@@ -1,0 +1,142 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>DialogEngine Notification CATStateActivateNotification</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../DialogEngine.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATStateActivateNotification','notification','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATStateActivateNotification','notification','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATStateActivateNotification','notification','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATStateActivateNotification','notification','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>DialogEngine Notification CATStateActivateNotification</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATStateActivateNotification_47366','CATStateActivateNotification','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATStateActivateNotification</b>
+</p>
+<p>
+<b><i> Class representing a notification whose instance is received when a state 
+ command is activated.</i></b><br>
+
+ <b>Role</b>: As a command developer you don't need to create an instance
+ of this class.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATStateCommand','');return false">CATStateCommand</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#~CATStateActivateNotification()"><b>~CATStateActivateNotification</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetType()"><b>GetType</b></a>()
+<dd>  Returns the type of the activate notification.
+ <dt> o 
+    <a href="#ResumedAfterSharedKO()"><b>ResumedAfterSharedKO</b></a>()
+<dd>  Returns whether the shared command reached the Cancel state.
+</dl>
+<dl>
+ <h2>Enumerated Type Index</h2> <br>
+ <dt> o 
+    <a href="#ActivateType"><b>ActivateType</b></a>
+<dd>  Activate notification type.
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="~CATStateActivateNotification"></a><a name="~CATStateActivateNotification()"></a> <dt> o <b>~CATStateActivateNotification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATStateActivateNotification</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetType"></a><a name="GetType()"></a> <dt> o <b>GetType</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATStateActivateNotification::ActivateType','CATStateActivateNotification::ActivateType')</script>  <b>GetType</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the type of the activate notification.
+ <br><b>Role</b>: It is useful to know whether the command begins or 
+ resumes after a deactivation. 
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    The type, which is Begin or Resume, not ResumeAfterSharedKO.
+</dl>
+</dl>
+<a name="ResumedAfterSharedKO"></a><a name="ResumedAfterSharedKO()"></a> <dt> o <b>ResumedAfterSharedKO</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>ResumedAfterSharedKO</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns whether the shared command reached the Cancel state.
+ <br><b>Role</b>: When the command resumes after a deactivation, it is useful to
+ know whether the shared command having involved the deactivation reached the Cancel state.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    The type.
+</dl>
+</dl>
+ <h2>Enumerated Types</h2> <br>
+<a name="ActivateType"> <dt> o <b>ActivateType</b>
+<dl>
+  <dd>
+<pre>
+enum <b>ActivateType</b> {
+  Begin,
+  Resume,
+  ResumeThenLocalUndo
+}
+</pre>
+ Activate notification type.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> Begin</tt>
+   <dd>   The command starts from the beggining.
+ </dd>
+    <dt><tt> Resume</tt>
+   <dd>   The command restarts at the state which was the current one when a shared 
+   command took the focus from it.
+ </dd>
+    <dt><tt> ResumeAfterSharedKO</tt>
+   <dd>   The command restarts at the state which was the current one when a shared 
+   command took the focus from it, but this shared reached the Cancel State.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATStateActivateNotification.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATDialogEngine</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

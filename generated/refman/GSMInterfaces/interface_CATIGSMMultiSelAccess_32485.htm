@@ -1,0 +1,181 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GSMInterfaces Interface CATIGSMMultiSelAccess</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GSMInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIGSMMultiSelAccess','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIGSMMultiSelAccess','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIGSMMultiSelAccess','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIGSMMultiSelAccess','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GSMInterfaces Interface CATIGSMMultiSelAccess</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIGSMMultiSelAccess_32485','CATIGSMMultiSelAccess','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATIGSMMultiSelAccess</b>
+</p>
+<p>
+<b><i> Interface to access object reference in feature multisel.</i></b><br>
+ 
+ <b>Role</b>: Allow to modify multisel parameters on the object
+ <br> Note: this interface is implemented on every feature supporting multisel 
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> CATIGSMMultiSel, <a href="#" onClick="openLink('CATIGSMMultiSelManager','');return false">CATIGSMMultiSelManager</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CheckCoherency(CATISpecObject_var&amp;,boolean&amp;)"><b>CheckCoherency</b></a>(CATISpecObject_var&amp;,boolean&amp;)
+<dd>  Checks consistancy.
+ <dt> o 
+    <a href="#GetCommonElems(CATLISTV(CATISpecObject_var)&amp;)"><b>GetCommonElems</b></a>(CATLISTV(CATISpecObject_var)&amp;)
+<dd>  Gets list of common elements (features used as input common for all instances) 
+   
+ <dt> o 
+    <a href="#GetElem(CATISpecObject_var&amp;,int)"><b>GetElem</b></a>(CATISpecObject_var&amp;,int)
+<dd>  Gets input of corresponding fetures 
+   
+ <dt> o 
+    <a href="#SetElem(CATISpecObject_var&amp;,int)"><b>SetElem</b></a>(CATISpecObject_var&amp;,int)
+<dd>  Sets multiel input for the instance multisel feature.
+ <dt> o 
+    <a href="#UpdateMultiSel(CATISpecObject_var&amp;,CATLISTV(CATISpecObject_var)&amp;,CATLISTV(CATISpecObject_var)&amp;)"><b>UpdateMultiSel</b></a>(CATISpecObject_var&amp;,CATLISTV(CATISpecObject_var)&amp;,CATLISTV(CATISpecObject_var)&amp;)
+<dd>  Updates data related multisel features.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="CheckCoherency"></a><a name="CheckCoherency(CATISpecObject_var&amp;,boolean&amp;)"></a> <dt> o <b>CheckCoherency</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>CheckCoherency</b>(<td><script type="text/javascript"> activateLink('CATISpecObject_var','CATISpecObject_var&amp;')</script> <td><tt>iSpecMultiSel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('boolean','boolean&amp;')</script> <td><tt>iCoherent</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Checks consistancy. 
+ <br> This tool is used to verify consistancy with the aggregated feature regarding common reference elements
+ All occurences of multisel feature should share the same common feature if aggregated ( ex:contextual feature) 
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSpecMultisel</tt>
+   <dd>         Multtisel object (Not used) 
+   </dd>
+    <dt><tt> oCoherent</tt>
+   <dd>         = TRUE OK 
+        = FALSE KO , some "normmally" commnon aggregated feature are detected diffetrents</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetCommonElems"></a><a name="GetCommonElems(CATLISTV(CATISpecObject_var)&amp;)"></a> <dt> o <b>GetCommonElems</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetCommonElems</b>(<td><script type="text/javascript"> activateLink('CATLISTV(CATISpecObject_var)','CATLISTV(CATISpecObject_var)&amp;')</script> <td><tt>oListOfCommonFeats</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets list of common elements (features used as input common for all instances) 
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oListOfCommonFeats</tt>
+   <dd>      List of features (used if common feature input exist)</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetElem"></a><a name="GetElem(CATISpecObject_var&amp;,int)"></a> <dt> o <b>GetElem</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetElem</b>(<td><script type="text/javascript"> activateLink('CATISpecObject_var','CATISpecObject_var&amp;')</script> <td><tt>oSpec</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>nB</tt><td><tt>= 1</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets input of corresponding fetures 
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oSpec</tt>
+   <dd>       input for element multisel 
+   </dd>
+    <dt><tt> inB</tt>
+   <dd>       index of multsel input</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetElem"></a><a name="SetElem(CATISpecObject_var&amp;,int)"></a> <dt> o <b>SetElem</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetElem</b>(<td><script type="text/javascript"> activateLink('CATISpecObject_var','CATISpecObject_var&amp;')</script> <td><tt>iSpec</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>nB</tt><td><tt>= 1</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets multiel input for the instance multisel feature.  
+ <br> Init the input of the instanciated feature, this method is used for example  in the replace transaction 
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSpec</tt>
+   <dd>       input for element multisel 
+   </dd>
+    <dt><tt> inB</tt>
+   <dd>       index of multsel input</dd>
+</dl>
+</dl>
+</dl>
+<a name="UpdateMultiSel"></a><a name="UpdateMultiSel(CATISpecObject_var&amp;,CATLISTV(CATISpecObject_var)&amp;,CATLISTV(CATISpecObject_var)&amp;)"></a> <dt> o <b>UpdateMultiSel</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>UpdateMultiSel</b>(<td><script type="text/javascript"> activateLink('CATISpecObject_var','CATISpecObject_var&amp;')</script> <td><tt>iSpecMultisel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTV(CATISpecObject_var)','CATLISTV(CATISpecObject_var)&amp;')</script> <td><tt>list1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTV(CATISpecObject_var)','CATLISTV(CATISpecObject_var)&amp;')</script> <td><tt>list2</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Updates data related multisel features.
+ <br> Notes :
+ <br> 1/ Lists are  Input/ Output parameters  
+ The Lists are filled with the content of the multisel inputs of the current instance of the feature 
+ <br> 2/ iSpecMultiSel  is a reference on the MultiSel feature - not used internally up to now 
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSpecMultisel</tt>
+   <dd>         Multtisel object (Not used) 
+   </dd>
+    <dt><tt> List1</tt>
+   <dd>        list of multisel input (number 1) 
+   </dd>
+    <dt><tt> List2</tt>
+   <dd>       list of multisel input (number 2)</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIGSMMultiSelAccess.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGitInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATPDMBaseInterfaces Interface CATIPDMSaveInfo1</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATPDMBaseInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIPDMSaveInfo1','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPDMSaveInfo1','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIPDMSaveInfo1','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPDMSaveInfo1','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATPDMBaseInterfaces Interface CATIPDMSaveInfo1</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIPDMSaveInfo1_33478','CATIPDMSaveInfo1','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIPDMSaveInfo1</b>
+</p>
+<p>
+<b><i> Interface clone of CATIPDMSaveInfo allowing server call.</i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#DocumentExistInPDM(CATUnicodeString&amp;)"><b>DocumentExistInPDM</b></a>(CATUnicodeString&amp;)
+<dd>  <dt> o 
+    <a href="#GetDocEnvironmentType(CATDocument*,CATUnicodeString&amp;)"><b>GetDocEnvironmentType</b></a>(CATDocument*,CATUnicodeString&amp;)
+<dd>  <dt> o 
+    <a href="#RunServerCode(CATUnicodeString&amp;,CATVariant&amp;,CATVariant&amp;)"><b>RunServerCode</b></a>(CATUnicodeString&amp;,CATVariant&amp;,CATVariant&amp;)
+<dd>   Called by the CATIA user exit to call customer code on the server.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="DocumentExistInPDM"></a><a name="DocumentExistInPDM(CATUnicodeString&amp;)"></a> <dt> o <b>DocumentExistInPDM</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>DocumentExistInPDM</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iDocName</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="GetDocEnvironmentType"></a><a name="GetDocEnvironmentType(CATDocument*,CATUnicodeString&amp;)"></a> <dt> o <b>GetDocEnvironmentType</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetDocEnvironmentType</b>(<td><script type="text/javascript"> activateLink('CATDocument','CATDocument*')</script> <td><tt>iDoc</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oEnvType</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="RunServerCode"></a><a name="RunServerCode(CATUnicodeString&amp;,CATVariant&amp;,CATVariant&amp;)"></a> <dt> o <b>RunServerCode</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RunServerCode</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iServerLateType</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATVariant','CATVariant&amp;')</script> <td><tt>iInput</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATVariant','CATVariant&amp;')</script> <td><tt>oOutput</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Called by the CATIA user exit to call customer code on the server.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt>  iServerLateType</tt>
+   <dd> Late type on server side containing the customer code.
+ This late type should implement the interface ENOVIUERunInteropServerCode.
+ </dd>
+    <dt><tt>  iInput</tt>
+   <dd> Information provided by the CATIA side.
+ Marshalled to the server and passed in as input to the customer code on server side.
+ </dd>
+    <dt><tt>  iOuput</tt>
+   <dd> Information returned by customer code on server side.
+ It's marshalled back to CATIA an returned to the caller I.E. the CATIA user exit.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     S_OK    Success.
+    E_FAIL  Failure.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIPDMSaveInfo1.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATPDMBaseItf</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

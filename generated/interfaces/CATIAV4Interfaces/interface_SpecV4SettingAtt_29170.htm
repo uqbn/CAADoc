@@ -1,0 +1,126 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATIAV4Interfaces SpecV4SettingAtt (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATIAV4Interfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SpecV4SettingAtt','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SpecV4SettingAtt','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SpecV4SettingAtt','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SpecV4SettingAtt','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SpecV4SettingAtt<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SpecV4SettingAtt_29170','SpecV4SettingAtt','0');</script>
+<b><i>  Represents the V4/V5 SPEC setting controller object.</i></b><br>
+
+ <b>Role</b>: The V4/V5 SPEC setting controller object deals with the setting
+ parameters displayed in the V4/V5SPEC property page.
+ To access this property page:
+ <ul>
+  <li>Click the <b>Options</b> command in the <b>Tools</b> menu</li>
+  <li>Click + left of </b>General</b> to unfold the workbench list</li>   
+  <li>Click </b>Compatibility</b></li>
+ </ul> 
+ <br><b>The different options for V4/V5SPEC tab</b>:
+ <table>
+   <tr><td>The Step By Step Update And Reroute</td>  
+   <tr><td>The Draft Feature Migration Mode </td>  
+ </table><hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#DraftFeatureMigrationMode"><b>DraftFeatureMigrationMode</b></a>
+<dd>  Returns or sets the activation state of the mode of migration for draft feature.
+ <dt>
+    <a href="#StepByStepUpdateAndReroute"><b>StepByStepUpdateAndReroute</b></a>
+<dd>  Returns or sets the activation state of Step By Step Update And Reroute.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetDraftFeatureMigrationModeInfo"><b>GetDraftFeatureMigrationModeInfo</b></a>
+<dd>   Retrieves information about the DraftFeatureMigrationMode setting parameter.
+ <dt>
+    <a href="#GetStepByStepUpdateAndRerouteInfo"><b>GetStepByStepUpdateAndRerouteInfo</b></a>
+<dd>   Retrieves information about the StepByStepUpdateAndReroute setting parameter.
+ <dt>
+    <a href="#SetDraftFeatureMigrationModeLock"><b>SetDraftFeatureMigrationModeLock</b></a>
+<dd>   Locks or unlocks the DraftFeatureMigrationMode setting parameter.
+ <dt>
+    <a href="#SetStepByStepUpdateAndRerouteLock"><b>SetStepByStepUpdateAndRerouteLock</b></a>
+<dd>   Locks or unlocks the StepByStepUpdateAndReroute setting parameter.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="DraftFeatureMigrationMode"><dt>
+
+<table><tr><td>o Property <b>DraftFeatureMigrationMode</b>(<td>) As <script type="text/javascript"> activateLink('CATV4IV4V5SpecDraftMigrationEnum','CATV4IV4V5SpecDraftMigrationEnum')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the activation state of the mode of migration for draft feature.
+ <br><b>Role</b>: This setting parameter manages the activation of the mode of migration for draft feature
+  during a Copy/Paste As Spec.
+</dl>
+<a name="StepByStepUpdateAndReroute"><dt>
+
+<table><tr><td>o Property <b>StepByStepUpdateAndReroute</b>(<td>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the activation state of Step By Step Update And Reroute.
+ <br><b>Role</b>: The Step By Step Update And Reroute setting parameter manages the activation
+ of the step by step update and reroute during a Copy/Paste As Spec when solids are involved.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetDraftFeatureMigrationModeInfo"><dt>
+
+<table><tr><td>o Func <b>GetDraftFeatureMigrationModeInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>AdminLevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oLocked</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+  Retrieves information about the DraftFeatureMigrationMode setting parameter.
+ <br>Refer to 
+<a href="#" onClick="openLink('SettingController','');return false">SettingController</a> for a detailed description.
+</dl>
+<a name="GetStepByStepUpdateAndRerouteInfo"><dt>
+
+<table><tr><td>o Func <b>GetStepByStepUpdateAndRerouteInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>AdminLevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oLocked</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+  Retrieves information about the StepByStepUpdateAndReroute setting parameter.
+ <br>Refer to 
+<a href="#" onClick="openLink('SettingController','');return false">SettingController</a> for a detailed description.
+</dl>
+<a name="SetDraftFeatureMigrationModeLock"><dt>
+
+<table><tr><td>o Sub <b>SetDraftFeatureMigrationModeLock</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLock</tt>)</table></dt>
+<dl>
+  <dd>
+  Locks or unlocks the DraftFeatureMigrationMode setting parameter.
+ <br>Refer to 
+<a href="#" onClick="openLink('SettingController','');return false">SettingController</a> for a detailed description.
+</dl>
+<a name="SetStepByStepUpdateAndRerouteLock"><dt>
+
+<table><tr><td>o Sub <b>SetStepByStepUpdateAndRerouteLock</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLock</tt>)</table></dt>
+<dl>
+  <dd>
+  Locks or unlocks the StepByStepUpdateAndReroute setting parameter.
+ <br>Refer to 
+<a href="#" onClick="openLink('SettingController','');return false">SettingController</a> for a detailed description.
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,191 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>StructureInterfaces ColorESSObjectSettingAtt (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../StructureInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('ColorESSObjectSettingAtt','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ColorESSObjectSettingAtt','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('ColorESSObjectSettingAtt','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ColorESSObjectSettingAtt','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ColorESSObjectSettingAtt<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_ColorESSObjectSettingAtt_49705','ColorESSObjectSettingAtt','0');</script>
+<b><i>   The interface to access a CATIAColorESSObjectSettingAtt.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetMemberColor"><b>GetMemberColor</b></a>
+<dd>  Returns or sets the MemberColor parameter.
+ <dt>
+    <a href="#GetMemberColorInfo"><b>GetMemberColorInfo</b></a>
+<dd>   Retrieves environment informations for the MemberColor parameter.
+ <dt>
+    <a href="#GetPlateColor"><b>GetPlateColor</b></a>
+<dd>  Returns or sets the PlateColor parameter.
+ <dt>
+    <a href="#GetPlateColorInfo"><b>GetPlateColorInfo</b></a>
+<dd>   Retrieves environment informations for the PlateColor parameter.
+ <dt>
+    <a href="#SetMemberColor"><b>SetMemberColor</b></a>
+<dd>  <dt>
+    <a href="#SetMemberColorLock"><b>SetMemberColorLock</b></a>
+<dd>  Locks or unlocks the MemberColor parameter.
+ <dt>
+    <a href="#SetPlateColor"><b>SetPlateColor</b></a>
+<dd>  <dt>
+    <a href="#SetPlateColorLock"><b>SetPlateColorLock</b></a>
+<dd>  Locks or unlocks the PlateColor parameter.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetMemberColor"><dt>
+
+<table><tr><td>o Sub <b>GetMemberColor</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>oMemberColorR</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>oMemberColorG</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>oMemberColorB</tt>)</table></dt>
+<dl>
+  <dd>
+ Returns or sets the MemberColor parameter.
+ <p>
+ Ensure consistency with the C++ interface to which the work is delegated.
+</dl>
+<a name="GetMemberColorInfo"><dt>
+
+<table><tr><td>o Func <b>GetMemberColorInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioAdminLevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioLocked</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+  Retrieves environment informations for the MemberColor parameter.
+ <br><b>Role</b>:Retrieves the state of the MemberColor parameter 
+ in the current environment. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioAdminLevel</tt>
+   <dd>       <br>If the parameter is locked, AdminLevel gives the administration
+       level that imposes the value of the parameter.
+	 <br>If the parameter is not locked, AdminLevel gives the administration
+       level that will give the value of the parameter after a reset.
+ </dd>
+    <dt><tt> ioLocked</tt>
+   <dd>      Indicates if the parameter has been locked.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>        Indicates if the parameter has been explicitly modified or remain
+      to the administrated value.
+</dl>
+</dl>
+<a name="GetPlateColor"><dt>
+
+<table><tr><td>o Sub <b>GetPlateColor</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>oPlateColorR</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>oPlateColorG</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>oPlateColorB</tt>)</table></dt>
+<dl>
+  <dd>
+ Returns or sets the PlateColor parameter.
+ <p>
+ Ensure consistency with the C++ interface to which the work is delegated.
+</dl>
+<a name="GetPlateColorInfo"><dt>
+
+<table><tr><td>o Func <b>GetPlateColorInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioAdminLevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioLocked</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+  Retrieves environment informations for the PlateColor parameter.
+ <br><b>Role</b>:Retrieves the state of the PlateColor parameter 
+ in the current environment. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioAdminLevel</tt>
+   <dd>       <br>If the parameter is locked, AdminLevel gives the administration
+       level that imposes the value of the parameter.
+	 <br>If the parameter is not locked, AdminLevel gives the administration
+       level that will give the value of the parameter after a reset.
+ </dd>
+    <dt><tt> ioLocked</tt>
+   <dd>      Indicates if the parameter has been locked.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>        Indicates if the parameter has been explicitly modified or remain
+      to the administrated value.
+</dl>
+</dl>
+<a name="SetMemberColor"><dt>
+
+<table><tr><td>o Sub <b>SetMemberColor</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iMemberColorR</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iMemberColorG</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iMemberColorB</tt>)</table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="SetMemberColorLock"><dt>
+
+<table><tr><td>o Sub <b>SetMemberColorLock</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLocked</tt>)</table></dt>
+<dl>
+  <dd>
+ Locks or unlocks the MemberColor parameter.
+ <br><b>Role</b>:Locks or unlocks the MemberColor parameter if it is possible
+ in the current administrative context. In user mode this method will always
+ return E_FAIL.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLocked</tt>
+   <dd>	the locking operation to be performed
+	<b>Legal values</b>:
+	<br><tt>TRUE :</tt>   to lock the parameter.
+ 	<br><tt>FALSE:</tt>   to unlock the parameter.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetPlateColor"><dt>
+
+<table><tr><td>o Sub <b>SetPlateColor</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iPlateColorR</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iPlateColorG</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iPlateColorB</tt>)</table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="SetPlateColorLock"><dt>
+
+<table><tr><td>o Sub <b>SetPlateColorLock</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLocked</tt>)</table></dt>
+<dl>
+  <dd>
+ Locks or unlocks the PlateColor parameter.
+ <br><b>Role</b>:Locks or unlocks the PlateColor parameter if it is possible
+ in the current administrative context. In user mode this method will always
+ return E_FAIL.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLocked</tt>
+   <dd>	the locking operation to be performed
+	<b>Legal values</b>:
+	<br><tt>TRUE :</tt>   to lock the parameter.
+ 	<br><tt>FALSE:</tt>   to unlock the parameter.</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

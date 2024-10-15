@@ -1,0 +1,138 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GeometricObjects Interface CATCartesianPoint</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GeometricObjects.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATCartesianPoint','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATCartesianPoint','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATCartesianPoint','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATCartesianPoint','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GeometricObjects Interface CATCartesianPoint</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATCartesianPoint_30463','CATCartesianPoint','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATCartesianPoint</b>
+</p>
+<p>
+<b><i> Interface representing a geometric cartesian point.</i></b><br>
+
+<br>The CATCartesianPoint is created through the <tt>CreateCartesianPoint</tt>
+ method of the <tt>CATGeoFactory</tt> interface, and deleted with the <tt>Remove</tt> method.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#SetCoord(double,double,double)"><b>SetCoord</b></a>(double,double,double)
+<dd>  Modifies the three cartesian coordinates of <tt>this</tt> CATCartesianPoint.
+ <dt> o 
+    <a href="#SetX(double)"><b>SetX</b></a>(double)
+<dd>  Modifies the first cartesian coordinate of <tt>this</tt> CATCartesianPoint.
+ <dt> o 
+    <a href="#SetY(double)"><b>SetY</b></a>(double)
+<dd>  Modifies the second cartesian coordinate of <tt>this</tt> CATCartesianPoint.
+ <dt> o 
+    <a href="#SetZ(double)"><b>SetZ</b></a>(double)
+<dd>  Modifies the third cartesian coordinate of <tt>this</tt> CATCartesianPoint.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="SetCoord"></a><a name="SetCoord(double,double,double)"></a> <dt> o <b>SetCoord</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetCoord</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iFirstCoord</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iSecondCoord</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iThirdCoord</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the three cartesian coordinates of <tt>this</tt> CATCartesianPoint.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFirstCoord</tt>
+   <dd> The first coordinate.
+ </dd>
+    <dt><tt> iSecondCoord</tt>
+   <dd> The second coordinate.
+ </dd>
+    <dt><tt> iThirdCoord</tt>
+   <dd> The third coordinate.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetX"></a><a name="SetX(double)"></a> <dt> o <b>SetX</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetX</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iFirstCoord</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the first cartesian coordinate of <tt>this</tt> CATCartesianPoint.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFirstCoord</tt>
+   <dd> The new value of the first coordinate.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetY"></a><a name="SetY(double)"></a> <dt> o <b>SetY</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetY</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iSecondCoord</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the second cartesian coordinate of <tt>this</tt> CATCartesianPoint.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSecondCoord</tt>
+   <dd> The new value of the second coordinate.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetZ"></a><a name="SetZ(double)"></a> <dt> o <b>SetZ</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetZ</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iThirdCoord</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the third cartesian coordinate of <tt>this</tt> CATCartesianPoint.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iThirdCoord</tt>
+   <dd> The vnew value of the third coordinate.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATCartesianPoint.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGeometricObjects</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,188 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATStrFunctionalInterfaces SfmMember2Points (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATStrFunctionalInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SfmMember2Points','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmMember2Points','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SfmMember2Points','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmMember2Points','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SfmMember2Points<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SfmMember2Points_49669','SfmMember2Points','0');</script>
+<b><i> Interface to manage Member created with one curve and a reference surface.</i></b><br>
+
+ <b>Role</b>: To manage member created with one curve and a reference surface.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#EndPointOnCrvCurve"><b>EndPointOnCrvCurve</b></a>
+<dd>  <dt>
+    <a href="#EndPointOnCrvMode"><b>EndPointOnCrvMode</b></a>
+<dd>  <dt>
+    <a href="#EndPointOnCrvOffset"><b>EndPointOnCrvOffset</b></a>
+<dd>  <dt>
+    <a href="#EndPointOnCrvOffsetParam"><b>EndPointOnCrvOffsetParam</b></a>
+<dd>  <dt>
+    <a href="#EndPointOnCrvOrientation"><b>EndPointOnCrvOrientation</b></a>
+<dd>  <dt>
+    <a href="#EndPointSpec"><b>EndPointSpec</b></a>
+<dd>  <dt>
+    <a href="#StartPointOnCrvCurve"><b>StartPointOnCrvCurve</b></a>
+<dd>  Returns or sets the point on curve information: curve, ratio or length mode, offset and orientation.
+ <dt>
+    <a href="#StartPointOnCrvMode"><b>StartPointOnCrvMode</b></a>
+<dd>  <dt>
+    <a href="#StartPointOnCrvOffset"><b>StartPointOnCrvOffset</b></a>
+<dd>  <dt>
+    <a href="#StartPointOnCrvOffsetParam"><b>StartPointOnCrvOffsetParam</b></a>
+<dd>  <dt>
+    <a href="#StartPointOnCrvOrientation"><b>StartPointOnCrvOrientation</b></a>
+<dd>  <dt>
+    <a href="#StartPointSpec"><b>StartPointSpec</b></a>
+<dd>  Returns or sets the point.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#InvertEndPointOnCrvOrientation"><b>InvertEndPointOnCrvOrientation</b></a>
+<dd>  <dt>
+    <a href="#InvertStartPointOnCrvOrientation"><b>InvertStartPointOnCrvOrientation</b></a>
+<dd>  Inverts the orientation of the offset for an extremity point.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="EndPointOnCrvCurve"><dt>
+
+<table><tr><td>o Property <b>EndPointOnCrvCurve</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="EndPointOnCrvMode"><dt>
+
+<table><tr><td>o Property <b>EndPointOnCrvMode</b>(<td>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="EndPointOnCrvOffset"><dt>
+
+<table><tr><td>o Property <b>EndPointOnCrvOffset</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="EndPointOnCrvOffsetParam"><dt>
+
+<table><tr><td>o Property <b>EndPointOnCrvOffsetParam</b>(<td>) As <script type="text/javascript"> activateLink('Length','Length')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="EndPointOnCrvOrientation"><dt>
+
+<table><tr><td>o Property <b>EndPointOnCrvOrientation</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="EndPointSpec"><dt>
+
+<table><tr><td>o Property <b>EndPointSpec</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="StartPointOnCrvCurve"><dt>
+
+<table><tr><td>o Property <b>StartPointOnCrvCurve</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the point on curve information: curve, ratio or length mode, offset and orientation.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>Curve</code> the supporting curve for the <code>SfmMember2Points</code> feature.
+ <pre>
+ Dim Curve As Reference
+ Set Curve = SfmMember2Points.<font color="red">StartPointOnCrvCurve</font>
+ </pre>
+ </dl>
+</dl>
+<a name="StartPointOnCrvMode"><dt>
+
+<table><tr><td>o Property <b>StartPointOnCrvMode</b>(<td>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="StartPointOnCrvOffset"><dt>
+
+<table><tr><td>o Property <b>StartPointOnCrvOffset</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="StartPointOnCrvOffsetParam"><dt>
+
+<table><tr><td>o Property <b>StartPointOnCrvOffsetParam</b>(<td>) As <script type="text/javascript"> activateLink('Length','Length')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="StartPointOnCrvOrientation"><dt>
+
+<table><tr><td>o Property <b>StartPointOnCrvOrientation</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="StartPointSpec"><dt>
+
+<table><tr><td>o Property <b>StartPointSpec</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the point.
+ <br>Sub-element(s) supported (see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+<a href="#" onClick="openLink('Vertex','');return false">Vertex</a>.<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>Point</code> the supporting curve for the <code>SfmMember2Points</code> feature.
+ <pre>
+ Dim Point As Reference
+ Set Point = SfmMember2Points.<font color="red">StartPointSpec</font>
+ </pre>
+ </dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="InvertEndPointOnCrvOrientation"><dt>
+
+<table><tr><td>o Sub <b>InvertEndPointOnCrvOrientation</b>(<td>)</table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="InvertStartPointOnCrvOrientation"><dt>
+
+<table><tr><td>o Sub <b>InvertStartPointOnCrvOrientation</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Inverts the orientation of the offset for an extremity point.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example inverts the orientation of the start point on curve extremity of the <code>SfmMember2Points</code> feature.
+ <pre>
+ SfmMember2Points.<font color="red">InvertStartPointOnCrvOrientation</font>
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

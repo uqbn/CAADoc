@@ -1,0 +1,184 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>AnalysisMeshingModel Class CATMSHElementVisuAttribute</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../AnalysisMeshingModel.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATMSHElementVisuAttribute','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATMSHElementVisuAttribute','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATMSHElementVisuAttribute','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATMSHElementVisuAttribute','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>AnalysisMeshingModel Class CATMSHElementVisuAttribute</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATMSHElementVisuAttribute_54631','CATMSHElementVisuAttribute','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATMSHElementVisuAttribute</b>
+</p>
+<p>
+<b><i> Class to create a graphic attribute for a finite element.</i></b><br>
+
+ <b>Role</b>: This class permits to have a graphic attribute which define
+ the display properties of a finite element.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIMSHMesh','');return false">CATIMSHMesh</a>, <a href="#" onClick="openLink('CATMSHElement','');return false">CATMSHElement</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATMSHElementVisuAttribute()"><b>CATMSHElementVisuAttribute</b></a>()
+<dd>  Constructs a default graphic attribute for a finite element (black).
+ <dt> o 
+    <a href="#CATMSHElementVisuAttribute(CATMSHElementVisuAttribute&amp;)"><b>CATMSHElementVisuAttribute</b></a>(CATMSHElementVisuAttribute&amp;)
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetColorRGB(int&amp;,int&amp;,int&amp;)"><b>GetColorRGB</b></a>(int&amp;,int&amp;,int&amp;)
+<dd>  Gets the red, green and blue components color.
+ <dt> o 
+    <a href="#SetColorRGB(int,int,int)"><b>SetColorRGB</b></a>(int,int,int)
+<dd>  Sets the red, green and blue components color.
+ <dt> o 
+    <a href="#operator =(CATMSHElementVisuAttribute&amp;)"><b>operator =</b></a>(CATMSHElementVisuAttribute&amp;)
+<dd>  Assignment operator.
+ <dt> o 
+    <a href="#operator ==(CATMSHElementVisuAttribute&amp;)"><b>operator ==</b></a>(CATMSHElementVisuAttribute&amp;)
+<dd>  Equality operator.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATMSHElementVisuAttribute"></a><a name="CATMSHElementVisuAttribute()"></a> <dt> o <b>CATMSHElementVisuAttribute</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATMSHElementVisuAttribute</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a default graphic attribute for a finite element (black).
+</dl>
+<a name="CATMSHElementVisuAttribute"></a><a name="CATMSHElementVisuAttribute(CATMSHElementVisuAttribute&amp;)"></a> <dt> o <b>CATMSHElementVisuAttribute</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATMSHElementVisuAttribute</b>(<td> const <script type="text/javascript"> activateLink('CATMSHElementVisuAttribute','CATMSHElementVisuAttribute&amp;')</script> <td><tt>iAttribute</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetColorRGB"></a><a name="GetColorRGB(int&amp;,int&amp;,int&amp;)"></a> <dt> o <b>GetColorRGB</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>GetColorRGB</b>(<td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>ioRed</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>ioGreen</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>ioBlue</tt>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets the red, green and blue components color. 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iRed</tt>
+   <dd> The red component of the color.
+ <b>Legal values</b>: <tt>iRed</tt> ranges from 0 to 255.
+ </dd>
+    <dt><tt> iGreen</tt>
+   <dd> The green component of the color.
+ <b>Legal values</b>: <tt>iGreen</tt> ranges from 0 to 255.
+ </dd>
+    <dt><tt> iBlue</tt>
+   <dd> The blue component of the color.
+ <b>Legal values</b>: <tt>iBlue</tt> ranges from 0 to 255.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetColorRGB"></a><a name="SetColorRGB(int,int,int)"></a> <dt> o <b>SetColorRGB</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>SetColorRGB</b>(<td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iRed</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iGreen</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iBlue</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the red, green and blue components color. 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iRed</tt>
+   <dd> The red component of the color.
+ <b>Legal values</b>: <tt>iRed</tt> ranges from 0 to 255.
+ </dd>
+    <dt><tt> iGreen</tt>
+   <dd> The green component of the color.
+ <b>Legal values</b>: <tt>iGreen</tt> ranges from 0 to 255.
+ </dd>
+    <dt><tt> iBlue</tt>
+   <dd> The blue component of the color.
+ <b>Legal values</b>: <tt>iBlue</tt> ranges from 0 to 255.</dd>
+</dl>
+</dl>
+</dl>
+<a name="operator ="></a><a name="operator =(CATMSHElementVisuAttribute&amp;)"></a> <dt> o <b>operator =</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATMSHElementVisuAttribute','inline CATMSHElementVisuAttribute &')</script>  <b>operator =</b>(<td> const <script type="text/javascript"> activateLink('CATMSHElementVisuAttribute','CATMSHElementVisuAttribute&amp;')</script> <td><tt>iAttribute</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Assignment operator.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAttribute</tt>
+   <dd>   Graphic attribute to assign to the current one
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     Graphic attribute resulting from the assignment
+</dl>
+</dl>
+<a name="operator =="></a><a name="operator ==(CATMSHElementVisuAttribute&amp;)"></a> <dt> o <b>operator ==</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('int','inline int')</script>  <b>operator ==</b>(<td> const <script type="text/javascript"> activateLink('CATMSHElementVisuAttribute','CATMSHElementVisuAttribute&amp;')</script> <td><tt>iAttribute</tt>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Equality operator.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAttribute</tt>
+   <dd>   Graphic attribute to compare with
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     boolean
+   <br><b>Legal values</b>: <tt>0: False</tt> 
+   the condition is not fullfilled, or <tt>Other: True</tt> 
+   if the condition is fullfilled.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATMSHElementVisuAttribute.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAmtModel</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

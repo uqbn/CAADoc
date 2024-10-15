@@ -1,0 +1,167 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>OSMInterfaces ProductScenes (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../OSMInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('ProductScenes','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ProductScenes','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('ProductScenes','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ProductScenes','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ProductScenes<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_ProductScenes_19912','ProductScenes','0');</script>
+<b><i> A collection of ProductScenes contained in a given ProductDocument.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddProductSceneFull"><b>AddProductSceneFull</b></a>
+<dd>  Creates a new FULL scene from a set of products and adds it to the ProductScenes collection.
+ <dt>
+    <a href="#AddProductScenePartial"><b>AddProductScenePartial</b></a>
+<dd>  Creates a new DELTA scene from a set of products and adds it to the ProductScenes collection.
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns a scene using its index or its name from the ProductScenes collection.
+ <dt>
+    <a href="#Remove"><b>Remove</b></a>
+<dd>  Removes a product-scene from the ProductScenes collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddProductSceneFull"><dt>
+
+<table><tr><td>o Func <b>AddProductSceneFull</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iReferenceProducts</tt>) As <script type="text/javascript"> activateLink('ProductScene','ProductScene')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new FULL scene from a set of products and adds it to the ProductScenes collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iName</tt>
+   <dd>    The name of the new scene
+ </dd>
+    <dt><tt> iReferenceProducts</tt>
+   <dd>    Products used as root nodes of the new scene
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The created new full scene
+ 
+  <dt> <b>Example:</b> 
+  <dd>     This example creates the <tt>SpareWheel</tt> new scene from the reference product
+    <tt>FrontRightWheel</tt> and adds the scene to the <tt>ToolKits</tt> collection.
+    <pre>
+    Dim SpareWheel As ProductScene
+    Set SpareWheel = ToolKits.<font color="red">AddProductSceneFull</font>("SpareWheel", FrontRightWheel)
+    </pre>
+</dl>
+</dl>
+<a name="AddProductScenePartial"><dt>
+
+<table><tr><td>o Func <b>AddProductScenePartial</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iReferenceProducts</tt>) As <script type="text/javascript"> activateLink('ProductScene','ProductScene')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new DELTA scene from a set of products and adds it to the ProductScenes collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iName</tt>
+   <dd>    The name of the new scene
+ </dd>
+    <dt><tt> iReferenceProducts</tt>
+   <dd>    Products used as root nodes of the new scene
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The created new delta scene
+ 
+  <dt> <b>Example:</b> 
+  <dd>     This example creates the <tt>SpareWheel</tt> new scene from the reference product
+    <tt>FrontRightWheel</tt> and adds the scene to the <tt>ToolKits</tt> collection.
+    <pre>
+    Dim SpareWheel As ProductScene
+    Set SpareWheel = ToolKits.<font color="red">AddProductScenePartial</font>("SpareWheel", FrontRightWheel)
+    </pre>
+</dl>
+</dl>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('ProductScene','ProductScene')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a scene using its index or its name from the ProductScenes collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>    The index or the name of the ProductScene to retrieve from the collection of ProductScenes.
+    As a numerics, this index is the rank of the ProductScene in the collection.
+    The index of the first ProductScene in the collection is 1, and
+    the index of the last ProductScene is Count.
+    As a string, it is the name you assigned to the ProductScene.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The retrieved ProductScene.
+ 
+  <dt> <b>Example:</b> 
+  <dd>     This example retrieves in <tt>ThisProductScene</tt> the ninth ProductScene,
+    and in <tt>ThatProductScene</tt> the ProductScene named
+    <tt>ProductScene3</tt> from the <tt>TheProductScenes</tt> collection. 
+    <pre>
+    Dim ThisProductScene As ProductScene
+    Set ThisProductScene = TheProductScenes.<font color="red">Item</font>(9)
+    Dim ThatProductScene As ProductScene
+    Set ThatProductScene = TheProductScenes.<font color="red">Item</font>("ProductScene3")
+    </pre>
+</dl>
+</dl>
+<a name="Remove"><dt>
+
+<table><tr><td>o Sub <b>Remove</b>(<td><script type="text/javascript"> activateLink('ProductScene','ProductScene')</script> <td><tt>iProductScene</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes a product-scene from the ProductScenes collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iScene</tt>
+   <dd>   The scene to remove.
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>     This example removes the <tt>Engine</tt> product-scene from the <tt>ToolKits</tt> collection.
+    <pre>
+    ToolKits.<font color="red">Remove</font> Engine
+    </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

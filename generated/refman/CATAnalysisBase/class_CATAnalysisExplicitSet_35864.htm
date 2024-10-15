@@ -1,0 +1,166 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisBase Class CATAnalysisExplicitSet</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATAnalysisExplicitSet','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATAnalysisExplicitSet','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATAnalysisExplicitSet','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATAnalysisExplicitSet','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisBase Class CATAnalysisExplicitSet</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATAnalysisExplicitSet_35864','CATAnalysisExplicitSet','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATAnalysisExplicitSet</b>
+</p>
+<p>
+<b><i> Field model set.</i></b><br>
+
+ This object is used to provide services to the field model objects which can be sets.</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATAnalysisExplicitSet()"><b>CATAnalysisExplicitSet</b></a>()
+<dd>  Default constructor.
+ <dt> o 
+    <a href="#CATAnalysisExplicitSet(CATAnalysisExplicitSet&amp;)"><b>CATAnalysisExplicitSet</b></a>(CATAnalysisExplicitSet&amp;)
+<dd>  Copy constructor.
+ <dt> o 
+    <a href="#CATAnalysisExplicitSet(CATAnalysisExplicitData&amp;)"><b>CATAnalysisExplicitSet</b></a>(CATAnalysisExplicitData&amp;)
+<dd>  Copy constructor.
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CreateSet(CATAnalysisExplicitModel*,CATSamPhysicalType)"><b>CreateSet</b></a>(CATAnalysisExplicitModel*,CATSamPhysicalType)
+<dd>  Creates a set in the field model.
+ <dt> o 
+    <a href="#CreateSet(CATAnalysisExplicitSet&amp;,CATSamPhysicalType)"><b>CreateSet</b></a>(CATAnalysisExplicitSet&amp;,CATSamPhysicalType)
+<dd>  Creates a set in the field model as the child of an other set.
+ <dt> o 
+    <a href="#operator =(CATAnalysisExplicitSet&amp;)"><b>operator =</b></a>(CATAnalysisExplicitSet&amp;)
+<dd>  Assignment operator.
+ <dt> o 
+    <a href="#operator =(CATAnalysisExplicitData&amp;)"><b>operator =</b></a>(CATAnalysisExplicitData&amp;)
+<dd>  Assignment operator.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATAnalysisExplicitSet"></a><a name="CATAnalysisExplicitSet()"></a> <dt> o <b>CATAnalysisExplicitSet</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATAnalysisExplicitSet</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Default constructor.
+</dl>
+<a name="CATAnalysisExplicitSet"></a><a name="CATAnalysisExplicitSet(CATAnalysisExplicitSet&amp;)"></a> <dt> o <b>CATAnalysisExplicitSet</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATAnalysisExplicitSet</b>(<td> const <script type="text/javascript"> activateLink('CATAnalysisExplicitSet','CATAnalysisExplicitSet&amp;')</script> <td><tt>iSet</tt>)<script type="text/javascript"> activateLink('',' ')</script>  </table></dt>
+<dl>
+  <dd>
+ Copy constructor.
+</dl>
+<a name="CATAnalysisExplicitSet"></a><a name="CATAnalysisExplicitSet(CATAnalysisExplicitData&amp;)"></a> <dt> o <b>CATAnalysisExplicitSet</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATAnalysisExplicitSet</b>(<td> const <script type="text/javascript"> activateLink('CATAnalysisExplicitData','CATAnalysisExplicitData&amp;')</script> <td><tt>iData</tt>)<script type="text/javascript"> activateLink('',' ')</script>  </table></dt>
+<dl>
+  <dd>
+ Copy constructor.
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATAnalysisExplicitData','');return false">CATAnalysisExplicitData</a>
+</dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="CreateSet"></a><a name="CreateSet(CATAnalysisExplicitModel*,CATSamPhysicalType)"></a> <dt> o <b>CreateSet</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>CreateSet</b>(<td> const <script type="text/javascript"> activateLink('CATAnalysisExplicitModel','CATAnalysisExplicitModel*')</script> <td><tt>iModel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSamPhysicalType','CATSamPhysicalType')</script> <td><tt>iPhysicalType</tt>)<script type="text/javascript"> activateLink('',' ')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates a set in the field model.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iModel</tt>
+   <dd>   A pointer to the field model into which the set will be created.
+ </dd>
+    <dt><tt> iPhysicalType</tt>
+   <dd>   The physical type of the set.
+ </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATAnalysisExplicitModel','');return false">CATAnalysisExplicitModel</a>
+</dl>
+</dl>
+<a name="CreateSet"></a><a name="CreateSet(CATAnalysisExplicitSet&amp;,CATSamPhysicalType)"></a> <dt> o <b>CreateSet</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>CreateSet</b>(<td> const <script type="text/javascript"> activateLink('CATAnalysisExplicitSet','CATAnalysisExplicitSet&amp;')</script> <td><tt>iParent</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSamPhysicalType','CATSamPhysicalType')</script> <td><tt>iPhysicalType</tt>)<script type="text/javascript"> activateLink('',' ')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates a set in the field model as the child of an other set.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iParent</tt>
+   <dd>   The parent of the set which will be created.
+ </dd>
+    <dt><tt> iPhysicalType</tt>
+   <dd>   The physical type of the set.</dd>
+</dl>
+</dl>
+</dl>
+<a name="operator ="></a><a name="operator =(CATAnalysisExplicitSet&amp;)"></a> <dt> o <b>operator =</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATAnalysisExplicitSet','CATAnalysisExplicitSet')</script>  <b>operator =</b>(<td> const <script type="text/javascript"> activateLink('CATAnalysisExplicitSet','CATAnalysisExplicitSet&amp;')</script> <td><tt>iSet</tt>)<script type="text/javascript"> activateLink('',' ')</script>  </table></dt>
+<dl>
+  <dd>
+ Assignment operator.
+</dl>
+<a name="operator ="></a><a name="operator =(CATAnalysisExplicitData&amp;)"></a> <dt> o <b>operator =</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATAnalysisExplicitSet','CATAnalysisExplicitSet')</script>  <b>operator =</b>(<td> const <script type="text/javascript"> activateLink('CATAnalysisExplicitData','CATAnalysisExplicitData&amp;')</script> <td><tt>iData</tt>)<script type="text/javascript"> activateLink('',' ')</script>  </table></dt>
+<dl>
+  <dd>
+ Assignment operator.
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATAnalysisExplicitData','');return false">CATAnalysisExplicitData</a>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATAnalysisExplicitSet.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATSAM0Explicit</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

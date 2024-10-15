@@ -1,0 +1,117 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GeometricObjects Interface CATSimCurve</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GeometricObjects.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATSimCurve','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSimCurve','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATSimCurve','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSimCurve','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GeometricObjects Interface CATSimCurve</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATSimCurve_21896','CATSimCurve','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATSimCurve</b>
+</p>
+<p>
+<b><i>  Interface representing the aggregating curve of two identical curves.</i></b><br>
+
+<br> The CATSimCurve is created by the <tt>CreateSimCurve</tt>
+ method of the <tt>CATGeoFactory</tt> interface and deleted with the <tt>Remove</tt> method.
+ Their parameterization must be linearly mapped and they must have the same limits. 
+If they do not,
+ use the <a href="#" onClick="openLink('CATEdgeCurveComputation','');return false">CATEdgeCurveComputation</a> operator. The number of curves of a  CATSimCurve is not limitated.
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Append(CATCurve*,double,short)"><b>Append</b></a>(CATCurve*,double,short)
+<dd>  Adds a new curve to <tt>this</tt> CATSimCurve.
+ <dt> o 
+    <a href="#Set(CATLISTP(CATCurve)&amp;,CATLISTP(CATCrvLimits)&amp;,CATListOfInt&amp;,double)"><b>Set</b></a>(CATLISTP(CATCurve)&amp;,CATLISTP(CATCrvLimits)&amp;,CATListOfInt&amp;,double)
+<dd>  Replaces all the curves of <tt>this</tt> CATSimCurve.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Append"></a><a name="Append(CATCurve*,double,short)"></a> <dt> o <b>Append</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>Append</b>(<td><script type="text/javascript"> activateLink('CATCurve','CATCurve*')</script> <td><tt>iNewSubElement</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('double','double')</script> <td><tt>iNewGap</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('short','short')</script> <td><tt>iOrnVsEdgeCurve</tt><td><tt>= 1</tt>)<script type="text/javascript"> activateLink('0',' = 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Adds a new curve to <tt>this</tt> CATSimCurve.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNewSubElement</tt>
+   <dd> A pointer to the new curve to add.
+ </dd>
+    <dt><tt> iNewGap</tt>
+   <dd> The new value of the maximum authorized gap between the curves.
+ </dd>
+    <dt><tt> iOrnVsEdgeCurve</tt>
+   <dd> The relative orientation of the curve to add with respect to the edge curve orientation.
+ <br><b>Legal values</b>:
+ 1 for the same orientation, -1 for the opposite orientation.</dd>
+</dl>
+</dl>
+</dl>
+<a name="Set"></a><a name="Set(CATLISTP(CATCurve)&amp;,CATLISTP(CATCrvLimits)&amp;,CATListOfInt&amp;,double)"></a> <dt> o <b>Set</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>Set</b>(<td><script type="text/javascript"> activateLink('CATLISTP(CATCurve)','CATLISTP(CATCurve)&amp;')</script> <td><tt>iNewCurves</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTP(CATCrvLimits)','CATLISTP(CATCrvLimits)&amp;')</script> <td><tt>iLimits</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListOfInt','CATListOfInt&amp;')</script> <td><tt>iOrns</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('double','double')</script> <td><tt>iGap</tt>)<script type="text/javascript"> activateLink('0','= 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Replaces all the curves of <tt>this</tt> CATSimCurve.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNewCurves</tt>
+   <dd> The list of the curves.
+ </dd>
+    <dt><tt> iLimits</tt>
+   <dd> The list of limitations on each curve.
+ </dd>
+    <dt><tt> iOrns</tt>
+   <dd> The list of relative orientation of the curves.
+ <br><b>Legal values</b>:
+ 1 for the same orientation, -1 for the opposite orientation.
+ </dd>
+    <dt><tt> iGap</tt>
+   <dd> The maximum authorized gap between the curves.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATSimCurve.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGeometricObjects</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

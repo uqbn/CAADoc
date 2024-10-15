@@ -1,0 +1,173 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATPlantShipInterfaces Interface CATIPspShareData</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATPlantShipInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIPspShareData','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPspShareData','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIPspShareData','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPspShareData','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATPlantShipInterfaces Interface CATIPspShareData</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIPspShareData_39215','CATIPspShareData','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIPspShareData</b>
+</p>
+<p>
+<b><i> Interface to access share data in the catalog.</i></b><br>
+
+ <b>Role</b>: To access Plant Ship share data from the catalog.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#List(CATUnicodeString&amp;,CATUnicodeString&amp;,CATListValCATUnicodeString**)"><b>List</b></a>(CATUnicodeString&amp;,CATUnicodeString&amp;,CATListValCATUnicodeString**)
+<dd>  Retrieve a list of share data ID in the catalog.
+ <dt> o 
+    <a href="#ListAttributes(CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,CATListValCATUnicodeString**,CATListValCATUnicodeString**,CATLISTP(CATBaseUnknown)**)"><b>ListAttributes</b></a>(CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,CATListValCATUnicodeString**,CATListValCATUnicodeString**,CATLISTP(CATBaseUnknown)**)
+<dd>  Retrieve a list of attribute values for the share data.
+ <dt> o 
+    <a href="#ListQuery(CATUnicodeString&amp;,CATUnicodeString&amp;,CATListValCATUnicodeString**)"><b>ListQuery</b></a>(CATUnicodeString&amp;,CATUnicodeString&amp;,CATListValCATUnicodeString**)
+<dd>  Retrieve a filtered list of share data ID in the catalog based
+   on an input query string.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="List"></a><a name="List(CATUnicodeString&amp;,CATUnicodeString&amp;,CATListValCATUnicodeString**)"></a> <dt> o <b>List</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>List</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iResourceName</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iShareDataType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListValCATUnicodeString','CATListValCATUnicodeString**')</script> <td><tt>oListOfShareDataID</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieve a list of share data ID in the catalog.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iResourceName</tt>
+   <dd>   Resource name for Catalog
+ </dd>
+    <dt><tt> iShareDataType</tt>
+   <dd>   Share Data Type filter.
+   If null, no filtering will be applied
+ </dd>
+    <dt><tt> oListOfShareDataID</tt>
+   <dd>   List of Share Data ID
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="ListAttributes"></a><a name="ListAttributes(CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,CATListValCATUnicodeString**,CATListValCATUnicodeString**,CATLISTP(CATBaseUnknown)**)"></a> <dt> o <b>ListAttributes</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ListAttributes</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iCatalogResourceName</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iAttrFilterResourceName</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iShareDataID</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListValCATUnicodeString','CATListValCATUnicodeString**')</script> <td><tt>oListOfAttrNames</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListValCATUnicodeString','CATListValCATUnicodeString**')</script> <td><tt>oListOfAttrValues</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTP(CATBaseUnknown)','CATLISTP(CATBaseUnknown)**')</script> <td><tt>oListOfAttrTypes</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieve a list of attribute values for the share data.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCatalogResourceName</tt>
+   <dd>   Resource name for Catalog
+ </dd>
+    <dt><tt> iAttrFilterResourceName</tt>
+   <dd>   Resource name for attribute filtering text file
+ </dd>
+    <dt><tt> iShareDataID</tt>
+   <dd>   Share Data Identification.
+ </dd>
+    <dt><tt> oListOfAttrNames</tt>
+   <dd>   List of attribute names
+ </dd>
+    <dt><tt> oListOfAttrValues</tt>
+   <dd>   List of attribute values
+ </dd>
+    <dt><tt> oListOfAttrTypes</tt>
+   <dd>   List of attribute types
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="ListQuery"></a><a name="ListQuery(CATUnicodeString&amp;,CATUnicodeString&amp;,CATListValCATUnicodeString**)"></a> <dt> o <b>ListQuery</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ListQuery</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iResourceName</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iQueryExpression</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListValCATUnicodeString','CATListValCATUnicodeString**')</script> <td><tt>oListOfShareDataID</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieve a filtered list of share data ID in the catalog based
+   on an input query string.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iResourceName</tt>
+   <dd>   Resource name for Catalog
+ </dd>
+    <dt><tt> iQueryExpression</tt>
+   <dd>   Query string used to filter the share data ID.
+   It has a knowledgeware syntax.
+   If null, no filtering will be applied
+ </dd>
+    <dt><tt> oListOfShareDataID</tt>
+   <dd>   List of Share Data ID
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIPspShareData.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

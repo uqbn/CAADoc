@@ -1,0 +1,174 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchAppMultiImage (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchAppMultiImage','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppMultiImage','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchAppMultiImage','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppMultiImage','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchAppMultiImage<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchAppMultiImage_44373','SchAppMultiImage','0');</script>
+<b><i>  Interface to manage the image object in the Multi-Image-Object concept.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AppGetMasterDocument"><b>AppGetMasterDocument</b></a>
+<dd>  Get the document where the master of this image object resides.
+ <dt>
+    <a href="#AppGetMasterObject"><b>AppGetMasterObject</b></a>
+<dd>  Get the master object of this image.
+ <dt>
+    <a href="#AppIsUpToDate"><b>AppIsUpToDate</b></a>
+<dd>  Check if the image object is up-to-date.
+ <dt>
+    <a href="#AppUpdate"><b>AppUpdate</b></a>
+<dd>  Update the image object.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AppGetMasterDocument"><dt>
+
+<table><tr><td>o Sub <b>AppGetMasterDocument</b>(<td><script type="text/javascript"> activateLink('Document','Document')</script> <td><tt>oDocument</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oDocumentName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oSymbolicLinkName</tt>)</table></dt>
+<dl>
+  <dd>
+ Get the document where the master of this image object resides.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDocument</tt>
+   <dd>   Pointer to the document.
+ </dd>
+    <dt><tt> oDocumentName</tt>
+   <dd>   Name of the document containing the master.
+	</dd>
+    <dt><tt> oSymbolicLinkName</tt>
+   <dd>   Name of the symbolic link.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppMultiImage
+ Dim objDoc As Document
+ Dim strDocName As String
+ Dim strLinkName As String
+  ...
+ objThisIntf.<font color="red">AppGetMasterDocument</font> objDoc,strDocName,strLinkName
+ </pre>
+
+</dl>
+</dl>
+<a name="AppGetMasterObject"><dt>
+
+<table><tr><td>o Func <b>AppGetMasterObject</b>(<td>) As <script type="text/javascript"> activateLink('SchAppMultiImageMaster','SchAppMultiImageMaster')</script> </table></dt>
+<dl>
+  <dd>
+ Get the master object of this image.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oMasterImage</tt>
+   <dd>   Pointer to the master object.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppMultiImage
+ Dim objMaster As SchMultiImageMaster
+  ...
+ Set objMaster = objThisIntf.<font color="red">AppGetMasterObject</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="AppIsUpToDate"><dt>
+
+<table><tr><td>o Sub <b>AppIsUpToDate</b>(<td><script type="text/javascript"> activateLink('CatSchIDLMultiImageStatus','CatSchIDLMultiImageStatus')</script> <td><tt>oStatus</tt>)</table></dt>
+<dl>
+  <dd>
+ Check if the image object is up-to-date.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oStatus</tt>
+   <dd>   Status of the image object.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppMultiImage
+  ...
+ objThisIntf.<font color="red">AppIsUpToDate</font> CatSchIDLMultiImageStatus_Enum
+ </pre>
+
+</dl>
+</dl>
+<a name="AppUpdate"><dt>
+
+<table><tr><td>o Sub <b>AppUpdate</b>(<td><script type="text/javascript"> activateLink('SchAppMultiImageMaster','SchAppMultiImageMaster')</script> <td><tt>iMasterImage</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchAppMultiImage','SchAppMultiImage')</script> <td><tt>oImage</tt>)</table></dt>
+<dl>
+  <dd>
+ Update the image object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iMasterImage</tt>
+   <dd>   This is an optional input. 
+   Not NULL - the application has a handle on the master to update 
+   this image (for example in DSA application, the application will 
+   make sure the ID of this image is the same as the input master).
+   NULL - the application will find the master based on the specific way
+   it models the MIO concept.
+ Sample case: the application will make sure the ID of this image is the same as the input master.
+ </dd>
+    <dt><tt> oImage</tt>
+   <dd>   Pointer to a new image object created if existing image object has to be
+   replaced during the update process.
+   This pointer is NULL if the image object is not replaced.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppMultiImage
+ Dim objMaster As SchAppMultiImageMaster
+ Dim objNewImage As SchAppMultiImage
+  ...
+ objThisIntf.<font color="red">AppUpdate</font> objMaster,objNewImage
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

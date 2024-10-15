@@ -1,0 +1,103 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchGRRRoute2 (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchGRRRoute2','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchGRRRoute2','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchGRRRoute2','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchGRRRoute2','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchGRRRoute2<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchGRRRoute2_38362','SchGRRRoute2','0');</script>
+<b><i>  Manage the graphical representation of a schematic route.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetReshapeMode"><b>GetReshapeMode</b></a>
+<dd>  Get the reshape mode.
+ <dt>
+    <a href="#SetReshapeMode"><b>SetReshapeMode</b></a>
+<dd>  Set the reshape mode.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetReshapeMode"><dt>
+
+<table><tr><td>o Sub <b>GetReshapeMode</b>(<td><script type="text/javascript"> activateLink('CatSchIDLGRRRouteReshapeMode','CatSchIDLGRRRouteReshapeMode')</script> <td><tt>oReshapeMode</tt>)</table></dt>
+<dl>
+  <dd>
+ Get the reshape mode.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oReshapeMode</tt>
+   <dd>   Whether or not the route shape is fixed for the purpose of reshaping the route.
+        = SchFixedShapeOff   : no restriction on how to reshape the route.
+        = SchFixedShapeOn    : reshape only the route's extremity (the segment directly 
+                               connected to the object that's being moved).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRRoute2
+
+  ...
+ objThisIntf.<font color="red">GetReshapeMode</font>CatSchIDLGRRRouteReshapeMode_Enum
+ </pre>
+
+</dl>
+</dl>
+<a name="SetReshapeMode"><dt>
+
+<table><tr><td>o Sub <b>SetReshapeMode</b>(<td><script type="text/javascript"> activateLink('CatSchIDLGRRRouteReshapeMode','CatSchIDLGRRRouteReshapeMode')</script> <td><tt>iReshapeMode</tt>)</table></dt>
+<dl>
+  <dd>
+ Set the reshape mode.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iReshapeMode</tt>
+   <dd>   Whether or not the route shape is fixed for the purpose of reshaping the route.
+        = SchFixedShapeOff   : no restriction on how to reshape the route.
+        = SchFixedShapeOn    : reshape only the route's extremity (the segment directly 
+                               connected to the object that's being moved).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRRoute2
+
+  ...
+ objThisIntf.<font color="red">SetReshapeMode</font>CatSchIDLGRRRouteReshapeMode_Enum
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

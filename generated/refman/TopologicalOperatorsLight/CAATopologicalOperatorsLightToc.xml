@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="CATRemoveFacesInShell" href="interface_CATRemoveFacesInShell_56093.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+<ITEM type="class" name="CATDistanceMinBodyBody" href="class_CATDistanceMinBodyBody_55793.htm" />
+<ITEM type="class" name="CATEuclidianDistanceTool" href="class_CATEuclidianDistanceTool_60886.htm" />
+<ITEM type="class" name="CATExtrapolParallelTool" href="class_CATExtrapolParallelTool_58838.htm" />
+<ITEM type="class" name="CATGeoToTopOperator" href="class_CATGeoToTopOperator_50433.htm" />
+<ITEM type="class" name="CATGeodesicDistanceTool" href="class_CATGeodesicDistanceTool_58517.htm" />
+<ITEM type="class" name="CATHybAssemble" href="class_CATHybAssemble_41808.htm" />
+<ITEM type="class" name="CATHybBoolean" href="class_CATHybBoolean_40437.htm" />
+<ITEM type="class" name="CATHybBoundary" href="class_CATHybBoundary_42114.htm" />
+<ITEM type="class" name="CATHybDisconnect" href="class_CATHybDisconnect_45040.htm" />
+<ITEM type="class" name="CATHybIntersect" href="class_CATHybIntersect_43580.htm" />
+<ITEM type="class" name="CATHybOperator" href="class_CATHybOperator_42159.htm" />
+<ITEM type="class" name="CATHybOperatorImp" href="class_CATHybOperatorImp_46608.htm" />
+<ITEM type="class" name="CATHybProject" href="class_CATHybProject_40618.htm" />
+<ITEM type="class" name="CATHybSplit" href="class_CATHybSplit_38258.htm" />
+<ITEM type="class" name="CATHybTrim" href="class_CATHybTrim_37130.htm" />
+<ITEM type="class" name="CATLayDownOperator" href="class_CATLayDownOperator_48693.htm" />
+<ITEM type="class" name="CATSketchGeodesic" href="class_CATSketchGeodesic_46372.htm" />
+<ITEM type="class" name="CATSketchOperators" href="class_CATSketchOperators_48859.htm" />
+<ITEM type="class" name="CATSolidPrimitive" href="class_CATSolidPrimitive_46919.htm" />
+<ITEM type="class" name="CATSolidSphere" href="class_CATSolidSphere_41884.htm" />
+<ITEM type="class" name="CATTopExtrapolWireOnShell" href="class_CATTopExtrapolWireOnShell_63207.htm" />
+<ITEM type="class" name="CATTopGeodesicPtPt" href="class_CATTopGeodesicPtPt_47928.htm" />
+<ITEM type="class" name="CATTopParallel" href="class_CATTopParallel_41901.htm" />
+<ITEM type="class" name="CATTopSkin" href="class_CATTopSkin_37150.htm" />
+<ITEM type="class" name="CATTopVertex" href="class_CATTopVertex_39582.htm" />
+<ITEM type="class" name="CATTopWire" href="class_CATTopWire_37151.htm" />
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Functions" type="function"  ctype="function">
+<ITEM type="function" name="CATCreateDistanceMinTopo" href="_function_CATCreateDistanceMinTopo.htm" />
+<ITEM type="function" name="CATCreateGeodesicPointDir" href="function_CATCreateGeodesicPointDir_584263.htm" />
+<ITEM type="function" name="CATCreateNewTopAssemble" href="function_CATCreateNewTopAssemble_159487.htm" />
+<ITEM type="function" name="CATCreateRemoveFacesInShell" href="function_CATCreateRemoveFacesInShell_215663.htm" />
+<ITEM type="function" name="CATCreateSolidSphere" href="function_CATCreateSolidSphere_196166.htm" />
+<ITEM type="function" name="CATCreateTopAssemble" href="function_CATCreateTopAssemble_153109.htm" />
+<ITEM type="function" name="CATCreateTopBoundary" href="function_CATCreateTopBoundary_326169.htm" />
+<ITEM type="function" name="CATCreateTopDisconnect" href="_function_CATCreateTopDisconnect.htm" />
+<ITEM type="function" name="CATCreateTopDisconnectShell" href="function_CATCreateTopDisconnectShell_176312.htm" />
+<ITEM type="function" name="CATCreateTopDisconnectWire" href="function_CATCreateTopDisconnectWire_173752.htm" />
+<ITEM type="function" name="CATCreateTopEuclidianDistanceTool" href="function_CATCreateTopEuclidianDistanceTool_269979.htm" />
+<ITEM type="function" name="CATCreateTopExtrapolWireOnShell" href="function_CATCreateTopExtrapolWireOnShell_207503.htm" />
+<ITEM type="function" name="CATCreateTopGeodesicDistanceTool" href="function_CATCreateTopGeodesicDistanceTool_266647.htm" />
+<ITEM type="function" name="CATCreateTopIntersect" href="function_CATCreateTopIntersect_159991.htm" />
+<ITEM type="function" name="CATCreateTopLayDown" href="function_CATCreateTopLayDown_160963.htm" />
+<ITEM type="function" name="CATCreateTopNewSplitShell" href="_function_CATCreateTopNewSplitShell.htm" />
+<ITEM type="function" name="CATCreateTopNewSplitWire" href="function_CATCreateTopNewSplitWire_265260.htm" />
+<ITEM type="function" name="CATCreateTopParallel" href="_function_CATCreateTopParallel.htm" />
+<ITEM type="function" name="CATCreateTopProject" href="_function_CATCreateTopProject.htm" />
+<ITEM type="function" name="CATCreateTopSkin" href="_function_CATCreateTopSkin.htm" />
+<ITEM type="function" name="CATCreateTopSplit" href="function_CATCreateTopSplit_213660.htm" />
+<ITEM type="function" name="CATCreateTopSplitOnSupport" href="function_CATCreateTopSplitOnSupport_233905.htm" />
+<ITEM type="function" name="CATCreateTopSplitShell" href="_function_CATCreateTopSplitShell.htm" />
+<ITEM type="function" name="CATCreateTopSplitShellWithKeepRemove" href="_function_CATCreateTopSplitShellWithKeepRemove.htm" />
+<ITEM type="function" name="CATCreateTopSplitWire" href="function_CATCreateTopSplitWire_258552.htm" />
+<ITEM type="function" name="CATCreateTopSplitWireWithKeepRemove" href="function_CATCreateTopSplitWireWithKeepRemove_193545.htm" />
+<ITEM type="function" name="CATCreateTopTrim" href="function_CATCreateTopTrim_247094.htm" />
+<ITEM type="function" name="CATCreateTopTrimOnSupport" href="function_CATCreateTopTrimOnSupport_266385.htm" />
+<ITEM type="function" name="CATCreateTopTrimShell" href="function_CATCreateTopTrimShell_437684.htm" />
+<ITEM type="function" name="CATCreateTopTrimShellWithKeepRemove" href="_function_CATCreateTopTrimShellWithKeepRemove.htm" />
+<ITEM type="function" name="CATCreateTopTrimWire" href="function_CATCreateTopTrimWire_255031.htm" />
+<ITEM type="function" name="CATCreateTopTrimWireWithKeepRemove" href="function_CATCreateTopTrimWireWithKeepRemove_188601.htm" />
+<ITEM type="function" name="CATCreateTopVertex" href="function_CATCreateTopVertex_125876.htm" />
+<ITEM type="function" name="CATCreateTopWire" href="function_CATCreateTopWire_234198.htm" />
+<ITEM type="function" name="CATTopCreateSolidSphere" href="function_CATTopCreateSolidSphere_202576.htm" />
+<ITEM type="function" name="CreateExtrapolParallelTool" href="_function_CreateExtrapolParallelTool.htm" />
+</ITEM>
+<ITEM name="Macros" type="define"  ctype="define">
+<ITEM type="define" name="NULL" href="_define_NULL.htm" />
+</ITEM>
+</Root>

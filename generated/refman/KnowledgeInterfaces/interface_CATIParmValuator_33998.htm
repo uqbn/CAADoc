@@ -1,0 +1,116 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>KnowledgeInterfaces Interface CATIParmValuator</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../KnowledgeInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIParmValuator','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIParmValuator','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIParmValuator','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIParmValuator','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>KnowledgeInterfaces Interface CATIParmValuator</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIParmValuator_33998','CATIParmValuator','0');</script>
+<p><b>Usage: you can reimplement this interface by deriving the supplied <a href="../KnowledgeInterfaces/class_CATParmValuatorAdapter_42804.htm">CATParmValuatorAdapter</a> adapter class.</b></p>
+<hr>
+<p>
+ interface <b>CATIParmValuator</b>
+</p>
+<p>
+<b><i>    Interface dedicated to declare objects that valuates parameters.</i></b><br>
+
+ <b>Role</b>: Used to explain which element is Valuator a parameter.
+
+ <p><b>BOA information</b>: this interface CAN be implemented
+ using the BOA (Basic Object Adapter).
+ To know more about the BOA, refer to the CAA Encyclopedia home page.
+ Click Middleware at the bottom left, then click the Object Modeler tab page.
+ Several articles deal with the BOA.</p>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AllowLinkRemoval(CATICkeParm_var&amp;)"><b>AllowLinkRemoval</b></a>(CATICkeParm_var&amp;)
+<dd>  Indicates if a link with a parameter is removable.
+ <dt> o 
+    <a href="#RemoveLink(CATICkeParm_var&amp;)"><b>RemoveLink</b></a>(CATICkeParm_var&amp;)
+<dd>  Indicates if the removal of a link has succeeded.
+ <dt> o 
+    <a href="#Show()"><b>Show</b></a>()
+<dd>  Returns the NLS view of this object.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AllowLinkRemoval"></a><a name="AllowLinkRemoval(CATICkeParm_var&amp;)"></a> <dt> o <b>AllowLinkRemoval</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AllowLinkRemoval</b>(<td> const <script type="text/javascript"> activateLink('CATICkeParm_var','CATICkeParm_var&amp;')</script> <td><tt>parm</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Indicates if a link with a parameter is removable.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> the</tt>
+   <dd> parameter with the link. </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  S_OK if link with parameter is removable E_FAIL else.
+</dl>
+</dl>
+<a name="RemoveLink"></a><a name="RemoveLink(CATICkeParm_var&amp;)"></a> <dt> o <b>RemoveLink</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RemoveLink</b>(<td> const <script type="text/javascript"> activateLink('CATICkeParm_var','CATICkeParm_var&amp;')</script> <td><tt>parm</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Indicates if the removal of a link has succeeded.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> the</tt>
+   <dd> parameter with the link. </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  S_OK if link removal succeeded, E_FAIL else
+</dl>
+</dl>
+<a name="Show"></a><a name="Show()"></a> <dt> o <b>Show</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script>  <b>Show</b>(<td>)<script type="text/javascript"> activateLink('=0','const =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the NLS view of this object.
+ This method is used to show the user who is Valuator a parameter.<br>
+ whatever it is (it can be the body of formula......for example)<br>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIParmValuator.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>KnowledgeItf</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

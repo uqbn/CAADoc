@@ -1,0 +1,185 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATTPSInterfaces Interface CATITPSFlagNote</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATTPSInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATITPSFlagNote','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATITPSFlagNote','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATITPSFlagNote','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATITPSFlagNote','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATTPSInterfaces Interface CATITPSFlagNote</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATITPSFlagNote_25866','CATITPSFlagNote','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATITPSFlagNote</b>
+</p>
+<p>
+<b><i> Interface for the TPS Flag Note object.</i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetFlagText(wchar_t**)"><b>GetFlagText</b></a>(wchar_t**)
+<dd>  Retrieves flag text.
+ <dt> o 
+    <a href="#GetText(wchar_t**)"><b>GetText</b></a>(wchar_t**)
+<dd>  Retrieves text.
+ <dt> o 
+    <a href="#GetURL(int,wchar_t**)"><b>GetURL</b></a>(int,wchar_t**)
+<dd>  Retrieves URL.
+ <dt> o 
+    <a href="#GetUrlListSize(int*)"><b>GetUrlListSize</b></a>(int*)
+<dd>  Retrieves the number of URLs.
+ <dt> o 
+    <a href="#RemoveURL(int)"><b>RemoveURL</b></a>(int)
+<dd>  Deletes an URL.
+ <dt> o 
+    <a href="#SetFlagText(wchar_t*)"><b>SetFlagText</b></a>(wchar_t*)
+<dd>  Sets flag text.
+ <dt> o 
+    <a href="#SetText(wchar_t*)"><b>SetText</b></a>(wchar_t*)
+<dd>  Sets text.
+ <dt> o 
+    <a href="#SetURL(wchar_t*,int)"><b>SetURL</b></a>(wchar_t*,int)
+<dd>  Sets or modifies a link to file or URL.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetFlagText"></a><a name="GetFlagText(wchar_t**)"></a> <dt> o <b>GetFlagText</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetFlagText</b>(<td><script type="text/javascript"> activateLink('wchar_t','wchar_t**')</script> <td><tt>opText</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves flag text.
+</dl>
+<a name="GetText"></a><a name="GetText(wchar_t**)"></a> <dt> o <b>GetText</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetText</b>(<td><script type="text/javascript"> activateLink('wchar_t','wchar_t**')</script> <td><tt>opText</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves text.
+</dl>
+<a name="GetURL"></a><a name="GetURL(int,wchar_t**)"></a> <dt> o <b>GetURL</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetURL</b>(<td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iIndex</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('wchar_t','wchar_t**')</script> <td><tt>opUrl</tt>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves URL.
+  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   Index of URL.
+  </dd>
+    <dt><tt> opUrl</tt>
+   <dd>   URL
+   </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>       S_OK if succeded (opUrl must be deleted).
+</dl>
+</dl>
+<a name="GetUrlListSize"></a><a name="GetUrlListSize(int*)"></a> <dt> o <b>GetUrlListSize</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetUrlListSize</b>(<td><script type="text/javascript"> activateLink('int','int*')</script> <td><tt>oNumber</tt>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the number of URLs.
+  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oNumber</tt>
+   <dd>   the size of URL list.</dd>
+</dl>
+</dl>
+</dl>
+<a name="RemoveURL"></a><a name="RemoveURL(int)"></a> <dt> o <b>RemoveURL</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RemoveURL</b>(<td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iIndex</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Deletes an URL.
+  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   Index of URL to remove.
+  </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>       S_OK if succeded.
+</dl>
+</dl>
+<a name="SetFlagText"></a><a name="SetFlagText(wchar_t*)"></a> <dt> o <b>SetFlagText</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetFlagText</b>(<td> const <script type="text/javascript"> activateLink('wchar_t','wchar_t*')</script> <td><tt>ipText</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets flag text.
+</dl>
+<a name="SetText"></a><a name="SetText(wchar_t*)"></a> <dt> o <b>SetText</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetText</b>(<td> const <script type="text/javascript"> activateLink('wchar_t','wchar_t*')</script> <td><tt>ipText</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets text.
+</dl>
+<a name="SetURL"></a><a name="SetURL(wchar_t*,int)"></a> <dt> o <b>SetURL</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetURL</b>(<td> const <script type="text/javascript"> activateLink('wchar_t','wchar_t*')</script> <td><tt>pUrl</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iIndex</tt><td><tt>= -1 </tt>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets or modifies a link to file or URL.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> pUrl</tt>
+   <dd>    The url or file link to set.
+   </dd>
+    <dt><tt> iIndex</tt>
+   <dd>    index of the URL to modify.
+   if the iIndex is not defined, the URL is added to the FlagNote.
+   </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>       S_OK if succeded.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATITPSFlagNote.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

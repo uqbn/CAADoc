@@ -1,0 +1,105 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>MecModInterfaces HybridBodies (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../MecModInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('HybridBodies','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridBodies','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('HybridBodies','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridBodies','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>HybridBodies<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_HybridBodies_22837','HybridBodies','0');</script>
+<b><i> A collection of the HybridBody objects.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Add"><b>Add</b></a>
+<dd>  Creates a new hybrid body and adds it to the HybridBodies collection.
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns a body using its index or its name from the Bodies
+ collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Add"><dt>
+
+<table><tr><td>o Func <b>Add</b>(<td>) As <script type="text/javascript"> activateLink('HybridBody','HybridBody')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new hybrid body and adds it to the HybridBodies collection.
+ This body becomes the current one
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The created body <! @sample >
+ <dt><b>Example:</b>
+ <dd>
+ The following example creates a body named <tt>newHybridBody</tt>
+ in the hybrid body collection of the <tt>rootPart</tt> part
+ in the <tt>partDoc</tt> part document. <tt>NewPartBody</tt> becomes
+ the current body in <tt>partDoc</tt>.
+ <pre>
+ Set NewPartBody = rootPart.Bodies.<font color="red">AddPartBody</font>()
+ </pre>
+</dl>
+</dl>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('HybridBody','HybridBody')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a body using its index or its name from the Bodies
+ collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the hybrid body to retrieve from
+   the collection of hybrid bodies.
+   As a numerics, this index is the rank of the hybrid body
+   in the collection.
+   The index of the first hybrid body in the collection is 1, and
+   the index of the last hybrid body is Count.
+   As a string, it is the name you assigned to the hybrid body using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property. 
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved hybrid body <dt><b>Example:</b>
+ <dd>
+ This example retrieves in <tt>ThisHybridBody</tt> the fifth hybrid body
+ in the collection and in <tt>ThatHybridBody</tt> the hybrid body
+ named <tt>MyHybridBody</tt> in the hybrid body collection of the <tt>partDoc</tt>
+ part document.
+ <pre>
+ Set hybridBodyColl = partDoc.Part.HybridBodies
+ Set ThisHybridBody = hybridBodyColl.<font color="red">Item</font>(5)
+ Set ThatHybridBody = hybridBodyColl.<font color="red">Item</font>("MyHybridBody")
+ </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

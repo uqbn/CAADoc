@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="AxisSystem" href="interface_AxisSystem_20968.htm" />
+<ITEM type="interface" name="AxisSystems" href="interface_AxisSystems_22118.htm" />
+<ITEM type="interface" name="BiDimFeatEdge" href="interface_BiDimFeatEdge_23586.htm" />
+<ITEM type="interface" name="Bodies" href="interface_Bodies_17670.htm" />
+<ITEM type="interface" name="Body" href="interface_Body_16739.htm" />
+<ITEM type="interface" name="Boundary" href="interface_Boundary_19156.htm" />
+<ITEM type="interface" name="Constraint" href="interface_Constraint_21016.htm" />
+<ITEM type="interface" name="Constraints" href="interface_Constraints_22166.htm" />
+<ITEM type="interface" name="CylindricalFace" href="interface_CylindricalFace_26456.htm" />
+<ITEM type="interface" name="Edge" href="interface_Edge_16674.htm" />
+<ITEM type="interface" name="Face" href="interface_Face_16663.htm" />
+<ITEM type="interface" name="Factory" href="interface_Factory_18448.htm" />
+<ITEM type="interface" name="FixTogether" href="interface_FixTogether_21920.htm" />
+<ITEM type="interface" name="FixTogethers" href="interface_FixTogethers_23185.htm" />
+<ITEM type="interface" name="GeometricElements" href="interface_GeometricElements_30463.htm" />
+<ITEM type="interface" name="HybridBodies" href="interface_HybridBodies_22837.htm" />
+<ITEM type="interface" name="HybridBody" href="interface_HybridBody_20706.htm" />
+<ITEM type="interface" name="HybridShape" href="interface_HybridShape_21664.htm" />
+<ITEM type="interface" name="HybridShapeInstance" href="interface_HybridShapeInstance_33622.htm" />
+<ITEM type="interface" name="HybridShapes" href="interface_HybridShapes_22929.htm" />
+<ITEM type="interface" name="InstanceFactory" href="interface_InstanceFactory_27199.htm" />
+<ITEM type="interface" name="MonoDimFeatEdge" href="interface_MonoDimFeatEdge_26223.htm" />
+<ITEM type="interface" name="NotWireBoundaryMonoDimFeatVertex" href="interface_NotWireBoundaryMonoDimFeatVertex_67048.htm" />
+<ITEM type="interface" name="OrderedGeometricalSet" href="interface_OrderedGeometricalSet_37698.htm" />
+<ITEM type="interface" name="OrderedGeometricalSets" href="interface_OrderedGeometricalSets_40113.htm" />
+<ITEM type="interface" name="OriginElements" href="interface_OriginElements_25734.htm" />
+<ITEM type="interface" name="Part" href="interface_Part_16738.htm" />
+<ITEM type="interface" name="PartDocument" href="interface_PartDocument_23135.htm" />
+<ITEM type="interface" name="PartInfrastructureSettingAtt" href="interface_PartInfrastructureSettingAtt_56080.htm" />
+<ITEM type="interface" name="PlanarFace" href="interface_PlanarFace_20455.htm" />
+<ITEM type="interface" name="RectilinearBiDimFeatEdge" href="interface_RectilinearBiDimFeatEdge_42724.htm" />
+<ITEM type="interface" name="RectilinearMonoDimFeatEdge" href="interface_RectilinearMonoDimFeatEdge_47979.htm" />
+<ITEM type="interface" name="RectilinearTriDimFeatEdge" href="interface_RectilinearTriDimFeatEdge_45434.htm" />
+<ITEM type="interface" name="Shape" href="interface_Shape_17103.htm" />
+<ITEM type="interface" name="ShapeInstance" href="interface_ShapeInstance_24135.htm" />
+<ITEM type="interface" name="Shapes" href="interface_Shapes_17678.htm" />
+<ITEM type="interface" name="Sketches" href="interface_Sketches_19049.htm" />
+<ITEM type="interface" name="Solid" href="interface_Solid_17107.htm" />
+<ITEM type="interface" name="TriDimFeatEdge" href="interface_TriDimFeatEdge_24844.htm" />
+<ITEM type="interface" name="TriDimFeatVertexOrBiDimFeatVertex" href="interface_TriDimFeatVertexOrBiDimFeatVertex_69296.htm" />
+<ITEM type="interface" name="Vertex" href="interface_Vertex_17746.htm" />
+<ITEM type="interface" name="ZeroDimFeatVertexOrWireBoundaryMonoDimFeatVertex" href="interface_ZeroDimFeatVertexOrWireBoundaryMonoDimFeatVertex_131539.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Enumerations" type="enum"  ctype="enum" >
+<ITEM type="enum" name="CATAxisSystemAxisType" href="enum_CATAxisSystemAxisType_35022.htm" />
+<ITEM type="enum" name="CATAxisSystemMainType" href="enum_CATAxisSystemMainType_34776.htm" />
+<ITEM type="enum" name="CATAxisSystemOriginType" href="enum_CATAxisSystemOriginType_39529.htm" />
+<ITEM type="enum" name="CatConstraintAngleSector" href="enum_CatConstraintAngleSector_41773.htm" />
+<ITEM type="enum" name="CatConstraintDistConfig" href="enum_CatConstraintDistConfig_39178.htm" />
+<ITEM type="enum" name="CatConstraintDistDirection" href="enum_CatConstraintDistDirection_47132.htm" />
+<ITEM type="enum" name="CatConstraintMode" href="enum_CatConstraintMode_27176.htm" />
+<ITEM type="enum" name="CatConstraintOrientation" href="enum_CatConstraintOrientation_42617.htm" />
+<ITEM type="enum" name="CatConstraintRefAxis" href="enum_CatConstraintRefAxis_32670.htm" />
+<ITEM type="enum" name="CatConstraintRefType" href="enum_CatConstraintRefType_32851.htm" />
+<ITEM type="enum" name="CatConstraintSide" href="enum_CatConstraintSide_27170.htm" />
+<ITEM type="enum" name="CatConstraintStatus" href="enum_CatConstraintStatus_31578.htm" />
+<ITEM type="enum" name="CatConstraintType" href="enum_CatConstraintType_27587.htm" />
+<ITEM type="enum" name="CatPartElementsNamingMode" href="enum_CatPartElementsNamingMode_43558.htm" />
+<ITEM type="enum" name="CatPartSurfaceElementsLocation" href="enum_CatPartSurfaceElementsLocation_58269.htm" />
+<ITEM type="enum" name="CatPartUpdateMode" href="enum_CatPartUpdateMode_26785.htm" />
+</ITEM>
+</Root>

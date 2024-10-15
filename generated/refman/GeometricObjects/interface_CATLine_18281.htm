@@ -1,0 +1,221 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GeometricObjects Interface CATLine</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GeometricObjects.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATLine','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATLine','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATLine','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATLine','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GeometricObjects Interface CATLine</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATLine_18281','CATLine','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATLine</b>
+</p>
+<p>
+<b><i>  Interface representing a geometric 3D line.</i></b><br>
+
+<br>A CATLine is created by the <tt>CreateLine</tt> method of the
+ <tt>CATGeoFactory</tt> interface and deleted with the <tt>Remove</tt> method. 
+ A line is defined with: 
+<table>
+ <tr><td>CATMathPoint</td><td><tt> O </tt></td>
+                   <td> The origin point </td></tr>
+ <tr><td>CATMathDirection</td><td><tt> U </tt></td>
+                   <td> The direction</td></tr>
+ <tr><td>CATCrvParam</td><td><tt> iStart</tt></td>
+                   <td> The low limitation</td></tr>
+ <tr><td>CATCrvParam</td><td><tt> iEnd</tt></td>
+                   <td> The high limitation</td></tr>
+</table></p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetDirection()"><b>GetDirection</b></a>()
+<dd>  Retrieves the direction of <tt>this</tt> CATLine.
+ <dt> o 
+    <a href="#GetDirection(CATMathDirection&amp;)"><b>GetDirection</b></a>(CATMathDirection&amp;)
+<dd>  Retrieves the direction of <tt>this</tt> CATLine.
+ <dt> o 
+    <a href="#GetOrigin()"><b>GetOrigin</b></a>()
+<dd>  Retrieves the origin of <tt>this</tt> CATLine.
+ <dt> o 
+    <a href="#GetOrigin(CATMathPoint&amp;)"><b>GetOrigin</b></a>(CATMathPoint&amp;)
+<dd>  Retrieves the origin of <tt>this</tt> CATLine.
+ <dt> o 
+    <a href="#Set(CATMathPoint&amp;,CATMathPoint&amp;)"><b>Set</b></a>(CATMathPoint&amp;,CATMathPoint&amp;)
+<dd>  Defines limitations on <tt>this</tt> CATLine.
+ <dt> o 
+    <a href="#Set(CATMathPoint&amp;,CATMathDirection&amp;)"><b>Set</b></a>(CATMathPoint&amp;,CATMathDirection&amp;)
+<dd>  Modifies the origin and the direction of <tt>this</tt> CATLine.
+ <dt> o 
+    <a href="#SetDirection(CATMathDirection&amp;)"><b>SetDirection</b></a>(CATMathDirection&amp;)
+<dd>  Modifies the direction of <tt>this</tt> CATLine.
+ <dt> o 
+    <a href="#SetOrigin(CATMathPoint&amp;)"><b>SetOrigin</b></a>(CATMathPoint&amp;)
+<dd>  Modifies the origin of <tt>this</tt> CATLine.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetDirection"></a><a name="GetDirection()"></a> <dt> o <b>GetDirection</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATMathDirection','CATMathDirection')</script>  <b>GetDirection</b>(<td>)<script type="text/javascript"> activateLink('=0','const =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the direction of <tt>this</tt> CATLine.
+ The signature which returns the CATMathDirection in output argument should be
+ preferably used.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The origin.
+</dl>
+</dl>
+<a name="GetDirection"></a><a name="GetDirection(CATMathDirection&amp;)"></a> <dt> o <b>GetDirection</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>GetDirection</b>(<td><script type="text/javascript"> activateLink('CATMathDirection','CATMathDirection&amp;')</script> <td><tt>ioDirection</tt>)<script type="text/javascript"> activateLink('=0',' const =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the direction of <tt>this</tt> CATLine.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioDirection</tt>
+   <dd> The direction.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetOrigin"></a><a name="GetOrigin()"></a> <dt> o <b>GetOrigin</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATMathPoint','CATMathPoint')</script>  <b>GetOrigin</b>(<td>)<script type="text/javascript"> activateLink('=0','const =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the origin of <tt>this</tt> CATLine.
+ The signature which returns the CATMathPoint in output argument should be
+ preferably used.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The origin.
+</dl>
+</dl>
+<a name="GetOrigin"></a><a name="GetOrigin(CATMathPoint&amp;)"></a> <dt> o <b>GetOrigin</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>GetOrigin</b>(<td><script type="text/javascript"> activateLink('CATMathPoint','CATMathPoint&amp;')</script> <td><tt>ioOrigin</tt>)<script type="text/javascript"> activateLink('=0',' const =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the origin of <tt>this</tt> CATLine.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioOrigin</tt>
+   <dd> The origin.</dd>
+</dl>
+</dl>
+</dl>
+<a name="Set"></a><a name="Set(CATMathPoint&amp;,CATMathPoint&amp;)"></a> <dt> o <b>Set</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>Set</b>(<td> const <script type="text/javascript"> activateLink('CATMathPoint','CATMathPoint&amp;')</script> <td><tt>iSegmentLimit1</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathPoint','CATMathPoint&amp;')</script> <td><tt>iSegmentLimit2</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Defines limitations on <tt>this</tt> CATLine.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSegmentLimit1</tt>
+   <dd> The first limitation.
+ </dd>
+    <dt><tt> iSegmentLimit2</tt>
+   <dd> The end limitation.</dd>
+</dl>
+</dl>
+</dl>
+<a name="Set"></a><a name="Set(CATMathPoint&amp;,CATMathDirection&amp;)"></a> <dt> o <b>Set</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>Set</b>(<td> const <script type="text/javascript"> activateLink('CATMathPoint','CATMathPoint&amp;')</script> <td><tt>iNewOrigin</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathDirection','CATMathDirection&amp;')</script> <td><tt>iNewDirection</tt>)<script type="text/javascript"> activateLink('=0',' =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the origin and the direction of <tt>this</tt> CATLine.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNewOrigin</tt>
+   <dd> The new origin.
+ </dd>
+    <dt><tt> iNewDirection</tt>
+   <dd> The new direction.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetDirection"></a><a name="SetDirection(CATMathDirection&amp;)"></a> <dt> o <b>SetDirection</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetDirection</b>(<td> const <script type="text/javascript"> activateLink('CATMathDirection','CATMathDirection&amp;')</script> <td><tt>iNewDirection</tt>)<script type="text/javascript"> activateLink('=0',' =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the direction of <tt>this</tt> CATLine.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNewDirection</tt>
+   <dd> The new direction.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetOrigin"></a><a name="SetOrigin(CATMathPoint&amp;)"></a> <dt> o <b>SetOrigin</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetOrigin</b>(<td> const <script type="text/javascript"> activateLink('CATMathPoint','CATMathPoint&amp;')</script> <td><tt>iNewOrigin</tt>)<script type="text/javascript"> activateLink('=0',' =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the origin of <tt>this</tt> CATLine.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNewOrigin</tt>
+   <dd> The new origin.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATLine.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGeometricObjects</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

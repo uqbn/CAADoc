@@ -1,0 +1,130 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchGRRCntr (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchGRRCntr','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchGRRCntr','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchGRRCntr','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchGRRCntr','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchGRRCntr<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchGRRCntr_36679','SchGRRCntr','0');</script>
+<b><i>  Manage the graphical representation of a schematic connector.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetSymbol"><b>GetSymbol</b></a>
+<dd>  Get the graphical primitive of a connector.
+ <dt>
+    <a href="#RemoveSymbol"><b>RemoveSymbol</b></a>
+<dd>  Remove the graphical primitive used as the connector's symbol.
+ <dt>
+    <a href="#SetSymbol"><b>SetSymbol</b></a>
+<dd>  Set the symbol or graphics used to represent a connector.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetSymbol"><dt>
+
+<table><tr><td>o Sub <b>GetSymbol</b>(<td><script type="text/javascript"> activateLink('SchGRR','SchGRR')</script> <td><tt>oGRR</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CatSchIDLCntrSymbolType','CatSchIDLCntrSymbolType')</script> <td><tt>oESymbolType</tt>)</table></dt>
+<dl>
+  <dd>
+ Get the graphical primitive of a connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oGRR</tt>
+   <dd>   The graphical primitive (ditto) used to represent a connector.
+ </dd>
+    <dt><tt> oESymbolType</tt>
+   <dd>   Connector symbol type such as: point, point/vector,
+   OnOffSheet, LineBoundary.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRCntr
+ Dim objArg1 As SchGRR
+
+  ...
+ objThisIntf.<font color="red">GetSymbol</font>objArg1,CatSchIDLCntrSymbolType_Enum
+ </pre>
+
+</dl>
+</dl>
+<a name="RemoveSymbol"><dt>
+
+<table><tr><td>o Sub <b>RemoveSymbol</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Remove the graphical primitive used as the connector's symbol.
+ The default connector's symbol type will be set to point.
+    
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRCntr
+  ...
+ objThisIntf.<font color="red">RemoveSymbol</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="SetSymbol"><dt>
+
+<table><tr><td>o Sub <b>SetSymbol</b>(<td><script type="text/javascript"> activateLink('SchGRR','SchGRR')</script> <td><tt>iGRRSymbol</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CatSchIDLCntrSymbolType','CatSchIDLCntrSymbolType')</script> <td><tt>iESymbolType</tt>)</table></dt>
+<dl>
+  <dd>
+ Set the symbol or graphics used to represent a connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGRRSymbol</tt>
+   <dd>   The graphical primitive (detail) to be used as the connector's symbol.
+   iGRRSymbol can be NULL if iESymbolType is a point or point/vector.
+ </dd>
+    <dt><tt> iESymbolType</tt>
+   <dd>   Connector symbol type such as: point, point/vector,
+   OnOffSheet, LineBoundary.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRCntr
+ Dim objArg1 As SchGRR
+
+  ...
+ objThisIntf.<font color="red">SetSymbol</font>objArg1,CatSchIDLCntrSymbolType_Enum
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

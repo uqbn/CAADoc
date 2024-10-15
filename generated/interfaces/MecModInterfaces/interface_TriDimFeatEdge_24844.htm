@@ -1,0 +1,63 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>MecModInterfaces TriDimFeatEdge (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../MecModInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('TriDimFeatEdge','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('TriDimFeatEdge','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('TriDimFeatEdge','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('TriDimFeatEdge','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>TriDimFeatEdge<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_TriDimFeatEdge_24844','TriDimFeatEdge','0');</script>
+<b><i> 1-D boundary belonging to a feature whose topological result is three dimensional.</i></b><br>
+
+ <b>Role</b>: 
+ This <a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object may be, for example, the edge of a Pad.</br>  You will create a TriDimFeatEdge object using the 
+<a href="#" onClick="openLink('Shapes','GetBoundary');return false">Shapes.GetBoundary</a> , 
+<a href="#" onClick="openLink('HybridShapes','GetBoundary');return false">HybridShapes.GetBoundary</a> ,  
+<a href="#" onClick="openLink('Sketches','GetBoundary');return false">Sketches.GetBoundary</a> or 
+<a href="#" onClick="openLink('Selection','SelectElement2');return false">Selection.SelectElement2</a> method. Then, you pass it to the operator (such as 
+<a href="#" onClick="openLink('ShapeFactory','AddNewEdgeFilletWithConstantRadius');return false">ShapeFactory.AddNewEdgeFilletWithConstantRadius</a> ).</br>  The lifetime of a TriDimFeatEdge object is limited, see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a>.</br>  <! @sample>
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example asks the end user to select an edge, and creates an edge fillet on this edge:
+ <pre>
+ Dim InputObjectType(0)
+ Set Document = CATIA.ActiveDocument
+ Set Selection = Document.Selection
+ 'We propose to the user that he select an edge
+ InputObjectType(0)="TriDimFeatEdge"
+ Status=Selection.SelectElement2(InputObjectType,"Select an edge",true)
+ if (Status = "cancel") then Exit Sub
+ Set EdgeFillet = ShapeFactory.AddNewEdgeFilletWithConstantRadius(Selection.Item(1).Value,1,5.0)
+ EdgeFillet.EdgePropagation = 1
+ Document.Part.Update 
+ </pre>
+ </dl>
+<hr>
+<dl>
+</dl>
+<dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

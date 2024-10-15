@@ -1,0 +1,265 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATGSMIDLItf HybridShapePolyline (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATGSMIDLItf.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('HybridShapePolyline','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapePolyline','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('HybridShapePolyline','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapePolyline','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>HybridShapePolyline<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_HybridShapePolyline_27215','HybridShapePolyline','0');</script>
+<b><i> Represents the hybrid shape polyline curve object.</i></b><br>
+
+ <b>Role</b>: To access or set the data of the hybrid shape polyline object.
+ This data includes:
+ <ul>
+ <li>Elements</li>
+ <li>Radius</li>
+ <li>Closure</li>
+ </ul>
+ <p>Use the <a href="#" onClick="openLink('HybridShapeFactory','');return false">HybridShapeFactory</a> object to create a HybridShapePolyline object.
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Closure"><b>Closure</b></a>
+<dd>  Returns or sets the flag to decide closure of the polyline.
+ <dt>
+    <a href="#NumberOfElements"><b>NumberOfElements</b></a>
+<dd>  Returns the number of elements of the polyline.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetElement"><b>GetElement</b></a>
+<dd>  Returns the element of the polyline.
+ <dt>
+    <a href="#InsertElement"><b>InsertElement</b></a>
+<dd>  Inserts the element at a specified position in the polyline.
+ <dt>
+    <a href="#RemoveElement"><b>RemoveElement</b></a>
+<dd>  Removes the element at a specified position in the polyline.
+ <dt>
+    <a href="#ReplaceElement"><b>ReplaceElement</b></a>
+<dd>  Replaces the element at a specified position in the polyline.
+ <dt>
+    <a href="#SetRadius"><b>SetRadius</b></a>
+<dd>  Sets the radius at specified position of the polyline.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Closure"><dt>
+
+<table><tr><td>o Property <b>Closure</b>(<td>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the flag to decide closure of the polyline.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> Closure</tt>
+   <dd> (For get_Closure)     Returns  or sets the closure property
+ <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves the closure property of the polyline
+ of the <code>HybShpPolyline</code> hybrid shape polyline.
+ <pre>
+ Dim HybShpPolClosure As  boolean
+ HybShpPolClosure = HybShpPolyline.<font color="red">Closure</font>
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="NumberOfElements"><dt>
+
+<table><tr><td>o Property <b>NumberOfElements</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the number of elements of the polyline.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> NumberOfElements</tt>
+   <dd>     Number of elements in the polyline.
+ <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves the number of elements in the polyline
+ of the <code>HybShpPolyline</code> hybrid shape polyline.
+ <pre>
+ Dim HybShpPolNoOfEle As  long
+ HybShpPolNoOfEle = HybShpPolyline.<font color="red">NumberOfElements</font>
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetElement"><dt>
+
+<table><tr><td>o Sub <b>GetElement</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iPosition</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>oElement</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Length','Length')</script> <td><tt>oRadius</tt>)</table></dt>
+<dl>
+  <dd>
+ Returns the element of the polyline.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPosition</tt>
+   <dd>     Position at which the element is to be retrieved.
+   </dd>
+    <dt><tt> oElement</tt>
+   <dd>     Reference to the element.
+   </dd>
+    <dt><tt> ioRadius</tt>
+   <dd>     Length to the radius.
+ <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves the element and radius of the polyline
+ at specified position of the <code>HybShpPolyline</code> hybrid shape polyline.
+ <pre>
+ Dim HybShpPolylineElement As Reference
+ Dim HybShpPolylineRadius As Reference
+ HybShpPolyline.<font color="red">GetElement 1, HybShpPolylineElement,HybShpPolylineRadius</font>
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="InsertElement"><dt>
+
+<table><tr><td>o Sub <b>InsertElement</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iPoint</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iPosition</tt>)</table></dt>
+<dl>
+  <dd>
+ Inserts the element at a specified position in the polyline.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPoint</tt>
+   <dd>      Reference of the point object to be inserted.
+   </dd>
+    <dt><tt> iPosition</tt>
+   <dd>     Position at which the element should be inserted.
+ <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example inserts the element in the polyline
+ of the <code>HybShpPolyline</code> hybrid shape polyline.
+ <pre>
+ HybShpPolyline.<font color="red">InsertElement PointReference,1 </font>
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="RemoveElement"><dt>
+
+<table><tr><td>o Sub <b>RemoveElement</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iPosition</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes the element at a specified position in the polyline.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPosition</tt>
+   <dd>      Position from which the element should be should be removed.
+ <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example removes the element in the polyline
+ of the <code>HybShpPolyline</code> hybrid shape polyline.
+ <pre>
+ HybShpPolyline.<font color="red">RemoveElement 1 </font>
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="ReplaceElement"><dt>
+
+<table><tr><td>o Sub <b>ReplaceElement</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iPoint</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iPosition</tt>)</table></dt>
+<dl>
+  <dd>
+ Replaces the element at a specified position in the polyline.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPoint</tt>
+   <dd>      Reference of the point object that will replace the old element.
+   </dd>
+    <dt><tt> iPosition</tt>
+   <dd>     Position at which the element should be inserted.
+ <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example replaces the element in the polyline
+ of the <code>HybShpPolyline</code> hybrid shape polyline.
+ <pre>
+ HybShpPolyline.<font color="red">ReplaceElement PointReference, 1 </font>
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="SetRadius"><dt>
+
+<table><tr><td>o Sub <b>SetRadius</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iPosition</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iRadius</tt>)</table></dt>
+<dl>
+  <dd>
+ Sets the radius at specified position of the polyline.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPosition</tt>
+   <dd>     Position at which radius should be set 
+   </dd>
+    <dt><tt> iRadius</tt>
+   <dd>      Value of the radius to be set.
+ <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example sets the radius at the specific position of the polyline
+ of the <code>HybShpPolyline</code> hybrid shape polyline.
+ <pre>
+ HybShpPolyline.<font color="red">SetRadius 1, 10</font>
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

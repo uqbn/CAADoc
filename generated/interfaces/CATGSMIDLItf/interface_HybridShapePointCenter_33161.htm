@@ -1,0 +1,72 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATGSMIDLItf HybridShapePointCenter (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATGSMIDLItf.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('HybridShapePointCenter','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapePointCenter','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('HybridShapePointCenter','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapePointCenter','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>HybridShapePointCenter<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_HybridShapePointCenter_33161','HybridShapePointCenter','0');</script>
+<b><i> Represents the hybrid shape PointCenter feature object.</i></b><br>
+
+ <b>Role</b>:  To access the data of the hybrid shape PointCenter feature object.
+ It has been created by the CATIAHybridShapeFactory.
+ This data includes:
+<ul>
+<li> The circle, ellipsa element 
+</ul>
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeFactory','');return false">HybridShapeFactory</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Element"><b>Element</b></a>
+<dd>  Returns or sets the circle, ellipse or sphere.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Element"><dt>
+
+<table><tr><td>o Property <b>Element</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the circle, ellipse or sphere.
+ <br>Sub-element(s) supported (see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+<a href="#" onClick="openLink('Edge','');return false">Edge</a>.<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>Ref_Circle</code> the center point for the
+<code>PointCenter</code> hybrid shape feature.
+ <pre>
+ Dim Ref_Circle As Reference
+ Set Ref_Circle = PointCenter.<font color="red">Element</font>
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

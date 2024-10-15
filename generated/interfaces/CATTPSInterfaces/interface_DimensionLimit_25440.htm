@@ -1,0 +1,148 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATTPSInterfaces DimensionLimit (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATTPSInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('DimensionLimit','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('DimensionLimit','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('DimensionLimit','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('DimensionLimit','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>DimensionLimit<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_DimensionLimit_25440','DimensionLimit','0');</script>
+<b><i> Represents the limit object of tolerance dimensions.</i></b><br>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#DimensionLimitType"><b>DimensionLimitType</b></a>
+<dd>  Returns or sets the dimension limit type.
+ <dt>
+    <a href="#Modifier"><b>Modifier</b></a>
+<dd>  Returns or sets the dimension single limit modifier.
+ <dt>
+    <a href="#Nominalvalue"><b>Nominalvalue</b></a>
+<dd>  Returns the dimension limit nominal value.
+ <dt>
+    <a href="#SymetricValue"><b>SymetricValue</b></a>
+<dd>  Returns or sets whether the dimension limit is symmetric.
+ <dt>
+    <a href="#TabulatedLimit"><b>TabulatedLimit</b></a>
+<dd>  Returns or sets the dimension tabulated limit.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Limits"><b>Limits</b></a>
+<dd>  Retrieves dimension limit values.
+ <dt>
+    <a href="#PutLimits"><b>PutLimits</b></a>
+<dd>  Sets dimension limit values.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="DimensionLimitType"><dt>
+
+<table><tr><td>o Property <b>DimensionLimitType</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the dimension limit type.
+ <br><b>Legal values</b>:
+ Valid dimension limit type values are:
+ <ul>
+ <li>CATTPSDLNotDefined</li>
+ <li>CATTPSDLNumerical</li>
+ <li>CATTPSDLTabulated</li>
+ <li>CATTPSDLSingleLimit</li>
+ </ul>
+</dl>
+<a name="Modifier"><dt>
+
+<table><tr><td>o Property <b>Modifier</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the dimension single limit modifier.
+</dl>
+<a name="Nominalvalue"><dt>
+
+<table><tr><td>o Property <b>Nominalvalue</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the dimension limit nominal value.
+ <br>This value is expressed in millimeters.
+</dl>
+<a name="SymetricValue"><dt>
+
+<table><tr><td>o Property <b>SymetricValue</b>(<td>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets whether the dimension limit is symmetric.
+ <br>TRUE if it is symmetric.
+</dl>
+<a name="TabulatedLimit"><dt>
+
+<table><tr><td>o Property <b>TabulatedLimit</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the dimension tabulated limit.
+ <br>This tabulated limit is expressed as a string.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Limits"><dt>
+
+<table><tr><td>o Sub <b>Limits</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>oBottom</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>oUp</tt>)</table></dt>
+<dl>
+  <dd>
+ Retrieves dimension limit values.
+ <br>These values are expressed in millimeters.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oBottom</tt>
+   <dd>   The dimension limit bottom value
+ </dd>
+    <dt><tt> oUp</tt>
+   <dd>   The dimension limit up value</dd>
+</dl>
+</dl>
+</dl>
+<a name="PutLimits"><dt>
+
+<table><tr><td>o Sub <b>PutLimits</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iBottom</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iUp</tt>)</table></dt>
+<dl>
+  <dd>
+ Sets dimension limit values.
+ <br>These values are expressed in millimeters.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iBottom</tt>
+   <dd>   The dimension limit bottom value
+ </dd>
+    <dt><tt> iUp</tt>
+   <dd>   The dimension limit up value</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

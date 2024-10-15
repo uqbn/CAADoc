@@ -1,0 +1,98 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>System Interface IClassFactory</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../System.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('IClassFactory','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('IClassFactory','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('IClassFactory','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('IClassFactory','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>System Interface IClassFactory</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_IClassFactory_13702','IClassFactory','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>IClassFactory</b>
+</p>
+<p>
+<b><i> IClassFactory objects factories are dedicated to instantiating components of
+ a specified CLSID.</i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CreateInstance(IUnknown*,REFIID,void**)"><b>CreateInstance</b></a>(IUnknown*,REFIID,void**)
+<dd>  Creates an uninitialized object of a specified CLSID.
+ <dt> o 
+    <a href="#LockServer(BOOL)"><b>LockServer</b></a>(BOOL)
+<dd>  Used to keep an out-process server in memory.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="CreateInstance"></a><a name="CreateInstance(IUnknown*,REFIID,void**)"></a> <dt> o <b>CreateInstance</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','HRESULT __stdcall')</script>  <b>CreateInstance</b>(<td><script type="text/javascript"> activateLink('IUnknown','IUnknown*')</script> <td><tt>iUnkOuter</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('REFIID','REFIID')</script> <td><tt>riid</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('void','void**')</script> <td><tt>oObject</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates an uninitialized object of a specified CLSID.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iUnkOuter</tt>
+   <dd>     Pointer to whether object is or is not part of an aggregate.
+ </dd>
+    <dt><tt> riid</tt>
+   <dd>     Reference to the identifier of the interface.
+ </dd>
+    <dt><tt> oObject</tt>
+   <dd>     Address of output variable that receives the interface pointer requested in riid.</dd>
+</dl>
+</dl>
+</dl>
+<a name="LockServer"></a><a name="LockServer(BOOL)"></a> <dt> o <b>LockServer</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','HRESULT __stdcall')</script>  <b>LockServer</b>(<td><script type="text/javascript"> activateLink('BOOL','BOOL')</script> <td><tt>iLock</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Used to keep an out-process server in memory.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLock</tt>
+   <dd>     Increments or decrements the lock count.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>IClassFactory.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

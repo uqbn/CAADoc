@@ -1,0 +1,124 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces Notification CATSamAnalysisModelNotification</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATSamAnalysisModelNotification','notification','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSamAnalysisModelNotification','notification','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATSamAnalysisModelNotification','notification','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSamAnalysisModelNotification','notification','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisInterfaces Notification CATSamAnalysisModelNotification</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATSamAnalysisModelNotification_71466','CATSamAnalysisModelNotification','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATSamAnalysisModelNotification</b>
+</p>
+<p>
+<b><i> Class representing a notification send when the status of an analysis case
+ is changed.</i></b><br>
+ This notification is send by the Analysis Model of the document.
+ The Notification type is identified by the <a href="#" onClick="openLink('CATSamModelNotifType','');return false">CATSamModelNotifType</a> and for each action sub categories are defined with 
+<a href="#" onClick="openLink('CATSamModelNotifAction','');return false">CATSamModelNotifAction</a> <br><b>Note:</b> Everybody is allowed to subscribe to those events,
+ but it is prohibited to re-emit them.
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATSamAnalysisModelNotification(CATSamModelNotifType,CATSamModelNotifAction,CATBaseUnknown_var)"><b>CATSamAnalysisModelNotification</b></a>(CATSamModelNotifType,CATSamModelNotifAction,CATBaseUnknown_var)
+<dd>  <dt> o 
+    <a href="#~CATSamAnalysisModelNotification()"><b>~CATSamAnalysisModelNotification</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetActionType()"><b>GetActionType</b></a>()
+<dd>  Returns the state of the notification.
+ <dt> o 
+    <a href="#GetCase()"><b>GetCase</b></a>()
+<dd>  Returns the concerned case.
+ <dt> o 
+    <a href="#GetNotifType()"><b>GetNotifType</b></a>()
+<dd>  Returns the notification type.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATSamAnalysisModelNotification"></a><a name="CATSamAnalysisModelNotification(CATSamModelNotifType,CATSamModelNotifAction,CATBaseUnknown_var)"></a> <dt> o <b>CATSamAnalysisModelNotification</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATSamAnalysisModelNotification</b>(<td><script type="text/javascript"> activateLink('CATSamModelNotifType','CATSamModelNotifType')</script> <td><tt>iNotifType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSamModelNotifAction','CATSamModelNotifAction')</script> <td><tt>iAction</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBaseUnknown','CATBaseUnknown_var')</script> <td><tt>iCase</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="~CATSamAnalysisModelNotification"></a><a name="~CATSamAnalysisModelNotification()"></a> <dt> o <b>~CATSamAnalysisModelNotification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATSamAnalysisModelNotification</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetActionType"></a><a name="GetActionType()"></a> <dt> o <b>GetActionType</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATSamModelNotifAction','CATSamModelNotifAction')</script>  <b>GetActionType</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the state of the notification.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  state of the notification.
+</dl>
+</dl>
+<a name="GetCase"></a><a name="GetCase()"></a> <dt> o <b>GetCase</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATBaseUnknown','CATBaseUnknown_var')</script>  <b>GetCase</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the concerned case.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  the concerned case.
+</dl>
+</dl>
+<a name="GetNotifType"></a><a name="GetNotifType()"></a> <dt> o <b>GetNotifType</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATSamModelNotifType','CATSamModelNotifType')</script>  <b>GetNotifType</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the notification type.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  notification type.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATSamAnalysisModelNotification.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisToolkit</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

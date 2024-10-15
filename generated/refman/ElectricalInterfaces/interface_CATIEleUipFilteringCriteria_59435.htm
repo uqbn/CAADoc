@@ -1,0 +1,123 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ElectricalInterfaces Interface CATIEleUipFilteringCriteria</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ElectricalInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIEleUipFilteringCriteria','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIEleUipFilteringCriteria','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIEleUipFilteringCriteria','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIEleUipFilteringCriteria','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ElectricalInterfaces Interface CATIEleUipFilteringCriteria</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIEleUipFilteringCriteria_59435','CATIEleUipFilteringCriteria','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATIEleUipFilteringCriteria</b>
+</p>
+<p>
+<b><i> Interface dedicated to configuration management.</i></b><br>
+
+ <b>Role</b>: This interface is used to list the criteria that can be applied to routed wires.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#ListCriteria(CATListValCATUnicodeString*,CATListValCATUnicodeString*&amp;)"><b>ListCriteria</b></a>(CATListValCATUnicodeString*,CATListValCATUnicodeString*&amp;)
+<dd>  Retrieves the list of criteria for a given list of systems.
+ <dt> o 
+    <a href="#ListWires(CATListValCATUnicodeString*,CATListValCATUnicodeString*,CATListValCATUnicodeString*&amp;)"><b>ListWires</b></a>(CATListValCATUnicodeString*,CATListValCATUnicodeString*,CATListValCATUnicodeString*&amp;)
+<dd>  Retrieves the list of wires for a given list of systems and a given list of criteria.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="ListCriteria"></a><a name="ListCriteria(CATListValCATUnicodeString*,CATListValCATUnicodeString*&amp;)"></a> <dt> o <b>ListCriteria</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ListCriteria</b>(<td> const <script type="text/javascript"> activateLink('CATListValCATUnicodeString','CATListValCATUnicodeString*')</script> <td><tt>iListOfSystems</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListValCATUnicodeString','CATListValCATUnicodeString*&amp;')</script> <td><tt>oListOfCriteria</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the list of criteria for a given list of systems.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iListOfSystems</tt>
+   <dd>  The list of systems (It is possible to give no systems. In this case, all criteria for the whole project will be
+  returned).
+ </dd>
+    <dt><tt> oListOfCriteria</tt>
+   <dd>  The list of criteria.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value. 
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>The criteria have been retrieved.</dd>
+     <dt>E_FAIL </dt>
+     <dd>Error while retrieving the criteria.</dd>
+   </dl>
+</dl>
+</dl>
+<a name="ListWires"></a><a name="ListWires(CATListValCATUnicodeString*,CATListValCATUnicodeString*,CATListValCATUnicodeString*&amp;)"></a> <dt> o <b>ListWires</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ListWires</b>(<td> const <script type="text/javascript"> activateLink('CATListValCATUnicodeString','CATListValCATUnicodeString*')</script> <td><tt>iListOfSystems</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATListValCATUnicodeString','CATListValCATUnicodeString*')</script> <td><tt>iListOfCriteria</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListValCATUnicodeString','CATListValCATUnicodeString*&amp;')</script> <td><tt>oListOfWires</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the list of wires for a given list of systems and a given list of criteria.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iListOfSystems</tt>
+   <dd>  The list of systems (It is possible to give no systems)
+ </dd>
+    <dt><tt> oListOfCriteria</tt>
+   <dd>  The list of criteria.
+ </dd>
+    <dt><tt> oListOfWires</tt>
+   <dd>  The list of wires' identifiers available for the given list of criteria.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value. 
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>The wire identifiers have been retrieved.</dd>
+     <dt>E_FAIL </dt>
+     <dd>Error while retrieving the wire identifiers.</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIEleUipFilteringCriteria.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATElectricalInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

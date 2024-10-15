@@ -1,0 +1,143 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>InfInterfaces Printer (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../InfInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Printer','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Printer','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Printer','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Printer','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Printer<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Printer_14128','Printer','0');</script>
+<b><i> Represents a printer handled by the printing subsystem.</i></b><br>
+
+ This object is read only and gives access to some properties of the printer.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#DeviceName"><b>DeviceName</b></a>
+<dd>  Returns the printer device name.
+ <dt>
+    <a href="#Orientation"><b>Orientation</b></a>
+<dd>  Returns or sets the default paper orientation.
+ <dt>
+    <a href="#PaperHeight"><b>PaperHeight</b></a>
+<dd>  Returns the default paper height.
+ <dt>
+    <a href="#PaperSize"><b>PaperSize</b></a>
+<dd>  Returns the default paper size.
+ <dt>
+    <a href="#PaperWidth"><b>PaperWidth</b></a>
+<dd>  Returns the default paper width.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="DeviceName"><dt>
+
+<table><tr><td>o Property <b>DeviceName</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the printer device name.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example displays the device name of the <tt>myPrinter</tt> printer.
+ <pre>
+ MsgBox myPrinter.<font color="red">DeviceName</font>
+ </pre>
+ </dl>
+</dl>
+<a name="Orientation"><dt>
+
+<table><tr><td>o Property <b>Orientation</b>(<td>) As <script type="text/javascript"> activateLink('CatPaperOrientation','CatPaperOrientation')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns or sets the default paper orientation.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves in <tt>DefaultPaperOrientation</tt> the default paper orientation
+ of the <tt>myPrinter</tt> printer.
+ <pre>
+ Dim DefaultPaperOrientation As CatPaperOrientation
+ DefaultPaperOrientation = myPrinter.<font color="red">Orientation</font>
+ </pre>
+ </dl>
+</dl>
+<a name="PaperHeight"><dt>
+
+<table><tr><td>o Property <b>PaperHeight</b>(<td>) As <script type="text/javascript"> activateLink('float','float')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the default paper height.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves in <tt>Height</tt> the default paper height
+ of the <tt>myPrinter</tt> printer.
+ <pre>
+ Dim Height
+ Height = myPrinter.<font color="red">PaperHeight</font>
+ </pre>
+ </dl>
+</dl>
+<a name="PaperSize"><dt>
+
+<table><tr><td>o Property <b>PaperSize</b>(<td>) As <script type="text/javascript"> activateLink('CatPaperSize','CatPaperSize')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the default paper size.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves in <tt>DefaultPaperSize</tt> the default paper size
+ of the <tt>myPrinter</tt> printer.
+ <pre>
+ Dim DefaultPaperSize As CatPaperSize
+ DefaultPaperSize = myPrinter.<font color="red">PaperSize</font>
+ </pre>
+ </dl>
+</dl>
+<a name="PaperWidth"><dt>
+
+<table><tr><td>o Property <b>PaperWidth</b>(<td>) As <script type="text/javascript"> activateLink('float','float')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the default paper width.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves in <tt>Witdh</tt> the default paper width
+ of the <tt>myPrinter</tt> printer.
+ <pre>
+ Dim Width As float
+ Width = myPrinter.<font color="red">PaperWidth</font>
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

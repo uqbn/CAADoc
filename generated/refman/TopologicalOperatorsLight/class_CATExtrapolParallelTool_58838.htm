@@ -1,0 +1,182 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>TopologicalOperatorsLight Class CATExtrapolParallelTool</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../TopologicalOperatorsLight.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATExtrapolParallelTool','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATExtrapolParallelTool','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATExtrapolParallelTool','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATExtrapolParallelTool','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>TopologicalOperatorsLight Class CATExtrapolParallelTool</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATExtrapolParallelTool_58838','CATExtrapolParallelTool','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATExtrapolParallelTool</b>
+</p>
+<p>
+<b><i> Class defining the parallel computation.</i></b><br>
+
+ <br>This class must be created with the <a href="#" onClick="openLink('CreateExtrapolParallelTool','');return false">CreateExtrapolParallelTool</a>  global function and is used by the 
+<a href="#" onClick="openLink('CATTopParallel','');return false">CATTopParallel</a> operator  to define its parameters.
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#~CATExtrapolParallelTool()"><b>~CATExtrapolParallelTool</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetData(CATTopData*&amp;)"><b>GetData</b></a>(CATTopData*&amp;)
+<dd>  Retrieves the topological data associated with <tt>this</tt> tool.
+ <dt> o 
+    <a href="#GetDistanceTool(CATDistanceTool*&amp;)"><b>GetDistanceTool</b></a>(CATDistanceTool*&amp;)
+<dd>  Retrieves the type of computation.
+ <dt> o 
+    <a href="#GetDistanceTool(CATICGMDistanceTool*&amp;)"><b>GetDistanceTool</b></a>(CATICGMDistanceTool*&amp;)
+<dd>  
+ <dt> o 
+    <a href="#GetExtrapInfo()"><b>GetExtrapInfo</b></a>()
+<dd>  Returns the relimitation type.
+ <dt> o 
+    <a href="#GetFactory(CATGeoFactory*&amp;)"><b>GetFactory</b></a>(CATGeoFactory*&amp;)
+<dd>  Retrieves the factory that creates the resulting body.
+ <dt> o 
+    <a href="#GetSupport(CATBody*&amp;)"><b>GetSupport</b></a>(CATBody*&amp;)
+<dd>  Retrieves the skin body on which the parallel is computed.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="~CATExtrapolParallelTool"></a><a name="~CATExtrapolParallelTool()"></a> <dt> o <b>~CATExtrapolParallelTool</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATExtrapolParallelTool</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetData"></a><a name="GetData(CATTopData*&amp;)"></a> <dt> o <b>GetData</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>GetData</b>(<td><script type="text/javascript"> activateLink('CATTopData','CATTopData*&amp;')</script> <td><tt>oData</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the topological data associated with <tt>this</tt> tool.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oData</tt>
+   <dd> The pointer to the topological data.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetDistanceTool"></a><a name="GetDistanceTool(CATDistanceTool*&amp;)"></a> <dt> o <b>GetDistanceTool</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>GetDistanceTool</b>(<td><script type="text/javascript"> activateLink('CATDistanceTool','CATDistanceTool*&amp;')</script> <td><tt>oDistTool</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the type of computation.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDistTool</tt>
+   <dd> The pointer to the definition of the computation type.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetDistanceTool"></a><a name="GetDistanceTool(CATICGMDistanceTool*&amp;)"></a> <dt> o <b>GetDistanceTool</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>GetDistanceTool</b>(<td><script type="text/javascript"> activateLink('CATICGMDistanceTool','CATICGMDistanceTool*&amp;')</script> <td><tt>oDistTool</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDistTool</tt>
+   <dd> [out, IUnknown#Release] The pointer to the definition of the computation type.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetExtrapInfo"></a><a name="GetExtrapInfo()"></a> <dt> o <b>GetExtrapInfo</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetExtrapInfo</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the relimitation type.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The type of relimitation.
+ <br><b>Legal values</b>:
+ <dl><dt><tt>1</tt></dt><dd>Straight relimitation
+ <dt><tt>1</tt></dt><dd>Round relimitation
+ </dl>
+</dl>
+</dl>
+<a name="GetFactory"></a><a name="GetFactory(CATGeoFactory*&amp;)"></a> <dt> o <b>GetFactory</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>GetFactory</b>(<td><script type="text/javascript"> activateLink('CATGeoFactory','CATGeoFactory*&amp;')</script> <td><tt>oFactory</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the factory that creates the resulting body.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oFactory</tt>
+   <dd> The pointer to the factory that creates the resulting body.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetSupport"></a><a name="GetSupport(CATBody*&amp;)"></a> <dt> o <b>GetSupport</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>GetSupport</b>(<td><script type="text/javascript"> activateLink('CATBody','CATBody*&amp;')</script> <td><tt>oSupport</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the skin body on which the parallel is computed.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oSupport</tt>
+   <dd> The pointer to the skin body.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATExtrapolParallelTool.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATTopologicalOperatorsLight</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

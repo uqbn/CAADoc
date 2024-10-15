@@ -1,0 +1,156 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATStrFunctionalInterfaces SfmEndcut (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATStrFunctionalInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SfmEndcut','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmEndcut','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SfmEndcut','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmEndcut','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SfmEndcut<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SfmEndcut_41260','SfmEndcut','0');</script>
+<b><i> Interface to manage the EndCut on Super Profile.</i></b><br>
+
+ <b>Role</b>:  Allows managing (mainly retreiving parameters)on existing EndCut.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('SfmProfile','');return false">SfmProfile</a>, <a href="#" onClick="openLink('SfmEndcutManager','');return false">SfmEndcutManager</a>, <a href="#" onClick="openLink('SfmConnectionParameters','');return false">SfmConnectionParameters</a>
+</dl>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetConnectionCoordinate"><b>GetConnectionCoordinate</b></a>
+<dd>  Gets thelocation of existing endcut.
+ <dt>
+    <a href="#GetEndcutinfo"><b>GetEndcutinfo</b></a>
+<dd>  Gets the information on existing Endcut.
+ <dt>
+    <a href="#UpdateConnectionsSet"><b>UpdateConnectionsSet</b></a>
+<dd>  Updates the Connection Set.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetConnectionCoordinate"><dt>
+
+<table><tr><td>o Func <b>GetConnectionCoordinate</b>(<td>) As <script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> </table></dt>
+<dl>
+  <dd>
+ Gets thelocation of existing endcut.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oCoordinate</tt>
+   <dd> [out]      The Coordinates.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+ <dl>
+ <dt>Example</dt>:
+ <dd>
+ The example retrieves endcut Coordinates defined on start end.
+ <pre>
+ Dim EndcutObj As SfmEndcut
+ Set EndcutObj = StiffObj.GetEndcut(1)
+ Dim Coord() As Variant
+ Dim x,y,z as Double
+ Coord() = EndcutObj.<font color="red">GetConnectionCoordinate</font>
+ x = Coord(0)
+ y = Coord(1)
+ z = Coord(2)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="GetEndcutinfo"><dt>
+
+<table><tr><td>o Sub <b>GetEndcutinfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oTypeOfEndcut</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oNameOfEndcut</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SfmReferences','SfmReferences')</script> <td><tt>oListOfEndcutContexts</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SfmConnectionParameters','SfmConnectionParameters')</script> <td><tt>oListOfEndcutParams</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oListOfEndCutParamNames</tt>)</table></dt>
+<dl>
+  <dd>
+ Gets the information on existing Endcut.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oTypeOfEndcut</tt>
+   <dd> [out]      Type of Endcut(Snipe,Trim,Weld).
+ </dd>
+    <dt><tt> oNameOfEndcut</tt>
+   <dd> [out]      Name of the Endcut.
+ </dd>
+    <dt><tt> oListOfEndcutContexts</tt>
+   <dd> [out]      List of Contexts (Limits) defined for Cutbacks and Contextual Endcuts.
+      The list will be empty for custom UDF based endcuts.
+ </dd>
+    <dt><tt> oListOfEndcutParams</tt>
+   <dd> [out]      List of Parameters set when defining the Endcut.
+ </dd>
+    <dt><tt> oListOfEndCutParamNames</tt>
+   <dd> [out]      List of Parameter Names set when defining the Endcut.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+ <dl>
+ <dt>Example</dt>:
+ <dd>
+ The example retrieves endcut information.
+ <pre>
+ Dim EndcutObj As SfmEndcut
+ Set EndcutObj = StiffObj.GetEndcut(1)
+ Dim EndCutName, EndCutType As String
+ Dim ContextList  As SfmReferences
+ Dim ParamList As SfmConnectionParameters
+ Dim ParamNamesList() As Variant
+ EndcutObj.<font color="red">GetEndcutinfo EndCutType, EndCutName, ContextList, ParamList, ParamNamesList</font>
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="UpdateConnectionsSet"><dt>
+
+<table><tr><td>o Sub <b>UpdateConnectionsSet</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Updates the Connection Set.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+ <dl>
+ <dt>Example</dt>:
+ <dd>
+ The example Updates the Connection Set.
+ <pre>
+ Dim EndcutObj As SfmEndcut
+ Set EndcutObj = StiffObj.GetEndcut(1)
+ EndcutObj.<font color="red">UpdateConnectionsSet</font>
+ </pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,100 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PPRInterfaces PPRDocument (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../PPRInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('PPRDocument','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PPRDocument','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('PPRDocument','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PPRDocument','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PPRDocument<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_PPRDocument_17561','PPRDocument','0');</script>
+<b><i>   This interface is used to access Processes, Products and Resources.</i></b><br>
+  
+ Due to the inherent design restrictions, PPRDocument and another interface
+ ProcessDocument need to be used with care, since the ActiveDocument could
+ be either ProcessDocument or PPRDocument. With that in mind, a good
+ practice of writing more robust VB script is to first tell the real
+ type of document (interface). E.g. The following sentence
+   Dim MyDoc As PPRDocument
+   Set MyDoc = DELMIA.ActiveDocument.PPRDocument
+ could be replaced by the following:
+   Dim MyDoc As PPRDocument
+   Set MyProcDoc = DELMIA.ActiveDocument
+   if (TypeName(MyProcDoc)="ProcessDocument") then
+   	MyDoc = MyProcDoc.PPRDocument
+   else
+   	MyDoc = DELMIA.ActiveDocument
+   end if
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Processes"><b>Processes</b></a>
+<dd>  Retrieves the list of Processes as Activities contained in the current document.
+ <dt>
+    <a href="#Products"><b>Products</b></a>
+<dd>  Retrieves the list of Products contained in the current document.
+ <dt>
+    <a href="#Resources"><b>Resources</b></a>
+<dd>  Retrieves the list of Resources contained in the current document.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Processes"><dt>
+
+<table><tr><td>o Property <b>Processes</b>(<td>) As <script type="text/javascript"> activateLink('Activities','Activities')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Retrieves the list of Processes as Activities contained in the current document.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The list of Activities contained in the current document.
+</dl>
+</dl>
+<a name="Products"><dt>
+
+<table><tr><td>o Property <b>Products</b>(<td>) As <script type="text/javascript"> activateLink('PPRProducts','PPRProducts')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Retrieves the list of Products contained in the current document.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The list of Products contained in the current document.
+</dl>
+</dl>
+<a name="Resources"><dt>
+
+<table><tr><td>o Property <b>Resources</b>(<td>) As <script type="text/javascript"> activateLink('PPRProducts','PPRProducts')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Retrieves the list of Resources contained in the current document.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The list of Resources contained in the current document.
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

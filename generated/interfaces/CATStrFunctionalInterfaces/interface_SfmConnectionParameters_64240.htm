@@ -1,0 +1,108 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATStrFunctionalInterfaces SfmConnectionParameters (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATStrFunctionalInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SfmConnectionParameters','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmConnectionParameters','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SfmConnectionParameters','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmConnectionParameters','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SfmConnectionParameters<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SfmConnectionParameters_64240','SfmConnectionParameters','0');</script>
+<b><i> Interface to get the parameters defining the UDF for Slots and Endcuts.</i></b><br>
+
+ <b>Role</b>:  To Get/Set the parameters of the UDF.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('SfmSlots','');return false">SfmSlots</a>, <a href="#" onClick="openLink('SfmEndcut','');return false">SfmEndcut</a>, <a href="#" onClick="openLink('SfmEndcutManager','');return false">SfmEndcutManager</a>
+</dl>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>     Gets a Item from the collection list.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('Parameter','Parameter')</script> </table></dt>
+<dl>
+  <dd>
+    Gets a Item from the collection list.
+  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd> [in]        Index of the item to be retrieved.  
+  </dd>
+    <dt><tt> oStdConParm</tt>
+   <dd> [out]        The required parameter.  
+  </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>         <code>S_OK</code> if everything ran ok.  
+ <dl>
+ <dt>Example</dt>:
+ <dd>
+ This example retrieves and manipulates existing BuiltIn EndCut parameters.
+ <pre>
+ Dim oStartEndCutObj As SfmEndcut
+ Set oStartEndCutObj = StiffObj.GetEndcut(1) 
+ Dim oStartEndCutType,oStartEndCutName As String
+ Dim oLimitContextList As SfmReferences
+ Dim oConnectionParamList As SfmConnectionParameters
+ Dim oConnectionParamNames() As Variant
+ oStartEndCutObj.GetEndcutinfo oStartEndCutType, oStartEndCutName, oLimitContextList, oConnectionParamList, oConnectionParamNames  
+ ' Reading Parameters
+ Dim SizeOfUDFParams As Long
+ SizeOfUDFParams = oConnectionParamList.Count
+ Dim UDFParam As Parameter
+ Dim UDFParamName, UDFParamValue As String
+ For i = 1 To SizeOfUDFParams
+  Set UDFParam = oConnectionParamList.Item(i)
+  UDFParamName = oConnectionParamNames(i - 1)
+  UDFParamValue = UDFParam.ValueAsString
+ Next 
+ ' Setting Parameters
+ For j = 1 To SizeOfUDFParams
+  Set UDFParam = oConnectionParamList.Item(j)
+ UDFParamName = oConnectionParamNames(j - 1)
+ If (UDFParamName = "A1") Then
+    UDFParam.ValuateFromString ("16deg")
+    End If
+ If (UDFParamName = "A2") Then
+     UDFParam.ValuateFromString ("16deg")
+     End If
+ If (UDFParamName = "B") Then
+     UDFParam.ValuateFromString ("31deg")
+     End If
+ Next
+ </pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,150 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATPlantShipInterfaces PspWorkbench (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATPlantShipInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('PspWorkbench','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PspWorkbench','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('PspWorkbench','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PspWorkbench','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PspWorkbench<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_PspWorkbench_34377','PspWorkbench','0');</script>
+<b><i> Represents the PspWorkbench.</i></b><br>
+
+ <b>Role</b>: To manage application and Psp interface handlers.
+ From this object all the queries for lists of Distributive system (PSP) objects can be made. 
+ Furthermore,  all the interface handles can be obtained through this interface.
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#ExportProperties"><b>ExportProperties</b></a>
+<dd>  This method extracts property values of the current document to an output XML file.
+ <dt>
+    <a href="#GetApplication"><b>GetApplication</b></a>
+<dd>  Returns the PspApplication associated with the input ApplicationID.
+ <dt>
+    <a href="#GetInterface"><b>GetInterface</b></a>
+<dd>  Returns specific interface handle on a given object.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="ExportProperties"><dt>
+
+<table><tr><td>o Sub <b>ExportProperties</b>(<td><script type="text/javascript"> activateLink('Document','Document')</script> <td><tt>iDocumentToExportFrom</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iXMLOutputFileName</tt>)</table></dt>
+<dl>
+  <dd>
+ This method extracts property values of the current document to an output XML file.
+ The format is determined by CATIA PlantShip XML-DTD file.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDocumentToExportFrom</tt>
+   <dd>   Documennt to export from
+ </dd>
+    <dt><tt> iXMLOutputFileName</tt>
+   <dd>   The file name to output the data to.
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  
+ <pre>
+ Dim objPspWorkbench As PspWorkbench  
+ Dim objCATIAV5CurDocument As Document
+ Dim iXMLOutputFileName As String
+ Set objCATIAV5CurDocument = CATIA.ActiveDocument  
+ Set objProductRoot = objCATIAV5CurDocument.Product
+ Set objPspWorkbench = objProductRoot.GetTechnologicalObject ("PspWorkbench")
+ ..
+ objThisIntf.<font color="red">ExportProperties</font> objCATIAV5CurDocument, iXMLOutputFileName
+ </pre>
+</dl>
+</dl>
+<a name="GetApplication"><dt>
+
+<table><tr><td>o Func <b>GetApplication</b>(<td><script type="text/javascript"> activateLink('CatPspIDLApplicationID','CatPspIDLApplicationID')</script> <td><tt>iApplicationID</tt>) As <script type="text/javascript"> activateLink('PspApplication','PspApplication')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the PspApplication associated with the input ApplicationID.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> CatPspIDLApplicationID</tt>
+   <dd>   Application ID to get.  
+ </dd>
+    <dt><tt> oApplication</tt>
+   <dd>   PspApplication handle found.
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objPspWorkbench As PspWorkbench
+ Dim objArg1 As CatPspIDLApplicationID
+ Dim objArg2 As PspApplication
+ objArg1 = catPspIDLCATPiping
+ Set objArg2 = objPspWorkbench.<font color="red">GetApplication</font> (objArg1)
+ </pre>
+</dl>
+</dl>
+<a name="GetInterface"><dt>
+
+<table><tr><td>o Func <b>GetInterface</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iInterfaceName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>iObject</tt>) As <script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> </table></dt>
+<dl>
+  <dd>
+ Returns specific interface handle on a given object.  
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iInterfaceName</tt>
+   <dd>   interface name to search for ("CATIAxxxx")
+ </dd>
+    <dt><tt> iObject</tt>
+   <dd>   The object to search for the required interface.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     Interface handle found
+ 
+  <dt> <b>Example:</b> 
+  <dd>  This example illustrates how to get a specific interface handle from a given object. 
+ <pre>
+ Dim objPspWorkbench As PspWorkbench
+ Dim objPspApplication As PspApplication
+ Dim objPspAppFactory As PspAppFactory
+ Dim objProductRoot As Product
+ Set objProductRoot = CATIA.ActiveDocument.Product
+ Set objPspWorkbench = objProductRoot.GetTechnologicalObject ("PspWorkbench")
+ Set objPspPipApplication = objPspWorkbench.GetApplication(catPspIDLCATPiping)
+
+ Set objPspPipAppFactory = objPspWorkbench.<font color="red">GetInterface</font> ("CATIAPspAppFactory",objPspPipApplication)
+ </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

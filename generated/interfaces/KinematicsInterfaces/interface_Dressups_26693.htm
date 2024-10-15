@@ -1,0 +1,222 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>KinematicsInterfaces Dressups (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../KinematicsInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Dressups','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Dressups','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Dressups','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Dressups','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Dressups<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Dressups_26693','Dressups','0');</script>
+<b><i>   A collection of all Dressup entities currently managed by the application.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Add"><b>Add</b></a>
+<dd>  Creates a new Dressup and adds it to the Dressups collection.
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns a Dressup using its index or its name from the Dressups collection.
+ <dt>
+    <a href="#ListMechanismsContext"><b>ListMechanismsContext</b></a>
+<dd>   Each mechanism of the list given by ListPossibleMechanisms has
+ a context product on which it is defined.
+ <dt>
+    <a href="#ListPossibleMechanisms"><b>ListPossibleMechanisms</b></a>
+<dd>   Returns information about all possible mechanisms on which a dressup can be created.
+ <dt>
+    <a href="#Remove"><b>Remove</b></a>
+<dd>  Removes a Dressup from the Dressups collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Add"><dt>
+
+<table><tr><td>o Func <b>Add</b>(<td><script type="text/javascript"> activateLink('Mechanism','Mechanism')</script> <td><tt>iMechanism</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iContext</tt>) As <script type="text/javascript"> activateLink('Dressup','Dressup')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new Dressup and adds it to the Dressups collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iMechanism</tt>
+   <dd>   The mechanism on which the dressup will apply. 
+ </dd>
+    <dt><tt> iContext</tt>
+   <dd>   The Context product on which the mechanism is defined
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The created Dressup
+ <! @sample >
+    <dt><b>Example:</b>
+    <dd>
+    This example creates a new Dressup
+    in the <tt>TheDressups</tt> collection.
+    <pre>
+    Dim NewDressup As Dressup
+    Set NewDressup = TheDressups.<font color="red">Add</font>(Mechanism)
+    </pre>
+</dl>
+</dl>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('Dressup','Dressup')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a Dressup using its index or its name from the Dressups collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the Dressup to retrieve from
+   the collection of Dressups.
+   As a numerics, this index is the rank of the Dressup
+   in the collection.
+   The index of the first Dressup in the collection is 1, and
+   the index of the last Dressup is Count.
+   As a string, it is the name you assigned to the Dressup using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property. 
+  <dt> <b>Returns:</b> 
+  <dd>     The retrieved Dressup
+ <! @sample >
+ <dt><b>Example:</b>
+ <dd>
+ This example returns in <tt>ThisDressup</tt> the third Dressup
+ in the collection, and in <tt>ThatDressup</tt> the Dressup named
+ <tt>MyDressup</tt>.
+ <pre>
+ Dim ThisDressup As Dressup
+ Set ThisDressup = TheDressups.<font color="red">Item</font>(3)
+ Dim ThatDressup As Dressup
+ Set ThatDressup = CATIA.Dressups.<font color="red">Item</font>("MyDressup")
+ </pre>
+</dl>
+</dl>
+<a name="ListMechanismsContext"><dt>
+
+<table><tr><td>o Func <b>ListMechanismsContext</b>(<td>) As <script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> </table></dt>
+<dl>
+  <dd>
+  Each mechanism of the list given by ListPossibleMechanisms has
+ a context product on which it is defined.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt>    Nothing</tt>
+   <dd>
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The list of mechanisms' contexts on which a dressup can be created. 
+    The context of oMechanismList(i) is oContextList(i). 
+ <! @sample >
+    <dt><b>Example:</b>
+    <dd>
+    The following example returns the first and the last element of the list of mechanisms' contexts. 
+    We assume that this list contains at least two values.  
+    <pre>
+    Dim ContextList As Product
+    ContextList = MyDressups.<font color="red">ListMechanismsContext</font>()
+    Dim FirstContext As Product
+    Set FirstContext = ContextList(0) 
+    Dim LastContext As Product
+    Set LastContext = ContextList(ubound(ContextList)) 
+    </pre>
+</dl>
+</dl>
+<a name="ListPossibleMechanisms"><dt>
+
+<table><tr><td>o Func <b>ListPossibleMechanisms</b>(<td>) As <script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> </table></dt>
+<dl>
+  <dd>
+  Returns information about all possible mechanisms on which a dressup can be created.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt>     Nothing</tt>
+   <dd>
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The list of possible mechanisms on which a dressup can be created. 
+ <! @sample >
+    <dt><b>Example:</b>
+    <dd>
+    The following example returns the first and the last element of the list of possible mechanisms. 
+    We assume that this list contains at least two values.  
+    <pre>
+    Dim PossibleMecList As Mechanism
+    PossibleMecList = MyDressups.<font color="red">ListPossibleMechanisms</font>()
+    Dim FirstMeca As Mechanism
+    Set Meca  = PossibleMecList(0) 
+    Dim LastMeca As Mechanism
+    Set Meca  = PossibleMecList(ubound(PossibleMecList)) 
+    </pre>
+</dl>
+</dl>
+<a name="Remove"><dt>
+
+<table><tr><td>o Sub <b>Remove</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes a Dressup from the Dressups collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>    The index or the name of the Dressup to retrieve from the collection of Dressups.
+    As a numerics, this index is the rank of the Dressup in the collection.
+    The index of the first Dressup in the collection is 1, and
+    the index of the last Dressup is Count.
+    As a string, it is the name you assigned to the Dressup.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     Nothing
+ <! @sample >
+    <dt><b>Example:</b>
+    <dd>
+    The following example removes the tenth Dressup and the Dressup named
+    <tt>DressupTwo</tt> from the <tt>TheDressups</tt> collection.
+    <pre>
+    TheDressups.<font color="red">Remove</font>(10)
+    TheDressups.<font color="red">Remove</font>("DressupTwo")
+    </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

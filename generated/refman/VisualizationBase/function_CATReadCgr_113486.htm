@@ -1,0 +1,52 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>VisualizationBase Global Function CATReadCgr</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../VisualizationBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>VisualizationBase Global Function CATReadCgr</h1>
+
+<br><dt><table><tr><td>  <script type="text/javascript"> activateLink('CAT3DRep','extern  CAT3DRep *')</script>  <b>CATReadCgr</b>(<td><script type="text/javascript"> activateLink('char','char*')</script> <td><tt>iFileName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSettingCgr','CATSettingCgr')</script> <td><tt>iSettingCgr</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATVizCGRAccessMode','CATVizCGRAccessMode')</script> <td><tt>ioMode</tt><td><tt>= CATVizCGRAccessModeMemory</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ This Function is the interface with the Cgr file.
+ <b>Role</b>: Reads a Cgr file and returns its graphic data as a pointer
+ to a CAT3DRep.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>     If everything is OK, the function returns a valid pointer to a CAT3DRep,
+    else, it returns a NULL pointer.
+ 
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFileName</tt>
+   <dd>    The cgr file name to read.
+ </dd>
+    <dt><tt> iSettingCgr</tt>
+   <dd>    do not use. Set this parameter to the <tt>USE_LODS_TEXTURE_EDGE</tt> value.
+ </dd>
+    <dt><tt> ioMode</tt>
+   <dd>    Defines the method used for writing the CGR.
+    The default value is set to <tt>CATVizCGRAccessModeMemory</tt>.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATReadWriteCgr.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

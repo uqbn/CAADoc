@@ -1,0 +1,102 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchAppReplace (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchAppReplace','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppReplace','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchAppReplace','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppReplace','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchAppReplace<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchAppReplace_40143','SchAppReplace','0');</script>
+<b><i>  Manage a schematic component.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AppOKToReplace"><b>AppOKToReplace</b></a>
+<dd>  Query whether it is OK to replace an existing object (component, route.
+ <dt>
+    <a href="#AppPostReplaceProcess"><b>AppPostReplaceProcess</b></a>
+<dd>  Post process after replacing an object.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AppOKToReplace"><dt>
+
+<table><tr><td>o Sub <b>AppOKToReplace</b>(<td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>iSchObjectToBeReplacedByThis</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>oBYes</tt>)</table></dt>
+<dl>
+  <dd>
+ Query whether it is OK to replace an existing object (component, route...)
+ with this object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSchObjectToBeReplacedByThis</tt>
+   <dd>   Pointer to the existing object to be replaced by this object. 
+ </dd>
+    <dt><tt> oBYes</tt>
+   <dd>   If TRUE, then it is OK to replace the object.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppReplace
+ Dim objArg1 As AnyObject
+ Dim bVar2 As boolean
+  ...
+ objThisIntf.<font color="red">AppOKToReplace</font>objArg1,bVar2
+ </pre>
+
+</dl>
+</dl>
+<a name="AppPostReplaceProcess"><dt>
+
+<table><tr><td>o Sub <b>AppPostReplaceProcess</b>(<td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>iSchObjectToBeReplacedByThis</tt>)</table></dt>
+<dl>
+  <dd>
+ Post process after replacing an object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNewObject</tt>
+   <dd>   The new Application object
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppReplace
+ Dim objArg1 As AnyObject
+  ...
+ objThisIntf.<font color="red">AppPostReplaceProcess</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,101 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchCompGroupExt (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchCompGroupExt','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchCompGroupExt','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchCompGroupExt','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchCompGroupExt','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchCompGroupExt<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchCompGroupExt_43286','SchCompGroupExt','0');</script>
+<b><i>  Manage the graphical representation of a temporary group of schematic objects.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetPlacementAxis"><b>GetPlacementAxis</b></a>
+<dd>  Get the placement axis for the component group.
+ <dt>
+    <a href="#SetPlacementAxis"><b>SetPlacementAxis</b></a>
+<dd>  Set the placement axis for the component group.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetPlacementAxis"><dt>
+
+<table><tr><td>o Sub <b>GetPlacementAxis</b>(<td><script type="text/javascript"> activateLink('SchListOfDoubles','SchListOfDoubles')</script> <td><tt>oDb6PlaceMatrix</tt>)</table></dt>
+<dl>
+  <dd>
+ Get the placement axis for the component group.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDb6PlaceMatrix</tt>
+   <dd>   Placement matrix of the component group (an array of 6 doubles)
+   See </dd>
+</dl>
+<a href="#" onClick="openLink('SchGRRComp','GetTransformation2D');return false">SchGRRComp.GetTransformation2D</a>   for explanation of this argument.
+    
+ 
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchCompGroupExt
+ Dim objArg1 As SchListOfDoubles
+  ...
+ objThisIntf.<font color="red">GetPlacementAxis</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+<a name="SetPlacementAxis"><dt>
+
+<table><tr><td>o Sub <b>SetPlacementAxis</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oDb6PlaceMatrix</tt>)</table></dt>
+<dl>
+  <dd>
+ Set the placement axis for the component group.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDb6PlaceMatrix</tt>
+   <dd>   Placement matrix of the component group (an array of 6 doubles)
+   See </dd>
+</dl>
+<a href="#" onClick="openLink('SchGRRComp','GetTransformation2D');return false">SchGRRComp.GetTransformation2D</a>   for explanation of this argument.
+    
+ 
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchCompGroupExt
+ Dim dbVar1(x) As CATSafeArrayVariant
+  ...
+ objThisIntf.<font color="red">SetPlacementAxis</font>dbVar1
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

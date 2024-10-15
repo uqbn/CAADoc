@@ -1,0 +1,217 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATCommonLayoutInterfaces Class CATEcwLightNwkCableForPercentFill</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATCommonLayoutInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATEcwLightNwkCableForPercentFill','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEcwLightNwkCableForPercentFill','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATEcwLightNwkCableForPercentFill','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEcwLightNwkCableForPercentFill','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATCommonLayoutInterfaces Class CATEcwLightNwkCableForPercentFill</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATEcwLightNwkCableForPercentFill_85352','CATEcwLightNwkCableForPercentFill','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATEcwLightNwkCableForPercentFill</b>
+</p>
+<p>
+<b><i> This is a CAA exposed class, meant to represent the Cable object
+ as defined in ECV (Electrical Cableway Route Management) application.</i></b><br>
+
+ 
+ This class should NOT be instantiated by the user
+ The creation various instances of this class and setting data of various 
+ class members by use of Setxxx methods should not be managed by the CAA user.  
+
+ This class shall be required by the CAA user, so as to calculate Percent Fill
+ (hereafter referred as PF) information. 
+ This class is an input argument to the CATIEcvPercentFill::ComputePercentFill
+ The ONLY method that the user should use from this class is GetCableData. 
+ This shall give him more details about the Cable
+ 
+ Warning: All other methods of CATEcwLightNwkCableForPercentFill should not 
+ be used by the user</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATEcwLightNwkCableForPercentFill(int)"><b>CATEcwLightNwkCableForPercentFill</b></a>(int)
+<dd>  Constructor
+ 
+ <dt> o 
+    <a href="#~CATEcwLightNwkCableForPercentFill()"><b>~CATEcwLightNwkCableForPercentFill</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetCableData(double&amp;)"><b>GetCableData</b></a>(double&amp;)
+<dd>  Method can be called by the user from within his custom implementation of 
+ CATIEcvPercentFill::ComputePercentFillValue
+ 
+ 
+ <dt> o 
+    <a href="#SetCurrentCableArea(double)"><b>SetCurrentCableArea</b></a>(double)
+<dd>  Method called by ManageCablesFromDatabase Command UI to set data for later use.
+ <dt> o 
+    <a href="#SetCurrentCableOD(double)"><b>SetCurrentCableOD</b></a>(double)
+<dd>  Method called by ManageCablesFromDatabase Command UI to set data for later use.
+ <dt> o 
+    <a href="#SetListOfRoutedCablesODs(CATListOfDouble)"><b>SetListOfRoutedCablesODs</b></a>(CATListOfDouble)
+<dd>  Method called by ManageCablesFromDatabase Command UI to set data for later use.
+ <dt> o 
+    <a href="#SetTotalCommonCableSize(double)"><b>SetTotalCommonCableSize</b></a>(double)
+<dd>  Method called by ManageCablesFromDatabase Command UI to set data for later use.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATEcwLightNwkCableForPercentFill"></a><a name="CATEcwLightNwkCableForPercentFill(int)"></a> <dt> o <b>CATEcwLightNwkCableForPercentFill</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATEcwLightNwkCableForPercentFill</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iDBKey</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructor
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDBKey</tt>
+   <dd>   Input the unique key of the cable</dd>
+</dl>
+</dl>
+</dl>
+<a name="~CATEcwLightNwkCableForPercentFill"></a><a name="~CATEcwLightNwkCableForPercentFill()"></a> <dt> o <b>~CATEcwLightNwkCableForPercentFill</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATEcwLightNwkCableForPercentFill</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetCableData"></a><a name="GetCableData(double&amp;)"></a> <dt> o <b>GetCableData</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>GetCableData</b>(<td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>odCurrentCableOD</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Method can be called by the user from within his custom implementation of 
+ CATIEcvPercentFill::ComputePercentFillValue
+ 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> odCurrentCableOD</tt>
+   <dd>    output: the OD of current Cable
+ </dd>
+    <dt><tt> odCurrentCableArea</tt>
+   <dd>    output: the cumulative Area of current Cables
+ </dd>
+    <dt><tt> oLRoutedCablesDiameter</tt>
+   <dd>    output: the List of Diameters of Current Cables
+ </dd>
+    <dt><tt> odTotalCommonCableSize</tt>
+   <dd>    output: the cumulative Diameters of Current Cables</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetCurrentCableArea"></a><a name="SetCurrentCableArea(double)"></a> <dt> o <b>SetCurrentCableArea</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>SetCurrentCableArea</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>dCurrentCableArea</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Method called by ManageCablesFromDatabase Command UI to set data for later use.
+ the CAA user shall not use the following method
+ 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> dCurrentCableArea</tt>
+   <dd>    input: the cumulative Area of current Cables</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetCurrentCableOD"></a><a name="SetCurrentCableOD(double)"></a> <dt> o <b>SetCurrentCableOD</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>SetCurrentCableOD</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>dCurrentCableOD</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Method called by ManageCablesFromDatabase Command UI to set data for later use.
+ the CAA user shall not use the following method
+ 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> dCurrentCableOD</tt>
+   <dd>    input: the OD of current Cable</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetListOfRoutedCablesODs"></a><a name="SetListOfRoutedCablesODs(CATListOfDouble)"></a> <dt> o <b>SetListOfRoutedCablesODs</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>SetListOfRoutedCablesODs</b>(<td><script type="text/javascript"> activateLink('CATListOfDouble','CATListOfDouble')</script> <td><tt>iLRoutedCablesDiameter</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Method called by ManageCablesFromDatabase Command UI to set data for later use.
+ the CAA user shall not use the following method
+ 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLRoutedCablesDiameter</tt>
+   <dd>    input: the List of Diameters of Current Cables</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetTotalCommonCableSize"></a><a name="SetTotalCommonCableSize(double)"></a> <dt> o <b>SetTotalCommonCableSize</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>SetTotalCommonCableSize</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>dTotalCommonCableSize</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Method called by ManageCablesFromDatabase Command UI to set data for later use.
+ the CAA user shall not use the following method
+ 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> dTotalCommonCableSize</tt>
+   <dd>    input: the cumulative Diameters of Current Cables</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATEcwLightNwkCableForPercentFill.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATCommonLayoutItfCPP</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

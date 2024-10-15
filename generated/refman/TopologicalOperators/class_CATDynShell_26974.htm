@@ -1,0 +1,127 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>TopologicalOperators Class CATDynShell</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../TopologicalOperators.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATDynShell','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATDynShell','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATDynShell','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATDynShell','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>TopologicalOperators Class CATDynShell</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATDynShell_26974','CATDynShell','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATDynShell</b>
+</p>
+<p>
+<b><i> Interface representing the topological operator of shell.</i></b><br>
+
+ A shell operation is available on bodies containing volumes: it corresponds to
+ two thickness operations on the body, with two different
+ offset values, followed by a subtraction between
+ the results of the thicknes operations.
+ As all the topological operators, the input objects are not modified. The resulting body is
+ a new one, that you can get by using the <tt>CATDynOperator::GetResult</tt> method.
+ To use it:
+<ul>
+ <li>Create it with the <tt>CATCreateDynShell</tt> global function.
+ <li>Tune it with appropriate options, using the <tt>SetXxx</tt> methods. 
+ <li>Run it
+ <li>Get the resulting GetResult method. If you do not want 
+ to keep these resulting body, use the <a href="#" onClick="openLink('CATICGMContainer','Remove');return false">CATICGMContainer.Remove</a> method to remove them from the  geometric factory, after the operator deletion.
+<li>delete it after use  with the usual C++ <tt>delete</tt> operator.
+</ul>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#~CATDynShell()"><b>~CATDynShell</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Append(CATLISTP(CATFace)&amp;)"><b>Append</b></a>(CATLISTP(CATFace)&amp;)
+<dd>  Sets a list of faces with null internal and external offset values.
+ <dt> o 
+    <a href="#Append(CATLISTP(CATFace)&amp;,double,double)"><b>Append</b></a>(CATLISTP(CATFace)&amp;,double,double)
+<dd>  Modifies the offset values for a list of faces of the body to shell.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="~CATDynShell"></a><a name="~CATDynShell()"></a> <dt> o <b>~CATDynShell</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATDynShell</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Append"></a><a name="Append(CATLISTP(CATFace)&amp;)"></a> <dt> o <b>Append</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>Append</b>(<td> const <script type="text/javascript"> activateLink('CATLISTP(CATFace)','CATLISTP(CATFace)&amp;')</script> <td><tt>iOpening</tt>)<script type="text/javascript"> activateLink('=0','=0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets a list of faces with null internal and external offset values.
+<br> Very useful to define openings in the resulting body.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iOpening</tt>
+   <dd> The list of openings.</dd>
+</dl>
+</dl>
+</dl>
+<a name="Append"></a><a name="Append(CATLISTP(CATFace)&amp;,double,double)"></a> <dt> o <b>Append</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>Append</b>(<td> const <script type="text/javascript"> activateLink('CATLISTP(CATFace)','CATLISTP(CATFace)&amp;')</script> <td><tt>iSpecialOffset</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iInternalSpecialOffset</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iExternalSpecialOffset</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the offset values for a list of faces of the body to shell.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSpecialOffset</tt>
+   <dd> A list of faces.
+ </dd>
+    <dt><tt> iInternalSpecialOffset</tt>
+   <dd> The list of the corresponding internal offsets.
+ </dd>
+    <dt><tt> iExternalSpecialOffset</tt>
+   <dd> The list of the corresponding external offsets.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATDynShell.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATTopologicalOperators</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

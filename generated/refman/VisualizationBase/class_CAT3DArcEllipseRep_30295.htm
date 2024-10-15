@@ -1,0 +1,223 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>VisualizationBase Class CAT3DArcEllipseRep</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../VisualizationBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CAT3DArcEllipseRep','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CAT3DArcEllipseRep','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CAT3DArcEllipseRep','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CAT3DArcEllipseRep','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>VisualizationBase Class CAT3DArcEllipseRep</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CAT3DArcEllipseRep_30295','CAT3DArcEllipseRep','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CAT3DArcEllipseRep</b>
+</p>
+<p>
+<b><i> Class to create the representation of a 3D ellipse or a 3D ellipse arc.</i></b><br>
+
+ <b>Role</b>: view (a portion of) a 3D ellipse lying in a plane.</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CAT3DArcEllipseRep(CATMathPointf&amp;,CATMathVectorf&amp;,float,float,CATMathVectorf&amp;,float,float,int)"><b>CAT3DArcEllipseRep</b></a>(CATMathPointf&amp;,CATMathVectorf&amp;,float,float,CATMathVectorf&amp;,float,float,int)
+<dd>  Constructs the representation of an ellipse arc.
+ <dt> o 
+    <a href="#~CAT3DArcEllipseRep()"><b>~CAT3DArcEllipseRep</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Modify(CATMathPointf&amp;,float,float,float,float)"><b>Modify</b></a>(CATMathPointf&amp;,float,float,float,float)
+<dd>  Modify the representation of an ellipse arc.
+ <dt> o 
+    <a href="#Modify(CATMathPointf&amp;,CATMathVectorf&amp;,CATMathVectorf&amp;)"><b>Modify</b></a>(CATMathPointf&amp;,CATMathVectorf&amp;,CATMathVectorf&amp;)
+<dd>  Modify the representation of an ellipse arc.
+ <dt> o 
+    <a href="#Modify(CATMathPointf&amp;,CATMathVectorf&amp;,float,float,CATMathVectorf&amp;,float,float,int)"><b>Modify</b></a>(CATMathPointf&amp;,CATMathVectorf&amp;,float,float,CATMathVectorf&amp;,float,float,int)
+<dd>  Modify the representation of an ellipse arc.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CAT3DArcEllipseRep"></a><a name="CAT3DArcEllipseRep(CATMathPointf&amp;,CATMathVectorf&amp;,float,float,CATMathVectorf&amp;,float,float,int)"></a> <dt> o <b>CAT3DArcEllipseRep</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CAT3DArcEllipseRep</b>(<td> const <script type="text/javascript"> activateLink('CATMathPointf','CATMathPointf&amp;')</script> <td><tt>iCenter</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathVectorf','CATMathVectorf&amp;')</script> <td><tt>iNormal</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iMajorRadius</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iMinorRadius</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathVectorf','CATMathVectorf&amp;')</script> <td><tt>iAxis</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iStartAngle</tt><td><tt>= 0.f</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iEndAngle</tt><td><tt>=(float) CAT2PI</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iStaticSagUsed</tt><td><tt>= 0</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs the representation of an ellipse arc.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCenter</tt>
+   <dd> The center of the ellipse.
+ </dd>
+    <dt><tt> iNormal</tt>
+   <dd> The normal to the plane of the ellipse.
+ </dd>
+    <dt><tt> iMajorRadius</tt>
+   <dd> The radius of the ellipse along the major axis, parallel to iAxis.
+ </dd>
+    <dt><tt> iMinorRadius</tt>
+   <dd> The radius of the ellipse along the minor axis, normal to iAxis.
+ </dd>
+    <dt><tt> iAxis</tt>
+   <dd> The direction in the plane of the ellipse used as major axis.
+ </dd>
+    <dt><tt> iStartAngle</tt>
+   <dd> The offset in radian of the beginning of the ellipse arc.
+ </dd>
+    <dt><tt> iEndAngle</tt>
+   <dd> The offset in radian of the end of the ellipse arc.
+ </dd>
+    <dt><tt> iStaticSagUsed</tt>
+   <dd> Used to specify whether using a dynamic or a static sag for the ellipse arc.
+   <br><b>Legal values</b>:
+   <dl>
+      <dt>1</dt>
+        <dd>The sag value is static and taken
+            from the settings, and is constant whatever the distance between
+            the view point and the arc ellipse may be</dd>
+      <dt>0</dt>
+        <dd>The sag value is dynamic and calculated depending on
+            the distance between the view point and the arc ellipse</dd>
+   </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="~CAT3DArcEllipseRep"></a><a name="~CAT3DArcEllipseRep()"></a> <dt> o <b>~CAT3DArcEllipseRep</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CAT3DArcEllipseRep</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Modify"></a><a name="Modify(CATMathPointf&amp;,float,float,float,float)"></a> <dt> o <b>Modify</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>Modify</b>(<td> const <script type="text/javascript"> activateLink('CATMathPointf','CATMathPointf&amp;')</script> <td><tt>iCenter</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iMajorRadius</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iMinorRadius</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iStartAngle</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iEndAngle</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Modify the representation of an ellipse arc.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCenter</tt>
+   <dd> The center of the ellipse.
+ </dd>
+    <dt><tt> iMajorRadius</tt>
+   <dd> The radius of the ellipse along the major axis, parallel to iAxis.
+ </dd>
+    <dt><tt> iMinorRadius</tt>
+   <dd> The radius of the ellipse along the minor axis, normal to iAxis.
+ </dd>
+    <dt><tt> iStartAngle</tt>
+   <dd> The offset in radian of the beginning of the ellipse arc.
+ </dd>
+    <dt><tt> iEndAngle</tt>
+   <dd> The offset in radian of the end of the ellipse arc.</dd>
+</dl>
+</dl>
+</dl>
+<a name="Modify"></a><a name="Modify(CATMathPointf&amp;,CATMathVectorf&amp;,CATMathVectorf&amp;)"></a> <dt> o <b>Modify</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>Modify</b>(<td> const <script type="text/javascript"> activateLink('CATMathPointf','CATMathPointf&amp;')</script> <td><tt>iCenter</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathVectorf','CATMathVectorf&amp;')</script> <td><tt>iNormal</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathVectorf','CATMathVectorf&amp;')</script> <td><tt>iAxis</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Modify the representation of an ellipse arc.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCenter</tt>
+   <dd> The center of the ellipse.
+ </dd>
+    <dt><tt> iNormal</tt>
+   <dd> The normal to the plane of the ellipse.
+ </dd>
+    <dt><tt> iAxis</tt>
+   <dd> The direction in the plane of the ellipse used as major axis.</dd>
+</dl>
+</dl>
+</dl>
+<a name="Modify"></a><a name="Modify(CATMathPointf&amp;,CATMathVectorf&amp;,float,float,CATMathVectorf&amp;,float,float,int)"></a> <dt> o <b>Modify</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>Modify</b>(<td> const <script type="text/javascript"> activateLink('CATMathPointf','CATMathPointf&amp;')</script> <td><tt>iCenter</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathVectorf','CATMathVectorf&amp;')</script> <td><tt>iNormal</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iMajorRadius</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iMinorRadius</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathVectorf','CATMathVectorf&amp;')</script> <td><tt>iAxis</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iStartAngle</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iEndAngle</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iStaticSagUsed</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Modify the representation of an ellipse arc.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCenter</tt>
+   <dd> The center of the ellipse.
+ </dd>
+    <dt><tt> iNormal</tt>
+   <dd> The normal to the plane of the ellipse.
+ </dd>
+    <dt><tt> iMajorRadius</tt>
+   <dd> The radius of the ellipse along the major axis, parallel to iAxis.
+ </dd>
+    <dt><tt> iMinorRadius</tt>
+   <dd> The radius of the ellipse along the minor axis, normal to iAxis.
+ </dd>
+    <dt><tt> iAxis</tt>
+   <dd> The direction in the plane of the ellipse used as major axis.
+ </dd>
+    <dt><tt> iStartAngle</tt>
+   <dd> The offset in radian of the beginning of the ellipse arc.
+ </dd>
+    <dt><tt> iEndAngle</tt>
+   <dd> The offset in radian of the end of the ellipse arc.
+ </dd>
+    <dt><tt> iStaticSagUsed</tt>
+   <dd> Used to specify whether using a dynamic or a static sag for the ellipse arc.
+   <br><b>Legal values</b>:
+   <dl>
+      <dt>1</dt>
+        <dd>The sag value is static and taken
+            from the settings, and is constant whatever the distance between
+            the view point and the arc ellipse may be</dd>
+      <dt>0</dt>
+        <dd>The sag value is dynamic and calculated depending on
+            the distance between the view point and the arc ellipse</dd>
+   </dl></dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CAT3DArcEllipseRep.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATViz</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

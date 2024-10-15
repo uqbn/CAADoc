@@ -1,0 +1,140 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMOperatorsInterfaces Class CATDynDraftParam</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMOperatorsInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATDynDraftParam','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATDynDraftParam','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATDynDraftParam','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATDynDraftParam','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GMOperatorsInterfaces Class CATDynDraftParam</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATDynDraftParam_35197','CATDynDraftParam','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATDynDraftParam</b>
+</p>
+<p>
+<b><i> Class defining the angle properties of an edge in a draft.</i></b><br>
+
+ <br> A CATDynDraftParam is defined by an edge and an angle value.
+ A ratio on this edge can be given to detail the location of the point on which
+ the radius value is given. This is especially used for variable angle draft.
+ In case of variable draft moreover, several CATDynDraftParam must 
+ be created, referencing different edges, radius and locations. 
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATDynDraftDomain','');return false">CATDynDraftDomain</a>, <a href="#" onClick="openLink('CATDynDraftRibbon','');return false">CATDynDraftRibbon</a>, <a href="#" onClick="openLink('CATICGMDynDraft','');return false">CATICGMDynDraft</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATDynDraftParam(CATCell*,double&amp;,CATAngle&amp;)"><b>CATDynDraftParam</b></a>(CATCell*,double&amp;,CATAngle&amp;)
+<dd>  Constructs a draft parameter definition.
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetAngle()"><b>GetAngle</b></a>()
+<dd>  Returns the angle value associated with the edge of a draft ribbon.
+ <dt> o 
+    <a href="#GetLocation()"><b>GetLocation</b></a>()
+<dd>  Returns the cell on which the angle is defined.
+ <dt> o 
+    <a href="#GetRatio()"><b>GetRatio</b></a>()
+<dd>  Returns the ratio defining the location of the point on the edge.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATDynDraftParam"></a><a name="CATDynDraftParam(CATCell*,double&amp;,CATAngle&amp;)"></a> <dt> o <b>CATDynDraftParam</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATDynDraftParam</b>(<td><script type="text/javascript"> activateLink('CATCell','CATCell*')</script> <td><tt>iLocation</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>iRatio</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATAngle','CATAngle&amp;')</script> <td><tt>iAngle</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a draft parameter definition.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLocation</tt>
+   <dd> The pointer to the cell (edge) on which the angle applies.
+ </dd>
+    <dt><tt> iRatio</tt>
+   <dd> The pointer to the ratio of the edge length which defines the point where the angle is defined.
+ <br><b>Legal values</b>:
+ <tt>0 <= iRatio <= 1</tt>.
+ </dd>
+    <dt><tt> iAngle</tt>
+   <dd> The value of the angle.</dd>
+</dl>
+</dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetAngle"></a><a name="GetAngle()"></a> <dt> o <b>GetAngle</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATAngle','CATAngle')</script>  <b>GetAngle</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the angle value associated with the edge of a draft ribbon.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The angle value.
+</dl>
+</dl>
+<a name="GetLocation"></a><a name="GetLocation()"></a> <dt> o <b>GetLocation</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATCell','CATCell *')</script>  <b>GetLocation</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the cell on which the angle is defined.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The pointer to the cell.
+</dl>
+</dl>
+<a name="GetRatio"></a><a name="GetRatio()"></a> <dt> o <b>GetRatio</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('double','double')</script>  <b>GetRatio</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the ratio defining the location of the point on the edge.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The ratio value, if there is one defined. Use first <tt>HasRatio</tt>, to test whether this value is defined.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATDynDraftParam.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGMOperatorsInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

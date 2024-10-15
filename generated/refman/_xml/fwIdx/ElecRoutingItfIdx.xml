@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="ElecRoutingItf" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="0" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="CATEwrEquipotential" initial="C" htmlFileName="class_CATEwrEquipotential_28663" fatherClass="CATBaseObject" fatherId="10537" DSCharacteristic="class" id="28663" abstract="This class is used to describe an equipotential." />
+<data name="Diameter" htmlFileName="class_CATEwrEquipotential_28663" container="CATEwrEquipotential" containerType="class" id="36762" abstract="The Diameter attribute corresponds to an estimation of the diameter of the wires 
+ which will realize the equipotential." initial="D" />
+<data name="Extremities" htmlFileName="class_CATEwrEquipotential_28663" container="CATEwrEquipotential" containerType="class" id="41532" abstract="This list contains the identifier of the extremities of the equipotential." initial="E" />
+<data name="Id" htmlFileName="class_CATEwrEquipotential_28663" container="CATEwrEquipotential" containerType="class" id="30658" abstract="The identifier of the equipotential." initial="I" />
+<data name="Name" htmlFileName="class_CATEwrEquipotential_28663" container="CATEwrEquipotential" containerType="class" id="32236" abstract="The name of the equipotential." initial="N" />
+<data name="RoutingPriority" htmlFileName="class_CATEwrEquipotential_28663" container="CATEwrEquipotential" containerType="class" id="49267" abstract="The RoutingPriority attribute is used in equipotential routing." initial="R" />
+<data name="SeparationCode" htmlFileName="class_CATEwrEquipotential_28663" container="CATEwrEquipotential" containerType="class" id="46088" abstract="The SeparationCode attribute is used in knowledge rules checked in equipotential routing." initial="S" />
+<data name="SubType" htmlFileName="class_CATEwrEquipotential_28663" container="CATEwrEquipotential" containerType="class" id="35488" abstract="The subtype of the equipotential." initial="S" />
+<data name="WirePartNumber" htmlFileName="class_CATEwrEquipotential_28663" container="CATEwrEquipotential" containerType="class" id="46324" abstract="The WirePartNumber attribute corresponds to the part number of the wire which will realize
+ the equipotential." initial="W" />
+<class name="CATEwrWire" initial="C" htmlFileName="class_CATEwrWire_15056" DSCharacteristic="class" id="15056" abstract="This class is used to describe a wire." />
+<data name="BendRadius" htmlFileName="class_CATEwrWire_15056" container="CATEwrWire" containerType="class" id="25791" abstract="The BendRadius attribute corresponds to the maximum curvature of the wire." initial="B" />
+<data name="Color" htmlFileName="class_CATEwrWire_15056" container="CATEwrWire" containerType="class" id="19757" abstract="The color of the wire." initial="C" />
+<data name="FatherWireGroup" htmlFileName="class_CATEwrWire_15056" container="CATEwrWire" containerType="class" id="34834" abstract="The identifier of the WireGroup (if exists) immediate father of the wire." initial="F" />
+<data name="Id" htmlFileName="class_CATEwrWire_15056" container="CATEwrWire" containerType="class" id="17051" abstract="The identifier of the wire." initial="I" />
+<data name="Id_FirstExtremity" htmlFileName="class_CATEwrWire_15056" container="CATEwrWire" containerType="class" id="39694" abstract="The identifier of the first extremity." initial="I" />
+<data name="Id_Harness" htmlFileName="class_CATEwrWire_15056" container="CATEwrWire" containerType="class" id="25832" abstract="The identifier of the harness (if exists) containing the wire." initial="I" />
+<data name="Id_SecondExtremity" htmlFileName="class_CATEwrWire_15056" container="CATEwrWire" containerType="class" id="41767" abstract="The identifier of the second extremity." initial="I" />
+<data name="InnerDiameter" htmlFileName="class_CATEwrWire_15056" container="CATEwrWire" containerType="class" id="30839" abstract="The InnerDiameter attribute corresponds to the diameter of the conductor, excluding
+ the insulation." initial="I" />
+<data name="LinearMass" htmlFileName="class_CATEwrWire_15056" container="CATEwrWire" containerType="class" id="25803" abstract="The LinearMass attribute corresponds to the linear mass of the wire." initial="L" />
+<data name="Name" htmlFileName="class_CATEwrWire_15056" container="CATEwrWire" containerType="class" id="18629" abstract="The name of the wire." initial="N" />
+<data name="OuterDiameter" htmlFileName="class_CATEwrWire_15056" container="CATEwrWire" containerType="class" id="30953" abstract="The OuterDiameter attribute corresponds to the diameter of the wire, including
+ the insulation." initial="O" />
+<data name="PartNumber" htmlFileName="class_CATEwrWire_15056" container="CATEwrWire" containerType="class" id="25950" abstract="The PartNumber attribute corresponds to the part number of the wire." initial="P" />
+<data name="SeparationCode" htmlFileName="class_CATEwrWire_15056" container="CATEwrWire" containerType="class" id="32481" abstract="The SeparationCode attribute is used in knowledge rules checked in wire routing." initial="S" />
+<data name="SubType" htmlFileName="class_CATEwrWire_15056" container="CATEwrWire" containerType="class" id="21881" abstract="The subtype of the wire." initial="S" />
+<data name="sSignalId" htmlFileName="class_CATEwrWire_15056" container="CATEwrWire" containerType="class" id="24042" abstract="The SignalID of the wire routed." initial="S" />
+<class name="CATEwrWireGroup" initial="C" htmlFileName="class_CATEwrWireGroup_21441" DSCharacteristic="class" id="21441" abstract="Class dedicated to wire group." />
+<data name="BendRadius" htmlFileName="class_CATEwrWireGroup_21441" container="CATEwrWireGroup" containerType="class" id="32176" abstract="The BendRadius attribute corresponds to the maximum curvature of the WireGroup." initial="B" />
+<data name="Color" htmlFileName="class_CATEwrWireGroup_21441" container="CATEwrWireGroup" containerType="class" id="26142" abstract="The color of the WireGroup." initial="C" />
+<data name="Diameter" htmlFileName="class_CATEwrWireGroup_21441" container="CATEwrWireGroup" containerType="class" id="29540" abstract="The Diameter attribute corresponds to the diameter of the WireGroup." initial="D" />
+<data name="FatherWireGroup" htmlFileName="class_CATEwrWireGroup_21441" container="CATEwrWireGroup" containerType="class" id="41219" abstract="The identifier of the WireGroup (if exists) immediate father of the WireGroup." initial="F" />
+<data name="Id" htmlFileName="class_CATEwrWireGroup_21441" container="CATEwrWireGroup" containerType="class" id="23436" abstract="The identifier of the WireGroup." initial="I" />
+<data name="Id_FirstExtremity" htmlFileName="class_CATEwrWireGroup_21441" container="CATEwrWireGroup" containerType="class" id="46079" abstract="The identifier of the first extremity of the Shielded Wire Group." initial="I" />
+<data name="Id_Harness" htmlFileName="class_CATEwrWireGroup_21441" container="CATEwrWireGroup" containerType="class" id="32217" abstract="The identifier of the harness (if exists) containing the WireGroup." initial="I" />
+<data name="Id_SecondExtremity" htmlFileName="class_CATEwrWireGroup_21441" container="CATEwrWireGroup" containerType="class" id="48152" abstract="The identifier of the second extremity of the Shielded Wire Group." initial="I" />
+<data name="ListOfSubWireGroups" htmlFileName="class_CATEwrWireGroup_21441" container="CATEwrWireGroup" containerType="class" id="50100" abstract="List of wire groups names children of the wire group." initial="L" />
+<data name="ListOfSubWires" htmlFileName="class_CATEwrWireGroup_21441" container="CATEwrWireGroup" containerType="class" id="38940" abstract="List of wire names children of the wire group." initial="L" />
+<data name="Name" htmlFileName="class_CATEwrWireGroup_21441" container="CATEwrWireGroup" containerType="class" id="25014" abstract="The name of the WireGroup." initial="N" />
+<data name="PartNumber" htmlFileName="class_CATEwrWireGroup_21441" container="CATEwrWireGroup" containerType="class" id="32335" abstract="The PartNumber attribute corresponds to the part number of the WireGroup." initial="P" />
+<data name="SeparationCode" htmlFileName="class_CATEwrWireGroup_21441" container="CATEwrWireGroup" containerType="class" id="38866" abstract="The SeparationCode attribute is used in knowledge rules checked in WireGroup routing." initial="S" />
+<data name="SubType" htmlFileName="class_CATEwrWireGroup_21441" container="CATEwrWireGroup" containerType="class" id="28266" abstract="The subtype of the WireGroup." initial="S" />
+<data name="WireGroupType" htmlFileName="class_CATEwrWireGroup_21441" container="CATEwrWireGroup" containerType="class" id="37502" abstract="Whether the Wire Group is Generic or Shielded." initial="W" />
+<data name="WireLengthCoefficient" htmlFileName="class_CATEwrWireGroup_21441" container="CATEwrWireGroup" containerType="class" id="54870" abstract="The WireLengthCoefficient attribute." initial="W" />
+<class name="CATIEwrFilter" initial="C" htmlFileName="interface_CATIEwrFilter_21027" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="21027" abstract="Interface dedicated to filtering." />
+<method name="Filter" htmlFileName="interface_CATIEwrFilter_21027" containerName="CATIEwrFilter" containerType="interface" id="292222" status="18" isProperty="0" initial="F" argList="(CATListValCATUnicodeString*,CATListValCATUnicodeString*,CATEwrFilterOption)" abstract="Filter a session for a given list of systems, a given list of criteria and a filtering option." />
+<method name="ResetFilter" htmlFileName="interface_CATIEwrFilter_21027" containerName="CATIEwrFilter" containerType="interface" id="30161" status="18" isProperty="0" initial="R" argList="()" abstract="Reset the session by reactivating every filtered objects." />
+<class name="CATIEwrRouteSegment" initial="C" htmlFileName="interface_CATIEwrRouteSegment_30832" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="30832" abstract="Interface on the route segment of wires or wire groups." />
+<method name="ListConductors" htmlFileName="interface_CATIEwrRouteSegment_30832" containerName="CATIEwrRouteSegment" containerType="interface" id="101150" status="18" isProperty="0" initial="L" argList="(CATListValCATBaseUnknown_var*&amp;amp;)" abstract="  Fills a list of conductors going through a given network segment." />
+<class name="CATIEwrUipBundleSegment" initial="C" htmlFileName="interface_CATIEwrUipBundleSegment_38975" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="38975" abstract="Interface to manage bundle segment diameter." />
+<method name="ComputeBendRadius" htmlFileName="interface_CATIEwrUipBundleSegment_38975" containerName="CATIEwrUipBundleSegment" containerType="interface" id="92858" status="18" isProperty="0" initial="C" argList="(CATListOfDouble,double&amp;amp;)" abstract="Returns the value of bundle segment bend radius (in mm)." />
+<method name="ComputeDiameter" htmlFileName="interface_CATIEwrUipBundleSegment_38975" containerName="CATIEwrUipBundleSegment" containerType="interface" id="89858" status="18" isProperty="0" initial="C" argList="(CATListOfDouble,double&amp;amp;)" abstract="Returns the value of a bundle segment diameter (in mm)." />
+<class name="CATIEwrUipEquipotentials" initial="C" htmlFileName="interface_CATIEwrUipEquipotentials_42379" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="42379" abstract="Interface dedicated to equipotentials." />
+<method name="ListEquipotentials" htmlFileName="interface_CATIEwrUipEquipotentials_42379" containerName="CATIEwrUipEquipotentials" containerType="interface" id="273119" status="18" isProperty="0" initial="L" argList="(CATListValCATUnicodeString*,CATLONG32&amp;amp;,CATEwrEquipotential*&amp;amp;)" abstract="Retrieves the list of equipotentials for a given system." />
+<class name="CATIEwrUipWireGroups" initial="C" htmlFileName="interface_CATIEwrUipWireGroups_32905" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="32905" abstract="Interface dedicated to wire groups." />
+<method name="ListWireGroups" htmlFileName="interface_CATIEwrUipWireGroups_32905" containerName="CATIEwrUipWireGroups" containerType="interface" id="429775" status="18" isProperty="0" initial="L" argList="(CATListValCATUnicodeString*,CATListValCATUnicodeString*,CATULONG32&amp;amp;,CATEwrWireGroup*&amp;amp;)" abstract="Retrieves the list of wire groups for a given list of systems and a given list of criteria." />
+<class name="CATIEwrUipWires" initial="C" htmlFileName="interface_CATIEwrUipWires_23845" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="23845" abstract="Interface dedicated to wires." />
+<method name="ListWires" htmlFileName="interface_CATIEwrUipWires_23845" containerName="CATIEwrUipWires" containerType="interface" id="360218" status="18" isProperty="0" initial="L" argList="(CATListValCATUnicodeString*,CATListValCATUnicodeString*,CATLONG32&amp;amp;,CATEwrWire*&amp;amp;)" abstract="Retrieves the list of wires for a given list of systems and a given list of criteria." />
+<class name="CATIEwrWire" initial="C" htmlFileName="interface_CATIEwrWire_18571" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="18571" abstract="Interface to the handle wires." />
+<method name="GetExtremities" htmlFileName="interface_CATIEwrWire_18571" containerName="CATIEwrWire" containerType="interface" id="344459" status="18" isProperty="0" initial="G" argList="(CATBaseUnknown*&amp;amp;,CATBaseUnknown*&amp;amp;,CATBaseUnknown*&amp;amp;,CATBaseUnknown*&amp;amp;)" abstract="" />
+<class name="CATIEwrWkbCfgAddin" initial="C" htmlFileName="interface_CATIEwrWkbCfgAddin_27756" fatherClass="CATIWorkbenchAddin" fatherId="31255" DSCharacteristic="interface" id="27756" abstract="Interface to add toolbars in the &apos;Electrical Wire Routing&apos; workbench." />
+<typedef name="CATEwrFilterOption" htmlFileName="typedef_CATEwrFilterOption_27612" id="27612" initial="C" abstract="The filtering option during filter process." />
+</fw>

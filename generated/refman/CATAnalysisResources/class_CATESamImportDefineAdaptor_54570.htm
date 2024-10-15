@@ -1,0 +1,215 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisResources Class CATESamImportDefineAdaptor</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisResources.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATESamImportDefineAdaptor','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATESamImportDefineAdaptor','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATESamImportDefineAdaptor','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATESamImportDefineAdaptor','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisResources Class CATESamImportDefineAdaptor</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATESamImportDefineAdaptor_54570','CATESamImportDefineAdaptor','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATESamImportDefineAdaptor</b>
+</p>
+<p>
+<b><i> Adapter for the implementation of CATISamImportDefine interface.</i></b><br>
+
+ It can be used for customisation of file import.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATISamImportDefine','');return false">CATISamImportDefine</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATESamImportDefineAdaptor()"><b>CATESamImportDefineAdaptor</b></a>()
+<dd>  Default constructor.
+ <dt> o 
+    <a href="#~CATESamImportDefineAdaptor()"><b>~CATESamImportDefineAdaptor</b></a>()
+<dd>  Destructor.
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Accept()"><b>Accept</b></a>()
+<dd>  Implements the OK action.
+ <dt> o 
+    <a href="#GetCommentForType(CATString,CATUnicodeString&amp;)"><b>GetCommentForType</b></a>(CATString,CATUnicodeString&amp;)
+<dd>  Associate a comment to the file extention.
+ <dt> o 
+    <a href="#GetFileTypes(CATListValCATString&amp;)"><b>GetFileTypes</b></a>(CATListValCATString&amp;)
+<dd>  Defines the type of file that will be imported.
+ <dt> o 
+    <a href="#GetUserFrame(CATDialog*,CATDocument*)"><b>GetUserFrame</b></a>(CATDialog*,CATDocument*)
+<dd>  Returns an interactive frame.
+ <dt> o 
+    <a href="#GetValues(CATSafeArrayVariant*&amp;)"><b>GetValues</b></a>(CATSafeArrayVariant*&amp;)
+<dd>  Get values for customisation.
+ <dt> o 
+    <a href="#Import(CATDocument*,CATDocument*)"><b>Import</b></a>(CATDocument*,CATDocument*)
+<dd>  Import in order to launch the import specific code.
+ <dt> o 
+    <a href="#SetValues(CATSafeArrayVariant*)"><b>SetValues</b></a>(CATSafeArrayVariant*)
+<dd>  Set Values for customisation.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATESamImportDefineAdaptor"></a><a name="CATESamImportDefineAdaptor()"></a> <dt> o <b>CATESamImportDefineAdaptor</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATESamImportDefineAdaptor</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Default constructor.
+</dl>
+<a name="~CATESamImportDefineAdaptor"></a><a name="~CATESamImportDefineAdaptor()"></a> <dt> o <b>~CATESamImportDefineAdaptor</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATESamImportDefineAdaptor</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Destructor.
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Accept"></a><a name="Accept()"></a> <dt> o <b>Accept</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>Accept</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Implements the OK action.
+</dl>
+<a name="GetCommentForType"></a><a name="GetCommentForType(CATString,CATUnicodeString&amp;)"></a> <dt> o <b>GetCommentForType</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetCommentForType</b>(<td> const <script type="text/javascript"> activateLink('CATString','CATString')</script> <td><tt>iType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oComment</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Associate a comment to the file extention.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oComment</tt>
+   <dd> String that defines the comment.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetFileTypes"></a><a name="GetFileTypes(CATListValCATString&amp;)"></a> <dt> o <b>GetFileTypes</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetFileTypes</b>(<td><script type="text/javascript"> activateLink('CATListValCATString','CATListValCATString&amp;')</script> <td><tt>oTypes</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Defines the type of file that will be imported.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oTypes</tt>
+   <dd> String that defines the extention of the file.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetUserFrame"></a><a name="GetUserFrame(CATDialog*,CATDocument*)"></a> <dt> o <b>GetUserFrame</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATDlgFrame','CATDlgFrame*')</script>  <b>GetUserFrame</b>(<td><script type="text/javascript"> activateLink('CATDialog','CATDialog*')</script> <td><tt>iParent</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATDocument','CATDocument*')</script> <td><tt>iImportedDoc</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns an interactive frame.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iParent</tt>
+   <dd> the parent for output frame.   </dd>
+    <dt><tt> iImpotedDoc</tt>
+   <dd> pointer to the imported document.   </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  the frame to display.
+</dl>
+</dl>
+<a name="GetValues"></a><a name="GetValues(CATSafeArrayVariant*&amp;)"></a> <dt> o <b>GetValues</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetValues</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant*&amp;')</script> <td><tt>oValues</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Get values for customisation.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oValues</tt>
+   <dd> array of values.</dd>
+</dl>
+</dl>
+</dl>
+<a name="Import"></a><a name="Import(CATDocument*,CATDocument*)"></a> <dt> o <b>Import</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>Import</b>(<td><script type="text/javascript"> activateLink('CATDocument','CATDocument*')</script> <td><tt>iFileToImport</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATDocument','CATDocument*')</script> <td><tt>iAnalysisDocument</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Import in order to launch the import specific code.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFileToImport</tt>
+   <dd>      input the CATDocument to import.
+   </dd>
+    <dt><tt> iAnalysisDocument</tt>
+   <dd>      input the current CATDocument in which the import is done.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetValues"></a><a name="SetValues(CATSafeArrayVariant*)"></a> <dt> o <b>SetValues</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetValues</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant*')</script> <td><tt>iValue</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Set Values for customisation.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iValues</tt>
+   <dd> array of values.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATESamImportDefineAdaptor.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisResources</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

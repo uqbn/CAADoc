@@ -1,0 +1,204 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>StructureInterfaces Interface CATIStrColorSTDObjectSettingAtt</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../StructureInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIStrColorSTDObjectSettingAtt','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIStrColorSTDObjectSettingAtt','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIStrColorSTDObjectSettingAtt','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIStrColorSTDObjectSettingAtt','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>StructureInterfaces Interface CATIStrColorSTDObjectSettingAtt</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIStrColorSTDObjectSettingAtt_68356','CATIStrColorSTDObjectSettingAtt','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIStrColorSTDObjectSettingAtt</b>
+</p>
+<p>
+<b><i> Describe the STDctionality of your interface here.</i></b><br>
+
+ <p>
+ Using this prefered syntax will enable mkdoc to document your class.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetPlateColor(unsigned int&amp;,unsigned int&amp;,unsigned int&amp;)"><b>GetPlateColor</b></a>(unsigned int&amp;,unsigned int&amp;,unsigned int&amp;)
+<dd>  Retrieves the PlateColor attribute.
+ <dt> o 
+    <a href="#GetPlateColorInfo(CATSettingInfo*)"><b>GetPlateColorInfo</b></a>(CATSettingInfo*)
+<dd>  Retrieves the state of the PlateColor parameter.
+ <dt> o 
+    <a href="#GetShapeColor(unsigned int&amp;,unsigned int&amp;,unsigned int&amp;)"><b>GetShapeColor</b></a>(unsigned int&amp;,unsigned int&amp;,unsigned int&amp;)
+<dd>  Retrieves the ShapeColor attribute.
+ <dt> o 
+    <a href="#GetShapeColorInfo(CATSettingInfo*)"><b>GetShapeColorInfo</b></a>(CATSettingInfo*)
+<dd>  Retrieves the state of the ShapeColor parameter.
+ <dt> o 
+    <a href="#SetPlateColor(unsigned int,unsigned int,unsigned int)"><b>SetPlateColor</b></a>(unsigned int,unsigned int,unsigned int)
+<dd>  Sets the PlateColor attribute.
+ <dt> o 
+    <a href="#SetPlateColorLock(unsigned char)"><b>SetPlateColorLock</b></a>(unsigned char)
+<dd>   Locks or unlocks the PlateColor parameter.
+ <dt> o 
+    <a href="#SetShapeColor(unsigned int,unsigned int,unsigned int)"><b>SetShapeColor</b></a>(unsigned int,unsigned int,unsigned int)
+<dd>  Sets the ShapeColor attribute.
+ <dt> o 
+    <a href="#SetShapeColorLock(unsigned char)"><b>SetShapeColorLock</b></a>(unsigned char)
+<dd>   Locks or unlocks the ShapeColor parameter.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetPlateColor"></a><a name="GetPlateColor(unsigned int&amp;,unsigned int&amp;,unsigned int&amp;)"></a> <dt> o <b>GetPlateColor</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetPlateColor</b>(<td><script type="text/javascript"> activateLink('unsigned int','unsigned int&amp;')</script> <td><tt>oPlateColorR</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int&amp;')</script> <td><tt>oPlateColorG</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int&amp;')</script> <td><tt>oPlateColorB</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the PlateColor attribute.
+</dl>
+<a name="GetPlateColorInfo"></a><a name="GetPlateColorInfo(CATSettingInfo*)"></a> <dt> o <b>GetPlateColorInfo</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetPlateColorInfo</b>(<td><script type="text/javascript"> activateLink('CATSettingInfo','CATSettingInfo*')</script> <td><tt>oInfo</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the state of the PlateColor parameter.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oInfo</tt>
+   <dd>	Address of an object CATSettingInfo.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd> 	<b>Legal values</b>:
+	<br><tt>S_OK :</tt>   on Success
+ 	<br><tt>E_FAIL:</tt>  on failure
+</dl>
+</dl>
+<a name="GetShapeColor"></a><a name="GetShapeColor(unsigned int&amp;,unsigned int&amp;,unsigned int&amp;)"></a> <dt> o <b>GetShapeColor</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetShapeColor</b>(<td><script type="text/javascript"> activateLink('unsigned int','unsigned int&amp;')</script> <td><tt>oShapeColorR</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int&amp;')</script> <td><tt>oShapeColorG</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int&amp;')</script> <td><tt>oShapeColorB</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the ShapeColor attribute.
+</dl>
+<a name="GetShapeColorInfo"></a><a name="GetShapeColorInfo(CATSettingInfo*)"></a> <dt> o <b>GetShapeColorInfo</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetShapeColorInfo</b>(<td><script type="text/javascript"> activateLink('CATSettingInfo','CATSettingInfo*')</script> <td><tt>oInfo</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the state of the ShapeColor parameter.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oInfo</tt>
+   <dd>	Address of an object CATSettingInfo.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd> 	<b>Legal values</b>:
+	<br><tt>S_OK :</tt>   on Success
+ 	<br><tt>E_FAIL:</tt>  on failure
+</dl>
+</dl>
+<a name="SetPlateColor"></a><a name="SetPlateColor(unsigned int,unsigned int,unsigned int)"></a> <dt> o <b>SetPlateColor</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetPlateColor</b>(<td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iPlateColorR</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iPlateColorG</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iPlateColorB</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the PlateColor attribute.
+</dl>
+<a name="SetPlateColorLock"></a><a name="SetPlateColorLock(unsigned char)"></a> <dt> o <b>SetPlateColorLock</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetPlateColorLock</b>(<td><script type="text/javascript"> activateLink('unsigned char','unsigned char')</script> <td><tt>iLocked</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Locks or unlocks the PlateColor parameter.
+ <br><b>Role</b>: Locks or unlocks the PlateColor parameter if the
+ operation is allowed in the current administrated environment. In user mode 
+ this method will always return E_FAIL.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLocked</tt>
+   <dd>	the locking operation to be performed
+	<b>Legal values</b>:
+	<br><tt>1 :</tt>   to lock the parameter.
+ 	<br><tt>0:</tt>   to unlock the parameter.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd> 	<b>Legal values</b>:
+	<br><tt>S_OK :</tt>   on Success
+ 	<br><tt>E_FAIL:</tt>  on failure
+</dl>
+</dl>
+<a name="SetShapeColor"></a><a name="SetShapeColor(unsigned int,unsigned int,unsigned int)"></a> <dt> o <b>SetShapeColor</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetShapeColor</b>(<td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iShapeColorR</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iShapeColorG</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iShapeColorB</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the ShapeColor attribute.
+</dl>
+<a name="SetShapeColorLock"></a><a name="SetShapeColorLock(unsigned char)"></a> <dt> o <b>SetShapeColorLock</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetShapeColorLock</b>(<td><script type="text/javascript"> activateLink('unsigned char','unsigned char')</script> <td><tt>iLocked</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Locks or unlocks the ShapeColor parameter.
+ <br><b>Role</b>: Locks or unlocks the ShapeColor parameter if the
+ operation is allowed in the current administrated environment. In user mode 
+ this method will always return E_FAIL.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLocked</tt>
+   <dd>	the locking operation to be performed
+	<b>Legal values</b>:
+	<br><tt>1 :</tt>   to lock the parameter.
+ 	<br><tt>0:</tt>   to unlock the parameter.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd> 	<b>Legal values</b>:
+	<br><tt>S_OK :</tt>   on Success
+ 	<br><tt>E_FAIL:</tt>  on failure
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIStrColorSTDObjectSettingAtt.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATStrSettingsItf</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

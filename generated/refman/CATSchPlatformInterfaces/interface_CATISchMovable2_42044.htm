@@ -1,0 +1,87 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Interface CATISchMovable2</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISchMovable2','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchMovable2','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISchMovable2','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchMovable2','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Interface CATISchMovable2</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISchMovable2_42044','CATISchMovable2','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISchMovable2</b>
+</p>
+<p>
+<b><i> Interface to transform Schematic component objects.</i></b><br>
+ 
+ <b>Role</b>: To do transformation such as rotate schematic
+ objects at point.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#RotateAtPoint(double,double[2])"><b>RotateAtPoint</b></a>(double,double[2])
+<dd>  Rotate a schematic object with an angle in radian at a point.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="RotateAtPoint"></a><a name="RotateAtPoint(double,double[2])"></a> <dt> o <b>RotateAtPoint</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RotateAtPoint</b>(<td> const <script type="text/javascript"> activateLink('double','double')</script> <td><tt>iDb1RotationAngleInRadian</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('double[2','double[2]')</script> <td><tt>iDb2CenterPoint</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Rotate a schematic object with an angle in radian at a point.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDb1RotationAngleInRadian</tt>
+   <dd>   Rotation angle (from x-axis) in radian.
+ </dd>
+    <dt><tt> iDb2CenterPoint</tt>
+   <dd>   X-Y components of a center point of rotation.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>CATReturnSuccess</dt>
+     <dd>operation is successful</dd>
+     <dt>CATReturnFailure</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISchMovable2.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

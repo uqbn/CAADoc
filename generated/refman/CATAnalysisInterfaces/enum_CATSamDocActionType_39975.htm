@@ -1,0 +1,47 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces Enumeration CATSamDocActionType</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>CATAnalysisInterfaces Enumeration CATSamDocActionType</h1>
+<pre>
+enum <b>CATSamDocActionType</b> {
+  SamBeforeSave,
+  SamAfterSave,
+  SamBeforeUnload,
+  SamAfterReload,
+  SamBeforChildRemove,
+  SamAssemblyRemove,
+  SamRename
+}
+</pre>
+<b><i> Identifies events on analysis document.</i></b><br>
+
+ <p>
+ These kind of events are:
+ <ul>
+ <li><b>SamBeforeSave</b>      : Send before the document saving.</li> 
+ <li><b>SamAfterSave</b>       : Send after the document saving.</li> 
+ <li><b>SamBeforeUnload</b>    : Send before the document unloading.</li> 
+ <li><b>SamAfterReload</b>     : Send after the document reloading.</li>
+ <li><b>SamBeforChildRemove</b>: Send before an analysis document of the assembly is removed.</li>
+ <li><b>SamAssemblyRemove</b>  : Send when an Analysis is removed from Assembly definition.</li>
+ <li><b>SamRename</b>			 : Send when an Analysis is renamed.</li>
+ </ul><hr>
+ This object is included in the file: <b>CATSamDocNotification.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

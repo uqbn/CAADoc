@@ -1,0 +1,124 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PartInterfaces Rotate (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../PartInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Rotate','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Rotate','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Rotate','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Rotate','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Rotate<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Rotate_14811','Rotate','0');</script>
+<b><i> Represents the shape rotate feature object.</i></b><br>
+ 
+ This solid feature is created from 
+ an underlying HybridShapeRotate aggregated by the Rotate.
+
+ <b>Role</b>: To access the data of the hybrid shape rotate feature object.
+ This data includes:
+ <ul>
+ <li> The element to be rotated </li>
+ <li> The rotation axis </li>
+ <li> The angle and its value </li>
+ </ul>
+ Use the CATIAShapeFactory to create ShapeFeature object.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('ShapeFactory','');return false">ShapeFactory</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Angle"><b>Angle</b></a>
+<dd>  Returns the rotation angle.
+ <dt>
+    <a href="#AngleValue"><b>AngleValue</b></a>
+<dd>  Returns or sets the rotation angle value.
+ <dt>
+    <a href="#Axis"><b>Axis</b></a>
+<dd>  Returns or sets the rotation axis.
+ <dt>
+    <a href="#HybridShape"><b>HybridShape</b></a>
+<dd>  Gets the underlying HybridShapeRotate.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Angle"><dt>
+
+<table><tr><td>o Property <b>Angle</b>(<td>) As <script type="text/javascript"> activateLink('Angle','Angle')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the rotation angle.
+</dl>
+<a name="AngleValue"><dt>
+
+<table><tr><td>o Property <b>AngleValue</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the rotation angle value.
+ <dl>
+ <dt><b>Example</b>:
+ This example retrieves in <code>AngleValue</code> the angle value for the <code>Rotate</code> hybrid shape feature.
+<pre>
+ Dim AngleValue As double
+ Set AngleValue = Rotate.<font color="red">AngleValue</font>
+</pre>
+</dl>
+</dl>
+<a name="Axis"><dt>
+
+<table><tr><td>o Property <b>Axis</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the rotation axis.<br>
+ To set the property, you can use one of the following 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> objects:  
+<a href="#" onClick="openLink('RectilinearTriDimFeatEdge','');return false">RectilinearTriDimFeatEdge</a>, 
+<a href="#" onClick="openLink('RectilinearBiDimFeatEdge','');return false">RectilinearBiDimFeatEdge</a> or 
+<a href="#" onClick="openLink('RectilinearMonoDimFeatEdge','');return false">RectilinearMonoDimFeatEdge</a>.  <dl>
+ <dt><b>Example</b>:
+ This example retrieves in <code>RotationAxis</code> the rotation axis for the <code>Rotate</code> hybrid shape feature.
+<pre>
+ Dim RotationAxis As Reference
+ Set RotationAxis = Rotate.<font color="red">Axis</font>
+</pre>
+</dl>
+</dl>
+<a name="HybridShape"><dt>
+
+<table><tr><td>o Property <b>HybridShape</b>(<td>) As <script type="text/javascript"> activateLink('HybridShape','HybridShape')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Gets the underlying HybridShapeRotate.
+<dl>
+ <dt><b>Example:</b>
+ <dd>The following example explains how to retrieve the underlying HybridShape Rotate
+ <pre>
+  Dim oHybridShape as AnyObject
+  Set oHybridShape=oRotate.HybridShape
+  oHybridShape.SectionCoupling = 2
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

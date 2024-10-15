@@ -1,0 +1,123 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces Interface CATISamDefineSolution</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISamDefineSolution','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamDefineSolution','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISamDefineSolution','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamDefineSolution','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisInterfaces Interface CATISamDefineSolution</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISamDefineSolution_47487','CATISamDefineSolution','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATISamDefineSolution</b>
+</p>
+<p>
+<b><i> Specify Solution Sets parameters.</i></b><br>
+
+ <b>Role:</b> In order to create a solution set, this interface allow to defined the 
+ required  input sets that are usefull to define this solution. This interface is used by the 
+ <b>CATSamCreateCaseCmd</b> in order to define a command that create new analysis case associated to the solution type.
+ For this, define an header as follow:
+ <dl>
+ <pre>
+ static CATUnicodeString Solution("MyLateTypeSolution");
+ new AniCommandHeader ( "CAAAniInsertCase" , "CATAnalysisModelerUI" , "CATSamCreateCaseCmd"  ,(void *) &Solution);
+</pre>
+</dl>
+ <p>
+ It allow also to define automatically if some sensors need to be created with the solution
+ and to create them.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATSamDefineSet','');return false">CATSamDefineSet</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#DefineDefaultSensors(CATBoolean,CATISamAnalysisSet*)"><b>DefineDefaultSensors</b></a>(CATBoolean,CATISamAnalysisSet*)
+<dd>  Returns if sensors need to be create or creates them.
+ <dt> o 
+    <a href="#GetSetsForDefinition(int&amp;,CATSamDefineSet*&amp;)"><b>GetSetsForDefinition</b></a>(int&amp;,CATSamDefineSet*&amp;)
+<dd>  Retreives the required input set to define a solution.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="DefineDefaultSensors"></a><a name="DefineDefaultSensors(CATBoolean,CATISamAnalysisSet*)"></a> <dt> o <b>DefineDefaultSensors</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>DefineDefaultSensors</b>(<td> const <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script> <td><tt>iCreateSensor</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATISamAnalysisSet','CATISamAnalysisSet*')</script> <td><tt>iNewSolution</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns if sensors need to be create or creates them.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCreateSensor</tt>
+   <dd> behavior of the method <br><b>Legal values</b>: 
+ <ul> <li><b>FALSE</b> : Returns the number of sensors. No creation.
+      <li><b>TRUE</b>  : Create the sensors. </ul>
+ </dd>
+    <dt><tt> iNewSolution</tt>
+   <dd> The created Solution </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  Number of created sensors.
+</dl>
+</dl>
+<a name="GetSetsForDefinition"></a><a name="GetSetsForDefinition(int&amp;,CATSamDefineSet*&amp;)"></a> <dt> o <b>GetSetsForDefinition</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetSetsForDefinition</b>(<td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>oNbDefineSets</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSamDefineSet','CATSamDefineSet*&amp;')</script> <td><tt>oDefineSets</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retreives the required input set to define a solution.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oNbDefineSets</tt>
+   <dd>  The size of the array oDefineSets.
+ </dd>
+    <dt><tt> oDefineSets</tt>
+   <dd>  The array of input sets parameters.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  HRESULT if E_FAIL and an error is set up, the case will not be created by CATSamCreateCaseCmd commmand and an error window will be displayed.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISamDefineSolution.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisInterface</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,210 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisResources Class CATEAnalysisVisibility</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisResources.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATEAnalysisVisibility','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEAnalysisVisibility','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATEAnalysisVisibility','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEAnalysisVisibility','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisResources Class CATEAnalysisVisibility</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATEAnalysisVisibility_46039','CATEAnalysisVisibility','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATEAnalysisVisibility</b>
+</p>
+<p>
+<b><i> Adaptor for CATISamVisibility interface.</i></b><br>
+
+ This Adaptor can be used in <font color="red"> BOA DataExtension</font>.</p>
+ Basically, for implementing this interface, you just need to implement the constructor
+ by initializing the internal data <a href="#" onClick="openLink('','_Visibility');return false">_Visibility</a>. 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATISamVisibility','');return false">CATISamVisibility</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATEAnalysisVisibility()"><b>CATEAnalysisVisibility</b></a>()
+<dd>  Default constructor.
+ <dt> o 
+    <a href="#~CATEAnalysisVisibility()"><b>~CATEAnalysisVisibility</b></a>()
+<dd>  Default destructor.
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetVisibilityProperty()"><b>GetVisibilityProperty</b></a>()
+<dd>  Returns the Visibility attribute of an analysis feature.
+ <dt> o 
+    <a href="#IsPersistent()"><b>IsPersistent</b></a>()
+<dd>  Returns the Visibility is managed by persistent attribute.
+ <dt> o 
+    <a href="#IsVisibleIn3D()"><b>IsVisibleIn3D</b></a>()
+<dd>  Returns the Visibility attribute of an analysis feature in the 3D Window.
+ <dt> o 
+    <a href="#IsVisibleInGraph()"><b>IsVisibleInGraph</b></a>()
+<dd>  Returns the Visibility attribute of an analysis feature in the feature tree.
+ <dt> o 
+    <a href="#SetVisibilityProperty(CATSamVisibility)"><b>SetVisibilityProperty</b></a>(CATSamVisibility)
+<dd>  Defines the Visibility attribute of an analysis feature.
+</dl>
+<dl>
+ <h2>Enumerated Type Index</h2> <br>
+ <dt> o 
+    <a href="#DecodeVisibility"><b>DecodeVisibility</b></a>
+<dd>  Enumerate for decoding the visibility flag.
+</dl>
+<dl>
+ <h2>Data Member Index</h2> <br>
+ <dt> o 
+    <a href="#_Visibility"><b>_Visibility</b></a>
+<dd>  Set Up a default visibility.
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATEAnalysisVisibility"></a><a name="CATEAnalysisVisibility()"></a> <dt> o <b>CATEAnalysisVisibility</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATEAnalysisVisibility</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Default constructor.
+</dl>
+<a name="~CATEAnalysisVisibility"></a><a name="~CATEAnalysisVisibility()"></a> <dt> o <b>~CATEAnalysisVisibility</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATEAnalysisVisibility</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Default destructor.
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetVisibilityProperty"></a><a name="GetVisibilityProperty()"></a> <dt> o <b>GetVisibilityProperty</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATSamVisibility','CATSamVisibility')</script>  <b>GetVisibilityProperty</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the Visibility attribute of an analysis feature.
+   
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  iVisibility Value for Visibility. 
+<a href="#" onClick="openLink('CATSamVisibility','');return false">CATSamVisibility</a>
+</dl>
+</dl>
+<a name="IsPersistent"></a><a name="IsPersistent()"></a> <dt> o <b>IsPersistent</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>IsPersistent</b>(<td>)<script type="text/javascript"> activateLink('const','const ')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the Visibility is managed by persistent attribute.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  True if the feature have a persistent attribute for this implementation.
+</dl>
+</dl>
+<a name="IsVisibleIn3D"></a><a name="IsVisibleIn3D()"></a> <dt> o <b>IsVisibleIn3D</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>IsVisibleIn3D</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the Visibility attribute of an analysis feature in the 3D Window.
+   
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  True if the feature will be visualize in the 3D Window . 
+<a href="#" onClick="openLink('CATSamVisibility','');return false">CATSamVisibility</a>
+</dl>
+</dl>
+<a name="IsVisibleInGraph"></a><a name="IsVisibleInGraph()"></a> <dt> o <b>IsVisibleInGraph</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>IsVisibleInGraph</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the Visibility attribute of an analysis feature in the feature tree.
+   
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  True if the feature is connected to the tree. 
+<a href="#" onClick="openLink('CATSamVisibility','');return false">CATSamVisibility</a>
+</dl>
+</dl>
+<a name="SetVisibilityProperty"></a><a name="SetVisibilityProperty(CATSamVisibility)"></a> <dt> o <b>SetVisibilityProperty</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetVisibilityProperty</b>(<td><script type="text/javascript"> activateLink('CATSamVisibility','CATSamVisibility')</script> <td><tt>iVisibility</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Defines the Visibility attribute of an analysis feature.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iVisibility</tt>
+   <dd> Value for Visibility. </dd>
+<a href="#" onClick="openLink('CATSamVisibility','');return false">CATSamVisibility</a>
+</dl>
+</dl>
+</dl>
+ <h2>Enumerated Types</h2> <br>
+<a name="DecodeVisibility"> <dt> o <b>DecodeVisibility</b>
+<dl>
+  <dd>
+<pre>
+enum <b>DecodeVisibility</b> {
+  InGraph,
+  In3D
+}
+</pre>
+ Enumerate for decoding the visibility flag.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> InGraph</tt>
+   <dd> For feature visible in the feature tree. </dd>
+    <dt><tt> In3D</tt>
+   <dd>    For feature visible in 3D.</dd>
+</dl>
+</dl>
+</dl>
+ <h2>Data Members</h2> <br>
+<a name="_Visibility"></a> <dt> o <b>_Visibility</b>
+<pre>
+  protected CATSamVisibility _Visibility</dt>
+</pre>
+<dl>
+  <dd>
+ Set Up a default visibility.
+ <b>Default Value</b> is set up as <font color="red">VisuGraphAnd3D</font>.
+</dl>
+<hr>
+ This object is included in the file: <b>CATEAnalysisVisibility.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisResources</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

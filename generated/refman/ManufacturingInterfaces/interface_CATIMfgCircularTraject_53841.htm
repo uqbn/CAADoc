@@ -1,0 +1,170 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ManufacturingInterfaces Interface CATIMfgCircularTraject</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ManufacturingInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMfgCircularTraject','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgCircularTraject','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMfgCircularTraject','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgCircularTraject','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ManufacturingInterfaces Interface CATIMfgCircularTraject</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMfgCircularTraject_53841','CATIMfgCircularTraject','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIMfgCircularTraject</b>
+</p>
+<p>
+<b><i> Interface to manage parameters of circular traject objects inside manufacturing tool path.</i></b><br>
+<br>
+ A circular object is characterized by a type of traject, a type of feedrate, the radius of the circle,
+ the center of the circle, the normal to the plane containing the circle.<br>
+ A circular traject must also contain its discretization in points (tip points parameter).<br>
+ 
+ PLEASE NOTE that you should use CATIMfgTPMultipleMotion interface instead of CATIMfgCircularTraject.<br>
+ CATIMfgTPMultipleMotion interface allows to store linear motions, circular motions and PP Instructions
+ (described by a string or by a NC_Command and a NC_Instruction described in PP Table). <br>
+ It needs less memory and CPU time.<br>
+ It is the recommended way to modelize tool motions.<br>
+
+ 
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIMfgTPMultipleMotion','');return false">CATIMfgTPMultipleMotion</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetAngle(CATAngle&amp;)"><b>GetAngle</b></a>(CATAngle&amp;)
+<dd> 	Retrieves the angle described by the circle.
+ <dt> o 
+    <a href="#GetCenter(CATMathPoint&amp;)"><b>GetCenter</b></a>(CATMathPoint&amp;)
+<dd> 	Retrieves the center of the circle.
+ <dt> o 
+    <a href="#GetNormale(CATMathVector&amp;)"><b>GetNormale</b></a>(CATMathVector&amp;)
+<dd> 	Retrieves the normal to the plane containing the circle.
+ <dt> o 
+    <a href="#GetRadius(double&amp;)"><b>GetRadius</b></a>(double&amp;)
+<dd> 	Retrieves the radius of the circle.
+ <dt> o 
+    <a href="#GetStartTangent(CATMathVector&amp;)"><b>GetStartTangent</b></a>(CATMathVector&amp;)
+<dd> 	Retrieves the tangent vector to the circle at its start point.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetAngle"></a><a name="GetAngle(CATAngle&amp;)"></a> <dt> o <b>GetAngle</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>GetAngle</b>(<td><script type="text/javascript"> activateLink('CATAngle','CATAngle&amp;')</script> <td><tt>oAngle</tt>)<script type="text/javascript"> activateLink('=0',' =0 ')</script>  </table></dt>
+<dl>
+  <dd>
+	Retrieves the angle described by the circle.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oAngle</tt>
+   <dd>	The angle described by the circle
+</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetCenter"></a><a name="GetCenter(CATMathPoint&amp;)"></a> <dt> o <b>GetCenter</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>GetCenter</b>(<td><script type="text/javascript"> activateLink('CATMathPoint','CATMathPoint&amp;')</script> <td><tt>oCenter</tt>)<script type="text/javascript"> activateLink('=0',' =0 ')</script>  </table></dt>
+<dl>
+  <dd>
+	Retrieves the center of the circle.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oCenter</tt>
+   <dd>	  The center of the circle
+</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetNormale"></a><a name="GetNormale(CATMathVector&amp;)"></a> <dt> o <b>GetNormale</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>GetNormale</b>(<td><script type="text/javascript"> activateLink('CATMathVector','CATMathVector&amp;')</script> <td><tt>oNormal</tt>)<script type="text/javascript"> activateLink('=0',' =0 ')</script>  </table></dt>
+<dl>
+  <dd>
+	Retrieves the normal to the plane containing the circle.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oNormal</tt>
+   <dd>      The normal to the plane containing the circle
+</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetRadius"></a><a name="GetRadius(double&amp;)"></a> <dt> o <b>GetRadius</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>GetRadius</b>(<td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oRadius</tt>)<script type="text/javascript"> activateLink('=0',' =0 ')</script>  </table></dt>
+<dl>
+  <dd>
+	Retrieves the radius of the circle.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oRadius</tt>
+   <dd>	  The radius of the circle
+</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetStartTangent"></a><a name="GetStartTangent(CATMathVector&amp;)"></a> <dt> o <b>GetStartTangent</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>GetStartTangent</b>(<td><script type="text/javascript"> activateLink('CATMathVector','CATMathVector&amp;')</script> <td><tt>oTangent</tt>)<script type="text/javascript"> activateLink('=0',' =0 ')</script>  </table></dt>
+<dl>
+  <dd>
+	Retrieves the tangent vector to the circle at its start point.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oTangent</tt>
+   <dd>	The tangent vector to the circle at its start point
+</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMfgCircularTraject.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>MfgItfEnv</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

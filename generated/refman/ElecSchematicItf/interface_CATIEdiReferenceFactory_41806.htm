@@ -1,0 +1,135 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ElecSchematicItf Interface CATIEdiReferenceFactory</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ElecSchematicItf.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIEdiReferenceFactory','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIEdiReferenceFactory','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIEdiReferenceFactory','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIEdiReferenceFactory','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ElecSchematicItf Interface CATIEdiReferenceFactory</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIEdiReferenceFactory_41806','CATIEdiReferenceFactory','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIEdiReferenceFactory</b>
+</p>
+<p>
+<b><i> Interface to create application object references.</i></b><br>
+
+ <b>Role</b>: This is the factory for application objects that are 
+ associated with schematic basic set of objects.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CreateEdiComponentReference(char*,wchar_t*,IUnknown**)"><b>CreateEdiComponentReference</b></a>(char*,wchar_t*,IUnknown**)
+<dd>  Creates an application component reference.
+ <dt> o 
+    <a href="#CreateEdiRoutableReference(char*,wchar_t*,IUnknown**)"><b>CreateEdiRoutableReference</b></a>(char*,wchar_t*,IUnknown**)
+<dd>  Creates an application routable reference.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="CreateEdiComponentReference"></a><a name="CreateEdiComponentReference(char*,wchar_t*,IUnknown**)"></a> <dt> o <b>CreateEdiComponentReference</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>CreateEdiComponentReference</b>(<td> const <script type="text/javascript"> activateLink('char','char*')</script> <td><tt>iEdiCompClassType</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('wchar_t','wchar_t*')</script> <td><tt>iEdiCompPartNumber</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('IUnknown','IUnknown**')</script> <td><tt>oEdiComp</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates an application component reference.
+ Allowed types are : ElecSchPlug
+                     ElecSchEquipment
+                     ElecSchSocket
+                     ElecSchJunctionBox
+                     ElecSchBusBar
+                       (For the BusBar a WidePin connector is created 
+                        on the fly on the reference product)
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEdiCompClassType</tt>
+   <dd>   The class type of the application component reference.
+ </dd>
+    <dt><tt> iEdiCompPartNumber</tt>
+   <dd>   The part number of the application component reference.
+ </dd>
+    <dt><tt> oEdiComp</tt>
+   <dd>   The new application component object created 
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="CreateEdiRoutableReference"></a><a name="CreateEdiRoutableReference(char*,wchar_t*,IUnknown**)"></a> <dt> o <b>CreateEdiRoutableReference</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>CreateEdiRoutableReference</b>(<td> const <script type="text/javascript"> activateLink('char','char*')</script> <td><tt>iEdiRouteClassType</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('wchar_t','wchar_t*')</script> <td><tt>iEdiRoutePartNumber</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('IUnknown','IUnknown**')</script> <td><tt>oEdiRoute</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates an application routable reference.
+ Allowed types are : ElecSchCable
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEdiRouteClassType</tt>
+   <dd>   The class type of the application routable reference.
+ </dd>
+    <dt><tt> iEdiRoutePartNumber</tt>
+   <dd>   The part number of the application routable reference.
+ </dd>
+    <dt><tt> oEdiRoute</tt>
+   <dd>   The new application routable object created 
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIEdiReferenceFactory.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

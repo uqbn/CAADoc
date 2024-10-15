@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="CATBehaviorInterfaces" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="1" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="Behavior" initial="B" htmlFileName="interface_Behavior_28534" fatherClass="AnyObject" fatherId="9080" DSCharacteristic="interface" id="28534" abstract="Represents a behavior." />
+<method name="Activate" htmlFileName="interface_Behavior_28534" containerName="Behavior" containerType="interface" id="34822" status="0" isProperty="0" initial="A" argList="" abstract="Activates a behavior." />
+<method name="Deactivate" htmlFileName="interface_Behavior_28534" containerName="Behavior" containerType="interface" id="36621" status="0" isProperty="0" initial="D" argList="" abstract="Deactivates a behavior." />
+<method name="GetInput" htmlFileName="interface_Behavior_28534" containerName="Behavior" containerType="interface" id="34882" status="0" isProperty="0" initial="G" argList="" abstract="Returns the value of one available input of the behavior." />
+<method name="GetOutput" htmlFileName="interface_Behavior_28534" containerName="Behavior" containerType="interface" id="35853" status="0" isProperty="0" initial="G" argList="" abstract="Returns the value of one available output of the behavior." />
+<method name="PutOutput" htmlFileName="interface_Behavior_28534" containerName="Behavior" containerType="interface" id="35869" status="0" isProperty="0" initial="P" argList="" abstract="Valuates an available output of the behavior." />
+<method name="TestInput" htmlFileName="interface_Behavior_28534" containerName="Behavior" containerType="interface" id="35756" status="0" isProperty="0" initial="T" argList="" abstract="Tests if the behavior&apos;s input is set or not." />
+<method name="TestOutput" htmlFileName="interface_Behavior_28534" containerName="Behavior" containerType="interface" id="36856" status="0" isProperty="0" initial="T" argList="" abstract="Tests if the behavior&apos;s output is set or not." />
+<method name="Behaviors" htmlFileName="interface_Behavior_28534" containerName="Behavior" containerType="interface" id="35797" status="32" isProperty="1" initial="B" argList="" abstract="Returns the collection of children behaviors." />
+<class name="BehaviorExtension" initial="B" htmlFileName="interface_BehaviorExtension_40147" fatherClass="Behavior" fatherId="28534" DSCharacteristic="interface" id="40147" abstract="Manages the behaviors of a technological object." />
+<method name="SelectBehavior" htmlFileName="interface_BehaviorExtension_40147" containerName="BehaviorExtension" containerType="interface" id="52982" status="0" isProperty="0" initial="S" argList="" abstract="Selects and executes a behavior of the technological object." />
+<method name="ExtensionClass" htmlFileName="interface_BehaviorExtension_40147" containerName="BehaviorExtension" containerType="interface" id="53011" status="32" isProperty="1" initial="E" argList="" abstract="Returns the type of the technological object associated to this behavior extension." />
+<class name="BehaviorVBScript" initial="B" htmlFileName="interface_BehaviorVBScript_37776" fatherClass="Behavior" fatherId="28534" DSCharacteristic="interface" id="37776" abstract="Represents the VBScript behavior." />
+<method name="Cancel" htmlFileName="interface_BehaviorVBScript_37776" containerName="BehaviorVBScript" containerType="interface" id="42616" status="0" isProperty="0" initial="C" argList="" abstract="Inform Client VB has Failed &amp; Has Not operated." deprecated="V5R15" />
+<method name="Done" htmlFileName="interface_BehaviorVBScript_37776" containerName="BehaviorVBScript" containerType="interface" id="41692" status="0" isProperty="0" initial="D" argList="" abstract="Inform Client VB has Successfully Finished." deprecated="V5R15" />
+<method name="GetInternal" htmlFileName="interface_BehaviorVBScript_37776" containerName="BehaviorVBScript" containerType="interface" id="46867" status="0" isProperty="0" initial="G" argList="" abstract="Returns one available io of the behavior." />
+<method name="PutInternal" htmlFileName="interface_BehaviorVBScript_37776" containerName="BehaviorVBScript" containerType="interface" id="46883" status="0" isProperty="0" initial="P" argList="" abstract="provide output of one available io of the behavior." />
+<method name="Start" htmlFileName="interface_BehaviorVBScript_37776" containerName="BehaviorVBScript" containerType="interface" id="42174" status="0" isProperty="0" initial="S" argList="" abstract="Inform Client VB has Started." deprecated="V5R15" />
+<method name="Suspend" htmlFileName="interface_BehaviorVBScript_37776" containerName="BehaviorVBScript" containerType="interface" id="43295" status="0" isProperty="0" initial="S" argList="" abstract="" deprecated="V5R15" />
+<method name="TestInternal" htmlFileName="interface_BehaviorVBScript_37776" containerName="BehaviorVBScript" containerType="interface" id="48042" status="0" isProperty="0" initial="T" argList="" abstract="Test for one available output of the behavior." />
+<class name="Behaviors" initial="B" htmlFileName="interface_Behaviors_29454" fatherClass="Collection" fatherId="10201" DSCharacteristic="interface" id="29454" abstract="Represents the Behaviors collection currently managed by the application." />
+<method name="Item" htmlFileName="interface_Behaviors_29454" containerName="Behaviors" containerType="interface" id="33381" status="0" isProperty="0" initial="I" argList="" abstract="Returns a Behavior using its index or its name from the Behaviors
+ collection." />
+</fw>

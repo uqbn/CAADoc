@@ -1,0 +1,321 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchAppObjectFactory2 (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchAppObjectFactory2','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppObjectFactory2','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchAppObjectFactory2','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppObjectFactory2','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchAppObjectFactory2<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchAppObjectFactory2_51057','SchAppObjectFactory2','0');</script>
+<b><i>  Application factory to create application objects.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AppCreateCompRef"><b>AppCreateCompRef</b></a>
+<dd>  Create an Application Component reference.
+ <dt>
+    <a href="#AppCreateConnection"><b>AppCreateConnection</b></a>
+<dd>  Create an Application Connection object.
+ <dt>
+    <a href="#AppCreateGroup"><b>AppCreateGroup</b></a>
+<dd>  Create an Application Group object.
+ <dt>
+    <a href="#AppCreateRoute"><b>AppCreateRoute</b></a>
+<dd>  Create an Application Route object.
+ <dt>
+    <a href="#AppCreateRouteFromRef"><b>AppCreateRouteFromRef</b></a>
+<dd>  Create an Application Route object with a specific reference.
+ <dt>
+    <a href="#AppCreateRouteWithInfo"><b>AppCreateRouteWithInfo</b></a>
+<dd>  Create an Application Route object with application information.
+ <dt>
+    <a href="#AppCreateZone"><b>AppCreateZone</b></a>
+<dd>  Create an Application Zone object.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AppCreateCompRef"><dt>
+
+<table><tr><td>o Sub <b>AppCreateCompRef</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iAppCompClassType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Document','Document')</script> <td><tt>iDoc</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>oAppComp</tt>)</table></dt>
+<dl>
+  <dd>
+ Create an Application Component reference.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAppCompClassType</tt>
+   <dd>   Class type of the Application Component reference.
+ </dd>
+    <dt><tt> iDoc</tt>
+   <dd>   Pointer to a document to create the object in. If NULL, the
+   document associated with the current Editor will be used.
+ </dd>
+    <dt><tt> oAppComp</tt>
+   <dd>   The new Application Component object created (CATISchAppComponent
+   interface pointer).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppObjectFactory2
+ Dim strVar1 As String
+ Dim objArg2 As Document
+ Dim objArg3 As AnyObject
+  ...
+ objThisIntf.<font color="red">AppCreateCompRef</font>strVar1,objArg2,objArg3
+ </pre>
+
+</dl>
+</dl>
+<a name="AppCreateConnection"><dt>
+
+<table><tr><td>o Sub <b>AppCreateConnection</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iAppCntnClassType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Document','Document')</script> <td><tt>iDoc</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>oAppConnection</tt>)</table></dt>
+<dl>
+  <dd>
+ Create an Application Connection object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAppCntnClassType</tt>
+   <dd>   Class type of the Application Connection object.
+ </dd>
+    <dt><tt> iDoc</tt>
+   <dd>   Pointer to a document to create the object in. If NULL, the
+   document associated with the current Editor will be used.
+ </dd>
+    <dt><tt> oAppConnection</tt>
+   <dd>   The new Application Connection object created (CATISchAppConnection
+   interface pointer).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppObjectFactory2
+ Dim strVar1 As String
+ Dim objArg2 As Document
+ Dim objArg3 As AnyObject
+  ...
+ objThisIntf.<font color="red">AppCreateConnection</font>strVar1,objArg2,objArg3
+ </pre>
+
+</dl>
+</dl>
+<a name="AppCreateGroup"><dt>
+
+<table><tr><td>o Sub <b>AppCreateGroup</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iAppGroupClassType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Document','Document')</script> <td><tt>iDoc</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>oAppGroup</tt>)</table></dt>
+<dl>
+  <dd>
+ Create an Application Group object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAppGroupClassType</tt>
+   <dd>   Class type of the Application Group object.
+ </dd>
+    <dt><tt> iDoc</tt>
+   <dd>   Pointer to a document to create the object in. If NULL, the
+   document associated with the current Editor will be used.
+ </dd>
+    <dt><tt> oAppGroup</tt>
+   <dd>   The new Application Group object created (CATISchAppGroup
+   interface pointer).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppObjectFactory2
+ Dim strVar1 As String
+ Dim objArg2 As Document
+ Dim objArg3 As AnyObject
+  ...
+ objThisIntf.<font color="red">AppCreateGroup</font>strVar1,objArg2,objArg3
+ </pre>
+
+</dl>
+</dl>
+<a name="AppCreateRoute"><dt>
+
+<table><tr><td>o Sub <b>AppCreateRoute</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iAppRouteClassType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Document','Document')</script> <td><tt>iDoc</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iLogLineID</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>oAppRoute</tt>)</table></dt>
+<dl>
+  <dd>
+ Create an Application Route object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAppRouteClassType</tt>
+   <dd>   Class type of the Application Route object.
+ </dd>
+    <dt><tt> iDoc</tt>
+   <dd>   Pointer to a document to create the object in. If NULL, the
+   document associated with the current Editor will be used.
+ </dd>
+    <dt><tt> iLogLineID</tt>
+   <dd>   The logical line ID that will contain the new route.
+   This is an optional input. If could be NULL.
+ </dd>
+    <dt><tt> oAppRoute</tt>
+   <dd>   The new Application Route object created (CATISchAppRoute
+   interface pointer).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppObjectFactory2
+ Dim strVar1 As String
+ Dim objArg2 As Document
+ Dim strVar3 As String
+ Dim objArg4 As AnyObject
+  ...
+ objThisIntf.<font color="red">AppCreateRoute</font>strVar1,objArg2,strVar3,objArg4
+ </pre>
+
+</dl>
+</dl>
+<a name="AppCreateRouteFromRef"><dt>
+
+<table><tr><td>o Sub <b>AppCreateRouteFromRef</b>(<td><script type="text/javascript"> activateLink('SchAppRoute','SchAppRoute')</script> <td><tt>iRouteReference</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Document','Document')</script> <td><tt>iDoc</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iLogLineID</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>oAppRoute</tt>)</table></dt>
+<dl>
+  <dd>
+ Create an Application Route object with a specific reference.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAppRouteRef</tt>
+   <dd>   Route reference to creaet the output route from
+ </dd>
+    <dt><tt> iDoc</tt>
+   <dd>   Pointer to a document to create the object in. If NULL, the
+   document associated with the current Editor will be used.
+ </dd>
+    <dt><tt> iLogLineID</tt>
+   <dd>   The logical line ID that will contain the new route.
+   This is an optional input. If could be NULL.
+ </dd>
+    <dt><tt> oAppRoute</tt>
+   <dd>   The new Application Route object created (CATISchAppRoute
+   interface pointer).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppObjectFactory2
+ Dim objArg1 As SchAppRoute
+ Dim objArg2 As Document
+ Dim strVar3 As String
+ Dim objArg4 As AnyObject
+  ...
+ objThisIntf.<font color="red">AppCreateRouteFromRef</font>objArg1,objArg2,strVar3,objArg4
+ </pre>
+
+</dl>
+</dl>
+<a name="AppCreateRouteWithInfo"><dt>
+
+<table><tr><td>o Sub <b>AppCreateRouteWithInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iAppRouteClassType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>iAppInfo</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>oAppRoute</tt>)</table></dt>
+<dl>
+  <dd>
+ Create an Application Route object with application information.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAppRouteClassType</tt>
+   <dd>   Class type of the Application Route object.
+ </dd>
+    <dt><tt> iAppInfo</tt>
+   <dd>   Application data pointer
+ </dd>
+    <dt><tt> oAppRoute</tt>
+   <dd>   The new Application Route object created (CATISchAppRoute
+   interface pointer).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppObjectFactory2
+ Dim strVar1 As String
+ Dim objArg2 As AnyObject
+ Dim objArg3 As AnyObject
+  ...
+ objThisIntf.<font color="red">AppCreateRouteWithInfo</font>strVar1,objArg2,objArg3
+ </pre>
+
+</dl>
+</dl>
+<a name="AppCreateZone"><dt>
+
+<table><tr><td>o Sub <b>AppCreateZone</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iAppZoneClassType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Document','Document')</script> <td><tt>iDoc</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>oAppZone</tt>)</table></dt>
+<dl>
+  <dd>
+ Create an Application Zone object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAppZoneClassType</tt>
+   <dd>   Class type of the Application Zone object.
+ </dd>
+    <dt><tt> iDoc</tt>
+   <dd>   Pointer to a document to create the object in. If NULL, the
+   document associated with the current Editor will be used.
+ </dd>
+    <dt><tt> oAppZone</tt>
+   <dd>   The new Application Zone object created (CATISchAppZone
+   interface pointer).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppObjectFactory2
+ Dim strVar1 As String
+ Dim objArg2 As Document
+ Dim objArg3 As AnyObject
+  ...
+ objThisIntf.<font color="red">AppCreateZone</font>strVar1,objArg2,objArg3
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,125 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchGapDisplay (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchGapDisplay','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchGapDisplay','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchGapDisplay','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchGapDisplay','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchGapDisplay<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchGapDisplay_40433','SchGapDisplay','0');</script>
+<b><i>  Manage the graphical representation of a schematic route.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#IsGapShown"><b>IsGapShown</b></a>
+<dd>  Query whether gaps are shown (gap attributes exist).
+ <dt>
+    <a href="#SetGap"><b>SetGap</b></a>
+<dd>  Add gap display attributes on the route.
+ <dt>
+    <a href="#UnsetGap"><b>UnsetGap</b></a>
+<dd>  Remove gap display attributes on the route.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="IsGapShown"><dt>
+
+<table><tr><td>o Sub <b>IsGapShown</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>oBYes</tt>)</table></dt>
+<dl>
+  <dd>
+ Query whether gaps are shown (gap attributes exist).
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oBYes</tt>
+   <dd>   If TRUE,  then gaps are shown     (gap attributes exist).
+   If FALSE, then gaps are not shown (gap attributes do not exist).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGapDisplay
+ Dim bVar1 As boolean
+  ...
+ objThisIntf.<font color="red">IsGapShown</font>bVar1
+ </pre>
+
+</dl>
+</dl>
+<a name="SetGap"><dt>
+
+<table><tr><td>o Sub <b>SetGap</b>(<td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>iLUKRoutes</tt>)</table></dt>
+<dl>
+  <dd>
+ Add gap display attributes on the route.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLUKRoutes</tt>
+   <dd>   A list of routes to be processed, default is NULL
+   (if NULL, then all routes in model are processed). 
+   Members are CATISchRoute interface pointers. 
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGapDisplay
+ Dim objArg1 As SchListOfObjects
+  ...
+ objThisIntf.<font color="red">SetGap</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+<a name="UnsetGap"><dt>
+
+<table><tr><td>o Sub <b>UnsetGap</b>(<td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>iLUKRoutes</tt>)</table></dt>
+<dl>
+  <dd>
+ Remove gap display attributes on the route.
+   A list of routes to be processed, default is NULL
+   (if NULL, then all routes in model are processed). 
+   Members are CATISchRoute interface pointers. 
+    
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGapDisplay
+ Dim objArg1 As SchListOfObjects
+  ...
+ objThisIntf.<font color="red">UnsetGap</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

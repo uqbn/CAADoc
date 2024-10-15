@@ -1,0 +1,165 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>DraftingInterfaces Interface CATIDftFormat</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../DraftingInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIDftFormat','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIDftFormat','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIDftFormat','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIDftFormat','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>DraftingInterfaces Interface CATIDftFormat</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIDftFormat_27514','CATIDftFormat','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIDftFormat</b>
+</p>
+<p>
+<b><i> <B>Role:</B> CATIDftFormat is an interface dedicated to get the generic informations carried by a format that are 
+ consequently shared among sheets associated with this format.</i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetFormatHeight(double&amp;)"><b>GetFormatHeight</b></a>(double&amp;)
+<dd>  Retrieves the height of the format.
+ <dt> o 
+    <a href="#GetFormatName(CATUnicodeString&amp;)"><b>GetFormatName</b></a>(CATUnicodeString&amp;)
+<dd>  Retrieves the name of the format.
+ <dt> o 
+    <a href="#GetFormatOrientationsType(CATFormatOrientationsType&amp;)"><b>GetFormatOrientationsType</b></a>(CATFormatOrientationsType&amp;)
+<dd>  Retrieves the format orientations type.
+ <dt> o 
+    <a href="#GetFormatWidth(double&amp;)"><b>GetFormatWidth</b></a>(double&amp;)
+<dd>  Retrieves the width of the format.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetFormatHeight"></a><a name="GetFormatHeight(double&amp;)"></a> <dt> o <b>GetFormatHeight</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetFormatHeight</b>(<td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oHeight</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the height of the format.
+ Note: the height of a format is same as the height of a sheet having a landscape orientation and associated with this format.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt>double</tt>
+   <dd> &oHeight</tt> [out] The height of the format.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <tt>HRESULT</tt>
+ <dl>
+ <dt> <tt>S_OK</tt>     <dd> Success.
+ <dt> <tt>E_FAIL</tt>   <dd> Error.
+ </dl>
+</dl>
+</dl>
+<a name="GetFormatName"></a><a name="GetFormatName(CATUnicodeString&amp;)"></a> <dt> o <b>GetFormatName</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetFormatName</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oName</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the name of the format.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt>CATUnicodeString</tt>
+   <dd> &oName</tt> [out] The name of the format as an unicode string.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <tt>HRESULT</tt>
+ <dl>
+ <dt> <tt>S_OK</tt>     <dd> Success.
+ <dt> <tt>E_FAIL</tt>   <dd> Error.
+ </dl>
+</dl>
+</dl>
+<a name="GetFormatOrientationsType"></a><a name="GetFormatOrientationsType(CATFormatOrientationsType&amp;)"></a> <dt> o <b>GetFormatOrientationsType</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetFormatOrientationsType</b>(<td><script type="text/javascript"> activateLink('CATFormatOrientationsType','CATFormatOrientationsType&amp;')</script> <td><tt>oOrientsType</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the format orientations type.
+ <B>Note:</B> To set the orientations type on a custom format, see CATIDftDrawingFormats#SetOrientationsTypeOnCustomFormat
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt>CATFormatOrientationsType</tt>
+   <dd> &oOrientsType</tt> [out] The orientations type of the format.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <tt>HRESULT</tt>
+ <dl>
+ <dt> <tt>S_OK</tt>     <dd> Success.
+ <dt> <tt>E_FAIL</tt>   <dd> Error.
+ </dl>
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATFormatOrientationsType','');return false">CATFormatOrientationsType</a>
+</dl>
+</dl>
+<a name="GetFormatWidth"></a><a name="GetFormatWidth(double&amp;)"></a> <dt> o <b>GetFormatWidth</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetFormatWidth</b>(<td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oWidth</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the width of the format.
+ Note: the width of a format is same as the width of a sheet having a landscape orientation and associated with this format.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt>double</tt>
+   <dd> &oWidth</tt> [out] The width of the format.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <tt>HRESULT</tt>
+ <dl>
+ <dt> <tt>S_OK</tt>     <dd> Success.
+ <dt> <tt>E_FAIL</tt>   <dd> Error.
+ </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIDftFormat.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATDraftingInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

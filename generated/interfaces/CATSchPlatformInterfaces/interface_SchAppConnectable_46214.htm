@@ -1,0 +1,274 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchAppConnectable (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchAppConnectable','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppConnectable','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchAppConnectable','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppConnectable','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchAppConnectable<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchAppConnectable_46214','SchAppConnectable','0');</script>
+<b><i>  Represents an application object that can be connected to others.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AppAddConnector"><b>AppAddConnector</b></a>
+<dd>  Add a connector.
+ <dt>
+    <a href="#AppGetReferenceName"><b>AppGetReferenceName</b></a>
+<dd>  Get the reference name of a connectable.
+ <dt>
+    <a href="#AppListConnectables"><b>AppListConnectables</b></a>
+<dd>  Find all the application objects connected to this object through
+ their connectors.
+ <dt>
+    <a href="#AppListConnectors"><b>AppListConnectors</b></a>
+<dd>  Find all the connectors of this application object.
+ <dt>
+    <a href="#AppListValidCntrTypes"><b>AppListValidCntrTypes</b></a>
+<dd>  List the valid application connector types allowed to be created.
+ <dt>
+    <a href="#AppRemoveConnector"><b>AppRemoveConnector</b></a>
+<dd>  Remove a connector.
+ <dt>
+    <a href="#AppSetReferenceName"><b>AppSetReferenceName</b></a>
+<dd>  Set the reference name of a connectable.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AppAddConnector"><dt>
+
+<table><tr><td>o Sub <b>AppAddConnector</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iClassType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchAppConnector','SchAppConnector')</script> <td><tt>oNewAppCntr</tt>)</table></dt>
+<dl>
+  <dd>
+ Add a connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iClassType</tt>
+   <dd>    Class type of the connector to be added.
+ </dd>
+    <dt><tt> oNewAppCntr</tt>
+   <dd>   The new Application Connector object created.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppConnectable
+ Dim strVar1 As String
+ Dim objArg2 As SchAppConnector
+  ...
+ objThisIntf.<font color="red">AppAddConnector</font>strVar1,objArg2
+ </pre>
+
+</dl>
+</dl>
+<a name="AppGetReferenceName"><dt>
+
+<table><tr><td>o Sub <b>AppGetReferenceName</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oReferenceName</tt>)</table></dt>
+<dl>
+  <dd>
+ Get the reference name of a connectable. It will be displayed in catalogs.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oReferenceName</tt>
+   <dd>   The name of the reference
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppConnectable
+ Dim strVar1 As String
+  ...
+ objThisIntf.<font color="red">AppGetReferenceName</font>strVar1
+ </pre>
+
+</dl>
+</dl>
+<a name="AppListConnectables"><dt>
+
+<table><tr><td>o Sub <b>AppListConnectables</b>(<td><script type="text/javascript"> activateLink('SchListOfBSTRs','SchListOfBSTRs')</script> <td><tt>iLCntbleClassFilter</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>oLCntbles</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>oLCntrsOnThisObj</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>oLCntrsOnConnected</tt>)</table></dt>
+<dl>
+  <dd>
+ Find all the application objects connected to this object through
+ their connectors.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLCntrClassFilter</tt>
+   <dd>   A list of all the class types for filtering the output application
+   objects list.
+ </dd>
+    <dt><tt> oLCntbles</tt>
+   <dd>   A list of application objects connected to this object.
+   (members are CATISchAppConnectable interface pointers). 
+ </dd>
+    <dt><tt> oLCntrsOnThisObj</tt>
+   <dd>   A list of connectors on this object through which 
+   the connection is made.
+   (members are CATISchAppConnector interface pointers).
+ </dd>
+    <dt><tt> oLCntrsOnConnected</tt>
+   <dd>   A list of connectors on the connected objects through which 
+   the connection is made.
+   (members are CATISchAppConnector interface pointers).
+   Members in this list corresponds to those in oLCntrsOnThisObj in
+   making the corresponding connections.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppConnectable
+ Dim objArg1 As SchListOfBSTRs
+ Dim objArg2 As SchListOfObjects
+ Dim objArg3 As SchListOfObjects
+ Dim objArg4 As SchListOfObjects
+  ...
+ objThisIntf.<font color="red">AppListConnectables</font>objArg1,objArg2,objArg3,objArg4
+ </pre>
+
+</dl>
+</dl>
+<a name="AppListConnectors"><dt>
+
+<table><tr><td>o Func <b>AppListConnectors</b>(<td><script type="text/javascript"> activateLink('SchListOfBSTRs','SchListOfBSTRs')</script> <td><tt>iLCntrClassFilter</tt>) As <script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> </table></dt>
+<dl>
+  <dd>
+ Find all the connectors of this application object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLCntrClassFilter</tt>
+   <dd>   A list of all the class types for filtering the output connector
+   list.
+ </dd>
+    <dt><tt> oLCntrs</tt>
+   <dd>   A list of connectors included in this connection.
+   (members are CATISchAppConnector interface pointers).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppConnectable
+ Dim objArg1 As SchListOfBSTRs
+ Dim objArg2 As SchListOfObjects
+  ...
+ Set objArg2 = objThisIntf.<font color="red">AppListConnectors</font>(objArg1)
+ </pre>
+
+</dl>
+</dl>
+<a name="AppListValidCntrTypes"><dt>
+
+<table><tr><td>o Func <b>AppListValidCntrTypes</b>(<td>) As <script type="text/javascript"> activateLink('SchListOfBSTRs','SchListOfBSTRs')</script> </table></dt>
+<dl>
+  <dd>
+ List the valid application connector types allowed to be created.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLValidCntrTypes</tt>
+   <dd>   A list of connector class types allowed.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppConnectable
+ Dim objArg1 As SchListOfBSTRs
+  ...
+ Set objArg1 = objThisIntf.<font color="red">AppListValidCntrTypes</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="AppRemoveConnector"><dt>
+
+<table><tr><td>o Sub <b>AppRemoveConnector</b>(<td><script type="text/javascript"> activateLink('SchAppConnector','SchAppConnector')</script> <td><tt>iCntrToRemove</tt>)</table></dt>
+<dl>
+  <dd>
+ Remove a connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCntrToRemove</tt>
+   <dd>    The application connector object to be removed 
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppConnectable
+ Dim objArg1 As SchAppConnector
+  ...
+ objThisIntf.<font color="red">AppRemoveConnector</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+<a name="AppSetReferenceName"><dt>
+
+<table><tr><td>o Sub <b>AppSetReferenceName</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iReferenceName</tt>)</table></dt>
+<dl>
+  <dd>
+ Set the reference name of a connectable. It will be displayed in catalogs.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iReferenceName</tt>
+   <dd>   The name of the reference
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppConnectable
+ Dim strVar1 As String
+  ...
+ objThisIntf.<font color="red">AppSetReferenceName</font>strVar1
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

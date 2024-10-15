@@ -1,0 +1,106 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ObjectModelerBase Interface CATIOmbContainerLinksUpdateStatus</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ObjectModelerBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIOmbContainerLinksUpdateStatus','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIOmbContainerLinksUpdateStatus','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIOmbContainerLinksUpdateStatus','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIOmbContainerLinksUpdateStatus','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ObjectModelerBase Interface CATIOmbContainerLinksUpdateStatus</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIOmbContainerLinksUpdateStatus_72442','CATIOmbContainerLinksUpdateStatus','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATIOmbContainerLinksUpdateStatus</b>
+</p>
+<p>
+<b><i> This interface is dedicated to containers embedding features pointing to 
+ external documents.</i></b><br>
+ This interface enables activation of an internal DS 
+ mechanism preventing GhostLinks generation. 
+ This interface will be only called by the interactive save mechanism on every containers (loaded or not) embedded in the document being saved.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#NeedsToUpdateLinkForPointedRename(CATBoolean&amp;)"><b>NeedsToUpdateLinkForPointedRename</b></a>(CATBoolean&amp;)
+<dd>         Determines if the container has to be included in the DS mechanism against GhostLinks.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="NeedsToUpdateLinkForPointedRename"></a><a name="NeedsToUpdateLinkForPointedRename(CATBoolean&amp;)"></a> <dt> o <b>NeedsToUpdateLinkForPointedRename</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>NeedsToUpdateLinkForPointedRename</b>(<td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean&amp;')</script> <td><tt>oStatus</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+        Determines if the container has to be included in the DS mechanism against GhostLinks. 
+ <Role>  
+   GhostLinks prevention may impact Save performances and is by default inactivated. 
+   In order to turn it on for a specific container, container has to implement this interface and set oStatus to TRUE. 
+   <br/>
+   if oStatus is  set to TRUE, save mechanism will perform the following tasks
+     <ul>
+      <li/> load non loaded container
+      <li/> apply the DS mechanism against GhostLinks on the container.   
+     </ul>
+   if oStatus is set to FALSE, save mechanism will perform the following tasks
+    <ul>    
+      <li/> no additional operation will be performed for the container. 
+    </ul>
+
+   Typical implementation will look like 
+   <code>
+   {
+     oStatus=TRUE;
+     return S_OK;
+   }
+   </code>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> [out]</tt>
+   <dd> oStatus   <ul>
+   <li/>oStatus==TRUE  : Container will be included in DS mechanism against GhostLinks
+   <li/>oStatus==FALSE : GhostLinks prevention will not be performed on the container.  
+   </ul>
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <ul>
+   <li/><code>S_OK</code>   oStatus has been set with success
+   <li/><code>E_FAIL</code> unexpected error. GhostLinks prevention will not be performed on the container.  
+   </ul>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIOmbContainerLinksUpdateStatus.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATObjectModelerBase</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

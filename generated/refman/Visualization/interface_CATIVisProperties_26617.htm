@@ -1,0 +1,92 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>Visualization Interface CATIVisProperties</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../Visualization.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIVisProperties','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIVisProperties','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIVisProperties','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIVisProperties','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Visualization Interface CATIVisProperties</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIVisProperties_26617','CATIVisProperties','0');</script>
+<p><b>Usage: you can reimplement this interface by deriving the supplied <a href="../CATGraphicProperties/class_CATExtIVisProperties_41260.htm">CATExtIVisProperties</a> adapter class.</b></p>
+<hr>
+<p>
+ interface <b>CATIVisProperties</b>
+</p>
+<p>
+<b><i> Interface to manage graphic properties.</i></b><br>
+
+ <b>Role</b>:Your component has a set of "objects" , line, surface, ..., 
+ which are defined by their <a href="#" onClick="openLink('CATVisGeomType','');return false">CATVisGeomType</a>.  Each "object" has a set of graphic properties. With this 
+ interface you read / write these "objects". 
+ <br>
+ You should implement this interface in a data extension of the component that implements
+ an interface which derives from 
+<a href="#" onClick="openLink('CATIVisu','');return false">CATIVisu</a>, such as 
+<a href="#" onClick="openLink('CATI3DGeoVisu','');return false">CATI3DGeoVisu</a> or 
+<a href="#" onClick="openLink('CATI2DGeoVisu','');return false">CATI2DGeoVisu</a>. This data extension should derive from the supplied 
+<a href="#" onClick="openLink('CATExtIVisProperties','');return false">CATExtIVisProperties</a> adapter class. 
+ <br>
+ To store properties on your component there is the 
+<a href="#" onClick="openLink('CATIProperty','');return false">CATIProperty</a>. When you set  graphic properties thanks to <tt>CATIVisProperties</tt>, you also modify the value in 
+ <tt>CATIProperty</tt>. So your component must implement these 2 interfaces to have
+ graphic properties.
+ <br>
+ All methods of this interface are defined in the 
+ 
+<a href="#" onClick="openLink('CATIVisPropertiesAbstract','');return false">CATIVisPropertiesAbstract</a> base interface. In this base class you find the methods to manage the graphic 
+ properties on your component.
+ <ul>
+ <li> 
+<a href="#" onClick="openLink('CATIVisPropertiesAbstract','SetPropertiesAtt');return false">CATIVisPropertiesAbstract.SetPropertiesAtt</a> </li> <br>To set a graphic property
+ <li> 
+<a href="#" onClick="openLink('CATIVisPropertiesAbstract','GetPropertiesAtt');return false">CATIVisPropertiesAbstract.GetPropertiesAtt</a> </li> <br>To retrieve a graphic property
+ <li> 
+<a href="#" onClick="openLink('CATIVisPropertiesAbstract','ResetPropertiesAtt');return false">CATIVisPropertiesAbstract.ResetPropertiesAtt</a> </li> <br>To reset a graphic property to the standard, 
+ <li> 
+<a href="#" onClick="openLink('CATIVisPropertiesAbstract','IsGeomTypeDefined');return false">CATIVisPropertiesAbstract.IsGeomTypeDefined</a> </li> <br>To know if your component is assigned a valid geometry type
+ </ul>
+ <p><b>BOA information</b>: this interface can be implemented
+ using the BOA (Basic Object Adapter).
+ To know more about the BOA, refer to the CAA Encyclopedia home page. 
+ Click Middleware at the bottom left, then click the Object Modeler tab page.
+ Several articles deal with the BOA.</p>
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATVisPropertiesValues','');return false">CATVisPropertiesValues</a>, <a href="#" onClick="openLink('CATVisGeomType','');return false">CATVisGeomType</a>, <a href="#" onClick="openLink('CATVisPropertyType','');return false">CATVisPropertyType</a>
+</dl>
+</p>
+<hr>
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIVisProperties.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATVisualization</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

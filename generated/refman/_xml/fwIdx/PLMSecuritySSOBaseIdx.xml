@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="PLMSecuritySSOBase" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="0" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="PLMISecSSOCLogContentProvider" initial="P" htmlFileName="interface_PLMISecSSOCLogContentProvider_59831" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="59831" abstract="This interface allows to customize
+ the content of the audit log on authentication events wihtin a c++ process." />
+<method name="onAuthenticationFailure" htmlFileName="interface_PLMISecSSOCLogContentProvider_59831" containerName="PLMISecSSOCLogContentProvider" containerType="interface" id="179714" status="18" isProperty="0" initial="O" argList="(CATUnicodeString&amp;amp;,CATUnicodeString&amp;amp;)" abstract="Writes to the authentication audit log when autentication failed." />
+<method name="onAuthenticationSuccess" htmlFileName="interface_PLMISecSSOCLogContentProvider_59831" containerName="PLMISecSSOCLogContentProvider" containerType="interface" id="179992" status="18" isProperty="0" initial="O" argList="(CATUnicodeString&amp;amp;,CATUnicodeString&amp;amp;)" abstract="Writes to the authentication audit log when autentication is successful." />
+</fw>

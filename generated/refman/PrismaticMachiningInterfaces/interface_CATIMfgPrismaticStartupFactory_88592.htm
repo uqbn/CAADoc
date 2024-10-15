@@ -1,0 +1,102 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PrismaticMachiningInterfaces Interface CATIMfgPrismaticStartupFactory</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../PrismaticMachiningInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMfgPrismaticStartupFactory','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgPrismaticStartupFactory','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMfgPrismaticStartupFactory','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgPrismaticStartupFactory','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PrismaticMachiningInterfaces Interface CATIMfgPrismaticStartupFactory</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMfgPrismaticStartupFactory_88592','CATIMfgPrismaticStartupFactory','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIMfgPrismaticStartupFactory</b>
+</p>
+<p>
+<b><i> This interface is a prismatic operations startup factory.</i></b><br>
+
+
+ <br><b>Role</b>: CATIMfgPrismaticStartupFactory has a method to create user 
+ defined startups in customer catalogs.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CreateMachiningOperationSU(CATISpecObject**,CATICatalog*,CATIContainer*,CATUnicodeString&amp;,CATUnicodeString&amp;,CATListOfCATUnicodeString&amp;)"><b>CreateMachiningOperationSU</b></a>(CATISpecObject**,CATICatalog*,CATIContainer*,CATUnicodeString&amp;,CATUnicodeString&amp;,CATListOfCATUnicodeString&amp;)
+<dd>  Creates a new prismatic operation startup in the provided client catalog.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="CreateMachiningOperationSU"></a><a name="CreateMachiningOperationSU(CATISpecObject**,CATICatalog*,CATIContainer*,CATUnicodeString&amp;,CATUnicodeString&amp;,CATListOfCATUnicodeString&amp;)"></a> <dt> o <b>CreateMachiningOperationSU</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>CreateMachiningOperationSU</b>(<td><script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject**')</script> <td><tt>piNewStartUp</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATICatalog','CATICatalog*')</script> <td><tt>piClientCatalog</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIContainer','CATIContainer*')</script> <td><tt>piActivityCont</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>pActivityTypeName</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>pActivitySuperTypeName</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATListOfCATUnicodeString','CATListOfCATUnicodeString&amp;')</script> <td><tt>pFeatureTypeNameList</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates a new prismatic operation startup in the provided client catalog.
+ Allows the creation of a new client Startup deriving from the StartUp
+ found in the Machining catalog file.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> opiNewStartUp</tt>
+   <dd>      The new created client StartUp.
+ </dd>
+    <dt><tt> ipiClientCatalog</tt>
+   <dd>      The client catalog in which the new client StartUp is to be created.
+ </dd>
+    <dt><tt> ipiActivityCont</tt>
+   <dd>      The activity container in which the new client StartUp is to be created.
+ </dd>
+    <dt><tt> ipActivityTypeName</tt>
+   <dd>      The late type of the new client StartUp to be created.
+ </dd>
+    <dt><tt> ipActivitySuperTypeName</tt>
+   <dd>      The late type of the father StartUp.<br>
+   <b>Legal values</b>: "MfgUserDefinedDrilling", "MfgUserDefinedPocketing",
+                        "MfgUserDefinedCircularMilling" and "MfgUserDefinedProfileContouring".
+ </dd>
+    <dt><tt> ipFeatureTypeNameList</tt>
+   <dd>      The list of the features names you want to authorized on this Startup.
+      This list can be empty.<br>
+      If this list contains client feature, the client catalog containing these client
+      features startup must have been opened before calling this service.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>       S_OK: the new StartUp has been created. <br>
+	     E_FAIL: the new StartUp has not been created.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMfgPrismaticStartupFactory.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>PmgItfEnv</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

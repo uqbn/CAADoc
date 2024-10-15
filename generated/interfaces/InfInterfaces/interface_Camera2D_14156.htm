@@ -1,0 +1,70 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>InfInterfaces Camera2D (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../InfInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Camera2D','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Camera2D','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Camera2D','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Camera2D','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Camera2D<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Camera2D_14156','Camera2D','0');</script>
+<b><i> Represents a 2D camera.</i></b><br>
+
+ The 2D camera stores a 2D viewpoint, that is
+ a <a href="#" onClick="openLink('Viewpoint2D','');return false">Viewpoint2D</a> object.
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Viewpoint2D"><b>Viewpoint2D</b></a>
+<dd>  Returns or sets the 2D viewpoint of a 2D camera.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Viewpoint2D"><dt>
+
+<table><tr><td>o Property <b>Viewpoint2D</b>(<td>) As <script type="text/javascript"> activateLink('Viewpoint2D','Viewpoint2D')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the 2D viewpoint of a 2D camera.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ Assume the active window is a 
+<a href="#" onClick="openLink('SpecsAndGeomWindow','');return false">SpecsAndGeomWindow</a> object. This example retrieves the 
+<a href="#" onClick="openLink('Viewpoint2D','');return false">Viewpoint2D</a> of the 
+<a href="#" onClick="openLink('SpecsViewer','');return false">SpecsViewer</a> and creates
+ from it a Camera2D you handle using the <tt>MyCamera</tt> variable.
+ Then the camera zoom is set to 2, and the
+ camera's viewpoint is assigned to the 
+<a href="#" onClick="openLink('SpecsViewer','');return false">SpecsViewer</a>.  <pre>
+ Dim MyCamera As Camera
+ Set MyCamera = CATIA.ActiveWindow.SpecsViewer.NewCamera()
+ MyCamera.<font color="red">Viewpoint2D</font>.Zoom = 2
+ CATIA.ActiveWindow.SpecsViewer.Viewpoint2D = MyCamera.<font color="red">Viewpoint2D</font>
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

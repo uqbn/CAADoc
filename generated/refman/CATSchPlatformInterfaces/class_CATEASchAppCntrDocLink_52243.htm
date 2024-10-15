@@ -1,0 +1,387 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Class CATEASchAppCntrDocLink</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATEASchAppCntrDocLink','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEASchAppCntrDocLink','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATEASchAppCntrDocLink','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEASchAppCntrDocLink','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Class CATEASchAppCntrDocLink</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATEASchAppCntrDocLink_52243','CATEASchAppCntrDocLink','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATEASchAppCntrDocLink</b>
+</p>
+<p>
+<b><i> Super class to derive implementation for interface CATISchAppCntrDocLink.</i></b><br>
+
+ <b>Role</b>: Adaptor</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATEASchAppCntrDocLink()"><b>CATEASchAppCntrDocLink</b></a>()
+<dd>  Constructs an empty CATEASchAppCntrDocLink.
+ <dt> o 
+    <a href="#~CATEASchAppCntrDocLink()"><b>~CATEASchAppCntrDocLink</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AppGetLink(CATIUnknownList**,CATICStringList**,char**)"><b>AppGetLink</b></a>(CATIUnknownList**,CATICStringList**,char**)
+<dd>  
+ <dt> o 
+    <a href="#AppGetLink2(CATIUnknownList**,CATListOfCATUnicodeString&amp;,CATUnicodeString&amp;)"><b>AppGetLink2</b></a>(CATIUnknownList**,CATListOfCATUnicodeString&amp;,CATUnicodeString&amp;)
+<dd>  Get a list of linked connector(s) and its document names or publication
+ name.
+ <dt> o 
+    <a href="#AppGetLinkedDocs(CATUnicodeString&amp;,CATListOfCATUnicodeString&amp;,CATListOfCATUnicodeString&amp;,CATListOfInt&amp;,CATLISTP(IUnknown)&amp;)"><b>AppGetLinkedDocs</b></a>(CATUnicodeString&amp;,CATListOfCATUnicodeString&amp;,CATListOfCATUnicodeString&amp;,CATListOfInt&amp;,CATLISTP(IUnknown)&amp;)
+<dd>  Get a list of linked connectors, their documents' names, uuids, and
+ 'open in session' statuses, and a publication name of the connectors.
+ <dt> o 
+    <a href="#AppIsLinkable(CATISchAppConnector*,CATBoolean*)"><b>AppIsLinkable</b></a>(CATISchAppConnector*,CATBoolean*)
+<dd>  Query whether this connector and input connector can be linked.
+ <dt> o 
+    <a href="#AppLink(CATISchAppConnector*)"><b>AppLink</b></a>(CATISchAppConnector*)
+<dd>  Create an external link to another connector.
+ <dt> o 
+    <a href="#AppLinkInit(char*)"><b>AppLinkInit</b></a>(char*)
+<dd>  
+ <dt> o 
+    <a href="#AppLinkInit2(CATUnicodeString*)"><b>AppLinkInit2</b></a>(CATUnicodeString*)
+<dd>  Publish this connector to make it available for linking.
+ <dt> o 
+    <a href="#AppOpenLinkedDoc(CATUnicodeString&amp;,CATUnicodeString&amp;,CATDocument*&amp;)"><b>AppOpenLinkedDoc</b></a>(CATUnicodeString&amp;,CATUnicodeString&amp;,CATDocument*&amp;)
+<dd>  Open a linked document.
+ <dt> o 
+    <a href="#AppUnLink(int)"><b>AppUnLink</b></a>(int)
+<dd>  Remove external link to another connector.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATEASchAppCntrDocLink"></a><a name="CATEASchAppCntrDocLink()"></a> <dt> o <b>CATEASchAppCntrDocLink</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATEASchAppCntrDocLink</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs an empty CATEASchAppCntrDocLink.
+</dl>
+<a name="~CATEASchAppCntrDocLink"></a><a name="~CATEASchAppCntrDocLink()"></a> <dt> o <b>~CATEASchAppCntrDocLink</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATEASchAppCntrDocLink</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AppGetLink"></a><a name="AppGetLink(CATIUnknownList**,CATICStringList**,char**)"></a> <dt> o <b>AppGetLink</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppGetLink</b>(<td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oLCntrs</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATICStringList','CATICStringList**')</script> <td><tt>oLDocumentNames</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('char','char**')</script> <td><tt>oPublicationName</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ 
+<dl>
+  <dt> <b>Deprecated:</b> 
+  <dd>  V5R15 
+ Use 
+<a href="#" onClick="openLink('CATEASchAppCntrDocLink','AppGetLink2');return false">CATEASchAppCntrDocLink.AppGetLink2</a> instead. Get a list of linked connector(s) and its document names or publication
+ name.
+ 
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLCntrs</tt>
+   <dd>   A list of connectors that are linked to this connector.
+ </dd>
+    <dt><tt> oLDocumentNames</tt>
+   <dd>   A list of document names containing the linked connector.
+ </dd>
+    <dt><tt> oPublicationName</tt>
+   <dd>   The publication name of the connector(s) linked to this connector.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppGetLink2"></a><a name="AppGetLink2(CATIUnknownList**,CATListOfCATUnicodeString&amp;,CATUnicodeString&amp;)"></a> <dt> o <b>AppGetLink2</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppGetLink2</b>(<td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oLCntrs</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListOfCATUnicodeString','CATListOfCATUnicodeString&amp;')</script> <td><tt>oLDocumentNames</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oPublicationName</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Get a list of linked connector(s) and its document names or publication
+ name.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLCntrs</tt>
+   <dd>   A list of connectors that are linked to this connector.
+ </dd>
+    <dt><tt> oLDocumentNames</tt>
+   <dd>   A list of document names containing the linked connector.
+ </dd>
+    <dt><tt> oPublicationName</tt>
+   <dd>   The publication name of the connector(s) linked to this connector.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppGetLinkedDocs"></a><a name="AppGetLinkedDocs(CATUnicodeString&amp;,CATListOfCATUnicodeString&amp;,CATListOfCATUnicodeString&amp;,CATListOfInt&amp;,CATLISTP(IUnknown)&amp;)"></a> <dt> o <b>AppGetLinkedDocs</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppGetLinkedDocs</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oPublicationName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListOfCATUnicodeString','CATListOfCATUnicodeString&amp;')</script> <td><tt>oLDocumentName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListOfCATUnicodeString','CATListOfCATUnicodeString&amp;')</script> <td><tt>oLDocumentUuid</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListOfInt','CATListOfInt&amp;')</script> <td><tt>oLOpenStatus</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTP(IUnknown)','CATLISTP(IUnknown)&amp;')</script> <td><tt>oLCntr</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Get a list of linked connectors, their documents' names, uuids, and
+ 'open in session' statuses, and a publication name of the connectors.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oPublicationName</tt>
+   <dd>   The publication name of the connector(s) linked to this connector.
+ </dd>
+    <dt><tt> oLDocumentName</tt>
+   <dd>   A list of document names of the documents containing the linked connector(s).
+ </dd>
+    <dt><tt> oLDocumentUuid</tt>
+   <dd>   A list of document UUIDs of the documents containing the linked connector(s).
+ </dd>
+    <dt><tt> oLOpenStatus</tt>
+   <dd>   A list of integer flags specifying whether a linked document is open 
+   in the session or not (1 - yes; 0 - no).
+ </dd>
+    <dt><tt> oLCntr</tt>
+   <dd>   A list of connectors that are linked to this connector. Release every
+   member (AddRef has been done).
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppIsLinkable"></a><a name="AppIsLinkable(CATISchAppConnector*,CATBoolean*)"></a> <dt> o <b>AppIsLinkable</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppIsLinkable</b>(<td> const <script type="text/javascript"> activateLink('CATISchAppConnector','CATISchAppConnector*')</script> <td><tt>iSchConnector</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean*')</script> <td><tt>oBYes</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Query whether this connector and input connector can be linked.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSchConnector</tt>
+   <dd>   The connector to link to.
+ </dd>
+    <dt><tt> oBYes</tt>
+   <dd>   If TRUE, connectors can be linked.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppLink"></a><a name="AppLink(CATISchAppConnector*)"></a> <dt> o <b>AppLink</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppLink</b>(<td> const <script type="text/javascript"> activateLink('CATISchAppConnector','CATISchAppConnector*')</script> <td><tt>iSchConnector</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Create an external link to another connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSchConnector</tt>
+   <dd>   The connector to link to.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppLinkInit"></a><a name="AppLinkInit(char*)"></a> <dt> o <b>AppLinkInit</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppLinkInit</b>(<td> const <script type="text/javascript"> activateLink('char','char*')</script> <td><tt>iPublicationName</tt><td><tt>= NULL</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ 
+<dl>
+  <dt> <b>Deprecated:</b> 
+  <dd>  V5R15 
+ Use 
+<a href="#" onClick="openLink('CATISchAppCntrDocLink','AppLinkInit2');return false">CATISchAppCntrDocLink.AppLinkInit2</a> instead. Publish this connector to make it available for linking.
+ 
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPublicationName</tt>
+   <dd>   The publication name of connector.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppLinkInit2"></a><a name="AppLinkInit2(CATUnicodeString*)"></a> <dt> o <b>AppLinkInit2</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppLinkInit2</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString*')</script> <td><tt>iPublicationName</tt><td><tt>= NULL</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Publish this connector to make it available for linking.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPublicationName</tt>
+   <dd>   The publication name of connector.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppOpenLinkedDoc"></a><a name="AppOpenLinkedDoc(CATUnicodeString&amp;,CATUnicodeString&amp;,CATDocument*&amp;)"></a> <dt> o <b>AppOpenLinkedDoc</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppOpenLinkedDoc</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iDocumentName</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iDocumentUuid</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATDocument','CATDocument*&amp;')</script> <td><tt>oDocument</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Open a linked document.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDocumentName</tt>
+   <dd>   Name of the document (from oLDocumentName list in AppGetLinkedDocs()).
+ </dd>
+    <dt><tt> iDocumentUuid</tt>
+   <dd>   Uuid of the document (from oLDocumentUuid list in AppGetLinkedDocs()).
+ </dd>
+    <dt><tt> oDocument</tt>
+   <dd>   Pointer to the document. Do not release (no AddRef is done).
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppUnLink"></a><a name="AppUnLink(int)"></a> <dt> o <b>AppUnLink</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppUnLink</b>(<td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iUnpublish</tt><td><tt>= 0</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Remove external link to another connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iUnpublish</tt>
+   <dd>   iUnpublish = 0, do not delete publication connector (default)
+   iUnpublish > 0, delete publication connector
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATEASchAppCntrDocLink.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATSchItfCPP</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

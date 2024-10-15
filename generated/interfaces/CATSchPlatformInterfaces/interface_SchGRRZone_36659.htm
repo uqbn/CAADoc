@@ -1,0 +1,155 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchGRRZone (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchGRRZone','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchGRRZone','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchGRRZone','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchGRRZone','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchGRRZone<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchGRRZone_36659','SchGRRZone','0');</script>
+<b><i>  Manage the graphical representation of a schematic zone.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddBoundaryElement"><b>AddBoundaryElement</b></a>
+<dd>  Add a boundary element to the zone.
+ <dt>
+    <a href="#IsBoundaryValid"><b>IsBoundaryValid</b></a>
+<dd>  Check whether the boundary of this zone graphical representation is valid.
+ <dt>
+    <a href="#ListBoundaryElements"><b>ListBoundaryElements</b></a>
+<dd>  List all boundary elements of this zone graphical representation.
+ <dt>
+    <a href="#RemoveBoundaryElement"><b>RemoveBoundaryElement</b></a>
+<dd>  Remove a boundary element to the zone.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddBoundaryElement"><dt>
+
+<table><tr><td>o Sub <b>AddBoundaryElement</b>(<td><script type="text/javascript"> activateLink('SchBoundaryElem','SchBoundaryElem')</script> <td><tt>iZoneBndyToAdd</tt>)</table></dt>
+<dl>
+  <dd>
+ Add a boundary element to the zone.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iZoneBndy</tt>
+   <dd>   The geometric boundary elements to be added.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRZone
+ Dim objArg1 As SchBoundaryElem
+  ...
+ objThisIntf.<font color="red">AddBoundaryElement</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+<a name="IsBoundaryValid"><dt>
+
+<table><tr><td>o Sub <b>IsBoundaryValid</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>BIsValid</tt>)</table></dt>
+<dl>
+  <dd>
+ Check whether the boundary of this zone graphical representation is valid.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLZoneBndy</tt>
+   <dd>   Set to TRUE if the boundary is a closed polygon
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRZone
+ Dim bVar1 As boolean
+  ...
+ objThisIntf.<font color="red">IsBoundaryValid</font>bVar1
+ </pre>
+
+</dl>
+</dl>
+<a name="ListBoundaryElements"><dt>
+
+<table><tr><td>o Func <b>ListBoundaryElements</b>(<td>) As <script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> </table></dt>
+<dl>
+  <dd>
+ List all boundary elements of this zone graphical representation.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLZoneBndy</tt>
+   <dd>   List of geometric boundaries of this zone graphical representation
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRZone
+ Dim objArg1 As SchListOfObjects
+  ...
+ Set objArg1 = objThisIntf.<font color="red">ListBoundaryElements</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="RemoveBoundaryElement"><dt>
+
+<table><tr><td>o Sub <b>RemoveBoundaryElement</b>(<td><script type="text/javascript"> activateLink('SchBoundaryElem','SchBoundaryElem')</script> <td><tt>iZoneBndyToRemove</tt>)</table></dt>
+<dl>
+  <dd>
+ Remove a boundary element to the zone.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iZoneBndy</tt>
+   <dd>   The geometric boundary elements to be added.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRZone
+ Dim objArg1 As SchBoundaryElem
+  ...
+ objThisIntf.<font color="red">RemoveBoundaryElement</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

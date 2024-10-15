@@ -1,0 +1,245 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>StructureInterfaces PathESSRessourcesSettingAtt (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../StructureInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('PathESSRessourcesSettingAtt','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PathESSRessourcesSettingAtt','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('PathESSRessourcesSettingAtt','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PathESSRessourcesSettingAtt','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PathESSRessourcesSettingAtt<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_PathESSRessourcesSettingAtt_58122','PathESSRessourcesSettingAtt','0');</script>
+<b><i>   The interface to access a CATIAPathESSRessourcesSettingAtt.</i></b><br>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#ResolvedSectionsPath"><b>ResolvedSectionsPath</b></a>
+<dd>  Returns or sets the ResolvedSectionsPath parameter.
+ <dt>
+    <a href="#SectionsCatalogPath"><b>SectionsCatalogPath</b></a>
+<dd>  Returns or sets the SectionsCatalogPath parameter.
+ <dt>
+    <a href="#ThicknessListPath"><b>ThicknessListPath</b></a>
+<dd>  Returns or sets the ThicknessListPath parameter.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetResolvedSectionsPathInfo"><b>GetResolvedSectionsPathInfo</b></a>
+<dd>   Retrieves environment informations for the ResolvedSectionsPath parameter.
+ <dt>
+    <a href="#GetSectionsCatalogPathInfo"><b>GetSectionsCatalogPathInfo</b></a>
+<dd>   Retrieves environment informations for the SectionsCatalogPath parameter.
+ <dt>
+    <a href="#GetThicknessListPathInfo"><b>GetThicknessListPathInfo</b></a>
+<dd>   Retrieves environment informations for the ThicknessListPath parameter.
+ <dt>
+    <a href="#SetResolvedSectionsPathLock"><b>SetResolvedSectionsPathLock</b></a>
+<dd>  Locks or unlocks the ResolvedSectionsPath parameter.
+ <dt>
+    <a href="#SetSectionsCatalogPathLock"><b>SetSectionsCatalogPathLock</b></a>
+<dd>  Locks or unlocks the SectionsCatalogPath parameter.
+ <dt>
+    <a href="#SetThicknessListPathLock"><b>SetThicknessListPathLock</b></a>
+<dd>  Locks or unlocks the ThicknessListPath parameter.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="ResolvedSectionsPath"><dt>
+
+<table><tr><td>o Property <b>ResolvedSectionsPath</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the ResolvedSectionsPath parameter.
+ <p>
+ Ensure consistency with the C++ interface to which the work is delegated.
+</dl>
+<a name="SectionsCatalogPath"><dt>
+
+<table><tr><td>o Property <b>SectionsCatalogPath</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the SectionsCatalogPath parameter.
+ <p>
+ Ensure consistency with the C++ interface to which the work is delegated.
+</dl>
+<a name="ThicknessListPath"><dt>
+
+<table><tr><td>o Property <b>ThicknessListPath</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the ThicknessListPath parameter.
+ <p>
+ Ensure consistency with the C++ interface to which the work is delegated.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetResolvedSectionsPathInfo"><dt>
+
+<table><tr><td>o Func <b>GetResolvedSectionsPathInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioAdminLevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioLocked</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+  Retrieves environment informations for the ResolvedSectionsPath parameter.
+ <br><b>Role</b>:Retrieves the state of the ResolvedSectionsPath parameter 
+ in the current environment. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioAdminLevel</tt>
+   <dd>       <br>If the parameter is locked, AdminLevel gives the administration
+       level that imposes the value of the parameter.
+	 <br>If the parameter is not locked, AdminLevel gives the administration
+       level that will give the value of the parameter after a reset.
+ </dd>
+    <dt><tt> ioLocked</tt>
+   <dd>      Indicates if the parameter has been locked.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>        Indicates if the parameter has been explicitly modified or remain
+      to the administrated value.
+</dl>
+</dl>
+<a name="GetSectionsCatalogPathInfo"><dt>
+
+<table><tr><td>o Func <b>GetSectionsCatalogPathInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioAdminLevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioLocked</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+  Retrieves environment informations for the SectionsCatalogPath parameter.
+ <br><b>Role</b>:Retrieves the state of the SectionsCatalogPath parameter 
+ in the current environment. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioAdminLevel</tt>
+   <dd>       <br>If the parameter is locked, AdminLevel gives the administration
+       level that imposes the value of the parameter.
+	 <br>If the parameter is not locked, AdminLevel gives the administration
+       level that will give the value of the parameter after a reset.
+ </dd>
+    <dt><tt> ioLocked</tt>
+   <dd>      Indicates if the parameter has been locked.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>        Indicates if the parameter has been explicitly modified or remain
+      to the administrated value.
+</dl>
+</dl>
+<a name="GetThicknessListPathInfo"><dt>
+
+<table><tr><td>o Func <b>GetThicknessListPathInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioAdminLevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioLocked</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+  Retrieves environment informations for the ThicknessListPath parameter.
+ <br><b>Role</b>:Retrieves the state of the ThicknessListPath parameter 
+ in the current environment. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioAdminLevel</tt>
+   <dd>       <br>If the parameter is locked, AdminLevel gives the administration
+       level that imposes the value of the parameter.
+	 <br>If the parameter is not locked, AdminLevel gives the administration
+       level that will give the value of the parameter after a reset.
+ </dd>
+    <dt><tt> ioLocked</tt>
+   <dd>      Indicates if the parameter has been locked.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>        Indicates if the parameter has been explicitly modified or remain
+      to the administrated value.
+</dl>
+</dl>
+<a name="SetResolvedSectionsPathLock"><dt>
+
+<table><tr><td>o Sub <b>SetResolvedSectionsPathLock</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLocked</tt>)</table></dt>
+<dl>
+  <dd>
+ Locks or unlocks the ResolvedSectionsPath parameter.
+ <br><b>Role</b>:Locks or unlocks the ResolvedSectionsPath parameter if it is possible
+ in the current administrative context. In user mode this method will always
+ return E_FAIL.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLocked</tt>
+   <dd>	the locking operation to be performed
+	<b>Legal values</b>:
+	<br><tt>TRUE :</tt>   to lock the parameter.
+ 	<br><tt>FALSE:</tt>   to unlock the parameter.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetSectionsCatalogPathLock"><dt>
+
+<table><tr><td>o Sub <b>SetSectionsCatalogPathLock</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLocked</tt>)</table></dt>
+<dl>
+  <dd>
+ Locks or unlocks the SectionsCatalogPath parameter.
+ <br><b>Role</b>:Locks or unlocks the SectionsCatalogPath parameter if it is possible
+ in the current administrative context. In user mode this method will always
+ return E_FAIL.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLocked</tt>
+   <dd>	the locking operation to be performed
+	<b>Legal values</b>:
+	<br><tt>TRUE :</tt>   to lock the parameter.
+ 	<br><tt>FALSE:</tt>   to unlock the parameter.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetThicknessListPathLock"><dt>
+
+<table><tr><td>o Sub <b>SetThicknessListPathLock</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLocked</tt>)</table></dt>
+<dl>
+  <dd>
+ Locks or unlocks the ThicknessListPath parameter.
+ <br><b>Role</b>:Locks or unlocks the ThicknessListPath parameter if it is possible
+ in the current administrative context. In user mode this method will always
+ return E_FAIL.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLocked</tt>
+   <dd>	the locking operation to be performed
+	<b>Legal values</b>:
+	<br><tt>TRUE :</tt>   to lock the parameter.
+ 	<br><tt>FALSE:</tt>   to unlock the parameter.</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

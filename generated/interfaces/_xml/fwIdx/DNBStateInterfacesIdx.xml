@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="DNBStateInterfaces" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="1" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="DNB3DState" initial="D" htmlFileName="interface_DNB3DState_23720" fatherClass="AnyObject" fatherId="9080" DSCharacteristic="interface" id="23720" abstract="Interface representing the 3D State object." />
+<method name="Add3DPosition" htmlFileName="interface_DNB3DState_23720" containerName="DNB3DState" containerType="interface" id="35073" status="0" isProperty="0" initial="A" argList="" abstract="Adds the specified 3D Position to the given  
+ 3D state as a child." />
+<method name="Add3DState" htmlFileName="interface_DNB3DState_23720" containerName="DNB3DState" containerType="interface" id="31354" status="0" isProperty="0" initial="A" argList="" abstract="Adds the specified 3D state to the given 
+ 3D state as a child." />
+<method name="Assign3DState" htmlFileName="interface_DNB3DState_23720" containerName="DNB3DState" containerType="interface" id="34572" status="0" isProperty="0" initial="A" argList="" abstract="Assigns the 3D state to a specified process, based on the given condition." />
+<method name="GetChildren" htmlFileName="interface_DNB3DState_23720" containerName="DNB3DState" containerType="interface" id="32746" status="0" isProperty="0" initial="G" argList="" abstract="Returns the list of all the 3D states  or 3D positions 
+ or both, managed by the given 3D state." />
+<method name="GetConditionName" htmlFileName="interface_DNB3DState_23720" containerName="DNB3DState" containerType="interface" id="39296" status="0" isProperty="0" initial="G" argList="" abstract="Returns the condition type on which the 3D State has been assigned 
+ to a specified activity." />
+<method name="GetNumberOfChildren" htmlFileName="interface_DNB3DState_23720" containerName="DNB3DState" containerType="interface" id="44403" status="0" isProperty="0" initial="G" argList="" abstract="Returns the number of 3D states  or 3D positions 
+ or both, managed by the given 3D state." />
+<method name="GetNumberofRelatedActivities" htmlFileName="interface_DNB3DState_23720" containerName="DNB3DState" containerType="interface" id="66467" status="0" isProperty="0" initial="G" argList="" abstract="Returns the number of activities/processes associated with the 3D State based on 
+ the condition on which the state has been assigned." />
+<method name="GetParent" htmlFileName="interface_DNB3DState_23720" containerName="DNB3DState" containerType="interface" id="30837" status="0" isProperty="0" initial="G" argList="" abstract="" />
+<method name="GetRelatedActivities" htmlFileName="interface_DNB3DState_23720" containerName="DNB3DState" containerType="interface" id="46994" status="0" isProperty="0" initial="G" argList="" abstract="Returns the list of activities/processes associated with the 3D State based on 
+ the condition on which the state has been assigned." />
+<method name="GetRelatedObject" htmlFileName="interface_DNB3DState_23720" containerName="DNB3DState" containerType="interface" id="39206" status="0" isProperty="0" initial="G" argList="" abstract="Returns the product/resource/MA/ASTMA on which the given state is being defined." />
+<method name="Remove3DPosition" htmlFileName="interface_DNB3DState_23720" containerName="DNB3DState" containerType="interface" id="39318" status="0" isProperty="0" initial="R" argList="" abstract="" />
+<method name="Remove3DState" htmlFileName="interface_DNB3DState_23720" containerName="DNB3DState" containerType="interface" id="34579" status="0" isProperty="0" initial="R" argList="" abstract="" />
+<method name="Unassign3DState" htmlFileName="interface_DNB3DState_23720" containerName="DNB3DState" containerType="interface" id="37236" status="0" isProperty="0" initial="U" argList="" abstract="Unassigns the 3D state from a specified process." />
+<method name="StateName" htmlFileName="interface_DNB3DState_23720" containerName="DNB3DState" containerType="interface" id="30607" status="96" isProperty="1" initial="S" argList="" abstract="Returns or sets the Name of the 3D State." />
+<class name="DNB3DStateManagement" initial="D" htmlFileName="interface_DNB3DStateManagement_38740" fatherClass="AnyObject" fatherId="9080" DSCharacteristic="interface" id="38740" abstract="Interface representing the 3D State Management in the CATDocument." />
+<method name="Create3DState" htmlFileName="interface_DNB3DStateManagement_38740" containerName="DNB3DStateManagement" containerType="interface" id="49546" status="0" isProperty="0" initial="C" argList="" abstract="" />
+<method name="Delete3DState" htmlFileName="interface_DNB3DStateManagement_38740" containerName="DNB3DStateManagement" containerType="interface" id="49559" status="0" isProperty="0" initial="D" argList="" abstract="" />
+<method name="Get3DState" htmlFileName="interface_DNB3DStateManagement_38740" containerName="DNB3DStateManagement" containerType="interface" id="46407" status="0" isProperty="0" initial="G" argList="" abstract="  Returns the 3D State object given its name and the object(Resource/MA/Product." />
+<method name="GetNumberOf3DStates" htmlFileName="interface_DNB3DStateManagement_38740" containerName="DNB3DStateManagement" containerType="interface" id="58718" status="0" isProperty="0" initial="G" argList="" abstract="" />
+<method name="GetNumberOf3DStatesOnObject" htmlFileName="interface_DNB3DStateManagement_38740" containerName="DNB3DStateManagement" containerType="interface" id="76587" status="0" isProperty="0" initial="G" argList="" abstract="  Returns the number of 3D State objects on a given object(Resource/MA/Product." />
+<method name="GetNumberof3DStatesInActivity" htmlFileName="interface_DNB3DStateManagement_38740" containerName="DNB3DStateManagement" containerType="interface" id="83524" status="0" isProperty="0" initial="G" argList="" abstract="  Returns the number of 3D states assigned to the given activity, based 
+  on the condition on which the activity has been assigned to the 3D state." />
+<method name="List3DStatesInActivity" htmlFileName="interface_DNB3DStateManagement_38740" containerName="DNB3DStateManagement" containerType="interface" id="65976" status="0" isProperty="0" initial="L" argList="" abstract="  Returns the list of 3D states assigned to the given activity, based 
+  on the condition on which the activity has been assigned to the 3D state." />
+<method name="ListAll3DStates" htmlFileName="interface_DNB3DStateManagement_38740" containerName="DNB3DStateManagement" containerType="interface" id="52343" status="0" isProperty="0" initial="L" argList="" abstract="" />
+<method name="ListAll3DStatesOnObject" htmlFileName="interface_DNB3DStateManagement_38740" containerName="DNB3DStateManagement" containerType="interface" id="67060" status="0" isProperty="0" initial="L" argList="" abstract="  Returns the list of all 3D State objects on a given object(Resource/MA/Product." />
+<class name="DNB3DStates" initial="D" htmlFileName="interface_DNB3DStates_24870" fatherClass="Collection" fatherId="10201" DSCharacteristic="interface" id="24870" abstract="Interface representing the collection of 3D State objects." />
+<method name="Item" htmlFileName="interface_DNB3DStates_24870" containerName="DNB3DStates" containerType="interface" id="28797" status="0" isProperty="0" initial="I" argList="" abstract="Returns the 3D state object." />
+<method name="StatesCount" htmlFileName="interface_DNB3DStates_24870" containerName="DNB3DStates" containerType="interface" id="34054" status="32" isProperty="1" initial="S" argList="" abstract="Returns the number of 3D State objects in the collection." />
+</fw>

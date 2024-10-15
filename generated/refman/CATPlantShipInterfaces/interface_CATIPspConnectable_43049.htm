@@ -1,0 +1,254 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATPlantShipInterfaces Interface CATIPspConnectable</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATPlantShipInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIPspConnectable','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPspConnectable','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIPspConnectable','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPspConnectable','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATPlantShipInterfaces Interface CATIPspConnectable</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIPspConnectable_43049','CATIPspConnectable','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIPspConnectable</b>
+</p>
+<p>
+<b><i> Interface to manage object behaviors in making connections.</i></b><br>
+ 
+ <b>Role</b>: To specify object behaviors such as
+ adding a connector and removing a connector.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetConnector(CATUnicodeString&amp;,CATIPspConnector**)"><b>GetConnector</b></a>(CATUnicodeString&amp;,CATIPspConnector**)
+<dd>  Find a connector with the given name.
+ <dt> o 
+    <a href="#ListConnectables(CATICStringList*,CATIUnknownList**,CATIUnknownList**,CATIUnknownList**)"><b>ListConnectables</b></a>(CATICStringList*,CATIUnknownList**,CATIUnknownList**,CATIUnknownList**)
+<dd>  Find all the objects connected to this object through
+ their connectors.
+ <dt> o 
+    <a href="#ListConnectables(CATICStringList*,CATICStringList*,CATICStringList*,CATIUnknownList**,CATIUnknownList**,CATIUnknownList**)"><b>ListConnectables</b></a>(CATICStringList*,CATICStringList*,CATICStringList*,CATIUnknownList**,CATIUnknownList**,CATIUnknownList**)
+<dd>  Find all the objects connected to this object through
+ their connectors subject to class filters.
+ <dt> o 
+    <a href="#ListConnectors(CATICStringList*,CATIUnknownList**)"><b>ListConnectors</b></a>(CATICStringList*,CATIUnknownList**)
+<dd>  Find all the connectors of this object.
+ <dt> o 
+    <a href="#ListValidCntrTypes(CATICStringList**)"><b>ListValidCntrTypes</b></a>(CATICStringList**)
+<dd>  List the valid application connector types allowed to be created.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetConnector"></a><a name="GetConnector(CATUnicodeString&amp;,CATIPspConnector**)"></a> <dt> o <b>GetConnector</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetConnector</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iConnectorName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIPspConnector','CATIPspConnector**')</script> <td><tt>oCntr</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Find a connector with the given name. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iConnectorName</tt>
+   <dd>   Connector name to look for.
+ </dd>
+    <dt><tt> oCntr</tt>
+   <dd> [out, IUnknown#Release]   Connector with given name. 
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="ListConnectables"></a><a name="ListConnectables(CATICStringList*,CATIUnknownList**,CATIUnknownList**,CATIUnknownList**)"></a> <dt> o <b>ListConnectables</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ListConnectables</b>(<td><script type="text/javascript"> activateLink('CATICStringList','CATICStringList*')</script> <td><tt>iLCntbleClassFilter</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oLCntbles</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oLCntrsOnThisObj</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oLCntrsOnConnected</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Find all the objects connected to this object through
+ their connectors.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLCntbleClassFilter</tt>
+   <dd>   A list of all the class types for filtering the output 
+   objects list. If NULL, then no filtering is done.
+ </dd>
+    <dt><tt> oLCntbles</tt>
+   <dd> [out, IUnknown#Release]   A list of objects connected to this object.
+   (members are CATIPspConnectable interface pointers). 
+ </dd>
+    <dt><tt> oLCntrsOnThisObj</tt>
+   <dd> [out, IUnknown#Release]   A list of connectors on this object through which 
+   the connection is made.
+   (members are CATIPspConnector interface pointers).
+ </dd>
+    <dt><tt> oLCntrsOnConnected</tt>
+   <dd> [out, IUnknown#Release]   A list of connectors on the connected objects through which 
+   the connection is made.
+   (members are CATIPspConnector interface pointers).
+   Members in this list corresponds to those in oLCntrsOnThisObj in
+   making the corresponding connections.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="ListConnectables"></a><a name="ListConnectables(CATICStringList*,CATICStringList*,CATICStringList*,CATIUnknownList**,CATIUnknownList**,CATIUnknownList**)"></a> <dt> o <b>ListConnectables</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ListConnectables</b>(<td><script type="text/javascript"> activateLink('CATICStringList','CATICStringList*')</script> <td><tt>iLCntbleClassFilter</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATICStringList','CATICStringList*')</script> <td><tt>iLCntrsClassFilter</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATICStringList','CATICStringList*')</script> <td><tt>iLCnxsClassFilter</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oLCntbles</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oLCntrsOnThisObj</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oLCntrsOnConnected</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Find all the objects connected to this object through
+ their connectors subject to class filters.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLCntbleClassFilter</tt>
+   <dd>   A list of all the class types for filtering the output 
+   connectable objects list.
+ </dd>
+    <dt><tt> iLCntrsClassFilter</tt>
+   <dd>   A list of all the class types for filtering the output 
+   connector objects list.
+ </dd>
+    <dt><tt> iLCnxsClassFilter</tt>
+   <dd>   A list of all the class types for filtering the output 
+   other connector objects list.
+ </dd>
+    <dt><tt> oLCntbles</tt>
+   <dd> [out, IUnknown#Release]   A list of objects connected to this object.
+   (members are CATIPspConnectable interface pointers). 
+ </dd>
+    <dt><tt> oLCntrsOnThisObj</tt>
+   <dd> [out, IUnknown#Release]   A list of connectors on this object through which 
+   the connection is made.
+   (members are CATIPspConnector interface pointers).
+ </dd>
+    <dt><tt> oLCntrsOnConnected</tt>
+   <dd> [out, IUnknown#Release]   A list of connectors on the connected objects through which 
+   the connection is made.
+   (members are CATIPspConnector interface pointers).
+   Members in this list corresponds to those in oLCntrsOnThisObj in
+   making the corresponding connections.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="ListConnectors"></a><a name="ListConnectors(CATICStringList*,CATIUnknownList**)"></a> <dt> o <b>ListConnectors</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ListConnectors</b>(<td><script type="text/javascript"> activateLink('CATICStringList','CATICStringList*')</script> <td><tt>iLCntrClassFilter</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oLCntrs</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Find all the connectors of this object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLCntrClassFilter</tt>
+   <dd>    A list of all the class types for filtering the output connector
+   list.
+ </dd>
+    <dt><tt> oLCntrs</tt>
+   <dd> [out, IUnknown#Release]   A list of connectors included in this connection.
+   (members are CATIPspConnector interface pointers).
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="ListValidCntrTypes"></a><a name="ListValidCntrTypes(CATICStringList**)"></a> <dt> o <b>ListValidCntrTypes</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ListValidCntrTypes</b>(<td><script type="text/javascript"> activateLink('CATICStringList','CATICStringList**')</script> <td><tt>oLValidCntrTypes</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ List the valid application connector types allowed to be created.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLValidCntrTypes</tt>
+   <dd> [out, IUnknown#Release]   A list of connector class types allowed.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIPspConnectable.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

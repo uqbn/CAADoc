@@ -1,0 +1,98 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ProductStructureInterfaces Publication (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../ProductStructureInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Publication','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Publication','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Publication','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Publication','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Publication<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Publication_43869','Publication','0');</script>
+<b><i>   The interface to access a CATIAPublication.</i></b><br>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Relay"><b>Relay</b></a>
+<dd>  Valuates a publication object with another publication object.
+ <dt>
+    <a href="#Valuation"><b>Valuation</b></a>
+<dd>  Returns published object.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Relay"><dt>
+
+<table><tr><td>o Property <b>Relay</b>(<td><script type="text/javascript"> activateLink('Publication','Publication')</script> <td><tt>iPub</tt>) (Write Only)</table></dt>
+<dl>
+  <dd>
+ Valuates a publication object with another publication object.
+ <b> Role: </b> This method allows to valuate a publication with an intermediate one.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPub</tt>
+   <dd>      The intermediate publication object
+ <!@sample>
+ <dl>
+ <dt> <b>Example: </b>
+ The following example valuates the publication object <tt>Pub1</tt> 
+ with the publication object <tt>Pub2</tt>
+ <pre>
+ Pub1.<font color="red">Relay</font>(Pub2)
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="Valuation"><dt>
+
+<table><tr><td>o Property <b>Valuation</b>(<td>) As <script type="text/javascript"> activateLink('CATBaseDispatch','CATBaseDispatch')</script> </table></dt>
+<dl>
+  <dd>
+ Returns published object.
+ <b> Role: </b> This method gives access to the finally published object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oRef</tt>
+   <dd>      The final reference of the publication object.
+ <!@sample>
+ <dl>
+ <dt> <b>Example: </b>
+ This example returns the final reference <tt>Ref</tt> 
+ of the publication object <tt>Pub1</tt>.
+ <pre>
+ Dim Ref As Reference
+ Ref = Pub1.<font color="red">Valuation
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

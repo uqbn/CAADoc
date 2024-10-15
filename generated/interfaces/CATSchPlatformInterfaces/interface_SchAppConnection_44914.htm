@@ -1,0 +1,175 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchAppConnection (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchAppConnection','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppConnection','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchAppConnection','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppConnection','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchAppConnection<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchAppConnection_44914','SchAppConnection','0');</script>
+<b><i>  Manage a schematic connection.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AppAddConnector"><b>AppAddConnector</b></a>
+<dd>  Add a connector.
+ <dt>
+    <a href="#AppListConnectables"><b>AppListConnectables</b></a>
+<dd>  Find all the application object connected to this connection through
+ their connectors.
+ <dt>
+    <a href="#AppListConnectors"><b>AppListConnectors</b></a>
+<dd>  Find all the connectors included in this connection.
+ <dt>
+    <a href="#AppRemoveConnector"><b>AppRemoveConnector</b></a>
+<dd>  Remove a connector.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AppAddConnector"><dt>
+
+<table><tr><td>o Sub <b>AppAddConnector</b>(<td><script type="text/javascript"> activateLink('SchAppConnector','SchAppConnector')</script> <td><tt>iCntrToAdd</tt>)</table></dt>
+<dl>
+  <dd>
+ Add a connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCntrToAdd</tt>
+   <dd>   The Application Connector to be added to the 
+   connection
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppConnection
+ Dim objArg1 As SchAppConnector
+  ...
+ objThisIntf.<font color="red">AppAddConnector</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+<a name="AppListConnectables"><dt>
+
+<table><tr><td>o Sub <b>AppListConnectables</b>(<td><script type="text/javascript"> activateLink('SchListOfBSTRs','SchListOfBSTRs')</script> <td><tt>iLCntbleClassFilter</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>oLCntbles</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>oLCntrs</tt>)</table></dt>
+<dl>
+  <dd>
+ Find all the application object connected to this connection through
+ their connectors.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLCntrClassFilter</tt>
+   <dd>   A list of all the class types for filtering the output application
+   objects list.
+ </dd>
+    <dt><tt> oLCntbles</tt>
+   <dd>   A list of application objects connected to this connection.
+   (members are CATISchAppConnectable interface pointers). 
+ </dd>
+    <dt><tt> oLCntrs</tt>
+   <dd>   A list of connectors through which this connection is made.
+   (members are CATISchAppConnector interface pointers).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppConnection
+ Dim objArg1 As SchListOfBSTRs
+ Dim objArg2 As SchListOfObjects
+ Dim objArg3 As SchListOfObjects
+  ...
+ objThisIntf.<font color="red">AppListConnectables</font>objArg1,objArg2,objArg3
+ </pre>
+
+</dl>
+</dl>
+<a name="AppListConnectors"><dt>
+
+<table><tr><td>o Func <b>AppListConnectors</b>(<td><script type="text/javascript"> activateLink('SchListOfBSTRs','SchListOfBSTRs')</script> <td><tt>iLCntrClassFilter</tt>) As <script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> </table></dt>
+<dl>
+  <dd>
+ Find all the connectors included in this connection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLCntrClassFilter</tt>
+   <dd>   A list of all the class types for filtering the output connector
+   list.
+ </dd>
+    <dt><tt> oLCntrs</tt>
+   <dd>   A list of connectors included in this connection.
+   (members are CATISchAppConnector interface pointers).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppConnection
+ Dim objArg1 As SchListOfBSTRs
+ Dim objArg2 As SchListOfObjects
+  ...
+ Set objArg2 = objThisIntf.<font color="red">AppListConnectors</font>(objArg1)
+ </pre>
+
+</dl>
+</dl>
+<a name="AppRemoveConnector"><dt>
+
+<table><tr><td>o Sub <b>AppRemoveConnector</b>(<td><script type="text/javascript"> activateLink('SchAppConnector','SchAppConnector')</script> <td><tt>iCntrToRemove</tt>)</table></dt>
+<dl>
+  <dd>
+ Remove a connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCntrToRemove</tt>
+   <dd>    The Application Connector to be removed 
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppConnection
+ Dim objArg1 As SchAppConnector
+  ...
+ objThisIntf.<font color="red">AppRemoveConnector</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

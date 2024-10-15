@@ -1,0 +1,85 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PartInterfaces Interface CATIMirror</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../PartInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMirror','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMirror','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMirror','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMirror','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PartInterfaces Interface CATIMirror</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMirror_17889','CATIMirror','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIMirror</b>
+</p>
+<p>
+<b><i> Interface to read or modify the mirror's specifications.</i></b><br>
+
+ <b>Role</b>: The mirror feature allows users to duplicate an original body according 
+ to a symmetry.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetPlane()"><b>GetPlane</b></a>()
+<dd>  Returns the mirroring element as a plane or face that specifies the mirror.
+ <dt> o 
+    <a href="#ModifyMirrorPlane(CATISpecObject_var&amp;)"><b>ModifyMirrorPlane</b></a>(CATISpecObject_var&amp;)
+<dd>   Sets the face or plane about which the body is mirrored.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetPlane"></a><a name="GetPlane()"></a> <dt> o <b>GetPlane</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject_var')</script>  <b>GetPlane</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the mirroring element as a plane or face that specifies the mirror.
+</dl>
+<a name="ModifyMirrorPlane"></a><a name="ModifyMirrorPlane(CATISpecObject_var&amp;)"></a> <dt> o <b>ModifyMirrorPlane</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>ModifyMirrorPlane</b>(<td> const <script type="text/javascript"> activateLink('CATISpecObject_var','CATISpecObject_var&amp;')</script> <td><tt>ihMirrorPlane</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Sets the face or plane about which the body is mirrored.
+  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ihMirrorPlane</tt>
+   <dd>    The face or plane that specifies the mirroring element.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMirror.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATPartInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

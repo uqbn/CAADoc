@@ -1,0 +1,157 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisResources Class CATEAnalysisEntityVisu</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisResources.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATEAnalysisEntityVisu','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEAnalysisEntityVisu','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATEAnalysisEntityVisu','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEAnalysisEntityVisu','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisResources Class CATEAnalysisEntityVisu</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATEAnalysisEntityVisu_45974','CATEAnalysisEntityVisu','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATEAnalysisEntityVisu</b>
+</p>
+<p>
+<b><i> Adapter for the implementation of CATISamEntityVisu interface.</i></b><br>
+
+ This adapter allow a BOA implementation.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATISamEntityVisu','');return false">CATISamEntityVisu</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATEAnalysisEntityVisu()"><b>CATEAnalysisEntityVisu</b></a>()
+<dd>  <dt> o 
+    <a href="#~CATEAnalysisEntityVisu()"><b>~CATEAnalysisEntityVisu</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#BuildEntityRep(int)"><b>BuildEntityRep</b></a>(int)
+<dd>  Build the entity graphical representation.
+ <dt> o 
+    <a href="#BuildHighlightLook(CATPathElement&amp;,CATRepPath&amp;)"><b>BuildHighlightLook</b></a>(CATPathElement&amp;,CATRepPath&amp;)
+<dd>  Builds step by step a path of graphical representations from a path of objects for (pre)highlight purposes.
+ <dt> o 
+    <a href="#DecodeGraphic(CATPickPath&amp;,CATPathElement&amp;)"><b>DecodeGraphic</b></a>(CATPickPath&amp;,CATPathElement&amp;)
+<dd>  Builds step by step a path of objects from a path of graphical representations.
+ <dt> o 
+    <a href="#ModifyRep(CATNotification&amp;)"><b>ModifyRep</b></a>(CATNotification&amp;)
+<dd>  Modifies the geometry or the graphical attributes of the object.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATEAnalysisEntityVisu"></a><a name="CATEAnalysisEntityVisu()"></a> <dt> o <b>CATEAnalysisEntityVisu</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATEAnalysisEntityVisu</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="~CATEAnalysisEntityVisu"></a><a name="~CATEAnalysisEntityVisu()"></a> <dt> o <b>~CATEAnalysisEntityVisu</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATEAnalysisEntityVisu</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="BuildEntityRep"></a><a name="BuildEntityRep(int)"></a> <dt> o <b>BuildEntityRep</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CAT3DBagRep','CAT3DBagRep *')</script>  <b>BuildEntityRep</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iEntityUpToDate</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Build the entity graphical representation.
+ By default, This method is the only on to be implemented
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEntityUpToDate</tt>
+   <dd> informs if the entity is UpToDate or not. </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  CAT3DBagRep An empty BagRep is created.
+</dl>
+</dl>
+<a name="BuildHighlightLook"></a><a name="BuildHighlightLook(CATPathElement&amp;,CATRepPath&amp;)"></a> <dt> o <b>BuildHighlightLook</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>BuildHighlightLook</b>(<td> const <script type="text/javascript"> activateLink('CATPathElement','CATPathElement&amp;')</script> <td><tt>iPathElt</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATRepPath','CATRepPath&amp;')</script> <td><tt>ioPathRep</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Builds step by step a path of graphical representations from a path of objects for (pre)highlight purposes.
+ <br><b>Role</b>: 
+ The same as @see CATExtIVisu#BuildRepPath but it is for (pre)highlight purposes only.
+ <font color="red">This implementation is used to complete the default behavior.</font>
+</dl>
+<a name="DecodeGraphic"></a><a name="DecodeGraphic(CATPickPath&amp;,CATPathElement&amp;)"></a> <dt> o <b>DecodeGraphic</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>DecodeGraphic</b>(<td> const <script type="text/javascript"> activateLink('CATPickPath','CATPickPath&amp;')</script> <td><tt>iPickPath</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATPathElement','CATPathElement&amp;')</script> <td><tt>ioPathElt</tt>)<script type="text/javascript"> activateLink('',' ')</script>  </table></dt>
+<dl>
+  <dd>
+ Builds step by step a path of objects from a path of graphical representations.
+ <br><b>Role</b>: 
+ This will be called in standard DS implementation of CATIVisu for Analysis entities.
+ <font color="red">This implementation returns E_NOTIMPL, and CATExtIVisu::DecodeGraphic is called.</font>
+</dl>
+<a name="ModifyRep"></a><a name="ModifyRep(CATNotification&amp;)"></a> <dt> o <b>ModifyRep</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>ModifyRep</b>(<td> const <script type="text/javascript"> activateLink('CATNotification','CATNotification&amp;')</script> <td><tt>iNotif</tt>)<script type="text/javascript"> activateLink('',' ')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the geometry or the graphical attributes of the object.
+ <br><b>Role</b>: this method is used to process all the notifications concerning 
+ visual changes for one object.
+
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  the status of the notification's processing. <br><b> Legal values</b>: the status is either
+ <ol><li> 0 when the input notification has not been processed. Then the default processing is applied </li>
+<li> 1 when the input notification has been processed. </li>
+ </ol>
+
+ 
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNotif</tt>
+   <dd> the input notification holding all the information we need in order to process it.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATEAnalysisEntityVisu.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisResources</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ObjectModelerBase Interface CATIReporterInfo</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ObjectModelerBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIReporterInfo','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIReporterInfo','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIReporterInfo','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIReporterInfo','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ObjectModelerBase Interface CATIReporterInfo</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIReporterInfo_29700','CATIReporterInfo','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIReporterInfo</b>
+</p>
+<p>
+<b><i> Interface to retrieve the data of an error information.</i></b><br>
+<BR>
+ An error information is an object created via the interface CATIReporter. It is stacked in
+ an internal list. Its data are a name and an error instance.<BR>
+ See <a href="#" onClick="openLink('CATIReporter','');return false">CATIReporter</a>.
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetAssociatedString(CATUnicodeString&amp;)"><b>GetAssociatedString</b></a>(CATUnicodeString&amp;)
+<dd>   Sets the given string to the string contained in the error information.
+ <dt> o 
+    <a href="#GetError(CATError*&amp;)"><b>GetError</b></a>(CATError*&amp;)
+<dd>   Gets the error associated with the error information.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetAssociatedString"></a><a name="GetAssociatedString(CATUnicodeString&amp;)"></a> <dt> o <b>GetAssociatedString</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetAssociatedString</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oStr</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Sets the given string to the string contained in the error information.
+ <BR><B>Role</B>: This method gets the string stored in the error information. It usually represents
+ the name of the object that has raised this error.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oStr</tt>
+   <dd> [out]   The given string.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok, otherwise <code>E_FAIL</code>.
+</dl>
+</dl>
+<a name="GetError"></a><a name="GetError(CATError*&amp;)"></a> <dt> o <b>GetError</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetError</b>(<td><script type="text/javascript"> activateLink('CATError','CATError*&amp;')</script> <td><tt>oError</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Gets the error associated with the error information.
+ <BR><B>Role</B>: This method sets the given oError to the error instance stored in the error information.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oError</tt>
+   <dd> [out]   The pointer on the error associated with the error information. Must be released.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok, otherwise <code>E_FAIL</code>.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIReporterInfo.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATObjectModelerBase</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

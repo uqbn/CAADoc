@@ -1,0 +1,58 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMOperatorsInterfaces Global Function CATCGMCreateSurDegreeModification</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMOperatorsInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>GMOperatorsInterfaces Global Function CATCGMCreateSurDegreeModification</h1>
+
+<br><dt><table><tr><td>  <script type="text/javascript"> activateLink('CATICGMSurDegreeModification',' CATICGMSurDegreeModification *')</script>  <b>CATCGMCreateSurDegreeModification</b>(<td><script type="text/javascript"> activateLink('CATGeoFactory','CATGeoFactory*')</script> <td><tt>ifactory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATNurbsSurface','CATNurbsSurface*')</script> <td><tt>iNurbsSurface</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATLONG32','CATLONG32&amp;')</script> <td><tt>iTargetDegreeU</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATLONG32','CATLONG32&amp;')</script> <td><tt>iTargetDegreeV</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('double','double')</script> <td><tt>iTolerance</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSkillValue','CATSkillValue')</script> <td><tt>iMode</tt><td><tt>= BASIC</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates the geometric operator that decreases the degree of a Nurbs curve.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFactory</tt>
+   <dd> The pointer to the factory of the geometry.
+ </dd>
+    <dt><tt> iNurbsCurve</tt>
+   <dd> The pointer to the curve to be converted.
+ </dd>
+    <dt><tt> iTargetDegreeU</tt>
+   <dd> The degree along U to be achieved.
+ </dd>
+    <dt><tt> iTargetDegreeV</tt>
+   <dd> The degree along V to be achieved.
+ </dd>
+    <dt><tt> iTolerance</tt>
+   <dd> The specified tolerance.
+ </dd>
+    <dt><tt> iMode</tt>
+   <dd> The mode of use.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  [out, IUnknown#Release] The pointer to the created operator. 
+ To be released with the <tt>Release</tt> method afer use.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATCGMCreateSurDegreeModification.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

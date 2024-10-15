@@ -1,0 +1,66 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMModelInterfaces Global Function CATCGMCreatePropagationEdge</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMModelInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>GMModelInterfaces Global Function CATCGMCreatePropagationEdge</h1>
+
+<br><dt><table><tr><td>  <script type="text/javascript"> activateLink('CATICGMTopPropagationEdge','CATICGMTopPropagationEdge *')</script>  <b>CATCGMCreatePropagationEdge</b>(<td><script type="text/javascript"> activateLink('CATGeoFactory','CATGeoFactory*')</script> <td><tt>iFactory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATTopData','CATTopData*')</script> <td><tt>iTopData</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBody','CATBody*')</script> <td><tt>iBody</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTP(CATCell)','CATLISTP(CATCell)*')</script> <td><tt>iInitialEdges</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBody::CATPropagationTypePr3','CATBody::CATPropagationTypePr3')</script> <td><tt>iPropagationType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTP(CATEdge)','CATLISTP(CATEdge)*')</script> <td><tt>iRollingEdges</tt><td><tt>= NULL</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates a tangency propagation operator for edges.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFactory</tt>
+   <dd> A pointer to the factory of the resulting body. 
+ </dd>
+    <dt><tt> iTopData</tt>
+   <dd> A pointer to the topological data.
+ </dd>
+    <dt><tt> iBody</tt>
+   <dd> A pointer to the body to be propagated on.
+ </dd>
+    <dt><tt> iInitialEdges</tt>
+   <dd> A pointer to the list of initial edges in iBody.
+ </dd>
+    <dt><tt> iPropagationType</tt>
+   <dd> The propagation type :
+ <br><b>Legal values</b>:
+ <tt>CATEdgePropagManual</tt> - NOT TO BE USED
+ <tt>CATEdgePropagAuto</tt>
+ </dd>
+    <dt><tt> iRollingEdges</tt>
+   <dd> A pointer to the list of rolling edges - SPECIFY NULL
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The pointer to the created operator. You must <tt>Release</tt> this operator after use.
+ <ul>
+ <li>After the run, the list of result edges is retrieved by
+ <li>CATICGMTopPropagationEdge::GetResultListEdges(CATLISTP(CATCell) & ioListEdges).
+ 
+  <dt> <b>Returns:</b> 
+  <dd>  [out, IUnknown#Release]
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATCGMCreatePropagationEdge.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

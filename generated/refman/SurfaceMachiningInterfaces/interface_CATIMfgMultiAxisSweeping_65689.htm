@@ -1,0 +1,180 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>SurfaceMachiningInterfaces Interface CATIMfgMultiAxisSweeping</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../SurfaceMachiningInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMfgMultiAxisSweeping','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgMultiAxisSweeping','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMfgMultiAxisSweeping','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgMultiAxisSweeping','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SurfaceMachiningInterfaces Interface CATIMfgMultiAxisSweeping</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMfgMultiAxisSweeping_65689','CATIMfgMultiAxisSweeping','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIMfgMultiAxisSweeping</b>
+</p>
+<p>
+<b><i> Interface for multi axis sweeping operations.</i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#RemoveStartDirectionGeometry()"><b>RemoveStartDirectionGeometry</b></a>()
+<dd>  Removes 'Start Direction' geometry from the operation.
+ <dt> o 
+    <a href="#RemoveViewDirectionGeometry()"><b>RemoveViewDirectionGeometry</b></a>()
+<dd>  Removes 'View Direction' geometry from the operation.
+ <dt> o 
+    <a href="#SetMachiningDirection(int)"><b>SetMachiningDirection</b></a>(int)
+<dd>  Sets the machining direction of the operation.
+ <dt> o 
+    <a href="#SetStartDirectionGeometry(CATBaseUnknown_var&amp;,CATBaseUnknown_var&amp;)"><b>SetStartDirectionGeometry</b></a>(CATBaseUnknown_var&amp;,CATBaseUnknown_var&amp;)
+<dd>  Sets 'Start Direction' geometry to the operation.
+ <dt> o 
+    <a href="#SetViewDirectionGeometry(CATBaseUnknown_var&amp;,CATBaseUnknown_var&amp;)"><b>SetViewDirectionGeometry</b></a>(CATBaseUnknown_var&amp;,CATBaseUnknown_var&amp;)
+<dd>  Sets 'View Direction' geometry to the operation.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="RemoveStartDirectionGeometry"></a><a name="RemoveStartDirectionGeometry()"></a> <dt> o <b>RemoveStartDirectionGeometry</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RemoveStartDirectionGeometry</b>(<td>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Removes 'Start Direction' geometry from the operation.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>     <dl>
+      <dt><tt>S_OK</tt>    <dd>if the method succeeds
+    </dl>
+</dl>
+</dl>
+<a name="RemoveViewDirectionGeometry"></a><a name="RemoveViewDirectionGeometry()"></a> <dt> o <b>RemoveViewDirectionGeometry</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RemoveViewDirectionGeometry</b>(<td>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Removes 'View Direction' geometry from the operation.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>     <dl>
+      <dt><tt>S_OK</tt>    <dd>if the method succeeds
+    </dl>
+</dl>
+</dl>
+<a name="SetMachiningDirection"></a><a name="SetMachiningDirection(int)"></a> <dt> o <b>SetMachiningDirection</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetMachiningDirection</b>(<td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iSide</tt>)<script type="text/javascript"> activateLink('=0',' =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the machining direction of the operation.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSide</tt>
+   <dd>   <br><b>Legal values</b>:
+   <dl>
+     <dt><tt>-1</tt>  <dd> Left regards to the guiding plane 
+     <dt><tt>1</tt>   <dd> Right regards to the guiding plane
+   </dl>
+
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     <dl>
+      <dt><tt>S_OK</tt>    <dd>if the method succeeds
+      <dt><tt>E_FAIL</tt>  <dd>if iSide is not valid
+    </dl>
+</dl>
+</dl>
+<a name="SetStartDirectionGeometry"></a><a name="SetStartDirectionGeometry(CATBaseUnknown_var&amp;,CATBaseUnknown_var&amp;)"></a> <dt> o <b>SetStartDirectionGeometry</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetStartDirectionGeometry</b>(<td> const <script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>iReference</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>iProduct</tt>)<script type="text/javascript"> activateLink('=0',' =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets 'Start Direction' geometry to the operation.
+ <br> The view and the start directions define a guiding plane : machining is done in planes parallel to the guiding plane.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iReference</tt>
+   <dd>   The geometric element to set.
+
+ </dd>
+    <dt><tt> iProduct</tt>
+   <dd>   The associated product of the referenced geometry.
+
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     <dl>
+      <dt><tt>S_OK</tt>    <dd>if the method succeeds
+      <dt><tt>E_FAIL</tt>  <dd>if iReference is not valid
+    </dl>
+</dl>
+</dl>
+<a name="SetViewDirectionGeometry"></a><a name="SetViewDirectionGeometry(CATBaseUnknown_var&amp;,CATBaseUnknown_var&amp;)"></a> <dt> o <b>SetViewDirectionGeometry</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetViewDirectionGeometry</b>(<td> const <script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>iReference</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>iProduct</tt>)<script type="text/javascript"> activateLink('=0',' =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets 'View Direction' geometry to the operation.
+ <br> Usually the part surface normal is used as the view direction.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iReference</tt>
+   <dd>   The geometric element to set.
+
+ </dd>
+    <dt><tt> iProduct</tt>
+   <dd>   The associated product of the referenced geometry.
+
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     <dl>
+      <dt><tt>S_OK</tt>    <dd>if the method succeeds
+      <dt><tt>E_FAIL</tt>  <dd>if iReference is not valid
+    </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMfgMultiAxisSweeping.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>SmgItfEnv</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

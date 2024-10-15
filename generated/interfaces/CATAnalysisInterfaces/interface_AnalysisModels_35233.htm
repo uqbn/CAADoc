@@ -1,0 +1,85 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces AnalysisModels (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('AnalysisModels','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisModels','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('AnalysisModels','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisModels','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>AnalysisModels<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_AnalysisModels_35233','AnalysisModels','0');</script>
+<b><i>   The collection of analysis models making an analysis document.</i></b><br>
+
+ As of today this collection is made of a single analysis model.<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns an analysis model using its index or its name from the analysis model
+ collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('AnalysisModel','AnalysisModel')</script> </table></dt>
+<dl>
+  <dd>
+ Returns an analysis model using its index or its name from the analysis model
+ collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the analysis model to retrieve from
+   the collection of analysis model.
+   As a numerics, this index is the rank of the analysis model
+   in the collection.
+   The index of the first analysis model in the collection is 1, and
+   the index of the last analysis model is Count.
+   As a string, it is the name you assigned to the analysis model using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property. 
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved analysis model <! @sample >
+ <dt><b>Example:</b>
+ <dd>
+ The following example retrieves the first analysis model in 
+ the analysis model collection of the <tt> AnalysisManager</tt> object.
+ <pre>
+ Dim AnalysisDocument As Document
+ Set AnalysisDocument = CATIA.<font color="red">ActiveDocument</font>
+ Dim RootAnalysis As AnalysisManager
+ Set RootAnalysis = AnalysisDocument.<font color="red">Analysis</font>
+ Dim analysisModels As AnalysisModels
+ Set analysisModels = RootAnalysis.<font color="red">AnalysisModels</font>
+ Dim analysisModel As AnalysisModel
+ Set AnalysisModel = analysisModel.<font color="red">Item(1)</font>
+ </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

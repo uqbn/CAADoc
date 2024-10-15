@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="CATIEhiBnlSegmentExtremity" href="interface_CATIEhiBnlSegmentExtremity_47308.htm" />
+<ITEM type="interface" name="CATIEhiBranchable" href="interface_CATIEhiBranchable_26473.htm" />
+<ITEM type="interface" name="CATIEhiBundleSegment" href="interface_CATIEhiBundleSegment_32391.htm" />
+<ITEM type="interface" name="CATIEhiFLEX" href="interface_CATIEhiFLEX_17519.htm" />
+<ITEM type="interface" name="CATIEhiFactory" href="interface_CATIEhiFactory_22399.htm" />
+<ITEM type="interface" name="CATIEhiGeoBundle" href="interface_CATIEhiGeoBundle_24818.htm" />
+<ITEM type="interface" name="CATIEhiMechanicalImport" href="interface_CATIEhiMechanicalImport_39016.htm" />
+<ITEM type="interface" name="CATIEhiMultiBranchable" href="interface_CATIEhiMultiBranchable_36205.htm" />
+<ITEM type="interface" name="CATIEhiNetwork" href="interface_CATIEhiNetwork_22488.htm" />
+<ITEM type="interface" name="CATIEhiNetworkExtremity" href="interface_CATIEhiNetworkExtremity_40135.htm" />
+<ITEM type="interface" name="CATIEhiPositionPoint" href="interface_CATIEhiPositionPoint_32917.htm" />
+<ITEM type="interface" name="CATIEhiPrdWkbCfgAddin" href="interface_CATIEhiPrdWkbCfgAddin_33094.htm" />
+<ITEM type="interface" name="CATIEhiProtection" href="interface_CATIEhiProtection_27253.htm" />
+<ITEM type="interface" name="CATIEhiPrtWkbCfgAddin" href="interface_CATIEhiPrtWkbCfgAddin_33238.htm" />
+<ITEM type="interface" name="CATIEleUipDuplicate" href="interface_CATIEleUipDuplicate_30371.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Enumerations" type="enum"  ctype="enum" >
+<ITEM type="enum" name="CATEhiProfileType" href="enum_CATEhiProfileType_24016.htm" />
+<ITEM type="enum" name="CatEhiInsertMode" href="enum_CatEhiInsertMode_22231.htm" />
+<ITEM type="enum" name="CatEhiSupportMode" href="enum_CatEhiSupportMode_24144.htm" />
+</ITEM>
+</Root>

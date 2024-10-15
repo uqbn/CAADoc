@@ -1,0 +1,95 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ManufacturingInterfaces ManufacturingView (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../ManufacturingInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('ManufacturingView','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ManufacturingView','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('ManufacturingView','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ManufacturingView','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ManufacturingView<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_ManufacturingView_44644','ManufacturingView','0');</script>
+<b><i> The Manufacturing View is the object that holds all the manufacturing features of the model.</i></b><br>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#ManufacturingFeatures"><b>ManufacturingFeatures</b></a>
+<dd>  Returns the Manufacturing Features of a Manufacturing View.
+ <dt>
+    <a href="#Relations"><b>Relations</b></a>
+<dd>  Returns the Relations Set owned by a Manufacturing View.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#CreateAllMachinableAreaFeaturesFromTechResultsOfUDF"><b>CreateAllMachinableAreaFeaturesFromTechResultsOfUDF</b></a>
+<dd>  Creates Machinable feature using TR of UDF.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="ManufacturingFeatures"><dt>
+
+<table><tr><td>o Property <b>ManufacturingFeatures</b>(<td>) As <script type="text/javascript"> activateLink('ManufacturingFeatures','ManufacturingFeatures')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the Manufacturing Features of a Manufacturing View.
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>ManufacturingFeatures</tt> the Manufacturing  
+ Features of the Manufacturing View <tt>MfgView</tt>:
+ <pre>
+ Set ManufacturingFeatures = MfgView.ManufacturingFeatures
+</pre>
+ </dl>
+</dl>
+<a name="Relations"><dt>
+
+<table><tr><td>o Property <b>Relations</b>(<td>) As <script type="text/javascript"> activateLink('Relations','Relations')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the Relations Set owned by a Manufacturing View.
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>Relations</tt> the 
+ Relations Set of the Manufacturing View <tt>MfgView</tt>:
+ <pre>
+ Set Relations = MfgView.Relations
+</pre>
+ </dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="CreateAllMachinableAreaFeaturesFromTechResultsOfUDF"><dt>
+
+<table><tr><td>o Sub <b>CreateAllMachinableAreaFeaturesFromTechResultsOfUDF</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iFinishPartProduct</tt>)</table></dt>
+<dl>
+  <dd>
+ Creates Machinable feature using TR of UDF.
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example takes <tt>iFinishPartProduct</tt>  
+ and Create MAF in <tt>MfgView</tt>:
+ <pre>
+ MfgView.CreateAllMachinableAreaFeaturesFromTechResultsOfUDF(iFinishPartProduct)
+</pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

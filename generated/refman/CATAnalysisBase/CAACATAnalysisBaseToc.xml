@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+<ITEM type="class" name="CATAnalysisAssemblyManager" href="class_CATAnalysisAssemblyManager_45343.htm" />
+<ITEM type="class" name="CATAnalysisCharacCollector" href="class_CATAnalysisCharacCollector_45343.htm" />
+<ITEM type="class" name="CATAnalysisCollectorArchiver" href="class_CATAnalysisCollectorArchiver_51290.htm" />
+<ITEM type="class" name="CATAnalysisCollectorRoot" href="class_CATAnalysisCollectorRoot_40933.htm" />
+<ITEM type="class" name="CATAnalysisEntityCollector" href="class_CATAnalysisEntityCollector_46195.htm" />
+<ITEM type="class" name="CATAnalysisExplicitAxis" href="class_CATAnalysisExplicitAxis_38201.htm" />
+<ITEM type="class" name="CATAnalysisExplicitCharac" href="class_CATAnalysisExplicitCharac_42336.htm" />
+<ITEM type="class" name="CATAnalysisExplicitChild" href="class_CATAnalysisExplicitChild_40065.htm" />
+<ITEM type="class" name="CATAnalysisExplicitData" href="class_CATAnalysisExplicitData_37633.htm" />
+<ITEM type="class" name="CATAnalysisExplicitElement" href="class_CATAnalysisExplicitElement_45684.htm" />
+<ITEM type="class" name="CATAnalysisExplicitEntity" href="class_CATAnalysisExplicitEntity_43660.htm" />
+<ITEM type="class" name="CATAnalysisExplicitList" href="class_CATAnalysisExplicitList_38342.htm" />
+<ITEM type="class" name="CATAnalysisExplicitListABy" href="class_CATAnalysisExplicitListABy_44446.htm" />
+<ITEM type="class" name="CATAnalysisExplicitListATo" href="class_CATAnalysisExplicitListATo_44628.htm" />
+<ITEM type="class" name="CATAnalysisExplicitListUsr" href="class_CATAnalysisExplicitListUsr_45907.htm" />
+<ITEM type="class" name="CATAnalysisExplicitModel" href="class_CATAnalysisExplicitModel_40320.htm" />
+<ITEM type="class" name="CATAnalysisExplicitNode" href="class_CATAnalysisExplicitNode_37855.htm" />
+<ITEM type="class" name="CATAnalysisExplicitParent" href="class_CATAnalysisExplicitParent_43221.htm" />
+<ITEM type="class" name="CATAnalysisExplicitRulesData" href="class_CATAnalysisExplicitRulesData_50556.htm" />
+<ITEM type="class" name="CATAnalysisExplicitSet" href="class_CATAnalysisExplicitSet_35864.htm" />
+<ITEM type="class" name="CATAnalysisExplicitTopology" href="class_CATAnalysisExplicitTopology_49310.htm" />
+<ITEM type="class" name="CATAnalysisExplicitVirtualElement" href="class_CATAnalysisExplicitVirtualElement_67081.htm" />
+<ITEM type="class" name="CATAnalysisExplicitVirtualNode" href="class_CATAnalysisExplicitVirtualNode_56984.htm" />
+<ITEM type="class" name="CATSamAxis" href="class_CATSamAxis_16289.htm" />
+<ITEM type="class" name="CATSamCharacVersion" href="class_CATSamCharacVersion_29388.htm" />
+<ITEM type="class" name="CATSamDimension" href="class_CATSamDimension_22716.htm" />
+<ITEM type="class" name="CATSamExplicitRoot" href="class_CATSamExplicitRoot_27774.htm" />
+<ITEM type="class" name="CATSamModelDataServices" href="class_CATSamModelDataServices_37539.htm" />
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+<ITEM type="collection" name="CATLISTP(CATAnalysisEntityCollector)." href="class_CATLISTP(CATAnalysisEntityCollector)_75454.htm" />
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+<ITEM type="notification" name="CATAnalysisExplicitTopologyNotification" href="class_CATAnalysisExplicitTopologyNotification_90252.htm" />
+</ITEM>
+<ITEM name="Functions" type="function"  ctype="function">
+<ITEM type="function" name="CATSamEnumIdentity" href="function_CATSamEnumIdentity_44132.htm" />
+<ITEM type="function" name="CATSamEnumIndex" href="function_CATSamEnumIndex_42707.htm" />
+<ITEM type="function" name="CATSamEnumString" href="_function_CATSamEnumString.htm" />
+<ITEM type="function" name="CATSamIdentityEnum" href="function_CATSamIdentityEnum_50430.htm" />
+<ITEM type="function" name="CATSamIndexEnum" href="function_CATSamIndexEnum_42689.htm" />
+<ITEM type="function" name="CATSamMathTypeSize" href="function_CATSamMathTypeSize_75143.htm" />
+<ITEM type="function" name="CATSamValueSize" href="function_CATSamValueSize_54070.htm" />
+</ITEM>
+<ITEM name="Typedefs" type="typedef"  ctype="typedef">
+</ITEM>
+</Root>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="DNBGraphEditor" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="1" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="PertNode" initial="P" htmlFileName="interface_PertNode_15901" fatherClass="AnyObject" fatherId="9080" DSCharacteristic="interface" id="15901" abstract="  This Interface represents a PertNode in the PERT Chart." />
+<method name="GetLocation" htmlFileName="interface_PertNode_15901" containerName="PertNode" containerType="interface" id="25016" status="0" isProperty="0" initial="G" argList="" abstract="" />
+<method name="SetIcon" htmlFileName="interface_PertNode_15901" containerName="PertNode" containerType="interface" id="21346" status="0" isProperty="0" initial="S" argList="" abstract="" />
+<method name="SetLocation" htmlFileName="interface_PertNode_15901" containerName="PertNode" containerType="interface" id="25016" status="0" isProperty="0" initial="S" argList="" abstract="This method place the PertNode in the PERT Chart 
+ at any location by specifying the  X and Y Coordinates in the Grid." />
+</fw>

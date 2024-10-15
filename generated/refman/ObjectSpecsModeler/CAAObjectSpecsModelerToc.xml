@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="CATIAttrBehavior" href="interface_CATIAttrBehavior_31856.htm" />
+<ITEM type="interface" name="CATIBuild" href="interface_CATIBuild_22968.htm" />
+<ITEM type="interface" name="CATICatalog" href="interface_CATICatalog_24954.htm" />
+<ITEM type="interface" name="CATIClientContainer" href="interface_CATIClientContainer_37183.htm" />
+<ITEM type="interface" name="CATIConnectable" href="interface_CATIConnectable_30106.htm" />
+<ITEM type="interface" name="CATIConnector" href="interface_CATIConnector_27634.htm" />
+<ITEM type="interface" name="CATIDescendants" href="interface_CATIDescendants_30396.htm" />
+<ITEM type="interface" name="CATIOsmExtendable" href="interface_CATIOsmExtendable_33254.htm" />
+<ITEM type="interface" name="CATIOsmExtension" href="interface_CATIOsmExtension_32134.htm" />
+<ITEM type="interface" name="CATIOsmExtensionFactory" href="interface_CATIOsmExtensionFactory_46165.htm" />
+<ITEM type="interface" name="CATIOsmUpdate" href="interface_CATIOsmUpdate_27327.htm" />
+<ITEM type="interface" name="CATIOsmVolatileContainer" href="interface_CATIOsmVolatileContainer_48100.htm" />
+<ITEM type="interface" name="CATIProviders" href="interface_CATIProviders_27699.htm" />
+<ITEM type="interface" name="CATIReplace" href="interface_CATIReplace_24871.htm" />
+<ITEM type="interface" name="CATISpecAttrAccess" href="interface_CATISpecAttrAccess_34865.htm" />
+<ITEM type="interface" name="CATISpecAttrKey" href="interface_CATISpecAttrKey_30009.htm" />
+<ITEM type="interface" name="CATISpecAttribute" href="interface_CATISpecAttribute_33630.htm" />
+<ITEM type="interface" name="CATISpecObject" href="interface_CATISpecObject_28505.htm" />
+<ITEM type="interface" name="CATISpecUpdate" href="interface_CATISpecUpdate_28584.htm" />
+<ITEM type="interface" name="CATIStructureAnalyse" href="interface_CATIStructureAnalyse_39434.htm" />
+<ITEM type="interface" name="CATIUpdateProvider" href="interface_CATIUpdateProvider_35393.htm" />
+<ITEM type="interface" name="CATOsmSUHandler" href="interface_CATOsmSUHandler_29903.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+<ITEM type="class" name="CATOsmExtensionServices" href="class_CATOsmExtensionServices_43617.htm" />
+<ITEM type="class" name="CATOsmUpdateAdapter" href="class_CATOsmUpdateAdapter_34350.htm" />
+<ITEM type="class" name="CATSpecLifeCycleObjectExt" href="class_CATSpecLifeCycleObjectExt_46961.htm" />
+<ITEM type="class" name="CATSpecPointing" href="class_CATSpecPointing_27824.htm" />
+<ITEM type="class" name="CATSpecReplaceExt" href="class_CATSpecReplaceExt_30583.htm" />
+<ITEM type="class" name="ObjectCCP_SPEC" href="class_ObjectCCP_SPEC_24258.htm" />
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+<ITEM type="collection" name="CATBehaviorSpecs" href="class_CATBehaviorSpecs_29317.htm" />
+<ITEM type="collection" name="CATLISTP(CATISpecObject)" href="class_CATLISTP(CATISpecObject)_40960.htm" />
+<ITEM type="collection" name="CATLISTP(CATSpecPointing)" href="class_CATLISTP(CATSpecPointing)_44419.htm" />
+<ITEM type="collection" name="CATLISTP(IID)" href="class_CATLISTP(IID)_22073.htm" />
+<ITEM type="collection" name="CATLISTV(CATISpecAttrKey_var)" href="class_CATLISTV(CATISpecAttrKey_var)_54522.htm" />
+<ITEM type="collection" name="CATLISTV(CATISpecAttribute_var)" href="class_CATLISTV(CATISpecAttribute_var)_61233.htm" />
+<ITEM type="collection" name="CATLISTV(CATISpecObject_var)" href="class_CATLISTV(CATISpecObject_var)_51572.htm" />
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Structures" type="struct"  ctype="struct" >
+<ITEM type="struct" name="PublicSpec" href="struct_PublicSpec_21991.htm" />
+</ITEM>
+<ITEM name="Enumerations" type="enum"  ctype="enum" >
+<ITEM type="enum" name="CATAttrAccess" href="enum_CATAttrAccess_24407.htm" />
+<ITEM type="enum" name="CATAttrInOut" href="enum_CATAttrInOut_23162.htm" />
+<ITEM type="enum" name="CATFlavorParam" href="enum_CATFlavorParam_25740.htm" />
+<ITEM type="enum" name="CATParentKind" href="enum_CATParentKind_24328.htm" />
+<ITEM type="enum" name="CATPublicSpecType" href="enum_CATPublicSpecType_30312.htm" />
+</ITEM>
+<ITEM name="Functions" type="function"  ctype="function">
+<ITEM type="function" name="AccessCatalog" href="function_AccessCatalog_219440.htm" />
+<ITEM type="function" name="CATAddPublicAttributeToFile" href="function_CATAddPublicAttributeToFile_170214.htm" />
+<ITEM type="function" name="CATCreatePublicSpecsInFile" href="function_CATCreatePublicSpecsInFile_99442.htm" />
+<ITEM type="function" name="CATOsmSUFactory" href="function_CATOsmSUFactory_543258.htm" />
+<ITEM type="function" name="CreateCatalog" href="function_CreateCatalog_80559.htm" />
+<ITEM type="function" name="SaveCatalog" href="function_SaveCatalog_81149.htm" />
+<ITEM type="function" name="SpecBindNativeFormat" href="function_SpecBindNativeFormat_83079.htm" />
+<ITEM type="function" name="UpgradeCatalog" href="function_UpgradeCatalog_149911.htm" />
+</ITEM>
+<ITEM name="Macros" type="define"  ctype="define">
+<ITEM type="define" name="CATAttrKind" href="define_CATAttrKind_22863.htm" />
+<ITEM type="define" name="E_ATTRLINK" href="define_E_ATTRLINK_20841.htm" />
+<ITEM type="define" name="E_CANNOTLOAD" href="define_E_CANNOTLOAD_22257.htm" />
+<ITEM type="define" name="E_FACETNOTFOUND" href="define_E_FACETNOTFOUND_25388.htm" />
+<ITEM type="define" name="E_KEYNOTFOUND" href="define_E_KEYNOTFOUND_23407.htm" />
+<ITEM type="define" name="E_NOLOCALVALUE" href="define_E_NOLOCALVALUE_24181.htm" />
+<ITEM type="define" name="E_NOTALIST" href="define_E_NOTALIST_20888.htm" />
+<ITEM type="define" name="E_NOTLOADED" href="define_E_NOTLOADED_21330.htm" />
+<ITEM type="define" name="E_OUTOFBOUND" href="define_E_OUTOFBOUND_22398.htm" />
+<ITEM type="define" name="E_TYPEMISMATCH" href="define_E_TYPEMISMATCH_24191.htm" />
+<ITEM type="define" name="S_NOSTATUS" href="define_S_NOSTATUS_20997.htm" />
+</ITEM>
+<ITEM name="Typedefs" type="typedef"  ctype="typedef">
+<ITEM type="typedef" name="CATOldTimeStamp" href="typedef_CATOldTimeStamp_28629.htm" />
+<ITEM type="typedef" name="CATOldUpdateStamp" href="typedef_CATOldUpdateStamp_31881.htm" />
+</ITEM>
+</Root>

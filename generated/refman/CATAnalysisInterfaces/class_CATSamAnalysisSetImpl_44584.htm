@@ -1,0 +1,255 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces Class CATSamAnalysisSetImpl</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATSamAnalysisSetImpl','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSamAnalysisSetImpl','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATSamAnalysisSetImpl','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSamAnalysisSetImpl','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisInterfaces Class CATSamAnalysisSetImpl</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATSamAnalysisSetImpl_44584','CATSamAnalysisSetImpl','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATSamAnalysisSetImpl</b>
+</p>
+<p>
+<b><i> Root object used to implement derived classes of CATIAAnalysisSet.</i></b><br>
+
+ Declare your interface as <b>interface MyInterface : CATIAAnalysisSet</b><br>
+ Implement it as <b>class MyImplementation : public CATSamAnalysisSetImpl</b>.</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATSamAnalysisSetImpl()"><b>CATSamAnalysisSetImpl</b></a>()
+<dd>  Default Constructor.
+ <dt> o 
+    <a href="#~CATSamAnalysisSetImpl()"><b>~CATSamAnalysisSetImpl</b></a>()
+<dd>  Default Destructor.
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetItem(CATBSTR&amp;,CATBaseDispatch*&amp;)"><b>GetItem</b></a>(CATBSTR&amp;,CATBaseDispatch*&amp;)
+<dd>  Returns an object from its name.
+ <dt> o 
+    <a href="#GetResolution(CATIScriptMethodCall*&amp;,CATBaseDispatch*)"><b>GetResolution</b></a>(CATIScriptMethodCall*&amp;,CATBaseDispatch*)
+<dd>  Helps the resolution mechanism of the macros generation.
+ <dt> o 
+    <a href="#GiveAccurateExposedInterface(CATBaseDispatch**)"><b>GiveAccurateExposedInterface</b></a>(CATBaseDispatch**)
+<dd>  Retrieve the accurate CATBaseDispatch or CATIABase interface on a component.
+ <dt> o 
+    <a href="#Update()"><b>Update</b></a>()
+<dd>  Update an Analysis Set.
+ <dt> o 
+    <a href="#get_AnalysisEntities(CATIAAnalysisEntities*&amp;)"><b>get_AnalysisEntities</b></a>(CATIAAnalysisEntities*&amp;)
+<dd>  Returns the analysis entities collection associated to a set.
+ <dt> o 
+    <a href="#get_AnalysisImages(CATIAAnalysisImages*&amp;)"><b>get_AnalysisImages</b></a>(CATIAAnalysisImages*&amp;)
+<dd>  Returns the analysis image collection associated with an analysis set.
+ <dt> o 
+    <a href="#get_AnalysisOutputEntities(CATIAAnalysisOutputEntities*&amp;)"><b>get_AnalysisOutputEntities</b></a>(CATIAAnalysisOutputEntities*&amp;)
+<dd>  Returns the analysis output entities collection associated to a set.
+ <dt> o 
+    <a href="#get_AnalysisSets(CATIAAnalysisSets*&amp;)"><b>get_AnalysisSets</b></a>(CATIAAnalysisSets*&amp;)
+<dd>  Returns the analysis sets collection associated with an analysis set.
+ <dt> o 
+    <a href="#get_BasicComponents(CATIABasicComponents*&amp;)"><b>get_BasicComponents</b></a>(CATIABasicComponents*&amp;)
+<dd>  Returns the BasicComponent collection associated with an analysis set.
+ <dt> o 
+    <a href="#get_Name(CATBSTR&amp;)"><b>get_Name</b></a>(CATBSTR&amp;)
+<dd>  Sets the name of the analysis Set.
+ <dt> o 
+    <a href="#get_Parent(CATBaseDispatch*&amp;)"><b>get_Parent</b></a>(CATBaseDispatch*&amp;)
+<dd>  Returns the parent object.
+ <dt> o 
+    <a href="#get_Type(CATBSTR&amp;)"><b>get_Type</b></a>(CATBSTR&amp;)
+<dd>  Returns the type of the analysis Set.
+ <dt> o 
+    <a href="#put_Name(CATBSTR&amp;)"><b>put_Name</b></a>(CATBSTR&amp;)
+<dd>  Returns the name of the analysis Set.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATSamAnalysisSetImpl"></a><a name="CATSamAnalysisSetImpl()"></a> <dt> o <b>CATSamAnalysisSetImpl</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATSamAnalysisSetImpl</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Default Constructor.
+</dl>
+<a name="~CATSamAnalysisSetImpl"></a><a name="~CATSamAnalysisSetImpl()"></a> <dt> o <b>~CATSamAnalysisSetImpl</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATSamAnalysisSetImpl</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Default Destructor.
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetItem"></a><a name="GetItem(CATBSTR&amp;,CATBaseDispatch*&amp;)"></a> <dt> o <b>GetItem</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetItem</b>(<td> const <script type="text/javascript"> activateLink('CATBSTR','CATBSTR&amp;')</script> <td><tt>iNameBSTR</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBaseDispatch','CATBaseDispatch*&amp;')</script> <td><tt>oObject</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns an object from its name.
+ All implementations should not override this default implementation.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> IDName</tt>
+   <dd>   The searched obect name </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The searched object All implementations should not override this default implementation.
+</dl>
+</dl>
+<a name="GetResolution"></a><a name="GetResolution(CATIScriptMethodCall*&amp;,CATBaseDispatch*)"></a> <dt> o <b>GetResolution</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetResolution</b>(<td><script type="text/javascript"> activateLink('CATIScriptMethodCall','CATIScriptMethodCall*&amp;')</script> <td><tt>oResolution</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBaseDispatch','CATBaseDispatch*')</script> <td><tt>iObjectToResolve</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Helps the resolution mechanism of the macros generation.
+ <b>Role:</b>
+ This interface must be implemented by objects that want to specify a custom
+ access path in the Automation container-content hierarchy.
+ <br>
+ It contains a single method which generates a <tt>CATIScriptMethodCall</tt>.
+ This generated object describes how to access the object from its container.
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIAutomationResolution','');return false">CATIAutomationResolution</a>
+</dl>
+</dl>
+<a name="GiveAccurateExposedInterface"></a><a name="GiveAccurateExposedInterface(CATBaseDispatch**)"></a> <dt> o <b>GiveAccurateExposedInterface</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GiveAccurateExposedInterface</b>(<td><script type="text/javascript"> activateLink('CATBaseDispatch','CATBaseDispatch**')</script> <td><tt>oBasePointer</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieve the accurate CATBaseDispatch or CATIABase interface on a component.
+ Returns with this methode Your VB Interface build by derivation of CATIAAnalysisSet.
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIBaseAccess','');return false">CATIBaseAccess</a>
+</dl>
+</dl>
+<a name="Update"></a><a name="Update()"></a> <dt> o <b>Update</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>Update</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Update an Analysis Set.
+ All implementations should not override this default implementation.
+</dl>
+<a name="get_AnalysisEntities"></a><a name="get_AnalysisEntities(CATIAAnalysisEntities*&amp;)"></a> <dt> o <b>get_AnalysisEntities</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>get_AnalysisEntities</b>(<td><script type="text/javascript"> activateLink('CATIAAnalysisEntities','CATIAAnalysisEntities*&amp;')</script> <td><tt>oAnalysisEntities</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the analysis entities collection associated to a set.
+ All implementations should not override this default implementation.
+</dl>
+<a name="get_AnalysisImages"></a><a name="get_AnalysisImages(CATIAAnalysisImages*&amp;)"></a> <dt> o <b>get_AnalysisImages</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>get_AnalysisImages</b>(<td><script type="text/javascript"> activateLink('CATIAAnalysisImages','CATIAAnalysisImages*&amp;')</script> <td><tt>oAnalysisImages</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the analysis image collection associated with an analysis set.
+ All implementations should not override this default implementation.
+</dl>
+<a name="get_AnalysisOutputEntities"></a><a name="get_AnalysisOutputEntities(CATIAAnalysisOutputEntities*&amp;)"></a> <dt> o <b>get_AnalysisOutputEntities</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>get_AnalysisOutputEntities</b>(<td><script type="text/javascript"> activateLink('CATIAAnalysisOutputEntities','CATIAAnalysisOutputEntities*&amp;')</script> <td><tt>oAnalysisEntities</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the analysis output entities collection associated to a set.
+ All implementations should not override this default implementation.
+</dl>
+<a name="get_AnalysisSets"></a><a name="get_AnalysisSets(CATIAAnalysisSets*&amp;)"></a> <dt> o <b>get_AnalysisSets</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>get_AnalysisSets</b>(<td><script type="text/javascript"> activateLink('CATIAAnalysisSets','CATIAAnalysisSets*&amp;')</script> <td><tt>oAnalysisSets</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the analysis sets collection associated with an analysis set.
+ All implementations should not override this default implementation.
+</dl>
+<a name="get_BasicComponents"></a><a name="get_BasicComponents(CATIABasicComponents*&amp;)"></a> <dt> o <b>get_BasicComponents</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>get_BasicComponents</b>(<td><script type="text/javascript"> activateLink('CATIABasicComponents','CATIABasicComponents*&amp;')</script> <td><tt>oBasicComponents</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the BasicComponent collection associated with an analysis set.
+ All implementations should not override this default implementation.
+</dl>
+<a name="get_Name"></a><a name="get_Name(CATBSTR&amp;)"></a> <dt> o <b>get_Name</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>get_Name</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR&amp;')</script> <td><tt>oName</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the name of the analysis Set.
+ All implementations should not override this default implementation.
+</dl>
+<a name="get_Parent"></a><a name="get_Parent(CATBaseDispatch*&amp;)"></a> <dt> o <b>get_Parent</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','HRESULT __stdcall')</script>  <b>get_Parent</b>(<td><script type="text/javascript"> activateLink('CATBaseDispatch','CATBaseDispatch*&amp;')</script> <td><tt>oParent</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the parent object.
+ <br><b>Role</b>:
+ The parent object of a given object is the object just above
+ in the object structure, usually the object that created this
+ object and that aggregates it.
+ In the case of an object part of a collection, the parent object
+ is not the collection object itself, but the object that 
+ aggregates the collection object.
+</dl>
+<a name="get_Type"></a><a name="get_Type(CATBSTR&amp;)"></a> <dt> o <b>get_Type</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>get_Type</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR&amp;')</script> <td><tt>oType</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the type of the analysis Set.
+ All implementations should not override this default implementation.
+</dl>
+<a name="put_Name"></a><a name="put_Name(CATBSTR&amp;)"></a> <dt> o <b>put_Name</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>put_Name</b>(<td> const <script type="text/javascript"> activateLink('CATBSTR','CATBSTR&amp;')</script> <td><tt>iNameBSTR</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the name of the analysis Set.
+ All implementations should not override this default implementation.
+</dl>
+<hr>
+ This object is included in the file: <b>CATSamAnalysisSetImpl.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisToolkit</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

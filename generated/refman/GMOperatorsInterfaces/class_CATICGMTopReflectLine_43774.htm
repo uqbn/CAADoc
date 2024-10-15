@@ -1,0 +1,89 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMOperatorsInterfaces Class CATICGMTopReflectLine</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMOperatorsInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATICGMTopReflectLine','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMTopReflectLine','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATICGMTopReflectLine','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMTopReflectLine','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GMOperatorsInterfaces Class CATICGMTopReflectLine</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATICGMTopReflectLine_43774','CATICGMTopReflectLine','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATICGMTopReflectLine</b>
+</p>
+<p>
+<b><i> Class defining the operator that computes the reflect lines on a skin body.</i></b><br>
+
+<br>
+ The CATICGMTopReflectLine operator follows the global frame of the topological operators and satisfies the smart mechanism: 
+ the input bodies are not modified. A new resulting body is created, 
+ possibly sharing data with the input bodies.
+<ul>
+ <li>A CATICGMTopReflectLine operator is created with the <tt>CATCGMCreateTopReflectLine</tt> global method:
+ It must be directly released with the <tt>Release</tt> method after use. It is not streamable. 
+<li>The result is accessed with the <tt>GetResult</tt> method. If you do not want 
+ to keep the resulting body, use the <a href="#" onClick="openLink('CATICGMContainer','Remove');return false">CATICGMContainer.Remove</a> method to remove it from the  geometry factory.
+</ul>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATICGMTopReflectLine()"><b>CATICGMTopReflectLine</b></a>()
+<dd>  Constructor
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#OptimizeDomainStructure()"><b>OptimizeDomainStructure</b></a>()
+<dd>  Use this method before the Run() method in order to have a better associativity of the CATICGMTopReflectLine result.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATICGMTopReflectLine"></a><a name="CATICGMTopReflectLine()"></a> <dt> o <b>CATICGMTopReflectLine</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATICGMTopReflectLine</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructor
+</dl>
+ <h2>Methods</h2> <br>
+<a name="OptimizeDomainStructure"></a><a name="OptimizeDomainStructure()"></a> <dt> o <b>OptimizeDomainStructure</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>OptimizeDomainStructure</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Use this method before the Run() method in order to have a better associativity of the CATICGMTopReflectLine result.
+</dl>
+<hr>
+ This object is included in the file: <b>CATICGMTopReflectLine.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGMOperatorsInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

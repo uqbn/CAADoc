@@ -1,0 +1,101 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PartInterfaces Interface CATISewing</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../PartInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISewing','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISewing','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISewing','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISewing','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PartInterfaces Interface CATISewing</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISewing_17753','CATISewing','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISewing</b>
+</p>
+<p>
+<b><i> Interface to represent sewing feature.</i></b><br>
+
+ <b>Role</b>: The sewing feature allows users to sew a surfacic feature
+ with a mechanical feature. The result of the operation is a new mechanical
+ feature.
+ The sewing operation is made on the common surface of the two features and
+ the result of the operation is limited with this contact zone.
+ The behavior of this interface is defined in the CATISuSplit interface.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATISuSplit','');return false">CATISuSplit</a>, <a href="#" onClick="openLink('CATISplit','');return false">CATISplit</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetSupportSurface(CATBaseUnknown_var&amp;)"><b>GetSupportSurface</b></a>(CATBaseUnknown_var&amp;)
+<dd>  Retrieves the surfacic feature upon which a surface is sewn.
+ <dt> o 
+    <a href="#ModifySupportSurface(CATBaseUnknown_var&amp;)"><b>ModifySupportSurface</b></a>(CATBaseUnknown_var&amp;)
+<dd>  Sets the surfacic feature on which a surface is to be sewn.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetSupportSurface"></a><a name="GetSupportSurface(CATBaseUnknown_var&amp;)"></a> <dt> o <b>GetSupportSurface</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetSupportSurface</b>(<td><script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>ohSupportSurface</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the surfacic feature upon which a surface is sewn.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  the surfacic feature. <br><b>Legal values</b>: The surfacic feature is either
+ <tt>CATBaseUnknown_var</tt> when the surfacic feature exists or
+ <tt>NULL_var</tt> if it does not exist.
+</dl>
+</dl>
+<a name="ModifySupportSurface"></a><a name="ModifySupportSurface(CATBaseUnknown_var&amp;)"></a> <dt> o <b>ModifySupportSurface</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ModifySupportSurface</b>(<td><script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>ihSupportSurface</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the surfacic feature on which a surface is to be sewn.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ihSupportSurface</tt>
+   <dd>	The surfacic feature.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISewing.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATPartInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

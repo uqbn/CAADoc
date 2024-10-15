@@ -1,0 +1,126 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>Dialog Class CATDlgWindows</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../Dialog.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATDlgWindows','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATDlgWindows','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATDlgWindows','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATDlgWindows','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Dialog Class CATDlgWindows</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATDlgWindows_10909','CATDlgWindows','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATDlgWindows</b>
+</p>
+<p>
+<b><i>  Class specific to Windows platforms, neutral window providing some interoperability capability with non V5 Dialog objects.</i></b><br>
+
+ <br>
+ <b>Role</b>:
+ Creates an empty frame without any border. 
+ <br>
+ It is targeted for very specific usages. Most application developers do not have to deal with this object.</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATDlgWindows(CATDialog*,CATString&amp;,CATDlgStyle)"><b>CATDlgWindows</b></a>(CATDialog*,CATString&amp;,CATDlgStyle)
+<dd>   Constructs a CATDlgWindows.
+ <dt> o 
+    <a href="#~CATDlgWindows()"><b>~CATDlgWindows</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetFatherWidget()"><b>GetFatherWidget</b></a>()
+<dd>   Gets a pointer to the MFC object of the underlying window.
+ <dt> o 
+    <a href="#GetLetterObject()"><b>GetLetterObject</b></a>()
+<dd>  Returns internal object.
+ <dt> o 
+    <a href="#ResetLetterObject()"><b>ResetLetterObject</b></a>()
+<dd>  Resets internal object.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATDlgWindows"></a><a name="CATDlgWindows(CATDialog*,CATString&amp;,CATDlgStyle)"></a> <dt> o <b>CATDlgWindows</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATDlgWindows</b>(<td><script type="text/javascript"> activateLink('CATDialog','CATDialog*')</script> <td><tt>iParent</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATString','CATString&amp;')</script> <td><tt>iObjectName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATDlgStyle','CATDlgStyle')</script> <td><tt>iStyle</tt><td><tt>=NULL</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Constructs a CATDlgWindows.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iParent</tt>
+   <dd>   The parent of the object
+ </dd>
+    <dt><tt> iObjectName</tt>
+   <dd>   The name of the object
+ </dd>
+    <dt><tt> iStyle</tt>
+   <dd>   The style of the object.</dd>
+</dl>
+</dl>
+</dl>
+<a name="~CATDlgWindows"></a><a name="~CATDlgWindows()"></a> <dt> o <b>~CATDlgWindows</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATDlgWindows</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetFatherWidget"></a><a name="GetFatherWidget()"></a> <dt> o <b>GetFatherWidget</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CWnd','CWnd*')</script>  <b>GetFatherWidget</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Gets a pointer to the MFC object of the underlying window.
+</dl>
+<a name="GetLetterObject"></a><a name="GetLetterObject()"></a> <dt> o <b>GetLetterObject</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('l_CATDialog','l_CATDialog*')</script>  <b>GetLetterObject</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns internal object. Internal use only.
+</dl>
+<a name="ResetLetterObject"></a><a name="ResetLetterObject()"></a> <dt> o <b>ResetLetterObject</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>ResetLetterObject</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Resets internal object. Internal use only.
+</dl>
+<hr>
+ This object is included in the file: <b>CATDlgWindows.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>DI0PANV2</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

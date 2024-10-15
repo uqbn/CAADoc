@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="PPRInterfaces" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="1" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="PPRActivity" initial="P" htmlFileName="interface_PPRActivity_17716" fatherClass="Activity" fatherId="17528" DSCharacteristic="interface" id="17716" abstract="  The interface is used to retrieve the items and resources of the current Activity." />
+<method name="PPRItems" htmlFileName="interface_PPRActivity_17716" containerName="PPRActivity" containerType="interface" id="23889" status="32" isProperty="1" initial="P" argList="" abstract="Retrieves the list of items as Products aggregated by the Activity." />
+<method name="PPRItemsAndFTA" htmlFileName="interface_PPRActivity_17716" containerName="PPRActivity" containerType="interface" id="29022" status="32" isProperty="1" initial="P" argList="" abstract="Retrieves the list of items as CATIAItems aggregated by the Activity." />
+<method name="PPRResources" htmlFileName="interface_PPRActivity_17716" containerName="PPRActivity" containerType="interface" id="28030" status="32" isProperty="1" initial="P" argList="" abstract="Retrieves the list of resources as Products aggregated by the Activity." />
+<class name="PPRDocument" initial="P" htmlFileName="interface_PPRDocument_17561" fatherClass="Document" fatherId="14894" DSCharacteristic="interface" id="17561" abstract="  This interface is used to access Processes, Products and Resources." />
+<method name="Processes" htmlFileName="interface_PPRDocument_17561" containerName="PPRDocument" containerType="interface" id="24772" status="32" isProperty="1" initial="P" argList="" abstract="Retrieves the list of Processes as Activities contained in the current document." />
+<method name="Products" htmlFileName="interface_PPRDocument_17561" containerName="PPRDocument" containerType="interface" id="23943" status="32" isProperty="1" initial="P" argList="" abstract="Retrieves the list of Products contained in the current document." />
+<method name="Resources" htmlFileName="interface_PPRDocument_17561" containerName="PPRDocument" containerType="interface" id="24766" status="32" isProperty="1" initial="R" argList="" abstract="Retrieves the list of Resources contained in the current document." />
+<class name="PPRProducts" initial="P" htmlFileName="interface_PPRProducts_17651" fatherClass="Collection" fatherId="10201" DSCharacteristic="interface" id="17651" abstract="  This interface is used to retrieve and add Products from and to the list of Products." />
+<method name="Add" htmlFileName="interface_PPRProducts_17651" containerName="PPRProducts" containerType="interface" id="21233" status="0" isProperty="0" initial="A" argList="" abstract="Adds the specified Product to the current list of Products." />
+<method name="Item" htmlFileName="interface_PPRProducts_17651" containerName="PPRProducts" containerType="interface" id="21578" status="0" isProperty="0" initial="I" argList="" abstract="Retrieves the Product corresponding to the specified index in the list of Products." />
+</fw>

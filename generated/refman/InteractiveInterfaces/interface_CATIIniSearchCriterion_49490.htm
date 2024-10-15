@@ -1,0 +1,138 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>InteractiveInterfaces Interface CATIIniSearchCriterion</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../InteractiveInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIIniSearchCriterion','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIIniSearchCriterion','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIIniSearchCriterion','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIIniSearchCriterion','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>InteractiveInterfaces Interface CATIIniSearchCriterion</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIIniSearchCriterion_49490','CATIIniSearchCriterion','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIIniSearchCriterion</b>
+</p>
+<p>
+<b><i> Interface to use an already defined search criterion.</i></b><br>
+ 
+ <b>Role:</b> This interface is the basic interface from 
+ which every Search criterion interface derive.
+ <br>It defines the common services awaited on a Search 
+ criterion: printing, testing.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetNLSQuery(CATUnicodeString&amp;)"><b>GetNLSQuery</b></a>(CATUnicodeString&amp;)
+<dd>  Retrieves a string-format criterion.
+ <dt> o 
+    <a href="#GetTransFormatQuery(CATUnicodeString&amp;)"><b>GetTransFormatQuery</b></a>(CATUnicodeString&amp;)
+<dd>  Retrieves a string-format criterion.
+ <dt> o 
+    <a href="#IsObjectMatching(CATBaseUnknown_var&amp;)"><b>IsObjectMatching</b></a>(CATBaseUnknown_var&amp;)
+<dd>  Tests if an object matches the criterion.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetNLSQuery"></a><a name="GetNLSQuery(CATUnicodeString&amp;)"></a> <dt> o <b>GetNLSQuery</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetNLSQuery</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oQueryString</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves a string-format criterion.
+ <br><b>Role:</b> This method enables the retrieval of a string-format
+ criterion (i.e. query), using the session language (NLS support).
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oQueryString</tt>
+   <dd>    The NLS query corresponding to the criterion.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>      E_FAIL if the criterion is not correctly set up (refer the adequate 
+    <tt>SetParameters</tt> method of the criterion).
+    S_OK otherwise.
+</dl>
+</dl>
+<a name="GetTransFormatQuery"></a><a name="GetTransFormatQuery(CATUnicodeString&amp;)"></a> <dt> o <b>GetTransFormatQuery</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetTransFormatQuery</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oTFQueryString</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves a string-format criterion.
+ <br><b>Role:</b> This method enables the retrieval of a string-format
+ criterion (i.e. query), using the transformat language. This language
+ enables a query to be correctly analyzed and transformed into a 
+ criterion whatever the session language
+ ( 
+<a href="#" onClick="openLink('CATIIniSearchServices','DecodeStringToCriterion');return false">CATIIniSearchServices.DecodeStringToCriterion</a> method). 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oTFQueryString</tt>
+   <dd>    The transformat query corresponding to the criterion.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>      <ul><li>E_FAIL if the criterion is not correctly set up (refer the adequate 
+    <tt>SetParameters</tt> method of the criterion).</li>
+    <li>S_OK otherwise.</li></ul>
+</dl>
+</dl>
+<a name="IsObjectMatching"></a><a name="IsObjectMatching(CATBaseUnknown_var&amp;)"></a> <dt> o <b>IsObjectMatching</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>IsObjectMatching</b>(<td> const <script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>iObject</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Tests if an object matches the criterion.
+ <br><b>Role:</b> This method enables to test if an object matches
+ the criterion as defined through the adequate <tt>SetParameters</tt> method.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iObject</tt>
+   <dd>    The object to test.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>      <ul><li>S_OK if the object fits the criterion.</li>
+    <li>E_FAIL otherwise.</li></ul>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIIniSearchCriterion.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATInteractiveInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

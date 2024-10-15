@@ -1,0 +1,142 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATIAApplicationFrame Class CATComboWeight</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATIAApplicationFrame.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATComboWeight','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATComboWeight','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATComboWeight','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATComboWeight','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATIAApplicationFrame Class CATComboWeight</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATComboWeight_31654','CATComboWeight','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATComboWeight</b>
+</p>
+<p>
+<b><i>  Class to create a combo to choose a weight (thickness) of a line.</i></b><br>
+
+ <b>Role</b>:This class constructs a combo to select a line weigth among 63 values.
+ <br>These 63 values follow the thicknesses displayed and modifiable in 
+ Tools/Options/Display/Thickness. 
+ <br><br>When a weight  is selected, a <tt>CATDlgComboSelectNotification</tt> notification is sent,
+ and you can retrieves the index of the weight type thanks to the <a href="#" onClick="openLink('','GetSelect');return false">GetSelect</a> 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATComboColor','');return false">CATComboColor</a>, <a href="#" onClick="openLink('CATComboDashed','');return false">CATComboDashed</a>, <a href="#" onClick="openLink('CATComboSymbol','');return false">CATComboSymbol</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATComboWeight(CATDialog*,CATString&amp;,CATDlgStyle,int,unsigned int)"><b>CATComboWeight</b></a>(CATDialog*,CATString&amp;,CATDlgStyle,int,unsigned int)
+<dd>   Constructs a combo to choose a weight of a line.
+ <dt> o 
+    <a href="#~CATComboWeight()"><b>~CATComboWeight</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetSelect()"><b>GetSelect</b></a>()
+<dd>  Retrieves the index of the weight choosen.
+ <dt> o 
+    <a href="#SetSelect(unsigned int)"><b>SetSelect</b></a>(unsigned int)
+<dd>  Sets the index of the weight.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATComboWeight"></a><a name="CATComboWeight(CATDialog*,CATString&amp;,CATDlgStyle,int,unsigned int)"></a> <dt> o <b>CATComboWeight</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATComboWeight</b>(<td><script type="text/javascript"> activateLink('CATDialog','CATDialog*')</script> <td><tt>iParent</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATString','CATString&amp;')</script> <td><tt>iDialogObjectName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATDlgStyle','CATDlgStyle')</script> <td><tt>iStyle</tt><td><tt>= NULL</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iWeightInit</tt><td><tt>= 1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iAutoComboAvailable</tt><td><tt>= 0</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Constructs a combo to choose a weight of a line.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iParent</tt>
+   <dd> The dialog's parent.
+ </dd>
+    <dt><tt> iDialogObjectName</tt>
+   <dd> The name of the dialog object. 
+ </dd>
+    <dt><tt> iStyle</tt>
+   <dd> Internal usage. Set NULL the legal value.
+ </dd>
+    <dt><tt> iWeightInit</tt>
+   <dd>  The index of the first weight displayed. The value ranges from 1 to 63, and the
+  default value is 1 . 
+ </dd>
+    <dt><tt> iAutoComboAvailable</tt>
+   <dd> Internal usage, set 0 as the default value.</dd>
+</dl>
+</dl>
+</dl>
+<a name="~CATComboWeight"></a><a name="~CATComboWeight()"></a> <dt> o <b>~CATComboWeight</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATComboWeight</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetSelect"></a><a name="GetSelect()"></a> <dt> o <b>GetSelect</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('int','unsigned int')</script>  <b>GetSelect</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the index of the weight choosen.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   Index of the weight.This value ranges from 1 to 63.
+</dl>
+</dl>
+<a name="SetSelect"></a><a name="SetSelect(unsigned int)"></a> <dt> o <b>SetSelect</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>SetSelect</b>(<td> const <script type="text/javascript"> activateLink('unsigned int','unsigned int')</script> <td><tt>iWeight</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the index of the weight.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iWeight</tt>
+   <dd> Index of the weight.This value ranges from 1 to 63.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATComboWeight.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATIAApplicationFrame</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

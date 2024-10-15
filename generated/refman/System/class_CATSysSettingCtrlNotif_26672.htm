@@ -1,0 +1,124 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>System Notification CATSysSettingCtrlNotif</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../System.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATSysSettingCtrlNotif','notification','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSysSettingCtrlNotif','notification','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATSysSettingCtrlNotif','notification','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSysSettingCtrlNotif','notification','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>System Notification CATSysSettingCtrlNotif</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATSysSettingCtrlNotif_26672','CATSysSettingCtrlNotif','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATSysSettingCtrlNotif</b>
+</p>
+<p>
+<b><i> Notification sent by a setting controller.</i></b><br>
+
+ <br><b>Role</b>: Objects of this class convey information about the 
+ modifications that have been occurred inside a setting controller which 
+ send an event when it is commited, saved, reseted.</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATSysSettingCtrlNotif()"><b>CATSysSettingCtrlNotif</b></a>()
+<dd>  <dt> o 
+    <a href="#CATSysSettingCtrlNotif(CATCallbackEvent,CATSettingInfo*)"><b>CATSysSettingCtrlNotif</b></a>(CATCallbackEvent,CATSettingInfo*)
+<dd>  Creates a notification.
+ <dt> o 
+    <a href="#~CATSysSettingCtrlNotif()"><b>~CATSysSettingCtrlNotif</b></a>()
+<dd> </dl>
+</dl>
+<dl>
+</dl>
+<dl>
+ <h2>Data Member Index</h2> <br>
+ <dt> o 
+    <a href="#_Evenement"><b>_Evenement</b></a>
+<dd>  The dispatched event.
+ <dt> o 
+    <a href="#_Info"><b>_Info</b></a>
+<dd>  The CATSettingInfo structure of the controller's parameter that is
+ dispatching an event.
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATSysSettingCtrlNotif"></a><a name="CATSysSettingCtrlNotif()"></a> <dt> o <b>CATSysSettingCtrlNotif</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATSysSettingCtrlNotif</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="CATSysSettingCtrlNotif"></a><a name="CATSysSettingCtrlNotif(CATCallbackEvent,CATSettingInfo*)"></a> <dt> o <b>CATSysSettingCtrlNotif</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATSysSettingCtrlNotif</b>(<td><script type="text/javascript"> activateLink('CATCallbackEvent','CATCallbackEvent')</script> <td><tt>iEvent</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSettingInfo','CATSettingInfo*')</script> <td><tt>iInfo</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates a notification. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEvent</tt>
+   <dd> [in] the event as defined in </dd>
+<a href="#" onClick="openLink('CATSysSettingController','CATDeclareCBEvent');return false">CATSysSettingController.CATDeclareCBEvent</a> 
+    <dt><tt> iInfo</tt>
+   <dd> [in] the </dd>
+<a href="#" onClick="openLink('CATSettingInfo','');return false">CATSettingInfo</a> associated with a given parameter for the event Param_Updated
+</dl>
+</dl>
+</dl>
+<a name="~CATSysSettingCtrlNotif"></a><a name="~CATSysSettingCtrlNotif()"></a> <dt> o <b>~CATSysSettingCtrlNotif</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATSysSettingCtrlNotif</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Data Members</h2> <br>
+<a name="_Evenement"></a> <dt> o <b>_Evenement</b>
+<pre>
+  public CATCallbackEvent *_Evenement</dt>
+</pre>
+<dl>
+  <dd>
+ The dispatched event.
+</dl>
+<a name="_Info"></a> <dt> o <b>_Info</b>
+<pre>
+  public CATSettingInfo *_Info</dt>
+</pre>
+<dl>
+  <dd>
+ The CATSettingInfo structure of the controller's parameter that is
+ dispatching an event. It is null for the global event concerning
+ the whole controller.
+</dl>
+<hr>
+ This object is included in the file: <b>CATSysSettingCtrlNotif.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>JS0GROUP</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

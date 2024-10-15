@@ -1,0 +1,75 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces Enumeration CATSamValuesDistributionMode</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>CATAnalysisInterfaces Enumeration CATSamValuesDistributionMode</h1>
+<pre>
+enum <b>CATSamValuesDistributionMode</b> {
+  CATSamValuesDistributionModePositive,
+  CATSamValuesDistributionModeNegative,
+  CATSamValuesDistributionModeRepeated,
+  CATSamValuesDistributionModeDistributed,
+  CATSamValuesDistributionModeRepeatedOnVertexOfElements,
+  CATSamValuesDistributionModeDistributedOnVertexOfElements,
+  CATSamValuesDistributionModeRepeatedOnVertexOfFaces,
+  CATSamValuesDistributionModeDistributedOnVertexOfFaces,
+  CATSamValuesDistributionModeRepeatedOnVertexOfEdges,
+  CATSamValuesDistributionModeDistributedOnVertexOfEdges,
+  CATSamValuesDistributionModeRepeatedOnUserDefinePositions,
+  CATSamValuesDistributionModeDistributedOnUserDefinePositions,
+  CATSamValuesDistributionModeOneValueDifferentForEachPosition,
+  CATSamValuesDistributionModeNValuesDifferentForEachPosition,
+  CATSamValuesDistributionModeLast
+}
+</pre>
+<b><i> The distribution mode of the characteristic values.</i></b><br>
+
+ This parameter pilots the way the values will be collected regarding to the apply entities.<br>
+ <font color="red">Use only the commented enumerate values. Other may be not implemented.</font>
+ <dl>
+  <dt> <b>Values:</b>
+  <dd>
+    <dl>
+    <dt><tt> CATSamValuesDistributionModeRepeated</tt>
+   <dd>   The values are repeated. (The same values are applied on each apply).
+ </dd>
+    <dt><tt> CATSamValuesDistributionModeDistributed</tt>
+   <dd>   The values are distributed.<br>
+   The values are distributed regarding to the dimension of the characteristic.
+ </dd>
+    <dt><tt> CATSamValuesDistributionModeRepeatedOnVertexOfElements</tt>
+   <dd>   The values are distributed on each Vertex Nodes of the elements, and repeated on each ApplyTo elements.<br>
+   The values are distributed regarding to the dimension of the characteristic and the number of the vertex nodes of the ApplyTo elements.
+ </dd>
+    <dt><tt> CATSamValuesDistributionModeDistributedOnVertexOfElements</tt>
+   <dd>   The values are distributed on each vertex node of the elements and on each ApplyTo elements.<br>
+   The values are distributed regarding to the dimension of the characteristic and the number of the vertex nodes of the ApplyTo elements.
+ </dd>
+    <dt><tt> CATSamValuesDistributionModeRepeatedOnPositions</tt>
+   <dd>   The values are distributed on each user defined positions of the elements, and repeated on each ApplyTo elements.<br>
+   The values are distributed regarding to the dimension of the characteristic and the number of user defined positions of the ApplyTo elements.
+ </dd>
+    <dt><tt> CATSamValuesDistributionModeDistributedOnPositions</tt>
+   <dd>   The values are distributed on each user defined positions of the elements and on each ApplyTo elements.<br>
+   The values are distributed regarding to the dimension of the characteristic and the number of user defined positions of the ApplyTo elements.</dd>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATAnalysisExplicitDefinitions.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

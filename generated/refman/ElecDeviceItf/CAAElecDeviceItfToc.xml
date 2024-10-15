@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="CATIElbBackShell" href="interface_CATIElbBackShell_23113.htm" />
+<ITEM type="interface" name="CATIElbBackShellCnctPt" href="interface_CATIElbBackShellCnctPt_34077.htm" />
+<ITEM type="interface" name="CATIElbBundleCnctPt" href="interface_CATIElbBundleCnctPt_28296.htm" />
+<ITEM type="interface" name="CATIElbCavity" href="interface_CATIElbCavity_19393.htm" />
+<ITEM type="interface" name="CATIElbConnectorCnctPt" href="interface_CATIElbConnectorCnctPt_34790.htm" />
+<ITEM type="interface" name="CATIElbConnectorShell" href="interface_CATIElbConnectorShell_32952.htm" />
+<ITEM type="interface" name="CATIElbContactInstance" href="interface_CATIElbContactInstance_34999.htm" />
+<ITEM type="interface" name="CATIElbDeviceInstance" href="interface_CATIElbDeviceInstance_32605.htm" />
+<ITEM type="interface" name="CATIElbEquipment" href="interface_CATIElbEquipment_23931.htm" />
+<ITEM type="interface" name="CATIElbExternalSplice" href="interface_CATIElbExternalSplice_32816.htm" />
+<ITEM type="interface" name="CATIElbFactory" href="interface_CATIElbFactory_20787.htm" />
+<ITEM type="interface" name="CATIElbFillerPlugInstance" href="interface_CATIElbFillerPlugInstance_42008.htm" />
+<ITEM type="interface" name="CATIElbInternalSplice" href="interface_CATIElbInternalSplice_32764.htm" />
+<ITEM type="interface" name="CATIElbMountingEquipment" href="interface_CATIElbMountingEquipment_40535.htm" />
+<ITEM type="interface" name="CATIElbMountingEquipmentReference" href="interface_CATIElbMountingEquipmentReference_66129.htm" />
+<ITEM type="interface" name="CATIElbPrdWkbCfgAddin" href="interface_CATIElbPrdWkbCfgAddin_31482.htm" />
+<ITEM type="interface" name="CATIElbPrtWkbCfgAddin" href="interface_CATIElbPrtWkbCfgAddin_31626.htm" />
+<ITEM type="interface" name="CATIElbSingleConnector" href="interface_CATIElbSingleConnector_35301.htm" />
+<ITEM type="interface" name="CATIElbSingleConnectorReference" href="interface_CATIElbSingleConnectorReference_59073.htm" />
+<ITEM type="interface" name="CATIElbSupport" href="interface_CATIElbSupport_21050.htm" />
+<ITEM type="interface" name="CATIElbTermination" href="interface_CATIElbTermination_27401.htm" />
+<ITEM type="interface" name="CATIElbUipDevices" href="interface_CATIElbUipDevices_25064.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+<ITEM type="class" name="CATElbDevice" href="class_CATElbDevice_15332.htm" />
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Enumerations" type="enum"  ctype="enum" >
+<ITEM type="enum" name="CATElecDevice" href="enum_CATElecDevice_16097.htm" />
+</ITEM>
+</Root>

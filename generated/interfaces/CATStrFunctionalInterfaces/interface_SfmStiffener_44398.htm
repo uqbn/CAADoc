@@ -1,0 +1,190 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATStrFunctionalInterfaces SfmStiffener (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATStrFunctionalInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SfmStiffener','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmStiffener','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SfmStiffener','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmStiffener','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SfmStiffener<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SfmStiffener_44398','SfmStiffener','0');</script>
+<b><i> Interface to manage the structure frame modeling Stiffener object
+ <b>Role</b>:  Allows accessing and setting of Stiffener's data.</i></b><br>
+
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('SfmFactory','');return false">SfmFactory</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#AngleMode"><b>AngleMode</b></a>
+<dd>  Returns or sets the angle mode.
+ <dt>
+    <a href="#SectionOrientation"><b>SectionOrientation</b></a>
+<dd>  Returns or sets the section orientation.
+ <dt>
+    <a href="#SideOrientation"><b>SideOrientation</b></a>
+<dd>  Returns or sets the side orientation.
+ <dt>
+    <a href="#WebSupport"><b>WebSupport</b></a>
+<dd>  Returns or sets the web support.
+ <dt>
+    <a href="#WebSupportOffset"><b>WebSupportOffset</b></a>
+<dd>  Returns or sets the Stiffener's web support offset.
+ <dt>
+    <a href="#WebSupportOffsetParam"><b>WebSupportOffsetParam</b></a>
+<dd> </dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetMoldedSurface"><b>GetMoldedSurface</b></a>
+<dd>  Returns or sets the molded surface.
+ <dt>
+    <a href="#IsAngleModeValid"><b>IsAngleModeValid</b></a>
+<dd>  Gets the status about the validity of the angle mode regarding the nature of the
+ web support (curve or surface).
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="AngleMode"><dt>
+
+<table><tr><td>o Property <b>AngleMode</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the angle mode.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>AngleMode</code> the angle mode of the <code>SfmStiffener</code> feature.
+ <pre>
+ Dim AngleMode As Integer
+ Set AngleMode = SfmStiffener.<font color="red">AngleMode</font>
+ </pre>
+ </dl>
+</dl>
+<a name="SectionOrientation"><dt>
+
+<table><tr><td>o Property <b>SectionOrientation</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the section orientation.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>Orient</code> the section orientation of the <code>SfmStiffener</code> feature.
+ <pre>
+ Dim Orient As Integer
+ Set Orient = SfmStiffener.<font color="red">SideOrientation</font>
+ </pre>
+ </dl>
+</dl>
+<a name="SideOrientation"><dt>
+
+<table><tr><td>o Property <b>SideOrientation</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the side orientation.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>Orient</code> the side orientation of the <code>SfmStiffener</code> feature.
+ <pre>
+ Dim Orient As Integer
+ Set Orient = SfmStiffener.<font color="red">SideOrientation</font>
+ </pre>
+ </dl>
+</dl>
+<a name="WebSupport"><dt>
+
+<table><tr><td>o Property <b>WebSupport</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the web support.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>WebSupport</code> the web support of the <code>SfmStiffener</code> feature.
+ <pre>
+ Dim WebSupport As Reference
+ Set WebSupport = SfmStiffener.<font color="red">WebSupport</font>
+ </pre>
+ </dl>
+</dl>
+<a name="WebSupportOffset"><dt>
+
+<table><tr><td>o Property <b>WebSupportOffset</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the Stiffener's web support offset.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>Offset</code> the web support offset of the <code>SfmStiffener</code> feature.
+ <pre>
+ Dim Offset As Double
+ Set Offset = SfmStiffener.<font color="red">WebSupportOffset</font>
+ </pre>
+ </dl>
+</dl>
+<a name="WebSupportOffsetParam"><dt>
+
+<table><tr><td>o Property <b>WebSupportOffsetParam</b>(<td>) As <script type="text/javascript"> activateLink('Length','Length')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetMoldedSurface"><dt>
+
+<table><tr><td>o Func <b>GetMoldedSurface</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the molded surface.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>MoldedSurface</code> the molded surface of the <code>SfmStiffener</code> feature.
+ <pre>
+ Dim MoldedSurface As Reference
+ Set MoldedSurface = SfmStiffener.<font color="red">GetMoldedSurface</font>
+ </pre>
+ </dl>
+</dl>
+<a name="IsAngleModeValid"><dt>
+
+<table><tr><td>o Func <b>IsAngleModeValid</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iAngleMode</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+ Gets the status about the validity of the angle mode regarding the nature of the
+ web support (curve or surface).
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>IsAngleModeValid</code> the angle mode of the <code>SfmStiffener</code> feature.
+ <pre>
+ Dim IsAngleModeValid As Bool
+ Set IsAngleModeValid = SfmStiffener.<font color="red">IsAngleModeValid</font>
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMModelInterfaces Global Function CATCGMCreateTopEdgePropagation</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMModelInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>GMModelInterfaces Global Function CATCGMCreateTopEdgePropagation</h1>
+
+<br><dt><table><tr><td>  <script type="text/javascript"> activateLink('CATICGMTopEdgePropagation',' CATICGMTopEdgePropagation *')</script>  <b>CATCGMCreateTopEdgePropagation</b>(<td><script type="text/javascript"> activateLink('CATGeoFactory','CATGeoFactory*')</script> <td><tt>iFactory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATTopData','CATTopData*')</script> <td><tt>iTopData</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBody','CATBody*')</script> <td><tt>iBody</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATEdge','CATEdge*')</script> <td><tt>iInitialEdge</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates a CATICGMTopEdgePropagation operator.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFactory</tt>
+   <dd> The factory which creates the resulting body.
+ </dd>
+    <dt><tt> iTopData</tt>
+   <dd> The pointer to the data defining the configuration and the journal. If the journal inside <tt>iTopData</tt> 
+ is <tt>NULL</tt>, it is not filled. 
+ </dd>
+    <dt><tt> iBody</tt>
+   <dd> The body which contains the initial edge and where the propagation is carried out.
+ This body can be a 1D, 2D or 3D body.
+ <br>If the body is made of several domains, the propagation is performed only within a single domain 
+ ( the domain of the initial edge ).
+ </dd>
+    <dt><tt> iInitialEdge</tt>
+   <dd> The first edge to be concatenated.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  [out, IUnknown#Release] The pointer to the created operator. To be released with the <tt>Release</tt> method after use.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATICGMTopEdgePropagation.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGMModelInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,75 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>Drafting2DLInterfaces Layout2DFactory (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../Drafting2DLInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Layout2DFactory','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Layout2DFactory','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Layout2DFactory','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Layout2DFactory','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Layout2DFactory<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Layout2DFactory_35190','Layout2DFactory','0');</script>
+<b><i> </i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Create2DLayout"><b>Create2DLayout</b></a>
+<dd>  Create the <tt>2DLayout</tt> associated to the 3D mechanical feature tha implement this interface.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Create2DLayout"><dt>
+
+<table><tr><td>o Func <b>Create2DLayout</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iStandardName</tt>) As <script type="text/javascript"> activateLink('Layout2DRoot','Layout2DRoot')</script> </table></dt>
+<dl>
+  <dd>
+ Create the <tt>2DLayout</tt> associated to the 3D mechanical feature tha implement this interface.
+ E.g. a Mechanical Part.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> CATBSTR</tt>
+   <dd> iStandardName The standard name to apply to the new layout.
+ </dd>
+    <dt><tt> oLayout</tt>
+   <dd> The created <tt>2DLayout</tt>. This feature is unique for a given 3D context feature. Consequently
+ requesting this interface on a 3D feature that is already associated to a <tt>2DLayout</tt>
+ feature will fail. You must first request for any existing <tt>2DLayout</tt> via 
+ </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','GetItem');return false">AnyObject.GetItem</a> method using <tt>CATLayoutRoot</tt> key parameter to check for <tt>2DLayout</tt> pre-existing feature as follow :<br>
+ <pre>
+ Dim MyRoot As Layout2DRoot
+ Set MyRoot = CATIA.ActiveDocument.Part.GetItem("CATLayoutRoot")
+ if MyRoot Is Nothing then
+   Dim MyRootFact As Layout2DFactory
+   Set MyRootFact = CATIA.ActiveDocument.Part.GetItem("CATLayoutRootFactory")
+   Set MyRoot = MyRootFact.Create2DLayout("ISO_3D")
+ end if
+ </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ObjectModelerBase Global Function CATLockDocument</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ObjectModelerBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>ObjectModelerBase Global Function CATLockDocument</h1>
+
+<br><dt><table><tr><td>  <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>CATLockDocument</b>(<td><script type="text/javascript"> activateLink('CATDocument','CATDocument&amp;')</script> <td><tt>iDocument</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Increases the reference's counter of links on the document.
+ <br><b>Role:</b>  
+ The life cycle of the document is not managed by the AddRef/Release 
+ mechanism. The mechanism of reference/unreference is <tt>CATLockDocument</tt> to increase the 
+ count of links on the document, and 
+<a href="#" onClick="openLink('CATUnLockDocument','');return false">CATUnLockDocument</a> to decrease its count. Such as Release, <tt>CATUnLockDocument</tt> closes the document in the session when the counter is null.
+ <br><br><u>When do you use this mechanism ? </u>
+ <ul>
+ <li> interactive mode, if your class keeps a pointer on a 
+<a href="#" onClick="openLink('CATDocument','');return false">CATDocument</a>, use this  method to add a link, and when the pointer is no longer needed use the 
+ <tt>CATUnLockDocument</tt> method</li>
+ <li> batch mode, after 
+<a href="#" onClick="openLink('CATDocumentServices','New');return false">CATDocumentServices.New</a> or 
+<a href="#" onClick="openLink('CATDocumentServices','Open');return false">CATDocumentServices.Open</a> ,  you lock your document if this document can be pointed by an another one. </li>
+ </ul>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDocument</tt>
+   <dd>      The document that is to be locked.
+ </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATDocumentServices','');return false">CATDocumentServices</a>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATSessionServices.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

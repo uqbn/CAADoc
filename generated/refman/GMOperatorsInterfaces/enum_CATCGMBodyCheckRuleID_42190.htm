@@ -1,0 +1,57 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMOperatorsInterfaces Enumeration CATCGMBodyCheckRuleID</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMOperatorsInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>GMOperatorsInterfaces Enumeration CATCGMBodyCheckRuleID</h1>
+<pre>
+enum <b>CATCGMBodyCheckRuleID</b> {
+  CATCGMBodyChkRuleUndefined,
+  CATCGMBodyChkRuleCurvatureCurve,
+  CATCGMBodyChkRuleCurvatureSurface,
+  CATCGMBodyChkRuleSelfIntersectionShell,
+  CATCGMBodyChkRuleSelfIntersectionWire,
+  CATCGMBodyChkRuleTopologicalEdgeLength
+}
+</pre>
+<b><i> enum CATCGMBodyChecker::CheckRuleID
+ <br>Defines <b>Check Rules</b> for the body check operation.</i></b><br>
+
+ <dl>
+  <dt> <b>Values:</b>
+  <dd>
+    <dl>
+    <dt><tt> BodyChkRuleUndefined</tt>
+   <dd> <br>Not to be used.
+ </dd>
+    <dt><tt> BodyChkRuleCurvatureCurve</tt>
+   <dd> <br>This rule is active in <b>Light</b> check mode.
+ <br>With this rule, all the curves present in the input body (unless <tt>SetCheckCells</tt> is used) would be checked for following rule:
+ <br>The "evaluated" minimum curvature radius for a curve MUST BE GREATER THAN "allowed" minimum curvature radius.
+ <br>Here, "allowed" minimum curvature radius is µ (i.e. 1 micron).
+ </dd>
+    <dt><tt> BodyChkRuleCurvatureSurface</tt>
+   <dd> <br>This rule is active in <b>Full</b> check mode.
+ <br>With this rule, all the surfaces present in the input body (unless <tt>SetCheckCells</tt> is used) would be checked for following rule:
+ <br>The "evaluated" minimum curvature radius for a surface MUST BE GREATER THAN "allowed" minimum curvature radius.
+ <br>Here, "allowed" minimum curvature radius is µ (i.e. 1 micron).</dd>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATCGMBodyCheckerDef.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

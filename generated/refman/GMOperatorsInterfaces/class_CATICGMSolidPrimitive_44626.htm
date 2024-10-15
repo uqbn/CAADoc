@@ -1,0 +1,122 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMOperatorsInterfaces Class CATICGMSolidPrimitive</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMOperatorsInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATICGMSolidPrimitive','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMSolidPrimitive','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATICGMSolidPrimitive','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMSolidPrimitive','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GMOperatorsInterfaces Class CATICGMSolidPrimitive</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATICGMSolidPrimitive_44626','CATICGMSolidPrimitive','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATICGMSolidPrimitive</b>
+</p>
+<p>
+<b><i> Base class for the operators that create basic topological primitives.</i></b><br>
+
+ <br>Use the derived class <tt>CATICGMSolidXxx</tt> to create the basic topological primitive <tt>Xxx</tt>.
+ <br><tt>CATICGMSolidXxx</tt> follows the global frame of the topological operators.
+<ul>
+ <li>Create it with the <tt>CATCGMCreateSolidXxx</tt> global function 
+ <li>Run it 
+ <li>Get the result
+ <li>Release the operator with the <tt>Release</tt> method after use.
+</ul></p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATICGMSolidPrimitive()"><b>CATICGMSolidPrimitive</b></a>()
+<dd>  Constructor
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetFactory()"><b>GetFactory</b></a>()
+<dd>  Returns a pointer to the factory of the geometry used in <tt>this</tt> operator.
+ <dt> o 
+    <a href="#GetReport()"><b>GetReport</b></a>()
+<dd>  Returns the pointer to the journal.
+ <dt> o 
+    <a href="#GetResult()"><b>GetResult</b></a>()
+<dd>  Returns a pointer to the resulting body created by <tt>this</tt> operator.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATICGMSolidPrimitive"></a><a name="CATICGMSolidPrimitive()"></a> <dt> o <b>CATICGMSolidPrimitive</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATICGMSolidPrimitive</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructor
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetFactory"></a><a name="GetFactory()"></a> <dt> o <b>GetFactory</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATGeoFactory','CATGeoFactory *')</script>  <b>GetFactory</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns a pointer to the factory of the geometry used in <tt>this</tt> operator.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The pointer to the factory.
+</dl>
+</dl>
+<a name="GetReport"></a><a name="GetReport()"></a> <dt> o <b>GetReport</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCGMJournalList','CATCGMJournalList *')</script>  <b>GetReport</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the pointer to the journal.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   The pointer to the journal.
+</dl>
+</dl>
+<a name="GetResult"></a><a name="GetResult()"></a> <dt> o <b>GetResult</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBody','CATBody *')</script>  <b>GetResult</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns a pointer to the resulting body created by <tt>this</tt> operator.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The pointer to the body. If you do not want to keep it, use the 
+<a href="#" onClick="openLink('CATICGMContainer','Remove');return false">CATICGMContainer.Remove</a> method  to remove it from the container after the deletion of the operator.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATICGMSolidPrimitive.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGMOperatorsInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

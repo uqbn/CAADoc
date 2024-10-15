@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="CATI2DLBackWkbAddin" href="interface_CATI2DLBackWkbAddin_40424.htm" />
+<ITEM type="interface" name="CATI2DLMainWkbAddin" href="interface_CATI2DLMainWkbAddin_40585.htm" />
+<ITEM type="interface" name="CATI2DLayoutClipping" href="interface_CATI2DLayoutClipping_43899.htm" />
+<ITEM type="interface" name="CATI2DLayoutLayout" href="interface_CATI2DLayoutLayout_40403.htm" />
+<ITEM type="interface" name="CATI2DLayoutSheet" href="interface_CATI2DLayoutSheet_38160.htm" />
+<ITEM type="interface" name="CATI2DLayoutView" href="interface_CATI2DLayoutView_36623.htm" />
+<ITEM type="interface" name="CATID2o2DLSettingAtt" href="interface_CATID2o2DLSettingAtt_42711.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+<ITEM type="class" name="CAT2DLDrawingServices" href="class_CAT2DLDrawingServices_43361.htm" />
+<ITEM type="class" name="CAT2DLayoutServices" href="class_CAT2DLayoutServices_39670.htm" />
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Enumerations" type="enum"  ctype="enum" >
+<ITEM type="enum" name="CAT2DLClippingProfileMode" href="enum_CAT2DLClippingProfileMode_51524.htm" />
+<ITEM type="enum" name="CAT2DLViewSide" href="enum_CAT2DLViewSide_30127.htm" />
+<ITEM type="enum" name="CatClippingFrameReframeOnMode" href="enum_CatClippingFrameReframeOnMode_61985.htm" />
+<ITEM type="enum" name="CatDedicatedFilterType" href="enum_CatDedicatedFilterType_45337.htm" />
+<ITEM type="enum" name="CatViewBackgroundMode" href="enum_CatViewBackgroundMode_42948.htm" />
+<ITEM type="enum" name="CatViewFilterCreationMode" href="enum_CatViewFilterCreationMode_52119.htm" />
+<ITEM type="enum" name="CatVisuBackgroundMode" href="enum_CatVisuBackgroundMode_43006.htm" />
+</ITEM>
+</Root>

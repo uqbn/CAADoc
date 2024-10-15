@@ -1,0 +1,139 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAssemblyInterfaces AssemblySplit (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATAssemblyInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('AssemblySplit','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AssemblySplit','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('AssemblySplit','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AssemblySplit','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>AssemblySplit<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_AssemblySplit_33897','AssemblySplit','0');</script>
+<b><i> Represents the AssemblySplit object.</i></b><br>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#SplittingComponent"><b>SplittingComponent</b></a>
+<dd>  Returns the component containing the splitting element.
+ <dt>
+    <a href="#SplittingElement"><b>SplittingElement</b></a>
+<dd>  Returns the splitting element.
+ <dt>
+    <a href="#SplittingSide"><b>SplittingSide</b></a>
+<dd>  Returns or sets the splitting side.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#ModifySplittingElement"><b>ModifySplittingElement</b></a>
+<dd>  Replaces the splitting element by a new one.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="SplittingComponent"><dt>
+
+<table><tr><td>o Property <b>SplittingComponent</b>(<td>) As <script type="text/javascript"> activateLink('Product','Product')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the component containing the splitting element.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example retrieves in <tt>sptComponent</tt> the splitting component
+ containing the splitting element of the assembly split <tt>assemblySplit</tt>:
+ <pre>
+ Dim sptComponent As Product
+ Set sptComponent = assemblySplit.<font color="red">SplittingComponent</font>
+ </pre>
+ </dl>
+</dl>
+<a name="SplittingElement"><dt>
+
+<table><tr><td>o Property <b>SplittingElement</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the splitting element.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example retrieves in <tt>sptElement</tt> the splitting element
+ of the assembly split <tt>assemblySplit</tt>:
+ <pre>
+ Dim sptElement As Reference
+ Set sptElement = assemblySplit.<font color="red">SplittingElement</font>
+ </pre>
+ </dl>
+</dl>
+<a name="SplittingSide"><dt>
+
+<table><tr><td>o Property <b>SplittingSide</b>(<td>) As <script type="text/javascript"> activateLink('CatSplitSide','CatSplitSide')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the splitting side.
+ The splitting side is the side of the split object
+ kept after the split, with respect to the splitting element.
+ A positive side refers to the split object side shown by
+ the splitting element normal vector.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>sptSide</tt> the splitting side
+ of the assembly split <tt>assemblySplit</tt>, and then sets it to
+ <tt>catPositiveSide</tt>:
+ <pre>
+ Set sptSide = assemblySplit.<font color="red">SplittingSide</font>
+ assemblySplit.<font color="red">SplittingSide</font> = catPositiveSide
+ </pre>
+ </dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="ModifySplittingElement"><dt>
+
+<table><tr><td>o Sub <b>ModifySplittingElement</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iSplittingElement</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iSplittingElemComp</tt>)</table></dt>
+<dl>
+  <dd>
+ Replaces the splitting element by a new one.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSplittingElement</tt>
+   <dd>   The new face or plane that will split the current body
+ </dd>
+    <dt><tt> iSplittingElemComp</tt>
+   <dd>   The component that contains the new splitting element
+ <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example replaces the existing splitting element of the
+ assembly split <tt>assemblySplit</tt> by <tt>sptElem</tt> contained in 
+ the <tt>sptComponent</tt> splitting component
+ <pre>
+ assemblySplit.<font color="red">ModifySplittingElement</font>(sptElem, _
+                                      sptComponent)
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

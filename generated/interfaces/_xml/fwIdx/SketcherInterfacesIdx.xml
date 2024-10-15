@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="SketcherInterfaces" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="1" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<enum name="CatGeometricType" htmlFileName="enum_CatGeometricType_29220" initial="C" id="29220" abstract="Enumeration for all types of possible geometrical elements." />
+<class name="Axis2D" initial="A" htmlFileName="interface_Axis2D_20839" fatherClass="Geometry2D" fatherId="23801" DSCharacteristic="interface" id="20839" abstract="   Interface defining a coordinate system in the 2D Space." />
+<method name="HorizontalReference" htmlFileName="interface_Axis2D_20839" containerName="Axis2D" containerType="interface" id="41878" status="32" isProperty="1" initial="H" argList="" abstract="Returns the 2D coordinate system horizontal axis." />
+<method name="Origin" htmlFileName="interface_Axis2D_20839" containerName="Axis2D" containerType="interface" id="25724" status="32" isProperty="1" initial="O" argList="" abstract="Returns the 2D coordinate system origin." />
+<method name="VerticalReference" htmlFileName="interface_Axis2D_20839" containerName="Axis2D" containerType="interface" id="38069" status="32" isProperty="1" initial="V" argList="" abstract="Returns the 2D coordinate system vertical axis." />
+<class name="Circle2D" initial="C" htmlFileName="interface_Circle2D_21967" fatherClass="Curve2D" fatherId="21385" DSCharacteristic="interface" id="21967" abstract=" Class defining a circle in 2D Space." />
+<method name="GetCenter" htmlFileName="interface_Circle2D_21967" containerName="Circle2D" containerType="interface" id="29052" status="0" isProperty="0" initial="G" argList="" abstract="" />
+<method name="SetData" htmlFileName="interface_Circle2D_21967" containerName="Circle2D" containerType="interface" id="27336" status="0" isProperty="0" initial="S" argList="" abstract="" />
+<method name="CenterPoint" htmlFileName="interface_Circle2D_21967" containerName="Circle2D" containerType="interface" id="31139" status="96" isProperty="1" initial="C" argList="" abstract="      Returns the center point of the circle." />
+<method name="Radius" htmlFileName="interface_Circle2D_21967" containerName="Circle2D" containerType="interface" id="26904" status="32" isProperty="1" initial="R" argList="" abstract="" />
+<class name="ControlPoint2D" initial="C" htmlFileName="interface_ControlPoint2D_28215" fatherClass="Point2D" fatherId="21397" DSCharacteristic="interface" id="28215" abstract=" Class defining a spline control point in 2D Space." />
+<method name="GetTangent" htmlFileName="interface_ControlPoint2D_28215" containerName="ControlPoint2D" containerType="interface" id="36269" status="0" isProperty="0" initial="G" argList="" abstract="" />
+<method name="SetTangent" htmlFileName="interface_ControlPoint2D_28215" containerName="ControlPoint2D" containerType="interface" id="36269" status="0" isProperty="0" initial="S" argList="" abstract="" />
+<method name="UnsetCurvature" htmlFileName="interface_ControlPoint2D_28215" containerName="ControlPoint2D" containerType="interface" id="41384" status="0" isProperty="0" initial="U" argList="" abstract="" />
+<method name="UnsetTangent" htmlFileName="interface_ControlPoint2D_28215" containerName="ControlPoint2D" containerType="interface" id="38485" status="0" isProperty="0" initial="U" argList="" abstract="" />
+<method name="Curvature" htmlFileName="interface_ControlPoint2D_28215" containerName="ControlPoint2D" containerType="interface" id="35472" status="96" isProperty="1" initial="C" argList="" abstract="" />
+<class name="Curve2D" initial="C" htmlFileName="interface_Curve2D_21385" fatherClass="Geometry2D" fatherId="23801" DSCharacteristic="interface" id="21385" abstract="   Class defining a curve in 2D Space." />
+<method name="GetCurvature" htmlFileName="interface_Curve2D_21385" containerName="Curve2D" containerType="interface" id="31858" status="0" isProperty="0" initial="G" argList="" abstract="      Returns the curvature and curvature direction at the 
+       parameter specified." />
+<method name="GetDerivatives" htmlFileName="interface_Curve2D_21385" containerName="Curve2D" containerType="interface" id="34509" status="0" isProperty="0" initial="G" argList="" abstract="      Returns the first, second and third derivatives at the 
+       parameter specified." />
+<method name="GetEndPoints" htmlFileName="interface_Curve2D_21385" containerName="Curve2D" containerType="interface" id="31659" status="0" isProperty="0" initial="G" argList="" abstract="      Returns the end-points of the curve." />
+<method name="GetLengthAtParam" htmlFileName="interface_Curve2D_21385" containerName="Curve2D" containerType="interface" id="36708" status="0" isProperty="0" initial="G" argList="" abstract="      Returns the length, measured along the curve, from a given
+       parameter to a given parameter." />
+<method name="GetParamAtLength" htmlFileName="interface_Curve2D_21385" containerName="Curve2D" containerType="interface" id="36821" status="0" isProperty="0" initial="G" argList="" abstract="      Returns the parameter at a given length, measured along
+       the curve, starting from a given parameter." />
+<method name="GetParamExtents" htmlFileName="interface_Curve2D_21385" containerName="Curve2D" containerType="interface" id="35884" status="0" isProperty="0" initial="G" argList="" abstract="      Returns the parametric extents of the curve." />
+<method name="GetPointAtParam" htmlFileName="interface_Curve2D_21385" containerName="Curve2D" containerType="interface" id="35267" status="0" isProperty="0" initial="G" argList="" abstract="      Returns a point on the curve computed from an
+       input parameter." />
+<method name="GetRangeBox" htmlFileName="interface_Curve2D_21385" containerName="Curve2D" containerType="interface" id="30236" status="0" isProperty="0" initial="G" argList="" abstract="      Returns the range box (or bounding box) of the object
+       &lt;br&gt;The box is axially aligned within the local coordinate
+       system of the server." />
+<method name="GetTangent" htmlFileName="interface_Curve2D_21385" containerName="Curve2D" containerType="interface" id="29439" status="0" isProperty="0" initial="G" argList="" abstract="      Returns the unit-vector tangent at the parameter specified." />
+<method name="IsPeriodic" htmlFileName="interface_Curve2D_21385" containerName="Curve2D" containerType="interface" id="29323" status="0" isProperty="0" initial="I" argList="" abstract="      Specifies whether a curve is periodic or not." />
+<method name="Continuity" htmlFileName="interface_Curve2D_21385" containerName="Curve2D" containerType="interface" id="29770" status="32" isProperty="1" initial="C" argList="" abstract="      Returns the highest level of geometric continuity the curve
+       possesses." />
+<method name="EndPoint" htmlFileName="interface_Curve2D_21385" containerName="Curve2D" containerType="interface" id="27658" status="96" isProperty="1" initial="E" argList="" abstract="      Returns the end point of the curve." />
+<method name="Period" htmlFileName="interface_Curve2D_21385" containerName="Curve2D" containerType="interface" id="26255" status="32" isProperty="1" initial="P" argList="" abstract="      Returns the period of a periodic curve." />
+<method name="StartPoint" htmlFileName="interface_Curve2D_21385" containerName="Curve2D" containerType="interface" id="29508" status="96" isProperty="1" initial="S" argList="" abstract="      Returns the start point of the curve." />
+<class name="Ellipse2D" initial="E" htmlFileName="interface_Ellipse2D_22786" fatherClass="Curve2D" fatherId="21385" DSCharacteristic="interface" id="22786" abstract="   Class defining an ellipse in 2D Space." />
+<method name="GetCenter" htmlFileName="interface_Ellipse2D_22786" containerName="Ellipse2D" containerType="interface" id="29871" status="0" isProperty="0" initial="G" argList="" abstract="" />
+<method name="GetMajorAxis" htmlFileName="interface_Ellipse2D_22786" containerName="Ellipse2D" containerType="interface" id="32929" status="0" isProperty="0" initial="G" argList="" abstract="" />
+<method name="GetMinorAxis" htmlFileName="interface_Ellipse2D_22786" containerName="Ellipse2D" containerType="interface" id="32981" status="0" isProperty="0" initial="G" argList="" abstract="" />
+<method name="SetData" htmlFileName="interface_Ellipse2D_22786" containerName="Ellipse2D" containerType="interface" id="28155" status="0" isProperty="0" initial="S" argList="" abstract="" />
+<method name="CenterPoint" htmlFileName="interface_Ellipse2D_22786" containerName="Ellipse2D" containerType="interface" id="31958" status="96" isProperty="1" initial="C" argList="" abstract="      Returns the center point of the ellipse." />
+<method name="MajorRadius" htmlFileName="interface_Ellipse2D_22786" containerName="Ellipse2D" containerType="interface" id="31901" status="32" isProperty="1" initial="M" argList="" abstract="" />
+<method name="MinorRadius" htmlFileName="interface_Ellipse2D_22786" containerName="Ellipse2D" containerType="interface" id="31917" status="32" isProperty="1" initial="M" argList="" abstract="" />
+<class name="Factory2D" initial="F" htmlFileName="interface_Factory2D_22901" fatherClass="AnyObject" fatherId="9080" DSCharacteristic="interface" id="22901" abstract="Interface to the factory for 2D objects." />
+<method name="CreateCircle" htmlFileName="interface_Factory2D_22901" containerName="Factory2D" containerType="interface" id="32890" status="0" isProperty="0" initial="C" argList="" abstract="Creates and returns a 2D circle arc." />
+<method name="CreateClosedCircle" htmlFileName="interface_Factory2D_22901" containerName="Factory2D" containerType="interface" id="41645" status="0" isProperty="0" initial="C" argList="" abstract="Creates and returns a closed 2D circle." />
+<method name="CreateClosedEllipse" htmlFileName="interface_Factory2D_22901" containerName="Factory2D" containerType="interface" id="43834" status="0" isProperty="0" initial="C" argList="" abstract="Creates and returns a closed 2D ellipse." />
+<method name="CreateControlPoint" htmlFileName="interface_Factory2D_22901" containerName="Factory2D" containerType="interface" id="42420" status="0" isProperty="0" initial="C" argList="" abstract="Creates and returns a 2D spline control point." />
+<method name="CreateEllipse" htmlFileName="interface_Factory2D_22901" containerName="Factory2D" containerType="interface" id="34335" status="0" isProperty="0" initial="C" argList="" abstract="Creates and returns a 2D ellipse arc." />
+<method name="CreateHyperbola" htmlFileName="interface_Factory2D_22901" containerName="Factory2D" containerType="interface" id="37155" status="0" isProperty="0" initial="C" argList="" abstract="Creates and returns a hyperbola." />
+<method name="CreateIntersection" htmlFileName="interface_Factory2D_22901" containerName="Factory2D" containerType="interface" id="42553" status="0" isProperty="0" initial="C" argList="" abstract="Creates and returns the intersection of an object with the sketch." />
+<method name="CreateIntersections" htmlFileName="interface_Factory2D_22901" containerName="Factory2D" containerType="interface" id="44623" status="0" isProperty="0" initial="C" argList="" abstract="Creates and returns the possible intersections of an object with the sketch." />
+<method name="CreateLine" htmlFileName="interface_Factory2D_22901" containerName="Factory2D" containerType="interface" id="30739" status="0" isProperty="0" initial="C" argList="" abstract="Creates and returns a 2D line." />
+<method name="CreateLineFromVector" htmlFileName="interface_Factory2D_22901" containerName="Factory2D" containerType="interface" id="45881" status="0" isProperty="0" initial="C" argList="" abstract="Creates and returns a 2D line." />
+<method name="CreateParabola" htmlFileName="interface_Factory2D_22901" containerName="Factory2D" containerType="interface" id="35461" status="0" isProperty="0" initial="C" argList="" abstract="Creates and returns a parabola." />
+<method name="CreatePoint" htmlFileName="interface_Factory2D_22901" containerName="Factory2D" containerType="interface" id="32006" status="0" isProperty="0" initial="C" argList="" abstract="Creates and returns a 2D point." />
+<method name="CreateProjection" htmlFileName="interface_Factory2D_22901" containerName="Factory2D" containerType="interface" id="38939" status="0" isProperty="0" initial="C" argList="" abstract="Creates and returns the projection of an object on the sketch." />
+<method name="CreateProjections" htmlFileName="interface_Factory2D_22901" containerName="Factory2D" containerType="interface" id="40779" status="0" isProperty="0" initial="C" argList="" abstract="Creates and returns the possible projections of an object on the sketch." />
+<method name="CreateSpline" htmlFileName="interface_Factory2D_22901" containerName="Factory2D" containerType="interface" id="33061" status="0" isProperty="0" initial="C" argList="" abstract="Creates and returns a 2D b-spline." />
+<class name="GeometricElement" initial="G" htmlFileName="interface_GeometricElement_32182" fatherClass="AnyObject" fatherId="9080" DSCharacteristic="interface" id="32182" abstract="2D or 3D wireframe geometric element." />
+<method name="GeometricType" htmlFileName="interface_GeometricElement_32182" containerName="GeometricElement" containerType="interface" id="43719" status="32" isProperty="1" initial="G" argList="" abstract="" />
+<class name="Geometry2D" initial="G" htmlFileName="interface_Geometry2D_23801" fatherClass="GeometricElement" fatherId="32182" DSCharacteristic="interface" id="23801" abstract="2D wireframe geometric element." />
+<method name="Construction" htmlFileName="interface_Geometry2D_23801" containerName="Geometry2D" containerType="interface" id="34381" status="96" isProperty="1" initial="C" argList="" abstract="" />
+<method name="ReportName" htmlFileName="interface_Geometry2D_23801" containerName="Geometry2D" containerType="interface" id="31705" status="96" isProperty="1" initial="R" argList="" abstract="" />
+<class name="Hyperbola2D" initial="H" htmlFileName="interface_Hyperbola2D_24546" fatherClass="Curve2D" fatherId="21385" DSCharacteristic="interface" id="24546" abstract="   Class defining an hyperbola in 2D Space." />
+<method name="GetAxis" htmlFileName="interface_Hyperbola2D_24546" containerName="Hyperbola2D" containerType="interface" id="30051" status="0" isProperty="0" initial="G" argList="" abstract="" />
+<method name="GetCenter" htmlFileName="interface_Hyperbola2D_24546" containerName="Hyperbola2D" containerType="interface" id="31631" status="0" isProperty="0" initial="G" argList="" abstract="" />
+<method name="SetData" htmlFileName="interface_Hyperbola2D_24546" containerName="Hyperbola2D" containerType="interface" id="29915" status="0" isProperty="0" initial="S" argList="" abstract="" />
+<method name="ImaginaryRadius" htmlFileName="interface_Hyperbola2D_24546" containerName="Hyperbola2D" containerType="interface" id="38957" status="32" isProperty="1" initial="I" argList="" abstract="" />
+<method name="Radius" htmlFileName="interface_Hyperbola2D_24546" containerName="Hyperbola2D" containerType="interface" id="29483" status="32" isProperty="1" initial="R" argList="" abstract="" />
+<class name="Line2D" initial="L" htmlFileName="interface_Line2D_20792" fatherClass="Curve2D" fatherId="21385" DSCharacteristic="interface" id="20792" abstract="   Class defining a line in 2D Space." />
+<method name="GetDirection" htmlFileName="interface_Line2D_20792" containerName="Line2D" containerType="interface" id="31093" status="0" isProperty="0" initial="G" argList="" abstract="      Returns the unit-vector pointing in the direction of the
+       line." />
+<method name="GetOrigin" htmlFileName="interface_Line2D_20792" containerName="Line2D" containerType="interface" id="27858" status="0" isProperty="0" initial="G" argList="" abstract="" />
+<method name="SetData" htmlFileName="interface_Line2D_20792" containerName="Line2D" containerType="interface" id="26161" status="0" isProperty="0" initial="S" argList="" abstract="" />
+<class name="Parabola2D" initial="P" htmlFileName="interface_Parabola2D_23526" fatherClass="Curve2D" fatherId="21385" DSCharacteristic="interface" id="23526" abstract="   Class defining an parabola in 2D Space." />
+<method name="GetAxis" htmlFileName="interface_Parabola2D_23526" containerName="Parabola2D" containerType="interface" id="29031" status="0" isProperty="0" initial="G" argList="" abstract="" />
+<method name="GetCenter" htmlFileName="interface_Parabola2D_23526" containerName="Parabola2D" containerType="interface" id="30611" status="0" isProperty="0" initial="G" argList="" abstract="" />
+<method name="SetData" htmlFileName="interface_Parabola2D_23526" containerName="Parabola2D" containerType="interface" id="28895" status="0" isProperty="0" initial="S" argList="" abstract="" />
+<method name="FocalDistance" htmlFileName="interface_Parabola2D_23526" containerName="Parabola2D" containerType="interface" id="34817" status="32" isProperty="1" initial="F" argList="" abstract="" />
+<class name="Point2D" initial="P" htmlFileName="interface_Point2D_21397" fatherClass="Geometry2D" fatherId="23801" DSCharacteristic="interface" id="21397" abstract=" Class defining a point in 2D Space." />
+<method name="GetCoordinates" htmlFileName="interface_Point2D_21397" containerName="Point2D" containerType="interface" id="34379" status="0" isProperty="0" initial="G" argList="" abstract="" />
+<method name="SetData" htmlFileName="interface_Point2D_21397" containerName="Point2D" containerType="interface" id="26766" status="0" isProperty="0" initial="S" argList="" abstract="" />
+<class name="Sketch" initial="S" htmlFileName="interface_Sketch_21197" fatherClass="AnyObject" fatherId="9080" DSCharacteristic="interface" id="21197" abstract="The Sketch is a 2D based element comprising constrained 2D geometrical elements." />
+<method name="CloseEdition" htmlFileName="interface_Sketch_21197" containerName="Sketch" containerType="interface" id="31431" status="0" isProperty="0" initial="C" argList="" abstract=" Closes the Sketch Edition." />
+<method name="Evaluate" htmlFileName="interface_Sketch_21197" containerName="Sketch" containerType="interface" id="27471" status="0" isProperty="0" initial="E" argList="" abstract="" />
+<method name="GetAbsoluteAxisData" htmlFileName="interface_Sketch_21197" containerName="Sketch" containerType="interface" id="41806" status="0" isProperty="0" initial="G" argList="" abstract="Returns the sketch axis coordinates in 3D space." />
+<method name="InverseOrientation" htmlFileName="interface_Sketch_21197" containerName="Sketch" containerType="interface" id="40893" status="0" isProperty="0" initial="I" argList="" abstract="" />
+<method name="OpenEdition" htmlFileName="interface_Sketch_21197" containerName="Sketch" containerType="interface" id="30280" status="0" isProperty="0" initial="O" argList="" abstract=" Opens the Sketch Edition." />
+<method name="SetAbsoluteAxisData" htmlFileName="interface_Sketch_21197" containerName="Sketch" containerType="interface" id="41806" status="0" isProperty="0" initial="S" argList="" abstract="Sets the absolute axis of the sketch in 3D space." />
+<method name="AbsoluteAxis" htmlFileName="interface_Sketch_21197" containerName="Sketch" containerType="interface" id="31475" status="32" isProperty="1" initial="A" argList="" abstract="Returns the 2D absolute axis of the sketch." />
+<method name="CenterLine" htmlFileName="interface_Sketch_21197" containerName="Sketch" containerType="interface" id="29102" status="96" isProperty="1" initial="C" argList="" abstract="Returns the geometric 2D line defined as the center line of the sketch." />
+<method name="Constraints" htmlFileName="interface_Sketch_21197" containerName="Sketch" containerType="interface" id="30580" status="32" isProperty="1" initial="C" argList="" abstract="Returns the list of constraints included in the sketch." />
+<method name="Factory2D" htmlFileName="interface_Sketch_21197" containerName="Sketch" containerType="interface" id="27756" status="32" isProperty="1" initial="F" argList="" abstract="Returns the 2D factory of the sketch." />
+<method name="GeometricElements" htmlFileName="interface_Sketch_21197" containerName="Sketch" containerType="interface" id="38877" status="32" isProperty="1" initial="G" argList="" abstract="Returns the list of geometrical elements included in the sketch." />
+<class name="Spline2D" initial="S" htmlFileName="interface_Spline2D_21988" fatherClass="Curve2D" fatherId="21385" DSCharacteristic="interface" id="21988" abstract="   Class defining a spline in 2D Space." />
+<method name="GetControlPoints" htmlFileName="interface_Spline2D_21988" containerName="Spline2D" containerType="interface" id="38212" status="0" isProperty="0" initial="G" argList="" abstract=" Returns the control points making up the spline." />
+<method name="GetNumberOfControlPoints" htmlFileName="interface_Spline2D_21988" containerName="Spline2D" containerType="interface" id="54389" status="0" isProperty="0" initial="G" argList="" abstract="" />
+<method name="InsertControlPointAfter" htmlFileName="interface_Spline2D_21988" containerName="Spline2D" containerType="interface" id="51667" status="0" isProperty="0" initial="I" argList="" abstract=" Inserts control points in the spline." />
+</fw>

@@ -1,0 +1,226 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces AnalysisMeshPart (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('AnalysisMeshPart','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisMeshPart','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('AnalysisMeshPart','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisMeshPart','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>AnalysisMeshPart<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_AnalysisMeshPart_38092','AnalysisMeshPart','0');</script>
+<b><i>   The interface to access a CATIAAnalysisMeshPart.</i></b><br>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Activity"><b>Activity</b></a>
+<dd>  Returns the activity of an meshpart.
+ <dt>
+    <a href="#AnalysisMeshLocalSpecifications"><b>AnalysisMeshLocalSpecifications</b></a>
+<dd>  Returns the local specification collection from the meshpart analysis.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddSupportFromPublication"><b>AddSupportFromPublication</b></a>
+<dd>  Creates a new support and add it to the support description of the mesh part.
+ <dt>
+    <a href="#AddSupportFromReference"><b>AddSupportFromReference</b></a>
+<dd>  Creates a new support and add it to the support description of the mesh part.
+ <dt>
+    <a href="#SetGlobalSpecification"><b>SetGlobalSpecification</b></a>
+<dd>  Sets the value corresponding to the given global specification.
+ <dt>
+    <a href="#SetMeshPartsToCapture"><b>SetMeshPartsToCapture</b></a>
+<dd>  Set the list of candidate <b>Mesh Parts</b> for capture.
+ <dt>
+    <a href="#SetSpecificationFromPublication"><b>SetSpecificationFromPublication</b></a>
+<dd>  Adds the geometric value corresponding to the given global specification.
+ <dt>
+    <a href="#SetSpecificationFromReference"><b>SetSpecificationFromReference</b></a>
+<dd>  Set the geometric value corresponding to the given global specification.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Activity"><dt>
+
+<table><tr><td>o Property <b>Activity</b>(<td>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the activity of an meshpart.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oActivity</tt>
+   <dd> <br><b>Legal values</b>:
+ <dl><dt>FALSE</dt><dd><b>Mesh Part</b> is not active.
+ <dt>TRUE</dt><dd><b>Mesh Part</b> is active.
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="AnalysisMeshLocalSpecifications"><dt>
+
+<table><tr><td>o Property <b>AnalysisMeshLocalSpecifications</b>(<td>) As <script type="text/javascript"> activateLink('AnalysisMeshLocalSpecifications','AnalysisMeshLocalSpecifications')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the local specification collection from the meshpart analysis.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddSupportFromPublication"><dt>
+
+<table><tr><td>o Sub <b>AddSupportFromPublication</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Publication','Publication')</script> <td><tt>iSupport</tt>)</table></dt>
+<dl>
+  <dd>
+ Creates a new support and add it to the support description of the mesh part.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProduct</tt>
+   <dd>  the CATIA Product that represent the object to linked.<br> </dd>
+    <dt><tt> iPublication</tt>
+   <dd>  the CATIA Publication that represent the the geometry to meshed.<br> </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('Publication','');return false">Publication</a>, <a href="#" onClick="openLink('Product','');return false">Product</a>
+</dl>
+</dl>
+<a name="AddSupportFromReference"><dt>
+
+<table><tr><td>o Sub <b>AddSupportFromReference</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iSupport</tt>)</table></dt>
+<dl>
+  <dd>
+ Creates a new support and add it to the support description of the mesh part.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProduct</tt>
+   <dd>  the CATIA Product that represent the object to linked.<br> </dd>
+    <dt><tt> iSupport</tt>
+   <dd>  the CATIA Reference that represent the geometry to meshed.<br> </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('Reference','');return false">Reference</a>, <a href="#" onClick="openLink('Product','');return false">Product</a>
+</dl>
+</dl>
+<a name="SetGlobalSpecification"><dt>
+
+<table><tr><td>o Sub <b>SetGlobalSpecification</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iValue</tt>)</table></dt>
+<dl>
+  <dd>
+ Sets the value corresponding to the given global specification.<br>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iName</tt>
+   <dd>  The identifier if the global specification.<br> </dd>
+    <dt><tt> iValue</tt>
+   <dd>  The value of the global specification.<br></dd>
+</dl>
+</dl>
+</dl>
+<a name="SetMeshPartsToCapture"><dt>
+
+<table><tr><td>o Sub <b>SetMeshPartsToCapture</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iMeshParts</tt>)</table></dt>
+<dl>
+  <dd>
+ Set the list of candidate <b>Mesh Parts</b> for capture. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iMeshParts</tt>
+   <dd>   Safe array of mesh parts.  
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT.
+   <br><b>Legal values</b>:
+   <dl><dt>S_OK</dt><dd>Operation successfull.
+   <dt>E_FAIL</dt><dd>Operation failed.
+   </dl>
+</dl>
+</dl>
+<a name="SetSpecificationFromPublication"><dt>
+
+<table><tr><td>o Sub <b>SetSpecificationFromPublication</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Publication','Publication')</script> <td><tt>iSupport</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iMode</tt>)</table></dt>
+<dl>
+  <dd>
+ Adds the geometric value corresponding to the given global specification.<br>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iName</tt>
+   <dd>  The identifier if the global specification.<br> </dd>
+    <dt><tt> iProduct</tt>
+   <dd>  the CATIA Product that represent the object to linked.<br> </dd>
+    <dt><tt> iPublication</tt>
+   <dd>  the CATIA Publication that represent the the geometry to meshed.<br> </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('Publication','');return false">Publication</a>, <a href="#" onClick="openLink('Product','');return false">Product</a>
+    <dt><tt> iMode</tt>
+   <dd>   The mode used to valuate the publication global specification.
+   <br><b>Legal values</b>: 
+   <dl><dt>0</dt><dd>the global specification is defined as a single reference.
+   <dt>1</dt><dd>the global specification is added to exising references.</dl></dd>
+</dl>
+</dl>
+<a name="SetSpecificationFromReference"><dt>
+
+<table><tr><td>o Sub <b>SetSpecificationFromReference</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iSupport</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iMode</tt>)</table></dt>
+<dl>
+  <dd>
+ Set the geometric value corresponding to the given global specification.<br>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iName</tt>
+   <dd>  The identifier if the global specification.<br> </dd>
+    <dt><tt> iProduct</tt>
+   <dd>  the CATIA Product that represent the object to linked.<br> </dd>
+    <dt><tt> iSupport</tt>
+   <dd>  the CATIA Reference that represent the geometry to meshed.<br> </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('Reference','');return false">Reference</a>, <a href="#" onClick="openLink('Product','');return false">Product</a>
+    <dt><tt> iMode</tt>
+   <dd>   The mode used to valuate the reference global specification.
+   <br><b>Legal values</b>: 
+   <dl><dt>0</dt><dd>the global specification is defined as a single reference.
+   <dt>1</dt><dd>the global specification is added to exising references.</dl></dd>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

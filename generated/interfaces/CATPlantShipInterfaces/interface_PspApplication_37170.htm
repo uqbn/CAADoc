@@ -1,0 +1,73 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATPlantShipInterfaces PspApplication (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATPlantShipInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('PspApplication','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PspApplication','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('PspApplication','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PspApplication','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PspApplication<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_PspApplication_37170','PspApplication','0');</script>
+<b><i> Represents an application.</i></b><br>
+
+ <b>Role</b>: To activate and query a Distributive System application.<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Initialization"><b>Initialization</b></a>
+<dd>  Initializes the application environment (load feature start up objects,
+ activate the application.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Initialization"><dt>
+
+<table><tr><td>o Sub <b>Initialization</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Initializes the application environment (load feature start up objects,
+ activate the application..).
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objPrdRoot        As Product
+ Dim objPspWorkbench   As PspWorkbench
+ Dim objPspApplnPip       As PspApplication
+ Dim objPspApplnTub    As PspApplication
+
+ Set objPrdRoot = CATIA.ActiveDocument.Product
+ Set objPspWorkbench = objPrdRoot.GetTechnologicalObject ("PspWorkbench")
+ 
+ Set objPspApplnPip = objPspWorkbench.GetApplication(catPspIDLCATPiping)
+ ...
+ 
+ objPspApplnPip.<font color="red">Initialization</font>
+ ....
+ Set objPspApplnTub = objPspWorkbench.GetApplication(catPspIDLCATTubing)
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

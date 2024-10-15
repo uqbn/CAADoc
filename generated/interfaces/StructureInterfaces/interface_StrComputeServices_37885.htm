@@ -1,0 +1,194 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>StructureInterfaces StrComputeServices (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../StructureInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('StrComputeServices','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('StrComputeServices','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('StrComputeServices','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('StrComputeServices','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>StrComputeServices<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_StrComputeServices_37885','StrComputeServices','0');</script>
+<b><i>  Represents a structure service object.</i></b><br>
+ Structure service object extracts
+ properties on structure objects.
+ Methods of this interface are computing the mass properties of the main body (PartBody) 
+ of each Structure Object (Member and Plate)<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetCenterOfGravity"><b>GetCenterOfGravity</b></a>
+<dd>   Retreive the center of gravity for a structure object.
+ <dt>
+    <a href="#GetLength"><b>GetLength</b></a>
+<dd>  Returns the length to cut for a member object.
+ <dt>
+    <a href="#GetMass"><b>GetMass</b></a>
+<dd>   Returns the mass for a structure object.
+ <dt>
+    <a href="#GetMaterialName"><b>GetMaterialName</b></a>
+<dd>   Returns the material name for a structure object.
+ <dt>
+    <a href="#GetSurface"><b>GetSurface</b></a>
+<dd>   Returns the surface for a structure object.
+ <dt>
+    <a href="#GetVolume"><b>GetVolume</b></a>
+<dd>  Returns the volume for a structure object.
+ <dt>
+    <a href="#GetWetArea"><b>GetWetArea</b></a>
+<dd>  Returns the wet area for a structure object.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetCenterOfGravity"><dt>
+
+<table><tr><td>o Sub <b>GetCenterOfGravity</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>oX</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>oY</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>oZ</tt>)</table></dt>
+<dl>
+  <dd>
+  Retreive the center of gravity for a structure object.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProduct</tt>
+   <dd>	The selected structure object 
+ </dd>
+    <dt><tt> oX</tt>
+   <dd>	The x coordinate of the center of gravity 
+ </dd>
+    <dt><tt> oY</tt>
+   <dd>	The y coordinate of the center of gravity 
+ </dd>
+    <dt><tt> oZ</tt>
+   <dd>	The z coordinate of the center of gravity</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetLength"><dt>
+
+<table><tr><td>o Func <b>GetLength</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the length to cut for a member object.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProduct</tt>
+   <dd>	The selected structure object</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetMass"><dt>
+
+<table><tr><td>o Func <b>GetMass</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+  Returns the mass for a structure object.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProduct</tt>
+   <dd>	The selected structure object</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetMaterialName"><dt>
+
+<table><tr><td>o Func <b>GetMaterialName</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+  Returns the material name for a structure object.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProduct</tt>
+   <dd>	The selected structure object 
+ </dd>
+    <dt><tt> oName</tt>
+   <dd>	The name of the material</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetSurface"><dt>
+
+<table><tr><td>o Func <b>GetSurface</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+  Returns the surface for a structure object.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProduct</tt>
+   <dd>	The selected structure object</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetVolume"><dt>
+
+<table><tr><td>o Func <b>GetVolume</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the volume for a structure object.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProduct</tt>
+   <dd>	The selected structure object</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetWetArea"><dt>
+
+<table><tr><td>o Func <b>GetWetArea</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the wet area for a structure object.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProduct</tt>
+   <dd>	The selected structure object</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

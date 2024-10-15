@@ -1,0 +1,93 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces Interface CATISamValidity</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISamValidity','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamValidity','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISamValidity','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamValidity','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisInterfaces Interface CATISamValidity</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISamValidity_36479','CATISamValidity','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATISamValidity</b>
+</p>
+<p>
+<b><i> Control the validity on the implementing analysis feature.</i></b><br>
+
+ <br><b>Role:</b>  This interface is called:
+ <ul>
+ <li> For the feature tree visualization in order to overload the icon look and feel.<br>
+ (UpToDate Icon information, analysis support support validity...).</li>
+ <li> To allow an analysis creation. As long as the definition is not valid, the creation will be diseable.</li>
+ </ul></p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetValidityStatus(int,int&amp;)"><b>GetValidityStatus</b></a>(int,int&amp;)
+<dd>  This method checks if the implementing analysis feature is valid.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetValidityStatus"></a><a name="GetValidityStatus(int,int&amp;)"></a> <dt> o <b>GetValidityStatus</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetValidityStatus</b>(<td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iContext</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>oValidityStatus</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ This method checks if the implementing analysis feature is valid.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iContext</tt>
+   <dd>  defines the caller type of this interface (new V5R9). <br><b>Legal values</b>:
+ <ul>
+ <li><font color="red">1</font color="red"> Graph visualization (fast check is recommended).  </li>
+ <li><font color="red">2</font color="red"> Validation of feature creation (complete check is recommended).  </li>
+ </ul>
+ </dd>
+    <dt><tt> oValidityStatus</tt>
+   <dd>  returns the validity of the checked data. <br><b>Legal values</b>:
+ <ul>
+ <li><font color="red">0</font color="red"> the definition is valid. </li>
+ <li><font color="red">1</font color="red"> the definition is incomplete.  </li>
+ </ul>
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    E_FAIL if the treatment fails.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISamValidity.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisInterface</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

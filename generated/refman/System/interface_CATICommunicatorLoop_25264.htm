@@ -1,0 +1,100 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>System Interface CATICommunicatorLoop</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../System.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATICommunicatorLoop','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICommunicatorLoop','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATICommunicatorLoop','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICommunicatorLoop','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>System Interface CATICommunicatorLoop</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATICommunicatorLoop_25264','CATICommunicatorLoop','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATICommunicatorLoop</b>
+</p>
+<p>
+<b><i> Interface to wait on Backbone.</i></b><br>
+            
+ <b>Role</b>: This interface must be used in none interactive
+ backbone clients and  never be called in interactive clients
+ like Dialog applications or CATIA V5.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIStreamMsg','');return false">CATIStreamMsg</a>, <a href="#" onClick="openLink('CATIBBStreamer','');return false">CATIBBStreamer</a>, <a href="#" onClick="openLink('CATICommMsg','');return false">CATICommMsg</a>, <a href="#" onClick="openLink('CATIMessageReceiver','');return false">CATIMessageReceiver</a>, <a href="#" onClick="openLink('CATBBMessage','');return false">CATBBMessage</a>, <a href="#" onClick="openLink('CATICommunicator','');return false">CATICommunicator</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#WaitingLoop(int,int,int*)"><b>WaitingLoop</b></a>(int,int,int*)
+<dd>  Allows to wait on the backbone.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="WaitingLoop"></a><a name="WaitingLoop(int,int,int*)"></a> <dt> o <b>WaitingLoop</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>WaitingLoop</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iGeneralWaiting</tt><td><tt>=-1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iTimeOut</tt><td><tt>=-1 </tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int*')</script> <td><tt>iEndCondition</tt><td><tt>=NULL</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Allows to wait on the backbone.
+ <b>Role</b>: This method will wait for backbone messages until one 
+  of the following conditions are met :
+ <ul>
+ <li> A period of TimeOut ms is passed without any backbone messages occurence </li>
+ <li> iEndCondition argument was non null and its value becomes null  </li>
+ </ul>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGeneralWaiting</tt>
+   <dd>    must be set to -1
+
+ </dd>
+    <dt><tt> iTimeOut</tt>
+   <dd>  <ul>
+   <li>-1: No timeout, so infinite wait </li>
+   <li> 0: no wait: <tt>WaitingLoop</tt> will treat the current messages and exit immediately </li>
+   <li>>0: timeout represents milliseconds to wait</li>
+ </ul>
+
+ </dd>
+    <dt><tt> iEndCondition</tt>
+   <dd>      If you don't use this parameter, set NULL else set the pointer of a variable 
+    whose contains is not null.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATICommunicatorLoop.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATSysCommunication</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

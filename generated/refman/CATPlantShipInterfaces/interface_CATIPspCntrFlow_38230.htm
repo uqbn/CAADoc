@@ -1,0 +1,178 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATPlantShipInterfaces Interface CATIPspCntrFlow</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATPlantShipInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIPspCntrFlow','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPspCntrFlow','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIPspCntrFlow','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPspCntrFlow','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATPlantShipInterfaces Interface CATIPspCntrFlow</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIPspCntrFlow_38230','CATIPspCntrFlow','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIPspCntrFlow</b>
+</p>
+<p>
+<b><i> Interface to mangage Plant-Ship Connector Flow property.</i></b><br>
+ 
+ <b>Role</b>: To query and modify Plant-Ship Connector Flow property.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetFlowCapability(CATPspCntrFlowCapability&amp;)"><b>GetFlowCapability</b></a>(CATPspCntrFlowCapability&amp;)
+<dd>  Query the application Flow Capability property of this connector.
+ <dt> o 
+    <a href="#GetFlowReality(CATPspCntrFlowReality&amp;)"><b>GetFlowReality</b></a>(CATPspCntrFlowReality&amp;)
+<dd>  Query the application Flow Reality property of this connector.
+ <dt> o 
+    <a href="#SetFlowCapability(CATPspCntrFlowCapability)"><b>SetFlowCapability</b></a>(CATPspCntrFlowCapability)
+<dd>  Set the application Flow Capability property of this connector.
+ <dt> o 
+    <a href="#SetFlowReality(CATPspCntrFlowReality)"><b>SetFlowReality</b></a>(CATPspCntrFlowReality)
+<dd>  Set the application Flow Reality property of this connector.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetFlowCapability"></a><a name="GetFlowCapability(CATPspCntrFlowCapability&amp;)"></a> <dt> o <b>GetFlowCapability</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetFlowCapability</b>(<td><script type="text/javascript"> activateLink('CATPspCntrFlowCapability','CATPspCntrFlowCapability&amp;')</script> <td><tt>oEFlowCapability</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Query the application Flow Capability property of this connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oEFlowCapability</tt>
+   <dd>   Flow Capability.
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATPspCntrFlowCapability','');return false">CATPspCntrFlowCapability</a>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="GetFlowReality"></a><a name="GetFlowReality(CATPspCntrFlowReality&amp;)"></a> <dt> o <b>GetFlowReality</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetFlowReality</b>(<td><script type="text/javascript"> activateLink('CATPspCntrFlowReality','CATPspCntrFlowReality&amp;')</script> <td><tt>oEFlowReality</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Query the application Flow Reality property of this connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oEFlowReality</tt>
+   <dd>   Flow Reality.
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATPspCntrFlowReality','');return false">CATPspCntrFlowReality</a>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="SetFlowCapability"></a><a name="SetFlowCapability(CATPspCntrFlowCapability)"></a> <dt> o <b>SetFlowCapability</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetFlowCapability</b>(<td> const <script type="text/javascript"> activateLink('CATPspCntrFlowCapability','CATPspCntrFlowCapability')</script> <td><tt>iEFlowCapability</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Set the application Flow Capability property of this connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEFlowCapability</tt>
+   <dd>   Flow Capability property to be set.
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATPspCntrFlowCapability','');return false">CATPspCntrFlowCapability</a>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="SetFlowReality"></a><a name="SetFlowReality(CATPspCntrFlowReality)"></a> <dt> o <b>SetFlowReality</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetFlowReality</b>(<td> const <script type="text/javascript"> activateLink('CATPspCntrFlowReality','CATPspCntrFlowReality')</script> <td><tt>iEFlowReality</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Set the application Flow Reality property of this connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEFlowReality</tt>
+   <dd>   Flow Reality property to be set.
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATPspCntrFlowReality','');return false">CATPspCntrFlowReality</a>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIPspCntrFlow.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>Dialog Class CATDlgLabel</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../Dialog.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATDlgLabel','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATDlgLabel','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATDlgLabel','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATDlgLabel','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Dialog Class CATDlgLabel</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATDlgLabel_7981','CATDlgLabel','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATDlgLabel</b>
+</p>
+<p>
+<b><i> Class to add an information text to a control.</i></b><br>
+
+ <b>Role</b>: Adds an information text to a control.
+ The label is dedicated to add an information text or an image to controls 
+ and to other objects as well. The text can be parameterized with data 
+ coming from the application. Some controls, such as a push button, a radio 
+ button, or a check button, and frames, have a text companion you can set 
+ using its Title resource. On the opposite, a combo or a spinner doesn't 
+ display its title. You can then use labels to inform the end user of what 
+ the combo or spinner is intended to do, or which variable it can set. The 
+ labels in the figure beside are associted with a combo (Form Name), and 
+ editors. The other texts are either frame titles, push button titles, or 
+ a bitmap combo line mixing a bitmap and the text "User".
+ <p>
+ Use labels whenever you want to qualify a control or add information to 
+ explain its purpose.</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATDlgLabel(CATDialog*,CATString&amp;,CATDlgStyle)"><b>CATDlgLabel</b></a>(CATDialog*,CATString&amp;,CATDlgStyle)
+<dd>  Constructs a label.
+</dl>
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATDlgLabel"></a><a name="CATDlgLabel(CATDialog*,CATString&amp;,CATDlgStyle)"></a> <dt> o <b>CATDlgLabel</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATDlgLabel</b>(<td><script type="text/javascript"> activateLink('CATDialog','CATDialog*')</script> <td><tt>iParent</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATString','CATString&amp;')</script> <td><tt>iDialogObjectName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATDlgStyle','CATDlgStyle')</script> <td><tt>iStyle</tt><td><tt>=NULL</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a label.
+ <br><b>Role</b>: Constructs a label. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iParent</tt>
+   <dd>   The parent of the label.
+ </dd>
+    <dt><tt> iDialogObjectName</tt>
+   <dd>   The dialog object name. 
+ </dd>
+    <dt><tt> iStyle</tt>
+   <dd>   The application window styles. You can cumulate several
+   styles using a logical or.
+   <br><b>Legal values</b>:
+  <ul>
+   <li><tt>CATDlgLabLeft</tt> if the the label text is left justified</li>
+   <li><tt>CATDlgLabRight</tt> if the label text is right justified</li>
+   <li><tt>CATDlgLabCenter</tt> if the label text is centered</li>
+   <li><tt>CATDlgLabFramed</tt> if the label text is framed</li>
+  </ul></dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATDlgLabel.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>DI0PANV2</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

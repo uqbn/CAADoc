@@ -1,0 +1,88 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMOperatorsInterfaces Class CATICGMTopShellOrientation</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMOperatorsInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATICGMTopShellOrientation','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMTopShellOrientation','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATICGMTopShellOrientation','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMTopShellOrientation','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GMOperatorsInterfaces Class CATICGMTopShellOrientation</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATICGMTopShellOrientation_56710','CATICGMTopShellOrientation','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATICGMTopShellOrientation</b>
+</p>
+<p>
+<b><i> Class defining the operator that modifies the orientation of the faces of a shell  
+ as well as the underlying surfaces so that the faces, the surfaces and the shell 
+ all have the same orientation.</i></b><br>
+
+ This operator follows the general scheme of the topological operators:
+ <ul>
+<li> Creates the operator with the <tt>CATCGMCreateTopShellOrientation</tt> global function, which defines
+ the body which contains the faces to be inverted.
+<li> Runs with the <tt>Run</tt> method. 
+<li> Gets the result body by the <tt>GetResult</tt> method. 
+<li> Release the operator with the <tt>Release</tt> method after use.
+</ul></p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATICGMTopShellOrientation()"><b>CATICGMTopShellOrientation</b></a>()
+<dd>  Constructor
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Run()"><b>Run</b></a>()
+<dd>  Runs <tt>this</tt> operator.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATICGMTopShellOrientation"></a><a name="CATICGMTopShellOrientation()"></a> <dt> o <b>CATICGMTopShellOrientation</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATICGMTopShellOrientation</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructor
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Run"></a><a name="Run()"></a> <dt> o <b>Run</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>Run</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Runs <tt>this</tt> operator. Returns 0 if the operation completes properly.
+</dl>
+<hr>
+ This object is included in the file: <b>CATICGMTopShellOrientation.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGMOperatorsInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

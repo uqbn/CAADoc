@@ -1,0 +1,48 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ApplicationFrame Global Function CATAfrLockUndoRedoTransactions</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ApplicationFrame.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>ApplicationFrame Global Function CATAfrLockUndoRedoTransactions</h1>
+
+<br><dt><table><tr><td>  <script type="text/javascript"> activateLink('HRESULT',' HRESULT')</script>  <b>CATAfrLockUndoRedoTransactions</b>(<td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script> <td><tt>iWarning</tt><td><tt>=FALSE</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Freezes the Undo/Redo mechanism.
+ <br><b>Role</b>: This method flushes the Undo and Redo stacks and locks transactions.
+ <br>The Undo/Redo mechanism is freezed until 
+<a href="#" onClick="openLink('CATAfrUnlockUndoRedoTransactions','');return false">CATAfrUnlockUndoRedoTransactions</a> is called. <br>Modifications done while the Undo/Redo mechanism is freezed will not be undoable.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iWarning</tt>
+   <dd>  If TRUE, displays a warning message to the user.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     <dl>
+   <dt> <tt>S_OK</tt>    <dd> The Undo/Redo mechanism has been freezed
+   <dt> <tt>S_FALSE</tt> <dd> The Undo/Redo mechanism cannot be freezed during Undo or Redo actions
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATAfrUndoRedoServices.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

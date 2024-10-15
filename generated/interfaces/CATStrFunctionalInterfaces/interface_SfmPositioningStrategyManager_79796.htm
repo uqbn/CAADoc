@@ -1,0 +1,135 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATStrFunctionalInterfaces SfmPositioningStrategyManager (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATStrFunctionalInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SfmPositioningStrategyManager','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmPositioningStrategyManager','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SfmPositioningStrategyManager','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmPositioningStrategyManager','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SfmPositioningStrategyManager<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SfmPositioningStrategyManager_79796','SfmPositioningStrategyManager','0');</script>
+<b><i> Gets CATIASfmPositioningStrategyManager.</i></b><br>
+Use this Manager to GetAvailablePositioningStrategies & GetPositioningStrategyParams.
+ <dl>
+ <dt>Example</dt>:
+ <dd>
+ Get the Manager from factory.
+ <pre>
+  'Retrieve the Factory
+  Set Factory =  part1.GetCustomerFactory("SfmFunctionFactory")
+  'Retrieve the Position Strategy Manager
+  Dim ObjSfmPosStrategyMgr  As SfmPositioningStrategyManager
+  Set ObjSfmPosStrategyMgr  = Factory.GetOpeningMgr(Part1, "SfmPositioningStrategyManager")
+ </pre>
+ </dl><hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetAvailablePositioningStrategies"><b>GetAvailablePositioningStrategies</b></a>
+<dd>  Get The list of Available Position Strategies.
+ <dt>
+    <a href="#GetPositioningStrategyParams"><b>GetPositioningStrategyParams</b></a>
+<dd>  Get The list of Available Position Strategies Parameters, depending on Strategy Name.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetAvailablePositioningStrategies"><dt>
+
+<table><tr><td>o Sub <b>GetAvailablePositioningStrategies</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oListStrategyNames</tt>)</table></dt>
+<dl>
+  <dd>
+ Get The list of Available Position Strategies.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oListStrategyNames</tt>
+   <dd> [out]      List of Strategies.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok
+ <dl>
+ <dt>Example</dt>:
+<dd>
+ Gets Available Positoning Strategies from Position Strategy Manager.
+ <pre>
+  'Retrieve the Factory
+  Set Factory =  part1.GetCustomerFactory("SfmFunctionFactory")
+  'Retrieve the Position Strategy Manager
+  Dim ObjSfmPosStrategyMgr As SfmPositioningStrategyManager
+  Set ObjSfmPosStrategyMgr = Factory.GetOpeningMgr(Part1, "SfmPositioningStrategyManager")
+  'Get The List of Available Strategies
+  Dim oListStrategies() As Variant
+  ObjSfmPosStrategyMgr.GetAvailablePositioningStrategies oListStrategies
+  'Display The List of Available Strategies
+  Dim NbOfStrategies As Long
+  NbOfStrategies = UBound(oListStrategies)
+  Display List of Strategies
+  For i = 0 To NbOfStrategies
+  MsgBox oListStrategies(i)
+  Next
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="GetPositioningStrategyParams"><dt>
+
+<table><tr><td>o Func <b>GetPositioningStrategyParams</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iPosStrategyName</tt>) As <script type="text/javascript"> activateLink('SfmStandardPosStrategyParameters','SfmStandardPosStrategyParameters')</script> </table></dt>
+<dl>
+  <dd>
+ Get The list of Available Position Strategies Parameters, depending on Strategy Name.
+ See CATIASfmStandardPosStrategyParameters for details
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPosStrategyName</tt>
+   <dd> [in]      Name of Strategy.
+ </dd>
+    <dt><tt> oListPosParams</tt>
+   <dd> [out]      List of parameters.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok
+ <dl>
+ <dt>Example</dt>:
+ <dd>
+ The Example Demonstrates how to get position strategy parameters for "CATSfmPosMidDistMidDist".
+ <pre>
+  'Retrieve the Factory
+  Set Factory =  part1.GetCustomerFactory("SfmFunctionFactory")
+  'Retrieve the Position Strategy Manager
+  Dim ObjSfmPosStrategyMgr As SfmPositioningStrategyManager
+  Set ObjSfmPosStrategyMgr = Factory.GetOpeningMgr(Part1, "SfmPositioningStrategyManager")
+  Dim PositionStrategyParms As SfmStandardPosStrategyParameters
+  Set PositionStrategyParms = ObjSfmPosStrategyMgr.GetPositioningStrategyParams("CATSfmPosMidDistMidDist")
+ </pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

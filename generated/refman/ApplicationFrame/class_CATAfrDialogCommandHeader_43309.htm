@@ -1,0 +1,160 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ApplicationFrame Class CATAfrDialogCommandHeader</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ApplicationFrame.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATAfrDialogCommandHeader','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATAfrDialogCommandHeader','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATAfrDialogCommandHeader','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATAfrDialogCommandHeader','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ApplicationFrame Class CATAfrDialogCommandHeader</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATAfrDialogCommandHeader_43309','CATAfrDialogCommandHeader','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATAfrDialogCommandHeader</b>
+</p>
+<p>
+<b><i> Base class to create a command header with a customized representation.</i></b><br>
+
+ <b>Role:</b> This class enables you to create a command header with a  
+ customized representation. It means a representation which will be not the 
+ default one: a push button in a toolbar, and a push item in the
+ menu bar or a contextual menu. 
+ <p> To do that, you should implement the <a href="#" onClick="openLink('CATIAfrCommandHeaderRep','');return false">CATIAfrCommandHeaderRep</a> interface on the class deriving of <tt>CATAfrDialogCommandHeader</tt>. This interface 
+ enables you to provide your specific representation in the toolbar, or/and the menubar, or/and 
+ the contextual menu. This representation is an instance of a class deriving of
+ the 
+<a href="#" onClick="openLink('CATAfrCommandHeaderRep','');return false">CATAfrCommandHeaderRep</a> class.</p> <br>The 
+<a href="#" onClick="openLink('CATCommand','');return false">CATCommand</a> class describes how to create a customized command header.
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATAfrDialogCommandHeader(CATCommandHeader*)"><b>CATAfrDialogCommandHeader</b></a>(CATCommandHeader*)
+<dd>  Constructs a command header instance.
+ <dt> o 
+    <a href="#CATAfrDialogCommandHeader(CATString&amp;,int)"><b>CATAfrDialogCommandHeader</b></a>(CATString&amp;,int)
+<dd>  Constructs a command header instance.
+ <dt> o 
+    <a href="#~CATAfrDialogCommandHeader()"><b>~CATAfrDialogCommandHeader</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Clone()"><b>Clone</b></a>()
+<dd>     Clones the command header.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATAfrDialogCommandHeader"></a><a name="CATAfrDialogCommandHeader(CATCommandHeader*)"></a> <dt> o <b>CATAfrDialogCommandHeader</b>
+
+<dt>  <table><tr><td>  protected <script type="text/javascript"> activateLink('','')</script>  <b>CATAfrDialogCommandHeader</b>(<td><script type="text/javascript"> activateLink('CATCommandHeader','CATCommandHeader*')</script> <td><tt>iHeaderToCopy</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a command header instance.
+ <br<b>Role:</b>This method calls the 
+<a href="#" onClick="openLink('CATCommandHeader','');return false">CATCommandHeader</a> copy constructor.  In your derived class overwrite this method such that:
+ 
+ <pre>
+ MyHeader::MyHeader(CATCommandHeader * iHeaderToCopy):
+                           CATAfrDialogCommandHeader(iHeaderToCopy)
+ {
+ }   
+ </pre>
+ This method is called by the 
+<a href="#" onClick="openLink('','Clone');return false">Clone</a> method. 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iHeaderToCopy</tt>
+   <dd> The header to copy.</dd>
+</dl>
+</dl>
+</dl>
+<a name="CATAfrDialogCommandHeader"></a><a name="CATAfrDialogCommandHeader(CATString&amp;,int)"></a> <dt> o <b>CATAfrDialogCommandHeader</b>
+
+<dt>  <table><tr><td>  protected <script type="text/javascript"> activateLink('','')</script>  <b>CATAfrDialogCommandHeader</b>(<td> const <script type="text/javascript"> activateLink('CATString','CATString&amp;')</script> <td><tt>iHeaderIdentificator</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iState</tt><td><tt>= CATFrmAvailable</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a command header instance.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iHeaderIdentificator</tt>
+   <dd> The identificator of the command header class instance. It is the <tt>command</tt> 
+ argument of the <tt>SetAccessCommand</tt> macro. It is used for NLS resources.   
+ </dd>
+    <dt><tt> iState</tt>
+   <dd>    The command header state.
+    <br><b>Legal values</b>: 
+       <li> <tt>CATFrmAvailable</tt> (The default value) </li>
+       <li> <tt>CATFrmUnavailable</tt> </li></dd>
+</dl>
+</dl>
+</dl>
+<a name="~CATAfrDialogCommandHeader"></a><a name="~CATAfrDialogCommandHeader()"></a> <dt> o <b>~CATAfrDialogCommandHeader</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATAfrDialogCommandHeader</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Clone"></a><a name="Clone()"></a> <dt> o <b>Clone</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATCommandHeader','CATCommandHeader *')</script>  <b>Clone</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+    Clones the command header.
+ <br<b>Role:</b>This method calls the constructor with a <tt>CATCommandHeader</tt> 
+  pointer as argument. In your derived class overwrite this method such that:
+  
+ <pre>
+ CATCommandHeader * MyHeader::Clone ()                                  
+ { 
+   return new MyHeader(this); 
+ }   
+ </pre>
+ You must never call a <tt>Clone</tt> method. This method is called by the "frame".
+ Today, it is called for your CAA instances in only one case: when the command header 
+ instance is created in an Add-in of the General workshop, refer to the 
+ 
+<a href="#" onClick="openLink('CATIAfrGeneralWksAddin','');return false">CATIAfrGeneralWksAddin</a> interface for more details about these Add-ins.  
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    The new command header instance.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATAfrDialogCommandHeader.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATApplicationFrame</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

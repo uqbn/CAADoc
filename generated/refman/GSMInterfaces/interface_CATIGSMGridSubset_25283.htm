@@ -1,0 +1,229 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GSMInterfaces Interface CATIGSMGridSubset</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GSMInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIGSMGridSubset','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIGSMGridSubset','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIGSMGridSubset','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIGSMGridSubset','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GSMInterfaces Interface CATIGSMGridSubset</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIGSMGridSubset_25283','CATIGSMGridSubset','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIGSMGridSubset</b>
+</p>
+<p>
+<b><i> Interface to GridSubset feature.</i></b><br>
+
+ <br><b>Role</b>: Allows you to access/modify data of a GridSubset feature
+ <br>GridSubset features are used to create GridSets
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIGSMFactory','CreateGridSet');return false">CATIGSMFactory.CreateGridSet</a>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIGSMGridSet','');return false">CATIGSMGridSet</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetFacesSorted(CATLISTV(CATISpecObject_var)&amp;)"><b>GetFacesSorted</b></a>(CATLISTV(CATISpecObject_var)&amp;)
+<dd>  Gets all faces sorted by absolute offsets.
+ <dt> o 
+    <a href="#GetFacesSorted(CATLISTV(CATISpecObject_var)&amp;,CATListOfDouble&amp;)"><b>GetFacesSorted</b></a>(CATLISTV(CATISpecObject_var)&amp;,CATListOfDouble&amp;)
+<dd>  Gets all faces sorted by absolute offsets.
+ <dt> o 
+    <a href="#GetFacesSorted(CATLISTV(CATISpecObject_var)&amp;,CATIGSMGridFace_var&amp;,CATLISTV(CATISpecObject_var)&amp;,CATListOfDouble&amp;,CATListOfDouble&amp;)"><b>GetFacesSorted</b></a>(CATLISTV(CATISpecObject_var)&amp;,CATIGSMGridFace_var&amp;,CATLISTV(CATISpecObject_var)&amp;,CATListOfDouble&amp;,CATListOfDouble&amp;)
+<dd>  Gets all faces sorted by absolute offsets.
+ <dt> o 
+    <a href="#GetGridSet(CATIGSMGridSet_var&amp;)"><b>GetGridSet</b></a>(CATIGSMGridSet_var&amp;)
+<dd>  Gets the father (GridSet) of the Subset.
+ <dt> o 
+    <a href="#GetNamingPrefix(CATUnicodeString&amp;)"><b>GetNamingPrefix</b></a>(CATUnicodeString&amp;)
+<dd>  Gets prefix of faces.
+ <dt> o 
+    <a href="#GetNbFaces(int&amp;)"><b>GetNbFaces</b></a>(int&amp;)
+<dd>  Gets the number of faces.
+ <dt> o 
+    <a href="#GetNbFaces(int&amp;,CATBoolean&amp;,int&amp;)"><b>GetNbFaces</b></a>(int&amp;,CATBoolean&amp;,int&amp;)
+<dd>  Gets the number of faces.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetFacesSorted"></a><a name="GetFacesSorted(CATLISTV(CATISpecObject_var)&amp;)"></a> <dt> o <b>GetFacesSorted</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetFacesSorted</b>(<td><script type="text/javascript"> activateLink('CATLISTV(CATISpecObject_var)','CATLISTV(CATISpecObject_var)&amp;')</script> <td><tt>oLstFaces</tt>)<script type="text/javascript"> activateLink('=0',' =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets all faces sorted by absolute offsets.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLstFaces</tt>
+   <dd>      List of faces sorted by absolute offsets.
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIGSMGridFace','');return false">CATIGSMGridFace</a>
+</dl>
+</dl>
+<a name="GetFacesSorted"></a><a name="GetFacesSorted(CATLISTV(CATISpecObject_var)&amp;,CATListOfDouble&amp;)"></a> <dt> o <b>GetFacesSorted</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetFacesSorted</b>(<td><script type="text/javascript"> activateLink('CATLISTV(CATISpecObject_var)','CATLISTV(CATISpecObject_var)&amp;')</script> <td><tt>oLstFaces</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListOfDouble','CATListOfDouble&amp;')</script> <td><tt>oLstAbsOffsets</tt>)<script type="text/javascript"> activateLink('=0',' =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets all faces sorted by absolute offsets.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLstFaces</tt>
+   <dd>      List of faces sorted by absolute offsets.
+   </dd>
+    <dt><tt> oLstAbsOffsets</tt>
+   <dd>      List of absolute offsets (in model unit (mm)) of "oFaces"
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIGSMGridFace','');return false">CATIGSMGridFace</a>
+</dl>
+</dl>
+<a name="GetFacesSorted"></a><a name="GetFacesSorted(CATLISTV(CATISpecObject_var)&amp;,CATIGSMGridFace_var&amp;,CATLISTV(CATISpecObject_var)&amp;,CATListOfDouble&amp;,CATListOfDouble&amp;)"></a> <dt> o <b>GetFacesSorted</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetFacesSorted</b>(<td><script type="text/javascript"> activateLink('CATLISTV(CATISpecObject_var)','CATLISTV(CATISpecObject_var)&amp;')</script> <td><tt>oLstFacesBfr</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIGSMGridFace_var','CATIGSMGridFace_var&amp;')</script> <td><tt>ospOriginFace</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTV(CATISpecObject_var)','CATLISTV(CATISpecObject_var)&amp;')</script> <td><tt>oLstFacesAft</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListOfDouble','CATListOfDouble&amp;')</script> <td><tt>oLstAbsOffsetsBfr</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListOfDouble','CATListOfDouble&amp;')</script> <td><tt>oLstAbsOffsetsAft</tt>)<script type="text/javascript"> activateLink('=0',' =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets all faces sorted by absolute offsets.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLstFacesBfr</tt>
+   <dd>      List of before origin faces sorted by absolute offsets (decreasing order).
+   </dd>
+    <dt><tt> ospOriginFace</tt>
+   <dd>      The origin face if exist in this subset.
+   </dd>
+    <dt><tt> oLstFacesAft</tt>
+   <dd>      List of after origin faces sorted by absolute offsets (increasing order).
+   </dd>
+    <dt><tt> oLstAbsOffsetsBfr</tt>
+   <dd>      List of absolute offsets (in model unit (mm)) of "oLstFacesBfr"
+   </dd>
+    <dt><tt> oLstAbsOffsetsAft</tt>
+   <dd>      List of absolute offsets (in model unit (mm)) of "oLstFacesAft"
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIGSMGridFace','');return false">CATIGSMGridFace</a>
+</dl>
+</dl>
+<a name="GetGridSet"></a><a name="GetGridSet(CATIGSMGridSet_var&amp;)"></a> <dt> o <b>GetGridSet</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetGridSet</b>(<td><script type="text/javascript"> activateLink('CATIGSMGridSet_var','CATIGSMGridSet_var&amp;')</script> <td><tt>ospSet</tt>)<script type="text/javascript"> activateLink('=0',' =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets the father (GridSet) of the Subset.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ospSet</tt>
+   <dd>      The father of the Subset.
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIGSMGridSet','');return false">CATIGSMGridSet</a>
+</dl>
+</dl>
+<a name="GetNamingPrefix"></a><a name="GetNamingPrefix(CATUnicodeString&amp;)"></a> <dt> o <b>GetNamingPrefix</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetNamingPrefix</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oPrefix</tt>)<script type="text/javascript"> activateLink('=0',' =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets prefix of faces.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oPrefix</tt>
+   <dd>      Subset's prefix.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetNbFaces"></a><a name="GetNbFaces(int&amp;)"></a> <dt> o <b>GetNbFaces</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetNbFaces</b>(<td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>oNbFaces</tt>)<script type="text/javascript"> activateLink('=0',' =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets the number of faces.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oNbFaces</tt>
+   <dd>      The number of faces.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetNbFaces"></a><a name="GetNbFaces(int&amp;,CATBoolean&amp;,int&amp;)"></a> <dt> o <b>GetNbFaces</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetNbFaces</b>(<td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>oNbFacesBfr</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean&amp;')</script> <td><tt>oOriginFaceExist</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>oNbFacesAft</tt>)<script type="text/javascript"> activateLink('=0',' =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets the number of faces.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oNbFacesBfr</tt>
+   <dd>      The number of faces before origin.
+   </dd>
+    <dt><tt> oOriginFaceExist</tt>
+   <dd>      If this subset contains the origin face.
+   </dd>
+    <dt><tt> oNbFacesAft</tt>
+   <dd>      The number of faces after origin.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIGSMGridSubset.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGitInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

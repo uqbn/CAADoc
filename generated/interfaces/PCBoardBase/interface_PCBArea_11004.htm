@@ -1,0 +1,177 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PCBoardBase PCBArea (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../PCBoardBase.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('PCBArea','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PCBArea','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('PCBArea','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PCBArea','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PCBArea<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_PCBArea_11004','PCBArea','0');</script>
+<b><i> </i></b><br>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#AreaType"><b>AreaType</b></a>
+<dd>  Allow to get the Type of a constraint area
+  The possible values are : ROUTE_OUTLINE, 
+ 
+ <dt>
+    <a href="#Heightmax"><b>Heightmax</b></a>
+<dd>  Allow to get and set the Height max  of the constraint area
+ This property is valid for the following constraints areas: OTHER_OUTLINE, PLACE_REGION
+   
+ 
+ <dt>
+    <a href="#Heightmin"><b>Heightmin</b></a>
+<dd>  Allow to get and set the Height min  of the constraint area
+ This property is valid for the following constraints areas: PLACE_KEEPOUT
+ 
+ <dt>
+    <a href="#Identifier"><b>Identifier</b></a>
+<dd>  Allow to get and set the Identifier of the constraint area
+ This property is valid for the following constraints areas: OTHER_OUTLINE, PLACE_REGION
+   
+ 
+ <dt>
+    <a href="#LAYER"><b>LAYER</b></a>
+<dd>  Allow to get the position of a hole
+ The possible values are : TOP,BOTTOM,BOTH,INNER,ALL
+ It depends on the the type of the constraints area according to the IDF format
+ This property is valid for the following constraints areas: OTHER_OUTLINE, ROUTING_OUTLINE, 
+ PLACE_OUTLINE, ROUTE_KEEPOUT, PLACE_KEEPOUT, PLACE_REGION, 
+ 
+ <dt>
+    <a href="#OWNER"><b>OWNER</b></a>
+<dd>  Allow to get and set the OWNER of the constraint area
+ The possible value are MCAD,ECAD, UNOWNED
+   
+ 
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="AreaType"><dt>
+
+<table><tr><td>o Property <b>AreaType</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Allow to get the Type of a constraint area
+  The possible values are : ROUTE_OUTLINE, 
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <UL>          <LH>The result of the method:
+         <LI>S_OK if succeeded
+         <LI>E_FAIL if failed
+         </UL>
+</dl>
+</dl>
+<a name="Heightmax"><dt>
+
+<table><tr><td>o Property <b>Heightmax</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Allow to get and set the Height max  of the constraint area
+ This property is valid for the following constraints areas: OTHER_OUTLINE, PLACE_REGION
+   
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <UL>          <LH>The result of the method:
+         <LI>S_OK if succeeded
+         <LI>E_FAIL if failed
+         </UL>
+</dl>
+</dl>
+<a name="Heightmin"><dt>
+
+<table><tr><td>o Property <b>Heightmin</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Allow to get and set the Height min  of the constraint area
+ This property is valid for the following constraints areas: PLACE_KEEPOUT
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <UL>          <LH>The result of the method:
+         <LI>S_OK if succeeded
+         <LI>E_FAIL if failed
+         </UL>
+</dl>
+</dl>
+<a name="Identifier"><dt>
+
+<table><tr><td>o Property <b>Identifier</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Allow to get and set the Identifier of the constraint area
+ This property is valid for the following constraints areas: OTHER_OUTLINE, PLACE_REGION
+   
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <UL>          <LH>The result of the method:
+         <LI>S_OK if succeeded
+         <LI>E_FAIL if failed
+         </UL>
+</dl>
+</dl>
+<a name="LAYER"><dt>
+
+<table><tr><td>o Property <b>LAYER</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Allow to get the position of a hole
+ The possible values are : TOP,BOTTOM,BOTH,INNER,ALL
+ It depends on the the type of the constraints area according to the IDF format
+ This property is valid for the following constraints areas: OTHER_OUTLINE, ROUTING_OUTLINE, 
+ PLACE_OUTLINE, ROUTE_KEEPOUT, PLACE_KEEPOUT, PLACE_REGION, 
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <UL>          <LH>The result of the method:
+         <LI>S_OK if succeeded
+         <LI>E_FAIL if failed
+         </UL>
+</dl>
+</dl>
+<a name="OWNER"><dt>
+
+<table><tr><td>o Property <b>OWNER</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Allow to get and set the OWNER of the constraint area
+ The possible value are MCAD,ECAD, UNOWNED
+   
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <UL>          <LH>The result of the method:
+         <LI>S_OK if succeeded
+         <LI>E_FAIL if failed
+         </UL>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

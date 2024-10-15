@@ -1,0 +1,118 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATPlantShipInterfaces Interface CATIPspBranchConnection</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATPlantShipInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIPspBranchConnection','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPspBranchConnection','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIPspBranchConnection','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPspBranchConnection','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATPlantShipInterfaces Interface CATIPspBranchConnection</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIPspBranchConnection_53595','CATIPspBranchConnection','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIPspBranchConnection</b>
+</p>
+<p>
+<b><i> Interface to manage branch connections.</i></b><br>
+ 
+ <b>Role</b>: To access branch connection data.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetBranch(IUnknown*&amp;,IUnknown*&amp;)"><b>GetBranch</b></a>(IUnknown*&amp;,IUnknown*&amp;)
+<dd>  Get the branch route and connector.
+ <dt> o 
+    <a href="#GetMain(IUnknown*&amp;,IUnknown*&amp;)"><b>GetMain</b></a>(IUnknown*&amp;,IUnknown*&amp;)
+<dd>  Get the main route and connector.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetBranch"></a><a name="GetBranch(IUnknown*&amp;,IUnknown*&amp;)"></a> <dt> o <b>GetBranch</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetBranch</b>(<td><script type="text/javascript"> activateLink('IUnknown','IUnknown*&amp;')</script> <td><tt>oBranchRoute</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('IUnknown','IUnknown*&amp;')</script> <td><tt>oCntrInBranch</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get the branch route and connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oBranchRoute</tt>
+   <dd>  [out, IUnknown#Release]   Branch route in branch connection.
+ </dd>
+    <dt><tt> oCntrInBranch</tt>
+   <dd>  [out, IUnknown#Release]   Extremity connector of the branch in branch connection.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="GetMain"></a><a name="GetMain(IUnknown*&amp;,IUnknown*&amp;)"></a> <dt> o <b>GetMain</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetMain</b>(<td><script type="text/javascript"> activateLink('IUnknown','IUnknown*&amp;')</script> <td><tt>oMainRoute</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('IUnknown','IUnknown*&amp;')</script> <td><tt>oCntrInMain</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get the main route and connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oMainRoute</tt>
+   <dd>  [out, IUnknown#Release]   Main route in branch connection.
+ </dd>
+    <dt><tt> oCntrInMain</tt>
+   <dd>  [out, IUnknown#Release]   Branch connector in branch connection.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIPspBranchConnection.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

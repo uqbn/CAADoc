@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="CATIMfg5AxisSpiralMilling" href="interface_CATIMfg5AxisSpiralMilling_67497.htm" />
+<ITEM type="interface" name="CATIMfgMultiAxisContourDriven" href="interface_CATIMfgMultiAxisContourDriven_79495.htm" />
+<ITEM type="interface" name="CATIMfgMultiAxisCurveMachining" href="interface_CATIMfgMultiAxisCurveMachining_81653.htm" />
+<ITEM type="interface" name="CATIMfgMultiAxisCurveMachiningAuxDrive" href="interface_CATIMfgMultiAxisCurveMachiningAuxDrive_108850.htm" />
+<ITEM type="interface" name="CATIMfgMultiAxisIsoparametricMachining" href="interface_CATIMfgMultiAxisIsoparametricMachining_109677.htm" />
+<ITEM type="interface" name="CATIMfgMultiAxisSweeping" href="interface_CATIMfgMultiAxisSweeping_65689.htm" />
+<ITEM type="interface" name="CATISmgFactory" href="interface_CATISmgFactory_46608.htm" />
+<ITEM type="interface" name="CATISmgMachiningAreaChecks" href="interface_CATISmgMachiningAreaChecks_69405.htm" />
+<ITEM type="interface" name="CATISmgMachiningAreaForbiddenZone" href="interface_CATISmgMachiningAreaForbiddenZone_90441.htm" />
+<ITEM type="interface" name="CATISmgMachiningAreaGuidingCurves" href="interface_CATISmgMachiningAreaGuidingCurves_91116.htm" />
+<ITEM type="interface" name="CATISmgMachiningAreaParts" href="interface_CATISmgMachiningAreaParts_67512.htm" />
+<ITEM type="interface" name="CATISmgNcGeometryManager" href="interface_CATISmgNcGeometryManager_65320.htm" />
+<ITEM type="interface" name="CATISmgNcGeometryParameter" href="interface_CATISmgNcGeometryParameter_70893.htm" />
+<ITEM type="interface" name="CATISmgProgramAddin" href="interface_CATISmgProgramAddin_54240.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+</Root>

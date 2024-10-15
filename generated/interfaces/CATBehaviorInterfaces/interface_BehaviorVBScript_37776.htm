@@ -1,0 +1,193 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATBehaviorInterfaces BehaviorVBScript (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATBehaviorInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('BehaviorVBScript','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('BehaviorVBScript','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('BehaviorVBScript','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('BehaviorVBScript','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>BehaviorVBScript<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_BehaviorVBScript_37776','BehaviorVBScript','0');</script>
+<b><i> Represents the VBScript behavior.</i></b><br>
+
+ <b>Role</b>: The VB script behavior is  designed to run a VBScript (or catvbs files) or to reference a VBA project.
+ This interface derives from <a href="#" onClick="openLink('Behavior','');return false">Behavior</a> and enables the manipulation of the internal variables of the VBScript behavior.
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Cancel"><b>Cancel</b></a>
+<dd>  Inform Client VB has Failed & Has Not operated.
+ <dt>
+    <a href="#Done"><b>Done</b></a>
+<dd>  Inform Client VB has Successfully Finished.
+ <dt>
+    <a href="#GetInternal"><b>GetInternal</b></a>
+<dd>  Returns one available io of the behavior.
+ <dt>
+    <a href="#PutInternal"><b>PutInternal</b></a>
+<dd>  provide output of one available io of the behavior.
+ <dt>
+    <a href="#Start"><b>Start</b></a>
+<dd>  Inform Client VB has Started.
+ <dt>
+    <a href="#Suspend"><b>Suspend</b></a>
+<dd>  Inform Client VB has not completly finished the task and has to be called later on
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ </pre>
+ </dl>
+ 
+ <dt>
+    <a href="#TestInternal"><b>TestInternal</b></a>
+<dd>  Test for one available output of the behavior.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Cancel"><dt>
+
+<table><tr><td>o Sub <b>Cancel</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Inform Client VB has Failed & Has Not operated.
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ </pre>
+ </dl>
+ 
+<dl>
+  <dt> <b>Deprecated:</b> 
+  <dd>  V5R15 (Not needed)
+</dl>
+</dl>
+<a name="Done"><dt>
+
+<table><tr><td>o Sub <b>Done</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Inform Client VB has Successfully Finished.
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ </pre>
+ </dl>
+ 
+<dl>
+  <dt> <b>Deprecated:</b> 
+  <dd>  V5R15 (Not needed)
+</dl>
+</dl>
+<a name="GetInternal"><dt>
+
+<table><tr><td>o Func <b>GetInternal</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>pName</tt>) As <script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> </table></dt>
+<dl>
+  <dd>
+ Returns one available io of the behavior.
+ The behavior has to be in executing mode, otherwise it fails
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves in <tt>BehParameter</tt> 
+ the internal parameter CATIAReference XXX 
+ currently managed by a <tt>Behavior</tt> Beh.
+ <pre>
+ Dim BehParameter as Parameter
+ Set BehParameter = Beh.<font color="red">GetInternal("XXX")</font>
+ </pre>
+ </dl>
+</dl>
+<a name="PutInternal"><dt>
+
+<table><tr><td>o Sub <b>PutInternal</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>pName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>oValue</tt>)</table></dt>
+<dl>
+  <dd>
+ provide output of one available io of the behavior. 
+ The behavior has to be in executing mode, otherwise it fails
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example assign the <tt>BehParameter</tt> containing a CATIAReference 
+ to the internal parameter XXX
+ currently managed by a <tt>Behavior</tt> Beh.
+ <pre>
+ Dim BehPower as Parameter
+ Beh.<font color="red">PutInternal "XXX", BehParameter</font>
+ </pre>
+ </dl>
+</dl>
+<a name="Start"><dt>
+
+<table><tr><td>o Sub <b>Start</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Inform Client VB has Started.
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ </pre>
+ </dl>
+ 
+<dl>
+  <dt> <b>Deprecated:</b> 
+  <dd>  V5R15 (Not needed)
+</dl>
+</dl>
+<a name="Suspend"><dt>
+
+<table><tr><td>o Sub <b>Suspend</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Inform Client VB has not completly finished the task and has to be called later on
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ </pre>
+ </dl>
+ 
+<dl>
+  <dt> <b>Deprecated:</b> 
+  <dd>  V5R15 (Not needed)
+</dl>
+</dl>
+<a name="TestInternal"><dt>
+
+<table><tr><td>o Func <b>TestInternal</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>pName</tt>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Test for one available output of the behavior.
+ The behavior has to be in executing mode, otherwise it fails
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example test for the value existance of 
+ an internal parameter XXX that may contain or not a CATIAReference
+ currently managed by a <tt>Behavior</tt> Beh.
+ <pre>
+ if (Beh.<font color="red">TestInternal("XXX")</font>)
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

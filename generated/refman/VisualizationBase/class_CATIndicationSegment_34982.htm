@@ -1,0 +1,133 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>VisualizationBase Class CATIndicationSegment</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../VisualizationBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIndicationSegment','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIndicationSegment','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIndicationSegment','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIndicationSegment','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>VisualizationBase Class CATIndicationSegment</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATIndicationSegment_34982','CATIndicationSegment','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATIndicationSegment</b>
+</p>
+<p>
+<b><i> Class to define the line segment under the mouse cursor in a 3D viewpoint.</i></b><br>
+
+ <b>Role</b>: This class stores in its public data members <tt>pt1</tt> and <tt>pt2</tt>
+ the extremities of the line segment located under the mouse cursor.
+ This class is used by dialog objects when making a query to a manipulator.</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATIndicationSegment()"><b>CATIndicationSegment</b></a>()
+<dd>  Constructor of an empty 2D indication segment.
+ <dt> o 
+    <a href="#CATIndicationSegment(CATMathPoint,CATMathPoint)"><b>CATIndicationSegment</b></a>(CATMathPoint,CATMathPoint)
+<dd>  Constructor of a 2D indication segment.
+ <dt> o 
+    <a href="#CATIndicationSegment(CATIndicationSegment&amp;)"><b>CATIndicationSegment</b></a>(CATIndicationSegment&amp;)
+<dd>  Copy constructor.
+ <dt> o 
+    <a href="#CATIndicationSegment(CATMathPointf,CATMathPointf)"><b>CATIndicationSegment</b></a>(CATMathPointf,CATMathPointf)
+<dd>  Constructor of a 2D indication segment.
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#operator=(CATIndicationSegment&amp;)"><b>operator=</b></a>(CATIndicationSegment&amp;)
+<dd>  Assignement operator.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATIndicationSegment"></a><a name="CATIndicationSegment()"></a> <dt> o <b>CATIndicationSegment</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATIndicationSegment</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructor of an empty 2D indication segment.
+</dl>
+<a name="CATIndicationSegment"></a><a name="CATIndicationSegment(CATMathPoint,CATMathPoint)"></a> <dt> o <b>CATIndicationSegment</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATIndicationSegment</b>(<td><script type="text/javascript"> activateLink('CATMathPoint','CATMathPoint')</script> <td><tt>iNearPoint</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATMathPoint','CATMathPoint')</script> <td><tt>iFarPoint</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructor of a 2D indication segment. 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNearPoint</tt>
+   <dd> Nearest extremity of the segment.
+ </dd>
+    <dt><tt> iFarPoint</tt>
+   <dd> Farthest extremity of the segment.</dd>
+</dl>
+</dl>
+</dl>
+<a name="CATIndicationSegment"></a><a name="CATIndicationSegment(CATIndicationSegment&amp;)"></a> <dt> o <b>CATIndicationSegment</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATIndicationSegment</b>(<td> const <script type="text/javascript"> activateLink('CATIndicationSegment','CATIndicationSegment&amp;')</script> <td><tt>iIndicationSegment</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Copy constructor.
+</dl>
+<a name="CATIndicationSegment"></a><a name="CATIndicationSegment(CATMathPointf,CATMathPointf)"></a> <dt> o <b>CATIndicationSegment</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATIndicationSegment</b>(<td><script type="text/javascript"> activateLink('CATMathPointf','CATMathPointf')</script> <td><tt>iNearPoint</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATMathPointf','CATMathPointf')</script> <td><tt>iFarPoint</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructor of a 2D indication segment. 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNearPoint</tt>
+   <dd> Nearest extremity of the segment.
+ </dd>
+    <dt><tt> iFarPoint</tt>
+   <dd> Farthest extremity of the segment.</dd>
+</dl>
+</dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="operator="></a><a name="operator=(CATIndicationSegment&amp;)"></a> <dt> o <b>operator=</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATIndicationSegment','CATIndicationSegment &')</script>  <b>operator=</b>(<td> const <script type="text/javascript"> activateLink('CATIndicationSegment','CATIndicationSegment&amp;')</script> <td><tt>iIndicationSegment</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Assignement operator.
+</dl>
+<hr>
+ This object is included in the file: <b>CATIndicationSegment.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATViz</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

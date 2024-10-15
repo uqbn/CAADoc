@@ -1,0 +1,115 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>DNBHumanModelingInterfaces SWKLineOfSightNode (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../DNBHumanModelingInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SWKLineOfSightNode','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SWKLineOfSightNode','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SWKLineOfSightNode','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SWKLineOfSightNode','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SWKLineOfSightNode<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SWKLineOfSightNode_52304','SWKLineOfSightNode','0');</script>
+<b><i>  This interface characterizes a node.</i></b><br>
+<br>
+  A node is a convenient way to regroup different attributes of the manikin.
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#LockPosture"><b>LockPosture</b></a>
+<dd>  Lock the posture of the line of sight for the dof piDOFId.
+ <dt>
+    <a href="#Optimize"><b>Optimize</b></a>
+<dd>  Sets the limits to match the best PrefAngle for the DOF piDOFId
+
+ <dt>
+    <a href="#ResetAngularLimitations"><b>ResetAngularLimitations</b></a>
+<dd>  Reset the angular limitations of the line of sight depending on piReset:
+ 0 -> 2 OR 3 OR 4 depending of the first encountered.
+ <dt>
+    <a href="#ResetPosture"><b>ResetPosture</b></a>
+<dd>  Reset the posture of the line of sight for the dof piDOFId.
+ <dt>
+    <a href="#ResetPrefAngles"><b>ResetPrefAngles</b></a>
+<dd>  Reset the preferred angles of the line of sight for the dof piDOFId.
+ <dt>
+    <a href="#SetPercentage"><b>SetPercentage</b></a>
+<dd>  Sets the angular limitations to a percentage for the DOF piDOFId
+
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="LockPosture"><dt>
+
+<table><tr><td>o Sub <b>LockPosture</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>piDOFId</tt>)</table></dt>
+<dl>
+  <dd>
+ Lock the posture of the line of sight for the dof piDOFId.
+
+</dl>
+<a name="Optimize"><dt>
+
+<table><tr><td>o Sub <b>Optimize</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>piDOFId</tt>)</table></dt>
+<dl>
+  <dd>
+ Sets the limits to match the best PrefAngle for the DOF piDOFId
+
+</dl>
+<a name="ResetAngularLimitations"><dt>
+
+<table><tr><td>o Sub <b>ResetAngularLimitations</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>piDOFId</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>piReset</tt>)</table></dt>
+<dl>
+  <dd>
+ Reset the angular limitations of the line of sight depending on piReset:
+ 0 -> 2 OR 3 OR 4 depending of the first encountered.
+ 1 -> 2 AND 3 AND 4
+ 2 -> Unlock the value
+ 3 -> Restore the angular limitations if it is "No Limits"
+ 4 -> Set back the angular limitations to their default value (50.0%)
+
+</dl>
+<a name="ResetPosture"><dt>
+
+<table><tr><td>o Sub <b>ResetPosture</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>piDOFId</tt>)</table></dt>
+<dl>
+  <dd>
+ Reset the posture of the line of sight for the dof piDOFId.
+
+</dl>
+<a name="ResetPrefAngles"><dt>
+
+<table><tr><td>o Sub <b>ResetPrefAngles</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>piDOFId</tt>)</table></dt>
+<dl>
+  <dd>
+ Reset the preferred angles of the line of sight for the dof piDOFId.
+
+</dl>
+<a name="SetPercentage"><dt>
+
+<table><tr><td>o Sub <b>SetPercentage</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>piPercentage</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>piDOFId</tt>)</table></dt>
+<dl>
+  <dd>
+ Sets the angular limitations to a percentage for the DOF piDOFId
+
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

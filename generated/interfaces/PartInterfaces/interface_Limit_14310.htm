@@ -1,0 +1,83 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PartInterfaces Limit (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../PartInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Limit','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Limit','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Limit','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Limit','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Limit<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Limit_14310','Limit','0');</script>
+<b><i> Represents the limit of a prism or a hole shape.</i></b><br>
+
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('Prism','');return false">Prism</a>, <a href="#" onClick="openLink('Hole','');return false">Hole</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Dimension"><b>Dimension</b></a>
+<dd>  Returns or sets the limit dimension.
+ <dt>
+    <a href="#LimitMode"><b>LimitMode</b></a>
+<dd>   Returns or sets the limit mode.
+ <dt>
+    <a href="#LimitingElement"><b>LimitingElement</b></a>
+<dd>  Returns or sets the limiting element.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Dimension"><dt>
+
+<table><tr><td>o Property <b>Dimension</b>(<td>) As <script type="text/javascript"> activateLink('Length','Length')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns or sets the limit dimension.
+ This property is valid for the offset limit mode only,
+ that is when 
+<a href="#" onClick="openLink('CatLimitMode','');return false">CatLimitMode</a> is set to <tt>catOffsetLimit</tt> .
+</dl>
+<a name="LimitMode"><dt>
+
+<table><tr><td>o Property <b>LimitMode</b>(<td>) As <script type="text/javascript"> activateLink('CatLimitMode','CatLimitMode')</script> </table></dt>
+<dl>
+  <dd>
+  Returns or sets the limit mode.
+</dl>
+<a name="LimitingElement"><dt>
+
+<table><tr><td>o Property <b>LimitingElement</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the limiting element.
+ This property is valid when the limiting object is a surface or a plane,
+ that is when 
+<a href="#" onClick="openLink('CatLimitMode','');return false">CatLimitMode</a> is set to <tt>catUpToSurfaceLimit</tt> and <tt>catUpToPlaneLimit</tt>.<br>
+ To set the property, you can use the following 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object:  
+<a href="#" onClick="openLink('Face','');return false">Face</a>.
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

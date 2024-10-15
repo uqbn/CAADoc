@@ -1,0 +1,108 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATTPSInterfaces Interface CATITPSDocument</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATTPSInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATITPSDocument','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATITPSDocument','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATITPSDocument','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATITPSDocument','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATTPSInterfaces Interface CATITPSDocument</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATITPSDocument_26387','CATITPSDocument','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATITPSDocument</b>
+</p>
+<p>
+<b><i> Interface implemented by documents that can contains tolerancing 
+ informations.</i></b><br>
+ It allows to access tolerancing sets included in document.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetBags(CATITPSList**)"><b>GetBags</b></a>(CATITPSList**)
+<dd>  Retrieves all tolerancing bags included in the document.
+ <dt> o 
+    <a href="#GetSets(CATITPSList**,CATTPSSetScanMode,CATBoolean)"><b>GetSets</b></a>(CATITPSList**,CATTPSSetScanMode,CATBoolean)
+<dd>  Retrieves tolerancing sets included in the document.
+ <dt> o 
+    <a href="#GetTolerancingContainer(CATIContainer**)"><b>GetTolerancingContainer</b></a>(CATIContainer**)
+<dd>  Retrieves the container in which the tolerancing feature are
+ gathered for a specific document.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetBags"></a><a name="GetBags(CATITPSList**)"></a> <dt> o <b>GetBags</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetBags</b>(<td><script type="text/javascript"> activateLink('CATITPSList','CATITPSList**')</script> <td><tt>iopiBags</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves all tolerancing bags included in the document.
+ All objects of the list adhere to CATITPSBag.
+</dl>
+<a name="GetSets"></a><a name="GetSets(CATITPSList**,CATTPSSetScanMode,CATBoolean)"></a> <dt> o <b>GetSets</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetSets</b>(<td><script type="text/javascript"> activateLink('CATITPSList','CATITPSList**')</script> <td><tt>iopiSets</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATTPSSetScanMode','CATTPSSetScanMode')</script> <td><tt>iMode</tt><td><tt>= CATTPSSSMRecursive</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script> <td><tt>ibLightMdlLoad</tt><td><tt>= FALSE</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves tolerancing sets included in the document.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iopiSets</tt>
+   <dd>     Tolerancing sets included in the document are added
+     to the list. If the list does not exist it will be created.
+     All objects of the list adhere to CATITPSSet.
+   </dd>
+    <dt><tt> iMode</tt>
+   <dd>     Defines the search mode used.
+     If CATTPSSSMLocal only the sets directly included are retrieved.
+     If CATTPSSSMRecursive a recursive search is performed. The 
+     document retrieve included documents and ask them to add
+     their sets to the list.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetTolerancingContainer"></a><a name="GetTolerancingContainer(CATIContainer**)"></a> <dt> o <b>GetTolerancingContainer</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetTolerancingContainer</b>(<td><script type="text/javascript"> activateLink('CATIContainer','CATIContainer**')</script> <td><tt>opiTPSCont</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the container in which the tolerancing feature are
+ gathered for a specific document.
+ The retrieved pointer can be NULL if the document contains no
+ tolerancing container (and then no TPS features).
+ In that case method returns E_FAIL.
+</dl>
+<hr>
+ This object is included in the file: <b>CATITPSDocument.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,205 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATGSMIDLItf Line (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATGSMIDLItf.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Line','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Line','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Line','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Line','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Line<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Line_9946','Line','0');</script>
+<b><i> Represents the hybrid shape Line feature object.</i></b><br>
+
+ <b>Role</b>: Declare  hybrid shape Line root feature object. 
+ All interfaces for different type of Line derivates HybridShapeLine.
+ <p> Use the CATIAHybridShapeFactory to create a HybridShapeLine objects.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeFactory','');return false">HybridShapeFactory</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#FirstUptoElem"><b>FirstUptoElem</b></a>
+<dd>  <b>Role</b>: Gets the First upto element of the line.
+ <dt>
+    <a href="#SecondUptoElem"><b>SecondUptoElem</b></a>
+<dd>  <b>Role</b>: Gets the Second upto element of the line.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetDirection"><b>GetDirection</b></a>
+<dd>  <b>Role</b>: Returns the unit-vector pointing in the direction of the line.
+ <dt>
+    <a href="#GetOrigin"><b>GetOrigin</b></a>
+<dd>  <b>Role</b>: Returns the origin of the line.
+ <dt>
+    <a href="#PutDirection"><b>PutDirection</b></a>
+<dd>  <b>Role</b>: Sets the unit-vector pointing in the direction of the line.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="FirstUptoElem"><dt>
+
+<table><tr><td>o Property <b>FirstUptoElem</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ <b>Role</b>: Gets the First upto element of the line.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oFirstUpto</tt>
+   <dd>  </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  HRESULT    S_OK   if Ok 
+   E_FAIL else
+</dl>
+</dl>
+<a name="SecondUptoElem"><dt>
+
+<table><tr><td>o Property <b>SecondUptoElem</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ <b>Role</b>: Gets the Second upto element of the line.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oSecondUpto</tt>
+   <dd>  </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  HRESULT    S_OK   if Ok 
+   E_FAIL else
+</dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetDirection"><dt>
+
+<table><tr><td>o Sub <b>GetDirection</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oDirection</tt>)</table></dt>
+<dl>
+  <dd>
+ <b>Role</b>: Returns the unit-vector pointing in the direction of the line.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDirection</tt>
+   <dd>    </dd>
+    <dt><tt> oDirection[0]</tt>
+   <dd>   The X Coordinate of the unit vector pointing in the
+   direction of the line
+   </dd>
+    <dt><tt> oDirection[1]</tt>
+   <dd>   The Y Coordinate of the unit vector pointing in the
+   direction of the line
+   </dd>
+    <dt><tt> oDirection[2]</tt>
+   <dd>   The Z Coordinate of the unit vector pointing in the
+   direction of the line
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  HRESULT    S_OK   if Ok 
+   E_FAIL else 
+   return error code for C++ Implementations
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeFactory','');return false">HybridShapeFactory</a>
+</dl>
+</dl>
+<a name="GetOrigin"><dt>
+
+<table><tr><td>o Sub <b>GetOrigin</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oOrigin</tt>)</table></dt>
+<dl>
+  <dd>
+ <b>Role</b>: Returns the origin of the line.   
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oOrigin</tt>
+   <dd>    </dd>
+    <dt><tt> oOrigin[0]</tt>
+   <dd>   The X Coordinate of a point lying on the line
+   </dd>
+    <dt><tt> oOrigin[1]</tt>
+   <dd>   The Y Coordinate of a point lying on the line
+   </dd>
+    <dt><tt> oOrigin[2]</tt>
+   <dd>   The Z Coordinate of a point lying on the line
+   The Origin is evaluated from the geometry of the line.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  HRESULT    S_OK   if Ok 
+   E_FAIL else 
+   return error code for C++ Implementations
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeFactory','');return false">HybridShapeFactory</a>
+</dl>
+</dl>
+<a name="PutDirection"><dt>
+
+<table><tr><td>o Sub <b>PutDirection</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iDirection</tt>)</table></dt>
+<dl>
+  <dd>
+ <b>Role</b>: Sets the unit-vector pointing in the direction of the line.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDirection</tt>
+   <dd>    </dd>
+    <dt><tt> iDirection[0]</tt>
+   <dd>   The X Coordinate of the unit vector pointing in the
+   direction of the line
+   </dd>
+    <dt><tt> iDirection[1]</tt>
+   <dd>   The Y Coordinate of the unit vector pointing in the
+   direction of the line
+   </dd>
+    <dt><tt> iDirection[2]</tt>
+   <dd>   The Z Coordinate of the unit vector pointing in the
+   direction of the line
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  HRESULT    S_OK   if Ok 
+   E_FAIL else 
+   return error code for C++ Implementations
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeFactory','');return false">HybridShapeFactory</a>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="CATIRGE" href="interface_CATIRGE_18897.htm" />
+<ITEM type="interface" name="CATIRGETopology" href="interface_CATIRGETopology_28044.htm" />
+<ITEM type="interface" name="CATITTRS" href="interface_CATITTRS_19629.htm" />
+<ITEM type="interface" name="CATITTRSAdvanced" href="interface_CATITTRSAdvanced_28817.htm" />
+<ITEM type="interface" name="CATITTRSGeometry" href="interface_CATITTRSGeometry_29546.htm" />
+<ITEM type="interface" name="CATITTRSList" href="interface_CATITTRSList_23608.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+<ITEM type="class" name="CATMathComplexRGE" href="class_CATMathComplexRGE_27552.htm" />
+<ITEM type="class" name="CATMathCylindricalRGE" href="class_CATMathCylindricalRGE_34716.htm" />
+<ITEM type="class" name="CATMathPlanarRGE" href="class_CATMathPlanarRGE_25744.htm" />
+<ITEM type="class" name="CATMathPrismaticRGE" href="class_CATMathPrismaticRGE_30971.htm" />
+<ITEM type="class" name="CATMathRGE" href="class_CATMathRGE_18580.htm" />
+<ITEM type="class" name="CATMathRevoluteRGE" href="class_CATMathRevoluteRGE_29424.htm" />
+<ITEM type="class" name="CATMathSphericalRGE" href="class_CATMathSphericalRGE_30780.htm" />
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Enumerations" type="enum"  ctype="enum" >
+<ITEM type="enum" name="CATMmrTTRSAssociationCase" href="enum_CATMmrTTRSAssociationCase_44322.htm" />
+<ITEM type="enum" name="CATMmrTTRSClass" href="enum_CATMmrTTRSClass_24417.htm" />
+<ITEM type="enum" name="CATMmrTTRSFeatureOfSize" href="enum_CATMmrTTRSFeatureOfSize_39377.htm" />
+<ITEM type="enum" name="CATMmrTTRSRepresented" href="enum_CATMmrTTRSRepresented_35679.htm" />
+<ITEM type="enum" name="CATMmrTTRSSurfaceCanonicity" href="enum_CATMmrTTRSSurfaceCanonicity_50218.htm" />
+<ITEM type="enum" name="CATMmrTTRSType" href="enum_CATMmrTTRSType_23118.htm" />
+<ITEM type="enum" name="CATTTRSClass" href="enum_CATTTRSClass_20675.htm" />
+</ITEM>
+<ITEM name="Functions" type="function"  ctype="function">
+<ITEM type="function" name="CATCreateCATITTRSList" href="function_CATCreateCATITTRSList_79128.htm" />
+</ITEM>
+<ITEM name="Macros" type="define"  ctype="define">
+<ITEM type="define" name="CATMmrTTRSTypeGeneral" href="define_CATMmrTTRSTypeGeneral_36053.htm" />
+<ITEM type="define" name="CATMmrTTRSTypePatternOfAngularTabsSlots" href="define_CATMmrTTRSTypePatternOfAngularTabsSlots_90910.htm" />
+<ITEM type="define" name="CATMmrTTRSTypePatternOfCircles" href="define_CATMmrTTRSTypePatternOfCircles_59066.htm" />
+<ITEM type="define" name="CATMmrTTRSTypePatternOfCylPinsHoles" href="define_CATMmrTTRSTypePatternOfCylPinsHoles_75277.htm" />
+<ITEM type="define" name="CATMmrTTRSTypePatternOfCylTabsSlots" href="define_CATMmrTTRSTypePatternOfCylTabsSlots_75657.htm" />
+<ITEM type="define" name="CATMmrTTRSTypePatternOfCylinders" href="define_CATMmrTTRSTypePatternOfCylinders_66061.htm" />
+<ITEM type="define" name="CATMmrTTRSTypePatternOfHoles" href="define_CATMmrTTRSTypePatternOfHoles_53253.htm" />
+<ITEM type="define" name="CATMmrTTRSTypePatternOfNotCylPinsHoles" href="define_CATMmrTTRSTypePatternOfNotCylPinsHoles_86274.htm" />
+<ITEM type="define" name="CATMmrTTRSTypePatternOfPlanes" href="define_CATMmrTTRSTypePatternOfPlanes_56166.htm" />
+<ITEM type="define" name="CATMmrTTRSTypePatternOfSpheres" href="define_CATMmrTTRSTypePatternOfSpheres_59566.htm" />
+<ITEM type="define" name="CATMmrTTRSTypePatternOfTabsSlots" href="define_CATMmrTTRSTypePatternOfTabsSlots_65731.htm" />
+<ITEM type="define" name="CATMmrTTRSTypePatternOfThreads" href="define_CATMmrTTRSTypePatternOfThreads_59160.htm" />
+<ITEM type="define" name="CATMmrTTRSTypeProfile" href="define_CATMmrTTRSTypeProfile_36314.htm" />
+<ITEM type="define" name="CATMmrTTRSTypeRelated01" href="define_CATMmrTTRSTypeRelated01_38145.htm" />
+<ITEM type="define" name="CATMmrTTRSTypeSupport" href="define_CATMmrTTRSTypeSupport_37109.htm" />
+<ITEM type="define" name="CATMmrTTRSTypeUndefined" href="define_CATMmrTTRSTypeUndefined_40521.htm" />
+<ITEM type="define" name="CATMmrTTRSTypeUnknown" href="define_CATMmrTTRSTypeUnknown_36893.htm" />
+</ITEM>
+<ITEM name="Typedefs" type="typedef"  ctype="typedef">
+<ITEM type="typedef" name="CATMmrTTRSAdmissibleType" href="typedef_CATMmrTTRSAdmissibleType_43759.htm" />
+<ITEM type="typedef" name="CATMmrTTRSValidityState" href="typedef_CATMmrTTRSValidityState_41556.htm" />
+</ITEM>
+</Root>

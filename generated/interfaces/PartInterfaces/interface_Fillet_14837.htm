@@ -1,0 +1,91 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PartInterfaces Fillet (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../PartInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Fillet','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Fillet','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Fillet','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Fillet','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Fillet<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Fillet_14837','Fillet','0');</script>
+<b><i> Represents the fillet shape.</i></b><br>
+
+ It is the base object for face fillets and edge fillets.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('FaceFillet','');return false">FaceFillet</a>, <a href="#" onClick="openLink('EdgeFillet','');return false">EdgeFillet</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#FilletBoundaryRelimitation"><b>FilletBoundaryRelimitation</b></a>
+<dd>  Returns or sets the fillet boundary relimitation mode.
+ <dt>
+    <a href="#FilletTrimSupport"><b>FilletTrimSupport</b></a>
+<dd>  Returns or sets the fillet Trim Support mode.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="FilletBoundaryRelimitation"><dt>
+
+<table><tr><td>o Property <b>FilletBoundaryRelimitation</b>(<td>) As <script type="text/javascript"> activateLink('CatFilletBoundaryRelimitation','CatFilletBoundaryRelimitation')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the fillet boundary relimitation mode.
+ This boundary relimitation mode is used when computing the fillet.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>mode</tt> the fillet
+ boundary relimitation mode of the <tt>firstFillet</tt> fillet,
+ and then sets it to <tt>catMinimumFilletBoundaryRelimitation</tt>,
+ so that the fillet expands up to the limits of the smallest shell:
+ <pre>
+ Set mode = firstFillet.<font color="red">FilletBoundaryRelimitation</font>
+ Set FirstFillet.<font color="red">FilletBoundaryRelimitation</font> = catMinimumFilletBoundaryRelimitation
+ </pre>
+ </dl>
+</dl>
+<a name="FilletTrimSupport"><dt>
+
+<table><tr><td>o Property <b>FilletTrimSupport</b>(<td>) As <script type="text/javascript"> activateLink('CatFilletTrimSupport','CatFilletTrimSupport')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the fillet Trim Support mode.
+ This Trim Support mode is used when computing the fillet.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>mode</tt> the fillet
+ Trim Support mode of the <tt>firstFillet</tt> fillet,
+ and then sets it to <tt>catMinimumFilletTrimSupport</tt>,
+ so that the fillet expands up to the limits of the smallest shell:
+ <pre>
+ Set mode = firstFillet.<font color="red">FilletTrimSupport</font>
+ Set FirstFillet.<font color="red">FilletTrimSupport</font> = catNoTrimFilletSupport
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

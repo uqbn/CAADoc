@@ -1,0 +1,132 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>AnalysisMeshingModel Interface CATIMSHMeshManager</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../AnalysisMeshingModel.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMSHMeshManager','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMSHMeshManager','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMSHMeshManager','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMSHMeshManager','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>AnalysisMeshingModel Interface CATIMSHMeshManager</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMSHMeshManager_38195','CATIMSHMeshManager','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIMSHMeshManager</b>
+</p>
+<p>
+<b><i> Interface representing the <b>Mesh Manager</b>.</i></b><br>
+
+ <b>Role</b>: The <b>Mesh Manager</b> is an <b>Analysis Set</b> which give access to the following:
+ <ul><li>Finite element mesh (nodes and elements) management, see <a href="#" onClick="openLink('CATIMSHMesh','');return false">CATIMSHMesh</a>. <li>Links between mesh and geometry management, see 
+<a href="#" onClick="openLink('CATIMSHAssociativity','');return false">CATIMSHAssociativity</a>. <li>Mesh Part creation , see 
+<a href="#" onClick="openLink('CATIMSHMeshPart','');return false">CATIMSHMeshPart</a>.</ul>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CreateMeshPart(CATUnicodeString&amp;)"><b>CreateMeshPart</b></a>(CATUnicodeString&amp;)
+<dd>  Creates a <b>Mesh Part</b>.
+ <dt> o 
+    <a href="#GetAssociativity()"><b>GetAssociativity</b></a>()
+<dd>  Returns an interface on the associativity between mesh and geometry.
+ <dt> o 
+    <a href="#GetMesh()"><b>GetMesh</b></a>()
+<dd>  Returns an interface on the finite element mesh.
+ <dt> o 
+    <a href="#RemoveMeshPart(CATIMSHMeshPart*)"><b>RemoveMeshPart</b></a>(CATIMSHMeshPart*)
+<dd>  Remove a <b>Mesh Part</b>.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="CreateMeshPart"></a><a name="CreateMeshPart(CATUnicodeString&amp;)"></a> <dt> o <b>CreateMeshPart</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATIMSHMeshPart','CATIMSHMeshPart *')</script>  <b>CreateMeshPart</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iType</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates a <b>Mesh Part</b>.
+ <br><b>Role</b>: This method creates a new <b>Mesh Part</b> in the <b>Analysis Set</b> corresponding to the Mesh Manager.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iType</tt>
+   <dd>   Type of the <b>Mesh Part</b> to create.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  CATBaseUnknown#Release   A pointer on the CATIMSHMeshPart interface on the created <b>Mesh Part</b>.
+</dl>
+</dl>
+<a name="GetAssociativity"></a><a name="GetAssociativity()"></a> <dt> o <b>GetAssociativity</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATIMSHAssociativity','CATIMSHAssociativity *')</script>  <b>GetAssociativity</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns an interface on the associativity between mesh and geometry.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  CATBaseUnknown#Release
+</dl>
+</dl>
+<a name="GetMesh"></a><a name="GetMesh()"></a> <dt> o <b>GetMesh</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATIMSHMesh','CATIMSHMesh *')</script>  <b>GetMesh</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns an interface on the finite element mesh.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  CATBaseUnknown#Release
+</dl>
+</dl>
+<a name="RemoveMeshPart"></a><a name="RemoveMeshPart(CATIMSHMeshPart*)"></a> <dt> o <b>RemoveMeshPart</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>RemoveMeshPart</b>(<td><script type="text/javascript"> activateLink('CATIMSHMeshPart','CATIMSHMeshPart*')</script> <td><tt>iMeshPart</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Remove a <b>Mesh Part</b>.
+ <br><b>Role</b>: This method remove an existing <b>Mesh Part</b> from the <b>Analysis Set</b> corresponding to the Mesh Manager.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iMeshPart</tt>
+   <dd>   <b>Mesh Part</b> to remove.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMSHMeshManager.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAmtModel</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

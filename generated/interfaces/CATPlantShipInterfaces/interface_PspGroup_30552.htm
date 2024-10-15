@@ -1,0 +1,129 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATPlantShipInterfaces PspGroup (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATPlantShipInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('PspGroup','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PspGroup','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('PspGroup','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PspGroup','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PspGroup<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_PspGroup_30552','PspGroup','0');</script>
+<b><i> Represent the Group.</i></b><br>
+
+ <b>Role</b>: It manages group members in making logical relationship.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Members"><b>Members</b></a>
+<dd>  Returns a list of Members of the Group.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddMember"><b>AddMember</b></a>
+<dd>   Adds a member to the group.
+ <dt>
+    <a href="#RemoveMember"><b>RemoveMember</b></a>
+<dd>   Removes a member from the group.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Members"><dt>
+
+<table><tr><td>o Property <b>Members</b>(<td>) As <script type="text/javascript"> activateLink('PspListOfObjects','PspListOfObjects')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns a list of Members of the Group.
+
+
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As PspGroup  
+ Dim objArg1 As PspListOfObjects
+ 
+  ...
+ Set ObjArg1 = objThisIntf.<font color="red">Members</font>
+ </pre>
+
+</dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddMember"><dt>
+
+<table><tr><td>o Sub <b>AddMember</b>(<td><script type="text/javascript"> activateLink('PspGroupable','PspGroupable')</script> <td><tt>iGroupable</tt>)</table></dt>
+<dl>
+  <dd>
+  Adds a member to the group.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGroupable</tt>
+   <dd>  Member to add
+ 
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As PspGroup  
+ Dim objArg1 As PspGroupable
+ 
+  ...
+  objThisIntf.<font color="red">AddMember</font> objArg1
+ </pre>
+
+</dl>
+</dl>
+<a name="RemoveMember"><dt>
+
+<table><tr><td>o Sub <b>RemoveMember</b>(<td><script type="text/javascript"> activateLink('PspGroupable','PspGroupable')</script> <td><tt>iGroupable</tt>)</table></dt>
+<dl>
+  <dd>
+  Removes a member from the group.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGroupable</tt>
+   <dd>  	a member to be removed
+   
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As PspGroup  
+ Dim objArg1 As PspGroupable
+ 
+  ...
+  objThisIntf.<font color="red">RemoveMember</font> objArg1
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

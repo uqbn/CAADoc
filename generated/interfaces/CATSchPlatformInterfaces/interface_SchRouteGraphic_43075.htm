@@ -1,0 +1,150 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchRouteGraphic (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchRouteGraphic','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchRouteGraphic','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchRouteGraphic','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchRouteGraphic','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchRouteGraphic<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchRouteGraphic_43075','SchRouteGraphic','0');</script>
+<b><i>  Manage graphical primitives representing a schematic route.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddGraphicalPrimitive"><b>AddGraphicalPrimitive</b></a>
+<dd>  Add a graphical primitive to a route.
+ <dt>
+    <a href="#ListGraphicalPrimitives"><b>ListGraphicalPrimitives</b></a>
+<dd>  List all graphical primitives of a route.
+ <dt>
+    <a href="#RemoveAllGraphicalPrimitives"><b>RemoveAllGraphicalPrimitives</b></a>
+<dd>  Remove all graphical primitives of a route, including alternate 
+ graphical primitives.
+ <dt>
+    <a href="#RemoveGraphicalPrimitive"><b>RemoveGraphicalPrimitive</b></a>
+<dd>  Remove a graphical primitive from a route.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddGraphicalPrimitive"><dt>
+
+<table><tr><td>o Sub <b>AddGraphicalPrimitive</b>(<td><script type="text/javascript"> activateLink('SchGRRRoute','SchGRRRoute')</script> <td><tt>iGRRToAdd</tt>)</table></dt>
+<dl>
+  <dd>
+ Add a graphical primitive to a route.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGRRToAdd</tt>
+   <dd>   The route graphical primitive to be added to the route.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchRouteGraphic
+ Dim objArg1 As SchGRRRoute
+  ...
+ objThisIntf.<font color="red">AddGraphicalPrimitive</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+<a name="ListGraphicalPrimitives"><dt>
+
+<table><tr><td>o Func <b>ListGraphicalPrimitives</b>(<td>) As <script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> </table></dt>
+<dl>
+  <dd>
+ List all graphical primitives of a route.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLGRR</tt>
+   <dd>   A list of graphical primitives
+   (members are CATISchGRRRoute interface pointers).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchRouteGraphic
+ Dim objArg1 As SchListOfObjects
+  ...
+ Set objArg1 = objThisIntf.<font color="red">ListGraphicalPrimitives</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="RemoveAllGraphicalPrimitives"><dt>
+
+<table><tr><td>o Sub <b>RemoveAllGraphicalPrimitives</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Remove all graphical primitives of a route, including alternate 
+ graphical primitives.
+    
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchRouteGraphic
+  ...
+ objThisIntf.<font color="red">RemoveAllGraphicalPrimitives</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="RemoveGraphicalPrimitive"><dt>
+
+<table><tr><td>o Sub <b>RemoveGraphicalPrimitive</b>(<td><script type="text/javascript"> activateLink('SchGRRRoute','SchGRRRoute')</script> <td><tt>iGRRToRemove</tt>)</table></dt>
+<dl>
+  <dd>
+ Remove a graphical primitive from a route.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGRRToRemove</tt>
+   <dd>   The route graphical primitive to be removed from the component.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchRouteGraphic
+ Dim objArg1 As SchGRRRoute
+  ...
+ objThisIntf.<font color="red">RemoveGraphicalPrimitive</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

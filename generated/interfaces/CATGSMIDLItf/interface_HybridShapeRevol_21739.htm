@@ -1,0 +1,204 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATGSMIDLItf HybridShapeRevol (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATGSMIDLItf.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('HybridShapeRevol','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapeRevol','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('HybridShapeRevol','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapeRevol','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>HybridShapeRevol<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_HybridShapeRevol_21739','HybridShapeRevol','0');</script>
+<b><i> The Revol feature : an Revol is made up of a face to process  and one Revol parameter.</i></b><br>
+
+ <b>Role</b>: To access the data of the hybrid shape revol feature object. 
+ <p>  LICENSING INFORMATION: Creation of volume result requires GSO License
+ <br> if GSO License is not granted , settting of Volume context has not effect 
+ <br><hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Axis"><b>Axis</b></a>
+<dd>  <b>Role</b>: To get_Axis on the object.
+ <dt>
+    <a href="#BeginAngle"><b>BeginAngle</b></a>
+<dd>  <b>Role</b>: To get_BeginAngle on the object.
+ <dt>
+    <a href="#Context"><b>Context</b></a>
+<dd>  Returns or sets the context on Revolve feature.
+ <dt>
+    <a href="#EndAngle"><b>EndAngle</b></a>
+<dd>  <b>Role</b>: To get_EndAngle on the object.
+ <dt>
+    <a href="#Orientation"><b>Orientation</b></a>
+<dd>  Gets or sets  orientation of the revolution.
+ <dt>
+    <a href="#Profil"><b>Profil</b></a>
+<dd>  <b>Role</b>: To get_Profil on the object.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Axis"><dt>
+
+<table><tr><td>o Property <b>Axis</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ <b>Role</b>: To get_Axis on the object. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDir</tt>
+   <dd>    return value for CATScript applications, with (IDLRETVAL) function type
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('Reference','');return false">Reference</a>
+  <dt> <b>Returns:</b> 
+  <dd>  HRESULT    S_OK   if Ok 
+   E_FAIL else 
+   return error code for C++ Implementations
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeFactory','');return false">HybridShapeFactory</a>
+</dl>
+</dl>
+<a name="BeginAngle"><dt>
+
+<table><tr><td>o Property <b>BeginAngle</b>(<td>) As <script type="text/javascript"> activateLink('Angle','Angle')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ <b>Role</b>: To get_BeginAngle on the object. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oAngle</tt>
+   <dd>    return value for CATScript applications, with (IDLRETVAL) function type
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('Angle','');return false">Angle</a>
+  <dt> <b>Returns:</b> 
+  <dd>  HRESULT    S_OK   if Ok 
+   E_FAIL else 
+   return error code for C++ Implementations
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeFactory','');return false">HybridShapeFactory</a>
+</dl>
+</dl>
+<a name="Context"><dt>
+
+<table><tr><td>o Property <b>Context</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the context on Revolve feature.
+ <br><b>Legal values</b>:
+ <ul>
+ <li><b>0</b> This option creates surface of revolution.</li>
+ <li><b>1</b> This option creates volume of revolution.</li>
+ </ul>
+ <br> Note: Setting volume result requires GSO License. 
+ <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves in <code>oContext</code> the context
+ for the <code>Revol</code> hybrid shape feature.
+ <pre>
+ Dim oContext
+ Set oContext = Revol.<font color="red">Context</font>
+ </pre>
+ </dl>
+</dl>
+<a name="EndAngle"><dt>
+
+<table><tr><td>o Property <b>EndAngle</b>(<td>) As <script type="text/javascript"> activateLink('Angle','Angle')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ <b>Role</b>: To get_EndAngle on the object. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oAngle</tt>
+   <dd>    return value for CATScript applications, with (IDLRETVAL) function type
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('Angle','');return false">Angle</a>
+  <dt> <b>Returns:</b> 
+  <dd>  HRESULT    S_OK   if Ok 
+   E_FAIL else 
+   return error code for C++ Implementations
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeFactory','');return false">HybridShapeFactory</a>
+</dl>
+</dl>
+<a name="Orientation"><dt>
+
+<table><tr><td>o Property <b>Orientation</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iOrientation</tt>)</table></dt>
+<dl>
+  <dd>
+ Gets or sets  orientation of the revolution.
+   Orientation = TRUE  : The natural orientation of the axis is taken.
+               = FALSE : The opposite orientation is taken
+ This example retrieves in <code>IsInverted</code> orientation of the revolution 
+ for the <code>Revol</code> hybrid shape feature.
+ <pre>
+ Dim IsInverted As boolean
+ IsInverted = Revol.<font color="red">Orientation</font>
+ </pre>
+ </dl>
+</dl>
+<a name="Profil"><dt>
+
+<table><tr><td>o Property <b>Profil</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ <b>Role</b>: To get_Profil on the object. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oProfil</tt>
+   <dd>    return value for CATScript applications, with (IDLRETVAL) function type
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('Reference','');return false">Reference</a>
+  <dt> <b>Returns:</b> 
+  <dd>  HRESULT    S_OK   if Ok 
+   E_FAIL else 
+   return error code for C++ Implementations
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeFactory','');return false">HybridShapeFactory</a>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

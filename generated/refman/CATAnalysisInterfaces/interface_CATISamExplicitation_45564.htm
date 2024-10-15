@@ -1,0 +1,90 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces Interface CATISamExplicitation</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISamExplicitation','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamExplicitation','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISamExplicitation','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamExplicitation','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisInterfaces Interface CATISamExplicitation</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISamExplicitation_45564','CATISamExplicitation','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATISamExplicitation</b>
+</p>
+<p>
+<b><i> Interface to generate the Field model.</i></b><br>
+
+ <b>Role:</b>Interface designed to ensure the possibility for the analysis
+ features to be translated into a format understandable by 
+ solvers (Explicit format).
+ The translation of an analysis feature into an explicit language may
+ result in the creation of several explicit data.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#TranslateToFieldModel(CATISpecObject*,CATISamAnalysisModel*,CATAnalysisExplicitListUsr&amp;,CATAnalysisExplicitListUsr&amp;)"><b>TranslateToFieldModel</b></a>(CATISpecObject*,CATISamAnalysisModel*,CATAnalysisExplicitListUsr&amp;,CATAnalysisExplicitListUsr&amp;)
+<dd>  Translates Analysis feature into an explicit language described in
+ the field Model.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="TranslateToFieldModel"></a><a name="TranslateToFieldModel(CATISpecObject*,CATISamAnalysisModel*,CATAnalysisExplicitListUsr&amp;,CATAnalysisExplicitListUsr&amp;)"></a> <dt> o <b>TranslateToFieldModel</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>TranslateToFieldModel</b>(<td><script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject*')</script> <td><tt>iFeatToTranslate</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATISamAnalysisModel','CATISamAnalysisModel*')</script> <td><tt>iFEMModel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATAnalysisExplicitListUsr','CATAnalysisExplicitListUsr&amp;')</script> <td><tt>iOldExplObjects</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATAnalysisExplicitListUsr','CATAnalysisExplicitListUsr&amp;')</script> <td><tt>oNewExplObjects</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Translates Analysis feature into an explicit language described in
+ the field Model.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFeatToTranslate</tt>
+   <dd>	Define the Analysis Feature that must be translated.
+ </dd>
+    <dt><tt> iFEMModel</tt>
+   <dd>	Define the Analysis Model, that is to say the context in which the 
+	Analysis Feature is defined.
+ </dd>
+    <dt><tt> iOldExplObjects</tt>
+   <dd>	Contain the old Analysis Feature translation.
+ </dd>
+    <dt><tt> oNewExplObjects</tt>
+   <dd>	Should contain the result of the new Analysis Feature translation.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISamExplicitation.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisInterface</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,126 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchAppZone (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchAppZone','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppZone','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchAppZone','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppZone','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchAppZone<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchAppZone_36911','SchAppZone','0');</script>
+<b><i>  Manage a schematic zone.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AppAddZoneMember"><b>AppAddZoneMember</b></a>
+<dd>  Add an application connectable object to the zone as member.
+ <dt>
+    <a href="#AppListZoneMembers"><b>AppListZoneMembers</b></a>
+<dd>  List all members of an application zone.
+ <dt>
+    <a href="#AppRemoveZoneMember"><b>AppRemoveZoneMember</b></a>
+<dd>  Remove an application connectable object to the zone as member.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AppAddZoneMember"><dt>
+
+<table><tr><td>o Sub <b>AppAddZoneMember</b>(<td><script type="text/javascript"> activateLink('SchAppConnectable','SchAppConnectable')</script> <td><tt>iAppCntblToAdd</tt>)</table></dt>
+<dl>
+  <dd>
+ Add an application connectable object to the zone as member.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAppCntblToAdd</tt>
+   <dd>   The application connectable object to be added to the zone.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppZone
+ Dim objArg1 As SchAppConnectable
+  ...
+ objThisIntf.<font color="red">AppAddZoneMember</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+<a name="AppListZoneMembers"><dt>
+
+<table><tr><td>o Func <b>AppListZoneMembers</b>(<td>) As <script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> </table></dt>
+<dl>
+  <dd>
+ List all members of an application zone.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLAppCntbl</tt>
+   <dd>   A list of zone members (application connectables).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppZone
+ Dim objArg1 As SchListOfObjects
+  ...
+ Set objArg1 = objThisIntf.<font color="red">AppListZoneMembers</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="AppRemoveZoneMember"><dt>
+
+<table><tr><td>o Sub <b>AppRemoveZoneMember</b>(<td><script type="text/javascript"> activateLink('SchAppConnectable','SchAppConnectable')</script> <td><tt>iAppCntblToRemove</tt>)</table></dt>
+<dl>
+  <dd>
+ Remove an application connectable object to the zone as member.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAppCntblToRemove</tt>
+   <dd>   The application connectable object to be removed to the zone.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppZone
+ Dim objArg1 As SchAppConnectable
+  ...
+ objThisIntf.<font color="red">AppRemoveZoneMember</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

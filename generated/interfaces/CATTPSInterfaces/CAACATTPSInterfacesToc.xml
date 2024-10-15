@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="Annotation" href="interface_Annotation_20732.htm" />
+<ITEM type="interface" name="AnnotationFactory" href="interface_AnnotationFactory_30395.htm" />
+<ITEM type="interface" name="AnnotationSet" href="interface_AnnotationSet_24065.htm" />
+<ITEM type="interface" name="AnnotationSets" href="interface_AnnotationSets_25560.htm" />
+<ITEM type="interface" name="Annotations" href="interface_Annotations_21882.htm" />
+<ITEM type="interface" name="AssociatedRefFrame" href="interface_AssociatedRefFrame_31089.htm" />
+<ITEM type="interface" name="Capture" href="interface_Capture_18124.htm" />
+<ITEM type="interface" name="CaptureFactory" href="interface_CaptureFactory_25603.htm" />
+<ITEM type="interface" name="Captures" href="interface_Captures_18929.htm" />
+<ITEM type="interface" name="CompositeTolerance" href="interface_CompositeTolerance_31802.htm" />
+<ITEM type="interface" name="ControledRadius" href="interface_ControledRadius_26855.htm" />
+<ITEM type="interface" name="DMUTolSettingAtt" href="interface_DMUTolSettingAtt_28176.htm" />
+<ITEM type="interface" name="DatumSimple" href="interface_DatumSimple_21613.htm" />
+<ITEM type="interface" name="DatumTarget" href="interface_DatumTarget_21620.htm" />
+<ITEM type="interface" name="DefaultAnnotation" href="interface_DefaultAnnotation_30389.htm" />
+<ITEM type="interface" name="Dimension3D" href="interface_Dimension3D_20878.htm" />
+<ITEM type="interface" name="DimensionLimit" href="interface_DimensionLimit_25440.htm" />
+<ITEM type="interface" name="DimensionPattern" href="interface_DimensionPattern_28656.htm" />
+<ITEM type="interface" name="EnvelopCondition" href="interface_EnvelopCondition_28582.htm" />
+<ITEM type="interface" name="FTAInfraSettingAtt" href="interface_FTAInfraSettingAtt_31501.htm" />
+<ITEM type="interface" name="FTASettingAtt" href="interface_FTASettingAtt_23814.htm" />
+<ITEM type="interface" name="FlagNote" href="interface_FlagNote_18692.htm" />
+<ITEM type="interface" name="FreeState" href="interface_FreeState_19544.htm" />
+<ITEM type="interface" name="MaterialCondition" href="interface_MaterialCondition_30160.htm" />
+<ITEM type="interface" name="Noa" href="interface_Noa_16116.htm" />
+<ITEM type="interface" name="NonSemanticDatum" href="interface_NonSemanticDatum_28248.htm" />
+<ITEM type="interface" name="NonSemanticGDT" href="interface_NonSemanticGDT_24244.htm" />
+<ITEM type="interface" name="ParticularTolElem" href="interface_ParticularTolElem_29684.htm" />
+<ITEM type="interface" name="ProjectedToleranceZone" href="interface_ProjectedToleranceZone_39674.htm" />
+<ITEM type="interface" name="ReferenceFrame" href="interface_ReferenceFrame_24999.htm" />
+<ITEM type="interface" name="Roughness" href="interface_Roughness_19762.htm" />
+<ITEM type="interface" name="ShiftedProfileTolerance" href="interface_ShiftedProfileTolerance_41937.htm" />
+<ITEM type="interface" name="TPSView" href="interface_TPSView_17954.htm" />
+<ITEM type="interface" name="TPSViewFactory" href="interface_TPSViewFactory_25433.htm" />
+<ITEM type="interface" name="TPSViews" href="interface_TPSViews_18759.htm" />
+<ITEM type="interface" name="TangentPlane" href="interface_TangentPlane_22595.htm" />
+<ITEM type="interface" name="Text" href="interface_Text_16500.htm" />
+<ITEM type="interface" name="TolerancePerUnitBasisRestrictiveValue" href="interface_TolerancePerUnitBasisRestrictiveValue_85203.htm" />
+<ITEM type="interface" name="ToleranceUnitBasisValue" href="interface_ToleranceUnitBasisValue_41761.htm" />
+<ITEM type="interface" name="ToleranceZone" href="interface_ToleranceZone_23885.htm" />
+<ITEM type="interface" name="UserSurface" href="interface_UserSurface_21462.htm" />
+<ITEM type="interface" name="UserSurfaces" href="interface_UserSurfaces_22727.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Enumerations" type="enum"  ctype="enum" >
+<ITEM type="enum" name="CATFTADimConfigureSnapping" href="enum_CATFTADimConfigureSnapping_46127.htm" />
+<ITEM type="enum" name="CATFTADimCreateOn" href="enum_CATFTADimCreateOn_25792.htm" />
+<ITEM type="enum" name="CATFTALeaderAssociativity" href="enum_CATFTALeaderAssociativity_44324.htm" />
+</ITEM>
+</Root>

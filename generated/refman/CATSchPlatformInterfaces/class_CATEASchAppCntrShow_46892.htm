@@ -1,0 +1,137 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Class CATEASchAppCntrShow</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATEASchAppCntrShow','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEASchAppCntrShow','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATEASchAppCntrShow','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEASchAppCntrShow','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Class CATEASchAppCntrShow</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATEASchAppCntrShow_46892','CATEASchAppCntrShow','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATEASchAppCntrShow</b>
+</p>
+<p>
+<b><i> Super class to derive implementation for interface CATISchAppCntrShow.</i></b><br>
+
+ <b>Role</b>: Adaptor</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATEASchAppCntrShow()"><b>CATEASchAppCntrShow</b></a>()
+<dd>  Constructs an empty CATEASchAppCntrShow.
+ <dt> o 
+    <a href="#~CATEASchAppCntrShow()"><b>~CATEASchAppCntrShow</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AppShowBranchCntr(CATBoolean*)"><b>AppShowBranchCntr</b></a>(CATBoolean*)
+<dd>  Defines show status of the applicaton branch connector.
+ <dt> o 
+    <a href="#AppShowCntr(CATBoolean*)"><b>AppShowCntr</b></a>(CATBoolean*)
+<dd>  Defines show status of the applicaton connector.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATEASchAppCntrShow"></a><a name="CATEASchAppCntrShow()"></a> <dt> o <b>CATEASchAppCntrShow</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATEASchAppCntrShow</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs an empty CATEASchAppCntrShow.
+</dl>
+<a name="~CATEASchAppCntrShow"></a><a name="~CATEASchAppCntrShow()"></a> <dt> o <b>~CATEASchAppCntrShow</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATEASchAppCntrShow</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AppShowBranchCntr"></a><a name="AppShowBranchCntr(CATBoolean*)"></a> <dt> o <b>AppShowBranchCntr</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppShowBranchCntr</b>(<td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean*')</script> <td><tt>oBShow</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Defines show status of the applicaton branch connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oBShow</tt>
+   <dd>   True if the connector show status is Show.
+   False if the connector show status is NoShow.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppShowCntr"></a><a name="AppShowCntr(CATBoolean*)"></a> <dt> o <b>AppShowCntr</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppShowCntr</b>(<td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean*')</script> <td><tt>oBShow</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Defines show status of the applicaton connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oBShow</tt>
+   <dd>   True if the connector show status is Show.
+   False if the connector show status is NoShow.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATEASchAppCntrShow.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATSchItfCPP</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

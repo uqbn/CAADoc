@@ -1,0 +1,163 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ObjectModelerBase Notification CATSpecNotification</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ObjectModelerBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATSpecNotification','notification','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSpecNotification','notification','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATSpecNotification','notification','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSpecNotification','notification','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ObjectModelerBase Notification CATSpecNotification</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATSpecNotification_32631','CATSpecNotification','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATSpecNotification</b>
+</p>
+<p>
+<b><i> Notification class for feature modeler.</i></b><br>
+
+ <b> role: </b> Used to notify events.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATISpecEvents','');return false">CATISpecEvents</a>, <a href="#" onClick="openLink('CATNotification','');return false">CATNotification</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATSpecNotification()"><b>CATSpecNotification</b></a>()
+<dd>  Constructs a CATSpecNotification.
+ <dt> o 
+    <a href="#CATSpecNotification(CATSpecNotification&amp;)"><b>CATSpecNotification</b></a>(CATSpecNotification&amp;)
+<dd>  Copy constructor.
+ <dt> o 
+    <a href="#~CATSpecNotification()"><b>~CATSpecNotification</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#FeedPath(CATBaseUnknown_var&amp;)"><b>FeedPath</b></a>(CATBaseUnknown_var&amp;)
+<dd>  Build step by step the list of objects concerned by the notification.
+ <dt> o 
+    <a href="#GetObject()"><b>GetObject</b></a>()
+<dd>  Returns the impacted object (created, modified or deleted according to the notification type).
+ <dt> o 
+    <a href="#GivePath()"><b>GivePath</b></a>()
+<dd>  Returns the path constructed by FeedPath.
+ <dt> o 
+    <a href="#operator=(CATSpecNotification&amp;)"><b>operator=</b></a>(CATSpecNotification&amp;)
+<dd>  Assignment operator from a notification instance.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATSpecNotification"></a><a name="CATSpecNotification()"></a> <dt> o <b>CATSpecNotification</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATSpecNotification</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a CATSpecNotification.
+</dl>
+<a name="CATSpecNotification"></a><a name="CATSpecNotification(CATSpecNotification&amp;)"></a> <dt> o <b>CATSpecNotification</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATSpecNotification</b>(<td> const <script type="text/javascript"> activateLink('CATSpecNotification','CATSpecNotification&amp;')</script> <td><tt>iNotification</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Copy constructor.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNotification</tt>
+   <dd>   The notification to copy</dd>
+</dl>
+</dl>
+</dl>
+<a name="~CATSpecNotification"></a><a name="~CATSpecNotification()"></a> <dt> o <b>~CATSpecNotification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATSpecNotification</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="FeedPath"></a><a name="FeedPath(CATBaseUnknown_var&amp;)"></a> <dt> o <b>FeedPath</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>FeedPath</b>(<td> const <script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>iObj</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Build step by step the list of objects concerned by the notification.
+ <b> note: </b> There is no default implementation to build all that path.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iObj</tt>
+   <dd>   Object concerned by the notification.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetObject"></a><a name="GetObject()"></a> <dt> o <b>GetObject</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATBaseUnknown','CATBaseUnknown_var')</script>  <b>GetObject</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the impacted object (created, modified or deleted according to the notification type).
+</dl>
+<a name="GivePath"></a><a name="GivePath()"></a> <dt> o <b>GivePath</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATListValCATBaseUnknown','CATListValCATBaseUnknown_var *')</script>  <b>GivePath</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the path constructed by FeedPath.
+</dl>
+<a name="operator="></a><a name="operator=(CATSpecNotification&amp;)"></a> <dt> o <b>operator=</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATSpecNotification','CATSpecNotification &')</script>  <b>operator=</b>(<td> const <script type="text/javascript"> activateLink('CATSpecNotification','CATSpecNotification&amp;')</script> <td><tt>iNotification</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Assignment operator from a notification instance.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNotification</tt>
+   <dd>   The provided notification
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    The notification resulting from the assignment
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATSpecNotifications.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATObjectModelerBase</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

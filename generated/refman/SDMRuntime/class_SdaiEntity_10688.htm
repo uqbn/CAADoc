@@ -1,0 +1,144 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>SDMRuntime Class SdaiEntity</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../SDMRuntime.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SdaiEntity','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SdaiEntity','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SdaiEntity','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SdaiEntity','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SDMRuntime Class SdaiEntity</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_SdaiEntity_10688','SdaiEntity','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>SdaiEntity</b>
+</p>
+<p>
+<b><i> Class representing an SDAI entity.</i></b><br>
+</p>
+<hr>
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Attributes()"><b>Attributes</b></a>()
+<dd>  Gets the list of attributes defined on a SdaiEntity.
+ <dt> o 
+    <a href="#CreateEntityInstance(SdaiModelH)"><b>CreateEntityInstance</b></a>(SdaiModelH)
+<dd>  Creates an AppInstance in a SdaiModel.
+ <dt> o 
+    <a href="#GetInstanceTypeName()"><b>GetInstanceTypeName</b></a>()
+<dd>  Gets the type of an SdaiEntity if an SdaiEntity is a of a specific type.
+ <dt> o 
+    <a href="#IsKindOf(SdaiString&amp;)"><b>IsKindOf</b></a>(SdaiString&amp;)
+<dd>  Tests if an SdaiEntity is a of a specific type.
+ <dt> o 
+    <a href="#IsSubtypeOf(SdaiEntityH&amp;)"><b>IsSubtypeOf</b></a>(SdaiEntityH&amp;)
+<dd>  Tests if an SdaiEntity is a sub type of another one.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Attributes"></a><a name="Attributes()"></a> <dt> o <b>Attributes</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('SDAIAGGRH(SdaiList,SdaiAttrH)','const SDAIAGGRH(SdaiList,SdaiAttrH)')</script>  <b>Attributes</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets the list of attributes defined on a SdaiEntity.
+  
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    The list of attributes
+</dl>
+</dl>
+<a name="CreateEntityInstance"></a><a name="CreateEntityInstance(SdaiModelH)"></a> <dt> o <b>CreateEntityInstance</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('SdaiAppInstanceH','SdaiAppInstanceH')</script>  <b>CreateEntityInstance</b>(<td><script type="text/javascript"> activateLink('SdaiModelH','SdaiModelH')</script> <td><tt>ioModel</tt>)<script type="text/javascript"> activateLink('const',' const ')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates an AppInstance in a SdaiModel.
+  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioModel</tt>
+   <dd> - the target SdaiModel  </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    The AppInstance created
+</dl>
+</dl>
+<a name="GetInstanceTypeName"></a><a name="GetInstanceTypeName()"></a> <dt> o <b>GetInstanceTypeName</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('SdaiString','const SdaiString&')</script>  <b>GetInstanceTypeName</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets the type of an SdaiEntity if an SdaiEntity is a of a specific type.
+  
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    The type of the SdaiEntity
+</dl>
+</dl>
+<a name="IsKindOf"></a><a name="IsKindOf(SdaiString&amp;)"></a> <dt> o <b>IsKindOf</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('SdaiBoolean','const SdaiBoolean&')</script>  <b>IsKindOf</b>(<td> const <script type="text/javascript"> activateLink('SdaiString','SdaiString&amp;')</script> <td><tt>iTypeName</tt>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Tests if an SdaiEntity is a of a specific type.
+  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iTypeName</tt>
+   <dd> - the type to check with</dd>
+</dl>
+</dl>
+</dl>
+<a name="IsSubtypeOf"></a><a name="IsSubtypeOf(SdaiEntityH&amp;)"></a> <dt> o <b>IsSubtypeOf</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('SdaiBoolean','const SdaiBoolean&')</script>  <b>IsSubtypeOf</b>(<td> const <script type="text/javascript"> activateLink('SdaiEntityH','SdaiEntityH&amp;')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Tests if an SdaiEntity is a sub type of another one.
+  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> SdaiEntityH</tt>
+   <dd> - the SdaiEntity to compare with</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>SdaiEntity.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATSrtSessionMgmt</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

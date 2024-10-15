@@ -1,0 +1,53 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATIAV4Interfaces Global Function CATV4iGirwdi</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATIAV4Interfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>CATIAV4Interfaces Global Function CATV4iGirwdi</h1>
+
+<br><dt><table><tr><td>  <script type="text/javascript"> activateLink('int',' int')</script>  <b>CATV4iGirwdi</b>(<td> const <script type="text/javascript"> activateLink('CATV4iV4Element','CATV4iV4Element*')</script> <td><tt>iDitto</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATV4iV4Element','CATV4iV4Element*&amp;')</script> <td><tt>oDetail</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double[12','double[12]')</script> <td><tt>oTrans</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>ier</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Analyzes a space ditto.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDitto</tt>
+   <dd> [in]   The ditto
+ </dd>
+    <dt><tt> oDetail</tt>
+   <dd> [out]   The detail corresponding to the given iDitto
+ </dd>
+    <dt><tt> oTrans</tt>
+   <dd> [out]   The matrix of the transformation (isometric transformation + scalling)
+   <br>X1 being the coordinates of a point of the detail, in the 3-axis system 
+    of this detail ; 
+   <br>X2 being the coordinates of the same point, relative to the 3-axis
+    system of the current workspace, after the ditto has been positioned.
+   <br>then X2=oTrans*X1
+ </dd>
+    <dt><tt> ier</tt>
+   <dd> [out]   error code</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATV4iFunctions.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,150 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ElecRoutingItf Class CATEwrEquipotential</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ElecRoutingItf.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATEwrEquipotential','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEwrEquipotential','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATEwrEquipotential','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEwrEquipotential','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ElecRoutingItf Class CATEwrEquipotential</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATEwrEquipotential_28663','CATEwrEquipotential','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATEwrEquipotential</b>
+</p>
+<p>
+<b><i> This class is used to describe an equipotential.</i></b><br>
+</p>
+<hr>
+</dl>
+</dl>
+<dl>
+</dl>
+<dl>
+ <h2>Data Member Index</h2> <br>
+ <dt> o 
+    <a href="#Diameter"><b>Diameter</b></a>
+<dd>  The Diameter attribute corresponds to an estimation of the diameter of the wires 
+ which will realize the equipotential.
+ <dt> o 
+    <a href="#Extremities"><b>Extremities</b></a>
+<dd>  This list contains the identifier of the extremities of the equipotential.
+ <dt> o 
+    <a href="#Id"><b>Id</b></a>
+<dd>  The identifier of the equipotential.
+ <dt> o 
+    <a href="#Name"><b>Name</b></a>
+<dd>  The name of the equipotential.
+ <dt> o 
+    <a href="#RoutingPriority"><b>RoutingPriority</b></a>
+<dd>  The RoutingPriority attribute is used in equipotential routing.
+ <dt> o 
+    <a href="#SeparationCode"><b>SeparationCode</b></a>
+<dd>  The SeparationCode attribute is used in knowledge rules checked in equipotential routing.
+ <dt> o 
+    <a href="#SubType"><b>SubType</b></a>
+<dd>  The subtype of the equipotential.
+ <dt> o 
+    <a href="#WirePartNumber"><b>WirePartNumber</b></a>
+<dd>  The WirePartNumber attribute corresponds to the part number of the wire which will realize
+ the equipotential.
+</dl>
+ <h2>Data Members</h2> <br>
+<a name="Diameter"></a> <dt> o <b>Diameter</b>
+<pre>
+  public double Diameter</dt>
+</pre>
+<dl>
+  <dd>
+ The Diameter attribute corresponds to an estimation of the diameter of the wires 
+ which will realize the equipotential.
+</dl>
+<a name="Extremities"></a> <dt> o <b>Extremities</b>
+<pre>
+  public CATListValCATUnicodeString Extremities</dt>
+</pre>
+<dl>
+  <dd>
+ This list contains the identifier of the extremities of the equipotential.
+ it must contain at least two extremities.
+ <br><b>Mandatory</b>
+</dl>
+<a name="Id"></a> <dt> o <b>Id</b>
+<pre>
+  public CATUnicodeString Id</dt>
+</pre>
+<dl>
+  <dd>
+ The identifier of the equipotential.
+ <br><b>Mandatory</b>
+</dl>
+<a name="Name"></a> <dt> o <b>Name</b>
+<pre>
+  public CATUnicodeString Name</dt>
+</pre>
+<dl>
+  <dd>
+ The name of the equipotential.
+ <br><b>Mandatory</b>
+</dl>
+<a name="RoutingPriority"></a> <dt> o <b>RoutingPriority</b>
+<pre>
+  public CATUnicodeString RoutingPriority</dt>
+</pre>
+<dl>
+  <dd>
+ The RoutingPriority attribute is used in equipotential routing.
+</dl>
+<a name="SeparationCode"></a> <dt> o <b>SeparationCode</b>
+<pre>
+  public CATUnicodeString SeparationCode</dt>
+</pre>
+<dl>
+  <dd>
+ The SeparationCode attribute is used in knowledge rules checked in equipotential routing.
+</dl>
+<a name="SubType"></a> <dt> o <b>SubType</b>
+<pre>
+  public CATUnicodeString SubType</dt>
+</pre>
+<dl>
+  <dd>
+ The subtype of the equipotential.
+</dl>
+<a name="WirePartNumber"></a> <dt> o <b>WirePartNumber</b>
+<pre>
+  public CATUnicodeString WirePartNumber</dt>
+</pre>
+<dl>
+  <dd>
+ The WirePartNumber attribute corresponds to the part number of the wire which will realize
+ the equipotential. When valuated, it overrides the Diameter attribute.
+</dl>
+<hr>
+ This object is included in the file: <b>CATEwrEquipotential.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATEwrInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

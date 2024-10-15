@@ -1,0 +1,143 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>DMAPSInterfaces Resources (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../DMAPSInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Resources','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Resources','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Resources','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Resources','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Resources<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Resources_18265','Resources','0');</script>
+<b><i> The collection of resources related to the current activity.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Add"><b>Add</b></a>
+<dd>  This method add the specified item in the current list
+ 
+ <dt>
+    <a href="#AddByAssignmentType"><b>AddByAssignmentType</b></a>
+<dd>  This method Assigns/Adds the specified resource with the specified assignment type
+ 
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  This method returns the idl object Resource for the specified resource
+ identifier.
+ <dt>
+    <a href="#RemoveByAssignmentType"><b>RemoveByAssignmentType</b></a>
+<dd>  This method Unassigns/Removes the specified resource if the assignement exists and
+ is of the given type
+ 
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Add"><dt>
+
+<table><tr><td>o Func <b>Add</b>(<td><script type="text/javascript"> activateLink('Resource','Resource')</script> <td><tt>iResource</tt>) As <script type="text/javascript"> activateLink('Resource','Resource')</script> </table></dt>
+<dl>
+  <dd>
+ This method add the specified item in the current list
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iItem</tt>
+   <dd> The item to add
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  oitem The item
+</dl>
+</dl>
+<a name="AddByAssignmentType"><dt>
+
+<table><tr><td>o Func <b>AddByAssignmentType</b>(<td><script type="text/javascript"> activateLink('Resource','Resource')</script> <td><tt>iResource</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('DNBResourceAssignmentType','DNBResourceAssignmentType')</script> <td><tt>iAssignmentType</tt>) As <script type="text/javascript"> activateLink('Resource','Resource')</script> </table></dt>
+<dl>
+  <dd>
+ This method Assigns/Adds the specified resource with the specified assignment type
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iResource</tt>
+   <dd> The resource to be assigned
+ </dd>
+    <dt><tt> iAssignmentType</tt>
+   <dd> Type of the Assignment (Resource to the Process). Only the following four types
+ are supported at the moment:
+   Process_Uses_Resource, Process_Runs_On_Resource,
+   Process_Attaches_Resource, Process_Detaches_Resource
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  oResource The resource when Add succeeds, unchanged otherwise
+</dl>
+</dl>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('Resource','Resource')</script> </table></dt>
+<dl>
+  <dd>
+ This method returns the idl object Resource for the specified resource
+ identifier.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd> The resource identifier
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  oResource The idl resource
+</dl>
+</dl>
+<a name="RemoveByAssignmentType"><dt>
+
+<table><tr><td>o Func <b>RemoveByAssignmentType</b>(<td><script type="text/javascript"> activateLink('Resource','Resource')</script> <td><tt>iResource</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('DNBResourceAssignmentType','DNBResourceAssignmentType')</script> <td><tt>iAssignmentType</tt>) As <script type="text/javascript"> activateLink('Resource','Resource')</script> </table></dt>
+<dl>
+  <dd>
+ This method Unassigns/Removes the specified resource if the assignement exists and
+ is of the given type
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iResource</tt>
+   <dd> The resource to be Unassigned
+ </dd>
+    <dt><tt> iAssignmentType</tt>
+   <dd> Type of the Assignment (Resource to the Process) to be removed
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  oResource The resource when Remove succeeds, unchanged otherwise
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

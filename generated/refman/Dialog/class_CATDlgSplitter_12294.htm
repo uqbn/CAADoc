@@ -1,0 +1,153 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>Dialog Class CATDlgSplitter</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../Dialog.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATDlgSplitter','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATDlgSplitter','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATDlgSplitter','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATDlgSplitter','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Dialog Class CATDlgSplitter</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATDlgSplitter_12294','CATDlgSplitter','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATDlgSplitter</b>
+</p>
+<p>
+<b><i>  Base class for splitters.</i></b><br>
+
+ <b>Role</b>:
+ The splitter consists in an area split into two resizeable subareas by a sash that can be dragged along to resize,
+ decreasing one subarea while increasing the other. The split between the two subareas can be vertical or horizontal.
+ Each subarea can contain boxes and controls.
+ <br>
+ Use a splitter whenever you want to split an area into two resizable subareas.</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATDlgSplitter(CATDialog*,CATString&amp;,CATDlgStyle)"><b>CATDlgSplitter</b></a>(CATDialog*,CATString&amp;,CATDlgStyle)
+<dd>   Constructs a CATDlgSplitter.
+ <dt> o 
+    <a href="#~CATDlgSplitter()"><b>~CATDlgSplitter</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetSashPosition(double&amp;)"><b>GetSashPosition</b></a>(double&amp;)
+<dd>  Retrieves the splitter position.
+ <dt> o 
+    <a href="#SetSashPosition(double)"><b>SetSashPosition</b></a>(double)
+<dd>  Sets the splitter position.
+ <dt> o 
+    <a href="#SwitchChildren()"><b>SwitchChildren</b></a>()
+<dd>  Switches the splitter children.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATDlgSplitter"></a><a name="CATDlgSplitter(CATDialog*,CATString&amp;,CATDlgStyle)"></a> <dt> o <b>CATDlgSplitter</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATDlgSplitter</b>(<td><script type="text/javascript"> activateLink('CATDialog','CATDialog*')</script> <td><tt>iParent</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATString','CATString&amp;')</script> <td><tt>iObjectName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATDlgStyle','CATDlgStyle')</script> <td><tt>iStyle</tt><td><tt>=NULL</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Constructs a CATDlgSplitter.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iParent</tt>
+   <dd>   The parent of the splitter.
+ </dd>
+    <dt><tt> iObjectName</tt>
+   <dd>   The name of the splitter.
+ </dd>
+    <dt><tt> iStyle</tt>
+   <dd>   The style of the splitter.
+ The style can be :
+   <dl>
+   <dt><tt>CATDlgCtrHorizontal</tt><dd> : the two subareas are horizontally aligned. The separator is then vertical.
+   <dt><tt>CATDlgCtrVertical</tt><dd> : the two subareas are vertically aligned. The separator is then horizontal.
+   <dt><tt>CATDlgSplResizeFirstPane</tt><dd> : the splitter shows the first subarea when first displayed.
+   </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="~CATDlgSplitter"></a><a name="~CATDlgSplitter()"></a> <dt> o <b>~CATDlgSplitter</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATDlgSplitter</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetSashPosition"></a><a name="GetSashPosition(double&amp;)"></a> <dt> o <b>GetSashPosition</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>GetSashPosition</b>(<td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oPosition</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the splitter position.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oPosition</tt>
+   <dd> The returned position.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetSashPosition"></a><a name="SetSashPosition(double)"></a> <dt> o <b>SetSashPosition</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>SetSashPosition</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iPosition</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the splitter position.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPosition</tt>
+   <dd> The position to set.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SwitchChildren"></a><a name="SwitchChildren()"></a> <dt> o <b>SwitchChildren</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>SwitchChildren</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Switches the splitter children.
+ The child that occupied the first subarea occupies the second one, and conversely,
+ the child that occupied the second subarea occupies the first one.
+</dl>
+<hr>
+ This object is included in the file: <b>CATDlgSplitter.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>DI0PANV2</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

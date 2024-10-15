@@ -1,0 +1,146 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATGraphicProperties Class CATExtIVisProperties</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATGraphicProperties.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATExtIVisProperties','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATExtIVisProperties','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATExtIVisProperties','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATExtIVisProperties','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATGraphicProperties Class CATExtIVisProperties</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATExtIVisProperties_41260','CATExtIVisProperties','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATExtIVisProperties</b>
+</p>
+<p>
+<b><i> Adapter for the CATIVisProperties interface.</i></b><br>
+
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIVisProperties','');return false">CATIVisProperties</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATExtIVisProperties()"><b>CATExtIVisProperties</b></a>()
+<dd>   Constructor.
+ <dt> o 
+    <a href="#~CATExtIVisProperties()"><b>~CATExtIVisProperties</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetSubTypeFromPath(CATPathElement&amp;,CATVisPropertyType,CATVisGeomType&amp;,unsigned int&amp;)"><b>GetSubTypeFromPath</b></a>(CATPathElement&amp;,CATVisPropertyType,CATVisGeomType&amp;,unsigned int&amp;)
+<dd>  Gives the appropriated sub type and property number to read/write.
+ <dt> o 
+    <a href="#IsGeomTypeDefined(CATVisGeomType&amp;)"><b>IsGeomTypeDefined</b></a>(CATVisGeomType&amp;)
+<dd>  Asks if a given geometry type is defined.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATExtIVisProperties"></a><a name="CATExtIVisProperties()"></a> <dt> o <b>CATExtIVisProperties</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATExtIVisProperties</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Constructor.
+</dl>
+<a name="~CATExtIVisProperties"></a><a name="~CATExtIVisProperties()"></a> <dt> o <b>~CATExtIVisProperties</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATExtIVisProperties</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetSubTypeFromPath"></a><a name="GetSubTypeFromPath(CATPathElement&amp;,CATVisPropertyType,CATVisGeomType&amp;,unsigned int&amp;)"></a> <dt> o <b>GetSubTypeFromPath</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetSubTypeFromPath</b>(<td><script type="text/javascript"> activateLink('CATPathElement','CATPathElement&amp;')</script> <td><tt>iPathElement</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATVisPropertyType','CATVisPropertyType')</script> <td><tt>iPropertyType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATVisGeomType','CATVisGeomType&amp;')</script> <td><tt>oGeomType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('unsigned int','unsigned int&amp;')</script> <td><tt>oPropertyNumber</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Gives the appropriated sub type and property number to read/write.
+ <br><b>Role</b>: 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPathElement</tt>
+   <dd>   Precise the environement of the object 
+   you want to modify its graphic properties.
+ </dd>
+    <dt><tt> iPropertyType</tt>
+   <dd>   The type of property to read or write.
+ </dd>
+    <dt><tt> oGeomType</tt>
+   <dd>   Return the geometrical sub-type.
+ </dd>
+    <dt><tt> oPropertyNumber</tt>
+   <dd>   Return the property number to use (default value is 0).
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <dt><tt>S_OK</tt>
+ <dd>
+ <dt><tt>E_FAIL</tt>
+ <dd>
+ </dl>
+</dl>
+</dl>
+<a name="IsGeomTypeDefined"></a><a name="IsGeomTypeDefined(CATVisGeomType&amp;)"></a> <dt> o <b>IsGeomTypeDefined</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>IsGeomTypeDefined</b>(<td><script type="text/javascript"> activateLink('CATVisGeomType','CATVisGeomType&amp;')</script> <td><tt>iGeomType</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Asks if a given geometry type is defined.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGeomType</tt>
+   <dd>   The geometrical type
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>   <b>Legal value</b>:
+ <dl>
+ <dt><tt>S_OK</tt>
+ <dd>iGeomType is defined for the object.
+ <dt><tt>E_FAIL</tt>
+ <dd>iGeomType isn't defined for the object.
+ </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATExtIVisProperties.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGraphicProperties</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>TopologicalOperatorsLight Global Function CATCreateGeodesicPointDir</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../TopologicalOperatorsLight.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>TopologicalOperatorsLight Global Function CATCreateGeodesicPointDir</h1>
+
+<br><dt><table><tr><td>  <script type="text/javascript"> activateLink('CATSketchGeodesic',' CATSketchGeodesic *')</script>  <b>CATCreateGeodesicPointDir</b>(<td><script type="text/javascript"> activateLink('CATGeoFactory','CATGeoFactory*')</script> <td><tt>iFactory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATTopData','CATTopData*')</script> <td><tt>iData</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBody','CATBody*')</script> <td><tt>iSupportShell</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATFace','CATFace*')</script> <td><tt>iFaceSupportPoint</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSurParam','CATSurParam*')</script> <td><tt>iParamPoint</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATMathVector','CATMathVector*')</script> <td><tt>iTangent</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATPositiveLength','CATPositiveLength')</script> <td><tt>iLength</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSkillValue','CATSkillValue')</script> <td><tt>iMode</tt><td><tt>= BASIC</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates a CATSketchGeodesic operator 
+ that computes the geodesic on a support from a start point, a direction and a length.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFactory</tt>
+   <dd> The pointer to the factory of the resulting body.
+ </dd>
+    <dt><tt> iData</tt>
+   <dd> The pointer to the data defining the software configuration and the journal. If the journal inside <tt>iData</tt> 
+ is <tt>NULL</tt>, it is not filled.
+ </dd>
+    <dt><tt> iSupportShell</tt>
+   <dd> The pointer to the body defining the support of the geodesic. 
+ </dd>
+    <dt><tt> iFaceSupportPoint</tt>
+   <dd> The pointer to the face on which the start point is located.
+ </dd>
+    <dt><tt> iParamPoint</tt>
+   <dd> The pointer to the SurParam corresponding to the start point. 
+ </dd>
+    <dt><tt> iTangent</tt>
+   <dd> The pointer to the direction of the geodesic. 
+ </dd>
+    <dt><tt> iLength</tt>
+   <dd> The param iLength which specifies the length of the resulting geodesic. 
+ </dd>
+    <dt><tt> iMode</tt>
+   <dd> The operator mode.
+ <dl><dt><tt>BASIC</tt> The operation is performed at the operator creation. NOT TO BE USED.
+     <dt><tt>ADVANCED</tt>Use the Run method. </dl>
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The pointer to the created operator. To <tt>delete</tt> with the usual C++ delete operator after use.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATCreateSketchGeodesic.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,61 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>KnowledgeInterfaces Formula (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../KnowledgeInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Formula','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Formula','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Formula','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Formula','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Formula<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Formula_23686','Formula','0');</script>
+<b><i> Represents the formula relation.</i></b><br>
+
+ The following example shows how to create a formula that computes the mass
+ of a cuboid, given its geometric dimensions and the density of the material
+ it is made of: 
+ <pre>
+	Dim CATDocs As Documents
+ Set CATDocs = CATIA.Documents
+ Dim part1 As Document
+ Set part1   = CATDocs.Add("CATPart")
+ Dim width As RealParam
+ Set width        = part1.Part.Parameters.<font color="red">CreateReal</font>("width", 1.)  
+ Dim height As RealParam
+ Set height       = part1.Part.Parameters.<font color="red">CreateReal</font>("height", 2.)  
+ Dim depth As RealParam
+ Set depth        = part1.Part.Parameters.<font color="red">CreateReal</font>("depth", 3.)  
+ Dim density As RealParam
+ Set density      = part1.Part.Parameters.<font color="red">CreateReal</font>("density", 1.5)  
+ Dim mass As RealParam
+ Set mass         = part1.Part.Parameters.<font color="red">CreateReal</font>("mass", 0.)  
+ Dim computemass As RealParam
+ Set computemass = part1.Part.Relations.<font color="red">CreateFormula</font>
+                    ("computemass",
+                     "Computes the cuboid mass",  mass,
+                     "(width*height*depth)*density")
+  </pre><hr>
+<dl>
+</dl>
+<dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

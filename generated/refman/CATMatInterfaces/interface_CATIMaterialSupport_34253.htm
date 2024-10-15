@@ -1,0 +1,82 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATMatInterfaces Interface CATIMaterialSupport</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATMatInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMaterialSupport','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMaterialSupport','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMaterialSupport','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMaterialSupport','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATMatInterfaces Interface CATIMaterialSupport</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMaterialSupport_34253','CATIMaterialSupport','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIMaterialSupport</b>
+</p>
+<p>
+<b><i>  Interface to support material mapping.</i></b><br>
+
+ <b>Role</b>: Use this interface to map materials on objects. See the 
+ <a href="#" onClick="openLink('ApplyMaterialOnSupport','');return false">ApplyMaterialOnSupport</a> global function. <br>
+ Use also this interface to retrieve a mapped material on an object. 
+ <br>
+ Product, part, body and surface objects implement this interface.
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIMaterialDocument','');return false">CATIMaterialDocument</a>, <a href="#" onClick="openLink('CATIMaterialFeature','');return false">CATIMaterialFeature</a>, <a href="#" onClick="openLink('CATIPositionedMaterial','');return false">CATIPositionedMaterial</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetMaterial()"><b>GetMaterial</b></a>()
+<dd>   Returns positioned material applied on support.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetMaterial"></a><a name="GetMaterial()"></a> <dt> o <b>GetMaterial</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATIPositionedMaterial','CATIPositionedMaterial *')</script>  <b>GetMaterial</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Returns positioned material applied on support.
+  
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The positioned material object.
+ <br>
+    Returns NULL if no material is applied on support.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMaterialSupport.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATMatInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

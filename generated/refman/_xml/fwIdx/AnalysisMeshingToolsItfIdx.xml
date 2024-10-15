@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="AnalysisMeshingToolsItf" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="0" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="CATMSHCustomHighlight" initial="C" htmlFileName="class_CATMSHCustomHighlight_48916" fatherClass="CATAcquisitionFilter" fatherId="27860" DSCharacteristic="class" id="48916" abstract="Interface representing a pre-highlight and highlight of a finite element entity." />
+<constructor name="CATMSHCustomHighlight" htmlFileName="class_CATMSHCustomHighlight_48916" containerName="CATMSHCustomHighlight" containerType="class" id="103769" status="0" isProperty="0" initial="C" argList="(CATMSHMethodHilight,void*)" abstract="Creates an object which defines custom hiligth method an associated data." />
+<method name="HighlightEdge" htmlFileName="class_CATMSHCustomHighlight_48916" containerName="CATMSHCustomHighlight" containerType="class" id="114178" status="1" isProperty="0" initial="H" argList="(CAT3DCustomRep*,CATMSHElement*,int)" abstract="Defines the default hiligth behaviour for the edge of finite element." />
+<method name="HighlightElement" htmlFileName="class_CATMSHCustomHighlight_48916" containerName="CATMSHCustomHighlight" containerType="class" id="106463" status="1" isProperty="0" initial="H" argList="(CAT3DCustomRep*,CATMSHElement*)" abstract="Defines the default hiligth behaviour of finite element." />
+<method name="HighlightFace" htmlFileName="class_CATMSHCustomHighlight_48916" containerName="CATMSHCustomHighlight" containerType="class" id="114113" status="1" isProperty="0" initial="H" argList="(CAT3DCustomRep*,CATMSHElement*,int)" abstract="Defines the default hiligth behaviour for the face of finite element." />
+<method name="HighlightNode" htmlFileName="class_CATMSHCustomHighlight_48916" containerName="CATMSHCustomHighlight" containerType="class" id="92500" status="1" isProperty="0" initial="H" argList="(CAT3DCustomRep*,CATMSHNode*)" abstract="Defines the default hiligth behaviour for a node." />
+<typedef name="CATMSHMethodHilight" htmlFileName="typedef_CATMSHMethodHilight_45649" id="45649" initial="C" abstract="Customized method which be called for the highlight." />
+</fw>

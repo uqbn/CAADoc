@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="ElecSchematicItf" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="1" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="ElecSchWire" initial="E" htmlFileName="interface_ElecSchWire_21353" fatherClass="AnyObject" fatherId="9080" DSCharacteristic="interface" id="21353" abstract="  For technical electrical wire attributes." />
+<method name="Color" htmlFileName="interface_ElecSchWire_21353" containerName="ElecSchWire" containerType="interface" id="25751" status="32" isProperty="1" initial="C" argList="" abstract="" />
+<class name="ElecSchematicObject" initial="E" htmlFileName="interface_ElecSchematicObject_33199" fatherClass="Product" fatherId="40279" DSCharacteristic="interface" id="33199" abstract="  Represents the electrical schematic objects." />
+<method name="GetPinAttribute" htmlFileName="interface_ElecSchematicObject_33199" containerName="ElecSchematicObject" containerType="interface" id="47634" status="0" isProperty="0" initial="G" argList="" abstract="Get the value of an attribute of the pin which connects this and the specified object." />
+<method name="ConnectedElecSchObjects" htmlFileName="interface_ElecSchematicObject_33199" containerName="ElecSchematicObject" containerType="interface" id="61972" status="32" isProperty="1" initial="C" argList="" abstract="This method returns the collection of Electrical Schematic Connected Objects." />
+<method name="ElecSchematicChildren" htmlFileName="interface_ElecSchematicObject_33199" containerName="ElecSchematicObject" containerType="interface" id="57995" status="32" isProperty="1" initial="E" argList="" abstract="This method returns the collection of Electrical Schematic Object&apos;s Children (component in Pipe Line, Assembly)." />
+<method name="ElecSchematicParent" htmlFileName="interface_ElecSchematicObject_33199" containerName="ElecSchematicObject" containerType="interface" id="54176" status="32" isProperty="1" initial="E" argList="" abstract="This method returns the electrical schematic parent." />
+<method name="IsSpaceReserved" htmlFileName="interface_ElecSchematicObject_33199" containerName="ElecSchematicObject" containerType="interface" id="47397" status="32" isProperty="1" initial="I" argList="" abstract="" />
+<method name="RootType" htmlFileName="interface_ElecSchematicObject_33199" containerName="ElecSchematicObject" containerType="interface" id="39482" status="32" isProperty="1" initial="R" argList="" abstract="Returns the Electrical Schematic Object&apos;s Root Type (Equipment, Signal, Bundle, Wire)." />
+<method name="Type" htmlFileName="interface_ElecSchematicObject_33199" containerName="ElecSchematicObject" containerType="interface" id="37129" status="32" isProperty="1" initial="T" argList="" abstract="Returns the Electrical Schematic Object&apos;s Type (Alternator, Signal, Bundle, Wire, ." />
+</fw>

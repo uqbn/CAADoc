@@ -1,0 +1,79 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces Enumeration CATSamStatus</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>CATAnalysisInterfaces Enumeration CATSamStatus</h1>
+<pre>
+enum <b>CATSamStatus</b> {
+  CATSamStatusDisplayed,
+  CATSamStatusExtPointer,
+  CATSamStatusDeleted,
+  CATSamStatusDead,
+  CATSamStatusIsolated,
+  CATSamStatusCheck,
+  CATSamStatusDesactivated,
+  CATSamStatusExternalLinked,
+  CATSamStatusCondensedMesh,
+  CATSamStatusLast,
+  CATSamStatusAll
+}
+</pre>
+<b><i> Flags representing the status of an object of the field model.</i></b><br>
+
+ <dl>
+  <dt> <b>Values:</b>
+  <dd>
+    <dl>
+    <dt><tt> CATSamStatusDisplayed</tt>
+   <dd>   The object is displayed in the graph.
+ </dd>
+    <dt><tt> CATSamStatusExtPointer</tt>
+   <dd>   The object contains an external pointer and not an external tag.
+ </dd>
+    <dt><tt> CATSamStatusDeleted</tt>
+   <dd>   The object is deleted in the feature tree by user.
+ </dd>
+    <dt><tt> CATSamStatusDead</tt>
+   <dd>   The object doesn't exist in the feature tree.
+ </dd>
+    <dt><tt> CATSamStatusIsolated</tt>
+   <dd>   The object, if it is destroyed, will not command destuction of his children.
+ </dd>
+    <dt><tt> CATSamStatusCheck</tt>
+   <dd>   The object is being checked for test of cyclicity of the explicit model.
+ </dd>
+    <dt><tt> CATSamStatusDesactivated</tt>
+   <dd>   The object is desactivated in the explicitation.
+ </dd>
+    <dt><tt> CATSamStatusExternalLinked</tt>
+   <dd>   The object is Linked From an other Model.
+ </dd>
+    <dt><tt> CATSamStatusCondensedMesh</tt>
+   <dd>   The object is a condensed Mesh Entity.
+ </dd>
+    <dt><tt> CATSamStatusAll</tt>
+   <dd>   The sum of the flags.
+ </dd>
+    <dt><tt> CATSamStatusLast</tt>
+   <dd>   The number of flags.</dd>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATAnalysisExplicitDefinitions.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

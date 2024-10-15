@@ -1,0 +1,135 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Interface CATISchPostPaste</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISchPostPaste','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchPostPaste','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISchPostPaste','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchPostPaste','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Interface CATISchPostPaste</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISchPostPaste_44519','CATISchPostPaste','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISchPostPaste</b>
+</p>
+<p>
+<b><i> Interface to manage Schematic platform copy-paste behavior after paste.</i></b><br>
+ 
+ <b>Role</b>: To get and set information for paste-processing</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetCCPObjectList(CATIUnknownList**,CATIUnknownList**)"><b>GetCCPObjectList</b></a>(CATIUnknownList**,CATIUnknownList**)
+<dd>  Get a list of source object to copied and a list of
+ corresponding copied object.
+ <dt> o 
+    <a href="#GetPastedDrwObjectList(CATIUnknownList**)"><b>GetPastedDrwObjectList</b></a>(CATIUnknownList**)
+<dd>  Get a list of copied drafting objects.
+ <dt> o 
+    <a href="#MoveTo(double[2])"><b>MoveTo</b></a>(double[2])
+<dd>  Move all pasted objects to input position.
+ <dt> o 
+    <a href="#SetPastedDrwObjectList(CATIUnknownList*)"><b>SetPastedDrwObjectList</b></a>(CATIUnknownList*)
+<dd>  Set a list of copied drafting objects.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetCCPObjectList"></a><a name="GetCCPObjectList(CATIUnknownList**,CATIUnknownList**)"></a> <dt> o <b>GetCCPObjectList</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetCCPObjectList</b>(<td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oListSourceObject</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oListCopiedObject</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get a list of source object to copied and a list of
+ corresponding copied object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oListSourceObject</tt>
+   <dd>  [out, IUnknown#Release]   A list of interface pointers to source objects.
+ </dd>
+    <dt><tt> oListCopiedObject</tt>
+   <dd>  [out, IUnknown#Release]   A list of interface pointers to copied objects.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetPastedDrwObjectList"></a><a name="GetPastedDrwObjectList(CATIUnknownList**)"></a> <dt> o <b>GetPastedDrwObjectList</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetPastedDrwObjectList</b>(<td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oListCopiedDrwObject</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get a list of copied drafting objects.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oListCopiedDrwObject</tt>
+   <dd>  [out, IUnknown#Release]   A list of interface pointers to copied drafting objects.</dd>
+</dl>
+</dl>
+</dl>
+<a name="MoveTo"></a><a name="MoveTo(double[2])"></a> <dt> o <b>MoveTo</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>MoveTo</b>(<td> const <script type="text/javascript"> activateLink('double[2','double[2]')</script> <td><tt>iDb2Position</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Move all pasted objects to input position.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDb2Position</tt>
+   <dd>     2 double words for the x-y coordinates.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetPastedDrwObjectList"></a><a name="SetPastedDrwObjectList(CATIUnknownList*)"></a> <dt> o <b>SetPastedDrwObjectList</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetPastedDrwObjectList</b>(<td> const <script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList*')</script> <td><tt>iListCopiedDrwObject</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Set a list of copied drafting objects.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iListCopiedDrwObject</tt>
+   <dd>    A list of interface pointers to copied drafting objects.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISchPostPaste.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

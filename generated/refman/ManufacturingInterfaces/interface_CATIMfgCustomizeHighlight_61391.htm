@@ -1,0 +1,97 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ManufacturingInterfaces Interface CATIMfgCustomizeHighlight</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ManufacturingInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMfgCustomizeHighlight','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgCustomizeHighlight','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMfgCustomizeHighlight','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgCustomizeHighlight','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ManufacturingInterfaces Interface CATIMfgCustomizeHighlight</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMfgCustomizeHighlight_61391','CATIMfgCustomizeHighlight','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATIMfgCustomizeHighlight</b>
+</p>
+<p>
+<b><i> This interface is used in highlight mechanism.</i></b><br>
+<br>
+ Any object that needs highlight services is intended to implement this interface.<br>
+ The interface methods describe what is supposed to be highlighted when the object is
+ selected. There are 2 possibilities :<br>
+ <ol>
+  <li>Highlight Design Features, like Hole, Pocket, but also Point, Face, or vertex</li>    
+  <li>Highlight Manufacturing features</li>
+ </ol>
+ The mechanism can be recursive. For instance, a Manufacturing Operation can ask to highlight
+ a Manufacturing Feature that itself asks to highlight a Design Feature.
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetDesignFeatures(CATListValCATBaseUnknown_var&amp;)"><b>GetDesignFeatures</b></a>(CATListValCATBaseUnknown_var&amp;)
+<dd>  Method to retrieve the Design Features to be highlighted when the object is selected.
+ <dt> o 
+    <a href="#GetManufacturingFeatures(CATListValCATBaseUnknown_var&amp;)"><b>GetManufacturingFeatures</b></a>(CATListValCATBaseUnknown_var&amp;)
+<dd>  Method to retrieve the Manufacturing Features (with a Rep ot not) to be highlighted
+ when the object is selected.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetDesignFeatures"></a><a name="GetDesignFeatures(CATListValCATBaseUnknown_var&amp;)"></a> <dt> o <b>GetDesignFeatures</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetDesignFeatures</b>(<td><script type="text/javascript"> activateLink('CATListValCATBaseUnknown_var','CATListValCATBaseUnknown_var&amp;')</script> <td><tt>oDFList</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Method to retrieve the Design Features to be highlighted when the object is selected.
+ Design Features are Mechanical Features (Pad, Hole, Face, Edge, Point, ...).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  oDFList List of Design Features.
+</dl>
+</dl>
+<a name="GetManufacturingFeatures"></a><a name="GetManufacturingFeatures(CATListValCATBaseUnknown_var&amp;)"></a> <dt> o <b>GetManufacturingFeatures</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetManufacturingFeatures</b>(<td><script type="text/javascript"> activateLink('CATListValCATBaseUnknown_var','CATListValCATBaseUnknown_var&amp;')</script> <td><tt>oMfgFeatureList</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Method to retrieve the Manufacturing Features (with a Rep ot not) to be highlighted
+ when the object is selected.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  oMfgFeatureList The Manufacturing Features list.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMfgCustomizeHighlight.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>MfgItfEnv</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,117 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>StructureInterfaces StrNibblingFeature (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../StructureInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('StrNibblingFeature','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('StrNibblingFeature','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('StrNibblingFeature','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('StrNibblingFeature','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>StrNibblingFeature<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_StrNibblingFeature_37509','StrNibblingFeature','0');</script>
+<b><i> Represents a Nibbling Feature.</i></b><br>
+
+ Type, SubType and Extrapolation Offset can be defined for this nibbling feature.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#SubType"><b>SubType</b></a>
+<dd>  Returns or Sets Nibbling SubType on Current Nibbling.
+ <dt>
+    <a href="#Type"><b>Type</b></a>
+<dd>  Returns or Sets Nibbling Type on Current Nibbling.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetOffsetForExtrapolate"><b>GetOffsetForExtrapolate</b></a>
+<dd>  Sets the Extrapolation offset value on Current Nibbling Feature.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="SubType"><dt>
+
+<table><tr><td>o Property <b>SubType</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or Sets Nibbling SubType on Current Nibbling.   
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+  Dim NibblingFeature As StrNibblingFeature
+  Set NibblingFeature = FeatureFactory.AddNibbling(List, "Remove")
+  Dim NibbSubType As String
+  NibbSubType = NibblingFeature1.<font color="red">SubType</font>
+ 'Set the SubType
+  NibblingFeature1.<font color="red">SubType</font> ="ButtButt"
+ </pre>
+</dl>
+</dl>
+<a name="Type"><dt>
+
+<table><tr><td>o Property <b>Type</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or Sets Nibbling Type on Current Nibbling.   
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+  Dim NibblingFeature As StrNibblingFeature
+  Set NibblingFeature = FeatureFactory.AddNibbling(List, "Remove")
+  Dim NibbType As String
+  NibbType = NibblingFeature1.<font color="red">Type</font>
+  'Set the Type
+  NibblingFeature1.<font color="red">Type</font> ="LongPoint"
+ </pre>
+</dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetOffsetForExtrapolate"><dt>
+
+<table><tr><td>o Sub <b>GetOffsetForExtrapolate</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iOffsetForExtrapolate</tt>)</table></dt>
+<dl>
+  <dd>
+ Sets the Extrapolation offset value on Current Nibbling Feature.  
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iOffsetForExtrapolate</tt>
+   <dd> [in]   Default Value:"5mm"
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok.
+ <dl>
+ <dt>Example</dt>:
+ <dd>
+  This example Applies Extrapolation offset. 
+ <pre>
+  Dim NibblingFeature As StrNibblingFeature
+  Set NibblingFeature = FeatureFactory.AddNibbling(List, "Remove")
+  NibblingFeature.<font color="red">GetOffsetForExtrapolate("0mm")</font>
+ </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

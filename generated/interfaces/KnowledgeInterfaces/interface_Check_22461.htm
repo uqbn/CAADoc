@@ -1,0 +1,84 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>KnowledgeInterfaces Check (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../KnowledgeInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Check','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Check','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Check','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Check','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Check<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Check_22461','Check','0');</script>
+<b><i> Represents the check relation.</i></b><br>
+
+ The following example shows how to create a check which checks if a given
+ mass is less than 10kg. The mass should be defined previously:
+ <pre>
+	Dim CATDocs As Documents
+ Set CATDocs = CATIA.Documents
+ Dim part1 As Document
+ Set part1   = CATDocs.Add("CATPart")
+ Dim mass As RealParam
+ Set mass         = part1.Part.Parameters.<font color="red">CreateReal</font>("mass", 5.)
+ Dim maximummass As Check
+ Set maximummass = part1.Relations.<font color="red">CreateCheck</font>
+                    ("maximummass",
+                     "Ensures that mass is less than 10 kg",
+                     "mass&lt;10kg")
+  </pre><hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Diagnosis"><b>Diagnosis</b></a>
+<dd>  Returns the check diagnosis.
+ <dt>
+    <a href="#Severity"><b>Severity</b></a>
+<dd>  Returns or sets the check severity.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Diagnosis"><dt>
+
+<table><tr><td>o Property <b>Diagnosis</b>(<td>) As <script type="text/javascript"> activateLink('boolean','boolean')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the check diagnosis.
+ True if the condition of the check is verified. False
+ otherwise.
+ </pre>
+ </dl>
+</dl>
+<a name="Severity"><dt>
+
+<table><tr><td>o Property <b>Severity</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the check severity.
+ The severity is the way the check will manifest itself:
+		<li>Silent (1)</li>
+		<li>Information (2)</li>
+		<li>Warning (3)</li>
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

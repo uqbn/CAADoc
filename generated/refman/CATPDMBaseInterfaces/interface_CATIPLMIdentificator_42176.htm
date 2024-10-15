@@ -1,0 +1,87 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATPDMBaseInterfaces Interface CATIPLMIdentificator</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATPDMBaseInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIPLMIdentificator','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPLMIdentificator','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIPLMIdentificator','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPLMIdentificator','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATPDMBaseInterfaces Interface CATIPLMIdentificator</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIPLMIdentificator_42176','CATIPLMIdentificator','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIPLMIdentificator</b>
+</p>
+<p>
+<b><i> Interface representing identificator of persistant objects.</i></b><br>
+
+
+  <b>Role</b> Object providing this CAA interface, also supports non public interfaces, known by implementer of the persistancy.
+  <p>Identificator can be used 
+  <ul>
+    <li>to Run a service on the ENOVIA server,</li>
+    <li>to retreive if the object is currently loadded in the CATIA session,</li>
+     <li>to compare two navigation objects</li>
+  </ul>
+  <p>Implementers of the binding mechanism use their own interface implementation to vehiculate 
+     hidden information supporting identificator of a persistant solution 
+
+  <p></p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#IsEqual(CATIPLMIdentificator*)"><b>IsEqual</b></a>(CATIPLMIdentificator*)
+<dd>   PLM Object comparison operator.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="IsEqual"></a><a name="IsEqual(CATIPLMIdentificator*)"></a> <dt> o <b>IsEqual</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>IsEqual</b>(<td><script type="text/javascript"> activateLink('CATIPLMIdentificator','CATIPLMIdentificator*')</script> <td><tt>iToCompare</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  PLM Object comparison operator.
+
+ <br><b>Role</b>: Checks equality between two Identificators.
+
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if the two objects providing this interface are refering to the same underlying persistant object.<br>
+   <code>S_FALSE</code> if the two objects are physically different.<br>
+   <code>E_FAIL</code> if the test could not be performed.
+
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIPLMIdentificator.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATPDMBaseItf</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

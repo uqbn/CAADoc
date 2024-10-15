@@ -1,0 +1,209 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Class CATEASchAppCntrName</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATEASchAppCntrName','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEASchAppCntrName','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATEASchAppCntrName','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEASchAppCntrName','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Class CATEASchAppCntrName</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATEASchAppCntrName_46347','CATEASchAppCntrName','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATEASchAppCntrName</b>
+</p>
+<p>
+<b><i> Super class to derive implementation for interface CATISchAppCntrName.</i></b><br>
+
+ <b>Role</b>: Adaptor</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATEASchAppCntrName()"><b>CATEASchAppCntrName</b></a>()
+<dd>  Constructs an empty CATEASchAppCntrName.
+ <dt> o 
+    <a href="#~CATEASchAppCntrName()"><b>~CATEASchAppCntrName</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AppListNames(CATICStringList**)"><b>AppListNames</b></a>(CATICStringList**)
+<dd>  
+ <dt> o 
+    <a href="#AppListNames2(CATListOfCATUnicodeString&amp;)"><b>AppListNames2</b></a>(CATListOfCATUnicodeString&amp;)
+<dd>  List connector names allowed.
+ <dt> o 
+    <a href="#GetName(char**)"><b>GetName</b></a>(char**)
+<dd>  
+ <dt> o 
+    <a href="#GetName2(CATUnicodeString&amp;)"><b>GetName2</b></a>(CATUnicodeString&amp;)
+<dd>  Get the application connector name.
+ <dt> o 
+    <a href="#SetName(char*)"><b>SetName</b></a>(char*)
+<dd>  
+ <dt> o 
+    <a href="#SetName2(CATUnicodeString&amp;)"><b>SetName2</b></a>(CATUnicodeString&amp;)
+<dd>  Set the application connector name.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATEASchAppCntrName"></a><a name="CATEASchAppCntrName()"></a> <dt> o <b>CATEASchAppCntrName</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATEASchAppCntrName</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs an empty CATEASchAppCntrName.
+</dl>
+<a name="~CATEASchAppCntrName"></a><a name="~CATEASchAppCntrName()"></a> <dt> o <b>~CATEASchAppCntrName</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATEASchAppCntrName</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AppListNames"></a><a name="AppListNames(CATICStringList**)"></a> <dt> o <b>AppListNames</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppListNames</b>(<td><script type="text/javascript"> activateLink('CATICStringList','CATICStringList**')</script> <td><tt>oLConnectorNamesAllowed</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ 
+<dl>
+  <dt> <b>Deprecated:</b> 
+  <dd>  V5R15 
+ Use 
+<a href="#" onClick="openLink('CATEASchAppCntrName','AppListNames2');return false">CATEASchAppCntrName.AppListNames2</a> instead. List connector names allowed.
+ 
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLConnectorNamesAllowed</tt>
+   <dd>   A list of connector names allowed.
+   The caller must allocate memory for the first level pointer 
+   (i.e. oLConnectorNamesAllowed) and release the second level
+   pointer (i.e. *oLConnectorNamesAllowed) after usage.</dd>
+</dl>
+</dl>
+</dl>
+<a name="AppListNames2"></a><a name="AppListNames2(CATListOfCATUnicodeString&amp;)"></a> <dt> o <b>AppListNames2</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppListNames2</b>(<td><script type="text/javascript"> activateLink('CATListOfCATUnicodeString','CATListOfCATUnicodeString&amp;')</script> <td><tt>oLConnectorNamesAllowed</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ List connector names allowed.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLConnectorNamesAllowed</tt>
+   <dd>   A list of connector names allowed.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetName"></a><a name="GetName(char**)"></a> <dt> o <b>GetName</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetName</b>(<td><script type="text/javascript"> activateLink('char','char**')</script> <td><tt>oName</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ 
+<dl>
+  <dt> <b>Deprecated:</b> 
+  <dd>  V5R15 
+ Use 
+<a href="#" onClick="openLink('CATEASchAppCntrName','GetName2');return false">CATEASchAppCntrName.GetName2</a> instead. Get the application connector name.
+ 
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oName</tt>
+   <dd>   The connector name.
+   The caller must allocate memory for the first level pointer 
+   (i.e. oName) and release the second level
+   pointer (i.e. *oName) after usage.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetName2"></a><a name="GetName2(CATUnicodeString&amp;)"></a> <dt> o <b>GetName2</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetName2</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oName</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Get the application connector name.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oName</tt>
+   <dd>   The connector name.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetName"></a><a name="SetName(char*)"></a> <dt> o <b>SetName</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetName</b>(<td> const <script type="text/javascript"> activateLink('char','char*')</script> <td><tt>iName</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ 
+<dl>
+  <dt> <b>Deprecated:</b> 
+  <dd>  V5R15 
+ Use 
+<a href="#" onClick="openLink('CATEASchAppCntrName','SetName2');return false">CATEASchAppCntrName.SetName2</a> instead. Set the application connector name.
+ 
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oName</tt>
+   <dd>   The connector name.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetName2"></a><a name="SetName2(CATUnicodeString&amp;)"></a> <dt> o <b>SetName2</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetName2</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iName</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Set the application connector name.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oName</tt>
+   <dd>   The connector name.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATEASchAppCntrName.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATSchItfCPP</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

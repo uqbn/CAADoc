@@ -1,0 +1,365 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PartInterfaces Interface CATIShell</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../PartInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIShell','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIShell','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIShell','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIShell','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PartInterfaces Interface CATIShell</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIShell_16738','CATIShell','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIShell</b>
+</p>
+<p>
+<b><i> Class to define methods relative to the shell feature.</i></b><br>
+
+ <b>Role</b>: A shell feature is defined with a list of faces corresponding 
+ to its opening and two offset values.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AddFaceToRemove(CATISpecObject_var)"><b>AddFaceToRemove</b></a>(CATISpecObject_var)
+<dd>  Adds a face to shell specifications.
+ <dt> o 
+    <a href="#AddFaceWithDifferentThickness(CATISpecObject_var,double,double)"><b>AddFaceWithDifferentThickness</b></a>(CATISpecObject_var,double,double)
+<dd>  Adds a face with different thicknesses to shell specifications.
+ <dt> o 
+    <a href="#GetExtOffset()"><b>GetExtOffset</b></a>()
+<dd>  Returns the value of the external offset of the shell.
+ <dt> o 
+    <a href="#GetFacesWithDifferentThickness()"><b>GetFacesWithDifferentThickness</b></a>()
+<dd>  Returns the list of faces with different thickness.
+ <dt> o 
+    <a href="#GetIntOffset()"><b>GetIntOffset</b></a>()
+<dd>  Returns the value of the internal offset of the shell.
+ <dt> o 
+    <a href="#GetNbOfFacesWithDifferentThickness()"><b>GetNbOfFacesWithDifferentThickness</b></a>()
+<dd>  Returns the number of faces with different thickness.
+ <dt> o 
+    <a href="#GetNbOfNonOffsetFaces(int&amp;)"><b>GetNbOfNonOffsetFaces</b></a>(int&amp;)
+<dd>  Returns the number of non offset faces.
+ <dt> o 
+    <a href="#GetNbOfShellSpec()"><b>GetNbOfShellSpec</b></a>()
+<dd>  Returns the number of specified faces.
+ <dt> o 
+    <a href="#GetNonOffsetFaces(int&amp;)"><b>GetNonOffsetFaces</b></a>(int&amp;)
+<dd>  Returns the list of non offset faces.
+ <dt> o 
+    <a href="#GetShellParameters(int,CATISpecObject_var&amp;,CATICkeParm_var&amp;,CATICkeParm_var&amp;)"><b>GetShellParameters</b></a>(int,CATISpecObject_var&amp;,CATICkeParm_var&amp;,CATICkeParm_var&amp;)
+<dd>  Returns a face and the corresponding offset parameters
+ 
+ <dt> o 
+    <a href="#GetShellSpec()"><b>GetShellSpec</b></a>()
+<dd>  Returns the list of specified faces.
+ <dt> o 
+    <a href="#ModifyExtOffset(double)"><b>ModifyExtOffset</b></a>(double)
+<dd>  Modifies the value of the external offset of the shell.
+ <dt> o 
+    <a href="#ModifyIntOffset(double)"><b>ModifyIntOffset</b></a>(double)
+<dd>  Modifies the value of the internal offset of the shell.
+ <dt> o 
+    <a href="#RemoveFaceWithDifferentThickness(CATISpecObject_var)"><b>RemoveFaceWithDifferentThickness</b></a>(CATISpecObject_var)
+<dd>  Removes a face with different thicknesses to shell specifications.
+ <dt> o 
+    <a href="#RemoveNonOffsetFace(CATISpecObject_var,int&amp;)"><b>RemoveNonOffsetFace</b></a>(CATISpecObject_var,int&amp;)
+<dd>  Removes a non offset face to shell specifications.
+ <dt> o 
+    <a href="#WithdrawFaceToRemove(CATISpecObject_var)"><b>WithdrawFaceToRemove</b></a>(CATISpecObject_var)
+<dd>  Removes a face to shell specifications.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AddFaceToRemove"></a><a name="AddFaceToRemove(CATISpecObject_var)"></a> <dt> o <b>AddFaceToRemove</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>AddFaceToRemove</b>(<td> const <script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject_var')</script> <td><tt>iFace</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Adds a face to shell specifications. This face indicates which faces must 
+ be removed to define the shell opening.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFace</tt>
+   <dd>   Init Face for tangency propagation.</dd>
+</dl>
+</dl>
+</dl>
+<a name="AddFaceWithDifferentThickness"></a><a name="AddFaceWithDifferentThickness(CATISpecObject_var,double,double)"></a> <dt> o <b>AddFaceWithDifferentThickness</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>AddFaceWithDifferentThickness</b>(<td> const <script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject_var')</script> <td><tt>iFace</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iIntOffset</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iExtOffset</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Adds a face with different thicknesses to shell specifications.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFace</tt>
+   <dd>   Init Face for tangency propagation.
+ </dd>
+    <dt><tt> iIntOffset</tt>
+   <dd>   Value of the internal offset.
+ </dd>
+    <dt><tt> iExtOffset</tt>
+   <dd>   Value of the external offset.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetExtOffset"></a><a name="GetExtOffset()"></a> <dt> o <b>GetExtOffset</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('double','double')</script>  <b>GetExtOffset</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the value of the external offset of the shell.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The offset value.
+</dl>
+</dl>
+<a name="GetFacesWithDifferentThickness"></a><a name="GetFacesWithDifferentThickness()"></a> <dt> o <b>GetFacesWithDifferentThickness</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATLISTV(CATISpecObject_var)','CATLISTV(CATISpecObject_var) *')</script>  <b>GetFacesWithDifferentThickness</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the list of faces with different thickness.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The list.
+</dl>
+</dl>
+<a name="GetIntOffset"></a><a name="GetIntOffset()"></a> <dt> o <b>GetIntOffset</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('double','double')</script>  <b>GetIntOffset</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the value of the internal offset of the shell.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The offset value.
+</dl>
+</dl>
+<a name="GetNbOfFacesWithDifferentThickness"></a><a name="GetNbOfFacesWithDifferentThickness()"></a> <dt> o <b>GetNbOfFacesWithDifferentThickness</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetNbOfFacesWithDifferentThickness</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the number of faces with different thickness.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The number of faces with different thickness.
+</dl>
+</dl>
+<a name="GetNbOfNonOffsetFaces"></a><a name="GetNbOfNonOffsetFaces(int&amp;)"></a> <dt> o <b>GetNbOfNonOffsetFaces</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetNbOfNonOffsetFaces</b>(<td> const <script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>InOut</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the number of non offset faces.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> InOut</tt>
+   <dd>    InOut=1 for Internal Offset, InOut=2 for External Offset
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The number of non offset faces.
+</dl>
+</dl>
+<a name="GetNbOfShellSpec"></a><a name="GetNbOfShellSpec()"></a> <dt> o <b>GetNbOfShellSpec</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetNbOfShellSpec</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the number of specified faces.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The number of specified faces.
+</dl>
+</dl>
+<a name="GetNonOffsetFaces"></a><a name="GetNonOffsetFaces(int&amp;)"></a> <dt> o <b>GetNonOffsetFaces</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATLISTV(CATISpecObject_var)','CATLISTV(CATISpecObject_var) *')</script>  <b>GetNonOffsetFaces</b>(<td> const <script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>InOut</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the list of non offset faces.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> InOut</tt>
+   <dd>    InOut=1 for Internal Offset, InOut=2 for External Offset
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The list.
+</dl>
+</dl>
+<a name="GetShellParameters"></a><a name="GetShellParameters(int,CATISpecObject_var&amp;,CATICkeParm_var&amp;,CATICkeParm_var&amp;)"></a> <dt> o <b>GetShellParameters</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>GetShellParameters</b>(<td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iInt</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATISpecObject_var','CATISpecObject_var&amp;')</script> <td><tt>oFace</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATICkeParm_var','CATICkeParm_var&amp;')</script> <td><tt>oIntParm</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATICkeParm_var','CATICkeParm_var&amp;')</script> <td><tt>oExtParm</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns a face and the corresponding offset parameters
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iInt</tt>
+   <dd>   If iInt = 0, oFace, oIntParm and oExtParm correspond to the default 
+ specifications.
+   If iInt > 0, oFace, oIntParm and oExtParm correspond to the different 
+ thicknesses.  
+ </dd>
+    <dt><tt> oFace</tt>
+   <dd>   Init Face for tangency propagation. 
+ </dd>
+    <dt><tt> oIntParm</tt>
+   <dd>   Internal offset parameter. 
+ </dd>
+    <dt><tt> oExtParm</tt>
+   <dd>   External offset parameter.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetShellSpec"></a><a name="GetShellSpec()"></a> <dt> o <b>GetShellSpec</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATLISTV(CATISpecObject_var)','CATLISTV(CATISpecObject_var) *')</script>  <b>GetShellSpec</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the list of specified faces.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The list.
+</dl>
+</dl>
+<a name="ModifyExtOffset"></a><a name="ModifyExtOffset(double)"></a> <dt> o <b>ModifyExtOffset</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>ModifyExtOffset</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iExtOffset</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the value of the external offset of the shell.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iExtOffset</tt>
+   <dd>   New value of the external offset.</dd>
+</dl>
+</dl>
+</dl>
+<a name="ModifyIntOffset"></a><a name="ModifyIntOffset(double)"></a> <dt> o <b>ModifyIntOffset</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>ModifyIntOffset</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iIntOffset</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the value of the internal offset of the shell.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIntOffset</tt>
+   <dd>   New value of the internal offset.</dd>
+</dl>
+</dl>
+</dl>
+<a name="RemoveFaceWithDifferentThickness"></a><a name="RemoveFaceWithDifferentThickness(CATISpecObject_var)"></a> <dt> o <b>RemoveFaceWithDifferentThickness</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>RemoveFaceWithDifferentThickness</b>(<td> const <script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject_var')</script> <td><tt>iFace</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Removes a face with different thicknesses to shell specifications.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFace</tt>
+   <dd>   Init Face for tangency propagation.</dd>
+</dl>
+</dl>
+</dl>
+<a name="RemoveNonOffsetFace"></a><a name="RemoveNonOffsetFace(CATISpecObject_var,int&amp;)"></a> <dt> o <b>RemoveNonOffsetFace</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>RemoveNonOffsetFace</b>(<td> const <script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject_var')</script> <td><tt>iFace</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>InOut</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Removes a non offset face to shell specifications.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFace</tt>
+   <dd> </dd>
+    <dt><tt> InOut</tt>
+   <dd>    InOut=1 for Internal Offset, InOut=2 for External Offset
+   Non offset face.</dd>
+</dl>
+</dl>
+</dl>
+<a name="WithdrawFaceToRemove"></a><a name="WithdrawFaceToRemove(CATISpecObject_var)"></a> <dt> o <b>WithdrawFaceToRemove</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>WithdrawFaceToRemove</b>(<td> const <script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject_var')</script> <td><tt>iFace</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Removes a face to shell specifications.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFace</tt>
+   <dd>   Init Face for tangency propagation.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIShell.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATPartInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

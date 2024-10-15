@@ -1,0 +1,85 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ApplicationFrame Interface CATIContextualSubMenu</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ApplicationFrame.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIContextualSubMenu','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIContextualSubMenu','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIContextualSubMenu','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIContextualSubMenu','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ApplicationFrame Interface CATIContextualSubMenu</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIContextualSubMenu_37734','CATIContextualSubMenu','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATIContextualSubMenu</b>
+</p>
+<p>
+<b><i> Interface to add menu item in the contextual menu.</i></b><br>
+
+ <b>Role</b>:This interface allows you to add command which appears
+ in the < xxx > object menu of the contextual menu. The xxx object must also implement the 
+ <a href="#" onClick="openLink('CATIEdit','');return false">CATIEdit</a> interface. <br>To do this, we create and arrange command starters that we associate with 
+  commands using command headers. These command headers are defined in the 
+  workshop of the document. 
+ <br>Each starter are chained together to form a sub menu. 
+ <br><b>The life cycle of the sub menu</b>
+  <br>In each implementation of this interface, 
+  the sub menu must be a data member to manage its life cycle. It can be
+  identical or different from a call to <tt>GetContextualSubMenu</tt> to another.
+  <ul>
+  <li> If it is identical, it can be created in the constructor, returned in the
+    GetContextualSubMenu method, and deleted in the destructor. </li>
+  <li>Otherwise, it must be created in the GetContextualSubMenu method. To
+    correctly manage its life cycle, it must be deleted:
+    <ul>
+    <li>whenever calling GetContextualSubMenu</li>
+    <li>in the destructor when the class itself is deleted</li>
+    </ul>
+  </ul>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetContextualSubMenu()"><b>GetContextualSubMenu</b></a>()
+<dd>  Returns the sub menu access.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetContextualSubMenu"></a><a name="GetContextualSubMenu()"></a> <dt> o <b>GetContextualSubMenu</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCmdAccess','CATCmdAccess *')</script>  <b>GetContextualSubMenu</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the sub menu access.
+</dl>
+<hr>
+ This object is included in the file: <b>CATIContextualSubMenu.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATApplicationFrame</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

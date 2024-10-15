@@ -1,0 +1,174 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PrintBase Class CATPrintDevice</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../PrintBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATPrintDevice','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATPrintDevice','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATPrintDevice','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATPrintDevice','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PrintBase Class CATPrintDevice</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATPrintDevice_13965','CATPrintDevice','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATPrintDevice</b>
+</p>
+<p>
+<b><i> Class to create print devices.</i></b><br>
+
+ <br>
+ <b>Role</b>: This class is abstract, so you need to derive this class 
+ to build print devices.</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATPrintDevice()"><b>CATPrintDevice</b></a>()
+<dd>  Constructs a CATPrintDevice.
+ <dt> o 
+    <a href="#~CATPrintDevice()"><b>~CATPrintDevice</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Begin(CATPrintParameters&amp;)"><b>Begin</b></a>(CATPrintParameters&amp;)
+<dd>  Initializes the device.
+ <dt> o 
+    <a href="#End(void)"><b>End</b></a>(void)
+<dd>  Ends the device.
+ <dt> o 
+    <a href="#GetGenerator(void)"><b>GetGenerator</b></a>(void)
+<dd>  Gets the generator associated to the device.
+ <dt> o 
+    <a href="#Print(CATBaseUnknown*,CATPrintParameters&amp;)"><b>Print</b></a>(CATBaseUnknown*,CATPrintParameters&amp;)
+<dd>  Prints a printable object.
+ <dt> o 
+    <a href="#SetGenerator(CATPrintGenerator*)"><b>SetGenerator</b></a>(CATPrintGenerator*)
+<dd>  Defines the generator associated to the device.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATPrintDevice"></a><a name="CATPrintDevice()"></a> <dt> o <b>CATPrintDevice</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATPrintDevice</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a CATPrintDevice.
+</dl>
+<a name="~CATPrintDevice"></a><a name="~CATPrintDevice()"></a> <dt> o <b>~CATPrintDevice</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATPrintDevice</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Begin"></a><a name="Begin(CATPrintParameters&amp;)"></a> <dt> o <b>Begin</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>Begin</b>(<td> const <script type="text/javascript"> activateLink('CATPrintParameters','CATPrintParameters&amp;')</script> <td><tt>iParameter</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Initializes the device.
+ <br> Pure virtual method.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iParameters</tt>
+   <dd>   The generator parameters made available through SetGenerator.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    The status of the method.
+   <br><b>Legal values</b>: 0 if device initialization failed, 1 otherwise.
+</dl>
+</dl>
+<a name="End"></a><a name="End(void)"></a> <dt> o <b>End</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>End</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('0',' = 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Ends the device.
+ <br> Pure virtual method.
+</dl>
+<a name="GetGenerator"></a><a name="GetGenerator(void)"></a> <dt> o <b>GetGenerator</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATPrintGenerator','CATPrintGenerator*')</script>  <b>GetGenerator</b>(<td><script type="text/javascript"> activateLink('void','void')</script> <td><tt></tt>)<script type="text/javascript"> activateLink('const',' const')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets the generator associated to the device.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    The generator associated to the device.
+</dl>
+</dl>
+<a name="Print"></a><a name="Print(CATBaseUnknown*,CATPrintParameters&amp;)"></a> <dt> o <b>Print</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>Print</b>(<td><script type="text/javascript"> activateLink('CATBaseUnknown','CATBaseUnknown*')</script> <td><tt>iObject</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATPrintParameters','CATPrintParameters&amp;')</script> <td><tt>iParameters</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Prints a printable object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iObject</tt>
+   <dd>   The printable object.
+ </dd>
+    <dt><tt> iParameters</tt>
+   <dd>   The print parameters (see CATPrintParameters).
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    The status of the method.
+   <br><b>Legal values</b>: 0 -> KO, 1 -> OK.
+</dl>
+</dl>
+<a name="SetGenerator"></a><a name="SetGenerator(CATPrintGenerator*)"></a> <dt> o <b>SetGenerator</b>
+
+<dt>  <table><tr><td>  protected virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetGenerator</b>(<td><script type="text/javascript"> activateLink('CATPrintGenerator','CATPrintGenerator*')</script> <td><tt>iGenerator</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Defines the generator associated to the device.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGenerator</tt>
+   <dd>   The generator associated to the device (see CATPrintGenerator).</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATPrintDevice.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATPrintBase</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,122 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchCntrDocLink (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchCntrDocLink','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchCntrDocLink','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchCntrDocLink','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchCntrDocLink','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchCntrDocLink<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchCntrDocLink_41388','SchCntrDocLink','0');</script>
+<b><i>  Manage the on-off sheet connector.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetLink"><b>GetLink</b></a>
+<dd>  Get the linked connector and its document name.
+ <dt>
+    <a href="#Link"><b>Link</b></a>
+<dd>  Create an external link to another connector.
+ <dt>
+    <a href="#UnLink"><b>UnLink</b></a>
+<dd>  Remove external link to another connector.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetLink"><dt>
+
+<table><tr><td>o Sub <b>GetLink</b>(<td><script type="text/javascript"> activateLink('SchAppConnector','SchAppConnector')</script> <td><tt>oSchConnector</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oDocumentName</tt>)</table></dt>
+<dl>
+  <dd>
+ Get the linked connector and its document name.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oSchConnector</tt>
+   <dd>   The connector that is linked to this connector.
+ </dd>
+    <dt><tt> oDocumentName</tt>
+   <dd>   Name of document containing the linked connector.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchCntrDocLink
+ Dim objArg1 As SchAppConnector
+ Dim strVar2 As String
+  ...
+ objThisIntf.<font color="red">GetLink</font>objArg1,strVar2
+ </pre>
+
+</dl>
+</dl>
+<a name="Link"><dt>
+
+<table><tr><td>o Sub <b>Link</b>(<td><script type="text/javascript"> activateLink('SchAppConnector','SchAppConnector')</script> <td><tt>iSchConnector</tt>)</table></dt>
+<dl>
+  <dd>
+ Create an external link to another connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSchConnector</tt>
+   <dd>   The connector to link to.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchCntrDocLink
+ Dim objArg1 As SchAppConnector
+  ...
+ objThisIntf.<font color="red">Link</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+<a name="UnLink"><dt>
+
+<table><tr><td>o Sub <b>UnLink</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Remove external link to another connector.
+    
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchCntrDocLink
+  ...
+ objThisIntf.<font color="red">UnLink</font>
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

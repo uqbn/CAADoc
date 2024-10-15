@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="CATIDOMAttr" href="interface_CATIDOMAttr_12578.htm" />
+<ITEM type="interface" name="CATIDOMCDATASection" href="interface_CATIDOMCDATASection_23146.htm" />
+<ITEM type="interface" name="CATIDOMCharacterData" href="interface_CATIDOMCharacterData_25880.htm" />
+<ITEM type="interface" name="CATIDOMComment" href="interface_CATIDOMComment_16378.htm" />
+<ITEM type="interface" name="CATIDOMDocument" href="interface_CATIDOMDocument_17901.htm" />
+<ITEM type="interface" name="CATIDOMDocumentFragment" href="interface_CATIDOMDocumentFragment_33231.htm" />
+<ITEM type="interface" name="CATIDOMDocumentTraversal" href="interface_CATIDOMDocumentTraversal_35990.htm" />
+<ITEM type="interface" name="CATIDOMDocumentType" href="interface_CATIDOMDocumentType_24819.htm" />
+<ITEM type="interface" name="CATIDOMElement" href="interface_CATIDOMElement_16296.htm" />
+<ITEM type="interface" name="CATIDOMEntity" href="interface_CATIDOMEntity_15196.htm" />
+<ITEM type="interface" name="CATIDOMEntityReference" href="interface_CATIDOMEntityReference_30769.htm" />
+<ITEM type="interface" name="CATIDOMImplementation" href="interface_CATIDOMImplementation_29217.htm" />
+<ITEM type="interface" name="CATIDOMNamedNodeMap" href="interface_CATIDOMNamedNodeMap_23615.htm" />
+<ITEM type="interface" name="CATIDOMNode" href="interface_CATIDOMNode_12355.htm" />
+<ITEM type="interface" name="CATIDOMNodeFilter" href="interface_CATIDOMNodeFilter_20752.htm" />
+<ITEM type="interface" name="CATIDOMNodeIterator" href="interface_CATIDOMNodeIterator_24709.htm" />
+<ITEM type="interface" name="CATIDOMNodeList" href="interface_CATIDOMNodeList_17570.htm" />
+<ITEM type="interface" name="CATIDOMNotation" href="interface_CATIDOMNotation_17978.htm" />
+<ITEM type="interface" name="CATIDOMProcessingInstruction" href="interface_CATIDOMProcessingInstruction_47462.htm" />
+<ITEM type="interface" name="CATIDOMText" href="interface_CATIDOMText_12647.htm" />
+<ITEM type="interface" name="CATIDOMTreeWalker" href="interface_CATIDOMTreeWalker_20792.htm" />
+<ITEM type="interface" name="CATISAXAttributeList" href="interface_CATISAXAttributeList_26900.htm" />
+<ITEM type="interface" name="CATISAXAttributes" href="interface_CATISAXAttributes_21465.htm" />
+<ITEM type="interface" name="CATISAXContentHandler" href="interface_CATISAXContentHandler_28579.htm" />
+<ITEM type="interface" name="CATISAXDTDHandler" href="interface_CATISAXDTDHandler_20085.htm" />
+<ITEM type="interface" name="CATISAXDeclHandler" href="interface_CATISAXDeclHandler_22282.htm" />
+<ITEM type="interface" name="CATISAXDocumentHandler" href="interface_CATISAXDocumentHandler_30725.htm" />
+<ITEM type="interface" name="CATISAXEntityResolver" href="interface_CATISAXEntityResolver_29392.htm" />
+<ITEM type="interface" name="CATISAXErrorHandler" href="interface_CATISAXErrorHandler_24514.htm" />
+<ITEM type="interface" name="CATISAXInputSource" href="interface_CATISAXInputSource_23000.htm" />
+<ITEM type="interface" name="CATISAXLexicalHandler" href="interface_CATISAXLexicalHandler_28260.htm" />
+<ITEM type="interface" name="CATISAXLocator" href="interface_CATISAXLocator_16438.htm" />
+<ITEM type="interface" name="CATISAXParser" href="interface_CATISAXParser_15058.htm" />
+<ITEM type="interface" name="CATISAXXMLFilter" href="interface_CATISAXXMLFilter_18766.htm" />
+<ITEM type="interface" name="CATISAXXMLReader" href="interface_CATISAXXMLReader_18502.htm" />
+<ITEM type="interface" name="CATIXMLDOMDocumentBuilder" href="interface_CATIXMLDOMDocumentBuilder_37297.htm" />
+<ITEM type="interface" name="CATIXMLInputStream" href="interface_CATIXMLInputStream_22940.htm" />
+<ITEM type="interface" name="CATIXMLSAXFactory" href="interface_CATIXMLSAXFactory_20631.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+<ITEM type="class" name="CATDOMNodeFilterType" href="class_CATDOMNodeFilterType_24054.htm" />
+<ITEM type="class" name="CATSAXDefaultHandler" href="class_CATSAXDefaultHandler_23943.htm" />
+<ITEM type="class" name="CATSAXDefaultXMLFilter" href="class_CATSAXDefaultXMLFilter_27408.htm" />
+<ITEM type="class" name="CATSAXHandlerBase" href="class_CATSAXHandlerBase_18032.htm" />
+<ITEM type="class" name="CATSAXParserAdapter" href="class_CATSAXParserAdapter_22138.htm" />
+<ITEM type="class" name="CATSAXXMLReaderAdapter" href="class_CATSAXXMLReaderAdapter_27482.htm" />
+<ITEM type="class" name="CATSAXXMLReaderOptions" href="class_CATSAXXMLReaderOptions_28187.htm" />
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+<ITEM type="exception" name="CATDOMException" href="class_CATDOMException_15575.htm" />
+<ITEM type="exception" name="CATSAXException" href="class_CATSAXException_15619.htm" />
+<ITEM type="exception" name="CATSAXIOException" href="class_CATSAXIOException_18496.htm" />
+<ITEM type="exception" name="CATSAXNotRecognizedException" href="class_CATSAXNotRecognizedException_44143.htm" />
+<ITEM type="exception" name="CATSAXNotSupportedException" href="class_CATSAXNotSupportedException_41696.htm" />
+<ITEM type="exception" name="CATSAXParseException" href="class_CATSAXParseException_24450.htm" />
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Functions" type="function"  ctype="function">
+<ITEM type="function" name="CreateCATIXMLDOMDocumentBuilder" href="function_CreateCATIXMLDOMDocumentBuilder_164209.htm" />
+<ITEM type="function" name="CreateCATIXMLSAXFactory" href="function_CreateCATIXMLSAXFactory_111615.htm" />
+<ITEM type="function" name="DetectCATIXMLDOMDocumentBuilder" href="function_DetectCATIXMLDOMDocumentBuilder_138970.htm" />
+<ITEM type="function" name="DetectCATIXMLSAXFactory" href="function_DetectCATIXMLSAXFactory_117492.htm" />
+</ITEM>
+</Root>

@@ -1,0 +1,81 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>InfInterfaces Files (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../InfInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Files','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Files','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Files','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Files','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Files<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Files_12905','Files','0');</script>
+<b><i> A collection of all the file objects in a folder.</i></b><br>
+
+ It lists all the files contained in the folder. 
+ It allows to retrieve <a href="#" onClick="openLink('File','');return false">File</a> objects.
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns a file using its index or its name from the file collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iNumber</tt>) As <script type="text/javascript"> activateLink('File','File')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a file using its index or its name from the file collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the file to retrieve from
+   the collection of files.
+   As a numerics, this index is the rank of the file
+   in the collection.
+   The index of the first file in the collection is 1, and
+   the index of the last file is Count.
+   As a string, it is the name you assigned to the file using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property. 
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved file <dt><b>Example:</b>
+ <dd>
+ This example retrieves in <tt>ThisFile</tt> the third file,
+ and it <tt>ThatFile</tt> the file named <tt>MyFile</tt>.
+ in the <tt>TestFiles</tt> file collection.
+ <pre>
+ Dim ThisFile As File
+ Set ThisFile = TestFiles.<font color="red">Item</font>(3)
+ Dim ThatFile As File
+ Set ThatFile = TestFiles.<font color="red">Item</font>("MyFile")
+ </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

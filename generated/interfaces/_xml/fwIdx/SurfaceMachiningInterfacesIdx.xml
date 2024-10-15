@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="SurfaceMachiningInterfaces" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="1" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="ManufacturingSurfaceGeomArea" initial="M" htmlFileName="interface_ManufacturingSurfaceGeomArea_75161" fatherClass="ManufacturingMachinableArea" fatherId="65481" DSCharacteristic="interface" id="75161" abstract="Represents the Manufacturing Surface NCGeometry." />
+<method name="RemoveAllGeometry" htmlFileName="interface_ManufacturingSurfaceGeomArea_75161" containerName="ManufacturingSurfaceGeomArea" containerType="interface" id="92843" status="0" isProperty="0" initial="R" argList="" abstract="Removes all the geometry linked to a Manufacturing Surface NCGeometry feature." />
+<method name="SetGeometry" htmlFileName="interface_ManufacturingSurfaceGeomArea_75161" containerName="ManufacturingSurfaceGeomArea" containerType="interface" id="84473" status="0" isProperty="0" initial="S" argList="" abstract="Sets a geometry of a Manufacturing Surface NCGeometry feature." />
+<class name="ManufacturingSurfaceMachiningArea" initial="M" htmlFileName="interface_ManufacturingSurfaceMachiningArea_90557" fatherClass="ManufacturingMachinableArea" fatherId="65481" DSCharacteristic="interface" id="90557" abstract="Represents the Manufacturing Surface Machining Area." />
+<method name="RemoveNCGeometry" htmlFileName="interface_ManufacturingSurfaceMachiningArea_90557" containerName="ManufacturingSurfaceMachiningArea" containerType="interface" id="106322" status="0" isProperty="0" initial="R" argList="" abstract="Removes all the NCGeometry of a specified type linked to a Manufacturing Surface Machining Area." />
+<method name="SetNCGeometry" htmlFileName="interface_ManufacturingSurfaceMachiningArea_90557" containerName="ManufacturingSurfaceMachiningArea" containerType="interface" id="102059" status="0" isProperty="0" initial="S" argList="" abstract="Sets a NCGeometry of a specified type to a Manufacturing Surface Machining Area." />
+</fw>

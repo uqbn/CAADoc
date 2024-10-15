@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="CATSketcherUseItf" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="0" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<enum name="CAT2DCstDiag" htmlFileName="enum_CAT2DCstDiag_20462" initial="C" id="20462" abstract="" />
+<enum name="CAT2DCstGenericType" htmlFileName="enum_CAT2DCstGenericType_31595" initial="C" id="31595" abstract="" />
+<enum name="CAT2DCstSearchMode" htmlFileName="enum_CAT2DCstSearchMode_29267" initial="C" id="29267" abstract="" />
+<enum name="CAT2DCstType" htmlFileName="enum_CAT2DCstType_20862" initial="C" id="20862" />
+<enum name="CAT2DEltType" htmlFileName="enum_CAT2DEltType_20830" initial="C" id="20830" abstract="" />
+<enum name="CAT2DImportMode" htmlFileName="enum_CAT2DImportMode_24803" initial="C" id="24803" abstract="" />
+<enum name="CAT2DOffsetCornerType" htmlFileName="enum_CAT2DOffsetCornerType_35927" initial="C" id="35927" />
+<enum name="CAT2DOffsetModeType" htmlFileName="enum_CAT2DOffsetModeType_31554" initial="C" id="31554" />
+<enum name="CAT2DOffsetPropagType" htmlFileName="enum_CAT2DOffsetPropagType_35859" initial="C" id="35859" abstract="" />
+<enum name="CAT2DOperatorType" htmlFileName="enum_CAT2DOperatorType_28423" initial="C" id="28423" abstract="" />
+<enum name="CAT2DSolvingMode" htmlFileName="enum_CAT2DSolvingMode_26274" initial="C" id="26274" abstract="" />
+<enum name="CATAutosearchMode" htmlFileName="enum_CATAutosearchMode_28154" initial="C" id="28154" />
+<enum name="CATContourClass" htmlFileName="enum_CATContourClass_25368" initial="C" id="25368" abstract="" />
+<enum name="CATContourType" htmlFileName="enum_CATContourType_24069" initial="C" id="24069" />
+<enum name="CATSktPosDirection" htmlFileName="enum_CATSktPosDirection_30305" initial="C" id="30305" abstract="Direction definition of the sketch axis which is oriented." />
+<enum name="CATSktPosOrientationMode" htmlFileName="enum_CATSktPosOrientationMode_42895" initial="C" id="42895" abstract="Orientation definition mode." />
+<enum name="CATSktPosOriginMode" htmlFileName="enum_CATSktPosOriginMode_31641" initial="C" id="31641" abstract="Origin definition mode." />
+<enum name="CATSktPosSupportMode" htmlFileName="enum_CATSktPosSupportMode_34155" initial="C" id="34155" abstract="Support definition mode." />
+<class name="IDMCircle2D" initial="I" htmlFileName="interface_IDMCircle2D_22102" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="22102" abstract="OLE for Design and Modeling 2D Circle Definition." />
+<method name="GetCircleData" htmlFileName="interface_IDMCircle2D_22102" containerName="IDMCircle2D" containerType="interface" id="44522" status="18" isProperty="0" initial="G" argList="(double*,double*)" abstract="Returns the circle&apos;s parameters." />
+<class name="IDMCurve2D" initial="I" htmlFileName="interface_IDMCurve2D_21289" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="21289" abstract="OLE for Design and Modeling 2D Curve Definition." />
+<method name="GetContinuity" htmlFileName="interface_IDMCurve2D_21289" containerName="IDMCurve2D" containerType="interface" id="34927" status="18" isProperty="0" initial="G" argList="(DWORD*)" abstract="This method returns the highest level of geometric continuity, the curve possesses." />
+<method name="GetCurvature" htmlFileName="interface_IDMCurve2D_21289" containerName="IDMCurve2D" containerType="interface" id="71930" status="18" isProperty="0" initial="G" argList="(ULONG,double*,double*,double*)" abstract="Given an array of  parameters on the curve, this method computes the curvature of the 
+ curve at that point." />
+<method name="GetCurveType" htmlFileName="interface_IDMCurve2D_21289" containerName="IDMCurve2D" containerType="interface" id="32738" status="18" isProperty="0" initial="G" argList="(GUID*)" abstract="There is a specific type associated with the curve geometry." />
+<method name="GetDerivatives" htmlFileName="interface_IDMCurve2D_21289" containerName="IDMCurve2D" containerType="interface" id="99044" status="18" isProperty="0" initial="G" argList="(ULONG,double*,double*,double*,double*)" abstract="Given an array of parameters on the curve, this method evaluates the derivatives of the curve 
+ at these points." />
+<method name="GetEndPoints" htmlFileName="interface_IDMCurve2D_21289" containerName="IDMCurve2D" containerType="interface" id="42997" status="18" isProperty="0" initial="G" argList="(double*,double*)" abstract="This method returns the end-points of the curve." />
+<method name="GetGeometryForm" htmlFileName="interface_IDMCurve2D_21289" containerName="IDMCurve2D" containerType="interface" id="37397" status="18" isProperty="0" initial="G" argList="(DWORD*)" abstract="This method returns high-level geometric property information that characterizes this curve-based 
+ object." />
+<method name="GetLengthAtParam" htmlFileName="interface_IDMCurve2D_21289" containerName="IDMCurve2D" containerType="interface" id="59288" status="18" isProperty="0" initial="G" argList="(double,double,double*)" abstract="This method outputs the length, measured along the curve,  from a given parameter to a given 
+ parameter." />
+<method name="GetParamAnomaly" htmlFileName="interface_IDMCurve2D_21289" containerName="IDMCurve2D" containerType="interface" id="48584" status="18" isProperty="0" initial="G" argList="(double*,boolean*)" abstract="Typically, a curve&apos;s parametric space can be expected to be finite." />
+<method name="GetParamAtLength" htmlFileName="interface_IDMCurve2D_21289" containerName="IDMCurve2D" containerType="interface" id="59401" status="18" isProperty="0" initial="G" argList="(double,double,double*)" abstract="This method outputs the parameter at a given length, measured along the curve,  starting from 
+ a given parameter." />
+<method name="GetParamAtPoint" htmlFileName="interface_IDMCurve2D_21289" containerName="IDMCurve2D" containerType="interface" id="119523" status="18" isProperty="0" initial="G" argList="(ULONG,double*,double*,double*,double*,DWORD*)" abstract="Given an array of 2D points lying near the curve, in the local coordinate system 
+ (X, Y) of the curve,  this method computes the parameter on the curve that 
+ corresponds to them." />
+<method name="GetParamExtents" htmlFileName="interface_IDMCurve2D_21289" containerName="IDMCurve2D" containerType="interface" id="47222" status="18" isProperty="0" initial="G" argList="(double*,double*)" abstract="This method returns the parametric extents of the curve." />
+<method name="GetPointAtParam" htmlFileName="interface_IDMCurve2D_21289" containerName="IDMCurve2D" containerType="interface" id="56644" status="18" isProperty="0" initial="G" argList="(ULONG,double*,double*)" abstract="Given an array of parameters on the curve, this method computes the corresponding 2D 
+ space points (X, Y) in the curve&apos;s local coordinate system." />
+<method name="GetRangeBox" htmlFileName="interface_IDMCurve2D_21289" containerName="IDMCurve2D" containerType="interface" id="41574" status="18" isProperty="0" initial="G" argList="(double*,double*)" abstract="The range box (also known as bounding box) is axially-aligned within the local 
+ coordinate system of the Server." />
+<method name="GetTangent" htmlFileName="interface_IDMCurve2D_21289" containerName="IDMCurve2D" containerType="interface" id="50816" status="18" isProperty="0" initial="G" argList="(ULONG,double*,double*)" abstract="Given an array of parameter values on the curve, this method computes the unit-vector 
+ tangent at each of the points." />
+<class name="IDMEllipse2D" initial="I" htmlFileName="interface_IDMEllipse2D_23293" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="23293" abstract="OLE for Design and Modeling 2D Ellipse Definition." />
+<method name="GetEllipseData" htmlFileName="interface_IDMEllipse2D_23293" containerName="IDMEllipse2D" containerType="interface" id="61533" status="18" isProperty="0" initial="G" argList="(double*,double*,double*)" abstract="Returns the ellipse&apos;s parameters." />
+<class name="IDMLine2D" initial="I" htmlFileName="interface_IDMLine2D_20321" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="20321" abstract="OLE for Design and Modeling 2D Line Definition." />
+<method name="GetLineData" htmlFileName="interface_IDMLine2D_20321" containerName="IDMLine2D" containerType="interface" id="40440" status="18" isProperty="0" initial="G" argList="(double*,double*)" abstract="" />
+<class name="IDMPlane" initial="I" htmlFileName="interface_IDMPlane_20147" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="20147" abstract="This interface describes the planar surface." />
+<method name="GetPlaneData" htmlFileName="interface_IDMPlane_20147" containerName="IDMPlane" containerType="interface" id="48076" status="18" isProperty="0" initial="G" argList="(double[3],double[3])" abstract="Provides the Client access to the plane’s parameters." />
+<class name="IDMPoint2D" initial="I" htmlFileName="interface_IDMPoint2D_21316" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="21316" abstract="OLE for Design and Modeling 2D Point Definition." />
+<method name="GetPointData" htmlFileName="interface_IDMPoint2D_21316" containerName="IDMPoint2D" containerType="interface" id="34089" status="18" isProperty="0" initial="G" argList="(double*)" abstract="Returns the information that fully describe the point." />
+<class name="IDMPolyline2D" initial="I" htmlFileName="interface_IDMPolyline2D_24535" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="24535" abstract="OLE for Design and Modeling 2D Polyline Definition." />
+<method name="GetPolylineData" htmlFileName="interface_IDMPolyline2D_24535" containerName="IDMPolyline2D" containerType="interface" id="47020" status="18" isProperty="0" initial="G" argList="(ULONG,double*)" abstract="Obtains the points that fully define the polyline." />
+<method name="GetPolylineInfo" htmlFileName="interface_IDMPolyline2D_24535" containerName="IDMPolyline2D" containerType="interface" id="49780" status="18" isProperty="0" initial="G" argList="(ULONG*,boolean*)" abstract="Returns overall information related to the polyline." />
+</fw>

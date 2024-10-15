@@ -1,0 +1,68 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>MecModInterfaces Exception CATMfErrUpdate</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../MecModInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATMfErrUpdate','exception','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATMfErrUpdate','exception','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATMfErrUpdate','exception','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATMfErrUpdate','exception','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>MecModInterfaces Exception CATMfErrUpdate</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATMfErrUpdate_22637','CATMfErrUpdate','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATMfErrUpdate</b>
+</p>
+<p>
+<b><i> Class to create an update error.</i></b><br>
+
+ <b>Role:</b>An update error is an error which occurs during the build process of
+ the feature. This error can be corrected by the end-user in modifying a parameter 
+ of the feature. An update error is made of:
+ <ul>
+ <li>A list of <i>sick</i> features,</li>
+  <br>a sick feature is a feature associated with the error. This list can help 
+  to know the features which are at the origin of the error.
+ <li>A diagnosis. </li>
+  <br>It is a NLS message to understand the error.
+ <li>An associated feature that aggregates the update error </li>
+ <br>On this feature use the <a href="#" onClick="openLink('CATIUpdateError','');return false">CATIUpdateError</a> interface </ul>
+ About the <b>chained</b> sick features:
+ A sick feature can have an update error and this error has perhaps also sick features, and so one.
+ So from a current error, you can recursively find a set of chained sick features. 
+
+</p>
+<hr>
+</dl>
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATMfErrUpdate.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATMecModInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

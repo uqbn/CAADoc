@@ -1,0 +1,77 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchReplace (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchReplace','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchReplace','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchReplace','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchReplace','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchReplace<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchReplace_36840','SchReplace','0');</script>
+<b><i>  Manage existing schematic component instances.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Replace"><b>Replace</b></a>
+<dd>  Replace an existing component with this component.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Replace"><dt>
+
+<table><tr><td>o Func <b>Replace</b>(<td><script type="text/javascript"> activateLink('SchGRRComp','SchGRRComp')</script> <td><tt>iGRRToBePlaced</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchComponent','SchComponent')</script> <td><tt>iSchCompToBeRemoved</tt>) As <script type="text/javascript"> activateLink('SchComponent','SchComponent')</script> </table></dt>
+<dl>
+  <dd>
+ Replace an existing component with this component.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGRRToBePlaced</tt>
+   <dd>   Pointer to the component graphical representation of this component to be placed.
+   if NULL the first representation found will be used.
+ </dd>
+    <dt><tt> iSchCompToBeRemoved</tt>
+   <dd>   Pointer to the existing component to be replaced by this component.
+ </dd>
+    <dt><tt> oNewComponent</tt>
+   <dd>   Interface pointer to the new component instance placed.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchReplace
+ Dim objArg1 As SchGRRComp
+ Dim objArg2 As SchComponent
+ Dim objArg3 As SchComponent
+  ...
+ Set objArg3 = objThisIntf.<font color="red">Replace</font>(objArg1,objArg2)
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

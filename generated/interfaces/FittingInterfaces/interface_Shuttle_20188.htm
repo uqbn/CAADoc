@@ -1,0 +1,171 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>FittingInterfaces Shuttle (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../FittingInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Shuttle','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Shuttle','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Shuttle','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Shuttle','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Shuttle<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Shuttle_20188','Shuttle','0');</script>
+<b><i>   The interface to access a CATIAShuttle.</i></b><br>
+
+ <b>Role:</b> The shuttle object is used to define a grouping of products. 
+ Once products have been placed in the shuttle then they can be moved 
+ all at once.  Also the shuttle has a base location defined by the 
+ shuttle axis.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#AngleLimit"><b>AngleLimit</b></a>
+<dd>  Returns/Stores the angle limit attribute.
+ <dt>
+    <a href="#AngleValidation"><b>AngleValidation</b></a>
+<dd>  Returns/Stores the angle validation attribute.
+ <dt>
+    <a href="#Group"><b>Group</b></a>
+<dd>  Returns or sets the associated group object.
+ <dt>
+    <a href="#Move"><b>Move</b></a>
+<dd>  Returns the shuttle's move object.
+ <dt>
+    <a href="#MoveMode"><b>MoveMode</b></a>
+<dd>  Returns/Stores the shuttle move mode.
+ <dt>
+    <a href="#Position"><b>Position</b></a>
+<dd>  Returns the shuttle's position object.
+ <dt>
+    <a href="#Reference"><b>Reference</b></a>
+<dd>  Returns or sets the associated reference object.
+ <dt>
+    <a href="#SubShuttles"><b>SubShuttles</b></a>
+<dd>  Returns any shuttles that are contained within the current shuttle.
+ <dt>
+    <a href="#Vector"><b>Vector</b></a>
+<dd>  Returns/Stores the validation vector attribute.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="AngleLimit"><dt>
+
+<table><tr><td>o Property <b>AngleLimit</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns/Stores the angle limit attribute.
+ <b>Role:/b> Retrieves/stores the shuttle's angle limit attribute.
+</dl>
+<a name="AngleValidation"><dt>
+
+<table><tr><td>o Property <b>AngleValidation</b>(<td>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+ Returns/Stores the angle validation attribute.
+ <b>Role:/b> Retrieves/stores the shuttle's angle validation attribute.
+</dl>
+<a name="Group"><dt>
+
+<table><tr><td>o Property <b>Group</b>(<td>) As <script type="text/javascript"> activateLink('Group','Group')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the associated group object.
+ <b>Role:/b> Retrieves/stores the objects within the shuttle as a group,
+ that is a CATIAGroup.
+</dl>
+<a name="Move"><dt>
+
+<table><tr><td>o Property <b>Move</b>(<td>) As <script type="text/javascript"> activateLink('Move','Move')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the shuttle's move object.
+ The move object is aggregated by the shuttle object
+ and itself aggregates a movable object
+ to which you can apply a move transformation
+ by means of an isometry matrix. It moves your shuttle
+ according to this isometry.
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  This example retrieves the move object for the
+ <tt>Engine</tt> shuttle.
+ <pre>
+ Dim EngineMoveObject As Move
+ Set EngineMoveObject = Engine.<font color="red">Move</font>
+ </pre>
+</dl>
+</dl>
+<a name="MoveMode"><dt>
+
+<table><tr><td>o Property <b>MoveMode</b>(<td>) As <script type="text/javascript"> activateLink('CatShuttleMoveMode','CatShuttleMoveMode')</script> </table></dt>
+<dl>
+  <dd>
+ Returns/Stores the shuttle move mode.
+ <b>Role:/b> Retrieves/stores the shuttle move mode.  This can be either
+ shuttle mode (to move the shuttle) or axis mode (to simply move the 
+ shuttle axis).
+</dl>
+<a name="Position"><dt>
+
+<table><tr><td>o Property <b>Position</b>(<td>) As <script type="text/javascript"> activateLink('Position','Position')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the shuttle's position object.
+ The position object is the object aggregated by the ahuttle object that
+ holds the position of the shuttle in the space.
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  This example retrieves the position object for the
+ <tt>Engine</tt> shuttle.
+ <pre>
+ Dim EnginePositionObject As Position
+ Set EnginePositionObject = Engine.<font color="red">Position</font>
+ </pre>
+</dl>
+</dl>
+<a name="Reference"><dt>
+
+<table><tr><td>o Property <b>Reference</b>(<td>) As <script type="text/javascript"> activateLink('CATBaseDispatch','CATBaseDispatch')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the associated reference object.
+ <b>Role:/b> Retrieves/stores the shuttle's reference object.
+</dl>
+<a name="SubShuttles"><dt>
+
+<table><tr><td>o Property <b>SubShuttles</b>(<td>) As <script type="text/javascript"> activateLink('Shuttles','Shuttles')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns any shuttles that are contained within the current shuttle.
+ <b>Role:/b> Returns any shuttles that are contained within the current 
+ shuttle.
+</dl>
+<a name="Vector"><dt>
+
+<table><tr><td>o Property <b>Vector</b>(<td>) As <script type="text/javascript"> activateLink('CatShuttleVector','CatShuttleVector')</script> </table></dt>
+<dl>
+  <dd>
+ Returns/Stores the validation vector attribute.
+ <b>Role:/b> Retrieves/stores the validation vector attribute.
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

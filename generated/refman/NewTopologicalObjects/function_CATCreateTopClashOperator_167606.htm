@@ -1,0 +1,54 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>NewTopologicalObjects Global Function CATCreateTopClashOperator</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../NewTopologicalObjects.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>NewTopologicalObjects Global Function CATCreateTopClashOperator</h1>
+
+<br><dt><table><tr><td>  <script type="text/javascript"> activateLink('CATTopClashOperator',' CATTopClashOperator *')</script>  <b>CATCreateTopClashOperator</b>(<td><script type="text/javascript"> activateLink('CATGeoFactory','CATGeoFactory*')</script> <td><tt>iFactory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATTopData','CATTopData*')</script> <td><tt>iTopData</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBody','CATBody*')</script> <td><tt>iBody1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBody','CATBody*')</script> <td><tt>iBody2</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates an operator to test the clash of two bodies and generate the intersection between the two bodies.
+ Just testing whether the bodies clash is done through the SetOnlyDiagnosticRequired method.
+ Not using this method or using it with the FALSE option generates a result (if any).
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFactory</tt>
+   <dd> The factory of the geometry. 
+ </dd>
+    <dt><tt> iTopData</tt>
+   <dd> The CATTopData.
+ </dd>
+    <dt><tt> iBody1</tt>
+   <dd> The first body.
+ </dd>
+    <dt><tt> iBody2</tt>
+   <dd> The second body.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The pointer to the created operator. To delete with the usual C++ <tt>delete</tt> operator after use.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATTopClashOperator.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATTopologicalObjects</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

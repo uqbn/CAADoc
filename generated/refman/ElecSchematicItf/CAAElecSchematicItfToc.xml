@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="CATIEdiAssemblyConnector" href="interface_CATIEdiAssemblyConnector_44591.htm" />
+<ITEM type="interface" name="CATIEdiBusBar" href="interface_CATIEdiBusBar_23196.htm" />
+<ITEM type="interface" name="CATIEdiCable" href="interface_CATIEdiCable_21986.htm" />
+<ITEM type="interface" name="CATIEdiCableExtremity" href="interface_CATIEdiCableExtremity_37691.htm" />
+<ITEM type="interface" name="CATIEdiCableReference" href="interface_CATIEdiCableReference_36648.htm" />
+<ITEM type="interface" name="CATIEdiEquipment" href="interface_CATIEdiEquipment_28291.htm" />
+<ITEM type="interface" name="CATIEdiEquipmentReference" href="interface_CATIEdiEquipmentReference_46597.htm" />
+<ITEM type="interface" name="CATIEdiJunctionBox" href="interface_CATIEdiJunctionBox_31427.htm" />
+<ITEM type="interface" name="CATIEdiJunctionBoxReference" href="interface_CATIEdiJunctionBoxReference_51555.htm" />
+<ITEM type="interface" name="CATIEdiMatingConnector" href="interface_CATIEdiMatingConnector_39675.htm" />
+<ITEM type="interface" name="CATIEdiPin" href="interface_CATIEdiPin_20058.htm" />
+<ITEM type="interface" name="CATIEdiPlug" href="interface_CATIEdiPlug_21175.htm" />
+<ITEM type="interface" name="CATIEdiPlugReference" href="interface_CATIEdiPlugReference_34926.htm" />
+<ITEM type="interface" name="CATIEdiProduct" href="interface_CATIEdiProduct_25122.htm" />
+<ITEM type="interface" name="CATIEdiReferenceFactory" href="interface_CATIEdiReferenceFactory_41806.htm" />
+<ITEM type="interface" name="CATIEdiReplaceCable" href="interface_CATIEdiReplaceCable_32321.htm" />
+<ITEM type="interface" name="CATIEdiSocket" href="interface_CATIEdiSocket_23601.htm" />
+<ITEM type="interface" name="CATIEdiSocketReference" href="interface_CATIEdiSocketReference_39174.htm" />
+<ITEM type="interface" name="CATIEdiSwitch" href="interface_CATIEdiSwitch_23643.htm" />
+<ITEM type="interface" name="CATIEdiSwitchReference" href="interface_CATIEdiSwitchReference_39216.htm" />
+<ITEM type="interface" name="CATIEdiTerminalBoard" href="interface_CATIEdiTerminalBoard_34795.htm" />
+<ITEM type="interface" name="CATIEdiTerminalBoardReference" href="interface_CATIEdiTerminalBoardReference_56745.htm" />
+<ITEM type="interface" name="CATIEdiWidePin" href="interface_CATIEdiWidePin_24597.htm" />
+<ITEM type="interface" name="CATIEdiWire" href="interface_CATIEdiWire_21153.htm" />
+<ITEM type="interface" name="CATIEdiWireCtr" href="interface_CATIEdiWireCtr_24764.htm" />
+<ITEM type="interface" name="CATIEdiWireExtremity" href="interface_CATIEdiWireExtremity_35887.htm" />
+<ITEM type="interface" name="CATIEluWkbCfgAddin" href="interface_CATIEluWkbCfgAddin_30450.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+</Root>

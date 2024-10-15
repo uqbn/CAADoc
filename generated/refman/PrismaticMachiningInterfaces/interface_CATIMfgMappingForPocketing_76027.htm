@@ -1,0 +1,135 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PrismaticMachiningInterfaces Interface CATIMfgMappingForPocketing</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../PrismaticMachiningInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMfgMappingForPocketing','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgMappingForPocketing','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMfgMappingForPocketing','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgMappingForPocketing','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PrismaticMachiningInterfaces Interface CATIMfgMappingForPocketing</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMfgMappingForPocketing_76027','CATIMfgMappingForPocketing','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATIMfgMappingForPocketing</b>
+</p>
+<p>
+<b><i> Interface to retrieve profile contouring geometry from a design feature.</i></b><br>
+
+ <br><b>Role</b>: CATIMfgMappingForPocketing has methods to retrieve geometry
+ from a design feature.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetGuidingCurves(CATListValCATBaseUnknown_var&amp;)"><b>GetGuidingCurves</b></a>(CATListValCATBaseUnknown_var&amp;)
+<dd>  Retrieves the guiding curves of the design feature.
+ <dt> o 
+    <a href="#GetIslands(CATListValCATBaseUnknown_var&amp;,CATListOfInt&amp;)"><b>GetIslands</b></a>(CATListValCATBaseUnknown_var&amp;,CATListOfInt&amp;)
+<dd>  Retrieves the islands of the design feature.
+ <dt> o 
+    <a href="#GetPart(CATBaseUnknown_var&amp;)"><b>GetPart</b></a>(CATBaseUnknown_var&amp;)
+<dd>  Retrieves the part element of the design feature.
+ <dt> o 
+    <a href="#GetRelimitingPlane(CATBaseUnknown_var&amp;)"><b>GetRelimitingPlane</b></a>(CATBaseUnknown_var&amp;)
+<dd>  Retrieves the relimiting element of the design feature.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetGuidingCurves"></a><a name="GetGuidingCurves(CATListValCATBaseUnknown_var&amp;)"></a> <dt> o <b>GetGuidingCurves</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetGuidingCurves</b>(<td><script type="text/javascript"> activateLink('CATListValCATBaseUnknown_var','CATListValCATBaseUnknown_var&amp;')</script> <td><tt>oGuidingElements</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the guiding curves of the design feature. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oGuidingElements</tt>
+   <dd>   The guiding curves list</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetIslands"></a><a name="GetIslands(CATListValCATBaseUnknown_var&amp;,CATListOfInt&amp;)"></a> <dt> o <b>GetIslands</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetIslands</b>(<td><script type="text/javascript"> activateLink('CATListValCATBaseUnknown_var','CATListValCATBaseUnknown_var&amp;')</script> <td><tt>oListOfIslands</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListOfInt','CATListOfInt&amp;')</script> <td><tt>oNbOfCurvesByIsland</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the islands of the design feature. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oListOfIslands</tt>
+   <dd>   The islands elements list
+ </dd>
+    <dt><tt> oNbOfCurvesByIsland</tt>
+   <dd>   The list of elements numbers per island</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetPart"></a><a name="GetPart(CATBaseUnknown_var&amp;)"></a> <dt> o <b>GetPart</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetPart</b>(<td><script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>oPart</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the part element of the design feature. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oPart</tt>
+   <dd>   The part element</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetRelimitingPlane"></a><a name="GetRelimitingPlane(CATBaseUnknown_var&amp;)"></a> <dt> o <b>GetRelimitingPlane</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetRelimitingPlane</b>(<td><script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>oRelimitingPlane</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the relimiting element of the design feature. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oRelimitingPlane</tt>
+   <dd>   The relimiting plane</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMfgMappingForPocketing.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>PmgItfEnv</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

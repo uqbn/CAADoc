@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="CATIKwoWorkshopAddin" href="interface_CATIKwoWorkshopAddin_47368.htm" />
+<ITEM type="interface" name="CATIOptAlgorithm" href="interface_CATIOptAlgorithm_40476.htm" />
+<ITEM type="interface" name="CATIOptAlgorithmUIFactory" href="interface_CATIOptAlgorithmUIFactory_58564.htm" />
+<ITEM type="interface" name="CATIOptCntSatisfaction" href="interface_CATIOptCntSatisfaction_52042.htm" />
+<ITEM type="interface" name="CATIOptFactory" href="interface_CATIOptFactory_37486.htm" />
+<ITEM type="interface" name="CATIOptFreeParameter" href="interface_CATIOptFreeParameter_47419.htm" />
+<ITEM type="interface" name="CATIOptGoal" href="interface_CATIOptGoal_33345.htm" />
+<ITEM type="interface" name="CATIOptOptimization" href="interface_CATIOptOptimization_46240.htm" />
+<ITEM type="interface" name="CATIOptProblem" href="interface_CATIOptProblem_37275.htm" />
+<ITEM type="interface" name="CATIOptUpdateManagement" href="interface_CATIOptUpdateManagement_53939.htm" />
+<ITEM type="interface" name="CATIOptValuesAndDerivativesAccess" href="interface_CATIOptValuesAndDerivativesAccess_82139.htm" />
+<ITEM type="interface" name="CATIOptimizationLog" href="interface_CATIOptimizationLog_45764.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+<ITEM type="class" name="CATOptAlgorithmAdapter" href="class_CATOptAlgorithmAdapter_49286.htm" />
+<ITEM type="class" name="CATOptAlgorithmUIFactoryAdapter" href="class_CATOptAlgorithmUIFactoryAdapter_72833.htm" />
+<ITEM type="class" name="CATOptValuesAndDerivativesAdapter" href="class_CATOptValuesAndDerivativesAdapter_79909.htm" />
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Macros" type="define"  ctype="define">
+<ITEM type="define" name="CATOptGenericAlgorithmCATIType" href="define_CATOptGenericAlgorithmCATIType_68162.htm" />
+<ITEM type="define" name="CATOptOptimizationPackageName" href="define_CATOptOptimizationPackageName_66978.htm" />
+<ITEM type="define" name="CATOptTerminationNoImprovement" href="define_CATOptTerminationNoImprovement_71949.htm" />
+<ITEM type="define" name="CATOptTerminationTime" href="define_CATOptTerminationTime_47692.htm" />
+<ITEM type="define" name="OPTNLSFileName" href="define_OPTNLSFileName_34451.htm" />
+</ITEM>
+</Root>

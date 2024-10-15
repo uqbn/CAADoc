@@ -1,0 +1,355 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAssemblyInterfaces AssemblyFeatures (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATAssemblyInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('AssemblyFeatures','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AssemblyFeatures','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('AssemblyFeatures','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AssemblyFeatures','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>AssemblyFeatures<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_AssemblyFeatures_38338','AssemblyFeatures','0');</script>
+<b><i> A collection of all the AssemblyFeature objects of a product.</i></b><br>
+ 
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('AssemblyFeature','');return false">AssemblyFeature</a>
+</dl>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddAssemblyAdd"><b>AddAssemblyAdd</b></a>
+<dd>  Creates a new AssemblyBoolean object by adding a body to the assembly.
+ <dt>
+    <a href="#AddAssemblyHole"><b>AddAssemblyHole</b></a>
+<dd>  Creates a new AssemblyHole object.
+ <dt>
+    <a href="#AddAssemblyPocket"><b>AddAssemblyPocket</b></a>
+<dd>  Creates a new AssemblyPocket object.
+ <dt>
+    <a href="#AddAssemblyRemove"><b>AddAssemblyRemove</b></a>
+<dd>  Creates a new AssemblyBoolean object by removing a body from the assembly.
+ <dt>
+    <a href="#AddAssemblySplit"><b>AddAssemblySplit</b></a>
+<dd>  Creates a new AssemblySplit object.
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns an AssemblyFeature object using its index or its name from the AssemblyFeatures
+ collection.
+ <dt>
+    <a href="#Remove"><b>Remove</b></a>
+<dd>  Removes an AssemblyFeature object from the AssemblyFeatures collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddAssemblyAdd"><dt>
+
+<table><tr><td>o Func <b>AddAssemblyAdd</b>(<td><script type="text/javascript"> activateLink('Body','Body')</script> <td><tt>iBody</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iBodyComp</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iComponent</tt>) As <script type="text/javascript"> activateLink('AssemblyFeature','AssemblyFeature')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new AssemblyBoolean object by adding a body to the assembly.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iBody</tt>
+   <dd>   The body to add
+ </dd>
+    <dt><tt> iBodyComp</tt>
+   <dd>   The component that contains the body to add
+ </dd>
+    <dt><tt> iComponent</tt>
+   <dd>   The component with respect to which the AssemblyBoolean object to create
+   will be positioned
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The created 
+<a href="#" onClick="openLink('AssemblyBoolean','');return false">AssemblyBoolean</a> object <! @sample >
+ <dt><b>Example:</b>
+ <dd>
+ This example creates the <code>addBody</code> AssemblyBoolean object in the
+ <code>assemblyFeats</code> collection using a body referenced as
+ <code>bodyToAdd</code> contained in the <code>bodyToAddComp</code>
+ component,
+ and positioned with respect to the <code>positioningComp</code> component.
+ <pre>
+ Dim addBody As AssemblyBoolean
+ Set addBody = assemblyFeats.<font color="red">AddAssemblyAdd</font>(bodyToAdd,     _
+                                            bodyToAddComp, _
+                                            positioningComp)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="AddAssemblyHole"><dt>
+
+<table><tr><td>o Func <b>AddAssemblyHole</b>(<td><script type="text/javascript"> activateLink('Sketch','Sketch')</script> <td><tt>iSketch</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iSketchComp</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iDepth</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iComponent</tt>) As <script type="text/javascript"> activateLink('AssemblyFeature','AssemblyFeature')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new AssemblyHole object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSketch</tt>
+   <dd>   The sketch defining the hole reference plane and anchor point.
+   <br>
+   This sketch must contain a single point that defines the hole axis: 
+   the hole axis in 3D passes through that point and is normal to the 
+   sketch plane.
+ </dd>
+    <dt><tt> iSketchComp</tt>
+   <dd>   The component that contains the sketch
+ </dd>
+    <dt><tt> iDepth</tt>
+   <dd>   The hole depth
+ </dd>
+    <dt><tt> iComponent</tt>
+   <dd>   The component with respect to which the AssemblyHole object to create
+   will be positioned
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The created 
+<a href="#" onClick="openLink('AssemblyHole','');return false">AssemblyHole</a> object <! @sample >
+ <dt><b>Example:</b>
+ <dd>
+ This example creates the <code>hole</code> AssemblyHole object in the
+ <code>assemblyFeats</code> collection using a sketch referenced as
+ <code>holeSketch</code> contained in the <code>holeSketchComp</code>
+ component, with a depth of 60mm,
+ and positioned with respect to the <code>positioningComp</code> component.
+ <pre>
+ Dim hole As AssemblyHole
+ Set hole = assemblyFeats.<font color="red">AddAssemblyHole</font>(holeSketch,     _
+                                          holeSketchComp, _
+                                          60,             _
+                                          positioningComp)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="AddAssemblyPocket"><dt>
+
+<table><tr><td>o Func <b>AddAssemblyPocket</b>(<td><script type="text/javascript"> activateLink('Sketch','Sketch')</script> <td><tt>iSketch</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iSketchComp</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iDepth</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iComponent</tt>) As <script type="text/javascript"> activateLink('AssemblyFeature','AssemblyFeature')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new AssemblyPocket object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSketch</tt>
+   <dd>   The sketch defining the pocket base
+ </dd>
+    <dt><tt> iSketchComp</tt>
+   <dd>   The component that contains the sketch
+ </dd>
+    <dt><tt> iDepth</tt>
+   <dd>   The pocket depth
+ </dd>
+    <dt><tt> iComponent</tt>
+   <dd>   The component with respect to which the AssemblyPocket object to create
+   will be positioned
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The created 
+<a href="#" onClick="openLink('AssemblyPocket','');return false">AssemblyPocket</a> object <! @sample >
+ <dt><b>Example:</b>
+ <dd>
+ This example creates the <code>pocket</code> AssemblyPocket object in the
+ <code>assemblyFeats</code> collection using a sketch referenced as
+ <code>pocketSketch</code> contained in the <code>pocketSketchComp</code>
+ component, with a depth of 20mm,
+ and positioned with respect to the <code>positioningComp</code> component.
+ <pre>
+ Dim pocket As AssemblyPocket
+ Set pocket = assemblyFeats.<font color="red">AddAssemblyPocket</font>(pocketSketch,     _
+                                              pocketSketchComp, _
+                                              20,               _
+                                              positioningComp)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="AddAssemblyRemove"><dt>
+
+<table><tr><td>o Func <b>AddAssemblyRemove</b>(<td><script type="text/javascript"> activateLink('Body','Body')</script> <td><tt>iBody</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iBodyComp</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iComponent</tt>) As <script type="text/javascript"> activateLink('AssemblyFeature','AssemblyFeature')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new AssemblyBoolean object by removing a body from the assembly.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iBody</tt>
+   <dd>   The body to remove
+ </dd>
+    <dt><tt> iBodyComp</tt>
+   <dd>   The component that contains the body to remove
+ </dd>
+    <dt><tt> iComponent</tt>
+   <dd>   The component with respect to which the AssemblyBoolean object to create
+   will be positioned
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The created 
+<a href="#" onClick="openLink('AssemblyBoolean','');return false">AssemblyBoolean</a> object <! @sample >
+ <dt><b>Example:</b>
+ <dd>
+ This example creates the <code>removeBody</code> AssemblyBoolean object in the
+ <code>assemblyFeats</code> collection using a body referenced as
+ <code>bodyToRemove</code> contained in the <code>bodyToRemoveComp</code>
+ component,
+ and positioned with respect to the <code>positioningComp</code> component.
+ <pre>
+ Dim removeBody As AssemblyBoolean
+ Set removeBody = assemblyFeats.<font color="red">AddAssemblyRemove</font>(bodyToRemove,     _
+                                                  bodyToRemoveComp, _
+                                                  positioningComp)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="AddAssemblySplit"><dt>
+
+<table><tr><td>o Func <b>AddAssemblySplit</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iSplittingElement</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iSplittingElemComp</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CatSplitSide','CatSplitSide')</script> <td><tt>iSplitSide</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iComponent</tt>) As <script type="text/javascript"> activateLink('AssemblyFeature','AssemblyFeature')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new AssemblySplit object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSplittingElement</tt>
+   <dd>   The face or plane that will split the current body
+ </dd>
+    <dt><tt> iSplittingElemComp</tt>
+   <dd>   The component that contains the splitting element
+ </dd>
+    <dt><tt> iSplitSide</tt>
+   <dd>   The specification for which side of the current body should be kept
+   at the end of the split operation
+ </dd>
+    <dt><tt> iComponent</tt>
+   <dd>   The component with respect to which the AssemblySplit object to create
+   will be positioned
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The created 
+<a href="#" onClick="openLink('AssemblySplit','');return false">AssemblySplit</a> object <! @sample >
+ <dt><b>Example:</b>
+ <dd>
+ This example creates the <code>splitByPlane</code> AssemblySplit object in the
+ <code>assemblyFeats</code> collection using a plane referenced as
+ <code>splittingPlane</code> contained in the <code>splittingComp</code>
+ component, in such a way that the material to remove be
+ the one located in the direction of the <code>splittingPlane</code> normal vector,
+ and positioned with respect to the <code>positioningComp</code> component.
+ <pre>
+ Dim splitByPlane As AssemblySplit
+ Set splitByPlane = assemblyFeats.<font color="red">AddAssemblySplit</font>(splittingPlane,  _
+                                                   splittingComp,   _
+                                                   catPositiveSide, _
+                                                   positioningComp)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('AssemblyFeature','AssemblyFeature')</script> </table></dt>
+<dl>
+  <dd>
+ Returns an AssemblyFeature object using its index or its name from the AssemblyFeatures
+ collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the AssemblyFeature object to retrieve from
+   the AssemblyFeatures collection.
+   As a numerics, this index is the rank of the AssemblyFeature object
+   in the collection.
+   The index of the first AssemblyFeature object in the collection is 1, and
+   the index of the last AssemblyFeature object is Count.
+   As a string, it is the name you assigned to the AssemblyFeature object using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property. 
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved AssemblyFeature object <! @sample >
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves the last item in the <tt>assemblyFeats</tt> collection. 
+ <pre>
+ Dim lastAssemblyFeat As AssemblyFeature
+ Set lastAssemblyFeat = assemblyFeats.<font color="red">Item</font>(assemblyFeats.Count)
+ </pre>
+</dl>
+</dl>
+<a name="Remove"><dt>
+
+<table><tr><td>o Sub <b>Remove</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes an AssemblyFeature object from the AssemblyFeatures collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the AssemblyFeature object to remove from the AssemblyFeatures
+   collection.
+   As a numerics, this index is the rank of the AssemblyFeature object
+   in the collection.
+   The index of the first AssemblyFeature object in the collection is 1, and
+   the index of the last AssemblyFeature object is Count.
+   As a string, it is the name you assigned to the AssemblyFeature object using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property. <! @sample >
+ <dt><b>Example:</b>
+ <dd>
+ This example removes the last AssemblyFeature object in the <tt>assemblyFeats</tt>
+ collection.
+ <pre>
+ assemblyFeats.<font color="red">Remove</font>(assemblyFeats.Count)
+ </pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

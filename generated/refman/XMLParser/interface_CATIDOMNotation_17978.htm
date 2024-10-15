@@ -1,0 +1,105 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>XMLParser Interface CATIDOMNotation</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../XMLParser.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIDOMNotation','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIDOMNotation','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIDOMNotation','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIDOMNotation','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>XMLParser Interface CATIDOMNotation</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIDOMNotation_17978','CATIDOMNotation','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIDOMNotation</b>
+</p>
+<p>
+<b><i> Interface to represent a notation declared in the DTD.</i></b><br>
+ A notation either 
+ declares, by name, the format of an unparsed entity (see section 4.7 of 
+ the XML 1.0 specification ), or is used for formal declaration of 
+ processing instruction targets (see section 2.6 of the XML 1.0 
+ specification ). The <a href="#" onClick="openLink('CATIDOMNode','GetNodeName');return false">CATIDOMNode.GetNodeName</a> method inherited from  
+<a href="#" onClick="openLink('CATIDOMNode','');return false">CATIDOMNode</a> is set to the declared name of the notation. <p>The DOM Level 1 does not support editing 
+<a href="#" onClick="openLink('CATIDOMNotation','');return false">CATIDOMNotation</a> nodes;  they are therefore readonly.
+ <p>A 
+<a href="#" onClick="openLink('CATIDOMNotation','');return false">CATIDOMNotation</a> node does not have any parent. <p>See also the <a href='http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113'>Document Object Model (DOM) Level 2 Core Specification</a>.
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetPublicId(CATUnicodeString&amp;)"><b>GetPublicId</b></a>(CATUnicodeString&amp;)
+<dd>  Retrieves the public identifier of this notation.
+ <dt> o 
+    <a href="#GetSystemId(CATUnicodeString&amp;)"><b>GetSystemId</b></a>(CATUnicodeString&amp;)
+<dd>  Retrieves the system identifier of this notation.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetPublicId"></a><a name="GetPublicId(CATUnicodeString&amp;)"></a> <dt> o <b>GetPublicId</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetPublicId</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oPublicId</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the public identifier of this notation. If the public identifier was 
+ not specified, this is an empty 
+<a href="#" onClick="openLink('CATUnicodeString','');return false">CATUnicodeString</a>.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oPublicId</tt>
+   <dd> the public identifier of this notation</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetSystemId"></a><a name="GetSystemId(CATUnicodeString&amp;)"></a> <dt> o <b>GetSystemId</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetSystemId</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oSystemId</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the system identifier of this notation. If the system identifier was 
+ not specified, this is an empty 
+<a href="#" onClick="openLink('CATUnicodeString','');return false">CATUnicodeString</a>.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oSystemId</tt>
+   <dd> the system identifier of this notation</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIDOMNotation.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATXMLParserItf</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

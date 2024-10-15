@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="CATPLMDictionary" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="0" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<define name="_VPMDicPRIMITIVETypeNumber" htmlFileName="define__VPMDicPRIMITIVETypeNumber_44758" initial="_" id="44758" />
+<enum name="VPMDicCONTENT" htmlFileName="enum_VPMDicCONTENT_19319" initial="V" id="19319" abstract="" />
+<enum name="VPMDicPERSISTENT" htmlFileName="enum_VPMDicPERSISTENT_22694" initial="V" id="22694" abstract="ENOVIA package persistency types." />
+<enum name="VPMDicPRIMITIVEType" htmlFileName="enum_VPMDicPRIMITIVEType_28291" initial="V" id="28291" abstract="ENOVIA primitive types." />
+<enum name="VPMDicTYPE" htmlFileName="enum_VPMDicTYPE_16816" initial="V" id="16816" abstract="ENOVIA dictionary types." />
+<enum name="VPMDicVISIBILITY" htmlFileName="enum_VPMDicVISIBILITY_22611" initial="V" id="22611" abstract="ENOVIA relationship visibility types." />
+<function name="GetVPMIDicMgr" htmlFileName="function_GetVPMIDicMgr_38816" id="38816" status="4" isProperty="0" initial="G" argList="(VPMIDicMgr**)" abstract="Retrieves an interface to the dictionary manager." />
+<class name="VPMIDicElement" initial="V" htmlFileName="interface_VPMIDicElement_25227" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="25227" abstract="" />
+<method name="GetAlias" htmlFileName="interface_VPMIDicElement_25227" containerName="VPMIDicElement" containerType="interface" id="46848" status="18" isProperty="0" initial="G" argList="(CATUnicodeString*)" abstract="" />
+<method name="GetCategories" htmlFileName="interface_VPMIDicElement_25227" containerName="VPMIDicElement" containerType="interface" id="53708" status="18" isProperty="0" initial="G" argList="(CATLISTP(IUnknown)*)" abstract="Retrieves the categories to which the elment belongs." />
+<method name="GetExpositionLevel" htmlFileName="interface_VPMIDicElement_25227" containerName="VPMIDicElement" containerType="interface" id="60126" status="18" isProperty="0" initial="G" argList="(CATUnicodeString*)" abstract="Retrieves the Element&apos;s exposition level." />
+<method name="GetName" htmlFileName="interface_VPMIDicElement_25227" containerName="VPMIDicElement" containerType="interface" id="36073" status="18" isProperty="0" initial="G" argList="(CATString*)" abstract="Retrieves the dictionary object name." />
+<method name="GetUuid" htmlFileName="interface_VPMIDicElement_25227" containerName="VPMIDicElement" containerType="interface" id="38293" status="18" isProperty="0" initial="G" argList="(CATDbBinary*)" abstract="Retrieves the dictionary object UUID." />
+<method name="GetVisibility" htmlFileName="interface_VPMIDicElement_25227" containerName="VPMIDicElement" containerType="interface" id="49280" status="18" isProperty="0" initial="G" argList="(VPMDicVISIBILITY*)" abstract="" />
+<method name="SetExpositionLevel" htmlFileName="interface_VPMIDicElement_25227" containerName="VPMIDicElement" containerType="interface" id="60126" status="18" isProperty="0" initial="S" argList="(CATUnicodeString*)" abstract="Sets the Element&apos;s exposition level." />
+<method name="Type" htmlFileName="interface_VPMIDicElement_25227" containerName="VPMIDicElement" containerType="interface" id="31246" status="18" isProperty="0" initial="T" argList="()" abstract="Retrieves the dictionary object type." />
+<class name="VPMIDicMgr" initial="V" htmlFileName="interface_VPMIDicMgr_20331" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="20331" abstract="This class enables to manage all dictionary data." />
+<method name="Init" htmlFileName="interface_VPMIDicMgr_20331" containerName="VPMIDicMgr" containerType="interface" id="25118" status="18" isProperty="0" initial="I" argList="(int)" abstract="Initializes the Dictionary Manager." />
+<method name="LoadPackage" htmlFileName="interface_VPMIDicMgr_20331" containerName="VPMIDicMgr" containerType="interface" id="60937" status="18" isProperty="0" initial="L" argList="(CATString*,VPMDicPERSISTENT)" abstract="Loads a package." />
+<method name="LoadPackage" htmlFileName="interface_VPMIDicMgr_20331" containerName="VPMIDicMgr" containerType="interface" id="99553" status="18" isProperty="0" initial="L" argList="(CATString*,VPMDicPERSISTENT,VPMDicCONTENT)" abstract="Loads a package." />
+<method name="LoadPackageFromDir" htmlFileName="interface_VPMIDicMgr_20331" containerName="VPMIDicMgr" containerType="interface" id="101187" status="18" isProperty="0" initial="L" argList="(CATString*,CATString*,VPMDicPERSISTENT)" abstract="Loads a package from a given directory." />
+<method name="LoadPackageFromDir" htmlFileName="interface_VPMIDicMgr_20331" containerName="VPMIDicMgr" containerType="interface" id="151881" status="18" isProperty="0" initial="L" argList="(CATString*,CATString*,VPMDicPERSISTENT,VPMDicCONTENT)" abstract="Loads a package from a given directory." />
+</fw>

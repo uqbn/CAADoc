@@ -1,0 +1,112 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>VisualizationBase Class CAT3DArcCircleGP</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../VisualizationBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CAT3DArcCircleGP','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CAT3DArcCircleGP','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CAT3DArcCircleGP','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CAT3DArcCircleGP','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>VisualizationBase Class CAT3DArcCircleGP</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CAT3DArcCircleGP_26046','CAT3DArcCircleGP','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CAT3DArcCircleGP</b>
+</p>
+<p>
+<b><i> Class to create the dynamic graphic primitive of a 3D circle arc or a 3D circle.</i></b><br>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CAT3DArcCircleGP(CATMathPointf&amp;,CATMathVectorf&amp;,float,CATMathVectorf&amp;,float,float,int)"><b>CAT3DArcCircleGP</b></a>(CATMathPointf&amp;,CATMathVectorf&amp;,float,CATMathVectorf&amp;,float,float,int)
+<dd>  Constructs a 3D circle arc or a 3D circle graphic primitive
+ 
+</dl>
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CAT3DArcCircleGP"></a><a name="CAT3DArcCircleGP(CATMathPointf&amp;,CATMathVectorf&amp;,float,CATMathVectorf&amp;,float,float,int)"></a> <dt> o <b>CAT3DArcCircleGP</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CAT3DArcCircleGP</b>(<td> const <script type="text/javascript"> activateLink('CATMathPointf','CATMathPointf&amp;')</script> <td><tt>iCenter</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathVectorf','CATMathVectorf&amp;')</script> <td><tt>iNormal</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iRadius</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathVectorf','CATMathVectorf&amp;')</script> <td><tt>iReferenceAxis</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iStartAngle</tt><td><tt>= 0.f</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iEndAngle</tt><td><tt>= 6.2831853f</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iStaticSagUsed</tt><td><tt>= 0</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a 3D circle arc or a 3D circle graphic primitive
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCenter</tt>
+   <dd>   The center of the circle arc.
+ </dd>
+    <dt><tt> iNormal</tt>
+   <dd>   The normal to the circle plan.
+   This vector must be normalized
+ </dd>
+    <dt><tt> iRadius</tt>
+   <dd>   The circle arc radius.
+ </dd>
+    <dt><tt> iReferenceAxis</tt>
+   <dd>   The reference axis.
+   It is in the circle plan.
+ </dd>
+    <dt><tt> iStartAngle</tt>
+   <dd>   The start angle of the arc with
+   respect to the reference axis.
+   <br><b>Legal values</b>: The default start angle value
+   is 0.
+ </dd>
+    <dt><tt> iEndAngle</tt>
+   <dd>   The ending angle of the arc with
+   respect to the reference axis.
+   <br><b>Legal values</b>: The default end angle value
+   is 360 degrees.
+ </dd>
+    <dt><tt> iStaticSagUsed</tt>
+   <dd>   Used to specify whether using a dynamic or a static
+   sag for the circle arc visualization.
+   <br><b>Legal values</b>:
+   <dl>
+      <dt>1</dt>
+        <dd>The sag value is static and taken
+            from the settings, and is constant whatever the distance between
+            the view point and the circle arc may be</dd>
+      <dt>0</dt>
+        <dd>The sag value is dynamic and calculated depending on
+            the distance between the view point and the circle arc</dd>
+   </dl></dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CAT3DArcCircleGP.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATViz</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

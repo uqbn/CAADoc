@@ -1,0 +1,141 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>KnowledgeInterfaces Interface CATIType</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../KnowledgeInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIType','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIType','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIType','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIType','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>KnowledgeInterfaces Interface CATIType</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIType_24202','CATIType','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIType</b>
+</p>
+<p>
+<b><i> Interface dedicated to describing the type of an instance.</i></b><br>
+
+
+ <b>Role</b>: This type is shown to the user but does not necessarily 
+ reflect the internal structure of an instance : as such, it is
+ an <b>exposed</b> type.<br>
+ A type is defined by an internal name and a NLS name that is shown to 
+ the user.<br>
+ A type is created through CATITypeDictionary services.
+
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIInstance','');return false">CATIInstance</a>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATITypeDictionary','');return false">CATITypeDictionary</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#IsaSortOf(CATIType_var&amp;)"><b>IsaSortOf</b></a>(CATIType_var&amp;)
+<dd>  Tests if this type is a subtype of (derives from) the given one.
+ <dt> o 
+    <a href="#Name()"><b>Name</b></a>()
+<dd>  Returns the name of the type (internal identifier).
+ <dt> o 
+    <a href="#SuperType()"><b>SuperType</b></a>()
+<dd>  Returns the supertype (the type this type derives).
+ <dt> o 
+    <a href="#UserName()"><b>UserName</b></a>()
+<dd>  Returns the NLS name of the type.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="IsaSortOf"></a><a name="IsaSortOf(CATIType_var&amp;)"></a> <dt> o <b>IsaSortOf</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('boolean','boolean')</script>  <b>IsaSortOf</b>(<td> const <script type="text/javascript"> activateLink('CATIType_var','CATIType_var&amp;')</script> <td><tt>iType</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Tests if this type is a subtype of (derives from) the given one.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iType</tt>
+   <dd> type to compared to. </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  True if this type is a subtype of the other, else False.
+</dl>
+</dl>
+<a name="Name"></a><a name="Name()"></a> <dt> o <b>Name</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script>  <b>Name</b>(<td>)<script type="text/javascript"> activateLink('=0','const =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the name of the type (internal identifier).
+
+ This name is the one used to find a type by its name in CATITypeDictionary services.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  internal name of the type.
+</dl>
+</dl>
+<a name="SuperType"></a><a name="SuperType()"></a> <dt> o <b>SuperType</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATIType','CATIType*')</script>  <b>SuperType</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the supertype (the type this type derives).
+
+ An AddRef is done.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  the supertype.
+</dl>
+</dl>
+<a name="UserName"></a><a name="UserName()"></a> <dt> o <b>UserName</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script>  <b>UserName</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the NLS name of the type.
+
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  NLS name of the type.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIType.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>KnowledgeItf</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

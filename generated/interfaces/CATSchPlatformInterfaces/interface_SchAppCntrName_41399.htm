@@ -1,0 +1,132 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchAppCntrName (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchAppCntrName','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppCntrName','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchAppCntrName','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppCntrName','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchAppCntrName<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchAppCntrName_41399','SchAppCntrName','0');</script>
+<b><i>  Manage a schematic connector.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AppListNames"><b>AppListNames</b></a>
+<dd>  List connector names allowed.
+ <dt>
+    <a href="#GetName"><b>GetName</b></a>
+<dd>  Get the application connector name.
+ <dt>
+    <a href="#SetName"><b>SetName</b></a>
+<dd>  Set the application connector name.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AppListNames"><dt>
+
+<table><tr><td>o Func <b>AppListNames</b>(<td>) As <script type="text/javascript"> activateLink('SchListOfBSTRs','SchListOfBSTRs')</script> </table></dt>
+<dl>
+  <dd>
+ List connector names allowed.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLConnectorNamesAllowed</tt>
+   <dd>   A list of connector names allowed.
+   The caller must allocate memory for the first level pointer 
+   (i.e. oLConnectorNamesAllowed) and release the second level
+   pointer (i.e. *oLConnectorNamesAllowed) after usage.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppCntrName
+ Dim objArg1 As SchListOfBSTRs
+  ...
+ Set objArg1 = objThisIntf.<font color="red">AppListNames</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="GetName"><dt>
+
+<table><tr><td>o Sub <b>GetName</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oName</tt>)</table></dt>
+<dl>
+  <dd>
+ Get the application connector name.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oName</tt>
+   <dd>   The connector name.
+   The caller must allocate memory for the first level pointer 
+   (i.e. oName) and release the second level
+   pointer (i.e. *oName) after usage.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppCntrName
+ Dim strVar1 As String
+  ...
+ objThisIntf.<font color="red">GetName</font>strVar1
+ </pre>
+
+</dl>
+</dl>
+<a name="SetName"><dt>
+
+<table><tr><td>o Sub <b>SetName</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iName</tt>)</table></dt>
+<dl>
+  <dd>
+ Set the application connector name.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oName</tt>
+   <dd>   The connector name.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppCntrName
+ Dim strVar1 As String
+  ...
+ objThisIntf.<font color="red">SetName</font>strVar1
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

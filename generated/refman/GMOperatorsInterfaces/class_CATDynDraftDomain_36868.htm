@@ -1,0 +1,232 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMOperatorsInterfaces Class CATDynDraftDomain</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMOperatorsInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATDynDraftDomain','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATDynDraftDomain','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATDynDraftDomain','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATDynDraftDomain','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GMOperatorsInterfaces Class CATDynDraftDomain</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATDynDraftDomain_36868','CATDynDraftDomain','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATDynDraftDomain</b>
+</p>
+<p>
+<b><i> Class defining a draft domain.</i></b><br>
+
+ <br>A draft domain groups all the faces to draft with regards to the same pulling direction.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATICGMDynDraft','');return false">CATICGMDynDraft</a>, <a href="#" onClick="openLink('CATDynDraftRibbon','');return false">CATDynDraftRibbon</a>, <a href="#" onClick="openLink('CATDynDraftAngle','');return false">CATDynDraftAngle</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATDynDraftDomain(CATMathDirection&amp;,CATDynDraftDomainType,CATFace*,CATLISTP(CATDynDraftRibbon)&amp;)"><b>CATDynDraftDomain</b></a>(CATMathDirection&amp;,CATDynDraftDomainType,CATFace*,CATLISTP(CATDynDraftRibbon)&amp;)
+<dd>  Constructs a draft domain.
+ <dt> o 
+    <a href="#CATDynDraftDomain(CATMathDirection&amp;,CATDynDraftDomainType,CATBody*,CATLISTP(CATDynDraftRibbon)&amp;)"><b>CATDynDraftDomain</b></a>(CATMathDirection&amp;,CATDynDraftDomainType,CATBody*,CATLISTP(CATDynDraftRibbon)&amp;)
+<dd>  Constructs a draft domain.
+ <dt> o 
+    <a href="#CATDynDraftDomain(CATMathDirection&amp;,CATLISTP(CATDynDraftRibbon)&amp;,CATDynDraftDomainType,CATGeometry*)"><b>CATDynDraftDomain</b></a>(CATMathDirection&amp;,CATLISTP(CATDynDraftRibbon)&amp;,CATDynDraftDomainType,CATGeometry*)
+<dd>  
+ <dt> o 
+    <a href="#~CATDynDraftDomain()"><b>~CATDynDraftDomain</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetDomainType()"><b>GetDomainType</b></a>()
+<dd>  Returns the operation draft type.
+ <dt> o 
+    <a href="#GetNeutral()"><b>GetNeutral</b></a>()
+<dd>  Returns the neutral element.
+ <dt> o 
+    <a href="#GetPullingDirection(CATMathDirection&amp;)"><b>GetPullingDirection</b></a>(CATMathDirection&amp;)
+<dd>  Retrieves the pulling direction associated with <tt>this</tt> draft domain.
+ <dt> o 
+    <a href="#GetRibbons()"><b>GetRibbons</b></a>()
+<dd>  Returns the ribbons associated with <tt>this</tt> draft domain.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATDynDraftDomain"></a><a name="CATDynDraftDomain(CATMathDirection&amp;,CATDynDraftDomainType,CATFace*,CATLISTP(CATDynDraftRibbon)&amp;)"></a> <dt> o <b>CATDynDraftDomain</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATDynDraftDomain</b>(<td><script type="text/javascript"> activateLink('CATMathDirection','CATMathDirection&amp;')</script> <td><tt>iPullingDirection</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATDynDraftDomainType','CATDynDraftDomainType')</script> <td><tt>iType</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATFace','CATFace*')</script> <td><tt>iNeutral</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTP(CATDynDraftRibbon)','CATLISTP(CATDynDraftRibbon)&amp;')</script> <td><tt>iRibbons</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a draft domain.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPullingDirection</tt>
+   <dd> The pulling direction.
+ </dd>
+    <dt><tt> iType</tt>
+   <dd> The type of the draft operation.
+ </dd>
+    <dt><tt> iNeutral</tt>
+   <dd> The pointer to the neutral face.
+ To be provided when <tt>iType=CATDynDraftDomainNeutral</tt>.
+ </dd>
+    <dt><tt> iRibbons</tt>
+   <dd> The list of pointers to the CATDynDraftRibbon objects that contain the faces to draft with <tt>iPullingDirection</tt>.</dd>
+</dl>
+</dl>
+</dl>
+<a name="CATDynDraftDomain"></a><a name="CATDynDraftDomain(CATMathDirection&amp;,CATDynDraftDomainType,CATBody*,CATLISTP(CATDynDraftRibbon)&amp;)"></a> <dt> o <b>CATDynDraftDomain</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATDynDraftDomain</b>(<td><script type="text/javascript"> activateLink('CATMathDirection','CATMathDirection&amp;')</script> <td><tt>iPullingDirection</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATDynDraftDomainType','CATDynDraftDomainType')</script> <td><tt>iType</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATBody','CATBody*')</script> <td><tt>iNeutral</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTP(CATDynDraftRibbon)','CATLISTP(CATDynDraftRibbon)&amp;')</script> <td><tt>iRibbons</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a draft domain.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPullingDirection</tt>
+   <dd> The pulling direction.
+ </dd>
+    <dt><tt> iType</tt>
+   <dd> The type of the draft operation.
+ </dd>
+    <dt><tt> iNeutral</tt>
+   <dd> The pointer to the neutral body.
+ To be provided when <tt>iType=CATDynDraftDomainNeutral</tt>.
+ </dd>
+    <dt><tt> iRibbons</tt>
+   <dd> The list of pointers to the CATDynDraftRibbon objects that contain the faces to draft with <tt>iPullingDirection</tt>.</dd>
+</dl>
+</dl>
+</dl>
+<a name="CATDynDraftDomain"></a><a name="CATDynDraftDomain(CATMathDirection&amp;,CATLISTP(CATDynDraftRibbon)&amp;,CATDynDraftDomainType,CATGeometry*)"></a> <dt> o <b>CATDynDraftDomain</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATDynDraftDomain</b>(<td><script type="text/javascript"> activateLink('CATMathDirection','CATMathDirection&amp;')</script> <td><tt>iPullingDirection</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTP(CATDynDraftRibbon)','CATLISTP(CATDynDraftRibbon)&amp;')</script> <td><tt>iFaces</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATDynDraftDomainType','CATDynDraftDomainType')</script> <td><tt>iType</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATGeometry','CATGeometry*')</script> <td><tt>iNeutral</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ 
+<dl>
+  <dt> <b>Deprecated:</b> 
+  <dd>  V5R15
+ Use the constructor whose third argument is a neutral element of type CATFace or
+ else use the constructor whose third argument is a neutral element of type CATBody.
+ Constructs a draft domain.
+ 
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPullingDirection</tt>
+   <dd> The pulling direction.
+ </dd>
+    <dt><tt> iFaces</tt>
+   <dd> The list of pointers to the faces to draft with <tt>iPullingDirection</tt>.
+ </dd>
+    <dt><tt> iType</tt>
+   <dd> The type of the draft operation.
+ </dd>
+    <dt><tt> iNeutral</tt>
+   <dd> The pointer to the neutral element. This element can be a CATSurface, a CATFace or a CATShell.
+ To be provided when <tt>iType=CATDynDraftDomainNeutral</tt>.</dd>
+</dl>
+</dl>
+</dl>
+<a name="~CATDynDraftDomain"></a><a name="~CATDynDraftDomain()"></a> <dt> o <b>~CATDynDraftDomain</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>~CATDynDraftDomain</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetDomainType"></a><a name="GetDomainType()"></a> <dt> o <b>GetDomainType</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATDynDraftDomainType','CATDynDraftDomainType')</script>  <b>GetDomainType</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the operation draft type.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The operation draft type.
+</dl>
+</dl>
+<a name="GetNeutral"></a><a name="GetNeutral()"></a> <dt> o <b>GetNeutral</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATGeometry','const CATGeometry *')</script>  <b>GetNeutral</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the neutral element.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The pointer to the neutral element. This element can be a CATSurface, a CATFace or a CATShell.
+</dl>
+</dl>
+<a name="GetPullingDirection"></a><a name="GetPullingDirection(CATMathDirection&amp;)"></a> <dt> o <b>GetPullingDirection</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>GetPullingDirection</b>(<td><script type="text/javascript"> activateLink('CATMathDirection','CATMathDirection&amp;')</script> <td><tt>ioPullingDirection</tt>)<script type="text/javascript"> activateLink('const',' const')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the pulling direction associated with <tt>this</tt> draft domain.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioPullingDirection</tt>
+   <dd> The pulling direction.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <tt>TRUE</tt> if the pulling direction is defined in <tt>this</tt> CATDynDraftDomain , <tt>FALSE</tt> otherwise.
+</dl>
+</dl>
+<a name="GetRibbons"></a><a name="GetRibbons()"></a> <dt> o <b>GetRibbons</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATLISTP(CATDynDraftRibbon)','const CATLISTP(CATDynDraftRibbon) &')</script>  <b>GetRibbons</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the ribbons associated with <tt>this</tt> draft domain.
+ <br> A draft ribbon is a set of connected faces.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The list of pointers to draft ribbons.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATDynDraftDomain.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGMOperatorsInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

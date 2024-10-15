@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="PLMSecuritySSOCClient" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="0" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="PLMSSOClient" initial="P" htmlFileName="class_PLMSSOClient_28188" DSCharacteristic="class" id="28188" abstract="&lt;b&gt;Role&lt;/b&gt;:
+ This interface enables a CAA application running within VPM Navigator
+ to retrieve credentials when an SSO Authentication has been already 
+ performed in VPM Navigator." />
+<constructor name="PLMSSOClient" htmlFileName="class_PLMSSOClient_28188" containerName="PLMSSOClient" containerType="class" id="36307" status="0" isProperty="0" initial="P" argList="()" abstract="the default Constructor." />
+<constructor />
+<method name="GetAuthenticatedUsername" htmlFileName="class_PLMSSOClient_28188" containerName="PLMSSOClient" containerType="class" id="83142" status="0" isProperty="0" initial="G" argList="(CATUnicodeString&amp;amp;)" abstract="Get the authenticated username." />
+<method name="GetCredentialSetForApplication" htmlFileName="class_PLMSSOClient_28188" containerName="PLMSSOClient" containerType="class" id="239042" status="0" isProperty="0" initial="G" argList="(CATUnicodeString,CATUnicodeString,PLMSSOCredentialSet&amp;amp;)" abstract="Retrieve all credentials for a given instance of a given application." />
+<method name="IsAlreadyAuthenticated" htmlFileName="class_PLMSSOClient_28188" containerName="PLMSSOClient" containerType="class" id="67134" status="0" isProperty="0" initial="I" argList="(CATBoolean&amp;amp;)" abstract="Test if the there have been an SSO authentication already." />
+<method name="IsSSOActivated" htmlFileName="class_PLMSSOClient_28188" containerName="PLMSSOClient" containerType="class" id="52286" status="0" isProperty="0" initial="I" argList="(CATBoolean&amp;amp;)" abstract="Test if the SSO runtime has been turned on." />
+<class name="PLMSSOCredential" initial="P" htmlFileName="class_PLMSSOCredential_33768" DSCharacteristic="class" id="33768" abstract="&lt;b&gt;Role&lt;/b&gt;:
+ This Object represents a credential." />
+<constructor name="PLMSSOCredential" htmlFileName="class_PLMSSOCredential_33768" containerName="PLMSSOCredential" containerType="class" id="47467" status="0" isProperty="0" initial="P" argList="()" abstract="Construct an empty credential with a given name and value." />
+<constructor name="PLMSSOCredential" htmlFileName="class_PLMSSOCredential_33768" containerName="PLMSSOCredential" containerType="class" id="104084" status="0" isProperty="0" initial="P" argList="(CATUnicodeString,CATUnicodeString)" abstract="Construct a credential with a given name and value." />
+<method name="GetCredentialName" htmlFileName="class_PLMSSOCredential_33768" containerName="PLMSSOCredential" containerType="class" id="73671" status="0" isProperty="0" initial="G" argList="(CATUnicodeString&amp;amp;)" abstract="Retrieve the name of the credential." />
+<method name="GetCredentialValue" htmlFileName="class_PLMSSOCredential_33768" containerName="PLMSSOCredential" containerType="class" id="75733" status="0" isProperty="0" initial="G" argList="(CATUnicodeString&amp;amp;)" abstract="Retrieve the value of the credential." />
+<method name="operator!=" htmlFileName="class_PLMSSOCredential_33768" containerName="PLMSSOCredential" containerType="class" id="62010" status="8" isProperty="0" initial="O" argList="(PLMSSOCredential&amp;amp;)" abstract="Inequality operator." />
+<method name="operator=" htmlFileName="class_PLMSSOCredential_33768" containerName="PLMSSOCredential" containerType="class" id="74020" status="0" isProperty="0" initial="O" argList="(PLMSSOCredential&amp;amp;)" abstract="Assignment operator from a PLMSSOCredential instance." />
+<method name="operator==" htmlFileName="class_PLMSSOCredential_33768" containerName="PLMSSOCredential" containerType="class" id="62234" status="8" isProperty="0" initial="O" argList="(PLMSSOCredential&amp;amp;)" abstract="Equality operator." />
+<class name="PLMSSOCredentialSet" initial="P" htmlFileName="class_PLMSSOCredentialSet_38901" DSCharacteristic="class" id="38901" abstract="&lt;b&gt;Role&lt;/b&gt;:
+ This Object represents a credentialSet." />
+<constructor name="PLMSSOCredentialSet" htmlFileName="class_PLMSSOCredentialSet_38901" containerName="PLMSSOCredentialSet" containerType="class" id="57733" status="0" isProperty="0" initial="P" argList="()" abstract="The default constructor of a PLMSSOCredentialSet." />
+<constructor />
+<method name="AddCredential" htmlFileName="class_PLMSSOCredentialSet_38901" containerName="PLMSSOCredentialSet" containerType="class" id="64552" status="0" isProperty="0" initial="A" argList="(PLMSSOCredential)" abstract="Add a PLMSSOCredential to this PLMSSOCredentialSet." />
+<method name="GetApplicationName" htmlFileName="class_PLMSSOCredentialSet_38901" containerName="PLMSSOCredentialSet" containerType="class" id="80711" status="0" isProperty="0" initial="G" argList="(CATUnicodeString&amp;amp;)" abstract="Retrieve the name of the application for which the PLMSSOCredentialSet has been defined for." />
+<method name="GetCredential" htmlFileName="class_PLMSSOCredentialSet_38901" containerName="PLMSSOCredentialSet" containerType="class" id="120696" status="0" isProperty="0" initial="G" argList="(CATUnicodeString,PLMSSOCredential&amp;amp;)" abstract="Gives a credential added earlier from its name." />
+<method name="GetInstanceName" htmlFileName="class_PLMSSOCredentialSet_38901" containerName="PLMSSOCredentialSet" containerType="class" id="75618" status="0" isProperty="0" initial="G" argList="(CATUnicodeString&amp;amp;)" abstract="" />
+<method name="RemoveCredential" htmlFileName="class_PLMSSOCredentialSet_38901" containerName="PLMSSOCredentialSet" containerType="class" id="68938" status="0" isProperty="0" initial="R" argList="(PLMSSOCredential)" abstract="Remove a PLMSSOCredential to this PLMSSOCredentialSet." />
+<method name="SetApplicationName" htmlFileName="class_PLMSSOCredentialSet_38901" containerName="PLMSSOCredentialSet" containerType="class" id="79639" status="0" isProperty="0" initial="S" argList="(CATUnicodeString&amp;amp;)" abstract="Sets the name of the application for which the PLMSSOCredentialSet has been defined for." />
+<method name="SetInstanceName" htmlFileName="class_PLMSSOCredentialSet_38901" containerName="PLMSSOCredentialSet" containerType="class" id="74546" status="0" isProperty="0" initial="S" argList="(CATUnicodeString&amp;amp;)" abstract="Sets the name of the instance of the application for which the PLMSSOCredentialSet has been defined for." />
+<method name="Size" htmlFileName="class_PLMSSOCredentialSet_38901" containerName="PLMSSOCredentialSet" containerType="class" id="41525" status="0" isProperty="0" initial="S" argList="()" abstract="Retrieve the number of credentials contained in the PLMSSOCredentialSet." />
+<method name="operator[]" htmlFileName="class_PLMSSOCredentialSet_38901" containerName="PLMSSOCredentialSet" containerType="class" id="58657" status="8" isProperty="0" initial="O" argList="(int)" abstract="Returns the PLMSSOCredential at the given iIndex." />
+</fw>

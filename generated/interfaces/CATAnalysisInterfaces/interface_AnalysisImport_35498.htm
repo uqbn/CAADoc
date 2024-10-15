@@ -1,0 +1,112 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces AnalysisImport (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('AnalysisImport','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisImport','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('AnalysisImport','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisImport','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>AnalysisImport<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_AnalysisImport_35498','AnalysisImport','0');</script>
+<b><i>   The interface to access a CATIAAnalysisExport</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddSupport"><b>AddSupport</b></a>
+<dd>  AddSupport for loads import if needed.
+ <dt>
+    <a href="#ImportDisp"><b>ImportDisp</b></a>
+<dd>  Import displacements from a CATAnalysisExport file.
+ <dt>
+    <a href="#ImportForce"><b>ImportForce</b></a>
+<dd>  Import loads from a CATAnalysisExport file.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddSupport"><dt>
+
+<table><tr><td>o Sub <b>AddSupport</b>(<td><script type="text/javascript"> activateLink('AnalysisManager','AnalysisManager')</script> <td><tt>iManager</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProductSupport</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>iSupport</tt>)</table></dt>
+<dl>
+  <dd>
+ AddSupport for loads import if needed.<br>)
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iManager</tt>
+   <dd>          The Analysis manager.<br>) </dd>
+    <dt><tt> iProductSupport</tt>
+   <dd>   Product of the geometrical support.<br>) </dd>
+    <dt><tt> iSupports</tt>
+   <dd>         Geometrical support.<br>)</dd>
+</dl>
+</dl>
+</dl>
+<a name="ImportDisp"><dt>
+
+<table><tr><td>o Sub <b>ImportDisp</b>(<td><script type="text/javascript"> activateLink('AnalysisCase','AnalysisCase')</script> <td><tt>iFatherCase</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iFullPath</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('AnalysisManager','AnalysisManager')</script> <td><tt>iManager</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>iAxis</tt>)</table></dt>
+<dl>
+  <dd>
+ Import displacements from a CATAnalysisExport file.<br>)
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFatherCase</tt>
+   <dd>   case where Displacements will be exported.<br>) </dd>
+    <dt><tt> iFullPath</tt>
+   <dd>     The full path of the file.<br>) </dd>
+    <dt><tt> iManager</tt>
+   <dd>      analysis manager where the disp is exported.<br>) </dd>
+    <dt><tt> iAxis</tt>
+   <dd>         The user axis system to be taken into account.<br>)</dd>
+</dl>
+</dl>
+</dl>
+<a name="ImportForce"><dt>
+
+<table><tr><td>o Sub <b>ImportForce</b>(<td><script type="text/javascript"> activateLink('AnalysisCase','AnalysisCase')</script> <td><tt>iFatherCase</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iFullPath</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('AnalysisManager','AnalysisManager')</script> <td><tt>iManager</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>iAxis</tt>)</table></dt>
+<dl>
+  <dd>
+ Import loads from a CATAnalysisExport file.<br>)
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFatherCase</tt>
+   <dd>   case where loads will be exported.<br>) </dd>
+    <dt><tt> iFullPath</tt>
+   <dd>     The full path of the file.<br>) </dd>
+    <dt><tt> iManager</tt>
+   <dd>      analysis manager where the disp is exported.<br>) </dd>
+    <dt><tt> iAxis</tt>
+   <dd>         The user axis system to be taken into account.<br>)</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

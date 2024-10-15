@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="SimulationBaseLegacy" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="0" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<function name="CATCreateReplay" htmlFileName="function_CATCreateReplay_77540" id="77540" status="4" isProperty="0" initial="C" argList="(CATDocument*,CATIReplay**)" abstract="Create a simulation replay." />
+<function name="CATListReplays" htmlFileName="function_CATListReplays_86160" id="86160" status="4" isProperty="0" initial="C" argList="(CATDocument*,CATIReplayList*)" abstract="List all simulation replays in a document." />
+</fw>

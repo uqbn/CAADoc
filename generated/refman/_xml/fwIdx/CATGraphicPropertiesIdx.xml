@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="CATGraphicProperties" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="0" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="CATExtIVisProperties" initial="C" htmlFileName="class_CATExtIVisProperties_41260" fatherClass="CATExtIBasicVisProperties" fatherId="40928" DSCharacteristic="class" id="41260" abstract="Adapter for the CATIVisProperties interface." />
+<constructor name="CATExtIVisProperties" htmlFileName="class_CATExtIVisProperties_41260" containerName="CATExtIVisProperties" containerType="class" id="62915" status="0" isProperty="0" initial="C" argList="()" abstract=" Constructor." />
+<constructor />
+<method name="GetSubTypeFromPath" htmlFileName="class_CATExtIVisProperties_41260" containerName="CATExtIVisProperties" containerType="class" id="337256" status="2" isProperty="0" initial="G" argList="(CATPathElement&amp;amp;,CATVisPropertyType,CATVisGeomType&amp;amp;,unsigned int&amp;amp;)" abstract="Gives the appropriated sub type and property number to read/write." />
+<method name="IsGeomTypeDefined" htmlFileName="class_CATExtIVisProperties_41260" containerName="CATExtIVisProperties" containerType="class" id="76862" status="2" isProperty="0" initial="I" argList="(CATVisGeomType&amp;amp;)" abstract="Asks if a given geometry type is defined." />
+</fw>

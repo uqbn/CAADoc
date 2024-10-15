@@ -1,0 +1,162 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>SketcherInterfaces Hyperbola2D (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../SketcherInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Hyperbola2D','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Hyperbola2D','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Hyperbola2D','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Hyperbola2D','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Hyperbola2D<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Hyperbola2D_24546','Hyperbola2D','0');</script>
+<b><i>    Class defining an hyperbola in 2D Space.</i></b><br>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#ImaginaryRadius"><b>ImaginaryRadius</b></a>
+<dd>        Returns the minor radius of the hyperbola in 2D space
+       
+ <dt>
+    <a href="#Radius"><b>Radius</b></a>
+<dd>        Returns the major radius of the hyperbola in 2D space
+       
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetAxis"><b>GetAxis</b></a>
+<dd>        Returns the axis vector direction of the hyperbola in 2D space
+       
+ <dt>
+    <a href="#GetCenter"><b>GetCenter</b></a>
+<dd>        Returns the center point of the hyperbola in 2D space
+       
+ <dt>
+    <a href="#SetData"><b>SetData</b></a>
+<dd>        Modifies the caracteristics of the hyperbola
+       
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="ImaginaryRadius"><dt>
+
+<table><tr><td>o Property <b>ImaginaryRadius</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+       Returns the minor radius of the hyperbola in 2D space
+       
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oMinorRadius</tt>
+   <dd>       The minor radius of the hyperbola</dd>
+</dl>
+</dl>
+</dl>
+<a name="Radius"><dt>
+
+<table><tr><td>o Property <b>Radius</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+       Returns the major radius of the hyperbola in 2D space
+       
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oMajorRadius</tt>
+   <dd>       The major radius of the hyperbola</dd>
+</dl>
+</dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetAxis"><dt>
+
+<table><tr><td>o Sub <b>GetAxis</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oAxis</tt>)</table></dt>
+<dl>
+  <dd>
+       Returns the axis vector direction of the hyperbola in 2D space
+       
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oAxis[0]</tt>
+   <dd>       The X coordinate of the axis vector direction
+       </dd>
+    <dt><tt> oAxis[1]</tt>
+   <dd>       The Y coordinate of the axis vector direction</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetCenter"><dt>
+
+<table><tr><td>o Sub <b>GetCenter</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oCenter</tt>)</table></dt>
+<dl>
+  <dd>
+       Returns the center point of the hyperbola in 2D space
+       
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oCenter[0]</tt>
+   <dd>       The X Coordinate of the center point of the hyperbola
+       </dd>
+    <dt><tt> oCenter[1]</tt>
+   <dd>       The Y Coordinate of the center point of the hyperbola</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetData"><dt>
+
+<table><tr><td>o Sub <b>SetData</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iCenterX</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iCenterY</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iAxisX</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iAxisY</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iMajorRadius</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iMinorRadius</tt>)</table></dt>
+<dl>
+  <dd>
+       Modifies the caracteristics of the hyperbola
+       
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCenterX</tt>
+   <dd>       The X Coordinate of the hyperbola center
+       </dd>
+    <dt><tt> iCenterY</tt>
+   <dd>       The Y Coordinate of the hyperbola center
+       </dd>
+    <dt><tt> iAxisX</tt>
+   <dd>       The X coordinate of the axis vector direction
+       </dd>
+    <dt><tt> iAxisY</tt>
+   <dd>       The Y coordinate of the axis vector direction
+       </dd>
+    <dt><tt> iMajorRadius</tt>
+   <dd>       The length of the major radius
+       </dd>
+    <dt><tt> iMinorRadius</tt>
+   <dd>       The length of the minor radius</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

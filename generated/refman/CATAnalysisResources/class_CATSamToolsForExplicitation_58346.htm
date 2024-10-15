@@ -1,0 +1,104 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisResources Class CATSamToolsForExplicitation</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisResources.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATSamToolsForExplicitation','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSamToolsForExplicitation','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATSamToolsForExplicitation','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSamToolsForExplicitation','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisResources Class CATSamToolsForExplicitation</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATSamToolsForExplicitation_58346','CATSamToolsForExplicitation','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATSamToolsForExplicitation</b>
+</p>
+<p>
+<b><i> Global Services to help explicitation.</i></b><br>
+<br></p>
+<hr>
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetParentFeature(CATAnalysisExplicitParent&amp;,CATIContainer*)"><b>GetParentFeature</b></a>(CATAnalysisExplicitParent&amp;,CATIContainer*)
+<dd>   Returns the feature that have created an object.
+ <dt> o 
+    <a href="#LogImplicitAxis(CATISamAnalysisSet*,CATAnalysisExplicitAxis&amp;)"><b>LogImplicitAxis</b></a>(CATISamAnalysisSet*,CATAnalysisExplicitAxis&amp;)
+<dd>    Logs the creation of an Explicit Axis.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetParentFeature"></a><a name="GetParentFeature(CATAnalysisExplicitParent&amp;,CATIContainer*)"></a> <dt> o <b>GetParentFeature</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject*')</script>  <b>GetParentFeature</b>(<td> const <script type="text/javascript"> activateLink('CATAnalysisExplicitParent','CATAnalysisExplicitParent&amp;')</script> <td><tt>iParent</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATIContainer','CATIContainer*')</script> <td><tt>ipiCont</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Returns the feature that have created an object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iParent</tt>
+   <dd> The explicitobject to search. </dd>
+    <dt><tt> ipiCont</tt>
+   <dd> The container in which the feature will be searched. </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  CATBaseUnknown#Release
+</dl>
+</dl>
+<a name="LogImplicitAxis"></a><a name="LogImplicitAxis(CATISamAnalysisSet*,CATAnalysisExplicitAxis&amp;)"></a> <dt> o <b>LogImplicitAxis</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>LogImplicitAxis</b>(<td> const <script type="text/javascript"> activateLink('CATISamAnalysisSet','CATISamAnalysisSet*')</script> <td><tt>piAxisSet</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATAnalysisExplicitAxis','CATAnalysisExplicitAxis&amp;')</script> <td><tt>iAxis</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+   Logs the creation of an Explicit Axis.
+  This feature must be used in order log the creation of an CATAnalysisExplicitAxis
+  when this creation is done during the explicitation of an boundary condition, load or property.
+  The axis life cyle is manage by the feature that manage the explicitation (By including the
+  entity in the NewExplicitlist of CATISamExplicitation after calling the UpdateExplicitList). But to be collected under the axis feature set, 
+  the axis must be also given to this Global Method. 
+  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> piAxisSet</tt>
+   <dd> the AxisSet feature.  </dd>
+    <dt><tt> iAxis</tt>
+   <dd> the explicit axis created.<p>  This explicit axis must be created with the explicit object associated to piAxisSet as parent.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATSamToolsForExplicitation.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisResources</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

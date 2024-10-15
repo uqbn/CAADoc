@@ -1,0 +1,96 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PartInterfaces Interface CATIUserPatt</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../PartInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIUserPatt','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIUserPatt','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIUserPatt','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIUserPatt','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PartInterfaces Interface CATIUserPatt</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIUserPatt_19928','CATIUserPatt','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIUserPatt</b>
+</p>
+<p>
+<b><i> Interface to read or modify the specifications of the user pattern.</i></b><br>
+
+ <b>Role</b>: The user pattern feature allows users to duplicate an original feature according
+ an user distribution.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetLocationElt()"><b>GetLocationElt</b></a>()
+<dd>  Returns the list of location elements.
+ <dt> o 
+    <a href="#GetNbCopy()"><b>GetNbCopy</b></a>()
+<dd>  Returns the number of times that the original feature will be duplicated.
+ <dt> o 
+    <a href="#ModifyLocationElt(CATISpecObject_var&amp;)"><b>ModifyLocationElt</b></a>(CATISpecObject_var&amp;)
+<dd>  Sets the location elements.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetLocationElt"></a><a name="GetLocationElt()"></a> <dt> o <b>GetLocationElt</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATLISTV(CATISpecObject_var)','CATLISTV(CATISpecObject_var)')</script>  <b>GetLocationElt</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the list of location elements.
+ The list is composed of one sketch of points.
+</dl>
+<a name="GetNbCopy"></a><a name="GetNbCopy()"></a> <dt> o <b>GetNbCopy</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetNbCopy</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the number of times that the original feature will be duplicated.
+</dl>
+<a name="ModifyLocationElt"></a><a name="ModifyLocationElt(CATISpecObject_var&amp;)"></a> <dt> o <b>ModifyLocationElt</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>ModifyLocationElt</b>(<td> const <script type="text/javascript"> activateLink('CATISpecObject_var','CATISpecObject_var&amp;')</script> <td><tt>ihObjectList</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the location elements.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ihObjectList</tt>
+   <dd>  One sketch of points.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIUserPatt.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATPartInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

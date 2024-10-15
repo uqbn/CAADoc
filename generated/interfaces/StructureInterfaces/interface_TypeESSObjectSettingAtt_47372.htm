@@ -1,0 +1,177 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>StructureInterfaces TypeESSObjectSettingAtt (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../StructureInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('TypeESSObjectSettingAtt','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('TypeESSObjectSettingAtt','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('TypeESSObjectSettingAtt','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('TypeESSObjectSettingAtt','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>TypeESSObjectSettingAtt<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_TypeESSObjectSettingAtt_47372','TypeESSObjectSettingAtt','0');</script>
+<b><i>   The interface to access a CATIATypeESSObjectSettingAtt.</i></b><br>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#MemberTypes"><b>MemberTypes</b></a>
+<dd>  Returns or sets the MemberTypes parameter.
+ <dt>
+    <a href="#PlateTypes"><b>PlateTypes</b></a>
+<dd>  Returns or sets the PlateTypes parameter.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetMemberTypesInfo"><b>GetMemberTypesInfo</b></a>
+<dd>   Retrieves environment informations for the MemberTypes parameter.
+ <dt>
+    <a href="#GetPlateTypesInfo"><b>GetPlateTypesInfo</b></a>
+<dd>   Retrieves environment informations for the PlateTypes parameter.
+ <dt>
+    <a href="#SetMemberTypesLock"><b>SetMemberTypesLock</b></a>
+<dd>  Locks or unlocks the MemberTypes parameter.
+ <dt>
+    <a href="#SetPlateTypesLock"><b>SetPlateTypesLock</b></a>
+<dd>  Locks or unlocks the PlateTypes parameter.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="MemberTypes"><dt>
+
+<table><tr><td>o Property <b>MemberTypes</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the MemberTypes parameter.
+ <p>
+ Ensure consistency with the C++ interface to which the work is delegated.
+</dl>
+<a name="PlateTypes"><dt>
+
+<table><tr><td>o Property <b>PlateTypes</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the PlateTypes parameter.
+ <p>
+ Ensure consistency with the C++ interface to which the work is delegated.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetMemberTypesInfo"><dt>
+
+<table><tr><td>o Func <b>GetMemberTypesInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioAdminLevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioLocked</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+  Retrieves environment informations for the MemberTypes parameter.
+ <br><b>Role</b>:Retrieves the state of the MemberTypes parameter 
+ in the current environment. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioAdminLevel</tt>
+   <dd>       <br>If the parameter is locked, AdminLevel gives the administration
+       level that imposes the value of the parameter.
+	 <br>If the parameter is not locked, AdminLevel gives the administration
+       level that will give the value of the parameter after a reset.
+ </dd>
+    <dt><tt> ioLocked</tt>
+   <dd>      Indicates if the parameter has been locked.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>        Indicates if the parameter has been explicitly modified or remain
+      to the administrated value.
+</dl>
+</dl>
+<a name="GetPlateTypesInfo"><dt>
+
+<table><tr><td>o Func <b>GetPlateTypesInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioAdminLevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioLocked</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+  Retrieves environment informations for the PlateTypes parameter.
+ <br><b>Role</b>:Retrieves the state of the PlateTypes parameter 
+ in the current environment. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioAdminLevel</tt>
+   <dd>       <br>If the parameter is locked, AdminLevel gives the administration
+       level that imposes the value of the parameter.
+	 <br>If the parameter is not locked, AdminLevel gives the administration
+       level that will give the value of the parameter after a reset.
+ </dd>
+    <dt><tt> ioLocked</tt>
+   <dd>      Indicates if the parameter has been locked.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>        Indicates if the parameter has been explicitly modified or remain
+      to the administrated value.
+</dl>
+</dl>
+<a name="SetMemberTypesLock"><dt>
+
+<table><tr><td>o Sub <b>SetMemberTypesLock</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLocked</tt>)</table></dt>
+<dl>
+  <dd>
+ Locks or unlocks the MemberTypes parameter.
+ <br><b>Role</b>:Locks or unlocks the MemberTypes parameter if it is possible
+ in the current administrative context. In user mode this method will always
+ return E_FAIL.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLocked</tt>
+   <dd>	the locking operation to be performed
+	<b>Legal values</b>:
+	<br><tt>TRUE :</tt>   to lock the parameter.
+ 	<br><tt>FALSE:</tt>   to unlock the parameter.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetPlateTypesLock"><dt>
+
+<table><tr><td>o Sub <b>SetPlateTypesLock</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLocked</tt>)</table></dt>
+<dl>
+  <dd>
+ Locks or unlocks the PlateTypes parameter.
+ <br><b>Role</b>:Locks or unlocks the PlateTypes parameter if it is possible
+ in the current administrative context. In user mode this method will always
+ return E_FAIL.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLocked</tt>
+   <dd>	the locking operation to be performed
+	<b>Legal values</b>:
+	<br><tt>TRUE :</tt>   to lock the parameter.
+ 	<br><tt>FALSE:</tt>   to unlock the parameter.</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

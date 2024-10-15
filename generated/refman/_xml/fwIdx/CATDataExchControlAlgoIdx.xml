@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="CATDataExchControlAlgo" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="0" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="CATDECPartToPartConvertor" initial="C" htmlFileName="class_CATDECPartToPartConvertor_55743" DSCharacteristic="class" id="55743" abstract="Create a new CATPart from a CATPart
+ &lt;br&gt; 
+ &lt;b&gt;Role&lt;/b&gt;: This service is used to convert a Part into a Part file." />
+<constructor name="CATDECPartToPartConvertor" htmlFileName="class_CATDECPartToPartConvertor_55743" containerName="CATDECPartToPartConvertor" containerType="class" id="88590" status="2" isProperty="0" initial="C" argList="()" />
+<method name="GetError" htmlFileName="class_CATDECPartToPartConvertor_55743" containerName="CATDECPartToPartConvertor" containerType="class" id="72860" status="26" isProperty="0" initial="G" argList="()" abstract="Error message if run failed." />
+<method name="GetResult" htmlFileName="class_CATDECPartToPartConvertor_55743" containerName="CATDECPartToPartConvertor" containerType="class" id="67972" status="26" isProperty="0" initial="G" argList="()" abstract="Result." />
+<method name="Run" htmlFileName="class_CATDECPartToPartConvertor_55743" containerName="CATDECPartToPartConvertor" containerType="class" id="59403" status="18" isProperty="0" initial="R" argList="()" abstract="Convert the part according to the options." />
+<method name="SetOption" htmlFileName="class_CATDECPartToPartConvertor_55743" containerName="CATDECPartToPartConvertor" containerType="class" id="99932" status="18" isProperty="0" initial="S" argList="(CATUnicodeString,CATBoolean)" abstract="Set or unset options." />
+<class name="CATDECProductToPartConvertor" initial="C" htmlFileName="class_CATDECProductToPartConvertor_64037" DSCharacteristic="class" id="64037" abstract="Create a new CATPart from a CATProduct
+ &lt;br&gt; 
+ &lt;b&gt;Role&lt;/b&gt;: This service is used to convert a Product into a Part file." />
+<constructor name="CATDECProductToPartConvertor" htmlFileName="class_CATDECProductToPartConvertor_64037" containerName="CATDECProductToPartConvertor" containerType="class" id="105178" status="2" isProperty="0" initial="C" argList="()" />
+<method name="GetError" htmlFileName="class_CATDECProductToPartConvertor_64037" containerName="CATDECProductToPartConvertor" containerType="class" id="81154" status="26" isProperty="0" initial="G" argList="()" abstract="Error message if run failed." />
+<method name="GetResult" htmlFileName="class_CATDECProductToPartConvertor_64037" containerName="CATDECProductToPartConvertor" containerType="class" id="76266" status="26" isProperty="0" initial="G" argList="()" abstract="Result." />
+<method name="Run" htmlFileName="class_CATDECProductToPartConvertor_64037" containerName="CATDECProductToPartConvertor" containerType="class" id="67697" status="18" isProperty="0" initial="R" argList="()" abstract="Convert the product according to the options." />
+<method name="SetOption" htmlFileName="class_CATDECProductToPartConvertor_64037" containerName="CATDECProductToPartConvertor" containerType="class" id="108226" status="18" isProperty="0" initial="S" argList="(CATUnicodeString,CATBoolean)" abstract="Set or unset options." />
+<class name="CATDECProductToProductConvertor" initial="C" htmlFileName="class_CATDECProductToProductConvertor_73495" DSCharacteristic="class" id="73495" abstract="Create a new CATProduct from a CATProduct
+ &lt;br&gt; 
+ &lt;b&gt;Role&lt;/b&gt;: This service is used to convert a Product into a Product." />
+<constructor name="CATDECProductToProductConvertor" htmlFileName="class_CATDECProductToProductConvertor_73495" containerName="CATDECProductToProductConvertor" containerType="class" id="124094" status="2" isProperty="0" initial="C" argList="()" />
+<method name="GetError" htmlFileName="class_CATDECProductToProductConvertor_73495" containerName="CATDECProductToProductConvertor" containerType="class" id="90612" status="26" isProperty="0" initial="G" argList="()" abstract="Error message if run failed." />
+<method name="GetResult" htmlFileName="class_CATDECProductToProductConvertor_73495" containerName="CATDECProductToProductConvertor" containerType="class" id="85724" status="26" isProperty="0" initial="G" argList="()" abstract="Result." />
+<method name="Run" htmlFileName="class_CATDECProductToProductConvertor_73495" containerName="CATDECProductToProductConvertor" containerType="class" id="77155" status="18" isProperty="0" initial="R" argList="()" abstract="Convert the product according to the options." />
+<method name="SetOption" htmlFileName="class_CATDECProductToProductConvertor_73495" containerName="CATDECProductToProductConvertor" containerType="class" id="117684" status="18" isProperty="0" initial="S" argList="(CATUnicodeString,CATBoolean)" abstract="Set or unset options." />
+<function name="CATCreatePartToPartConvertor" htmlFileName="function_CATCreatePartToPartConvertor_117448" id="117448" status="4" isProperty="0" initial="C" argList="(CATDocument*)" abstract="Constructs a CATDECPartToPartConvertor." />
+<function name="CATCreateProductToPartConvertor" htmlFileName="function_CATCreateProductToPartConvertor_135578" id="135578" status="4" isProperty="0" initial="C" argList="(CATDocument*)" abstract="Constructs a CATDECProductToPartConvertor." />
+<function name="CATCreateProductToProductConvertor" htmlFileName="function_CATCreateProductToProductConvertor_156036" id="156036" status="4" isProperty="0" initial="C" argList="(CATDocument*)" abstract="Constructs a CATDECProductToProductConvertor." />
+</fw>

@@ -1,0 +1,117 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>KnowledgeInterfaces Optimizations (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../KnowledgeInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Optimizations','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Optimizations','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Optimizations','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Optimizations','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Optimizations<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Optimizations_30034','Optimizations','0');</script>
+<b><i>   Represents a collection of optimization features.</i></b><br>
+
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('Optimization','');return false">Optimization</a>
+</dl>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#CreateConstraintsSatisfaction"><b>CreateConstraintsSatisfaction</b></a>
+<dd>  Returns a set of equations.
+ <dt>
+    <a href="#CreateOptimization"><b>CreateOptimization</b></a>
+<dd>  Creates an empty optimization.
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Retrieves an optimization using its index or its name from the
+ Optimizations collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="CreateConstraintsSatisfaction"><dt>
+
+<table><tr><td>o Func <b>CreateConstraintsSatisfaction</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iComment</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iFormulaBody</tt>) As <script type="text/javascript"> activateLink('SetOfEquation','SetOfEquation')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a set of equations.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iName</tt>
+   <dd> The name of the set of equations. </dd>
+    <dt><tt> iComment</tt>
+   <dd> The comment of the set of equations. </dd>
+    <dt><tt> iFormulaBody</tt>
+   <dd> The body of the set of equations " a==b+4; c &le; 90".</dd>
+</dl>
+</dl>
+</dl>
+<a name="CreateOptimization"><dt>
+
+<table><tr><td>o Func <b>CreateOptimization</b>(<td>) As <script type="text/javascript"> activateLink('Optimization','Optimization')</script> </table></dt>
+<dl>
+  <dd>
+ Creates an empty optimization.<br>
+ This optimization cannot be used while its properties have not been set.
+</dl>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> </table></dt>
+<dl>
+  <dd>
+ Retrieves an optimization using its index or its name from the
+ Optimizations collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the item (optimization or constraintSatisfaction) to retrieve from
+   the collection of optimizations.
+   As a numerics, this index is the rank of the item
+   in the collection.
+   The index of the first item in the collection is 1, and
+   the index of the last item is Count.
+   As a string, it is the name you assigned to the item using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property or when changing the item name by the property panel. 
+  <dt> <b>Returns:</b> 
+  <dd>  either the retrieved optimization or the retreived constraintSatisfaction <! @sample >
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves the last item (optimization or constraintSatisfaction) in the <tt>optimizations</tt>
+ collection. 
+ <pre>
+ Set lastItem = optimizations.<font color="red">Item</font>(optimizations.Count)
+ </pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

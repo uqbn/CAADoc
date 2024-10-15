@@ -1,0 +1,107 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ObjectModelerNavigator Interface CATINavigateObject</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ObjectModelerNavigator.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATINavigateObject','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATINavigateObject','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATINavigateObject','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATINavigateObject','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ObjectModelerNavigator Interface CATINavigateObject</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATINavigateObject_43364','CATINavigateObject','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATINavigateObject</b>
+</p>
+<p>
+<b><i> Interface to navigate in object tree.</i></b><br>
+
+ <b>Role:</b> This interface enables you to visualize a component in an object tree. This interface
+ implementation is mandatory, even if the component is a leaf. In this case, the <a href="#" onClick="openLink('','GetChildren');return false">GetChildren</a> method returns an empty list.
+ <p>Once you have implemented this interface, you may customize default behaviors
+ for the node representing your component. Refer to the 
+<a href="#" onClick="openLink('CATINavigElement','');return false">CATINavigElement</a>   and the 
+<a href="#" onClick="openLink('CATINavigModify','');return false">CATINavigModify</a> interfaces. Note that contrary to <tt>CATINavigateObject</tt>, the  implementation of these two interfaces is not mandatory.</p>
+ This interface is called in the following contexts:
+ <ul>
+   <li>When the node is redrawn, thanks to the 
+<a href="#" onClick="openLink('CATIRedrawEvent','');return false">CATIRedrawEvent</a> interface:     
+<a href="#" onClick="openLink('','GetIdentificators');return false">GetIdentificators</a> and 
+<a href="#" onClick="openLink('','GetChildren');return false">GetChildren</a> methods are then called.</li>   <li>When the node is expanded: 
+<a href="#" onClick="openLink('','GetChildren');return false">GetChildren</a> and    
+<a href="#" onClick="openLink('','GetIdentificators');return false">GetIdentificators</a> methods are then called.</li>   <li>When the node is collapsed: only 
+<a href="#" onClick="openLink('','GetIdentificators');return false">GetIdentificators</a> method is called.</li> </ul>
+ <p>This interface can be also used to "dump" the contents of an existing object tree.
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetChildren()"><b>GetChildren</b></a>()
+<dd>  Retrieves list of direct childrens in the tree.
+ <dt> o 
+    <a href="#GetIdentificators()"><b>GetIdentificators</b></a>()
+<dd>  Retrieves the node text.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetChildren"></a><a name="GetChildren()"></a> <dt> o <b>GetChildren</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATListValCATBaseUnknown','CATListValCATBaseUnknown_var*')</script>  <b>GetChildren</b>(<td>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves list of direct childrens in the tree.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   The children list.
+  <br>The <tt>CATINavigateObject</tt> interface will be called for each one. This list
+  is empty if the node is a leaf.
+</dl>
+</dl>
+<a name="GetIdentificators"></a><a name="GetIdentificators()"></a> <dt> o <b>GetIdentificators</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATListValCATUnicodeString','CATListValCATUnicodeString*')</script>  <b>GetIdentificators</b>(<td>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the node text.
+ <br><b>Role:</b>This method retrieves the 
+ text associated with the node. This text is used as reference for 
+ the graph name criterion of the Search mechanism. Refer to 
+ the <tt> CATIIniSearchGraphNameCriterion </tt> interface. 
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   The text of the node. There are as many strings as lines.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATINavigateObject.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATObjectModelerNavigator</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

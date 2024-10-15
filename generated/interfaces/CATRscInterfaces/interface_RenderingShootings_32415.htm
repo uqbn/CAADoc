@@ -1,0 +1,102 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATRscInterfaces RenderingShootings (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATRscInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('RenderingShootings','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('RenderingShootings','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('RenderingShootings','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('RenderingShootings','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>RenderingShootings<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_RenderingShootings_32415','RenderingShootings','0');</script>
+<b><i> A collection of all the Rendering Shootings objects.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Add"><b>Add</b></a>
+<dd>  Adds a new shooting to the shootings collection.
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns a renderingshooting index in the renderingshootings collection.
+ <dt>
+    <a href="#Remove"><b>Remove</b></a>
+<dd>  Removes a shooting from the shootings collection.
+ <dt>
+    <a href="#RemoveAll"><b>RemoveAll</b></a>
+<dd>  Removes all shootings from the collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Add"><dt>
+
+<table><tr><td>o Func <b>Add</b>(<td>) As <script type="text/javascript"> activateLink('RenderingShooting','RenderingShooting')</script> </table></dt>
+<dl>
+  <dd>
+ Adds a new shooting to the shootings collection.
+</dl>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('RenderingShooting','RenderingShooting')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a renderingshooting index in the renderingshootings collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index of the shooting to retrieve in the collection of shootings.
+   Compared with other collections, you cannot use the name of the
+   shooting as argument.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved shooting <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>
+ The following example returns in <tt>MyShooting</tt> the sixth
+ shooting in a shootings collection.
+ <pre>
+ Dim MyShooting As RenderingShooting
+ Set MyShooting = RenderingShootings.<font color="red">Item</font>(6)
+ </pre>
+</dl>
+</dl>
+<a name="Remove"><dt>
+
+<table><tr><td>o Sub <b>Remove</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes a shooting from the shootings collection.
+</dl>
+<a name="RemoveAll"><dt>
+
+<table><tr><td>o Sub <b>RemoveAll</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Removes all shootings from the collection.
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

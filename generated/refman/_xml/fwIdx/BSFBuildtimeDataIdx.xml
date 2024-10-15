@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="BSFBuildtimeData" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="0" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<define name="WIN32_LEAN_AND_MEAN" htmlFileName="define_WIN32_LEAN_AND_MEAN_26358" initial="W" id="26358" abstract="" />
+</fw>

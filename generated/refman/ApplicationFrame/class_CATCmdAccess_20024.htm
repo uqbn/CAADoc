@@ -1,0 +1,84 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ApplicationFrame Class CATCmdAccess</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ApplicationFrame.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATCmdAccess','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATCmdAccess','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATCmdAccess','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATCmdAccess','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ApplicationFrame Class CATCmdAccess</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATCmdAccess_20024','CATCmdAccess','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATCmdAccess</b>
+</p>
+<p>
+<b><i> Base class to create an access.</i></b><br>
+
+ <b>Role</b>: When you want to arrange commands to propose them appropriately to the end 
+ user, you need to either create a workshop or a workbench, or create an add-in to 
+ an existing workshop or workbench. When you create such objects, you create in fact 
+ a containment tree structure to access to the commands. A <b>node</b> of the tree is 
+ a <a href="#" onClick="openLink('CATCmdContainer','');return false">CATCmdContainer</a>, a 
+<a href="#" onClick="openLink('CATCmdWorkbench','');return false">CATCmdWorkbench</a> for the workbench or a 
+<a href="#" onClick="openLink('CATCmdWorkshop','');return false">CATCmdWorkshop</a> for the workshop,   and a <b>leaf</b> can be a 
+<a href="#" onClick="openLink('CATCmdStarter','');return false">CATCmdStarter</a> or  a 
+<a href="#" onClick="openLink('CATCmdSeparator','');return false">CATCmdSeparator</a>. All these objects are therefore  called accesses and their base class is <tt>CATCmdAccess</tt>. <br>
+
+ To create any access use the 
+<a href="#" onClick="openLink('NewAccess','');return false">NewAccess</a> macro.  
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIWorkshop','');return false">CATIWorkshop</a>, <a href="#" onClick="openLink('CATIWorkbench','');return false">CATIWorkbench</a>, <a href="#" onClick="openLink('CATIWorkbenchAddin','');return false">CATIWorkbenchAddin</a>, <a href="#" onClick="openLink('CATCommandHeader','');return false">CATCommandHeader</a>
+</dl>
+</p>
+<hr>
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#SetName(CATString&amp;,int)"><b>SetName</b></a>(CATString&amp;,int)
+<dd>  Sets the access name.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="SetName"></a><a name="SetName(CATString&amp;,int)"></a> <dt> o <b>SetName</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>SetName</b>(<td> const <script type="text/javascript"> activateLink('CATString','CATString&amp;')</script> <td><tt></tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>userRequest</tt><td><tt>= 0</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the access name.
+ <b>Role</b>: This name is used to define the NLS and RSC resources of the access 
+ and to anchor an access.
+</dl>
+<hr>
+ This object is included in the file: <b>CATCmdAccess.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATApplicationFrame</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

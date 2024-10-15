@@ -1,0 +1,122 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>KnowledgeInterfaces Interface CATICkeNaming</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../KnowledgeInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATICkeNaming','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICkeNaming','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATICkeNaming','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICkeNaming','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>KnowledgeInterfaces Interface CATICkeNaming</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATICkeNaming_29090','CATICkeNaming','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATICkeNaming</b>
+</p>
+<p>
+<b><i>     Interface dedicated to KBWare relations naming.</i></b><br>
+ 
+  <b>Role</b>: Parameters can be valuated by such an object.<br>
+  It is implemented on relations.<br>
+  The name is used to be shown to a user (it can be changed by user)<br>
+  The comment gives an explanation of it (it can be changed by user)<br>
+  The type of the object can not be changed<br></p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#SetUserAccess(CATICkeNaming::UserAccessMode)"><b>SetUserAccess</b></a>(CATICkeNaming::UserAccessMode)
+<dd>  Sets the rights on this naming object.
+ <dt> o 
+    <a href="#UserAccess()"><b>UserAccess</b></a>()
+<dd>  Returns the rights on this naming object.
+</dl>
+<dl>
+ <h2>Enumerated Type Index</h2> <br>
+ <dt> o 
+    <a href="#UserAccessMode"><b>UserAccessMode</b></a>
+<dd>  Rights defined on a naming object.
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="SetUserAccess"></a><a name="SetUserAccess(CATICkeNaming::UserAccessMode)"></a> <dt> o <b>SetUserAccess</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetUserAccess</b>(<td> const <script type="text/javascript"> activateLink('CATICkeNaming::UserAccessMode','CATICkeNaming::UserAccessMode')</script> <td><tt>iRights</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the rights on this naming object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iRights:</tt>
+   <dd> the rights <br><b>Legal values</b>:
+ <tt>NotSeen</tt> this relation is not seen by the user.
+ <tt>ReadOnly</tt> Default value : the relation will be seen but wont be modified
+ <tt>ReadWrite</tt>   the relation object can be modified, deactivated
+ <tt>User</tt> the relation can be modified or destroyed by end user</dd>
+</dl>
+</dl>
+</dl>
+<a name="UserAccess"></a><a name="UserAccess()"></a> <dt> o <b>UserAccess</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATICkeNaming::UserAccessMode','CATICkeNaming::UserAccessMode')</script>  <b>UserAccess</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the rights on this naming object.  
+ <br><b>Legal values</b>:
+ <tt>NotSeen</tt> this relation is not seen by the user.
+ <tt>ReadOnly</tt> Default value : the relation will be seen but wont be modified
+ <tt>ReadWrite</tt>   the relation object can be modified, deactivated
+ <tt>User</tt> the relation can be modified or destroyed by end user
+</dl>
+ <h2>Enumerated Types</h2> <br>
+<a name="UserAccessMode"> <dt> o <b>UserAccessMode</b>
+<dl>
+  <dd>
+<pre>
+enum <b>UserAccessMode</b> {
+  NotSeen,
+  ReadOnly,
+  ReadWrite,
+  User
+}
+</pre>
+ Rights defined on a naming object.
+ Used to define how this object can be used through Knowledgeware.<br>
+ <br><b>Legal values</b>:
+ <tt>NotSeen</tt> this relation is not seen by the user.
+ <tt>ReadOnly</tt> Default value : the relation will be seen but wont be modified
+ <tt>ReadWrite</tt>   the relation object can be modified, deactivated
+ <tt>User</tt> the relation can be modified or destroyed by end user
+ <tt>LockType</tt> the Type of Feature accepted in the list can not be modified or destroyed by end user
+</dl>
+<hr>
+ This object is included in the file: <b>CATICkeNaming.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>KnowledgeItf</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

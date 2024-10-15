@@ -1,0 +1,144 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ElecSchematicItf Interface CATIEdiMatingConnector</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ElecSchematicItf.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIEdiMatingConnector','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIEdiMatingConnector','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIEdiMatingConnector','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIEdiMatingConnector','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ElecSchematicItf Interface CATIEdiMatingConnector</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIEdiMatingConnector_39675','CATIEdiMatingConnector','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIEdiMatingConnector</b>
+</p>
+<p>
+<b><i> Interface to manage an electrical schematic Mating Connector.</i></b><br>
+
+ <b>Role</b>:This interfaces describes the electrical object Mating Connector.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetDevice(IUnknown**)"><b>GetDevice</b></a>(IUnknown**)
+<dd>  Gets Associated Device.
+ <dt> o 
+    <a href="#GetNumber(int*)"><b>GetNumber</b></a>(int*)
+<dd>  Gets Pin's Number on the current level.
+ <dt> o 
+    <a href="#ListConnectedMatingConnectors(CATIUnknownList**)"><b>ListConnectedMatingConnectors</b></a>(CATIUnknownList**)
+<dd>  Gets Connected Assembly Connector.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetDevice"></a><a name="GetDevice(IUnknown**)"></a> <dt> o <b>GetDevice</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetDevice</b>(<td><script type="text/javascript"> activateLink('IUnknown','IUnknown**')</script> <td><tt>oEdiDevice</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets Associated Device.
+ 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oEdiDevice</tt>
+   <dd>   The Device application object
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="GetNumber"></a><a name="GetNumber(int*)"></a> <dt> o <b>GetNumber</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetNumber</b>(<td><script type="text/javascript"> activateLink('int','int*')</script> <td><tt>oEdiNumber</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets Pin's Number on the current level.
+ 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oEdiNumber</tt>
+   <dd>   The identification number.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="ListConnectedMatingConnectors"></a><a name="ListConnectedMatingConnectors(CATIUnknownList**)"></a> <dt> o <b>ListConnectedMatingConnectors</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ListConnectedMatingConnectors</b>(<td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oLConnectedMatingCtrs</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets Connected Assembly Connector.
+ 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oConnectedAsmCtr</tt>
+   <dd>   The connected assembly connector.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIEdiMatingConnector.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

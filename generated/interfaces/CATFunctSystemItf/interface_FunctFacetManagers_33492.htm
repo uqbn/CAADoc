@@ -1,0 +1,80 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATFunctSystemItf FunctFacetManagers (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATFunctSystemItf.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('FunctFacetManagers','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('FunctFacetManagers','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('FunctFacetManagers','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('FunctFacetManagers','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>FunctFacetManagers<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_FunctFacetManagers_33492','FunctFacetManagers','0');</script>
+<b><i>   Represents the Functional Facet's Managers.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Elem"><b>Elem</b></a>
+<dd>  Returns a facet manager using its index or its name from the facet managers
+ collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Elem"><dt>
+
+<table><tr><td>o Func <b>Elem</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('FunctionalFacetMgr','FunctionalFacetMgr')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a facet manager using its index or its name from the facet managers
+ collection. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the facet manager to retrieve from
+   the collection of facet managers.
+   As a numerics, this index is the rank of the facet manager
+   in the collection.
+   The index of the first facet manager in the collection is 1, and
+   the index of the last facet manager is Count.
+   As a string, it is the name you assigned to the facet manager using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property. 
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved action <dt><b>Example:</b>
+ <dd>
+ This example retrieves in <tt>Obj1</tt> the fifth facet manager
+ in the collection and in <tt>Obj2</tt> the facet manager
+ named <tt>IMC</tt>.
+ <pre>
+ Dim Obj1 As FunctFacetManager
+ Set Obj1 = Desc.FacetManagers.<font color="red">Elem</font>(5)
+ Dim Obj2 As FunctFacetManager
+ Set Obj2 = Desc.FacetManagers.<font color="red">Elem</font>("IMC")
+ </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

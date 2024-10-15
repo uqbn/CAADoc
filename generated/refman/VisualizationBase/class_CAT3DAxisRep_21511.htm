@@ -1,0 +1,160 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>VisualizationBase Class CAT3DAxisRep</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../VisualizationBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CAT3DAxisRep','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CAT3DAxisRep','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CAT3DAxisRep','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CAT3DAxisRep','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>VisualizationBase Class CAT3DAxisRep</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CAT3DAxisRep_21511','CAT3DAxisRep','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CAT3DAxisRep</b>
+</p>
+<p>
+<b><i> Class to create the representation of an axis system.</i></b><br>
+
+ <b>Role</b>: view an axis system, possibly with arrow tips and labels.</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CAT3DAxisRep()"><b>CAT3DAxisRep</b></a>()
+<dd>  Constructs the representation of an axis system.
+ <dt> o 
+    <a href="#CAT3DAxisRep(CAT4x4Matrix&amp;,int,int)"><b>CAT3DAxisRep</b></a>(CAT4x4Matrix&amp;,int,int)
+<dd>  Constructs the representation of an axis system.
+ <dt> o 
+    <a href="#CAT3DAxisRep(CAT4x4Matrix&amp;,int,char*,int,char*,int,char*)"><b>CAT3DAxisRep</b></a>(CAT4x4Matrix&amp;,int,char*,int,char*,int,char*)
+<dd>  Constructs the representation of an axis system.
+ <dt> o 
+    <a href="#~CAT3DAxisRep()"><b>~CAT3DAxisRep</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Get(CAT3DFixedArrowGP*[3],CAT3DAnnotationTextGP*[3])"><b>Get</b></a>(CAT3DFixedArrowGP*[3],CAT3DAnnotationTextGP*[3])
+<dd>  Get the CAT3DFixedArrowGPs and the CAT3DAnnotationTextGPs which compose the axis.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CAT3DAxisRep"></a><a name="CAT3DAxisRep()"></a> <dt> o <b>CAT3DAxisRep</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CAT3DAxisRep</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs the representation of an axis system.
+</dl>
+<a name="CAT3DAxisRep"></a><a name="CAT3DAxisRep(CAT4x4Matrix&amp;,int,int)"></a> <dt> o <b>CAT3DAxisRep</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CAT3DAxisRep</b>(<td><script type="text/javascript"> activateLink('CAT4x4Matrix','CAT4x4Matrix&amp;')</script> <td><tt>iMatrix</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iArrowShaftLength</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iArrowTipLength</tt><td><tt>= 5</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs the representation of an axis system.  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iMatrix</tt>
+   <dd>  The matrix defining the origin and the three directions of the axis system.
+  </dd>
+    <dt><tt> iArrowShaftLength</tt>
+   <dd>  The length of the arrow shaft in mm.
+  </dd>
+    <dt><tt> iArrowTipLength</tt>
+   <dd>  The length of the arrow tip in mm.</dd>
+</dl>
+</dl>
+</dl>
+<a name="CAT3DAxisRep"></a><a name="CAT3DAxisRep(CAT4x4Matrix&amp;,int,char*,int,char*,int,char*)"></a> <dt> o <b>CAT3DAxisRep</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CAT3DAxisRep</b>(<td><script type="text/javascript"> activateLink('CAT4x4Matrix','CAT4x4Matrix&amp;')</script> <td><tt>iMatrix</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iXArrowShaftLength</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('char','char*')</script> <td><tt>iXLabel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iYArrowShaftLength</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('char','char*')</script> <td><tt>iYLabel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iZArrowShaftLength</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('char','char*')</script> <td><tt>iZLabel</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs the representation of an axis system.  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iMatrix</tt>
+   <dd>  The matrix defining the origin and the three directions of the axis system.
+  </dd>
+    <dt><tt> iXArrowShaftLength</tt>
+   <dd>  The length (in mm) of the shaft of the first arrow. 
+  </dd>
+    <dt><tt> iXLabel</tt>
+   <dd>  The text of the label of the first arrow.
+  </dd>
+    <dt><tt> iYArrowShaftLength</tt>
+   <dd>  The length (in mm) of the shaft of the second arrow. 
+  </dd>
+    <dt><tt> iYLabel</tt>
+   <dd>  The text of the label of the second arrow.
+  </dd>
+    <dt><tt> iZArrowShaftLength</tt>
+   <dd>  The length (in mm) of the shaft of the third arrow. 
+  </dd>
+    <dt><tt> iZLabel</tt>
+   <dd>  The text of the label of the third arrow.</dd>
+</dl>
+</dl>
+</dl>
+<a name="~CAT3DAxisRep"></a><a name="~CAT3DAxisRep()"></a> <dt> o <b>~CAT3DAxisRep</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CAT3DAxisRep</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Get"></a><a name="Get(CAT3DFixedArrowGP*[3],CAT3DAnnotationTextGP*[3])"></a> <dt> o <b>Get</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>Get</b>(<td><script type="text/javascript"> activateLink('CAT3DFixedArrowGP*[3','CAT3DFixedArrowGP*[3]')</script> <td><tt>oAxis</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CAT3DAnnotationTextGP*[3','CAT3DAnnotationTextGP*[3]')</script> <td><tt>oText</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Get the CAT3DFixedArrowGPs and the CAT3DAnnotationTextGPs which compose the axis.<br>  Do not delete the return pointers.
+  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oAxis[3]</tt>
+   <dd>  Return the 3 </dd>
+<a href="#" onClick="openLink('CAT3DFixedArrowGP','');return false">CAT3DFixedArrowGP</a> pointers which compose the axis.  
+    <dt><tt> oText[3]</tt>
+   <dd>  Return the 3 </dd>
+<a href="#" onClick="openLink('CAT3DAnnotationTextGP','');return false">CAT3DAnnotationTextGP</a> pointers which compose the axis.
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CAT3DAxisRep.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATViz</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

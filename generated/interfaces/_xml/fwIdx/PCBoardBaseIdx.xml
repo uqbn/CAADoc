@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="PCBoardBase" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="1" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<enum name="CatElectronicType" htmlFileName="enum_CatElectronicType_20359" initial="C" id="20359" abstract="" />
+<class name="PCBArea" initial="P" htmlFileName="interface_PCBArea_11004" fatherClass="AnyObject" fatherId="9080" DSCharacteristic="interface" id="11004" abstract="" />
+<method name="AreaType" htmlFileName="interface_PCBArea_11004" containerName="PCBArea" containerType="interface" id="17213" status="32" isProperty="1" initial="A" argList="" abstract="" />
+<method name="Heightmax" htmlFileName="interface_PCBArea_11004" containerName="PCBArea" containerType="interface" id="18195" status="96" isProperty="1" initial="H" argList="" abstract="" />
+<method name="Heightmin" htmlFileName="interface_PCBArea_11004" containerName="PCBArea" containerType="interface" id="18171" status="96" isProperty="1" initial="H" argList="" abstract="" />
+<method name="Identifier" htmlFileName="interface_PCBArea_11004" containerName="PCBArea" containerType="interface" id="19088" status="96" isProperty="1" initial="I" argList="" abstract="" />
+<method name="LAYER" htmlFileName="interface_PCBArea_11004" containerName="PCBArea" containerType="interface" id="15064" status="32" isProperty="1" initial="L" argList="" abstract="" />
+<method name="OWNER" htmlFileName="interface_PCBArea_11004" containerName="PCBArea" containerType="interface" id="15064" status="96" isProperty="1" initial="O" argList="" abstract="" />
+<class name="PCBBoard" initial="P" htmlFileName="interface_PCBBoard_11777" fatherClass="AnyObject" fatherId="9080" DSCharacteristic="interface" id="11777" abstract="" />
+<method name="create_pcbhole" htmlFileName="interface_PCBBoard_11777" containerName="PCBBoard" containerType="interface" id="24533" status="0" isProperty="0" initial="C" argList="" abstract="  This method allows to add a Pcb hole to a board or a panel." />
+<method name="create_pcbpattern" htmlFileName="interface_PCBBoard_11777" containerName="PCBBoard" containerType="interface" id="29634" status="0" isProperty="0" initial="C" argList="" abstract="  This method allows to add a Pcb pattern of hole to a board or a panel." />
+<method name="create_zone" htmlFileName="interface_PCBBoard_11777" containerName="PCBBoard" containerType="interface" id="20947" status="0" isProperty="0" initial="C" argList="" abstract="  This method allows to add a constraint area to a board." />
+<method name="Owner" htmlFileName="interface_PCBBoard_11777" containerName="PCBBoard" containerType="interface" id="16157" status="96" isProperty="1" initial="O" argList="" abstract="" />
+<method name="Part" htmlFileName="interface_PCBBoard_11777" containerName="PCBBoard" containerType="interface" id="15732" status="96" isProperty="1" initial="P" argList="" abstract="set the pad of a Board or a component or a panel." />
+<class name="PCBComponent" initial="P" htmlFileName="interface_PCBComponent_16070" fatherClass="AnyObject" fatherId="9080" DSCharacteristic="interface" id="16070" abstract="" />
+<method name="CAPACITANCE" htmlFileName="interface_PCBComponent_16070" containerName="PCBComponent" containerType="interface" id="23281" status="96" isProperty="1" initial="C" argList="" abstract="Allow to get and set the CAPACITANCE  Type of a component." />
+<method name="POWEROPR" htmlFileName="interface_PCBComponent_16070" containerName="PCBComponent" containerType="interface" id="21589" status="96" isProperty="1" initial="P" argList="" abstract="" />
+<method name="POWER_MAX" htmlFileName="interface_PCBComponent_16070" containerName="PCBComponent" containerType="interface" id="22236" status="96" isProperty="1" initial="P" argList="" abstract="Allow to get and set the POWER MAX  of a component." />
+<method name="PackageNumber" htmlFileName="interface_PCBComponent_16070" containerName="PCBComponent" containerType="interface" id="27399" status="96" isProperty="1" initial="P" argList="" abstract="" />
+<method name="RESISTANCE" htmlFileName="interface_PCBComponent_16070" containerName="PCBComponent" containerType="interface" id="22651" status="96" isProperty="1" initial="R" argList="" abstract="Allow to get and set the RESISTANCE of a component." />
+<method name="THERM_COND" htmlFileName="interface_PCBComponent_16070" containerName="PCBComponent" containerType="interface" id="22782" status="96" isProperty="1" initial="T" argList="" abstract="Allow to get and set the thermal conductivity of a component." />
+<method name="THETA_JB" htmlFileName="interface_PCBComponent_16070" containerName="PCBComponent" containerType="interface" id="21455" status="96" isProperty="1" initial="T" argList="" abstract="Allow to get and set the  junction to board thermal resistance of a component." />
+<method name="THETA_JC" htmlFileName="interface_PCBComponent_16070" containerName="PCBComponent" containerType="interface" id="21462" status="96" isProperty="1" initial="T" argList="" abstract="Allow to get and set the  junction to case thermal resistance of a component." />
+<method name="TOLERANCE" htmlFileName="interface_PCBComponent_16070" containerName="PCBComponent" containerType="interface" id="21932" status="96" isProperty="1" initial="T" argList="" abstract="Allow to get and set the  TOLERANCE of a component." />
+<class name="PCBHoleAndPattern" initial="P" htmlFileName="interface_PCBHoleAndPattern_22958" fatherClass="AnyObject" fatherId="9080" DSCharacteristic="interface" id="22958" abstract="" />
+<method name="AssociatedPartName" htmlFileName="interface_PCBHoleAndPattern_22958" containerName="PCBHoleAndPattern" containerType="interface" id="41692" status="96" isProperty="1" initial="A" argList="" abstract="Allow to get and set the Associated Part  
+ of a hole
+ The possible values are : 
+    the name of the instance of component in which the hole is defined." />
+<method name="HoleOwner" htmlFileName="interface_PCBHoleAndPattern_22958" containerName="PCBHoleAndPattern" containerType="interface" id="30060" status="96" isProperty="1" initial="H" argList="" abstract="" />
+<method name="HoleType" htmlFileName="interface_PCBHoleAndPattern_22958" containerName="PCBHoleAndPattern" containerType="interface" id="29190" status="96" isProperty="1" initial="H" argList="" abstract="" />
+<method name="PlatingStyle" htmlFileName="interface_PCBHoleAndPattern_22958" containerName="PCBHoleAndPattern" containerType="interface" id="33267" status="96" isProperty="1" initial="P" argList="" abstract="" />
+<class name="PCBObject" initial="P" htmlFileName="interface_PCBObject_12652" fatherClass="AnyObject" fatherId="9080" DSCharacteristic="interface" id="12652" />
+<method name="RemoveElectronicBehaviour" htmlFileName="interface_PCBObject_12652" containerName="PCBObject" containerType="interface" id="47485" status="0" isProperty="0" initial="R" argList="" abstract="" />
+<method name="ElectronicType" htmlFileName="interface_PCBObject_12652" containerName="PCBObject" containerType="interface" id="25570" status="32" isProperty="1" initial="E" argList="" abstract="Allow to know if  : a Product is a BOARD, a PANEL or a COMPONENT, a Hole is a PBD Hole
+ a pattenr is a PCB pattern, a Pad is a contraint area." />
+<class name="PCBWorkbench" initial="P" htmlFileName="interface_PCBWorkbench_15801" fatherClass="Workbench" fatherId="15563" DSCharacteristic="interface" id="15801" abstract="  Interface to access  Circuit Board Design workbench object." />
+<method name="CreateBoard" htmlFileName="interface_PCBWorkbench_15801" containerName="PCBWorkbench" containerType="interface" id="24634" status="0" isProperty="0" initial="C" argList="" abstract="Allows to create a Board." />
+<method name="CreateComponent" htmlFileName="interface_PCBWorkbench_15801" containerName="PCBWorkbench" containerType="interface" id="30304" status="0" isProperty="0" initial="C" argList="" abstract="Allows to create a Component." />
+<method name="CreatePanel" htmlFileName="interface_PCBWorkbench_15801" containerName="PCBWorkbench" containerType="interface" id="24687" status="0" isProperty="0" initial="C" argList="" abstract="Allows to create a panel." />
+<method name="GetRootProduct" htmlFileName="interface_PCBWorkbench_15801" containerName="PCBWorkbench" containerType="interface" id="28811" status="0" isProperty="0" initial="G" argList="" abstract=" Allows to get the root product of a document." />
+</fw>

@@ -1,0 +1,124 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATFunctSystemItf Interface CATIFunctActionsGroup</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATFunctSystemItf.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIFunctActionsGroup','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIFunctActionsGroup','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIFunctActionsGroup','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIFunctActionsGroup','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATFunctSystemItf Interface CATIFunctActionsGroup</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIFunctActionsGroup_39715','CATIFunctActionsGroup','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIFunctActionsGroup</b>
+</p>
+<p>
+<b><i> The interface to access a group of functional actions in a system.</i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Add(CATIFunctAction*)"><b>Add</b></a>(CATIFunctAction*)
+<dd>  Adds an action to the actions' group.
+ <dt> o 
+    <a href="#GetActions()"><b>GetActions</b></a>()
+<dd>   Get the list of Functional Actions included in the group.
+ <dt> o 
+    <a href="#GetExtremities(double&amp;,double&amp;,double&amp;,double&amp;)"><b>GetExtremities</b></a>(double&amp;,double&amp;,double&amp;,double&amp;)
+<dd>  Get coordinates of Input and Output extremities.
+ <dt> o 
+    <a href="#RemovePosition(long)"><b>RemovePosition</b></a>(long)
+<dd>  Removes an action from the actions' group.
+ <dt> o 
+    <a href="#SetExtremities(double,double,double,double)"><b>SetExtremities</b></a>(double,double,double,double)
+<dd>  Set coordinates of Input and Output extremities.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Add"></a><a name="Add(CATIFunctAction*)"></a> <dt> o <b>Add</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>Add</b>(<td><script type="text/javascript"> activateLink('CATIFunctAction','CATIFunctAction*')</script> <td><tt>iAction</tt>)<script type="text/javascript"> activateLink('0','= 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Adds an action to the actions' group. 
+ <p>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAction</tt>
+   <dd>   The action to be added to the group of actions.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetActions"></a><a name="GetActions()"></a> <dt> o <b>GetActions</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATLISTV(CATBaseUnknown_var)','CATLISTV(CATBaseUnknown_var)*')</script>  <b>GetActions</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Get the list of Functional Actions included in the group.
+</dl>
+<a name="GetExtremities"></a><a name="GetExtremities(double&amp;,double&amp;,double&amp;,double&amp;)"></a> <dt> o <b>GetExtremities</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetExtremities</b>(<td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oInputX</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oInputY</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oOutputX</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oOutputY</tt>)<script type="text/javascript"> activateLink('0','= 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Get coordinates of Input and Output extremities.
+</dl>
+<a name="RemovePosition"></a><a name="RemovePosition(long)"></a> <dt> o <b>RemovePosition</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RemovePosition</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iPosition</tt>)<script type="text/javascript"> activateLink('0','= 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Removes an action from the actions' group. 
+ <p>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPosition</tt>
+   <dd>   The position of the action to be removed from the group of actions.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetExtremities"></a><a name="SetExtremities(double,double,double,double)"></a> <dt> o <b>SetExtremities</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetExtremities</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iInputX</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iInputY</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iOutputX</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iOutputY</tt>)<script type="text/javascript"> activateLink('0','= 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Set coordinates of Input and Output extremities.
+</dl>
+<hr>
+ This object is included in the file: <b>CATIFunctActionsGroup.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>FunctionalAnalysisItfCPP</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

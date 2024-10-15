@@ -1,0 +1,109 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GeometricObjects Interface CATGeometry</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GeometricObjects.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATGeometry','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATGeometry','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATGeometry','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATGeometry','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GeometricObjects Interface CATGeometry</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATGeometry_22174','CATGeometry','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATGeometry</b>
+</p>
+<p>
+<b><i> Interface representing the base class for all geometric
+ objects that can be streamed and moved.</i></b><br>
+
+<br>The derived objects are created inside a geometric container
+(<tt>CATGeoFactory</tt>) by using the corresponding <tt>CATGeoFactory::Createxxx</tt>
+ methods . They are removed by the <tt>CATICGMContainer::Remove</tt> method.
+ The factory specifies the model size and the minimum size of a valid object.
+<ul>
+ <li>A CATGeometry can return a box (called bounding box) that contains it. 
+ <li>A CATGeometry can be transformed (in duplicate or replace mode)
+  by the use of a <tt>CATTransfoManager</tt> that takes into account
+ the forward links.
+</ul>
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATGeoFactory','');return false">CATGeoFactory</a>, <a href="#" onClick="openLink('CATTransfoManager','');return false">CATTransfoManager</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetBoundingBox()"><b>GetBoundingBox</b></a>()
+<dd>  Returns a CATMathBox that contains <tt>this</tt> CATGeometry, with regards to
+ its current limitations.
+ <dt> o 
+    <a href="#GetBoundingBox(CATMathBox&amp;)"><b>GetBoundingBox</b></a>(CATMathBox&amp;)
+<dd>  Returns a CATMathBox that contains <tt>this</tt> CATGeometry, with regards to
+ its current limitations.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetBoundingBox"></a><a name="GetBoundingBox()"></a> <dt> o <b>GetBoundingBox</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATMathBox','CATMathBox')</script>  <b>GetBoundingBox</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns a CATMathBox that contains <tt>this</tt> CATGeometry, with regards to
+ its current limitations. The signature which returns the CATMathBox in output argument
+ should be preferably used.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The containing box.
+</dl>
+</dl>
+<a name="GetBoundingBox"></a><a name="GetBoundingBox(CATMathBox&amp;)"></a> <dt> o <b>GetBoundingBox</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>GetBoundingBox</b>(<td><script type="text/javascript"> activateLink('CATMathBox','CATMathBox&amp;')</script> <td><tt>ioBox</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns a CATMathBox that contains <tt>this</tt> CATGeometry, with regards to
+ its current limitations.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioBox</tt>
+   <dd> The containing box.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATGeometry.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGeometricObjects</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

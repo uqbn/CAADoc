@@ -1,0 +1,197 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>DraftingInterfaces DrawingViews (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../DraftingInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('DrawingViews','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('DrawingViews','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('DrawingViews','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('DrawingViews','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>DrawingViews<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_DrawingViews_26690','DrawingViews','0');</script>
+<b><i> A collection of all the drawing views currently managed by a
+ drawing sheet in a drawing document.</i></b><br>
+
+ <br><b>Warning</b>: This interface is not available with 2D Layout for 3D Design.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#ActiveView"><b>ActiveView</b></a>
+<dd>  Returns the active drawing view of the active drawing sheet.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Add"><b>Add</b></a>
+<dd>  Creates a drawing view and adds it to the drawing view collection.
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns a drawing view using its index or its name from the DrawingViews collection.
+ <dt>
+    <a href="#Remove"><b>Remove</b></a>
+<dd>  Removes a drawing view from the DrawingViews collection.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="ActiveView"><dt>
+
+<table><tr><td>o Property <b>ActiveView</b>(<td>) As <script type="text/javascript"> activateLink('DrawingView','DrawingView')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the active drawing view of the active drawing sheet.
+ <br><b>Warning</b>: This method is not available with 2D Layout for 3D Design.
+ <!-- @sample -->
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ The following example retrieves in <tt>ViewToWorkIn</tt>
+ the active drawing view
+ in the DrawingSheets collection of the document named <tt>CATDrawing1</tt>
+ <pre>
+ Dim MyDrawingDoc As Document
+ Set MyDrawingDoc = CATIA.Documents.Item("CATDrawing1")
+ Dim ViewToWorkIn As DrawingView
+ Set ViewToWorkIn = MyDrawingDoc.Sheets.ActiveSheet.DrawingViews.<font color="red">ActiveView</font>
+ </pre>
+ </dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Add"><dt>
+
+<table><tr><td>o Func <b>Add</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iDrawingViewName</tt>) As <script type="text/javascript"> activateLink('DrawingView','DrawingView')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a drawing view and adds it to the drawing view collection.
+ This drawing view becomes the active one.
+ <br><b>Warning</b>: This method is not available with 2D Layout for 3D Design.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDrawingViewName</tt>
+   <dd>   The name to assign to the created drawing view
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The created drawing view <!-- @sample -->
+ </dl>
+ <dt><b>Example:</b>
+ <dd>
+ The following example creates a drawing view named <tt>LeftView</tt>
+ and retrieved in <tt>MyView</tt>
+ in the drawing view collection of the <tt>MySheet</tt> drawing sheet.
+ This sheet belongs to 
+ the drawing sheet collection of the drawing document named
+ <tt>CATDrawing1</tt>.
+ <pre>
+ Dim MyDrawingDoc As Document
+ Set MyDrawingDoc = CATIA.Documents.Item("CATDrawing1")
+ Dim MySheet As DrawingSheet
+ Set MySheet = MyDrawingDoc.Sheets.<font color="red">Item</font>("FirstSheet")
+ Dim MyView As DrawingView
+ Set MyView = MySheet.Views.<font color="red">Add</font>("LeftView")
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('DrawingView','DrawingView')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a drawing view using its index or its name from the DrawingViews collection.
+ <br><b>Warning</b>: This method is not available with 2D Layout for 3D Design.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the drawing view to retrieve from
+   the collection of drawing views.
+   As a numerics, this index is the rank of the drawing view
+   in the collection.
+   The index of the first drawing view in the collection is 1, and
+   the index of the last drawing view is Count.
+   As a string, it is the name you assigned to the drawing view using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property or when creating it using   the 
+<a href="#" onClick="openLink('','Add');return false">Add</a> method. 
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved drawing view 
+  <dt> <b>Example:</b> 
+  <dd>  This example retrieves in <tt>ThisDrawingView</tt> the second drawing view,
+ and in <tt>ThatDrawingView</tt> the drawing view named
+ <tt>MyView</tt> in the drawing view collection of the active sheet
+ in the active document, supposed to be a drawing document.
+ <pre>
+ Dim MySheet As DrawingSheet
+ Set MySheet = CATIA.ActiveDocument.Sheets.ActiveSheet
+ Dim ThisDrawingView As DrawingView
+ Set ThisDrawingView = MySheet.Views.ActiveView.<font color="red">Item</font>(2)
+ Dim ThatDrawingView As DrawingView
+ Set ThatDrawingView = MySheet.Views.ActiveView.<font color="red">Item</font>("MyView")
+ </pre>
+</dl>
+</dl>
+<a name="Remove"><dt>
+
+<table><tr><td>o Sub <b>Remove</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes a drawing view from the DrawingViews collection.
+ <br><b>Warning</b>: This method is not available with 2D Layout for 3D Design and 
+ it's forbidden and not possible to delete main view and background view contained in this collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the drawing view to remove from
+   the collection of drawing views.
+   As a numerics, this index is the rank of the drawing view
+   in the collection.
+   The index of the first drawing view in the collection is 1, and
+   the index of the last drawing view is Count.
+   As a string, it is the name you assigned to the drawing view using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property or when creating it using   the 
+<a href="#" onClick="openLink('','Add');return false">Add</a> method. <!-- @sample -->
+ </dl>
+ <dt><b>Example:</b>
+ <dd>
+ The following example removes the third drawing view and the drawing view
+ named <tt>TopView</tt> in the drawing view collection of the active sheet
+ of the active document, supposed to be a drawing document.
+ <pre>
+ Dim MySheet As DrawingSheet
+ Set MySheet = CATIA.ActiveDocument.Sheets.ActiveSheet
+ MySheet.ActiveViews.<font color="red">Remove</font>(3)
+ MySheet.ActiveViews.<font color="red">Remove</font>("TopView")
+ </pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

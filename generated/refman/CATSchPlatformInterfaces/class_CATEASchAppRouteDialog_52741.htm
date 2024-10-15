@@ -1,0 +1,107 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Class CATEASchAppRouteDialog</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATEASchAppRouteDialog','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEASchAppRouteDialog','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATEASchAppRouteDialog','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEASchAppRouteDialog','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Class CATEASchAppRouteDialog</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATEASchAppRouteDialog_52741','CATEASchAppRouteDialog','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATEASchAppRouteDialog</b>
+</p>
+<p>
+<b><i> Super class to derive implementation for interface CATISchAppRouteDialog.</i></b><br>
+
+ <b>Role</b>: Adaptor</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATEASchAppRouteDialog()"><b>CATEASchAppRouteDialog</b></a>()
+<dd>  Constructs an empty CATEASchAppRouteDialog.
+ <dt> o 
+    <a href="#~CATEASchAppRouteDialog()"><b>~CATEASchAppRouteDialog</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AppGetApplicationDialog(CATDialog*,char*,CATISchAppRouteCATDlgFrame**)"><b>AppGetApplicationDialog</b></a>(CATDialog*,char*,CATISchAppRouteCATDlgFrame**)
+<dd>  Provide the application sub-class of CATDlgFrame to enhance the schematic 
+ platform route command.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATEASchAppRouteDialog"></a><a name="CATEASchAppRouteDialog()"></a> <dt> o <b>CATEASchAppRouteDialog</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATEASchAppRouteDialog</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs an empty CATEASchAppRouteDialog.
+</dl>
+<a name="~CATEASchAppRouteDialog"></a><a name="~CATEASchAppRouteDialog()"></a> <dt> o <b>~CATEASchAppRouteDialog</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATEASchAppRouteDialog</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AppGetApplicationDialog"></a><a name="AppGetApplicationDialog(CATDialog*,char*,CATISchAppRouteCATDlgFrame**)"></a> <dt> o <b>AppGetApplicationDialog</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppGetApplicationDialog</b>(<td><script type="text/javascript"> activateLink('CATDialog','CATDialog*')</script> <td><tt>iParentDialog</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('char','char*')</script> <td><tt>iAppRouteType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATISchAppRouteCATDlgFrame','CATISchAppRouteCATDlgFrame**')</script> <td><tt>oAppCATDlgFrame</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Provide the application sub-class of CATDlgFrame to enhance the schematic 
+ platform route command.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iParentDialog</tt>
+   <dd>   pointer to the parent dialog object
+ </dd>
+    <dt><tt> iRouteType</tt>
+   <dd>   the application route type the dialog supports
+ </dd>
+    <dt><tt> oAppCATDlgFrame</tt>
+   <dd>   pointer to application CATDlgFrame that ties to CATISchAppRouteCATDlgFrame
+   interface.The caller must allocate memory for 
+   the first level pointer (i.e. oAppCATDlgFrame) and release the second level
+   pointer (i.e. *oAppCATDlgFrame) after usage.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATEASchAppRouteDialog.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATSchItfCPP</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

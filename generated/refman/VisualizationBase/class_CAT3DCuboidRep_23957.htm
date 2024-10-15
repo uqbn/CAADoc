@@ -1,0 +1,164 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>VisualizationBase Class CAT3DCuboidRep</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../VisualizationBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CAT3DCuboidRep','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CAT3DCuboidRep','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CAT3DCuboidRep','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CAT3DCuboidRep','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>VisualizationBase Class CAT3DCuboidRep</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CAT3DCuboidRep_23957','CAT3DCuboidRep','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CAT3DCuboidRep</b>
+</p>
+<p>
+<b><i> Class to create the representation of a box.</i></b><br>
+
+ <b>Role</b>: view a closed box (or part of a box).</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CAT3DCuboidRep(int)"><b>CAT3DCuboidRep</b></a>(int)
+<dd>  Constructs a default representation of a box.
+ <dt> o 
+    <a href="#CAT3DCuboidRep(CATMathPointf&amp;,CATMathVectorf&amp;,CATMathVectorf&amp;,CATMathVectorf&amp;,int)"><b>CAT3DCuboidRep</b></a>(CATMathPointf&amp;,CATMathVectorf&amp;,CATMathVectorf&amp;,CATMathVectorf&amp;,int)
+<dd>  Constructs the representation of a box.
+ <dt> o 
+    <a href="#~CAT3DCuboidRep()"><b>~CAT3DCuboidRep</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Modify(CATMathPointf&amp;)"><b>Modify</b></a>(CATMathPointf&amp;)
+<dd>  Modifies the representation of a box.
+ <dt> o 
+    <a href="#Modify(CATMathPointf&amp;,CATMathVectorf&amp;,CATMathVectorf&amp;,CATMathVectorf&amp;)"><b>Modify</b></a>(CATMathPointf&amp;,CATMathVectorf&amp;,CATMathVectorf&amp;,CATMathVectorf&amp;)
+<dd>  Modifies the representation of a box.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CAT3DCuboidRep"></a><a name="CAT3DCuboidRep(int)"></a> <dt> o <b>CAT3DCuboidRep</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CAT3DCuboidRep</b>(<td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iFacesStatus</tt><td><tt>= CATBoxFaces</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a default representation of a box.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFacesStatus</tt>
+   <dd> The style of the representation indicates which portions of the box are seen.</dd>
+</dl>
+</dl>
+</dl>
+<a name="CAT3DCuboidRep"></a><a name="CAT3DCuboidRep(CATMathPointf&amp;,CATMathVectorf&amp;,CATMathVectorf&amp;,CATMathVectorf&amp;,int)"></a> <dt> o <b>CAT3DCuboidRep</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CAT3DCuboidRep</b>(<td> const <script type="text/javascript"> activateLink('CATMathPointf','CATMathPointf&amp;')</script> <td><tt>iCorner</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathVectorf','CATMathVectorf&amp;')</script> <td><tt>iX</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathVectorf','CATMathVectorf&amp;')</script> <td><tt>iY</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathVectorf','CATMathVectorf&amp;')</script> <td><tt>iZ</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iColor</tt><td><tt>= 2</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs the representation of a box.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCorner</tt>
+   <dd> The reference corner of the box.
+ </dd>
+    <dt><tt> iX</tt>
+   <dd> Yields the orientation and the length of the box along the first direction.
+ </dd>
+    <dt><tt> iY</tt>
+   <dd> Yields the orientation and the length of the box along the second direction.
+ </dd>
+    <dt><tt> iZ</tt>
+   <dd> Yields the orientation and the length of the box along the third direction.
+ </dd>
+    <dt><tt> iColor</tt>
+   <dd> Color of the representation.</dd>
+</dl>
+</dl>
+</dl>
+<a name="~CAT3DCuboidRep"></a><a name="~CAT3DCuboidRep()"></a> <dt> o <b>~CAT3DCuboidRep</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CAT3DCuboidRep</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Modify"></a><a name="Modify(CATMathPointf&amp;)"></a> <dt> o <b>Modify</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>Modify</b>(<td> const <script type="text/javascript"> activateLink('CATMathPointf','CATMathPointf&amp;')</script> <td><tt>iCorner</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the representation of a box.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCorner</tt>
+   <dd> The reference corner of the box.</dd>
+</dl>
+</dl>
+</dl>
+<a name="Modify"></a><a name="Modify(CATMathPointf&amp;,CATMathVectorf&amp;,CATMathVectorf&amp;,CATMathVectorf&amp;)"></a> <dt> o <b>Modify</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>Modify</b>(<td> const <script type="text/javascript"> activateLink('CATMathPointf','CATMathPointf&amp;')</script> <td><tt>iCorner</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathVectorf','CATMathVectorf&amp;')</script> <td><tt>iX</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathVectorf','CATMathVectorf&amp;')</script> <td><tt>iY</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathVectorf','CATMathVectorf&amp;')</script> <td><tt>iZ</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the representation of a box.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCorner</tt>
+   <dd> The reference corner of the box.
+ </dd>
+    <dt><tt> iX</tt>
+   <dd> Indicates the orientation and the length of the box along the first direction.
+ </dd>
+    <dt><tt> iY</tt>
+   <dd> Indicates the orientation and the length of the box along the second direction.
+ </dd>
+    <dt><tt> iZ</tt>
+   <dd> Indicates the orientation and the length of the box along the third direction.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CAT3DCuboidRep.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATViz</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="ObjectModelerSDM" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="0" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<function name="CreateModel" htmlFileName="function_CreateModel_94770" id="94770" status="4" isProperty="0" initial="C" argList="(CATUnicodeString&amp;amp;,SdaiModelH&amp;amp;)" abstract="Creates a SdaiModel from a schema name." />
+<function name="CreateModelFromSchema" htmlFileName="function_CreateModelFromSchema_208622" id="208622" status="4" isProperty="0" initial="C" argList="(CATUnicodeString&amp;amp;,CATUnicodeString&amp;amp;,SdaiModelH&amp;amp;)" abstract="Creates a SdaiModel from a path of a STEP21 file and a schema name." />
+<function name="DeleteModel" htmlFileName="function_DeleteModel_40838" id="40838" status="4" isProperty="0" initial="D" argList="(SdaiModelH&amp;amp;)" abstract="Deletes a SdaiModel." />
+<function name="GetContainerFromModel" htmlFileName="function_GetContainerFromModel_99360" id="99360" status="4" isProperty="0" initial="G" argList="(SdaiModelH,CATIContainer_var&amp;amp;)" abstract="Retrieves the container associated to a SdaiModel." />
+<function name="GetModelFromContainer" htmlFileName="function_GetModelFromContainer_114685" id="114685" status="4" isProperty="0" initial="G" argList="(CATIContainer_var&amp;amp;,SdaiModelH&amp;amp;)" abstract="Retrieves the SdaiModel associated to a container." />
+<function name="GetModelFromFile" htmlFileName="function_GetModelFromFile_101163" id="101163" status="4" isProperty="0" initial="G" argList="(CATUnicodeString&amp;amp;,SdaiModelH&amp;amp;)" abstract="Retrieves a SdaiModel from a path of a STEP21 file." />
+<function name="SaveFileFromModel" htmlFileName="function_SaveFileFromModel_88862" id="88862" status="4" isProperty="0" initial="S" argList="(SdaiModelH,CATUnicodeString&amp;amp;)" abstract="Saves a SdaiModel into a STEP21 file." />
+</fw>

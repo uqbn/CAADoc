@@ -1,0 +1,124 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>MecModInterfaces CylindricalFace (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../MecModInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CylindricalFace','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CylindricalFace','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CylindricalFace','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CylindricalFace','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CylindricalFace<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CylindricalFace_26456','CylindricalFace','0');</script>
+<b><i> 2-D boundary with a cylindrical geometry.</i></b><br>
+
+ <b>Role</b>: 
+ This <a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object may be, for example, the lateral face of a cylinder.</br> You will create a CylindricalFace object using the 
+<a href="#" onClick="openLink('Shapes','GetBoundary');return false">Shapes.GetBoundary</a> , 
+<a href="#" onClick="openLink('HybridShapes','GetBoundary');return false">HybridShapes.GetBoundary</a> ,  
+<a href="#" onClick="openLink('Sketches','GetBoundary');return false">Sketches.GetBoundary</a> or 
+<a href="#" onClick="openLink('Selection','SelectElement2');return false">Selection.SelectElement2</a> method. Then, you pass it to the operator (such as 
+<a href="#" onClick="openLink('ShapeFactory','AddNewCircPattern');return false">ShapeFactory.AddNewCircPattern</a> ).</br>  The lifetime of a CylindricalFace object is limited, see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a>.</br>  <! @sample>
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example asks the end user to select a shape to pattern and a cylindrical face, and creates a circular
+ pattern of the shape. The cylindrical face specifies the rotation axis.
+ <pre>
+ Dim InputObjectType(0)
+ Set Document = CATIA.ActiveDocument
+ Set Selection = Document.Selection
+ 'We propose to the user that he select the shape to pattern
+ InputObjectType(0)="SketchBasedShape"
+ Status=Selection.SelectElement2(InputObjectType,"Select the shape to pattern",true)
+ if (Status = "cancel") then Exit Sub
+ Set Shape = Selection.Item(1).Value
+ Selection.Clear
+ 'We propose to the user that he select the cylindrical face
+ InputObjectType(0)="CylindricalFace"
+ Status=Selection.SelectElement2(InputObjectType,"Select the cylindrical face",true)
+ if (Status = "cancel") then Exit Sub
+ Set CylindricalFace = Selection.Item(1).Value
+ Set RotationCenter = Document.Part.CreateReferenceFromName("")
+ Set CircPattern = ShapeFactory.AddNewCircPattern(Shape,1,4,20.0,45.0,1,4,RotationCenter,CylindricalFace,True,0.0,True)
+ Document.Part.Update  
+ </pre>
+ </dl>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetDirection"><b>GetDirection</b></a>
+<dd>   Returns the direction of the cylindrical face axis
+   
+ <dt>
+    <a href="#GetOrigin"><b>GetOrigin</b></a>
+<dd>  Returns the origin of the cylindrical face axis.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetDirection"><dt>
+
+<table><tr><td>o Sub <b>GetDirection</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oDirection</tt>)</table></dt>
+<dl>
+  <dd>
+  Returns the direction of the cylindrical face axis
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDirection[0]</tt>
+   <dd>   The X Coordinate of the axis direction 
+   </dd>
+    <dt><tt> oDirection[1]</tt>
+   <dd>   The Y Coordinate of the axis direction
+   </dd>
+    <dt><tt> oDirection[2]</tt>
+   <dd>   The Z Coordinate of the axis direction</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetOrigin"><dt>
+
+<table><tr><td>o Sub <b>GetOrigin</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oOrigin</tt>)</table></dt>
+<dl>
+  <dd>
+ Returns the origin of the cylindrical face axis. 	
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oOrigin[0]</tt>
+   <dd>   The X Coordinate of the axis origin
+   </dd>
+    <dt><tt> oOrigin[1]</tt>
+   <dd>   The Y Coordinate of the axis origin
+   </dd>
+    <dt><tt> oOrigin[2]</tt>
+   <dd>   The Z Coordinate of the axis origin</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

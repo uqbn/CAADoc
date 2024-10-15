@@ -1,0 +1,113 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ElecFlatteningItf Interface CATIEhfEnvironment</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ElecFlatteningItf.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIEhfEnvironment','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIEhfEnvironment','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIEhfEnvironment','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIEhfEnvironment','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ElecFlatteningItf Interface CATIEhfEnvironment</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIEhfEnvironment_33784','CATIEhfEnvironment','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIEhfEnvironment</b>
+</p>
+<p>
+<b><i> This Interface allows you to find the Flattening Parameters
+ used in " Electrical Harness Flattening " WorkBench.</i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CreateFlatteningParameters(CATIEhfFlatteningParameters*&amp;)"><b>CreateFlatteningParameters</b></a>(CATIEhfFlatteningParameters*&amp;)
+<dd>  Creates the flattening parameters.
+ <dt> o 
+    <a href="#GetFlatteningParameters(CATListValCATBaseUnknown_var**)"><b>GetFlatteningParameters</b></a>(CATListValCATBaseUnknown_var**)
+<dd>  Retrieves the flattening parameters stored inside the product.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="CreateFlatteningParameters"></a><a name="CreateFlatteningParameters(CATIEhfFlatteningParameters*&amp;)"></a> <dt> o <b>CreateFlatteningParameters</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>CreateFlatteningParameters</b>(<td><script type="text/javascript"> activateLink('CATIEhfFlatteningParameters','CATIEhfFlatteningParameters*&amp;')</script> <td><tt>opIFlatteningParameters</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates the flattening parameters.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> opIFlatteningParameters</tt>
+   <dd>     Pointer to created flattening parameters
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>Flattening parameters are successfully created</dd>
+     <dt>E_FAIL </dt>
+     <dd>An error occurred while creating flattening parameters</dd>
+   </dl>
+</dl>
+</dl>
+<a name="GetFlatteningParameters"></a><a name="GetFlatteningParameters(CATListValCATBaseUnknown_var**)"></a> <dt> o <b>GetFlatteningParameters</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetFlatteningParameters</b>(<td><script type="text/javascript"> activateLink('CATListValCATBaseUnknown_var','CATListValCATBaseUnknown_var**')</script> <td><tt>oListParameters</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the flattening parameters stored inside the product.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oListParameters</tt>
+   <dd> [out]     The list of flattening parameters
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>Flattening parameters are successfully retrieved</dd>
+     <dt>E_FAIL </dt>
+     <dd>An error occurred while searching flattening parameters</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIEhfEnvironment.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATEhfInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATInstantCollabDesignCAAItf Enumeration CATIColMergeContextRole</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATInstantCollabDesignCAAItf.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>CATInstantCollabDesignCAAItf Enumeration CATIColMergeContextRole</h1>
+<pre>
+enum <b>CATIColMergeContextRole</b> {
+  CATCol_IGNORED_AGGREGATOR,
+  CATCol_PROTECTED_AGGREGATOR,
+  CATCol_FORCED_AGGREGATOR,
+  CATCol_INTERNAL_AGGREGATED,
+  CATCol_AGGREGATED,
+  CATCol_PROTECTED_DEPENDANCY,
+  CATCol_FORCED_DEPENDANCY,
+  CATCol_IGNORED,
+  CATCol_UNDEF
+}
+</pre>
+<b><i>	The collaborative semantic :
+	<li>CATCol_IGNORED_AGGREGATOR : agregator feature is not embeded inside the briefcase.</i></b><br>
+ It must be created
+	on the merge side</li>
+	<li>CATCol_PROTECTED_AGGREGATOR : agregator is embeded but always discarded (i.e not replaced)</lI>
+	<li>CATCol_FORCED_AGGREGATOR : agregator is embeded and always replaced (i.e replaced)
+	<u>Example</u><br>
+	When an internal sketch's feature is selected, the entire sketch is embeded thanks to this role
+	</li>
+	<li>CATCol_INTERNAL_AGGREGATED : aggregated feature which is mandatory for the feature</li>	
+	<li>CATCol_AGGREGATED : aggregated feature which is not mandatory for the feature
+		<u>Example</u><br>
+		A geomtrical set defines all the GSD features as agregated. It means that the geometrical set can be shared<br>
+		without its children.
+	</li>
+	<li>CATCol_PROTECTED_DEPENDANCY : the pointed features is embeded is not replaced if it exists in the destination part<br>
+		<u>Example</u><br>
+		The input surface of a GSD offset is always protected. This semantic allows advanced concurrent design scenarios </br>
+	</li>	
+	<li>CATCol_FORCED_DEPENDANCY : the pointed features is embeded is ALWAYS replaced if it exists in the destination part<br>
+		<u>Example</u><br>
+		The input profile of a solid feature is always replaced.
+	</li><hr>
+ This object is included in the file: <b>CATIColMergeContextTable.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

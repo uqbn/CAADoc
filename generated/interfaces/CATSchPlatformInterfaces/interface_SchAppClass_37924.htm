@@ -1,0 +1,184 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchAppClass (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchAppClass','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppClass','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchAppClass','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppClass','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchAppClass<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchAppClass_37924','SchAppClass','0');</script>
+<b><i>  Manage the class hierarchy of an application model.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AppGetComponentBaseClass"><b>AppGetComponentBaseClass</b></a>
+<dd>  Provide the application class names for the base component classes.
+ <dt>
+    <a href="#AppGetGroupBaseClass"><b>AppGetGroupBaseClass</b></a>
+<dd>  Provide the application class name for Schematic Group class.
+ <dt>
+    <a href="#AppGetRouteBaseClass"><b>AppGetRouteBaseClass</b></a>
+<dd>  Provide the application class name for Schematic Route class.
+ <dt>
+    <a href="#AppGetZoneBaseClass"><b>AppGetZoneBaseClass</b></a>
+<dd>  Provide the application class name for Schematic Zone class.
+ <dt>
+    <a href="#AppListValidRouteTypes"><b>AppListValidRouteTypes</b></a>
+<dd>  List the valid application route types allowed to be created.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AppGetComponentBaseClass"><dt>
+
+<table><tr><td>o Func <b>AppGetComponentBaseClass</b>(<td>) As <script type="text/javascript"> activateLink('SchListOfBSTRs','SchListOfBSTRs')</script> </table></dt>
+<dl>
+  <dd>
+ Provide the application class names for the base component classes.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLBaseCompClasses</tt>
+   <dd>   Class names of application base component classes.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppClass
+ Dim objArg1 As SchListOfBSTRs
+  ...
+ Set objArg1 = objThisIntf.<font color="red">AppGetComponentBaseClass</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="AppGetGroupBaseClass"><dt>
+
+<table><tr><td>o Sub <b>AppGetGroupBaseClass</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oGroupClassName</tt>)</table></dt>
+<dl>
+  <dd>
+ Provide the application class name for Schematic Group class.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oGroupClassName</tt>
+   <dd>   Class name of application class.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppClass
+ Dim strVar1 As String
+  ...
+ objThisIntf.<font color="red">AppGetGroupBaseClass</font>strVar1
+ </pre>
+
+</dl>
+</dl>
+<a name="AppGetRouteBaseClass"><dt>
+
+<table><tr><td>o Sub <b>AppGetRouteBaseClass</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oRouteClassName</tt>)</table></dt>
+<dl>
+  <dd>
+ Provide the application class name for Schematic Route class.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oRouteClassName</tt>
+   <dd>   Class name of application class.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppClass
+ Dim strVar1 As String
+  ...
+ objThisIntf.<font color="red">AppGetRouteBaseClass</font>strVar1
+ </pre>
+
+</dl>
+</dl>
+<a name="AppGetZoneBaseClass"><dt>
+
+<table><tr><td>o Sub <b>AppGetZoneBaseClass</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oZoneClassName</tt>)</table></dt>
+<dl>
+  <dd>
+ Provide the application class name for Schematic Zone class.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oZoneClassName</tt>
+   <dd>   Class name of application class.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppClass
+ Dim strVar1 As String
+  ...
+ objThisIntf.<font color="red">AppGetZoneBaseClass</font>strVar1
+ </pre>
+
+</dl>
+</dl>
+<a name="AppListValidRouteTypes"><dt>
+
+<table><tr><td>o Func <b>AppListValidRouteTypes</b>(<td>) As <script type="text/javascript"> activateLink('SchListOfBSTRs','SchListOfBSTRs')</script> </table></dt>
+<dl>
+  <dd>
+ List the valid application route types allowed to be created.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLValidRouteTypes</tt>
+   <dd>   A list of route class types allowed.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppClass
+ Dim objArg1 As SchListOfBSTRs
+  ...
+ Set objArg1 = objThisIntf.<font color="red">AppListValidRouteTypes</font>
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

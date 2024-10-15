@@ -1,0 +1,187 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Interface CATISchCompFlow</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISchCompFlow','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchCompFlow','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISchCompFlow','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchCompFlow','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Interface CATISchCompFlow</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISchCompFlow_42831','CATISchCompFlow','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISchCompFlow</b>
+</p>
+<p>
+<b><i> Interface to manage Schematic component's association with its
+ internal flow objects.</i></b><br>
+ 
+ <b>Role</b>: To modify component's links to its
+ internal flow objects.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AddInternalFlow(CATIUnknownList*,CATISchInternalFlow**)"><b>AddInternalFlow</b></a>(CATIUnknownList*,CATISchInternalFlow**)
+<dd>  Add an internal flow to a component.
+ <dt> o 
+    <a href="#AddInternalFlowSpecifyGRR(CATIUnknownList*,CATIUnknownList*,CATISchInternalFlow**)"><b>AddInternalFlowSpecifyGRR</b></a>(CATIUnknownList*,CATIUnknownList*,CATISchInternalFlow**)
+<dd>  Add an internal flow to a component.
+ <dt> o 
+    <a href="#ListInternalFlows(CATIUnknownList**)"><b>ListInternalFlows</b></a>(CATIUnknownList**)
+<dd>  List all internal flow objects of a component.
+ <dt> o 
+    <a href="#RemoveInternalFlow(CATISchInternalFlow*)"><b>RemoveInternalFlow</b></a>(CATISchInternalFlow*)
+<dd>  Remove an internal flow from a component.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AddInternalFlow"></a><a name="AddInternalFlow(CATIUnknownList*,CATISchInternalFlow**)"></a> <dt> o <b>AddInternalFlow</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AddInternalFlow</b>(<td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList*')</script> <td><tt>iLFlowCntrs</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATISchInternalFlow','CATISchInternalFlow**')</script> <td><tt>oInternalFlowAdded</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Add an internal flow to a component.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLFlowCntrs</tt>
+   <dd>   List of connectors (2) to be connected by the flow.
+   (members should be CATISchAppConnector interface pointer)
+ </dd>
+    <dt><tt> oInternalFlowAdded</tt>
+   <dd>   Internal flow object added/created
+   (CATISchInternalFlow interface pointer).
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AddInternalFlowSpecifyGRR"></a><a name="AddInternalFlowSpecifyGRR(CATIUnknownList*,CATIUnknownList*,CATISchInternalFlow**)"></a> <dt> o <b>AddInternalFlowSpecifyGRR</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AddInternalFlowSpecifyGRR</b>(<td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList*')</script> <td><tt>iLFlowCntrs</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList*')</script> <td><tt>iLOwnerGRR</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATISchInternalFlow','CATISchInternalFlow**')</script> <td><tt>oInternalFlowAdded</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Add an internal flow to a component. Specifying which
+ graphical images the connector graphics are on.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLFlowCntrs</tt>
+   <dd>   List of connectors (2) to be connected by the flow.
+   (members should be CATISchAppConnector interface pointer)
+ </dd>
+    <dt><tt> iLOwnerImages</tt>
+   <dd>   List of CATISchGRRComp interface pointers
+ </dd>
+    <dt><tt> oInternalFlowAdded</tt>
+   <dd>   Internal flow object added/created
+   (CATISchInternalFlow interface pointer).
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="ListInternalFlows"></a><a name="ListInternalFlows(CATIUnknownList**)"></a> <dt> o <b>ListInternalFlows</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ListInternalFlows</b>(<td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oLInternalFlow</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ List all internal flow objects of a component.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLInternalFlow</tt>
+   <dd>   A list of internal flow objects 
+   (members are CATISchInternalFlow interface pointers).
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="RemoveInternalFlow"></a><a name="RemoveInternalFlow(CATISchInternalFlow*)"></a> <dt> o <b>RemoveInternalFlow</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RemoveInternalFlow</b>(<td><script type="text/javascript"> activateLink('CATISchInternalFlow','CATISchInternalFlow*')</script> <td><tt>iInternalFlowToRemove</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Remove an internal flow from a component.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iInternalFlowToRemove</tt>
+   <dd>   Internal flow object to be removed.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISchCompFlow.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

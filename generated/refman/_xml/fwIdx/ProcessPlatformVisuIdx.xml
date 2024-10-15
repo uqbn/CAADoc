@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="ProcessPlatformVisu" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="0" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="CATIWSPROCAddin" initial="C" htmlFileName="interface_CATIWSPROCAddin_31305" fatherClass="CATIWorkbenchAddin" fatherId="31255" DSCharacteristic="interface" id="31305" abstract="Interface that should be implemented to extend the Process workshop addins." />
+<class name="CATIWSPROCConfiguration" initial="C" htmlFileName="interface_CATIWSPROCConfiguration_47613" fatherClass="CATIWorkbench" fatherId="23960" DSCharacteristic="interface" id="47613" abstract="Interface that should be implemented to extend the Process workshop." />
+</fw>

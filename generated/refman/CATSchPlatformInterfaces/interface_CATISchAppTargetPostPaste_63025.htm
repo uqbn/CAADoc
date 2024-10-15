@@ -1,0 +1,106 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Interface CATISchAppTargetPostPaste</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISchAppTargetPostPaste','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchAppTargetPostPaste','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISchAppTargetPostPaste','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchAppTargetPostPaste','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Interface CATISchAppTargetPostPaste</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISchAppTargetPostPaste_63025','CATISchAppTargetPostPaste','0');</script>
+<p><b>Usage: you can reimplement this interface by deriving the supplied <a href="../CATSchPlatformInterfaces/class_CATEASchAppTargetPostPaste_62807.htm">CATEASchAppTargetPostPaste</a> adapter class.</b></p>
+<hr>
+<p>
+ interface <b>CATISchAppTargetPostPaste</b>
+</p>
+<p>
+<b><i> Interface to manage specific application object behaviors after copy-paste.</i></b><br>
+
+ Applications must derive implementation of this interface 
+ from the adapter class CATEASchAppTargetPostPaste.
+ <b>Role</b>: Post process the copied object after copy-paste.
+ <p><b>BOA information</b>: this interface CANNOT be implemented
+ using the BOA (Basic Object Adapter).
+ To know more about the BOA, refer to the CAA Encyclopedia home page.
+ Click Middleware at the bottom left, then click the Object Modeler tab page.
+ Several articles deal with the BOA.</p></p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AppCopyGroupAndAddMembers(CATIUnknownList*)"><b>AppCopyGroupAndAddMembers</b></a>(CATIUnknownList*)
+<dd>  Copy input groups (if needed, use existing and matching ones if found)
+ and add this copied object (target object) to the copied groups.
+ <dt> o 
+    <a href="#AppCopyGroupByNameAndAddMembers(CATICStringList*,CATICStringList*)"><b>AppCopyGroupByNameAndAddMembers</b></a>(CATICStringList*,CATICStringList*)
+<dd>  Copy input groups (if needed, use existing and matching ones if found)
+ and add this copied object (target object) to the copied groups.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AppCopyGroupAndAddMembers"></a><a name="AppCopyGroupAndAddMembers(CATIUnknownList*)"></a> <dt> o <b>AppCopyGroupAndAddMembers</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppCopyGroupAndAddMembers</b>(<td> const <script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList*')</script> <td><tt>iLGroupToCopy</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Copy input groups (if needed, use existing and matching ones if found)
+ and add this copied object (target object) to the copied groups.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iListGroup</tt>
+   <dd>    A list of interface pointers to groups to copy.</dd>
+</dl>
+</dl>
+</dl>
+<a name="AppCopyGroupByNameAndAddMembers"></a><a name="AppCopyGroupByNameAndAddMembers(CATICStringList*,CATICStringList*)"></a> <dt> o <b>AppCopyGroupByNameAndAddMembers</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppCopyGroupByNameAndAddMembers</b>(<td> const <script type="text/javascript"> activateLink('CATICStringList','CATICStringList*')</script> <td><tt>iLGroupNameToCopy</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATICStringList','CATICStringList*')</script> <td><tt>iLGroupType</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Copy input groups (if needed, use existing and matching ones if found)
+ and add this copied object (target object) to the copied groups.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLGroupNameToCopy</tt>
+   <dd>    A list of names of groups to copy.
+ </dd>
+    <dt><tt> iLGroupType</tt>
+   <dd>   A list of types of groups to copy.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISchAppTargetPostPaste.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

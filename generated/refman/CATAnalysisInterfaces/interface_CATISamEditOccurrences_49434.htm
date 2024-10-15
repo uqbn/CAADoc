@@ -1,0 +1,112 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces Interface CATISamEditOccurrences</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISamEditOccurrences','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamEditOccurrences','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISamEditOccurrences','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamEditOccurrences','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisInterfaces Interface CATISamEditOccurrences</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISamEditOccurrences_49434','CATISamEditOccurrences','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATISamEditOccurrences</b>
+</p>
+<p>
+<b><i> Customize a CATDlgFrame for sets edition.</i></b><br>
+
+ <b>Role:</b> Interface designed to extract specific parameters for solutions
+ visualisation or edition. This is usefull for "multi-occurrences" solution in order to choose the 
+ occurrence during the image edition. 
+ An Occurrence can be a time step, or a mode ......<br>
+ This interface is implemented on an Analysis Set that also implement <a href="#" onClick="openLink('CATICharacCollector','');return false">CATICharacCollector</a> interface.<br> The CATDialog object that is returned needs to implement 
+<a href="#" onClick="openLink('CATISamEditionFrame','');return false">CATISamEditionFrame</a>.<br> Associated notification must be 
+<a href="#" onClick="openLink('CATSamModifyOccurrencesNotif','');return false">CATSamModifyOccurrencesNotif</a> or a derivation. 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATDlgFrame','');return false">CATDlgFrame</a>, <a href="#" onClick="openLink('CATDialog','');return false">CATDialog</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetModificationFrame(CATDialog*,CATBoolean)"><b>GetModificationFrame</b></a>(CATDialog*,CATBoolean)
+<dd>  Retrieves the CATDlgFrame associated to the image edition.
+ <dt> o 
+    <a href="#GetTitle(CATUnicodeString&amp;)"><b>GetTitle</b></a>(CATUnicodeString&amp;)
+<dd>  Retrieves the title of the Frame.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetModificationFrame"></a><a name="GetModificationFrame(CATDialog*,CATBoolean)"></a> <dt> o <b>GetModificationFrame</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATDlgFrame','CATDlgFrame *')</script>  <b>GetModificationFrame</b>(<td><script type="text/javascript"> activateLink('CATDialog','CATDialog*')</script> <td><tt>iParent</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script> <td><tt>iMultiSel</tt><td><tt>=TRUE</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the CATDlgFrame associated to the image edition.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iParent</tt>
+   <dd> The active Dialog Object in which the Frame will appear.
+ </dd>
+    <dt><tt> iMultiSel</tt>
+   <dd> Caller needs to lock or allow a multi selection of data. <br><b>Legal values</b>: 
+ <ul> <li><b>FALSE</b> : The multi list should not allow the multi selection.</li>
+      <li><b>TRUE</b>  : The multi list should  allow the multi selection.</li></ul>
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <br><b>Legal values</b>: associated CATdlgframe.
+</dl>
+</dl>
+<a name="GetTitle"></a><a name="GetTitle(CATUnicodeString&amp;)"></a> <dt> o <b>GetTitle</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetTitle</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oTitle</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the title of the Frame.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oTitle</tt>
+   <dd> The title of the frame.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISamEditOccurrences.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisInterface</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

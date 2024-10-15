@@ -1,0 +1,138 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATPlantShipInterfaces Interface CATIPspDefinePhysicalPart</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATPlantShipInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIPspDefinePhysicalPart','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPspDefinePhysicalPart','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIPspDefinePhysicalPart','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPspDefinePhysicalPart','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATPlantShipInterfaces Interface CATIPspDefinePhysicalPart</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIPspDefinePhysicalPart_58137','CATIPspDefinePhysicalPart','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIPspDefinePhysicalPart</b>
+</p>
+<p>
+<b><i> Interface to get the information required for part placement.</i></b><br>
+
+ <b>Role</b>: Equipment and Systems applications are used to layout 3D AEC designs. 
+ Fluid flow routes are defined using runs. Further detail is provided by adding
+ parts to runs. This interface give the information required for part placement.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetPartNumbers(CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,IUnknown*,CATListOfCATUnicodeString&amp;)"><b>GetPartNumbers</b></a>(CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,IUnknown*,CATListOfCATUnicodeString&amp;)
+<dd>  <dl>
+ <dt><b>GetPartNumbers:</b>
+ <pre>
+ Get part numbers from the specification catalog that match input data.
+ <dt> o 
+    <a href="#SetSpecification(IUnknown*,CATUnicodeString&amp;)"><b>SetSpecification</b></a>(IUnknown*,CATUnicodeString&amp;)
+<dd>  Set spec on instance part.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetPartNumbers"></a><a name="GetPartNumbers(CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,IUnknown*,CATListOfCATUnicodeString&amp;)"></a> <dt> o <b>GetPartNumbers</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetPartNumbers</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iuStandard</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iuPartType</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iuSpecName</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('IUnknown','IUnknown*')</script> <td><tt>ipiLogicalLine</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListOfCATUnicodeString','CATListOfCATUnicodeString&amp;')</script> <td><tt>oListPartNumbers</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ <dl>
+ <dt><b>GetPartNumbers:</b>
+ <pre>
+ Get part numbers from the specification catalog that match input data.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iuStandard</tt>
+   <dd> [in]      Standard for application attribute values.
+   </dd>
+    <dt><tt> iuPartType</tt>
+   <dd> [in]      Type of part desired.
+   </dd>
+    <dt><tt> iuSpecName</tt>
+   <dd> [in]      Specification name
+   </dd>
+    <dt><tt> ipiLogicalLine</tt>
+   <dd> [in]      Logical line (e.g. piping line)
+   </dd>
+    <dt><tt> oListPartNumbers</tt>
+   <dd> [out]      Returned list of part numbers (options) when part number (option) choice is needed.
+   An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+     <dt>E_NOTIMPL</dt>
+     <dd>Not applicable</dd>
+   </dl>
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="SetSpecification"></a><a name="SetSpecification(IUnknown*,CATUnicodeString&amp;)"></a> <dt> o <b>SetSpecification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetSpecification</b>(<td> const <script type="text/javascript"> activateLink('IUnknown','IUnknown*')</script> <td><tt>ipiPlacedInstancePart</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iuSpec</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Set spec on instance part.
+ <br><b>Role</b>: Interactively, the user can perform spec-driven part placement.
+ The CAA part placement interfaces performs un-spec placement.
+ This method turns a non-spec instance part into a spec part.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ipiPlacedInstancePart</tt>
+   <dd> [in]      The placed instance part on which to set the spec.
+   </dd>
+    <dt><tt> iuSpec</tt>
+   <dd> [in]     The spec name to set on the instance part. Must be non-blank
+   </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  HRESULT     <ul>
+       <li>S_OK: Spec successfully set on part.</li>
+       <li>E_FAIL: Part already has spec defined or can not set spec on part</li>
+       <li>E_INVALIDARG: Invalid input.</li>
+       <li>E_NOTIMPL: Not applicable, part is a non-spec part</li>
+     </ul>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIPspDefinePhysicalPart.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

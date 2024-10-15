@@ -1,0 +1,49 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>Material Global Function GetCurrentMaterialCatalog</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../Material.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>Material Global Function GetCurrentMaterialCatalog</h1>
+
+<br><dt><table><tr><td>  <script type="text/javascript"> activateLink('CATDocument',' CATDocument*')</script>  <b>GetCurrentMaterialCatalog</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Returns the current material catalog document.
+  <br><b>Role</b>: This is the document used by the interactive command "Apply Material". 
+  It will be searched for first with the path defined in 
+  Tools/Options / Infrastructure/Material Library, and if it not found 
+  with the path defined using the CATStartupPath environment variable.
+  <br>
+  The function checks whether the catalog is not currently opened in session and otherwise 
+  loads it .
+  <br>
+  <b>Note</b>: Do not forget to close the material document using the 
+<a href="#" onClick="openLink('CATDocument','Remove');return false">CATDocument.Remove</a>   method at the end of usage.
+  <br>
+  <b>Lifecycle rules deviation</b>: This method doesn't AddRef the returned CATDocument pointer.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    The material catalog document.
+  <br>
+   Returned value is NULL if the catalog cannot be found.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATMaterialServices.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

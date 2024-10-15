@@ -1,0 +1,123 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Class CATScuCommandHeader</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATScuCommandHeader','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATScuCommandHeader','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATScuCommandHeader','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATScuCommandHeader','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Class CATScuCommandHeader</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATScuCommandHeader_46757','CATScuCommandHeader','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATScuCommandHeader</b>
+</p>
+<p>
+<b><i> Class for creating schematic command in workbench.</i></b><br>
+
+
+ <b>Role</b>: This class provides a base class for command header 
+ use to define dialog commands in schematic workbenches. 
+ <b>Please include CATScuCmdHeader module in linking</b></p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATScuCommandHeader(CATString&amp;,CATString&amp;,CATString&amp;,void*)"><b>CATScuCommandHeader</b></a>(CATString&amp;,CATString&amp;,CATString&amp;,void*)
+<dd>  Constructs an empty CATScuCommandHeader.
+ <dt> o 
+    <a href="#~CATScuCommandHeader()"><b>~CATScuCommandHeader</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#DoHide()"><b>DoHide</b></a>()
+<dd>  Initialize before hiding the header.
+ <dt> o 
+    <a href="#DoShow()"><b>DoShow</b></a>()
+<dd>  Initialize before showing the header.
+ <dt> o 
+    <a href="#GetApplicationName()"><b>GetApplicationName</b></a>()
+<dd>  Get the application name.
+</dl>
+<dl>
+</dl>
+<dl>
+ <h2>Data Member Index</h2> <br>
+ <dt> o 
+    <a href="#_piHeaderSpecialize"><b>_piHeaderSpecialize</b></a>
+<dd>  Special interface handle used by DoShow and DoHide.
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATScuCommandHeader"></a><a name="CATScuCommandHeader(CATString&amp;,CATString&amp;,CATString&amp;,void*)"></a> <dt> o <b>CATScuCommandHeader</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATScuCommandHeader</b>(<td> const <script type="text/javascript"> activateLink('CATString','CATString&amp;')</script> <td><tt>HeaderID</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATString','CATString&amp;')</script> <td><tt>loadName</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATString','CATString&amp;')</script> <td><tt>classname</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('void','void*')</script> <td><tt>argument</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs an empty CATScuCommandHeader.
+</dl>
+<a name="~CATScuCommandHeader"></a><a name="~CATScuCommandHeader()"></a> <dt> o <b>~CATScuCommandHeader</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATScuCommandHeader</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="DoHide"></a><a name="DoHide()"></a> <dt> o <b>DoHide</b>
+
+<dt>  <table><tr><td>  protected <script type="text/javascript"> activateLink('void','void')</script>  <b>DoHide</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Initialize before hiding the header.
+</dl>
+<a name="DoShow"></a><a name="DoShow()"></a> <dt> o <b>DoShow</b>
+
+<dt>  <table><tr><td>  protected <script type="text/javascript"> activateLink('void','void')</script>  <b>DoShow</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Initialize before showing the header.
+</dl>
+<a name="GetApplicationName"></a><a name="GetApplicationName()"></a> <dt> o <b>GetApplicationName</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATString','CATString')</script>  <b>GetApplicationName</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Get the application name.
+</dl>
+ <h2>Data Members</h2> <br>
+<a name="_piHeaderSpecialize"></a> <dt> o <b>_piHeaderSpecialize</b>
+<pre>
+  protected CATISchHeaderSpecialize *_piHeaderSpecialize</dt>
+</pre>
+<dl>
+  <dd>
+ Special interface handle used by DoShow and DoHide.
+</dl>
+<hr>
+ This object is included in the file: <b>CATScuCommandHeader.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATSchItfCPP</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>Visualization Class CATHSO</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../Visualization.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATHSO','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATHSO','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATHSO','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATHSO','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Visualization Class CATHSO</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATHSO_10792','CATHSO','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATHSO</b>
+</p>
+<p>
+<b><i>   Class representing the set of hihglighted objects.</i></b><br>
+
+
+   <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATPSO','');return false">CATPSO</a>, <a href="#" onClick="openLink('CATAddElements','');return false">CATAddElements</a>, <a href="#" onClick="openLink('CATRemoveElements','');return false">CATRemoveElements</a>
+</dl>
+</p>
+<hr>
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Empty()"><b>Empty</b></a>()
+<dd>  Empties all elements from the set.
+ <dt> o 
+    <a href="#EndAddElements()"><b>EndAddElements</b></a>()
+<dd>  Completes the action of adding elements to the set.
+ <dt> o 
+    <a href="#EndRemoveElements()"><b>EndRemoveElements</b></a>()
+<dd>  Completes the action of removing elements from the set.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Empty"></a><a name="Empty()"></a> <dt> o <b>Empty</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>Empty</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Empties all elements from the set.
+ <br><b>Role</b>: Asks to the visu manager,  
+<a href="#" onClick="openLink('CATVisManager','');return false">CATVisManager</a>, to remove highlight of all elements actually highlighted and sends a 
+<a href="#" onClick="openLink('CATRemoveElements','');return false">CATRemoveElements</a> notification  with the list of all elements that have been really unhighlighted.
+</dl>
+<a name="EndAddElements"></a><a name="EndAddElements()"></a> <dt> o <b>EndAddElements</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>EndAddElements</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Completes the action of adding elements to the set.
+ <br><b>Role</b> : Asks to the visu manager, 
+<a href="#" onClick="openLink('CATVisManager','');return false">CATVisManager</a>, to put in highlight  all elements of the set and sends a 
+<a href="#" onClick="openLink('CATAddElements','');return false">CATAddElements</a> notification with the list of all elements that have been really highlighted.
+
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATXSO','AddElement');return false">CATXSO.AddElement</a>, <a href="#" onClick="openLink('CATXSO','AddElements');return false">CATXSO.AddElements</a>, <a href="#" onClick="openLink('CATAddElements','');return false">CATAddElements</a>
+</dl>
+</dl>
+<a name="EndRemoveElements"></a><a name="EndRemoveElements()"></a> <dt> o <b>EndRemoveElements</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>EndRemoveElements</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Completes the action of removing elements from the set.
+ <br><b>Role</b> : Asks to the visu manager, 
+<a href="#" onClick="openLink('CATVisManager','');return false">CATVisManager</a>, to remove highlight of  all elements of the set and sends a 
+<a href="#" onClick="openLink('CATRemoveElements','');return false">CATRemoveElements</a> notification with the list of  all elements that have been really unhighlighted.
+
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATXSO','RemoveElement');return false">CATXSO.RemoveElement</a>, <a href="#" onClick="openLink('CATXSO','RemoveElements');return false">CATXSO.RemoveElements</a>, <a href="#" onClick="openLink('CATRemoveElements','');return false">CATRemoveElements</a>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATHSO.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATVisualization</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

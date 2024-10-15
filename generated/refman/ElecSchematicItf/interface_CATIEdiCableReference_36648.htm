@@ -1,0 +1,90 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ElecSchematicItf Interface CATIEdiCableReference</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ElecSchematicItf.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIEdiCableReference','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIEdiCableReference','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIEdiCableReference','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIEdiCableReference','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ElecSchematicItf Interface CATIEdiCableReference</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIEdiCableReference_36648','CATIEdiCableReference','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIEdiCableReference</b>
+</p>
+<p>
+<b><i> Interface to manage an electrical schematic cable reference.</i></b><br>
+
+ <b>Role</b>:This interfaces describes the electrical object cable.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AddWire(char*,wchar_t*,CATIEdiWire**)"><b>AddWire</b></a>(char*,wchar_t*,CATIEdiWire**)
+<dd>  Creates a wire.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AddWire"></a><a name="AddWire(char*,wchar_t*,CATIEdiWire**)"></a> <dt> o <b>AddWire</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AddWire</b>(<td> const <script type="text/javascript"> activateLink('char','char*')</script> <td><tt>iEdiClassType</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('wchar_t','wchar_t*')</script> <td><tt>iEdiInstanceName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIEdiWire','CATIEdiWire**')</script> <td><tt>oEdiWire</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates a wire.
+ 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEdiClassType</tt>
+   <dd>   The class type of the wire.
+ </dd>
+    <dt><tt> iEdiInstanceName</tt>
+   <dd>   The Instance Name of the application component instance.
+ </dd>
+    <dt><tt> oEdiWire</tt>
+   <dd>   The new application component object created 
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIEdiCableReference.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

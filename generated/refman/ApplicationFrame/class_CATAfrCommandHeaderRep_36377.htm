@@ -1,0 +1,148 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ApplicationFrame Class CATAfrCommandHeaderRep</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ApplicationFrame.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATAfrCommandHeaderRep','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATAfrCommandHeaderRep','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATAfrCommandHeaderRep','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATAfrCommandHeaderRep','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ApplicationFrame Class CATAfrCommandHeaderRep</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATAfrCommandHeaderRep_36377','CATAfrCommandHeaderRep','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATAfrCommandHeaderRep</b>
+</p>
+<p>
+<b><i> Base class to create a customized representation for a command header.</i></b><br>
+
+ <b>Role:</b>This class is the base class to create a customized representation
+ for a <a href="#" onClick="openLink('CATCommandHeader','');return false">CATCommandHeader</a> class. This customized command header must  derive from the 
+<a href="#" onClick="openLink('CATAfrDialogCommandHeader','');return false">CATAfrDialogCommandHeader</a> class, and must implement the 
+<a href="#" onClick="openLink('CATIAfrCommandHeaderRep','');return false">CATIAfrCommandHeaderRep</a> interface. This interface contains three methods to overload the default representation of the command header into a toolbar, 
+ the menubar or a contextual menu. In most cases, only one method creates an instance
+ of a class deriving from <tt>CATAfrCommandHeaderRep</tt>, and the two others 
+ create nothing. 
+ <p>The 
+<a href="#" onClick="openLink('','Build');return false">Build</a> method is automatically called just after the instantiation of the class deriving from <tt>CATAfrCommandHeaderRep</tt>. This method generally 
+ creates dialog object, whose the dialog parent is the first argument of the constructor, 
+ and that you retrieve with the 
+<a href="#" onClick="openLink('','GetDialogParent');return false">GetDialogParent</a> method.</p> <p>It is strongly recommended to read User Interfaces articles about 
+ command header into the CAA Encyclopedia before to creating such classes. You will learn
+ how to manage the multi-representation, and more generally how to "refresh" all the 
+ instances of the representations.</p>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATAfrCommandHeaderRep(CATDialog*,CATString&amp;)"><b>CATAfrCommandHeaderRep</b></a>(CATDialog*,CATString&amp;)
+<dd>  Constructs a customized representation for a command header.
+ <dt> o 
+    <a href="#~CATAfrCommandHeaderRep()"><b>~CATAfrCommandHeaderRep</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Build()"><b>Build</b></a>()
+<dd>  Creates the customized representation.
+ <dt> o 
+    <a href="#GetDialogParent(CATDialog**)"><b>GetDialogParent</b></a>(CATDialog**)
+<dd>  Retrieves the dialog parent.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATAfrCommandHeaderRep"></a><a name="CATAfrCommandHeaderRep(CATDialog*,CATString&amp;)"></a> <dt> o <b>CATAfrCommandHeaderRep</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATAfrCommandHeaderRep</b>(<td> const <script type="text/javascript"> activateLink('CATDialog','CATDialog*')</script> <td><tt>iParent</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATString','CATString&amp;')</script> <td><tt>iCommandName</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a customized representation for a command header.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iParent</tt>
+   <dd> The Dialog parent of dialog objects created by the </dd>
+<a href="#" onClick="openLink('','Build');return false">Build</a> method.  
+    <dt><tt> iCommandName</tt>
+   <dd> The name of the command. It is the argument of the </dd>
+<a href="#" onClick="openLink('CATCommand','');return false">CATCommand</a> class constructor. This name can be the same for all instances of the current class.
+</dl>
+</dl>
+</dl>
+<a name="~CATAfrCommandHeaderRep"></a><a name="~CATAfrCommandHeaderRep()"></a> <dt> o <b>~CATAfrCommandHeaderRep</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATAfrCommandHeaderRep</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Build"></a><a name="Build()"></a> <dt> o <b>Build</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>Build</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates the customized representation.
+ <br><b>Role:</b>This method instantiates Dialog objects whose the dialog parent is
+ the value returned by the 
+<a href="#" onClick="openLink('','GetDialogParent');return false">GetDialogParent</a> method. 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  an HRESULT value
+</dl>
+</dl>
+<a name="GetDialogParent"></a><a name="GetDialogParent(CATDialog**)"></a> <dt> o <b>GetDialogParent</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetDialogParent</b>(<td> const <script type="text/javascript"> activateLink('CATDialog','CATDialog**')</script> <td><tt>ioParent</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the dialog parent.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioParent</tt>
+   <dd> The first argument of the </dd>
+<a href="#" onClick="openLink('','CATAfrCommandHeaderRep');return false">CATAfrCommandHeaderRep</a> constructor. 
+  <dt> <b>Returns:</b> 
+  <dd>  an HRESULT value <br><b>Legal Values</b>:
+ <ol>
+ <li> S_OK if success</li>
+ <li> E_FAIL otherwise </li>
+ </ol>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATAfrCommandHeaderRep.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATApplicationFrame</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

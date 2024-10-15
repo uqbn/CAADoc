@@ -1,0 +1,91 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ElecHarnessItf Interface CATIEleUipDuplicate</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ElecHarnessItf.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIEleUipDuplicate','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIEleUipDuplicate','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIEleUipDuplicate','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIEleUipDuplicate','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ElecHarnessItf Interface CATIEleUipDuplicate</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIEleUipDuplicate_30371','CATIEleUipDuplicate','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATIEleUipDuplicate</b>
+</p>
+<p>
+<b><i> This Interface CATIEleUipDuplicate allows user to give suffix to be added to duplicated harness by implementing function GetSuffix
+ Interface must be implemented by the user.</i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetSuffix(CATBaseUnknown*,CATUnicodeString&amp;)"><b>GetSuffix</b></a>(CATBaseUnknown*,CATUnicodeString&amp;)
+<dd>        
+   User has to provide the implementation for this method when he implements this interface on CAAEleDuplicate component.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetSuffix"></a><a name="GetSuffix(CATBaseUnknown*,CATUnicodeString&amp;)"></a> <dt> o <b>GetSuffix</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetSuffix</b>(<td><script type="text/javascript"> activateLink('CATBaseUnknown','CATBaseUnknown*')</script> <td><tt>ipIUnkElecObject</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oStrSuffix</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+       
+   User has to provide the implementation for this method when he implements this interface on CAAEleDuplicate component.
+   Location of header files for argument types in frameworks:
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iElecObject</tt>
+   <dd>      (Input): Root of the black box to be duplicated
+   </dd>
+    <dt><tt> oSuffix</tt>
+   <dd>      (Output): the suffix to be added.
+   </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>Method is successful</dd>
+     <dt>E_FAIL </dt>
+     <dd>Method Failed</dd>
+   </dl>
+
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIEleUipDuplicate.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATEhiInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

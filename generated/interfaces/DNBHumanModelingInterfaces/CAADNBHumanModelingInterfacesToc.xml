@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="SWKAnthro" href="interface_SWKAnthro_40896.htm" />
+<ITEM type="interface" name="SWKAnthroVariable" href="interface_SWKAnthroVariable_51023.htm" />
+<ITEM type="interface" name="SWKBody" href="interface_SWKBody_39239.htm" />
+<ITEM type="interface" name="SWKBodyElement" href="interface_SWKBodyElement_46524.htm" />
+<ITEM type="interface" name="SWKCenterOfGravity" href="interface_SWKCenterOfGravity_53122.htm" />
+<ITEM type="interface" name="SWKDOF" href="interface_SWKDOF_38241.htm" />
+<ITEM type="interface" name="SWKErgo" href="interface_SWKErgo_39215.htm" />
+<ITEM type="interface" name="SWKErgoCarry" href="interface_SWKErgoCarry_43957.htm" />
+<ITEM type="interface" name="SWKErgoLiftLower" href="interface_SWKErgoLiftLower_49504.htm" />
+<ITEM type="interface" name="SWKErgoPushPull" href="interface_SWKErgoPushPull_47986.htm" />
+<ITEM type="interface" name="SWKErgoRULA" href="interface_SWKErgoRULA_41803.htm" />
+<ITEM type="interface" name="SWKIKConstraint" href="interface_SWKIKConstraint_48146.htm" />
+<ITEM type="interface" name="SWKIKManager" href="interface_SWKIKManager_43594.htm" />
+<ITEM type="interface" name="SWKLineOfSight" href="interface_SWKLineOfSight_46230.htm" />
+<ITEM type="interface" name="SWKLineOfSightNode" href="interface_SWKLineOfSightNode_52304.htm" />
+<ITEM type="interface" name="SWKManikin" href="interface_SWKManikin_41749.htm" />
+<ITEM type="interface" name="SWKManikinPart" href="interface_SWKManikinPart_46492.htm" />
+<ITEM type="interface" name="SWKNode" href="interface_SWKNode_39155.htm" />
+<ITEM type="interface" name="SWKSegment" href="interface_SWKSegment_41824.htm" />
+<ITEM type="interface" name="SWKSegmentNode" href="interface_SWKSegmentNode_46338.htm" />
+<ITEM type="interface" name="SWKVision" href="interface_SWKVision_40911.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Enumerations" type="enum"  ctype="enum" >
+<ITEM type="enum" name="SWKPostureSpec" href="enum_SWKPostureSpec_43504.htm" />
+</ITEM>
+</Root>

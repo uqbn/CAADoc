@@ -1,0 +1,179 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATPDMBaseInterfaces Interface CATIPDMPersistency</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATPDMBaseInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIPDMPersistency','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPDMPersistency','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIPDMPersistency','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPDMPersistency','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATPDMBaseInterfaces Interface CATIPDMPersistency</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIPDMPersistency_38603','CATIPDMPersistency','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIPDMPersistency</b>
+</p>
+<p>
+<b><i> </i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AlreadyPersistedInPDM()"><b>AlreadyPersistedInPDM</b></a>()
+<dd>   Returns if the document has already been stored in the PDM
+  This could be keeping the document in the vault, exposing or not its content (mode PermanentBlackBox or PermanentExposed)
+  Or just keeping its content, and not keeping the document (mode VolatileExposed)
+    
+  
+ <dt> o 
+    <a href="#CurrentVaultMode(VaultMode&amp;)"><b>CurrentVaultMode</b></a>(VaultMode&amp;)
+<dd>   Return the actual vault mode for that document
+ 
+  
+ <dt> o 
+    <a href="#LockByCurrentUser()"><b>LockByCurrentUser</b></a>()
+<dd>   Test if the document is locked by the current user
+ 
+  
+ <dt> o 
+    <a href="#SetVaultMode(VaultMode)"><b>SetVaultMode</b></a>(VaultMode)
+<dd>   Set the vault mode for that document
+ 
+  
+</dl>
+<dl>
+ <h2>Enumerated Type Index</h2> <br>
+ <dt> o 
+    <a href="#VaultMode"><b>VaultMode</b></a>
+<dd>   VaultMode
+ 
+  NotDefined         = 0
+  PermanentBlackBox   = 1
+  PermanentExposed   = 2
+  VolatileExposed    = 4
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AlreadyPersistedInPDM"></a><a name="AlreadyPersistedInPDM()"></a> <dt> o <b>AlreadyPersistedInPDM</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AlreadyPersistedInPDM</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Returns if the document has already been stored in the PDM
+  This could be keeping the document in the vault, exposing or not its content (mode PermanentBlackBox or PermanentExposed)
+  Or just keeping its content, and not keeping the document (mode VolatileExposed)
+    
+  
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   S_OK    : The document has been already stored
+  S_FALSE : The document has never been stored
+</dl>
+</dl>
+<a name="CurrentVaultMode"></a><a name="CurrentVaultMode(VaultMode&amp;)"></a> <dt> o <b>CurrentVaultMode</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>CurrentVaultMode</b>(<td><script type="text/javascript"> activateLink('VaultMode','VaultMode&amp;')</script> <td><tt>oCurrent</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Return the actual vault mode for that document
+ 
+  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oCurrent</tt>
+   <dd>   OUT the returned actual vaults mode 
+
+  </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>   S_OK
+  E_FAIL
+</dl>
+</dl>
+<a name="LockByCurrentUser"></a><a name="LockByCurrentUser()"></a> <dt> o <b>LockByCurrentUser</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>LockByCurrentUser</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Test if the document is locked by the current user
+ 
+  
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   S_OK    : Locked by the current user
+  S_FALSE : Not locked by the current user
+  E_FAIL  : Not documented error
+</dl>
+</dl>
+<a name="SetVaultMode"></a><a name="SetVaultMode(VaultMode)"></a> <dt> o <b>SetVaultMode</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetVaultMode</b>(<td><script type="text/javascript"> activateLink('VaultMode','VaultMode')</script> <td><tt>Mode</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Set the vault mode for that document
+ 
+  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> Mode</tt>
+   <dd>   the mode to set 
+
+  </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>   S_OK
+  E_FAIL : The passed in mode is not compatible with the Possible mode
+</dl>
+</dl>
+ <h2>Enumerated Types</h2> <br>
+<a name="VaultMode"> <dt> o <b>VaultMode</b>
+<dl>
+  <dd>
+<pre>
+enum <b>VaultMode</b> {
+  NotDefined,
+  PermanentBlackBox,
+  PermanentExposed,
+  VolatileExposed
+}
+</pre>
+  VaultMode
+ 
+  NotDefined         = 0
+  PermanentBlackBox   = 1
+  PermanentExposed   = 2
+  VolatileExposed    = 4
+</dl>
+<hr>
+ This object is included in the file: <b>CATIPDMPersistency.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATPDMBaseItf</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

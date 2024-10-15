@@ -1,0 +1,396 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>OSMInterfaces Scene (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../OSMInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Scene','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Scene','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Scene','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Scene','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Scene<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Scene_12779','Scene','0');</script>
+<b><i> Represent the scene.</i></b><br>
+
+ A scene stores a state of a product in a given ProductDocument.
+ <p>This state is composed of product properties, graphical attibutes, activation status
+ and position for each component of the product.<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetDefinition"><b>GetDefinition</b></a>
+<dd>  Returns the product's definition.
+ <dt>
+    <a href="#GetDescription"><b>GetDescription</b></a>
+<dd>  Returns the product's description.
+ <dt>
+    <a href="#GetMasterShapeRepresentation"><b>GetMasterShapeRepresentation</b></a>
+<dd>  Retrieves the product's master shape representation.
+ <dt>
+    <a href="#GetMove"><b>GetMove</b></a>
+<dd>  Returns the product's move object.
+ <dt>
+    <a href="#GetNomenclature"><b>GetNomenclature</b></a>
+<dd>  Returns the product's nomenclature.
+ <dt>
+    <a href="#GetPartNumber"><b>GetPartNumber</b></a>
+<dd>  Returns the product's part number.
+ <dt>
+    <a href="#GetPosition"><b>GetPosition</b></a>
+<dd>  Returns the product's position object in the scene.
+ <dt>
+    <a href="#GetRevision"><b>GetRevision</b></a>
+<dd>  Returns the product's revision number.
+ <dt>
+    <a href="#GetSource"><b>GetSource</b></a>
+<dd>  Returns the product's source.
+ <dt>
+    <a href="#HasAMasterShapeRepresentation"><b>HasAMasterShapeRepresentation</b></a>
+<dd>  Returns whether the product has a master shape representation in the scene.
+ <dt>
+    <a href="#UpgradeToFull"><b>UpgradeToFull</b></a>
+<dd>  Create a ProductScene in Full mode from the current Scene.
+ <dt>
+    <a href="#UpgradeToPartial"><b>UpgradeToPartial</b></a>
+<dd>  Create a ProductScene in Partial mode from the current Scene.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetDefinition"><dt>
+
+<table><tr><td>o Func <b>GetDefinition</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the product's definition.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProduct</tt>
+   <dd>    The product.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The product's definition.
+ 
+  <dt> <b>Example:</b> 
+  <dd>     This example retrieves the <tt>Engine</tt> product's definition
+    in the <tt>Configuration1</tt> scene.
+    <pre>
+    Dim Definition As String
+    Definition = Configuration1.<font color="red">GetDefinition</font>(Engine)
+    </pre>
+</dl>
+</dl>
+<a name="GetDescription"><dt>
+
+<table><tr><td>o Func <b>GetDescription</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the product's description.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProduct</tt>
+   <dd>    The product.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The product's description.
+ 
+  <dt> <b>Example:</b> 
+  <dd>     This example retrieves the <tt>Engine</tt> product's description
+    in the <tt>Configuration1</tt> scene.
+    <pre>
+    Dim Description As String
+    Description = Configuration1.<font color="red">GetDescription</font>(Engine)
+    </pre>
+</dl>
+</dl>
+<a name="GetMasterShapeRepresentation"><dt>
+
+<table><tr><td>o Func <b>GetMasterShapeRepresentation</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLoadIfNecessary</tt>) As <script type="text/javascript"> activateLink('CATBaseDispatch','CATBaseDispatch')</script> </table></dt>
+<dl>
+  <dd>
+ Retrieves the product's master shape representation.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProduct.</tt>
+   <dd>    The product
+ </dd>
+    <dt><tt> iLoadIfNecessary</tt>
+   <dd>   Parameter to set to True if the master shape representation
+   should be loaded to determine if it exists, or to False otherwise.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The product's master shape representation.
+ 
+  <dt> <b>Example:</b> 
+  <dd>     This example retrieves the <tt>Engine</tt> product's master shape representation
+    in the <tt>Configuration1</tt> scene.
+    <pre>
+    Dim MSRep As Object
+    Set MSRep = Configuration1.<font color="red">GetMasterShapeRepresentation</font>(Engine)
+    </pre>
+</dl>
+</dl>
+<a name="GetMove"><dt>
+
+<table><tr><td>o Func <b>GetMove</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>) As <script type="text/javascript"> activateLink('Move','Move')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the product's move object.
+ The move object is aggregated by the product object
+ and itself aggregates a movable object
+ to which you can apply a move transformation
+ by means of an isometry matrix. It moves your product
+ master shape representation according to this isometry.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProduct</tt>
+   <dd>    The product
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The move.
+ 
+  <dt> <b>Example:</b> 
+  <dd>     This example retrieves the <tt>EngineMove</tt> move from the <tt>Engine</tt> product
+    in the <tt>Configuration1</tt> scene.
+    <pre>
+    Dim EngineMove As Move
+    Set EngineMove = Configuration1.<font color="red">GetMove</font>(Engine)
+    </pre>
+</dl>
+</dl>
+<a name="GetNomenclature"><dt>
+
+<table><tr><td>o Func <b>GetNomenclature</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the product's nomenclature.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProduct</tt>
+   <dd>    The product.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The product's nomenclature.
+ 
+  <dt> <b>Example:</b> 
+  <dd>     This example retrieves the <tt>Engine</tt> product's nomenclature
+    in the <tt>Configuration1</tt> scene.
+    <pre>
+    Dim Nomenclature As String
+    Nomenclature = Configuration1.<font color="red">GetNomenclature</font>(Engine)
+    </pre>
+</dl>
+</dl>
+<a name="GetPartNumber"><dt>
+
+<table><tr><td>o Func <b>GetPartNumber</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the product's part number.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProduct</tt>
+   <dd>    The product.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The product's part number.
+ 
+  <dt> <b>Example:</b> 
+  <dd>     This example retrieves the <tt>Engine</tt> product's part number
+    in the <tt>Configuration1</tt> scene.
+    <pre>
+    Dim PartNumber As String
+    PartNumber = Configuration1.<font color="red">GetPartNumber</font>(Engine)
+    </pre>
+</dl>
+</dl>
+<a name="GetPosition"><dt>
+
+<table><tr><td>o Func <b>GetPosition</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>) As <script type="text/javascript"> activateLink('Position','Position')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the product's position object in the scene.
+ The position object is the object aggregated by the product object that
+ holds the position of the master shape representation in the space.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProduct</tt>
+   <dd>    The product
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The position.
+ 
+  <dt> <b>Example:</b> 
+  <dd>     This example retrieves the <tt>EnginePosition</tt> position from the <tt>Engine</tt> product
+    in the <tt>Configuration1</tt> scene.
+    <pre>
+    Dim EnginePosition As Position
+    Set EnginePosition = Configuration1.<font color="red">GetPosition</font>(Engine)
+    </pre>
+</dl>
+</dl>
+<a name="GetRevision"><dt>
+
+<table><tr><td>o Func <b>GetRevision</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the product's revision number.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProduct</tt>
+   <dd>    The product.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The product's revision number.
+ 
+  <dt> <b>Example:</b> 
+  <dd>     This example retrieves the <tt>Engine</tt> product's revision number
+    in the <tt>Configuration1</tt> scene.
+    <pre>
+    Dim Revision As String
+    Revision = Configuration1.<font color="red">GetRevision</font>(Engine)
+    </pre>
+</dl>
+</dl>
+<a name="GetSource"><dt>
+
+<table><tr><td>o Func <b>GetSource</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>) As <script type="text/javascript"> activateLink('CatProductSource','CatProductSource')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the product's source.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProduct</tt>
+   <dd>    The product.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The product's source.
+ 
+  <dt> <b>Example:</b> 
+  <dd>     This example retrieves the <tt>Engine</tt> product's source
+    in the <tt>Configuration1</tt> scene.
+    <pre>
+    Dim Source
+    Source = Configuration1.<font color="red">GetSource</font>(Engine)
+    </pre>
+</dl>
+</dl>
+<a name="HasAMasterShapeRepresentation"><dt>
+
+<table><tr><td>o Func <b>HasAMasterShapeRepresentation</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+ Returns whether the product has a master shape representation in the scene.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProduct</tt>
+   <dd>    The product
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     True if the product has a master shape representation.
+ 
+  <dt> <b>Example:</b> 
+  <dd>     This example returns whether the <tt>Engine</tt> product has a master shape representation
+    in the <tt>Configuration1</tt> scene.
+    <pre>
+    HasMSRep = Configuration1.<font color="red">HasAMasterShapeRepresentation</font>(Engine)
+    </pre>
+</dl>
+</dl>
+<a name="UpgradeToFull"><dt>
+
+<table><tr><td>o Func <b>UpgradeToFull</b>(<td>) As <script type="text/javascript"> activateLink('ProductScene','ProductScene')</script> </table></dt>
+<dl>
+  <dd>
+ Create a ProductScene in Full mode from the current Scene.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The new ProductScene.
+ 
+  <dt> <b>Example:</b> 
+  <dd>     This example creates the <tt>FullScene</tt> ProductScene from the <tt>Configuration1</tt> scene.
+    <pre>
+    Dim FullScene As ProductScene
+    Set FullScene = Configuration1.<font color="red">UpgradeToFull</font>
+    </pre>
+</dl>
+</dl>
+<a name="UpgradeToPartial"><dt>
+
+<table><tr><td>o Func <b>UpgradeToPartial</b>(<td>) As <script type="text/javascript"> activateLink('ProductScene','ProductScene')</script> </table></dt>
+<dl>
+  <dd>
+ Create a ProductScene in Partial mode from the current Scene.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The new ProductScene.
+ 
+  <dt> <b>Example:</b> 
+  <dd>     This example creates the <tt>PartialScene</tt> ProductScene from the <tt>Configuration1</tt> scene.
+    <pre>
+    Dim PartialScene As ProductScene
+    Set PartialScene = Configuration1.<font color="red">UpgradeToPartial</font>
+    </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

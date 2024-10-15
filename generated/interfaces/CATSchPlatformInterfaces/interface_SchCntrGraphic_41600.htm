@@ -1,0 +1,132 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchCntrGraphic (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchCntrGraphic','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchCntrGraphic','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchCntrGraphic','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchCntrGraphic','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchCntrGraphic<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchCntrGraphic_41600','SchCntrGraphic','0');</script>
+<b><i>  Manage the graphical representation of a schematic connector.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddGraphicalPrimitive"><b>AddGraphicalPrimitive</b></a>
+<dd>  Add a graphical primitive to a connector.
+ <dt>
+    <a href="#ListGraphicalPrimitives"><b>ListGraphicalPrimitives</b></a>
+<dd>  List all graphical primitives of a connector.
+ <dt>
+    <a href="#RemoveGraphicalPrimitive"><b>RemoveGraphicalPrimitive</b></a>
+<dd>  Remove a graphical primitive from a connector.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddGraphicalPrimitive"><dt>
+
+<table><tr><td>o Sub <b>AddGraphicalPrimitive</b>(<td><script type="text/javascript"> activateLink('SchGRR','SchGRR')</script> <td><tt>iGRRToAdd</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchGRR','SchGRR')</script> <td><tt>iGRR</tt>)</table></dt>
+<dl>
+  <dd>
+ Add a graphical primitive to a connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGRRToAdd</tt>
+   <dd>   The connector graphical primitive to be added to the connector.
+ </dd>
+    <dt><tt> iGRR</tt>
+   <dd>   The component or route graphical representation that points to 
+   the connector graphical primitive.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchCntrGraphic
+ Dim objArg1 As SchGRR
+ Dim objArg2 As SchGRR
+  ...
+ objThisIntf.<font color="red">AddGraphicalPrimitive</font>objArg1,objArg2
+ </pre>
+
+</dl>
+</dl>
+<a name="ListGraphicalPrimitives"><dt>
+
+<table><tr><td>o Func <b>ListGraphicalPrimitives</b>(<td>) As <script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> </table></dt>
+<dl>
+  <dd>
+ List all graphical primitives of a connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLGRR</tt>
+   <dd>   A list of graphical primitives
+   (members are CATISchGRR interface pointers).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchCntrGraphic
+ Dim objArg1 As SchListOfObjects
+  ...
+ Set objArg1 = objThisIntf.<font color="red">ListGraphicalPrimitives</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="RemoveGraphicalPrimitive"><dt>
+
+<table><tr><td>o Sub <b>RemoveGraphicalPrimitive</b>(<td><script type="text/javascript"> activateLink('SchGRR','SchGRR')</script> <td><tt>iGRRToRemove</tt>)</table></dt>
+<dl>
+  <dd>
+ Remove a graphical primitive from a connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGRRToRemove</tt>
+   <dd>   The connector graphical primitive to be removed from the connector.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchCntrGraphic
+ Dim objArg1 As SchGRR
+  ...
+ objThisIntf.<font color="red">RemoveGraphicalPrimitive</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

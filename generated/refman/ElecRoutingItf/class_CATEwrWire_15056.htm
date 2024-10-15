@@ -1,0 +1,228 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ElecRoutingItf Class CATEwrWire</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ElecRoutingItf.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATEwrWire','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEwrWire','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATEwrWire','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEwrWire','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ElecRoutingItf Class CATEwrWire</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATEwrWire_15056','CATEwrWire','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATEwrWire</b>
+</p>
+<p>
+<b><i> This class is used to describe a wire.</i></b><br>
+</p>
+<hr>
+</dl>
+</dl>
+<dl>
+</dl>
+<dl>
+ <h2>Data Member Index</h2> <br>
+ <dt> o 
+    <a href="#BendRadius"><b>BendRadius</b></a>
+<dd>  The BendRadius attribute corresponds to the maximum curvature of the wire.
+ <dt> o 
+    <a href="#Color"><b>Color</b></a>
+<dd>  The color of the wire.
+ <dt> o 
+    <a href="#FatherWireGroup"><b>FatherWireGroup</b></a>
+<dd>  The identifier of the WireGroup (if exists) immediate father of the wire.
+ <dt> o 
+    <a href="#Id"><b>Id</b></a>
+<dd>  The identifier of the wire.
+ <dt> o 
+    <a href="#Id_FirstExtremity"><b>Id_FirstExtremity</b></a>
+<dd>  The identifier of the first extremity.
+ <dt> o 
+    <a href="#Id_Harness"><b>Id_Harness</b></a>
+<dd>  The identifier of the harness (if exists) containing the wire.
+ <dt> o 
+    <a href="#Id_SecondExtremity"><b>Id_SecondExtremity</b></a>
+<dd>  The identifier of the second extremity.
+ <dt> o 
+    <a href="#InnerDiameter"><b>InnerDiameter</b></a>
+<dd>  The InnerDiameter attribute corresponds to the diameter of the conductor, excluding
+ the insulation.
+ <dt> o 
+    <a href="#LinearMass"><b>LinearMass</b></a>
+<dd>  The LinearMass attribute corresponds to the linear mass of the wire.
+ <dt> o 
+    <a href="#Name"><b>Name</b></a>
+<dd>  The name of the wire.
+ <dt> o 
+    <a href="#OuterDiameter"><b>OuterDiameter</b></a>
+<dd>  The OuterDiameter attribute corresponds to the diameter of the wire, including
+ the insulation.
+ <dt> o 
+    <a href="#PartNumber"><b>PartNumber</b></a>
+<dd>  The PartNumber attribute corresponds to the part number of the wire.
+ <dt> o 
+    <a href="#SeparationCode"><b>SeparationCode</b></a>
+<dd>  The SeparationCode attribute is used in knowledge rules checked in wire routing.
+ <dt> o 
+    <a href="#SubType"><b>SubType</b></a>
+<dd>  The subtype of the wire.
+ <dt> o 
+    <a href="#sSignalId"><b>sSignalId</b></a>
+<dd>  The SignalID of the wire routed.
+</dl>
+ <h2>Data Members</h2> <br>
+<a name="BendRadius"></a> <dt> o <b>BendRadius</b>
+<pre>
+  public double BendRadius</dt>
+</pre>
+<dl>
+  <dd>
+ The BendRadius attribute corresponds to the maximum curvature of the wire.
+</dl>
+<a name="Color"></a> <dt> o <b>Color</b>
+<pre>
+  public CATUnicodeString Color</dt>
+</pre>
+<dl>
+  <dd>
+ The color of the wire.
+</dl>
+<a name="FatherWireGroup"></a> <dt> o <b>FatherWireGroup</b>
+<pre>
+  public CATUnicodeString FatherWireGroup</dt>
+</pre>
+<dl>
+  <dd>
+ The identifier of the WireGroup (if exists) immediate father of the wire.
+</dl>
+<a name="Id"></a> <dt> o <b>Id</b>
+<pre>
+  public CATUnicodeString Id</dt>
+</pre>
+<dl>
+  <dd>
+ The identifier of the wire.
+ <br><b>Mandatory</b>
+</dl>
+<a name="Id_FirstExtremity"></a> <dt> o <b>Id_FirstExtremity</b>
+<pre>
+  public CATUnicodeString Id_FirstExtremity</dt>
+</pre>
+<dl>
+  <dd>
+ The identifier of the first extremity.
+ <br><b>Mandatory</b>
+</dl>
+<a name="Id_Harness"></a> <dt> o <b>Id_Harness</b>
+<pre>
+  public CATUnicodeString Id_Harness</dt>
+</pre>
+<dl>
+  <dd>
+ The identifier of the harness (if exists) containing the wire.
+</dl>
+<a name="Id_SecondExtremity"></a> <dt> o <b>Id_SecondExtremity</b>
+<pre>
+  public CATUnicodeString Id_SecondExtremity</dt>
+</pre>
+<dl>
+  <dd>
+ The identifier of the second extremity.
+ <br><b>Mandatory</b>
+</dl>
+<a name="InnerDiameter"></a> <dt> o <b>InnerDiameter</b>
+<pre>
+  public double InnerDiameter</dt>
+</pre>
+<dl>
+  <dd>
+ The InnerDiameter attribute corresponds to the diameter of the conductor, excluding
+ the insulation.
+</dl>
+<a name="LinearMass"></a> <dt> o <b>LinearMass</b>
+<pre>
+  public double LinearMass</dt>
+</pre>
+<dl>
+  <dd>
+ The LinearMass attribute corresponds to the linear mass of the wire.
+</dl>
+<a name="Name"></a> <dt> o <b>Name</b>
+<pre>
+  public CATUnicodeString Name</dt>
+</pre>
+<dl>
+  <dd>
+ The name of the wire.
+ <br><b>Mandatory</b>
+</dl>
+<a name="OuterDiameter"></a> <dt> o <b>OuterDiameter</b>
+<pre>
+  public double OuterDiameter</dt>
+</pre>
+<dl>
+  <dd>
+ The OuterDiameter attribute corresponds to the diameter of the wire, including
+ the insulation.
+ <br><b>Mandatory</b>
+</dl>
+<a name="PartNumber"></a> <dt> o <b>PartNumber</b>
+<pre>
+  public CATUnicodeString PartNumber</dt>
+</pre>
+<dl>
+  <dd>
+ The PartNumber attribute corresponds to the part number of the wire.
+</dl>
+<a name="SeparationCode"></a> <dt> o <b>SeparationCode</b>
+<pre>
+  public CATUnicodeString SeparationCode</dt>
+</pre>
+<dl>
+  <dd>
+ The SeparationCode attribute is used in knowledge rules checked in wire routing.
+</dl>
+<a name="SubType"></a> <dt> o <b>SubType</b>
+<pre>
+  public CATUnicodeString SubType</dt>
+</pre>
+<dl>
+  <dd>
+ The subtype of the wire.
+</dl>
+<a name="sSignalId"></a> <dt> o <b>sSignalId</b>
+<pre>
+  public CATUnicodeString sSignalId</dt>
+</pre>
+<dl>
+  <dd>
+ The SignalID of the wire routed.
+</dl>
+<hr>
+ This object is included in the file: <b>CATEwrWire.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATEwrInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

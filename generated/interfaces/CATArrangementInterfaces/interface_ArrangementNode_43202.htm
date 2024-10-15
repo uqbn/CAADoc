@@ -1,0 +1,157 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATArrangementInterfaces ArrangementNode (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATArrangementInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('ArrangementNode','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ArrangementNode','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('ArrangementNode','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ArrangementNode','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ArrangementNode<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_ArrangementNode_43202','ArrangementNode','0');</script>
+<b><i>   This interface provides access to a CATIAArrangementNode  object.</i></b><br>
+
+ Use this object to fetch the properties of an ArrangementNode object.
+ <b> Role: </b>
+ Use this object to retrieve the bend angle, bend radius and location of an ArrangementNode object.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#BendAngle"><b>BendAngle</b></a>
+<dd>  Returns the BendAngle of the current ArrangementNode.
+ <dt>
+    <a href="#BendRadius"><b>BendRadius</b></a>
+<dd>  Returns or sets the BendRadius of the current ArrangementNode.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetPoint"><b>GetPoint</b></a>
+<dd>  Returns the location of the current ArrangementNode.
+ <dt>
+    <a href="#SetPoint"><b>SetPoint</b></a>
+<dd>  Sets the location of the current ArrangementNode.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="BendAngle"><dt>
+
+<table><tr><td>o Property <b>BendAngle</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the BendAngle of the current ArrangementNode.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves the BendAngle of the <tt>objNode1</tt> object.
+ <pre>
+ Dim dblBendAngle   As Double
+ dblBendBendAngle  = objNode1.<font color="red">BendAngle</font>
+ </pre>
+ </dl>
+</dl>
+<a name="BendRadius"><dt>
+
+<table><tr><td>o Property <b>BendRadius</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the BendRadius of the current ArrangementNode.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves the BendRadius of the <tt>objNode1</tt> object.
+ <pre>
+ Dim dblBendRadius   As Double
+ dblBendRadius  = objNode1.<font color="red">BendRadius</font>
+ </pre>
+ </dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetPoint"><dt>
+
+<table><tr><td>o Sub <b>GetPoint</b>(<td><script type="text/javascript"> activateLink('Move','Move')</script> <td><tt>iRelAxis</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>ioNodeLocation</tt>)</table></dt>
+<dl>
+  <dd>
+ Returns the location of the current ArrangementNode.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iRelAxis</tt>
+   <dd>  The relative axis to be considered when calculating the coordinate.
+ </dd>
+    <dt><tt> ioNodeLocation</tt>
+   <dd>  The location of the ArrangementNode.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves the location of the ArrangementNode object <tt>objNode1</tt>.
+ <pre>
+ Dim dblCoords(3)   As Double
+ Dim iRelAxis       As Move
+ 'Fetch iRelAxis from the object containing the node
+ ...
+ objNode1.<font color="red">GetPoint</font>(iRelAxis, dblCoords)
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="SetPoint"><dt>
+
+<table><tr><td>o Sub <b>SetPoint</b>(<td><script type="text/javascript"> activateLink('Move','Move')</script> <td><tt>iRelAxis</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iNodeLocation</tt>)</table></dt>
+<dl>
+  <dd>
+ Sets the location of the current ArrangementNode.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iRelAxis</tt>
+   <dd>  The relative axis to be considered when calculating the coordinate.
+ </dd>
+    <dt><tt> ioNodeLocation</tt>
+   <dd>  The location of the ArrangementNode.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example sets the location of the ArrangementNode object <tt>objNode1</tt>.
+ <pre>
+ Dim dblCoords(3)   As Double
+ Dim iRelAxis       As Move
+ 'Fetch iRelAxis from the object containing the node
+ ...
+ dblCoords(0)       = 300.0 '//X
+ dblCoords(1)       = 500.0 '//Y
+ dblCoords(2)       = 300.0 '//Z
+ objNode1.<font color="red">SetPoint</font>(iRelAxis, dblCoords)
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

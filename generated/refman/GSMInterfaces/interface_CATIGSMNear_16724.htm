@@ -1,0 +1,176 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GSMInterfaces Interface CATIGSMNear</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GSMInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIGSMNear','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIGSMNear','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIGSMNear','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIGSMNear','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GSMInterfaces Interface CATIGSMNear</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIGSMNear_16724','CATIGSMNear','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIGSMNear</b>
+</p>
+<p>
+<b><i> Interface to near feature.</i></b><br>
+
+ <b>Role</b>: Allows you to choose a connexe feature from a none connexe feature result.
+ A reference element is given, the nearest criterium to the reference 
+ is used 
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIGSMFactory','CreateNear');return false">CATIGSMFactory.CreateNear</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetMultiElem(CATISpecObject_var&amp;)"><b>GetMultiElem</b></a>(CATISpecObject_var&amp;)
+<dd>  Gets multiple element.
+ <dt> o 
+    <a href="#GetReferenceElem(CATISpecObject_var&amp;)"><b>GetReferenceElem</b></a>(CATISpecObject_var&amp;)
+<dd>  Gets reference element.
+ <dt> o 
+    <a href="#GetType(int&amp;)"><b>GetType</b></a>(int&amp;)
+<dd>  Gets type 0:Near 1:Far.
+ <dt> o 
+    <a href="#SetMultiElem(CATISpecObject_var)"><b>SetMultiElem</b></a>(CATISpecObject_var)
+<dd>  Sets multiple elements.
+ <dt> o 
+    <a href="#SetReferenceElem(CATISpecObject_var)"><b>SetReferenceElem</b></a>(CATISpecObject_var)
+<dd>  Sets reference element.
+ <dt> o 
+    <a href="#SetType(int&amp;)"><b>SetType</b></a>(int&amp;)
+<dd>  Sets type 0:Near 1:Far.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetMultiElem"></a><a name="GetMultiElem(CATISpecObject_var&amp;)"></a> <dt> o <b>GetMultiElem</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetMultiElem</b>(<td><script type="text/javascript"> activateLink('CATISpecObject_var','CATISpecObject_var&amp;')</script> <td><tt>oElem1</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets multiple element.  
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oElem1</tt>
+   <dd>      feature</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetReferenceElem"></a><a name="GetReferenceElem(CATISpecObject_var&amp;)"></a> <dt> o <b>GetReferenceElem</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetReferenceElem</b>(<td><script type="text/javascript"> activateLink('CATISpecObject_var','CATISpecObject_var&amp;')</script> <td><tt>oElem2</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets reference element.  
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oElem2</tt>
+   <dd>      feature</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetType"></a><a name="GetType(int&amp;)"></a> <dt> o <b>GetType</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetType</b>(<td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>oType</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets type 0:Near 1:Far.  
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oType</tt>
+   <dd>      feature</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetMultiElem"></a><a name="SetMultiElem(CATISpecObject_var)"></a> <dt> o <b>SetMultiElem</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetMultiElem</b>(<td> const <script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject_var')</script> <td><tt>iElem1</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets multiple elements.  
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iElem1</tt>
+   <dd>      feature</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetReferenceElem"></a><a name="SetReferenceElem(CATISpecObject_var)"></a> <dt> o <b>SetReferenceElem</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetReferenceElem</b>(<td> const <script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject_var')</script> <td><tt>iElem2</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets reference element.  
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iElem2</tt>
+   <dd>      feature</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetType"></a><a name="SetType(int&amp;)"></a> <dt> o <b>SetType</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetType</b>(<td> const <script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>iType</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets type 0:Near 1:Far.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iType</tt>
+   <dd>      feature</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIGSMNear.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGitInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

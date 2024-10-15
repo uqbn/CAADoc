@@ -1,0 +1,147 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisBase Class CATAnalysisCollectorArchiver</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATAnalysisCollectorArchiver','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATAnalysisCollectorArchiver','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATAnalysisCollectorArchiver','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATAnalysisCollectorArchiver','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisBase Class CATAnalysisCollectorArchiver</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATAnalysisCollectorArchiver_51290','CATAnalysisCollectorArchiver','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATAnalysisCollectorArchiver</b>
+</p>
+<p>
+<b><i> Archiver for collector characteristic.</i></b><br>
+<br></p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#~CATAnalysisCollectorArchiver()"><b>~CATAnalysisCollectorArchiver</b></a>()
+<dd>  Destructor.
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#HadBeenStreamed(int,int)"><b>HadBeenStreamed</b></a>(int,int)
+<dd>  Returns the Stream status.
+ <dt> o 
+    <a href="#IsUnStreamable(int,int)"><b>IsUnStreamable</b></a>(int,int)
+<dd>  Returns the UnStreamable status.
+ <dt> o 
+    <a href="#UnStream(CATAnalysisExplicitParent&amp;,int,int,CATAnalysisCharacCollector*&amp;)"><b>UnStream</b></a>(CATAnalysisExplicitParent&amp;,int,int,CATAnalysisCharacCollector*&amp;)
+<dd>  UnStream the collector.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="~CATAnalysisCollectorArchiver"></a><a name="~CATAnalysisCollectorArchiver()"></a> <dt> o <b>~CATAnalysisCollectorArchiver</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATAnalysisCollectorArchiver</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Destructor.
+</dl>
+ <h2>Methods</h2> <br>
+<a name="HadBeenStreamed"></a><a name="HadBeenStreamed(int,int)"></a> <dt> o <b>HadBeenStreamed</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>HadBeenStreamed</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iOccurenceNumber</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCollectContextTag</tt>)<script type="text/javascript"> activateLink('const',' const')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the Stream status.
+ <br> Inline Method. <br>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iOccurenceNumber</tt>
+   <dd>   The Occurence number of the collector characteristic.
+ </dd>
+    <dt><tt> iCollectContextTag</tt>
+   <dd>   The Tag of the context model of the collector characteristic.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  the Stream status.
+</dl>
+</dl>
+<a name="IsUnStreamable"></a><a name="IsUnStreamable(int,int)"></a> <dt> o <b>IsUnStreamable</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>IsUnStreamable</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iOccurenceNumber</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCollectContextTag</tt>)<script type="text/javascript"> activateLink('const',' const')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the UnStreamable status.
+ <br> Inline Method. <br>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iOccurenceNumber</tt>
+   <dd>   The Occurence number of the collector characteristic.
+ </dd>
+    <dt><tt> iCollectContextTag</tt>
+   <dd>   The Tag of the context model of the collector characteristic.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  the UnStreamable status.
+</dl>
+</dl>
+<a name="UnStream"></a><a name="UnStream(CATAnalysisExplicitParent&amp;,int,int,CATAnalysisCharacCollector*&amp;)"></a> <dt> o <b>UnStream</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>UnStream</b>(<td> const <script type="text/javascript"> activateLink('CATAnalysisExplicitParent','CATAnalysisExplicitParent&amp;')</script> <td><tt>iContext</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iOccurenceNumber</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCollectContextTag</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATAnalysisCharacCollector','CATAnalysisCharacCollector*&amp;')</script> <td><tt>oCollector</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ UnStream the collector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oCollector</tt>
+   <dd>   The unstreamed collector characteristic.
+ </dd>
+    <dt><tt> iOccurenceNumber</tt>
+   <dd>   The Occurence number of the requested collector characteristic.
+ </dd>
+    <dt><tt> iCollectContextTag</tt>
+   <dd>   The Tag of the context model of the collector characteristic through </dd>
+<a href="#" onClick="openLink('CATICharacCollector','GetContextModel');return false">CATICharacCollector.GetContextModel</a> method.    Then use 
+<a href="#" onClick="openLink('CATAnalysisExplicitModel','GetModelTag');return false">CATAnalysisExplicitModel.GetModelTag</a> method.
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATAnalysisCollectorArchiver.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATSAM0Explicit</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

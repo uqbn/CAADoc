@@ -1,0 +1,142 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchAppMultiImageMaster (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchAppMultiImageMaster','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppMultiImageMaster','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchAppMultiImageMaster','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppMultiImageMaster','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchAppMultiImageMaster<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchAppMultiImageMaster_55942','SchAppMultiImageMaster','0');</script>
+<b><i>  Interface to manage the master object in the Multi-Image-Object concept.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AppAddImage"><b>AppAddImage</b></a>
+<dd>  Add an image for this master object.
+ <dt>
+    <a href="#AppIsOKToCreateImage"><b>AppIsOKToCreateImage</b></a>
+<dd>  Check if OK to create an image of this master object.
+ <dt>
+    <a href="#AppListImages"><b>AppListImages</b></a>
+<dd>  List the images of this master object.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AppAddImage"><dt>
+
+<table><tr><td>o Sub <b>AppAddImage</b>(<td><script type="text/javascript"> activateLink('SchAppConnectable','SchAppConnectable')</script> <td><tt>iImage</tt>)</table></dt>
+<dl>
+  <dd>
+ Add an image for this master object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iImage</tt>
+   <dd>   Pointer to the image to link this master to.
+
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppMultiImageMaster
+ Dim objImage As SchAppConnectable
+  ...
+ objThisIntf.<font color="red">AppAddImage</font> objImage
+ </pre>
+
+</dl>
+</dl>
+<a name="AppIsOKToCreateImage"><dt>
+
+<table><tr><td>o Sub <b>AppIsOKToCreateImage</b>(<td><script type="text/javascript"> activateLink('Document','Document')</script> <td><tt>iImageDoc</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>oBYes</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oNLSFileName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oNLSFileKeyToMessage</tt>)</table></dt>
+<dl>
+  <dd>
+ Check if OK to create an image of this master object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iImageDoc</tt>
+   <dd>   Pointer to the document the image is in.
+ </dd>
+    <dt><tt> oBYes</tt>
+   <dd>   TRUE if this object is valid to be the master of a MIO relationship. 
+ </dd>
+    <dt><tt> oNLSFileName</tt>
+   <dd>   File name for the NLS messages.
+ </dd>
+    <dt><tt> oNLSFileKeyToMessage</tt>
+   <dd>   Message key to the application specific diagnostics.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppMultiImageMaster
+ Dim objImageDoc As Document
+ Dim bYes As boolean
+ Dim strFileName As String
+ Dim strFileKeyToMsg As String
+  ...
+ objThisIntf.<font color="red">AppIsOKToCreateImage</font> objImageDoc,bYes,strFileName,strFileKeyToMsg
+ </pre>
+
+</dl>
+</dl>
+<a name="AppListImages"><dt>
+
+<table><tr><td>o Sub <b>AppListImages</b>(<td><script type="text/javascript"> activateLink('SchListOfBSTRs','SchListOfBSTRs')</script> <td><tt>iLFilter</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>oLImages</tt>)</table></dt>
+<dl>
+  <dd>
+ List the images of this master object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLFilter</tt>
+   <dd>   A list of image class names for filtering (can be NULL).
+ </dd>
+    <dt><tt> oLUKImages</tt>
+   <dd>   A list of image pointers (a list of CATIASchAppMultiImage pointers).
+
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppMultiImageMaster
+ Dim objLFilter As SchListOfBSTRs
+ Dim objLImages As SchListOfObjects
+  ...
+ objThisIntf.<font color="red">AppListImages</font> objLFilter,objLImages
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,90 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>SpaceAnalysisInterfaces ClashResult (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../SpaceAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('ClashResult','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ClashResult','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('ClashResult','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ClashResult','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ClashResult<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_ClashResult_36048','ClashResult','0');</script>
+<b><i>   Represents the ClashResult object.</i></b><br>
+
+ The ClashResult object is a set of conflicts resulting from a clash detection.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Conflicts"><b>Conflicts</b></a>
+<dd>  Returns the collection of computed Conflicts.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Export"><b>Export</b></a>
+<dd>  Exports the results in a XML file.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Conflicts"><dt>
+
+<table><tr><td>o Property <b>Conflicts</b>(<td>) As <script type="text/javascript"> activateLink('Conflicts','Conflicts')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the collection of computed Conflicts.
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>     This example retrieves the conflicts of <tt>NewClashResult</tt> ClashResult.
+    <pre>
+    Dim NewConflicts As Conflicts
+    Set NewConflicts = NewClashResult.<font color="red">Conflicts</font>
+    </pre>
+</dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Export"><dt>
+
+<table><tr><td>o Sub <b>Export</b>(<td><script type="text/javascript"> activateLink('CatClashExportType','CatClashExportType')</script> <td><tt>iType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iPath</tt>)</table></dt>
+<dl>
+  <dd>
+ Exports the results in a XML file.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iType</tt>
+   <dd>    The type of export.
+ </dd>
+    <dt><tt> iPath</tt>
+   <dd>    The path of the file.
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>     This example exports the results of <tt>NewClashResult</tt> ClashResult.
+    <pre>
+    Dim ThePath As String
+    NewClashResult.<font color="red">Export</font> CatClashExportTypeXMLResultOnly, "c:\tmp\sample.xml"
+    </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

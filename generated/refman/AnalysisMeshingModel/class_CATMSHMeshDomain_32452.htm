@@ -1,0 +1,186 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>AnalysisMeshingModel Class CATMSHMeshDomain</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../AnalysisMeshingModel.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATMSHMeshDomain','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATMSHMeshDomain','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATMSHMeshDomain','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATMSHMeshDomain','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>AnalysisMeshingModel Class CATMSHMeshDomain</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATMSHMeshDomain_32452','CATMSHMeshDomain','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATMSHMeshDomain</b>
+</p>
+<p>
+<b><i> Object representing a <b>Mesh Domain</b>.</i></b><br>
+
+ <b>Role</b>: This interface should be used to access all data associated to a <b>Mesh Domain</b>. 
+ A <b>Mesh Domain</b> is a group of finite elements, each finite elements is belonging to a single <b>Mesh Domain</b>
+ which is assigned at creation.
+ Use <a href="#" onClick="openLink('CATIMSHMesh','SetCurrentMeshDomain');return false">CATIMSHMesh.SetCurrentMeshDomain</a> method to change the current domain to which are assigned to new finite elements.
+</p>
+<hr>
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AddRef()"><b>AddRef</b></a>()
+<dd>  Increments the reference count.
+ <dt> o 
+    <a href="#GetElements(CATMSHElement**&amp;)"><b>GetElements</b></a>(CATMSHElement**&amp;)
+<dd>  Retreive all finite elements contained in the <b>Mesh Domain</b>.
+ <dt> o 
+    <a href="#GetMesh()"><b>GetMesh</b></a>()
+<dd>  Returns the <b>Mesh</b> containing the <b>Mesh Domain</b>.
+ <dt> o 
+    <a href="#GetMeshPart()"><b>GetMeshPart</b></a>()
+<dd>  Returns the <b>Mesh Part</b> containing the <b>Mesh Domain</b>.
+ <dt> o 
+    <a href="#GetNumberOfElements()"><b>GetNumberOfElements</b></a>()
+<dd>  Returns the number of finite elements contained in the <b>Mesh Domain</b>.
+ <dt> o 
+    <a href="#GetTag()"><b>GetTag</b></a>()
+<dd>  Returns the integer tag associated to the <b>Mesh Domain</b>.
+ <dt> o 
+    <a href="#Next()"><b>Next</b></a>()
+<dd>  Returns the next <b>Mesh Domain</b> in the <b>Mesh</b>.
+ <dt> o 
+    <a href="#Previous()"><b>Previous</b></a>()
+<dd>  Returns the previous <b>Mesh Domain</b> in the <b>Mesh</b>.
+ <dt> o 
+    <a href="#Release()"><b>Release</b></a>()
+<dd>  Decrements the reference count.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AddRef"></a><a name="AddRef()"></a> <dt> o <b>AddRef</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('int','inline unsigned int')</script>  <b>AddRef</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Increments the reference count. 
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The reference count value. <br>This information is meant to be used for diagnostic/testing purposes only, because, in certain situations, the value may be unstable.
+</dl>
+</dl>
+<a name="GetElements"></a><a name="GetElements(CATMSHElement**&amp;)"></a> <dt> o <b>GetElements</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('int','int')</script>  <b>GetElements</b>(<td><script type="text/javascript"> activateLink('CATMSHElement','CATMSHElement**&amp;')</script> <td><tt>Elements</tt>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Retreive all finite elements contained in the <b>Mesh Domain</b>.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oElements</tt>
+   <dd>   An array containing all pointers to finite elements contained in the <b>Mesh Domain</b>.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    The number of finite elements contained in the <b>Mesh Domain</b>.
+</dl>
+</dl>
+<a name="GetMesh"></a><a name="GetMesh()"></a> <dt> o <b>GetMesh</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATIMSHMesh','CATIMSHMesh *')</script>  <b>GetMesh</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the <b>Mesh</b> containing the <b>Mesh Domain</b>.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  CATBaseUnknown#Release
+</dl>
+</dl>
+<a name="GetMeshPart"></a><a name="GetMeshPart()"></a> <dt> o <b>GetMeshPart</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATIMSHMeshPart','CATIMSHMeshPart *')</script>  <b>GetMeshPart</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the <b>Mesh Part</b> containing the <b>Mesh Domain</b>.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  CATBaseUnknown#Release
+</dl>
+</dl>
+<a name="GetNumberOfElements"></a><a name="GetNumberOfElements()"></a> <dt> o <b>GetNumberOfElements</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('int','inline int')</script>  <b>GetNumberOfElements</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the number of finite elements contained in the <b>Mesh Domain</b>.
+</dl>
+<a name="GetTag"></a><a name="GetTag()"></a> <dt> o <b>GetTag</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('int','inline unsigned int')</script>  <b>GetTag</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the integer tag associated to the <b>Mesh Domain</b>.
+</dl>
+<a name="Next"></a><a name="Next()"></a> <dt> o <b>Next</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATMSHMeshDomain','inline CATMSHMeshDomain *')</script>  <b>Next</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the next <b>Mesh Domain</b> in the <b>Mesh</b>. This method should be used with
+ the 
+<a href="#" onClick="openLink('CATIMSHMesh','GetFirstMeshDomain');return false">CATIMSHMesh.GetFirstMeshDomain</a> method to scan all <b>Mesh Domains</b>.
+</dl>
+<a name="Previous"></a><a name="Previous()"></a> <dt> o <b>Previous</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATMSHMeshDomain','inline CATMSHMeshDomain *')</script>  <b>Previous</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the previous <b>Mesh Domain</b> in the <b>Mesh</b>. This method should be used with
+ the 
+<a href="#" onClick="openLink('CATIMSHMesh','GetFirstMeshDomain');return false">CATIMSHMesh.GetFirstMeshDomain</a> method to scan all <b>Mesh Domains</b>.
+</dl>
+<a name="Release"></a><a name="Release()"></a> <dt> o <b>Release</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('int','unsigned int')</script>  <b>Release</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Decrements the reference count. 
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The reference count value. <br>This information is meant to be used for diagnostic/testing purposes only, because, in certain situations, the value may be unstable.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATMSHMeshDomain.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAmtModel</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

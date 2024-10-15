@@ -1,0 +1,72 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchAppGapPriority (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchAppGapPriority','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppGapPriority','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchAppGapPriority','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppGapPriority','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchAppGapPriority<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchAppGapPriority_46781','SchAppGapPriority','0');</script>
+<b><i>  Manage the graphical representation of a route.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AppChooseGapPriority"><b>AppChooseGapPriority</b></a>
+<dd>  Identify which of 2 intersecting routes should be gapped.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AppChooseGapPriority"><dt>
+
+<table><tr><td>o Sub <b>AppChooseGapPriority</b>(<td><script type="text/javascript"> activateLink('SchRoute','SchRoute')</script> <td><tt>iTheOtherRoute</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CatSchIDLGapPriority','CatSchIDLGapPriority')</script> <td><tt>oPriority</tt>)</table></dt>
+<dl>
+  <dd>
+ Identify which of 2 intersecting routes should be gapped.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iTheOtherRoute</tt>
+   <dd>   The route intersecting This route.
+ </dd>
+    <dt><tt> oPriority</tt>
+   <dd>   Gap Priority.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppGapPriority
+ Dim objArg1 As SchRoute
+
+  ...
+ objThisIntf.<font color="red">AppChooseGapPriority</font>objArg1,CatSchIDLGapPriority_Enum
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

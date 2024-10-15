@@ -1,0 +1,81 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>InfInterfaces Folder (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../InfInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Folder','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Folder','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Folder','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Folder','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Folder<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Folder_13422','Folder','0');</script>
+<b><i> Represents the folder object.</i></b><br>
+
+ It allows you to manipulate folders and
+ gives access to information about them.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Files"><b>Files</b></a>
+<dd>  Returns the file collection of the folder.
+ <dt>
+    <a href="#SubFolders"><b>SubFolders</b></a>
+<dd>  Returns the folder collection of the folder.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Files"><dt>
+
+<table><tr><td>o Property <b>Files</b>(<td>) As <script type="text/javascript"> activateLink('Files','Files')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the file collection of the folder. 
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves in <tt>TestFiles</tt> the file collection
+ of the folder <tt>TestFolder</tt>.
+ <pre>
+ Dim TestFiles As Files
+ Set TestFiles = TestFolder.<font color="red">Files</font>
+ </pre>
+ </dl>
+</dl>
+<a name="SubFolders"><dt>
+
+<table><tr><td>o Property <b>SubFolders</b>(<td>) As <script type="text/javascript"> activateLink('Folders','Folders')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the folder collection of the folder. 
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves in <tt>TestSubFolders</tt> the folder colection
+ of the folder <tt>TestFolder</tt>.
+ <pre>
+ Dim TestSubFolders As CATIAFolders
+ Set TestSubFolders = TestFolder.<font color="red">SubFolders</font>
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

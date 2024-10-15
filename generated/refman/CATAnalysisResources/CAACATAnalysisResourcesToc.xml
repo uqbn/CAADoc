@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+<ITEM type="class" name="CATEAnalysisAxis" href="class_CATEAnalysisAxis_33839.htm" />
+<ITEM type="class" name="CATEAnalysisContextCheck" href="class_CATEAnalysisContextCheck_49688.htm" />
+<ITEM type="class" name="CATEAnalysisEditionControl" href="class_CATEAnalysisEditionControl_55530.htm" />
+<ITEM type="class" name="CATEAnalysisEditionCusto" href="class_CATEAnalysisEditionCusto_50322.htm" />
+<ITEM type="class" name="CATEAnalysisEntityInit" href="class_CATEAnalysisEntityInit_45614.htm" />
+<ITEM type="class" name="CATEAnalysisEntityPreproSubscriber" href="class_CATEAnalysisEntityPreproSubscriber_80543.htm" />
+<ITEM type="class" name="CATEAnalysisEntityVisu" href="class_CATEAnalysisEntityVisu_45974.htm" />
+<ITEM type="class" name="CATEAnalysisGroup" href="class_CATEAnalysisGroup_35739.htm" />
+<ITEM type="class" name="CATEAnalysisSetInit" href="class_CATEAnalysisSetInit_38965.htm" />
+<ITEM type="class" name="CATEAnalysisSupportFilter" href="class_CATEAnalysisSupportFilter_53180.htm" />
+<ITEM type="class" name="CATEAnalysisUpgrade" href="class_CATEAnalysisUpgrade_39002.htm" />
+<ITEM type="class" name="CATEAnalysisVisibility" href="class_CATEAnalysisVisibility_46039.htm" />
+<ITEM type="class" name="CATECharacCollector" href="class_CATECharacCollector_38958.htm" />
+<ITEM type="class" name="CATESamEnumManager" href="class_CATESamEnumManager_36713.htm" />
+<ITEM type="class" name="CATESamImportDefineAdaptor" href="class_CATESamImportDefineAdaptor_54570.htm" />
+<ITEM type="class" name="CATSamBasicComponentManagerAdaptor" href="class_CATSamBasicComponentManagerAdaptor_78950.htm" />
+<ITEM type="class" name="CATSamToolsForExplicitation" href="class_CATSamToolsForExplicitation_58346.htm" />
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Enumerations" type="enum"  ctype="enum" >
+<ITEM type="enum" name="CollectorArchiveFlag" href="enum_CollectorArchiveFlag_40150.htm" />
+</ITEM>
+</Root>

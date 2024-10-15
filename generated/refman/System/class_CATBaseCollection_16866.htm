@@ -1,0 +1,169 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>System Class CATBaseCollection</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../System.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATBaseCollection','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATBaseCollection','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATBaseCollection','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATBaseCollection','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>System Class CATBaseCollection</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATBaseCollection_16866','CATBaseCollection','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATBaseCollection</b>
+</p>
+<p>
+<b><i> Adaptor class for the CATIACollection Interface.</i></b><br>
+
+ <b>Role</b>: 
+ This class provides a partial default implementation for the <tt>CATIACollection</tt> interface. 
+ All implementations of Automation interfaces being derived from <tt>CATIACollection</tt> should inherit 
+ from <tt>CATBaseCollection</tt>.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIACollection','');return false">CATIACollection</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATBaseCollection()"><b>CATBaseCollection</b></a>()
+<dd>  Default constructor.
+ <dt> o 
+    <a href="#CATBaseCollection(CATBaseCollection&amp;)"><b>CATBaseCollection</b></a>(CATBaseCollection&amp;)
+<dd>  Copy constructor.
+ <dt> o 
+    <a href="#~CATBaseCollection()"><b>~CATBaseCollection</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetItem(CATBSTR&amp;,CATBaseDispatch*&amp;)"><b>GetItem</b></a>(CATBSTR&amp;,CATBaseDispatch*&amp;)
+<dd>  Retrieves an object with the specified name.
+ <dt> o 
+    <a href="#get_Application(CATIAApplication*&amp;)"><b>get_Application</b></a>(CATIAApplication*&amp;)
+<dd>  Returns the application.
+ <dt> o 
+    <a href="#get_Parent(CATBaseDispatch*&amp;)"><b>get_Parent</b></a>(CATBaseDispatch*&amp;)
+<dd>  Returns the parent of the object.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATBaseCollection"></a><a name="CATBaseCollection()"></a> <dt> o <b>CATBaseCollection</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATBaseCollection</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Default constructor.
+</dl>
+<a name="CATBaseCollection"></a><a name="CATBaseCollection(CATBaseCollection&amp;)"></a> <dt> o <b>CATBaseCollection</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATBaseCollection</b>(<td> const <script type="text/javascript"> activateLink('CATBaseCollection','CATBaseCollection&amp;')</script> <td><tt>iSrc</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Copy constructor.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSrc</tt>
+   <dd>   The object to copy</dd>
+</dl>
+</dl>
+</dl>
+<a name="~CATBaseCollection"></a><a name="~CATBaseCollection()"></a> <dt> o <b>~CATBaseCollection</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATBaseCollection</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetItem"></a><a name="GetItem(CATBSTR&amp;,CATBaseDispatch*&amp;)"></a> <dt> o <b>GetItem</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','HRESULT __stdcall')</script>  <b>GetItem</b>(<td> const <script type="text/javascript"> activateLink('CATBSTR','CATBSTR&amp;')</script> <td><tt>iName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBaseDispatch','CATBaseDispatch*&amp;')</script> <td><tt>oItem</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves an object with the specified name.
+ See 
+<a href="#" onClick="openLink('CATIACollection','GetItem');return false">CATIACollection.GetItem</a> for a complete description of this method. All implementations must override this default implementation.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iName</tt>
+   <dd>   The specified name of the object to retrieve
+ </dd>
+    <dt><tt> oItem</tt>
+   <dd>   The returned object</dd>
+</dl>
+</dl>
+</dl>
+<a name="get_Application"></a><a name="get_Application(CATIAApplication*&amp;)"></a> <dt> o <b>get_Application</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','HRESULT __stdcall')</script>  <b>get_Application</b>(<td><script type="text/javascript"> activateLink('CATIAApplication','CATIAApplication*&amp;')</script> <td><tt>oApplication</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the application.
+ See 
+<a href="#" onClick="openLink('CATIACollection','get_Application');return false">CATIACollection.get_Application</a> for a complete description of this method. 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oApplication</tt>
+   <dd>   The returned application</dd>
+</dl>
+</dl>
+</dl>
+<a name="get_Parent"></a><a name="get_Parent(CATBaseDispatch*&amp;)"></a> <dt> o <b>get_Parent</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','HRESULT __stdcall')</script>  <b>get_Parent</b>(<td><script type="text/javascript"> activateLink('CATBaseDispatch','CATBaseDispatch*&amp;')</script> <td><tt>oParent</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the parent of the object.
+ See 
+<a href="#" onClick="openLink('CATIACollection','get_Parent');return false">CATIACollection.get_Parent</a> for a complete description of this method. All implementations must override this default implementation.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oParent</tt>
+   <dd>   The returned parent</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATBaseCollection.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>JS0GROUP</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

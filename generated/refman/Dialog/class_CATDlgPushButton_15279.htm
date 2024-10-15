@@ -1,0 +1,124 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>Dialog Class CATDlgPushButton</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../Dialog.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATDlgPushButton','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATDlgPushButton','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATDlgPushButton','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATDlgPushButton','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Dialog Class CATDlgPushButton</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATDlgPushButton_15279','CATDlgPushButton','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATDlgPushButton</b>
+</p>
+<p>
+<b><i> Base class for simple push buttons.</i></b><br>
+
+ <b>Role:</b>Like any control, assign CATDlgPushButton to any container or window.</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATDlgPushButton(CATDialog*,CATString&amp;,CATDlgStyle)"><b>CATDlgPushButton</b></a>(CATDialog*,CATString&amp;,CATDlgStyle)
+<dd>  Constructor.
+ <dt> o 
+    <a href="#~CATDlgPushButton()"><b>~CATDlgPushButton</b></a>()
+<dd>  Destructor.
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetPushBActivateNotification()"><b>GetPushBActivateNotification</b></a>()
+<dd>  Returns the event notification sent whenever the pushed button is pressed.
+ <dt> o 
+    <a href="#GetPushBRepetitiveNotification()"><b>GetPushBRepetitiveNotification</b></a>()
+<dd>  Returns the event notification repeatedly sent as long as the pushed 
+ button is kept pressed.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATDlgPushButton"></a><a name="CATDlgPushButton(CATDialog*,CATString&amp;,CATDlgStyle)"></a> <dt> o <b>CATDlgPushButton</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATDlgPushButton</b>(<td><script type="text/javascript"> activateLink('CATDialog','CATDialog*')</script> <td><tt>iParent</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATString','CATString&amp;')</script> <td><tt>iObjectName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATDlgStyle','CATDlgStyle')</script> <td><tt>iStyle</tt><td><tt>=NULL</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructor.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iParent</tt>
+   <dd> The parent widget.
+ </dd>
+    <dt><tt> iObjectName</tt>
+   <dd> The internal name of the push button.
+ </dd>
+    <dt><tt> iStyle</tt>
+   <dd> The style of the push button.
+ <b>Legal values:</b>
+ <dl>
+ <dt><tt>CATDlgPusRepetitive</tt><dd> Creates a button which will trigger a specific event when maintained pressed. </dd></dt>
+ <dt><tt>CATDlgPusNoShadow</tt><dd> Button without 3D look. This style is effective only if an icon is defined for the button. </dd></dt>
+ <dt><tt>CATDlgBtnIconAndText</tt><dd> When they are defined, both its icon and its title will be displayed on the button face.
+                                       This style is ignored if CATDlgPusNoShadow is specified.
+                                       </dd></dt>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="~CATDlgPushButton"></a><a name="~CATDlgPushButton()"></a> <dt> o <b>~CATDlgPushButton</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATDlgPushButton</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Destructor.
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetPushBActivateNotification"></a><a name="GetPushBActivateNotification()"></a> <dt> o <b>GetPushBActivateNotification</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATNotification','CATNotification *')</script>  <b>GetPushBActivateNotification</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the event notification sent whenever the pushed button is pressed.
+</dl>
+<a name="GetPushBRepetitiveNotification"></a><a name="GetPushBRepetitiveNotification()"></a> <dt> o <b>GetPushBRepetitiveNotification</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATNotification','CATNotification *')</script>  <b>GetPushBRepetitiveNotification</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the event notification repeatedly sent as long as the pushed 
+ button is kept pressed.
+</dl>
+<hr>
+ This object is included in the file: <b>CATDlgPushButton.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>DI0PANV2</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

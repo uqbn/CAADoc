@@ -1,0 +1,109 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>SurfaceMachiningInterfaces ManufacturingSurfaceMachiningArea (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../SurfaceMachiningInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('ManufacturingSurfaceMachiningArea','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ManufacturingSurfaceMachiningArea','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('ManufacturingSurfaceMachiningArea','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ManufacturingSurfaceMachiningArea','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ManufacturingSurfaceMachiningArea<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_ManufacturingSurfaceMachiningArea_90557','ManufacturingSurfaceMachiningArea','0');</script>
+<b><i> Represents the Manufacturing Surface Machining Area.</i></b><br>
+
+ <b>Role</b>: Allows you to associate NCGeometries with a Machining Area.<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#RemoveNCGeometry"><b>RemoveNCGeometry</b></a>
+<dd>  Removes all the NCGeometry of a specified type linked to a Manufacturing Surface Machining Area.
+ <dt>
+    <a href="#SetNCGeometry"><b>SetNCGeometry</b></a>
+<dd>  Sets a NCGeometry of a specified type to a Manufacturing Surface Machining Area.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="RemoveNCGeometry"><dt>
+
+<table><tr><td>o Sub <b>RemoveNCGeometry</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iGeometryType</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes all the NCGeometry of a specified type linked to a Manufacturing Surface Machining Area.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGeometryType</tt>
+   <dd>   <b>Legal values</b>: iGeometryType can be
+   <dl>
+     <dt><tt>GuidingElements</tt> <dd> to remove the limiting contour  
+     <dt><tt>Parts</tt>           <dd> to remove the part to machine
+     <dt><tt>Checks</tt>          <dd> to remove the check elements
+   </dl> 
+ </dl>
+ <dl>
+ <br>
+ <dt><b>Example:</b>
+ The following example removes the part of the manufacturing surface machining area <tt>CurrentSMA</tt>
+ <pre>
+ Call CurrentSMA.<font color="red">RemoveNCGeometry</font>("Parts")
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="SetNCGeometry"><dt>
+
+<table><tr><td>o Sub <b>SetNCGeometry</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iGeometryType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>iNCGeometry</tt>)</table></dt>
+<dl>
+  <dd>
+ Sets a NCGeometry of a specified type to a Manufacturing Surface Machining Area.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGeometryType</tt>
+   <dd> <b>Legal values</b>: iGeometryType can be
+   <dl>
+     <dt><tt>GuidingElements</tt> <dd> to set the limiting contour   
+     <dt><tt>Parts</tt>           <dd> to set the part to machine
+     <dt><tt>Checks</tt>          <dd> to set a check element
+   </dl> 
+ </dd>
+    <dt><tt> iNCGeometry</tt>
+   <dd>   The NCGeometry to be set.
+ </dl>
+ <dl>
+ <br>
+ <dt><b>Example:</b>
+ The following example sets the NCGeometry <tt>NCGeomPart</tt> to the manufacturing surface machining area <tt>CurrentSMA</tt>
+ <pre>
+ Call CurrentSMA.<font color="red">SetNCGeometry</font>("Parts",NCGeomPart)
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

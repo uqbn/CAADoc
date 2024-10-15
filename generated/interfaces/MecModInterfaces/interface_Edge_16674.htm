@@ -1,0 +1,76 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>MecModInterfaces Edge (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../MecModInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Edge','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Edge','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Edge','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Edge','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Edge<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Edge_16674','Edge','0');</script>
+<b><i> 1-D boundary.</i></b><br>
+
+ <b>Role</b>: 
+ This <a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object may be, for example, the edge of a cylinder.</br> You will create an Edge object using the 
+<a href="#" onClick="openLink('Shapes','GetBoundary');return false">Shapes.GetBoundary</a> , 
+<a href="#" onClick="openLink('HybridShapes','GetBoundary');return false">HybridShapes.GetBoundary</a> ,  
+<a href="#" onClick="openLink('Sketches','GetBoundary');return false">Sketches.GetBoundary</a> or 
+<a href="#" onClick="openLink('Selection','SelectElement2');return false">Selection.SelectElement2</a> method. Then, you pass it to the operator (such as 
+<a href="#" onClick="openLink('HybridShapeFactory','AddNewPointTangent');return false">HybridShapeFactory.AddNewPointTangent</a> ).</br>  The lifetime of an Edge object is limited, see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a>.</br>  <b>See also:</b><br>
+ 
+<a href="#" onClick="openLink('TriDimFeatEdge','');return false">TriDimFeatEdge</a> , 
+<a href="#" onClick="openLink('RectilinearTriDimFeatEdge','');return false">RectilinearTriDimFeatEdge</a> , 
+<a href="#" onClick="openLink('BiDimFeatEdge','');return false">BiDimFeatEdge</a> , 
+<a href="#" onClick="openLink('RectilinearBiDimFeatEdge','');return false">RectilinearBiDimFeatEdge</a> , 
+<a href="#" onClick="openLink('MonoDimFeatEdge','');return false">MonoDimFeatEdge</a> , 
+<a href="#" onClick="openLink('RectilinearMonoDimFeatEdge','');return false">RectilinearMonoDimFeatEdge</a> . <! @sample>
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example asks the end user to select a planar curve, whose plane is parallel to the XY plane. 
+ Then, it creates a point on the tangent to the curve in the X direction:
+ <pre>
+ Dim InputObjectType(0)
+ Set Document = CATIA.ActiveDocument
+ Set Selection = Document.Selection
+ Set HybridBodies = Document.Part.HybridBodies
+ Set HybridBody = HybridBodies.Item("Geometrical Set.1")
+ 'We propose to the user that he select a planar curve whose plane is parallel to the XY plane
+ InputObjectType(0)="Edge"
+ Status=Selection.SelectElement2(InputObjectType,"Select a planar curve whose plane is parallel to the XY plane",true)
+ if (Status = "cancel") then Exit Sub
+ Set PlanarCurve = Selection.Item(1).Value
+ Set HybridShapeDirection = HybridShapeFactory.AddNewDirectionByCoord(1.0,0.0,0.0)
+ Set HybridShapePointTangent = HybridShapeFactory.AddNewPointTangent(PlanarCurve,HybridShapeDirection)
+ HybridBody.AppendHybridShape HybridShapePointTangent
+ Document.Part.InWorkObject = HybridShapePointTangent
+ Document.Part.Update  
+ </pre>
+ </dl>
+<hr>
+<dl>
+</dl>
+<dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

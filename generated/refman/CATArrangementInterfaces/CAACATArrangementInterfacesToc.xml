@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="CATIArrAppProduct" href="interface_CATIArrAppProduct_46373.htm" />
+<ITEM type="interface" name="CATIArrConnectorFactory" href="interface_CATIArrConnectorFactory_58898.htm" />
+<ITEM type="interface" name="CATIArrNode" href="interface_CATIArrNode_37693.htm" />
+<ITEM type="interface" name="CATIArrSegment" href="interface_CATIArrSegment_41694.htm" />
+<ITEM type="interface" name="CATIArrSegmentsString" href="interface_CATIArrSegmentsString_54383.htm" />
+<ITEM type="interface" name="CATIRouRadiusCornerSection" href="interface_CATIRouRadiusCornerSection_66108.htm" />
+<ITEM type="interface" name="CATIRouRectSection" href="interface_CATIRouRectSection_48110.htm" />
+<ITEM type="interface" name="CATIRouRoundSection" href="interface_CATIRouRoundSection_50117.htm" />
+<ITEM type="interface" name="CATIRouSection" href="interface_CATIRouSection_41777.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+<ITEM type="class" name="CATEArrAppProductAdapter" href="class_CATEArrAppProductAdapter_58042.htm" />
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Enumerations" type="enum"  ctype="enum" >
+<ITEM type="enum" name="CATArrAlignmentConnectorTypeEnum" href="enum_CATArrAlignmentConnectorTypeEnum_81013.htm" />
+<ITEM type="enum" name="CATArrFaceConnectorTypeEnum" href="enum_CATArrFaceConnectorTypeEnum_65525.htm" />
+<ITEM type="enum" name="CATArrOrientationConnectorTypeEnum" href="enum_CATArrOrientationConnectorTypeEnum_88023.htm" />
+<ITEM type="enum" name="CATRouNodeGeomStatus" href="enum_CATRouNodeGeomStatus_49109.htm" />
+<ITEM type="enum" name="CATRouSectionTypes" href="enum_CATRouSectionTypes_45537.htm" />
+<ITEM type="enum" name="CATRouSetPointNames" href="enum_CATRouSetPointNames_46892.htm" />
+</ITEM>
+<ITEM name="Macros" type="define"  ctype="define">
+<ITEM type="define" name="CatRouSectionFirst" href="define_CatRouSectionFirst_46392.htm" />
+<ITEM type="define" name="CatRouSectionLast" href="define_CatRouSectionLast_44417.htm" />
+<ITEM type="define" name="CatRouSetPointFirst" href="define_CatRouSetPointFirst_48226.htm" />
+<ITEM type="define" name="CatRouSetPointLast" href="define_CatRouSetPointLast_46135.htm" />
+</ITEM>
+</Root>

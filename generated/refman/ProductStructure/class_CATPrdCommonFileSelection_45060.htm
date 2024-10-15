@@ -1,0 +1,107 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ProductStructure Class CATPrdCommonFileSelection</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ProductStructure.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATPrdCommonFileSelection','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATPrdCommonFileSelection','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATPrdCommonFileSelection','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATPrdCommonFileSelection','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ProductStructure Class CATPrdCommonFileSelection</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATPrdCommonFileSelection_45060','CATPrdCommonFileSelection','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATPrdCommonFileSelection</b>
+</p>
+<p>
+<b><i> Base class to give basic implementation for CATIProductFileSelection.</i></b><br>
+
+ <b>usage:</b> To define a new kind of file recognized by ProductStructure's import,
+ use C++ inheritance on CATPrdCommonFileSelection class to implement this interface on your file, 
+ and in the constructor of the implementation, add the kind of file to recognize.
+
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIProductFileSelection','');return false">CATIProductFileSelection</a>, <a href="#" onClick="openLink('CATIProductSelection','');return false">CATIProductSelection</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATPrdCommonFileSelection()"><b>CATPrdCommonFileSelection</b></a>()
+<dd>  Constructs a CATPrdCommonFileSelection.
+ <dt> o 
+    <a href="#~CATPrdCommonFileSelection()"><b>~CATPrdCommonFileSelection</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#ExtractProducts(CATIContainer*,CATIProduct*,CATListValCATBaseUnknown_var*&amp;)"><b>ExtractProducts</b></a>(CATIContainer*,CATIProduct*,CATListValCATBaseUnknown_var*&amp;)
+<dd>   Extracts products representing the selected files.
+ <dt> o 
+    <a href="#GetSelectionCount(long&amp;)"><b>GetSelectionCount</b></a>(long&amp;)
+<dd>   Default implementation assumes that each selected file is able to generate exactly one product.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATPrdCommonFileSelection"></a><a name="CATPrdCommonFileSelection()"></a> <dt> o <b>CATPrdCommonFileSelection</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATPrdCommonFileSelection</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a CATPrdCommonFileSelection.
+ <br><b>usage:</b> Add the kind of file to recognize in _typesList after creating that list.
+</dl>
+<a name="~CATPrdCommonFileSelection"></a><a name="~CATPrdCommonFileSelection()"></a> <dt> o <b>~CATPrdCommonFileSelection</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATPrdCommonFileSelection</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="ExtractProducts"></a><a name="ExtractProducts(CATIContainer*,CATIProduct*,CATListValCATBaseUnknown_var*&amp;)"></a> <dt> o <b>ExtractProducts</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ExtractProducts</b>(<td><script type="text/javascript"> activateLink('CATIContainer','CATIContainer*')</script> <td><tt>iOptionalContainer</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIProduct','CATIProduct*')</script> <td><tt>iTargetProduct</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListValCATBaseUnknown_var','CATListValCATBaseUnknown_var*&amp;')</script> <td><tt>oList</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Extracts products representing the selected files.
+ <br>Default implementation is valid for files which contain 3D information ( as vrml ).
+</dl>
+<a name="GetSelectionCount"></a><a name="GetSelectionCount(long&amp;)"></a> <dt> o <b>GetSelectionCount</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetSelectionCount</b>(<td><script type="text/javascript"> activateLink('long','long&amp;')</script> <td><tt>oCount</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Default implementation assumes that each selected file is able to generate exactly one product.
+</dl>
+<hr>
+ This object is included in the file: <b>CATPrdCommonFileSelection.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATProductStructure1</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

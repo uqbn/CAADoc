@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="CATIEhfBundleSegmentLink" href="interface_CATIEhfBundleSegmentLink_45597.htm" />
+<ITEM type="interface" name="CATIEhfEnvironment" href="interface_CATIEhfEnvironment_33784.htm" />
+<ITEM type="interface" name="CATIEhfFlattenManager" href="interface_CATIEhfFlattenManager_38820.htm" />
+<ITEM type="interface" name="CATIEhfFlatteningParameters" href="interface_CATIEhfFlatteningParameters_54248.htm" />
+<ITEM type="interface" name="CATIEhfLengthTolerance" href="interface_CATIEhfLengthTolerance_41161.htm" />
+<ITEM type="interface" name="CATIEhfManageLengthTolerance" href="interface_CATIEhfManageLengthTolerance_55991.htm" />
+<ITEM type="interface" name="CATIEhfPrdWkbCfgAddin" href="interface_CATIEhfPrdWkbCfgAddin_37694.htm" />
+<ITEM type="interface" name="CATIEhfUIPArrangeJunction" href="interface_CATIEhfUIPArrangeJunction_48026.htm" />
+<ITEM type="interface" name="CATIEhfUIPLengthTolerance" href="interface_CATIEhfUIPLengthTolerance_47665.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+</Root>

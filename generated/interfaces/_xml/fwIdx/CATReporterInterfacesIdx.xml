@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="CATReporterInterfaces" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="1" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="RpmReport" initial="R" htmlFileName="interface_RpmReport_29547" fatherClass="AnyObject" fatherId="9080" DSCharacteristic="interface" id="29547" abstract="" />
+<method name="GenerateReport" htmlFileName="interface_RpmReport_29547" containerName="RpmReport" containerType="interface" id="42579" status="0" isProperty="0" initial="G" argList="" abstract="This method generates a report to an output file." />
+</fw>

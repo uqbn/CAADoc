@@ -1,0 +1,235 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PartInterfaces Shell (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../PartInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Shell','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Shell','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Shell','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Shell','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Shell<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Shell_14270','Shell','0');</script>
+<b><i> Represents the shell shape.</i></b><br>
+
+ A shell shape is made up of a list of faces to process
+ and two thickness parameters.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#ExternalThickness"><b>ExternalThickness</b></a>
+<dd>  Returns the shell external thickness.
+ <dt>
+    <a href="#FacesToRemove"><b>FacesToRemove</b></a>
+<dd>  Returns the collection of faces to be removed by the shell process.
+ <dt>
+    <a href="#InternalThickness"><b>InternalThickness</b></a>
+<dd>  Returns the shell internal thickness.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddFaceToRemove"><b>AddFaceToRemove</b></a>
+<dd>  Adds a new face to those to be removed by the shell process.
+ <dt>
+    <a href="#AddFaceWithDifferentThickness"><b>AddFaceWithDifferentThickness</b></a>
+<dd>  Adds a new face to be thicken with different offset values.
+ <dt>
+    <a href="#RemoveFaceWithDifferentThickness"><b>RemoveFaceWithDifferentThickness</b></a>
+<dd>  Removes an existing face from those to be thicken with different 
+ offset values by the shell process.
+ <dt>
+    <a href="#SetVolumeSupport"><b>SetVolumeSupport</b></a>
+<dd>  Set the Support Volume of the faces to modify during Shell operation.
+ <dt>
+    <a href="#WithdrawFaceToRemove"><b>WithdrawFaceToRemove</b></a>
+<dd>  Withdraws an existing face from those to be removed
+ by the shell process.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="ExternalThickness"><dt>
+
+<table><tr><td>o Property <b>ExternalThickness</b>(<td>) As <script type="text/javascript"> activateLink('Length','Length')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the shell external thickness. 
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>extThick</tt>
+ the external thickness of the shell <tt>firstShell</tt>:
+ <pre>
+ Set extThick = firstShell.<font color="red">ExternalThickness</font>
+ </pre>
+ </dl>
+</dl>
+<a name="FacesToRemove"><dt>
+
+<table><tr><td>o Property <b>FacesToRemove</b>(<td>) As <script type="text/javascript"> activateLink('References','References')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the collection of faces to be removed by the shell process.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>list</tt> the faces
+ to be removed from the shell <tt>firstShell</tt>:
+ <pre>
+ Set list = firstShell.<font color="red">FacesToRemove</font>
+ </pre>
+ </dl>
+</dl>
+<a name="InternalThickness"><dt>
+
+<table><tr><td>o Property <b>InternalThickness</b>(<td>) As <script type="text/javascript"> activateLink('Length','Length')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the shell internal thickness.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>intThick</tt>
+ the internal thickness of the shell <tt>firstShell</tt>:
+ <pre>
+ Set intThick = firstShell.<font color="red">InternalThickness</font>
+ </pre>
+ </dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddFaceToRemove"><dt>
+
+<table><tr><td>o Sub <b>AddFaceToRemove</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iFaceToRemove</tt>)</table></dt>
+<dl>
+  <dd>
+ Adds a new face to those to be removed by the shell process. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFaceToRemove</tt>
+   <dd>   The face to be removed<br>
+ The following </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object is supported:  
+<a href="#" onClick="openLink('Face','');return false">Face</a>. <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example adds the new <tt>face</tt> face
+ to be removed in the shell <tt>firstShell</tt>:
+ <pre>
+ call firstShell.<font color="red">AddFaceToRemove</font>(face)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="AddFaceWithDifferentThickness"><dt>
+
+<table><tr><td>o Sub <b>AddFaceWithDifferentThickness</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iFaceToThicken</tt>)</table></dt>
+<dl>
+  <dd>
+ Adds a new face to be thicken with different offset values. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFaceToThicken</tt>
+   <dd>   The face to be thicken with different offset values<br>
+ The following </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object is supported:  
+<a href="#" onClick="openLink('Face','');return false">Face</a>. <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example adds the new <tt>face</tt> face
+ to be thicken with different offset values 
+ in the shell <tt>firstShell</tt>:
+ <pre>
+ call firstShell.<font color="red">AddFaceWithDifferentThickness</font>(face)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="RemoveFaceWithDifferentThickness"><dt>
+
+<table><tr><td>o Sub <b>RemoveFaceWithDifferentThickness</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iFaceToRemove</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes an existing face from those to be thicken with different 
+ offset values by the shell process. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFaceToRemove</tt>
+   <dd>   The face to be removed from the shell specifications<br>
+ The following </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object is supported:  
+<a href="#" onClick="openLink('Face','');return false">Face</a>. <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example removes the <tt>face</tt> face from the list
+ of faces in the shell <tt>firstShell</tt>:
+ <pre>
+ call firstShell.<font color="red">RemoveFaceWithDifferentThickness</font>(face)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="SetVolumeSupport"><dt>
+
+<table><tr><td>o Sub <b>SetVolumeSupport</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iVolumeSupport</tt>)</table></dt>
+<dl>
+  <dd>
+ Set the Support Volume of the faces to modify during Shell operation.
+</dl>
+<a name="WithdrawFaceToRemove"><dt>
+
+<table><tr><td>o Sub <b>WithdrawFaceToRemove</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iFaceToWithdraw</tt>)</table></dt>
+<dl>
+  <dd>
+ Withdraws an existing face from those to be removed
+ by the shell process. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFaceToWithdraw</tt>
+   <dd>   The face to be withdrawn from the shell<br>
+ The following </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object is supported:  
+<a href="#" onClick="openLink('Face','');return false">Face</a>. <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example removes the <tt>face</tt> face from the list of
+ faces in the shell <tt>firstShell</tt>:
+ <pre>
+ call firstShell.<font color="red">WithdrawFaceToRemove</font>(face)
+ </pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

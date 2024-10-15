@@ -1,0 +1,133 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ManufacturingInterfaces ManufacturingHole (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../ManufacturingInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('ManufacturingHole','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ManufacturingHole','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('ManufacturingHole','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ManufacturingHole','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ManufacturingHole<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_ManufacturingHole_44363','ManufacturingHole','0');</script>
+<b><i> Hole Feature in Machining domain.</i></b><br>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Depth"><b>Depth</b></a>
+<dd>  Returns the hole depth.
+ <dt>
+    <a href="#Diameter"><b>Diameter</b></a>
+<dd>  Returns the hole diameter.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetDirection"><b>GetDirection</b></a>
+<dd>  Returns the hole direction with absolute coordinates.
+ <dt>
+    <a href="#GetOrigin"><b>GetOrigin</b></a>
+<dd>  Returns the origin point which the hole is anchored to.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Depth"><dt>
+
+<table><tr><td>o Property <b>Depth</b>(<td>) As <script type="text/javascript"> activateLink('Length','Length')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the hole depth.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  oDepth    A CATIALength object controlling the hole depth
+   (@see CATIALength for more information)
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>holeDepth</tt> the depth of
+ hole <tt>firstHole</tt>:
+ <pre>
+ Set holeDepth = firstHole.Depth
+</pre>
+ </dl>
+</dl>
+</dl>
+<a name="Diameter"><dt>
+
+<table><tr><td>o Property <b>Diameter</b>(<td>) As <script type="text/javascript"> activateLink('Length','Length')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the hole diameter.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  oDiameter    A CATIALength object controlling the hole diameter
+   (@see CATIALength for more information)
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>holeDiam</tt> the diameter of
+ hole <tt>firstHole</tt>:
+ <pre>
+ Set holeDiam = firstHole.Diameter
+</pre>
+ </dl>
+</dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetDirection"><dt>
+
+<table><tr><td>o Sub <b>GetDirection</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>oX</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>oY</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>oZ</tt>)</table></dt>
+<dl>
+  <dd>
+ Returns the hole direction with absolute coordinates.<br>
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  3 doubles: X, Y, Z - direction coordinates <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>X, Y, Z</tt> the direction coordinates
+ of hole <tt>firstHole</tt>:
+ <pre>
+ call firstHole.<font color="red">GetDirection</font>(X,Y,Z)
+</pre>
+ </dl>
+</dl>
+</dl>
+<a name="GetOrigin"><dt>
+
+<table><tr><td>o Sub <b>GetOrigin</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>oX</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>oY</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>oZ</tt>)</table></dt>
+<dl>
+  <dd>
+ Returns the origin point which the hole is anchored to.<br>
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  3 doubles: X, Y, Z - Hole origin point coordinates <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>X, Y, Z</tt> the origin coordinates of
+ hole <tt>firstHole</tt>:
+ <pre>
+ call firstHole.<font color="red">GetOrigin</font>(X,Y,Z)
+</pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

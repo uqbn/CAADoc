@@ -1,0 +1,55 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ApplicationFrame Global Function CATAfrNewTransaction</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ApplicationFrame.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>ApplicationFrame Global Function CATAfrNewTransaction</h1>
+
+<br><dt><table><tr><td>  <script type="text/javascript"> activateLink('HRESULT',' HRESULT')</script>  <b>CATAfrNewTransaction</b>(<td><script type="text/javascript"> activateLink('CATFrmEditor','CATFrmEditor*')</script> <td><tt>iEditor</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iId</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script> <td><tt>iForce</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>oTransactionIndex</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates a new transaction
+ <br><b>Role</b>: This method creates a new transaction in the UI Undo/Redo mechanism.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEditor</tt>
+   <dd>  The editor where the transaction will be created.
+ </dd>
+    <dt><tt> iId</tt>
+   <dd>  Any string, used for debugging purpose.
+ </dd>
+    <dt><tt> iForce</tt>
+   <dd>  If FALSE no transaction will be created if the current one is empty.
+ </dd>
+    <dt><tt> oTransactionIndex</tt>
+   <dd>  The index of the new transaction (from 1 to ...)
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     <dl>
+   <dt> <tt>S_OK</tt>    <dd> The Undo/Redo mechanism has been freezed
+   <dt> <tt>E_FAIL</tt>  <dd> The iEditor parameter is NULL
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATAfrUndoRedoServices.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

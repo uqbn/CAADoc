@@ -1,0 +1,95 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ManufacturingInterfaces Interface CATIMfgGenerateToolChanges</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ManufacturingInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMfgGenerateToolChanges','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgGenerateToolChanges','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMfgGenerateToolChanges','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgGenerateToolChanges','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ManufacturingInterfaces Interface CATIMfgGenerateToolChanges</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMfgGenerateToolChanges_63090','CATIMfgGenerateToolChanges','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIMfgGenerateToolChanges</b>
+</p>
+<p>
+<b><i> Interface to genrate and delete automaticaly tool changes.</i></b><br>
+
+ <b>Role</b>: allow a Manufacturing program to generate and delete automatically the tool changes.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CheckTools(CATBaseUnknown_var&amp;)"><b>CheckTools</b></a>(CATBaseUnknown_var&amp;)
+<dd>  Generates automatically the tool changes associated to a program.
+ <dt> o 
+    <a href="#DeleteAutomaticToolChanges(int&amp;,int&amp;)"><b>DeleteAutomaticToolChanges</b></a>(int&amp;,int&amp;)
+<dd>  Delete Tool Changes that have been automatically generated.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="CheckTools"></a><a name="CheckTools(CATBaseUnknown_var&amp;)"></a> <dt> o <b>CheckTools</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>CheckTools</b>(<td> const <script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>iRef</tt><td><tt>=NULL_var</tt>)<script type="text/javascript"> activateLink('=0',' =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Generates automatically the tool changes associated to a program.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iRef</tt>
+   <dd> </dd>
+</dl>
+</dl>
+</dl>
+<a name="DeleteAutomaticToolChanges"></a><a name="DeleteAutomaticToolChanges(int&amp;,int&amp;)"></a> <dt> o <b>DeleteAutomaticToolChanges</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>DeleteAutomaticToolChanges</b>(<td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>oToolChangesNumber</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>oDeletedNumber</tt>)<script type="text/javascript"> activateLink('=0',' =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Delete Tool Changes that have been automatically generated.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oToolChangesNumber</tt>
+   <dd> The total number of tool changes </dd>
+    <dt><tt> oDeletedNumber</tt>
+   <dd> The number of deleted tool changes</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMfgGenerateToolChanges.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>MfgItfEnv</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

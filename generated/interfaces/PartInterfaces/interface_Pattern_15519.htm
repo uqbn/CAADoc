@@ -1,0 +1,135 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PartInterfaces Pattern (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../PartInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Pattern','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Pattern','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Pattern','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Pattern','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Pattern<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Pattern_15519','Pattern','0');</script>
+<b><i> Represents the pattern shape.</i></b><br>
+
+ It is the base object for rectangular and circular patterns.
+ A pattern shape is a set of copies of the same shape.
+ The copy is done according to linear and angular repartitions.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CircPattern','');return false">CircPattern</a>, <a href="#" onClick="openLink('RectPattern','');return false">RectPattern</a>, <a href="#" onClick="openLink('Repartition','');return false">Repartition</a>, <a href="#" onClick="openLink('LinearRepartition','');return false">LinearRepartition</a>, <a href="#" onClick="openLink('AngularRepartition','');return false">AngularRepartition</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#ItemToCopy"><b>ItemToCopy</b></a>
+<dd>  Returns or sets the shape to be copied.
+ <dt>
+    <a href="#RotationAngle"><b>RotationAngle</b></a>
+<dd>  Returns the pattern global rotation angle.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#ActivatePosition"><b>ActivatePosition</b></a>
+<dd>  Allows user to activate an instance of the pattern.
+ <dt>
+    <a href="#DesactivatePosition"><b>DesactivatePosition</b></a>
+<dd>  Allows user to desactivate an instance of the pattern.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="ItemToCopy"><dt>
+
+<table><tr><td>o Property <b>ItemToCopy</b>(<td>) As <script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the shape to be copied.
+ <! @sample>
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>shape</tt> the copied shape
+ of the pattern <tt>firstPattern</tt>, and then sets it to <tt>pad1</tt>:
+ <pre>
+ Set shape = firstPattern.<font color="red">ItemToCopy</font>
+ firstPattern.<font color="red">ItemToCopy</font> = pad1
+</pre>
+ </dl>
+</dl>
+<a name="RotationAngle"><dt>
+
+<table><tr><td>o Property <b>RotationAngle</b>(<td>) As <script type="text/javascript"> activateLink('Angle','Angle')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the pattern global rotation angle.
+ The rotation is applied to the whole pattern, but not to the shapes
+ themselves.
+ The shape to be copied is used as the rotation center.
+ <! @sample>
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>globAng</tt> the rotation of
+ pattern <tt>firstPattern</tt>:
+ <pre>
+ Set globAng = firstPattern.<font color="red">RotationAngle</font>
+</pre>
+ </dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="ActivatePosition"><dt>
+
+<table><tr><td>o Sub <b>ActivatePosition</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iPosU</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iPosV</tt>)</table></dt>
+<dl>
+  <dd>
+ Allows user to activate an instance of the pattern.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPosU</tt>
+   <dd>   The position of the instance in the U direction
+ </dd>
+    <dt><tt> iPosV</tt>
+   <dd>   The position of the instance in the V direction</dd>
+</dl>
+</dl>
+</dl>
+<a name="DesactivatePosition"><dt>
+
+<table><tr><td>o Sub <b>DesactivatePosition</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iPosU</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iPosV</tt>)</table></dt>
+<dl>
+  <dd>
+ Allows user to desactivate an instance of the pattern.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPosU</tt>
+   <dd>   The position of the instance in the U direction
+ </dd>
+    <dt><tt> iPosV</tt>
+   <dd>   The position of the instance in the V direction</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

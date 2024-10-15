@@ -1,0 +1,167 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ENOVaultClientCPP Class ENOVIVaultReadIterator</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ENOVaultClientCPP.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('ENOVIVaultReadIterator','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ENOVIVaultReadIterator','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('ENOVIVaultReadIterator','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ENOVIVaultReadIterator','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ENOVaultClientCPP Class ENOVIVaultReadIterator</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_ENOVIVaultReadIterator_37749','ENOVIVaultReadIterator','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>ENOVIVaultReadIterator</b>
+</p>
+<p>
+<b><i> This class supplies methods to read collections of document.</i></b><br>
+
+ <b>role</b>: In combination with the cache mechanism, it provides significants performance
+ improvements when reading collection of documents 
+
+ <dl>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#ENOVIVaultReadIterator()"><b>ENOVIVaultReadIterator</b></a>()
+<dd>  Constructs an Iterator
+ <dt> o 
+    <a href="#ENOVIVaultReadIterator(ENOVIVaultDocumentColl&amp;)"><b>ENOVIVaultReadIterator</b></a>(ENOVIVaultDocumentColl&amp;)
+<dd>  Constructs an iterator to be used with the document collection given as input.
+ <dt> o 
+    <a href="#~ENOVIVaultReadIterator()"><b>~ENOVIVaultReadIterator</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#endRead()"><b>endRead</b></a>()
+<dd>  Terminates the read operation.
+ <dt> o 
+    <a href="#hasNext()"><b>hasNext</b></a>()
+<dd>  Tells if there are remaining documents to read.
+ <dt> o 
+    <a href="#next(ENOVIVaultDocument**,ENOVIVaultError&amp;)"><b>next</b></a>(ENOVIVaultDocument**,ENOVIVaultError&amp;)
+<dd>  Fetches the next document to read.
+ <dt> o 
+    <a href="#startRead(ENOVIVaultError&amp;)"><b>startRead</b></a>(ENOVIVaultError&amp;)
+<dd>  Starts the read operation.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="ENOVIVaultReadIterator"></a><a name="ENOVIVaultReadIterator()"></a> <dt> o <b>ENOVIVaultReadIterator</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>ENOVIVaultReadIterator</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs an Iterator
+</dl>
+<a name="ENOVIVaultReadIterator"></a><a name="ENOVIVaultReadIterator(ENOVIVaultDocumentColl&amp;)"></a> <dt> o <b>ENOVIVaultReadIterator</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>ENOVIVaultReadIterator</b>(<td> const <script type="text/javascript"> activateLink('ENOVIVaultDocumentColl','ENOVIVaultDocumentColl&amp;')</script> <td><tt>iDocColl</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs an iterator to be used with the document collection given as input.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDocColl</tt>
+   <dd> [in] - Document collection to read</dd>
+</dl>
+</dl>
+</dl>
+<a name="~ENOVIVaultReadIterator"></a><a name="~ENOVIVaultReadIterator()"></a> <dt> o <b>~ENOVIVaultReadIterator</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>~ENOVIVaultReadIterator</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="endRead"></a><a name="endRead()"></a> <dt> o <b>endRead</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>endRead</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Terminates the read operation.
+</dl>
+<a name="hasNext"></a><a name="hasNext()"></a> <dt> o <b>hasNext</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>hasNext</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Tells if there are remaining documents to read.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  CATTrue, CATFalse
+</dl>
+</dl>
+<a name="next"></a><a name="next(ENOVIVaultDocument**,ENOVIVaultError&amp;)"></a> <dt> o <b>next</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>next</b>(<td><script type="text/javascript"> activateLink('ENOVIVaultDocument','ENOVIVaultDocument**')</script> <td><tt>oNextDoc</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('ENOVIVaultError','ENOVIVaultError&amp;')</script> <td><tt>oVaultError</tt>)<script type="text/javascript"> activateLink('',' ')</script>  </table></dt>
+<dl>
+  <dd>
+ Fetches the next document to read.
+ The document can then be read using the appropriate methods 
+ on the 
+<a href="#" onClick="openLink('ENOVIVaultDocument','');return false">ENOVIVaultDocument</a> class 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oNextDoc</tt>
+   <dd> [out] - Next Document to read</dd>
+</dl>
+</dl>
+</dl>
+<a name="startRead"></a><a name="startRead(ENOVIVaultError&amp;)"></a> <dt> o <b>startRead</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>startRead</b>(<td><script type="text/javascript"> activateLink('ENOVIVaultError','ENOVIVaultError&amp;')</script> <td><tt>oVaultError</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Starts the read operation.
+ This method must only be called once for a given iterator
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oVaultError</tt>
+   <dd> [out] - Details about the error.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>ENOVIVaultReadIterator.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>ENOVIVaultClientAPP</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

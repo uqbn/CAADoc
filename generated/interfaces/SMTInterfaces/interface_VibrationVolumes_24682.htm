@@ -1,0 +1,189 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>SMTInterfaces VibrationVolumes (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../SMTInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('VibrationVolumes','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('VibrationVolumes','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('VibrationVolumes','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('VibrationVolumes','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>VibrationVolumes<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_VibrationVolumes_24682','VibrationVolumes','0');</script>
+<b><i>   Interface to compute vibration volumes</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#CleanUp"><b>CleanUp</b></a>
+<dd>  Cleans up.
+ <dt>
+    <a href="#ComputeVibrationVolume"><b>ComputeVibrationVolume</b></a>
+<dd>  Computes a vibration volume, from a position input file.
+ <dt>
+    <a href="#ComputeVibrationVolumeFromTrack"><b>ComputeVibrationVolumeFromTrack</b></a>
+<dd>  Computes a vibration volume, from a track.
+ <dt>
+    <a href="#ComputeVibrationVolumeFromTrackWithAReference"><b>ComputeVibrationVolumeFromTrackWithAReference</b></a>
+<dd>  Computes a vibration volume, from a track, according to a reference product.
+ <dt>
+    <a href="#ComputeVibrationVolumeWithAReference"><b>ComputeVibrationVolumeWithAReference</b></a>
+<dd>  Computes a vibration volume, from a position input file, according to a reference product.
+ <dt>
+    <a href="#VibrationVolumeShapeName"><b>VibrationVolumeShapeName</b></a>
+<dd>  Returns the name of the associated shape.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="CleanUp"><dt>
+
+<table><tr><td>o Sub <b>CleanUp</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Cleans up.
+</dl>
+<a name="ComputeVibrationVolume"><dt>
+
+<table><tr><td>o Func <b>ComputeVibrationVolume</b>(<td><script type="text/javascript"> activateLink('Group','Group')</script> <td><tt>GroupOfSelectedProducts</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>PositionsFilePath</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iAccuracy</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iSimplifAccuracy</tt>) As <script type="text/javascript"> activateLink('Document','Document')</script> </table></dt>
+<dl>
+  <dd>
+ Computes a vibration volume, from a position input file.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> GroupOfSelectedProducts</tt>
+   <dd>   Selection of products to make vibrate.
+ </dd>
+    <dt><tt> PositionsFilePath</tt>
+   <dd>   Positions file path.
+ </dd>
+    <dt><tt> iAccuracy</tt>
+   <dd>   Grain for wrapping.
+ </dd>
+    <dt><tt> iSimplifAccuracy</tt>
+   <dd>   Accuracy for simplification. A non positive value makes the simplification inactive.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    VibrationVolumeDocument: Document containing the result.
+</dl>
+</dl>
+<a name="ComputeVibrationVolumeFromTrack"><dt>
+
+<table><tr><td>o Func <b>ComputeVibrationVolumeFromTrack</b>(<td><script type="text/javascript"> activateLink('Group','Group')</script> <td><tt>GroupOfSelectedProducts</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBaseDispatch','CATBaseDispatch')</script> <td><tt>iSweptAble</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iAccuracy</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iSimplifAccuracy</tt>) As <script type="text/javascript"> activateLink('Document','Document')</script> </table></dt>
+<dl>
+  <dd>
+ Computes a vibration volume, from a track.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> GroupOfSelectedProducts</tt>
+   <dd>   Selection of products to make vibrate.
+ </dd>
+    <dt><tt> iSweptAble</tt>
+   <dd>   Track containing the positions.
+ </dd>
+    <dt><tt> iAccuracy</tt>
+   <dd>   Grain for wrapping.
+ </dd>
+    <dt><tt> iSimplifAccuracy</tt>
+   <dd>   Accuracy for simplification. A non positive value makes the simplification inactive.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    VibrationVolumeDocument: Document containing the result.
+</dl>
+</dl>
+<a name="ComputeVibrationVolumeFromTrackWithAReference"><dt>
+
+<table><tr><td>o Func <b>ComputeVibrationVolumeFromTrackWithAReference</b>(<td><script type="text/javascript"> activateLink('Group','Group')</script> <td><tt>GroupOfSelectedProducts</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iReferenceProduct</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBaseDispatch','CATBaseDispatch')</script> <td><tt>iSweptAble</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iAccuracy</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iSimplifAccuracy</tt>) As <script type="text/javascript"> activateLink('Document','Document')</script> </table></dt>
+<dl>
+  <dd>
+ Computes a vibration volume, from a track, according to a reference product.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> GroupOfSelectedProducts</tt>
+   <dd>   Selection of products to make vibrate.
+ </dd>
+    <dt><tt> iReferenceProduct</tt>
+   <dd>   Product taken as a reference.
+ </dd>
+    <dt><tt> iSweptAble</tt>
+   <dd>   Track containing the positions.
+ </dd>
+    <dt><tt> iAccuracy</tt>
+   <dd>   Grain for wrapping.
+ </dd>
+    <dt><tt> iSimplifAccuracy</tt>
+   <dd>   Accuracy for simplification. A non positive value makes the simplification inactive.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    VibrationVolumeDocument: Document containing the result.
+</dl>
+</dl>
+<a name="ComputeVibrationVolumeWithAReference"><dt>
+
+<table><tr><td>o Func <b>ComputeVibrationVolumeWithAReference</b>(<td><script type="text/javascript"> activateLink('Group','Group')</script> <td><tt>iGroupOfSelectedProducts</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iReferenceProduct</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>PositionsFilePath</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iAccuracy</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iSimplifAccuracy</tt>) As <script type="text/javascript"> activateLink('Document','Document')</script> </table></dt>
+<dl>
+  <dd>
+ Computes a vibration volume, from a position input file, according to a reference product.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGroupOfSelectedProducts</tt>
+   <dd>   Selection of products to make vibrate.
+ </dd>
+    <dt><tt> iReferenceProduct</tt>
+   <dd>   Product taken as a reference.
+ </dd>
+    <dt><tt> PositionsFilePath</tt>
+   <dd>   Positions file path.
+ </dd>
+    <dt><tt> iAccuracy</tt>
+   <dd>   Grain for wrapping.
+ </dd>
+    <dt><tt> iSimplifAccuracy</tt>
+   <dd>   Accuracy for simplification. A non positive value makes the simplification inactive.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    VibrationVolumeDocument: Document containing the result.
+</dl>
+</dl>
+<a name="VibrationVolumeShapeName"><dt>
+
+<table><tr><td>o Func <b>VibrationVolumeShapeName</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the name of the associated shape.
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,133 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATGSMIDLItf HybridShapeWrapSurface (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATGSMIDLItf.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('HybridShapeWrapSurface','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapeWrapSurface','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('HybridShapeWrapSurface','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapeWrapSurface','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>HybridShapeWrapSurface<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_HybridShapeWrapSurface_32906','HybridShapeWrapSurface','0');</script>
+<b><i> Represents the hybrid shape wrap surface object.</i></b><br>
+
+ <b>Role</b>: To access the data of the hybrid shape wrap surface object.
+ <p>This data includes:
+ <ul>
+ <li>Two definition surfaces (refrence and target), who define the deformation</li>
+ </ul>
+ <p>Use the CATIAHybridShapeFactory to create a HybridShapeWrapSurface object.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeFactory','');return false">HybridShapeFactory</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#DeformationMode"><b>DeformationMode</b></a>
+<dd>  Returns or sets whether the wrap surface is or should be created as a"Normal"
+ or with a "3D" deformation mode.
+ <dt>
+    <a href="#ReferenceSurface"><b>ReferenceSurface</b></a>
+<dd>  Returns or sets the reference surface of the WrapSurface.
+ <dt>
+    <a href="#Surface"><b>Surface</b></a>
+<dd>  Returns or sets the reference surface to deform of the WrapSurface.
+ <dt>
+    <a href="#TargetSurface"><b>TargetSurface</b></a>
+<dd>  Returns or sets the target surface of the WrapSurface.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="DeformationMode"><dt>
+
+<table><tr><td>o Property <b>DeformationMode</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets whether the wrap surface is or should be created as a"Normal"
+ or with a "3D" deformation mode.
+ <br><b>Legal values</b>: 2 for the normal solution and 1 for 3D solution.
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  This example sets the mode to create the wrap surface
+ <code>hybWrapSurface</code> with a 3D deformation mode.
+ <pre>
+ hybWrapSurface.<font color="red">3D deformation mode</font> = 1
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="ReferenceSurface"><dt>
+
+<table><tr><td>o Property <b>ReferenceSurface</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the reference surface of the WrapSurface.
+ </dl>
+ <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves in <code>ReferenceSurface</code> the surface to deform
+ of the <code>ShpWrapSurface</code> hybrid shape WrapSurface feature.
+ <pre>
+ ReferenceSurface = ShpWrapSurface.<font color="red">Surface</font>
+ </pre>
+ </dl>
+</dl>
+<a name="Surface"><dt>
+
+<table><tr><td>o Property <b>Surface</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the reference surface to deform of the WrapSurface.
+ </dl>
+ <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves in <code>SurfaceToDeform</code> the surface to deform
+ of the <code>ShpWrapSurface</code> hybrid shape WrapSurface feature.
+ <pre>
+ SurfaceToDeform = ShpWrapSurface.<font color="red">Surface</font>
+ </pre>
+ </dl>
+</dl>
+<a name="TargetSurface"><dt>
+
+<table><tr><td>o Property <b>TargetSurface</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the target surface of the WrapSurface.
+ </dl>
+ <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves in <code>TargetSurface</code> the surface to deform
+ of the <code>ShpWrapSurface</code> hybrid shape WrapSurface feature.
+ <pre>
+ TargetSurface = ShpWrapSurface.<font color="red">Surface</font>
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

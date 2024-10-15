@@ -1,0 +1,123 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMOperatorsInterfaces Class CATICGMHybBoolean</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMOperatorsInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATICGMHybBoolean','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMHybBoolean','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATICGMHybBoolean','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMHybBoolean','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GMOperatorsInterfaces Class CATICGMHybBoolean</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATICGMHybBoolean_36284','CATICGMHybBoolean','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATICGMHybBoolean</b>
+</p>
+<p>
+<b><i> Class defining the operator that performs Boolean operations on two bodies.</i></b><br>
+
+<br>
+ This operator operates on the 2D (CATShell), 1D (CATWire) and 0D (CATVertexInVolume)
+ domains of a CATBody.
+ It follows the general frame of all operator and satisfies to the smart mechanism: the
+ input bodies are not modified. A new resulting body is created, 
+ possibly sharing data with the input bodies.
+<ul>
+ <li>CATICGMHybBoolean is created with the <tt>CATCGMCreateTopTrim</tt> or <tt>CATCGMCreateTopSplit</tt> global functions.
+ It must be
+ directly released with the <tt>Release</tt> method after use.
+ It is not streamable. 
+<li>The result is accessed with the <tt>GetResult</tt> method. If you do not want 
+ to keep the resulting body, use the <a href="#" onClick="openLink('CATICGMContainer','Remove');return false">CATICGMContainer.Remove</a> method to remove it from the  geometric factory.
+</ul>
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATCGMCreateTopSplit','');return false">CATCGMCreateTopSplit</a>, <a href="#" onClick="openLink('CATCGMCreateTopTrim','');return false">CATCGMCreateTopTrim</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATICGMHybBoolean()"><b>CATICGMHybBoolean</b></a>()
+<dd>  Constructor
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#SetSelectedCells(CATLISTP(CATCell)&amp;,CATLISTP(CATCell)&amp;)"><b>SetSelectedCells</b></a>(CATLISTP(CATCell)&amp;,CATLISTP(CATCell)&amp;)
+<dd>  Specifies the cells to be kept and the cells to be removed in the operation.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATICGMHybBoolean"></a><a name="CATICGMHybBoolean()"></a> <dt> o <b>CATICGMHybBoolean</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATICGMHybBoolean</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructor
+</dl>
+ <h2>Methods</h2> <br>
+<a name="SetSelectedCells"></a><a name="SetSelectedCells(CATLISTP(CATCell)&amp;,CATLISTP(CATCell)&amp;)"></a> <dt> o <b>SetSelectedCells</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetSelectedCells</b>(<td><script type="text/javascript"> activateLink('CATLISTP(CATCell)','CATLISTP(CATCell)&amp;')</script> <td><tt>iCellsToRemove</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTP(CATCell)','CATLISTP(CATCell)&amp;')</script> <td><tt>iCellsToKeep</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Specifies the cells to be kept and the cells to be removed in the operation.
+ At least one of the lists must be filled in. 
+ The operator throws an exception when: 
+ <ul>
+    <li>both lists are empty
+    <li>the specified cells do not belong to the input bodies
+    <li>some cells to be cut are specified in either list. 
+    A cell to be cut should not be added to any list
+    <li>the list contents is not consistent with respect to the sides definition. 
+    For example,  if a cell to be removed and a cell to be 
+    kept should not be located on the same side.
+ </ul>
+ More generally, the operator throws when the lists which are specified do not allow the operator to
+ compute in an unambiguous way the pieces to be kept or removed.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCellsToRemove</tt>
+   <dd> The list of cells to be removed.
+ </dd>
+    <dt><tt> iCellsToKeep</tt>
+   <dd> The list of cells to be kept.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATICGMHybBoolean.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGMOperatorsInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

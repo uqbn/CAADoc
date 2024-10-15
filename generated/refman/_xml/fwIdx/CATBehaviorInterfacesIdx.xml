@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="CATBehaviorInterfaces" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="0" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="CATIBehOperationManagement" initial="C" htmlFileName="interface_CATIBehOperationManagement_58990" fatherClass="CATBaseUnknown" fatherId="12372" DSCharacteristic="interface" id="58990" abstract="Interface to manage the operation states." />
+<method name="Cancel" htmlFileName="interface_CATIBehOperationManagement_58990" containerName="CATIBehOperationManagement" containerType="interface" id="63871" status="18" isProperty="0" initial="C" argList="()" abstract="Tell to the Engine the operation is &lt;b&gt;canceled&lt;/b&gt;." />
+<method name="Done" htmlFileName="interface_CATIBehOperationManagement_58990" containerName="CATIBehOperationManagement" containerType="interface" id="62947" status="18" isProperty="0" initial="D" argList="()" abstract="Tell to the Behavior Engine this operation is &lt;b&gt;done&lt;/b&gt;." />
+<method name="Start" htmlFileName="interface_CATIBehOperationManagement_58990" containerName="CATIBehOperationManagement" containerType="interface" id="63429" status="18" isProperty="0" initial="S" argList="()" abstract="Tell to the Engine the operation has &lt;b&gt;begun&lt;/b&gt;." />
+<method name="Suspend" htmlFileName="interface_CATIBehOperationManagement_58990" containerName="CATIBehOperationManagement" containerType="interface" id="64550" status="18" isProperty="0" initial="S" argList="()" abstract="Tell to the Engine the operation is &lt;b&gt;suspended&lt;/b&gt;." />
+</fw>

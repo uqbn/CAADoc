@@ -1,0 +1,246 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATStrFunctionalInterfaces SfmOpening (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATStrFunctionalInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SfmOpening','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmOpening','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SfmOpening','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmOpening','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SfmOpening<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SfmOpening_42164','SfmOpening','0');</script>
+<b><i> Defines Edition Techniques for Openings created using sketch and 3D Object.</i></b><br>
+
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#CreationMode"><b>CreationMode</b></a>
+<dd>  Returns or Sets the Opening Creation Mode.
+ <dt>
+    <a href="#Direction"><b>Direction</b></a>
+<dd>  Returns or Sets the Direction for a Wire Element Case.
+ <dt>
+    <a href="#IntersectingElement"><b>IntersectingElement</b></a>
+<dd>  Returns or Sets the Intersecting Element to Create a Opening.
+ <dt>
+    <a href="#MoldedSurface"><b>MoldedSurface</b></a>
+<dd>  Returns or Sets the Molded Surface for the Opening.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetDirection"><b>GetDirection</b></a>
+<dd>   Gets the Direction for Opening in the form of Vector.
+ <dt>
+    <a href="#IsAPlateOpening"><b>IsAPlateOpening</b></a>
+<dd>   Determines if it is a Plate Opening or a Profile one.
+ <dt>
+    <a href="#SetMasterMode"><b>SetMasterMode</b></a>
+<dd>   Sets Master mode on Copy Pasted Opening.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="CreationMode"><dt>
+
+<table><tr><td>o Property <b>CreationMode</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iMode</tt>)</table></dt>
+<dl>
+  <dd>
+ Returns or Sets the Opening Creation Mode.
+ 0  for 3D Mode.
+ 1 for Sketch Mode.
+ 2 for StandardOpening Mode.
+<dl>
+<dt><b>Example:<b>
+<dd>
+ This example gets the Creation Mode for existing Opening.
+ <pre>
+ 'Get the Existing Opening
+ Dim OpeningPlate As SfmOpening
+ Set OpeningPlate = part1.FindObjectByName("Opening_028")
+ Dim Sel As Selection
+ Set Sel = CATIA.ActiveDocument.Selection
+ Sel.Add OpeningPlate 
+ Dim OpenFact As SfmOpening
+ Set OpenFact = Sel.FindObject("CATIASfmOpening")
+ Dim CreationMode As Long
+ CreationMode = OpenFact.<font color="red">CreationMode</font>
+ </pre>
+ </dl>
+</dl>
+<a name="Direction"><dt>
+
+<table><tr><td>o Property <b>Direction</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iDirection</tt>)</table></dt>
+<dl>
+  <dd>
+ Returns or Sets the Direction for a Wire Element Case.
+ <dl>
+ <dt><b>Example:<b>
+ <dd>
+ This example modifies the direction of existing opening.
+ <pre>
+ 'Get the element to be used as direction element.
+ Set Dir = part1.FindObjectByName("Line.4")
+ Set DirRef = part1.CreateReferenceFromObject(Dir)
+ Opening1.<font color="red">Direction</font> = DirRef
+ </pre>
+ </dl>
+</dl>
+<a name="IntersectingElement"><dt>
+
+<table><tr><td>o Property <b>IntersectingElement</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iIntersectingElement</tt>)</table></dt>
+<dl>
+  <dd>
+ Returns or Sets the Intersecting Element to Create a Opening.
+ <dl>
+ <dt><b>Example:<b>
+ <dd>
+ This example sets the intersecting element for the existing opening, after changing it's mode to sketch mode.
+ <pre>
+ 'Get the Creation Mode for Existing Opening. The Existing Opening is created using 3D Mode.
+  CreationMode = Opening1.CreationMode
+ 'Set the Creation Mode for Existing Opening to sketch mode
+ Opening1.CreationMode = 1
+ 'Assign a new sketch to the existing opening
+ Set Sketch = part1.FindObjectByName("Sketch.4")
+ Set sketchref = part1.CreateReferenceFromObject(Sketch)
+ Opening1.<font color="red">IntersectingElement</font> = sketchref
+ </pre>
+ </dl>
+</dl>
+<a name="MoldedSurface"><dt>
+
+<table><tr><td>o Property <b>MoldedSurface</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iMoldedSurface</tt>)</table></dt>
+<dl>
+  <dd>
+ Returns or Sets the Molded Surface for the Opening.
+ <dl>
+ <dt><b>Example:<b>
+ <dd>
+ This example modifies the molded surface for the existing opening.
+ <pre>
+ 'Get the Surface to be used as molded surface for the opening
+ Dim GSDSurf As Reference
+ Set GSDSurf = part1.FindObjectByName("Fill.1")
+ Set GSDSurfref = part1.CreateReferenceFromObject(GSDSurf)
+ Opening1.<font color="red">MoldedSurface</font> = GSDSurfref
+ </pre>
+ </dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetDirection"><dt>
+
+<table><tr><td>o Func <b>GetDirection</b>(<td>) As <script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> </table></dt>
+<dl>
+  <dd>
+  Gets the Direction for Opening in the form of Vector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDirection</tt>
+   <dd> [out]     Direction vector
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+ <dl>
+ <dt><b>Example:<b>
+ <dd>
+ This Example Gets the Direction for the Opening.
+ <pre>
+ Dim Dir() As Variant
+ Dir = OpeningPlate.GetDirection
+ Dim x, y, z As Double
+ x = Dir(0)
+ y = Dir(1)
+ z = Dir(2)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="IsAPlateOpening"><dt>
+
+<table><tr><td>o Func <b>IsAPlateOpening</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+  Determines if it is a Plate Opening or a Profile one.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oStatus</tt>
+   <dd> [out]     oStatus=0, if the Opening is on Plate
+     oStatus=1, if the Opening is Not on Plate
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+ <dl>
+ <dt><b>Example:<b>
+ <dd>
+ This Example Checks weather the opening is a Plate Opening.
+ <pre>
+ 'Get the Existing Opening in the Part Document
+ Dim OpeningPlate As SfmOpening
+ Set OpeningPlate = part1.FindObjectByName("Opening_028")
+ Dim Sel As Selection
+ Set Sel = CATIA.ActiveDocument.Selection
+ Sel.Add OpeningPlate 
+ Dim OpenFact As SfmOpening
+ Set OpenFact = Sel.FindObject("CATIASfmOpening")
+ 'Get the Status of Opening
+ Dim status As Long
+ status = OpenFact.IsAPlateOpening
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="SetMasterMode"><dt>
+
+<table><tr><td>o Sub <b>SetMasterMode</b>(<td>)</table></dt>
+<dl>
+  <dd>
+  Sets Master mode on Copy Pasted Opening. It breaks the dependency by duplicating the sketch.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+ <dl>
+ <dt><b>Example:<b>
+ <dd>
+ This Example Sets Master Mdoe on a Copy Pasted Opening.
+ <pre>
+ Dim OpeningMaster As SfmOpening
+ Set OpeningMaster = part1.FindObjectByName("Opening_035")
+ Dim Sel As Selection
+ Set Sel = CATIA.ActiveDocument.Selection
+ Sel.Add OpeningMaster 
+ Dim OpenFact As SfmOpening
+ Set OpenFact = Sel.FindObject("CATIASfmOpening")
+ OpenFact.SetMasterMode
+ </pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

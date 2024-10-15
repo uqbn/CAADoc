@@ -1,0 +1,157 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>FittingInterfaces Sampleds (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../FittingInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Sampleds','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Sampleds','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Sampleds','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Sampleds','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Sampleds<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Sampleds_20885','Sampleds','0');</script>
+<b><i>   The collection of all the Sampled objects currently contained in the 
+ current document.</i></b><br>
+  A <a href="#" onClick="openLink('Sampled','');return false">Sampled</a> object is the base type for 
+<a href="#" onClick="openLink('Track','');return false">Track</a> objects.
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Add"><b>Add</b></a>
+<dd>  Creates a new Sampled object and adds it to the Sampleds collection.
+ <dt>
+    <a href="#AddFromSel"><b>AddFromSel</b></a>
+<dd>  Creates a new Sampled from the selection and adds it to the Sampleds collection.
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns a CATIASampled object using its index from the CATIASampled
+ collection.
+ <dt>
+    <a href="#Remove"><b>Remove</b></a>
+<dd>  Removes a CATIASampled object from the CATIASampled collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Add"><dt>
+
+<table><tr><td>o Func <b>Add</b>(<td>) As <script type="text/javascript"> activateLink('Sampled','Sampled')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new Sampled object and adds it to the Sampleds collection.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The created Sampled
+ <! @sample>
+ <dt><b>Example:</b>
+ <dd>
+ The following example creates a Sampled (called <tt>newSampled</tt>)
+ with in the Sampleds collection.
+
+ <pre>
+ Set newSampled = Sampleds.<font color="red">Add</font>
+ </pre>
+</dl>
+</dl>
+<a name="AddFromSel"><dt>
+
+<table><tr><td>o Func <b>AddFromSel</b>(<td>) As <script type="text/javascript"> activateLink('Sampled','Sampled')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new Sampled from the selection and adds it to the Sampleds collection.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The created Sampled
+ <! @sample>
+ <dt><b>Example:</b>
+ <dd>
+ The following example creates a Sampled (called <tt>newSampled</tt>)
+ with in the Sampleds collection.
+
+ <pre>
+ Set newSampled = Sampleds.<font color="red">Add</font>
+ </pre>
+</dl>
+</dl>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('Sampled','Sampled')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a CATIASampled object using its index from the CATIASampled
+ collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>      The index of the sampled to retrieve from the collection of sampleds.
+      Numerically, the index value corresponds to the rank of the sampled in
+      the collection (ie. the first is 1, second is 2, ...).
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved Sampled
+ <! @sample>
+ <dt><b>Example:</b>
+ <dd>
+ The following example retrieves the second Sampled from the Sampleds collection
+ of the active document.
+
+ <pre>
+ Dim newSampled as Sampled
+ Set newSampled = Sampleds.<font color="red">Item</font> (2)
+ </pre>
+</dl>
+</dl>
+<a name="Remove"><dt>
+
+<table><tr><td>o Sub <b>Remove</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes a CATIASampled object from the CATIASampled collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>      The index of the sampled to remove from the collection of sampleds.
+      Numerically, the index value corresponds to the rank of the sampled in
+      the collection (ie. the first is 1, second is 2, ...).
+
+ <! @sample>
+ <dt><b>Example:</b>
+ <dd>
+ The following example removes the third Sampled from the Sampleds collection 
+ of the active document.
+
+ <pre>
+ Sampleds.<font color="red">Remove</font> (3)
+ </pre></dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

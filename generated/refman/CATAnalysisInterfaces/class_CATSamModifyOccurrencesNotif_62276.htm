@@ -1,0 +1,140 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces Notification CATSamModifyOccurrencesNotif</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATSamModifyOccurrencesNotif','notification','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSamModifyOccurrencesNotif','notification','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATSamModifyOccurrencesNotif','notification','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSamModifyOccurrencesNotif','notification','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisInterfaces Notification CATSamModifyOccurrencesNotif</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATSamModifyOccurrencesNotif_62276','CATSamModifyOccurrencesNotif','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATSamModifyOccurrencesNotif</b>
+</p>
+<p>
+<b><i> Define CATSamModifyOccurrencesNotif.</i></b><br>
+
+ <b>Role:</b> Interface designed to manage <b>Notification</b> specific to the 
+ CATISamEditOccurrences implementation .<br>
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATISamEditOccurrences','');return false">CATISamEditOccurrences</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATSamModifyOccurrencesNotif(int,int*)"><b>CATSamModifyOccurrencesNotif</b></a>(int,int*)
+<dd>  Constructor.
+ <dt> o 
+    <a href="#~CATSamModifyOccurrencesNotif()"><b>~CATSamModifyOccurrencesNotif</b></a>()
+<dd>  Destructor.
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetSelectedOccurrences(int&amp;,int*&amp;)"><b>GetSelectedOccurrences</b></a>(int&amp;,int*&amp;)
+<dd>  Retrieve the selected occurences.
+ <dt> o 
+    <a href="#SetSelectedOccurrences(int,int*)"><b>SetSelectedOccurrences</b></a>(int,int*)
+<dd>  Assign the selected occurences.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATSamModifyOccurrencesNotif"></a><a name="CATSamModifyOccurrencesNotif(int,int*)"></a> <dt> o <b>CATSamModifyOccurrencesNotif</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATSamModifyOccurrencesNotif</b>(<td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iNbSelectedOccurrences</tt><td><tt>= 0</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('int','int*')</script> <td><tt>iOccurrencesNumber</tt><td><tt>= NULL</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructor.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNbSelectedOccurrences</tt>
+   <dd> Number of the preselected occurrences. </dd>
+    <dt><tt> iOccurrencesNumber</tt>
+   <dd>   Values of the  preselected occurrences.</dd>
+</dl>
+</dl>
+</dl>
+<a name="~CATSamModifyOccurrencesNotif"></a><a name="~CATSamModifyOccurrencesNotif()"></a> <dt> o <b>~CATSamModifyOccurrencesNotif</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATSamModifyOccurrencesNotif</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Destructor.
+
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetSelectedOccurrences"></a><a name="GetSelectedOccurrences(int&amp;,int*&amp;)"></a> <dt> o <b>GetSelectedOccurrences</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>GetSelectedOccurrences</b>(<td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>oNbSelectedOccurrences</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int*&amp;')</script> <td><tt>oOccurrencesNumber</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieve the selected occurences.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oNbSelectedOccurrences</tt>
+   <dd> Number of the preselected occurrences. </dd>
+    <dt><tt> oOccurrencesNumber</tt>
+   <dd> Values of the  preselected occurrences.
+ <b>Warning:</b> oOccurrencesNumber may not be desallocated after this method.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetSelectedOccurrences"></a><a name="SetSelectedOccurrences(int,int*)"></a> <dt> o <b>SetSelectedOccurrences</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>SetSelectedOccurrences</b>(<td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iNbSelectedOccurrences</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('int','int*')</script> <td><tt>iOccurrencesNumber</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Assign the selected occurences.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNbSelectedOccurrences</tt>
+   <dd> Number of the preselected occurrences. </dd>
+    <dt><tt> iOccurrencesNumber</tt>
+   <dd>  Values of the  preselected occurrences.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATSamModifyOccurrencesNotif.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisToolkit</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,108 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PartInterfaces UserPattern (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../PartInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('UserPattern','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('UserPattern','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('UserPattern','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('UserPattern','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>UserPattern<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_UserPattern_19114','UserPattern','0');</script>
+<b><i> Represents the user pattern.</i></b><br>
+
+ The shape is copied along user's positions.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#AnchorPoint"><b>AnchorPoint</b></a>
+<dd>  Returns the anchor point of the user pattern.
+ <dt>
+    <a href="#FeatureToLocatePositions"><b>FeatureToLocatePositions</b></a>
+<dd>  Returns the collection of feature to locate instances.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddFeatureToLocatePositions"><b>AddFeatureToLocatePositions</b></a>
+<dd>  Adds a new feature to locate instances.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="AnchorPoint"><dt>
+
+<table><tr><td>o Property <b>AnchorPoint</b>(<td>) As <script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the anchor point of the user pattern.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>anchor</tt> the anchor point
+ of the Pattern <tt>firstPattern</tt>:
+ <pre>
+ Set anchor = firstPattern.<font color="red">AnchorPoint</font>
+ </pre>
+ </dl>
+</dl>
+<a name="FeatureToLocatePositions"><dt>
+
+<table><tr><td>o Property <b>FeatureToLocatePositions</b>(<td>) As <script type="text/javascript"> activateLink('AnyObject','AnyObject')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the collection of feature to locate instances.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>list</tt> the list of feature
+ to locate instances of the Pattern <tt>firstPattern</tt>:
+ <pre>
+ Set list = firstPattern.<font color="red">FeatureToLocatePositions</font>
+ </pre>
+ </dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddFeatureToLocatePositions"><dt>
+
+<table><tr><td>o Sub <b>AddFeatureToLocatePositions</b>(<td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>iFeatureToLocatePositions</tt>)</table></dt>
+<dl>
+  <dd>
+ Adds a new feature to locate instances. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFeatureToLocatePositions</tt>
+   <dd>   The new object containing points of positioning
+ <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example adds the new feature <tt>feature</tt>
+ to locate instances of the Pattern <tt>firstPattern</tt>:
+ <pre>
+ call firstPattern.<font color="red">AddFeatureToLocatePositions</font>(object)
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

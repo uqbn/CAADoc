@@ -1,0 +1,163 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMOperatorsInterfaces Class CATICGMTopSpine</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMOperatorsInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATICGMTopSpine','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMTopSpine','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATICGMTopSpine','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMTopSpine','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GMOperatorsInterfaces Class CATICGMTopSpine</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATICGMTopSpine_33334','CATICGMTopSpine','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATICGMTopSpine</b>
+</p>
+<p>
+<b><i> Class representing the topological operator that creates a spine.</i></b><br>
+ 
+ To use it:
+<ul>
+ <li>Create it with the <tt>CATCGMCreateTopSpine</tt> global function.
+ <li>Tune it with appropriate options, using the <tt>SetXxx</tt> methods. 
+ <li>Run it
+ <li>Get the resulting spine by using the GetResult method. If you do not want 
+ to keep this resulting body, use the <a href="#" onClick="openLink('CATICGMContainer','Remove');return false">CATICGMContainer.Remove</a> method to remove them from the  geometric factory, after the operator deletion.
+<li>Release the operator with the <tt>Release</tt> method after use.
+</ul>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATICGMTopSpine()"><b>CATICGMTopSpine</b></a>()
+<dd>  Constructor
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#ImposePointOnProfile(int,CATGeometry*)"><b>ImposePointOnProfile</b></a>(int,CATGeometry*)
+<dd>   Defines an imposed point of the spine.
+ <dt> o 
+    <a href="#SetGuides(CATLISTP(CATGeometry)&amp;)"><b>SetGuides</b></a>(CATLISTP(CATGeometry)&amp;)
+<dd>  Defines the guides to refine the definition of the spine.
+ <dt> o 
+    <a href="#SetProfileContinuityCondition(int,CATGeometry*)"><b>SetProfileContinuityCondition</b></a>(int,CATGeometry*)
+<dd>  Sets the continuity constraints on a profile.
+ <dt> o 
+    <a href="#SetRelimitationMode(CATTopSpineRelimitation_Type)"><b>SetRelimitationMode</b></a>(CATTopSpineRelimitation_Type)
+<dd>  Defines the relimitation mode for spine computation.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATICGMTopSpine"></a><a name="CATICGMTopSpine()"></a> <dt> o <b>CATICGMTopSpine</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATICGMTopSpine</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructor
+</dl>
+ <h2>Methods</h2> <br>
+<a name="ImposePointOnProfile"></a><a name="ImposePointOnProfile(int,CATGeometry*)"></a> <dt> o <b>ImposePointOnProfile</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>ImposePointOnProfile</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iProfileRank</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATGeometry','CATGeometry*')</script> <td><tt>iImposedPoint</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Defines an imposed point of the spine.
+ <br> Only one imposed point must be defined.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProfileRank</tt>
+   <dd> The rank (beginning at 1) of the profile to constraint.
+ </dd>
+    <dt><tt> iImposedPoint</tt>
+   <dd> The pointer to the imposed CATPoint or point body.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetGuides"></a><a name="SetGuides(CATLISTP(CATGeometry)&amp;)"></a> <dt> o <b>SetGuides</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetGuides</b>(<td><script type="text/javascript"> activateLink('CATLISTP(CATGeometry)','CATLISTP(CATGeometry)&amp;')</script> <td><tt>iGuides</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Defines the guides to refine the definition of the spine.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGuides</tt>
+   <dd> The list of pointers to the wire bodies defining the guides.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetProfileContinuityCondition"></a><a name="SetProfileContinuityCondition(int,CATGeometry*)"></a> <dt> o <b>SetProfileContinuityCondition</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetProfileContinuityCondition</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iProfileRank</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATGeometry','CATGeometry*')</script> <td><tt>iReferenceElement</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the continuity constraints on a profile.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iRankProfile</tt>
+   <dd> The rank (beginning at 1) of the profile to constraint.
+ </dd>
+    <dt><tt> iReferenceElement</tt>
+   <dd> The pointer to the reference element (CATPlane or skin CATBody) on which the profile
+ must lay. The sweep is tangent to a skin CATBody reference element and normal to 
+ a CATPlane reference element.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetRelimitationMode"></a><a name="SetRelimitationMode(CATTopSpineRelimitation_Type)"></a> <dt> o <b>SetRelimitationMode</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetRelimitationMode</b>(<td><script type="text/javascript"> activateLink('CATTopSpineRelimitation_Type','CATTopSpineRelimitation_Type')</script> <td><tt>iMode</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Defines the relimitation mode for spine computation.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iMode</tt>
+   <dd> The relimitation mode.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATICGMTopSpine.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGMOperatorsInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

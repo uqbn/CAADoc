@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="Administration" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="0" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<function name="CATGetGALevel" htmlFileName="function_CATGetGALevel_31246" id="31246" status="4" isProperty="0" initial="C" argList="(char*)" abstract="Returns the release number." />
+<function name="CATGetHFXLevel" htmlFileName="function_CATGetHFXLevel_31702" id="31702" status="4" isProperty="0" initial="C" argList="(char*)" abstract="Returns the number of the last installed hot fix." />
+<function name="CATGetSPKLevel" htmlFileName="function_CATGetSPKLevel_31734" id="31734" status="4" isProperty="0" initial="C" argList="(char*)" abstract="Returns the number of the last installed service pack." />
+<function name="CATIsInstalled" htmlFileName="function_CATIsInstalled_36871" id="36871" status="4" isProperty="0" initial="C" argList="(char*,char*)" abstract="Gives the installation status of a configuration (or product)." />
+</fw>

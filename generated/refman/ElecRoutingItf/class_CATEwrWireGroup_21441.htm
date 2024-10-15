@@ -1,0 +1,234 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ElecRoutingItf Class CATEwrWireGroup</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ElecRoutingItf.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATEwrWireGroup','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEwrWireGroup','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATEwrWireGroup','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEwrWireGroup','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ElecRoutingItf Class CATEwrWireGroup</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATEwrWireGroup_21441','CATEwrWireGroup','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATEwrWireGroup</b>
+</p>
+<p>
+<b><i> Class dedicated to wire group.</i></b><br>
+
+ <b>Role</b>: This class is used to represent wire group and its attributes</p>
+<hr>
+</dl>
+</dl>
+<dl>
+</dl>
+<dl>
+ <h2>Data Member Index</h2> <br>
+ <dt> o 
+    <a href="#BendRadius"><b>BendRadius</b></a>
+<dd>  The BendRadius attribute corresponds to the maximum curvature of the WireGroup.
+ <dt> o 
+    <a href="#Color"><b>Color</b></a>
+<dd>  The color of the WireGroup.
+ <dt> o 
+    <a href="#Diameter"><b>Diameter</b></a>
+<dd>  The Diameter attribute corresponds to the diameter of the WireGroup.
+ <dt> o 
+    <a href="#FatherWireGroup"><b>FatherWireGroup</b></a>
+<dd>  The identifier of the WireGroup (if exists) immediate father of the WireGroup.
+ <dt> o 
+    <a href="#Id"><b>Id</b></a>
+<dd>  The identifier of the WireGroup.
+ <dt> o 
+    <a href="#Id_FirstExtremity"><b>Id_FirstExtremity</b></a>
+<dd>  The identifier of the first extremity of the Shielded Wire Group.
+ <dt> o 
+    <a href="#Id_Harness"><b>Id_Harness</b></a>
+<dd>  The identifier of the harness (if exists) containing the WireGroup.
+ <dt> o 
+    <a href="#Id_SecondExtremity"><b>Id_SecondExtremity</b></a>
+<dd>  The identifier of the second extremity of the Shielded Wire Group.
+ <dt> o 
+    <a href="#ListOfSubWireGroups"><b>ListOfSubWireGroups</b></a>
+<dd>  List of wire groups names children of the wire group.
+ <dt> o 
+    <a href="#ListOfSubWires"><b>ListOfSubWires</b></a>
+<dd>  List of wire names children of the wire group.
+ <dt> o 
+    <a href="#Name"><b>Name</b></a>
+<dd>  The name of the WireGroup.
+ <dt> o 
+    <a href="#PartNumber"><b>PartNumber</b></a>
+<dd>  The PartNumber attribute corresponds to the part number of the WireGroup.
+ <dt> o 
+    <a href="#SeparationCode"><b>SeparationCode</b></a>
+<dd>  The SeparationCode attribute is used in knowledge rules checked in WireGroup routing.
+ <dt> o 
+    <a href="#SubType"><b>SubType</b></a>
+<dd>  The subtype of the WireGroup.
+ <dt> o 
+    <a href="#WireGroupType"><b>WireGroupType</b></a>
+<dd>  Whether the Wire Group is Generic or Shielded.
+ <dt> o 
+    <a href="#WireLengthCoefficient"><b>WireLengthCoefficient</b></a>
+<dd>  The WireLengthCoefficient attribute.
+</dl>
+ <h2>Data Members</h2> <br>
+<a name="BendRadius"></a> <dt> o <b>BendRadius</b>
+<pre>
+  public double BendRadius</dt>
+</pre>
+<dl>
+  <dd>
+ The BendRadius attribute corresponds to the maximum curvature of the WireGroup.
+</dl>
+<a name="Color"></a> <dt> o <b>Color</b>
+<pre>
+  public CATUnicodeString Color</dt>
+</pre>
+<dl>
+  <dd>
+ The color of the WireGroup.
+</dl>
+<a name="Diameter"></a> <dt> o <b>Diameter</b>
+<pre>
+  public double Diameter</dt>
+</pre>
+<dl>
+  <dd>
+ The Diameter attribute corresponds to the diameter of the WireGroup.
+ <br><b>Mandatory</b>
+</dl>
+<a name="FatherWireGroup"></a> <dt> o <b>FatherWireGroup</b>
+<pre>
+  public CATUnicodeString FatherWireGroup</dt>
+</pre>
+<dl>
+  <dd>
+ The identifier of the WireGroup (if exists) immediate father of the WireGroup.
+</dl>
+<a name="Id"></a> <dt> o <b>Id</b>
+<pre>
+  public CATUnicodeString Id</dt>
+</pre>
+<dl>
+  <dd>
+ The identifier of the WireGroup.
+ <br><b>Mandatory</b>
+</dl>
+<a name="Id_FirstExtremity"></a> <dt> o <b>Id_FirstExtremity</b>
+<pre>
+  public CATUnicodeString Id_FirstExtremity</dt>
+</pre>
+<dl>
+  <dd>
+ The identifier of the first extremity of the Shielded Wire Group.
+</dl>
+<a name="Id_Harness"></a> <dt> o <b>Id_Harness</b>
+<pre>
+  public CATUnicodeString Id_Harness</dt>
+</pre>
+<dl>
+  <dd>
+ The identifier of the harness (if exists) containing the WireGroup.
+</dl>
+<a name="Id_SecondExtremity"></a> <dt> o <b>Id_SecondExtremity</b>
+<pre>
+  public CATUnicodeString Id_SecondExtremity</dt>
+</pre>
+<dl>
+  <dd>
+ The identifier of the second extremity of the Shielded Wire Group.
+</dl>
+<a name="ListOfSubWireGroups"></a> <dt> o <b>ListOfSubWireGroups</b>
+<pre>
+  public CATListValCATUnicodeString ListOfSubWireGroups</dt>
+</pre>
+<dl>
+  <dd>
+ List of wire groups names children of the wire group.
+</dl>
+<a name="ListOfSubWires"></a> <dt> o <b>ListOfSubWires</b>
+<pre>
+  public CATListValCATUnicodeString ListOfSubWires</dt>
+</pre>
+<dl>
+  <dd>
+ List of wire names children of the wire group.
+</dl>
+<a name="Name"></a> <dt> o <b>Name</b>
+<pre>
+  public CATUnicodeString Name</dt>
+</pre>
+<dl>
+  <dd>
+ The name of the WireGroup.
+ <br><b>Mandatory</b>
+</dl>
+<a name="PartNumber"></a> <dt> o <b>PartNumber</b>
+<pre>
+  public CATUnicodeString PartNumber</dt>
+</pre>
+<dl>
+  <dd>
+ The PartNumber attribute corresponds to the part number of the WireGroup.
+</dl>
+<a name="SeparationCode"></a> <dt> o <b>SeparationCode</b>
+<pre>
+  public CATUnicodeString SeparationCode</dt>
+</pre>
+<dl>
+  <dd>
+ The SeparationCode attribute is used in knowledge rules checked in WireGroup routing.
+</dl>
+<a name="SubType"></a> <dt> o <b>SubType</b>
+<pre>
+  public CATUnicodeString SubType</dt>
+</pre>
+<dl>
+  <dd>
+ The subtype of the WireGroup.
+</dl>
+<a name="WireGroupType"></a> <dt> o <b>WireGroupType</b>
+<pre>
+  public CATUnicodeString WireGroupType</dt>
+</pre>
+<dl>
+  <dd>
+ Whether the Wire Group is Generic or Shielded.
+</dl>
+<a name="WireLengthCoefficient"></a> <dt> o <b>WireLengthCoefficient</b>
+<pre>
+  public double WireLengthCoefficient</dt>
+</pre>
+<dl>
+  <dd>
+ The WireLengthCoefficient attribute.
+</dl>
+<hr>
+ This object is included in the file: <b>CATEwrWireGroup.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATEwrInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,196 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces Class CATSamAnalysisContext</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATSamAnalysisContext','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSamAnalysisContext','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATSamAnalysisContext','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSamAnalysisContext','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisInterfaces Class CATSamAnalysisContext</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATSamAnalysisContext_45313','CATSamAnalysisContext','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATSamAnalysisContext</b>
+</p>
+<p>
+<b><i> Class representing an analysis context.</i></b><br>
+
+ <b> Role </b>: 
+ Provides a structure which is easy to use for managing the analysis context.
+ Context is defined by it's name:
+ <ul><li>"Designer" is used for a GPS application. (Generative one)
+     <li>"AdvancedMeshing" is used to work with meshing edition.</li></ul>
+ Context allow also to configure a workbench to be in read-only mode.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATISamAnalysisContext','');return false">CATISamAnalysisContext</a>, <a href="#" onClick="openLink('CATISamAnalysisContextCheck','');return false">CATISamAnalysisContextCheck</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATSamAnalysisContext()"><b>CATSamAnalysisContext</b></a>()
+<dd>  Default Constructor.
+ <dt> o 
+    <a href="#CATSamAnalysisContext(CATSamAnalysisContext&amp;)"><b>CATSamAnalysisContext</b></a>(CATSamAnalysisContext&amp;)
+<dd>  Copy Constructor.
+ <dt> o 
+    <a href="#~CATSamAnalysisContext()"><b>~CATSamAnalysisContext</b></a>()
+<dd>  Destructor.
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetVisuModes(CATSamVisuMode&amp;,CATSamVisuMode&amp;)"><b>GetVisuModes</b></a>(CATSamVisuMode&amp;,CATSamVisuMode&amp;)
+<dd>  
+ <dt> o 
+    <a href="#SetVisuModes(CATSamVisuMode,CATSamVisuMode,CATBoolean)"><b>SetVisuModes</b></a>(CATSamVisuMode,CATSamVisuMode,CATBoolean)
+<dd>  
+ <dt> o 
+    <a href="#operator=(CATSamAnalysisContext&amp;)"><b>operator=</b></a>(CATSamAnalysisContext&amp;)
+<dd>  Assignment operator.
+</dl>
+<dl>
+</dl>
+<dl>
+ <h2>Data Member Index</h2> <br>
+ <dt> o 
+    <a href="#_ContextName"><b>_ContextName</b></a>
+<dd>   Name of the Context.
+ <dt> o 
+    <a href="#_ExplicitationDomain"><b>_ExplicitationDomain</b></a>
+<dd>   Set by default to "STRUCTURAL".
+ <dt> o 
+    <a href="#_ReadOnly"><b>_ReadOnly</b></a>
+<dd>   Indicates if the document should be read-only.
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATSamAnalysisContext"></a><a name="CATSamAnalysisContext()"></a> <dt> o <b>CATSamAnalysisContext</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATSamAnalysisContext</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Default Constructor.
+</dl>
+<a name="CATSamAnalysisContext"></a><a name="CATSamAnalysisContext(CATSamAnalysisContext&amp;)"></a> <dt> o <b>CATSamAnalysisContext</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATSamAnalysisContext</b>(<td> const <script type="text/javascript"> activateLink('CATSamAnalysisContext','CATSamAnalysisContext&amp;')</script> <td><tt>iContext</tt>)<script type="text/javascript"> activateLink('',' ')</script>  </table></dt>
+<dl>
+  <dd>
+ Copy Constructor.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iContext:</tt>
+   <dd> The context to copy.</dd>
+</dl>
+</dl>
+</dl>
+<a name="~CATSamAnalysisContext"></a><a name="~CATSamAnalysisContext()"></a> <dt> o <b>~CATSamAnalysisContext</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATSamAnalysisContext</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Destructor.
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetVisuModes"></a><a name="GetVisuModes(CATSamVisuMode&amp;,CATSamVisuMode&amp;)"></a> <dt> o <b>GetVisuModes</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATSamVisuMode','CATSamVisuMode')</script>  <b>GetVisuModes</b>(<td><script type="text/javascript"> activateLink('CATSamVisuMode','CATSamVisuMode&amp;')</script> <td><tt>oDefaultMode</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSamVisuMode','CATSamVisuMode&amp;')</script> <td><tt>oGlobalMode</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ 
+<dl>
+  <dt> <b>Deprecated:</b> 
+  <dd>  V5R15 Use 
+<a href="#" onClick="openLink('CATISamAnalysisContext','GetVisuModes');return false">CATISamAnalysisContext.GetVisuModes</a> instead.
+</dl>
+</dl>
+<a name="SetVisuModes"></a><a name="SetVisuModes(CATSamVisuMode,CATSamVisuMode,CATBoolean)"></a> <dt> o <b>SetVisuModes</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>SetVisuModes</b>(<td> const <script type="text/javascript"> activateLink('CATSamVisuMode','CATSamVisuMode')</script> <td><tt>iDefaultMode</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATSamVisuMode','CATSamVisuMode')</script> <td><tt>iGlobalMode</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script> <td><tt>iOverload</tt><td><tt>= FALSE </tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ 
+<dl>
+  <dt> <b>Deprecated:</b> 
+  <dd>  V5R15 Use 
+<a href="#" onClick="openLink('CATISamAnalysisContext','SetVisuModes');return false">CATISamAnalysisContext.SetVisuModes</a> instead.
+</dl>
+</dl>
+<a name="operator="></a><a name="operator=(CATSamAnalysisContext&amp;)"></a> <dt> o <b>operator=</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATSamAnalysisContext','CATSamAnalysisContext &')</script>  <b>operator=</b>(<td> const <script type="text/javascript"> activateLink('CATSamAnalysisContext','CATSamAnalysisContext&amp;')</script> <td><tt>iContext</tt>)<script type="text/javascript"> activateLink('',' ')</script>  </table></dt>
+<dl>
+  <dd>
+ Assignment operator. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iContext:</tt>
+   <dd> The context to assign.</dd>
+</dl>
+</dl>
+</dl>
+ <h2>Data Members</h2> <br>
+<a name="_ContextName"></a> <dt> o <b>_ContextName</b>
+<pre>
+  public CATString _ContextName</dt>
+</pre>
+<dl>
+  <dd>
+  Name of the Context.
+ "AnalysisCheck_"_ContextName gives the late type of the object
+ implementing CATISamAnalysisContextCheck.
+</dl>
+<a name="_ExplicitationDomain"></a> <dt> o <b>_ExplicitationDomain</b>
+<pre>
+  public CATString _ExplicitationDomain</dt>
+</pre>
+<dl>
+  <dd>
+  Set by default to "STRUCTURAL".
+ Used as a prefix to find the late type which implements "CATISamExplicitation"
+ <b>Note:</b> Do not change the contexte. Software not yet implemented.
+</dl>
+<a name="_ReadOnly"></a> <dt> o <b>_ReadOnly</b>
+<pre>
+  public CATBoolean _ReadOnly</dt>
+</pre>
+<dl>
+  <dd>
+  Indicates if the document should be read-only.
+</dl>
+<hr>
+ This object is included in the file: <b>CATSamAnalysisContext.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisToolkit</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

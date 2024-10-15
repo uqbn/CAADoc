@@ -1,0 +1,72 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>MecModInterfaces Face (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../MecModInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Face','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Face','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Face','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Face','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Face<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Face_16663','Face','0');</script>
+<b><i> 2-D boundary.</i></b><br>
+
+ <b>Role</b>: 
+ This <a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object may be, for example, the lateral face of cylinder.</br> You will create a Face object using the 
+<a href="#" onClick="openLink('Shapes','GetBoundary');return false">Shapes.GetBoundary</a> , 
+<a href="#" onClick="openLink('HybridShapes','GetBoundary');return false">HybridShapes.GetBoundary</a> ,  
+<a href="#" onClick="openLink('Sketches','GetBoundary');return false">Sketches.GetBoundary</a> or 
+<a href="#" onClick="openLink('Selection','SelectElement2');return false">Selection.SelectElement2</a> method. Then, you pass it to the operator (such as 
+<a href="#" onClick="openLink('ShapeFactory','AddNewFaceFillet');return false">ShapeFactory.AddNewFaceFillet</a> ).</br>  The lifetime of a Face object is limited, see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a>.</br>  <b>See also:</b><br>
+ 
+<a href="#" onClick="openLink('PlanarFace','');return false">PlanarFace</a> , 
+<a href="#" onClick="openLink('CylindricalFace','');return false">CylindricalFace</a> . <! @sample>
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example asks the end user to select two faces, and creates a face-face fillet on these faces:
+ <pre>
+ Dim InputObjectType(0)
+ Set Document = CATIA.ActiveDocument
+ Set Selection = Document.Selection
+ 'We propose to the user that he select the first face
+ InputObjectType(0)="Face"
+ Status=Selection.SelectElement2(InputObjectType,"Select the first face",true)
+ if (Status = "cancel") then Exit Sub
+ Set FirstFace = Selection.Item(1).Value
+ Selection.Clear
+ 'We propose to the user that he select the second face
+ InputObjectType(0)="Face"
+ Status=Selection.SelectElement2(InputObjectType,"Select the second face",true)
+ if (Status = "cancel") then Exit Sub
+ Set SecondFace = Selection.Item(1).Value
+ Set FaceFillet = ShapeFactory.AddNewFaceFillet(FirstFace,SecondFace,5.0)
+ Document.Part.Update  
+ </pre>
+ </dl>
+<hr>
+<dl>
+</dl>
+<dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

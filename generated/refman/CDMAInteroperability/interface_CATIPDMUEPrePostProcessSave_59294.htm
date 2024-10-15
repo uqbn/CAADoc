@@ -1,0 +1,118 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CDMAInteroperability Interface CATIPDMUEPrePostProcessSave</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CDMAInteroperability.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIPDMUEPrePostProcessSave','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPDMUEPrePostProcessSave','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIPDMUEPrePostProcessSave','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPDMUEPrePostProcessSave','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CDMAInteroperability Interface CATIPDMUEPrePostProcessSave</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIPDMUEPrePostProcessSave_59294','CATIPDMUEPrePostProcessSave','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATIPDMUEPrePostProcessSave</b>
+</p>
+<p>
+<b><i>  Interface to enable the user to forbid the save of certain documents and to know which documents have been saved in VPM.</i></b><br>
+
+  The method PreProcess is called just before sending the objects to save to VPM.
+  The method PostProcess is called just after the save in VPM is finished and CATIA got the feedback from VPM.
+  <b>Role</b>: This interface is a user exit allowing a user to forbid the save of certain documents and to know which documents have well been saved. 
+  <br>
+  You should implement it on the <tt>CATUEPDMPrePostProcessSave</tt> component as implement class.
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#PostProcess(CATLISTP(CATDocument)*)"><b>PostProcess</b></a>(CATLISTP(CATDocument)*)
+<dd>  Allows the user to know which documents have been saved in VPM.
+ <dt> o 
+    <a href="#PreProcess(CATLISTP(CATDocument)*,CATLISTP(CATDocument)*&amp;)"><b>PreProcess</b></a>(CATLISTP(CATDocument)*,CATLISTP(CATDocument)*&amp;)
+<dd>  Allows the user to forbid the save of certain documents.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="PostProcess"></a><a name="PostProcess(CATLISTP(CATDocument)*)"></a> <dt> o <b>PostProcess</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>PostProcess</b>(<td><script type="text/javascript"> activateLink('CATLISTP(CATDocument)','CATLISTP(CATDocument)*')</script> <td><tt>iListOfSavedDocuments</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Allows the user to know which documents have been saved in VPM.
+ <br><b>Role</b>: This method allows the user to know which documents have been saved in VPM.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt>  iListOfSavedDocuments</tt>
+   <dd>  The list of documents which have been saved in VPM. 
+
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>   <ul>
+   <li><tt>S_OK</tt>: execution successful</li> 
+   <li><tt>E_FAIL</tt>: The method has failed.</li>
+  </ul>
+</dl>
+</dl>
+<a name="PreProcess"></a><a name="PreProcess(CATLISTP(CATDocument)*,CATLISTP(CATDocument)*&amp;)"></a> <dt> o <b>PreProcess</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>PreProcess</b>(<td><script type="text/javascript"> activateLink('CATLISTP(CATDocument)','CATLISTP(CATDocument)*')</script> <td><tt>iListOfDocumentsToSave</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTP(CATDocument)','CATLISTP(CATDocument)*&amp;')</script> <td><tt>oListOfForbiddenDocuments</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Allows the user to forbid the save of certain documents.
+ <br><b>Role</b>: This method allows the user to forbid the save of certain documents.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt>  iListOfDocumentsToSave</tt>
+   <dd>  The list of documents that should be saved. 
+ </dd>
+    <dt><tt>  oListOfForbiddenDocuments</tt>
+   <dd>  The list of documents the user wants to forbid the save:
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>   <ul>
+   <li><tt>S_OK</tt>: execution successful</li> 
+   <li><tt>E_FAIL</tt>: a problem occured in the user exit.</li>
+  </ul>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIPDMUEPrePostProcessSave.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATCinDocument</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

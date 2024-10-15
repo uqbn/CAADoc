@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="CATIGPSCfgAddin" href="interface_CATIGPSCfgAddin_41199.htm" />
+<ITEM type="interface" name="CATIGPSConnectionDesign" href="interface_CATIGPSConnectionDesign_57123.htm" />
+<ITEM type="interface" name="CATIGPSSensorFactory" href="interface_CATIGPSSensorFactory_51097.htm" />
+<ITEM type="interface" name="CATIGPSStructuralTemplate" href="interface_CATIGPSStructuralTemplate_62669.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+<ITEM type="class" name="CATAnalysisGenerativeFEM" href="class_CATAnalysisGenerativeFEM_55756.htm" />
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+</Root>

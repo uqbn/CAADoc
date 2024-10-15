@@ -1,0 +1,106 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>MecModInterfaces Boundary (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../MecModInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Boundary','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Boundary','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Boundary','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Boundary','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Boundary<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Boundary_19156','Boundary','0');</script>
+<b><i> Topological cell, such as a face, an edge or a vertex.</i></b><br>
+
+ <b>Role</b>: 
+ The Boundary objects are basic topological objects, such as the edge of a Pad. Some of them posess 
+ a geometrical feature (<i>planar</i> face, <i>rectilinear</i> edge).</br>
+ You will create a Boundary object (such as the <a href="#" onClick="openLink('TriDimFeatEdge','');return false">TriDimFeatEdge</a> object, which is derived, indirectly,  from the Boundary object) using the 
+<a href="#" onClick="openLink('Shapes','GetBoundary');return false">Shapes.GetBoundary</a> , 
+<a href="#" onClick="openLink('HybridShapes','GetBoundary');return false">HybridShapes.GetBoundary</a> ,  
+<a href="#" onClick="openLink('Sketches','GetBoundary');return false">Sketches.GetBoundary</a> or 
+<a href="#" onClick="openLink('Selection','SelectElement2');return false">Selection.SelectElement2</a> method. Then, you pass it to the operator (such as 
+<a href="#" onClick="openLink('ShapeFactory','AddNewEdgeFilletWithConstantRadius');return false">ShapeFactory.AddNewEdgeFilletWithConstantRadius</a> ). Note that, regarding V4 sub-elements, once the data of a CATIA Version 4 Model has been copied to a .CATPart, the sub-elements of the resulting .CATPart are
+ supported by the 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object.</br>  The lifetime of a Boundary object is limited. In particular, after having call 
+<a href="#" onClick="openLink('Part','Update');return false">Part.Update</a> , the Boundary objects are usually no more valid.</br> 
+ <b>See also:</b>
+ <ul>
+ <li>
+<a href="#" onClick="openLink('Face','');return false">Face</a> , 
+<a href="#" onClick="openLink('PlanarFace','');return false">PlanarFace</a> , 
+<a href="#" onClick="openLink('CylindricalFace','');return false">CylindricalFace</a> </li> <li>
+<a href="#" onClick="openLink('Edge','');return false">Edge</a> , 
+<a href="#" onClick="openLink('TriDimFeatEdge','');return false">TriDimFeatEdge</a> , 
+<a href="#" onClick="openLink('RectilinearTriDimFeatEdge','');return false">RectilinearTriDimFeatEdge</a> , 
+<a href="#" onClick="openLink('BiDimFeatEdge','');return false">BiDimFeatEdge</a> , 
+<a href="#" onClick="openLink('RectilinearBiDimFeatEdge','');return false">RectilinearBiDimFeatEdge</a> , 
+<a href="#" onClick="openLink('MonoDimFeatEdge','');return false">MonoDimFeatEdge</a> , 
+<a href="#" onClick="openLink('RectilinearMonoDimFeatEdge','');return false">RectilinearMonoDimFeatEdge</a> </li> <li>
+<a href="#" onClick="openLink('Vertex','');return false">Vertex</a> , 
+<a href="#" onClick="openLink('TriDimFeatVertexOrBiDimFeatVertex','');return false">TriDimFeatVertexOrBiDimFeatVertex</a> , 
+<a href="#" onClick="openLink('NotWireBoundaryMonoDimFeatVertex','');return false">NotWireBoundaryMonoDimFeatVertex</a>, 
+<a href="#" onClick="openLink('ZeroDimFeatVertexOrWireBoundaryMonoDimFeatVertex','');return false">ZeroDimFeatVertexOrWireBoundaryMonoDimFeatVertex</a> </li> </ul>
+ <b>Note:</b>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> objects cannot be selected into the specification tree.</p> <b>Note:</b>For a 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object, the object returned by the 
+<a href="#" onClick="openLink('AnyObject','Parent');return false">AnyObject.Parent</a> property is the master shape. For example, if we have:<pre>
+                         Pad.2
+                          !
+                          !
+ +                        V
+ !                      +---+ 
+ !                    /   / !
+ +-- Pad.1          /   /   !
+ !                /   / one +------+
+ !               +---+    /       /! <--- Pad.1
+ !               !   !  /       /  +
+ +-- Pad.2       !   !/       /   /
+                 !   +------+   /
+                 !          ! /
+                 +----------+
+ </pre>then, for the 
+<a href="#" onClick="openLink('PlanarFace','');return false">PlanarFace</a> number "one", the 
+<a href="#" onClick="openLink('AnyObject','Parent');return false">AnyObject.Parent</a> property returns the Pad.2 automation object (see 
+<a href="#" onClick="openLink('Pad','');return false">Pad</a> ). <! @sample>
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example asks the end user to select an edge (using the 
+<a href="#" onClick="openLink('TriDimFeatEdge','');return false">TriDimFeatEdge</a> object), and creates an edge fillet on this edge: <pre>
+ Dim InputObjectType(0)
+ Set Document = CATIA.ActiveDocument
+ Set Selection = Document.Selection
+ 'We propose to the user that he select an edge
+ InputObjectType(0)="TriDimFeatEdge"
+ Status=Selection.SelectElement2(InputObjectType,"Select an edge",true)
+ if (Status = "cancel") then Exit Sub
+ Set EdgeFillet = ShapeFactory.AddNewEdgeFilletWithConstantRadius(Selection.Item(1).Value,1,5.0)
+ EdgeFillet.EdgePropagation = 1
+ Document.Part.Update 
+ </pre>
+ </dl>
+<hr>
+<dl>
+</dl>
+<dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

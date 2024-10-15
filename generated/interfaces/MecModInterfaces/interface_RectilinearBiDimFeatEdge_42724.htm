@@ -1,0 +1,102 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>MecModInterfaces RectilinearBiDimFeatEdge (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../MecModInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('RectilinearBiDimFeatEdge','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('RectilinearBiDimFeatEdge','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('RectilinearBiDimFeatEdge','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('RectilinearBiDimFeatEdge','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>RectilinearBiDimFeatEdge<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_RectilinearBiDimFeatEdge_42724','RectilinearBiDimFeatEdge','0');</script>
+<b><i> 1-D boundary belonging to a feature whose topological result is two dimensional, the boundary having a rectilinear geometry.</i></b><br>
+
+ <b>Role</b>: 
+ This <a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object may be, for example, the edge of a surface obtained through the extrusion of a line.</br> 
+ You will create a RectilinearBiDimFeatEdge object using the 
+<a href="#" onClick="openLink('Shapes','GetBoundary');return false">Shapes.GetBoundary</a> , 
+<a href="#" onClick="openLink('HybridShapes','GetBoundary');return false">HybridShapes.GetBoundary</a> ,  
+<a href="#" onClick="openLink('Sketches','GetBoundary');return false">Sketches.GetBoundary</a> or 
+<a href="#" onClick="openLink('Selection','SelectElement2');return false">Selection.SelectElement2</a> method. Then, you pass it to the operator (such as 
+<a href="#" onClick="openLink('Hole','SetDirection');return false">Hole.SetDirection</a> ).</br>  The lifetime of a RectilinearBiDimFeatEdge object is limited, see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a>.</br>  <! @sample>
+ <dl>
+ <dt><b>Example:</b> see the 
+<a href="#" onClick="openLink('RectilinearTriDimFeatEdge','');return false">RectilinearTriDimFeatEdge</a> example </dl>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetDirection"><b>GetDirection</b></a>
+<dd>   Returns the direction of the rectilinear edge.
+ <dt>
+    <a href="#GetOrigin"><b>GetOrigin</b></a>
+<dd>  Returns the origin of the the rectilinear edge.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetDirection"><dt>
+
+<table><tr><td>o Sub <b>GetDirection</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oDirection</tt>)</table></dt>
+<dl>
+  <dd>
+  Returns the direction of the rectilinear edge.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDirection[0]</tt>
+   <dd>   The X Coordinate of the direction
+   </dd>
+    <dt><tt> oDirection[1]</tt>
+   <dd>   The Y Coordinate of the direction
+   </dd>
+    <dt><tt> oDirection[2]</tt>
+   <dd>   The Z Coordinate of the direction</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetOrigin"><dt>
+
+<table><tr><td>o Sub <b>GetOrigin</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oOrigin</tt>)</table></dt>
+<dl>
+  <dd>
+ Returns the origin of the the rectilinear edge. 	
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oOrigin[0]</tt>
+   <dd>   The X Coordinate of the rectilinear edge origin
+   </dd>
+    <dt><tt> oOrigin[1]</tt>
+   <dd>   The Y Coordinate of the rectilinear edge origin
+   </dd>
+    <dt><tt> oOrigin[2]</tt>
+   <dd>   The Z Coordinate of the rectilinear edge origin</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

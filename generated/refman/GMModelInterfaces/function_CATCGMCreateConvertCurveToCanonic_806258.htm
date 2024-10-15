@@ -1,0 +1,59 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMModelInterfaces Global Function CATCGMCreateConvertCurveToCanonic</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMModelInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>GMModelInterfaces Global Function CATCGMCreateConvertCurveToCanonic</h1>
+
+<br><dt><table><tr><td>  <script type="text/javascript"> activateLink('CATICGMConvertCurveToCanonic',' CATICGMConvertCurveToCanonic *')</script>  <b>CATCGMCreateConvertCurveToCanonic</b>(<td><script type="text/javascript"> activateLink('CATGeoFactory','CATGeoFactory*')</script> <td><tt>iFactory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSoftwareConfiguration','CATSoftwareConfiguration*')</script> <td><tt>iConfig</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATEdgeCurve','CATEdgeCurve*')</script> <td><tt>iEdgeCurve</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATPointOnEdgeCurve','CATPointOnEdgeCurve*')</script> <td><tt>iStartPOEC</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATPointOnEdgeCurve','CATPointOnEdgeCurve*')</script> <td><tt>iEndPOEC</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSurface','CATSurface*')</script> <td><tt>iSupport</tt><td><tt>= NULL</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSkillValue','CATSkillValue')</script> <td><tt>iMode</tt><td><tt>= BASIC</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates an operator that computes the most approaching canonical
+ curve of a given edge curve.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFactory</tt>
+   <dd> The pointer to the geometry factory needed for the creation of the result curve.
+ </dd>
+</dl>
+    <dt><tt> iEdgeCurve</tt>
+   <dd> The pointer to the edge curve to be analyzed.
+ </dd>
+    <dt><tt> iStartPOEC</tt>
+   <dd> The pointer to the first point on the edge curve, defining the beginning of the domain to analyze.
+ </dd>
+    <dt><tt> iEndPOEC</tt>
+   <dd> The pointer to the last point on the edge curve, defining the end of the domain to analyze.
+ </dd>
+    <dt><tt> iSupport</tt>
+   <dd> The pointer to the planar surface of one of the representant of the edge curve. It can be <tt>NULL</tt>.
+ </dd>
+    <dt><tt> iMode</tt>
+   <dd> <dl><dt><tt>BASIC</tt> <dd>The operation is performed at the operator creation
+     <dt><tt>ADVANCED</tt><dd>The operation is is performed with the <tt>Run</tt> method</dl> 
+ </dd>
+  <dt> <b>Returns:</b> 
+  <dd>  [out, IUnknown#Release] The pointer to the created operator. To be released with the <tt>Release</tt> method after use.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATCGMCreateConvertCurveToCanonic.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

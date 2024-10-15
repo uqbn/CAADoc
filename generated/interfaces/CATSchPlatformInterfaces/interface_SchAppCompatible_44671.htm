@@ -1,0 +1,168 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchAppCompatible (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchAppCompatible','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppCompatible','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchAppCompatible','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppCompatible','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchAppCompatible<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchAppCompatible_44671','SchAppCompatible','0');</script>
+<b><i>  Provide application rules of how to connect objects.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AppIsTargetOKForInsert"><b>AppIsTargetOKForInsert</b></a>
+<dd>  Query whether a component (source) is compatible to be inserted into this route.
+ <dt>
+    <a href="#AppIsTargetOKForPlace"><b>AppIsTargetOKForPlace</b></a>
+<dd>  Query whether a component (source) is compatible to be connected to "this" object 
+ (the target, which can be a route or a component).
+ <dt>
+    <a href="#AppIsTargetOKForRoute"><b>AppIsTargetOKForRoute</b></a>
+<dd>  Query whether a route of the input class type
+ can be connected to "this" object (the target, which
+ can be a route or a component).
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AppIsTargetOKForInsert"><dt>
+
+<table><tr><td>o Sub <b>AppIsTargetOKForInsert</b>(<td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>iLCompSourceCntrs</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>oLSourceCntrs</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>oBYes</tt>)</table></dt>
+<dl>
+  <dd>
+ Query whether a component (source) is compatible to be inserted into this route.
+ This method is used when inserting a component into a route.
+ This mehtod should only be implemented on a route object. For a component
+ object, the method should simply returns oBYes=FALSE.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLCompSourceCntrs</tt>
+   <dd>   A list of connectors on the source component. The target (to be connected)
+   is "this" route.
+ </dd>
+    <dt><tt> oLSourceCntrs</tt>
+   <dd>   A list of compatible and available connectors on the source component (the input)
+   that can be connected to the target ("this" route)
+   (members are CATISchAppConnector interface pointers)
+ </dd>
+    <dt><tt> oBYes</tt>
+   <dd>   If TRUE, the object is OK to be connected to a route.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppCompatible
+ Dim objArg1 As SchListOfObjects
+ Dim objArg2 As SchListOfObjects
+ Dim bVar3 As boolean
+  ...
+ objThisIntf.<font color="red">AppIsTargetOKForInsert</font>objArg1,objArg2,bVar3
+ </pre>
+
+</dl>
+</dl>
+<a name="AppIsTargetOKForPlace"><dt>
+
+<table><tr><td>o Sub <b>AppIsTargetOKForPlace</b>(<td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>iLCompSourceCntrs</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>oLTargetCntrs</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>oBYes</tt>)</table></dt>
+<dl>
+  <dd>
+ Query whether a component (source) is compatible to be connected to "this" object 
+ (the target, which can be a route or a component).
+ This method is used when placing a component to be connected to another object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLCompSourceCntrs</tt>
+   <dd>   A list of connectors on the source component. The target (to be connected)
+   is "this" component.
+ </dd>
+    <dt><tt> oLOKCntrs</tt>
+   <dd>   A list of compatible and available connectors on "this" component (the target)
+   to be connected to the source component (the input source).
+   (members are CATISchAppConnector interface pointers)
+ </dd>
+    <dt><tt> oBYes</tt>
+   <dd>   If TRUE, the object is OK to be connected to a route.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppCompatible
+ Dim objArg1 As SchListOfObjects
+ Dim objArg2 As SchListOfObjects
+ Dim bVar3 As boolean
+  ...
+ objThisIntf.<font color="red">AppIsTargetOKForPlace</font>objArg1,objArg2,bVar3
+ </pre>
+
+</dl>
+</dl>
+<a name="AppIsTargetOKForRoute"><dt>
+
+<table><tr><td>o Sub <b>AppIsTargetOKForRoute</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iRouteCntrClassType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>oLOKCntrs</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>oBYes</tt>)</table></dt>
+<dl>
+  <dd>
+ Query whether a route of the input class type
+ can be connected to "this" object (the target, which
+ can be a route or a component).
+ This method is used when routing a route.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iRouteCntrClassType</tt>
+   <dd>   Class type of a schematic route connector.
+ </dd>
+    <dt><tt> oLOKCntrs</tt>
+   <dd>   A list of compatible and available connectors on this object. 
+   (members are CATISchAppConnector interface pointers)
+ </dd>
+    <dt><tt> oBYes</tt>
+   <dd>   If TRUE, the object is OK to be connected to a route.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppCompatible
+ Dim strVar1 As String
+ Dim objArg2 As SchListOfObjects
+ Dim bVar3 As boolean
+  ...
+ objThisIntf.<font color="red">AppIsTargetOKForRoute</font>strVar1,objArg2,bVar3
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

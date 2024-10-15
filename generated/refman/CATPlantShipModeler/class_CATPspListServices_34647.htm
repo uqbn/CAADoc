@@ -1,0 +1,239 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATPlantShipModeler Class CATPspListServices</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATPlantShipModeler.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATPspListServices','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATPspListServices','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATPspListServices','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATPspListServices','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATPlantShipModeler Class CATPspListServices</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATPspListServices_34647','CATPspListServices','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATPspListServices</b>
+</p>
+<p>
+<b><i> Tools to manage list of pointers.</i></b><br>
+
+ <b>Role</b>: For creation and query of list of pointers.</p>
+<hr>
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CreateCATICStringList(CATICStringList**)"><b>CreateCATICStringList</b></a>(CATICStringList**)
+<dd>  Create CATICStringList object for a list of character strings.
+ <dt> o 
+    <a href="#CreateCATIStringList(CATIStringList**)"><b>CreateCATIStringList</b></a>(CATIStringList**)
+<dd>  Create CATIStringList object for a list of NLS strings.
+ <dt> o 
+    <a href="#CreateCATIUnknownList(CATIUnknownList**)"><b>CreateCATIUnknownList</b></a>(CATIUnknownList**)
+<dd>  Create CATIUnknownList object for a list of IUnknown interface pointers.
+ <dt> o 
+    <a href="#Locate(CATICStringList*,char*)"><b>Locate</b></a>(CATICStringList*,char*)
+<dd>  Locate a target string from a list of character string pointers.
+ <dt> o 
+    <a href="#Locate(CATIStringList*,wchar_t*)"><b>Locate</b></a>(CATIStringList*,wchar_t*)
+<dd>  Locate a target string from a list of NLS string pointers.
+ <dt> o 
+    <a href="#Locate(CATIUnknownList*,IUnknown*)"><b>Locate</b></a>(CATIUnknownList*,IUnknown*)
+<dd>  Locate a target IUnknown from a List of IUnknown interface pointers.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="CreateCATICStringList"></a><a name="CreateCATICStringList(CATICStringList**)"></a> <dt> o <b>CreateCATICStringList</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>CreateCATICStringList</b>(<td><script type="text/javascript"> activateLink('CATICStringList','CATICStringList**')</script> <td><tt>oLCString</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Create CATICStringList object for a list of character strings.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLCString</tt>
+   <dd>  [out, IUnknown#Release]   A list of character string pointers.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="CreateCATIStringList"></a><a name="CreateCATIStringList(CATIStringList**)"></a> <dt> o <b>CreateCATIStringList</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>CreateCATIStringList</b>(<td><script type="text/javascript"> activateLink('CATIStringList','CATIStringList**')</script> <td><tt>oLString</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Create CATIStringList object for a list of NLS strings.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLString</tt>
+   <dd>  [out, IUnknown#Release]   CATIStringList interface pointer. (Limit Use for NLS Strings ONLY).
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="CreateCATIUnknownList"></a><a name="CreateCATIUnknownList(CATIUnknownList**)"></a> <dt> o <b>CreateCATIUnknownList</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>CreateCATIUnknownList</b>(<td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oLUnknown</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Create CATIUnknownList object for a list of IUnknown interface pointers.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLUnknown</tt>
+   <dd>  [out, IUnknown#Release]   A list of interface pointers.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="Locate"></a><a name="Locate(CATICStringList*,char*)"></a> <dt> o <b>Locate</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('int','int')</script>  <b>Locate</b>(<td><script type="text/javascript"> activateLink('CATICStringList','CATICStringList*')</script> <td><tt>iLCString</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('char','char*')</script> <td><tt>iTarget</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Locate a target string from a list of character string pointers.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLCString</tt>
+   <dd>     A list of character string pointers.
+ </dd>
+    <dt><tt> iTarget</tt>
+   <dd>     The character string pointer to be located.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    integer value. The position of the target in the list starting at 0. 
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>Less than 0</dt>
+     <dd>Not found</dd>
+     <dt>Greater than or equal to 0 </dt>
+     <dd>found</dd>
+   </dl>
+</dl>
+</dl>
+<a name="Locate"></a><a name="Locate(CATIStringList*,wchar_t*)"></a> <dt> o <b>Locate</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('int','int')</script>  <b>Locate</b>(<td><script type="text/javascript"> activateLink('CATIStringList','CATIStringList*')</script> <td><tt>iLString</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('wchar_t','wchar_t*')</script> <td><tt>iTarget</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Locate a target string from a list of NLS string pointers.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLString</tt>
+   <dd>     CATIStringList pointer.
+ </dd>
+    <dt><tt> iTarget</tt>
+   <dd>     wchar_t character string to look for in iLString.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    integer value. If string is found it gives the location index starting at 0. 
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>Less than 0</dt>
+     <dd>Not found</dd>
+     <dt>Greater than or equal to 0 </dt>
+     <dd>found</dd>
+   </dl>
+</dl>
+</dl>
+<a name="Locate"></a><a name="Locate(CATIUnknownList*,IUnknown*)"></a> <dt> o <b>Locate</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('int','int')</script>  <b>Locate</b>(<td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList*')</script> <td><tt>iLUnknown</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('IUnknown','IUnknown*')</script> <td><tt>iTargetUnknown</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Locate a target IUnknown from a List of IUnknown interface pointers.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLUnknown</tt>
+   <dd>     A list of IUnknown pointers.
+ </dd>
+    <dt><tt> iTargetUnknown</tt>
+   <dd>     The IUnknown interface pointer to be located.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    integer value. The position of the target in the list starting at 0. 
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>Less than 0</dt>
+     <dd>Not found</dd>
+     <dt>Greater than or equal to 0 </dt>
+     <dd>found </dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATPspListServices.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATPspUtilities</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

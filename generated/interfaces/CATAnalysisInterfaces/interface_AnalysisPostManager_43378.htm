@@ -1,0 +1,113 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces AnalysisPostManager (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('AnalysisPostManager','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisPostManager','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('AnalysisPostManager','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisPostManager','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>AnalysisPostManager<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_AnalysisPostManager_43378','AnalysisPostManager','0');</script>
+<b><i>   Interface to define the Post Processing Manager.</i></b><br>
+
+ <b>Role</b>: In the analysis document, an Post Processing is dedicated to
+ Visualization and reporting.
+ <p><hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddExistingCaseForReport"><b>AddExistingCaseForReport</b></a>
+<dd>  Adds an existing analysis case to manager.
+ <dt>
+    <a href="#BuildReport"><b>BuildReport</b></a>
+<dd>  Extract the HTML Report.
+ <dt>
+    <a href="#ExtractHTMLReport"><b>ExtractHTMLReport</b></a>
+<dd>  
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddExistingCaseForReport"><dt>
+
+<table><tr><td>o Sub <b>AddExistingCaseForReport</b>(<td><script type="text/javascript"> activateLink('AnalysisCase','AnalysisCase')</script> <td><tt>iCase</tt>)</table></dt>
+<dl>
+  <dd>
+ Adds an existing analysis case to manager.
+ To declare Case which will be taken into account for the HTML report.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCase</tt>
+   <dd> The Existing Analysis Case.</dd>
+</dl>
+</dl>
+</dl>
+<a name="BuildReport"><dt>
+
+<table><tr><td>o Sub <b>BuildReport</b>(<td><script type="text/javascript"> activateLink('Folder','Folder')</script> <td><tt>iFolder</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iTitle</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iAddCreatedImages</tt>)</table></dt>
+<dl>
+  <dd>
+ Extract the HTML Report.
+ The Report is defined related to Analysis cases, using AddExistingCaseForReport 
+ and will be stored in a CATIA Folder.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFolder</tt>
+   <dd>  Folder to store the HTML file. </dd>
+    <dt><tt> iTitle</tt>
+   <dd>   Title of the report. </dd>
+    <dt><tt> iAddCreatedImages</tt>
+   <dd> To add created images under analysis case in the report.<br></dd>
+</dl>
+</dl>
+</dl>
+<a name="ExtractHTMLReport"><dt>
+
+<table><tr><td>o Sub <b>ExtractHTMLReport</b>(<td><script type="text/javascript"> activateLink('Folder','Folder')</script> <td><tt>iFolder</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iTitle</tt>)</table></dt>
+<dl>
+  <dd>
+ 
+<dl>
+  <dt> <b>Deprecated:</b> 
+  <dd>  V5R14 use BuildReport instead.
+ Extract the HTML Report.
+ The Report is defined related to Analysis cases, using AddExistingCaseForReport 
+ and will be stored in a CATIA Folder.
+ 
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFolder</tt>
+   <dd>  Folder to store the HTML file. </dd>
+    <dt><tt> iTitle</tt>
+   <dd>   Title of the report.</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="MachiningProcess" href="interface_MachiningProcess_42930.htm" />
+<ITEM type="interface" name="ManufacturingAPTGenerator" href="interface_ManufacturingAPTGenerator_60772.htm" />
+<ITEM type="interface" name="ManufacturingActivity" href="interface_ManufacturingActivity_52808.htm" />
+<ITEM type="interface" name="ManufacturingCopyTransformation" href="interface_ManufacturingCopyTransformation_79987.htm" />
+<ITEM type="interface" name="ManufacturingFeature" href="interface_ManufacturingFeature_50232.htm" />
+<ITEM type="interface" name="ManufacturingFeatures" href="interface_ManufacturingFeatures_52532.htm" />
+<ITEM type="interface" name="ManufacturingGeneratorData" href="interface_ManufacturingGeneratorData_63678.htm" />
+<ITEM type="interface" name="ManufacturingHole" href="interface_ManufacturingHole_44363.htm" />
+<ITEM type="interface" name="ManufacturingInsert" href="interface_ManufacturingInsert_48493.htm" />
+<ITEM type="interface" name="ManufacturingMachinableArea" href="interface_ManufacturingMachinableArea_65481.htm" />
+<ITEM type="interface" name="ManufacturingMachinableFeature" href="interface_ManufacturingMachinableFeature_74958.htm" />
+<ITEM type="interface" name="ManufacturingMachinableGeometry" href="interface_ManufacturingMachinableGeometry_78780.htm" />
+<ITEM type="interface" name="ManufacturingMachine" href="interface_ManufacturingMachine_49829.htm" />
+<ITEM type="interface" name="ManufacturingMachiningAxis" href="interface_ManufacturingMachiningAxis_63853.htm" />
+<ITEM type="interface" name="ManufacturingOperation" href="interface_ManufacturingOperation_54833.htm" />
+<ITEM type="interface" name="ManufacturingOutput" href="interface_ManufacturingOutput_48911.htm" />
+<ITEM type="interface" name="ManufacturingOutputGenerator" href="interface_ManufacturingOutputGenerator_70626.htm" />
+<ITEM type="interface" name="ManufacturingPattern" href="interface_ManufacturingPattern_50490.htm" />
+<ITEM type="interface" name="ManufacturingPrecedence" href="interface_ManufacturingPrecedence_56309.htm" />
+<ITEM type="interface" name="ManufacturingPrecedences" href="interface_ManufacturingPrecedences_58954.htm" />
+<ITEM type="interface" name="ManufacturingProcess" href="interface_ManufacturingProcess_50494.htm" />
+<ITEM type="interface" name="ManufacturingProgram" href="interface_ManufacturingProgram_50341.htm" />
+<ITEM type="interface" name="ManufacturingSetup" href="interface_ManufacturingSetup_46646.htm" />
+<ITEM type="interface" name="ManufacturingTool" href="interface_ManufacturingTool_44676.htm" />
+<ITEM type="interface" name="ManufacturingToolAssembly" href="interface_ManufacturingToolAssembly_61889.htm" />
+<ITEM type="interface" name="ManufacturingToolCorrector" href="interface_ManufacturingToolCorrector_64740.htm" />
+<ITEM type="interface" name="ManufacturingToolMotion" href="interface_ManufacturingToolMotion_57038.htm" />
+<ITEM type="interface" name="ManufacturingView" href="interface_ManufacturingView_44644.htm" />
+<ITEM type="interface" name="MfgActivities" href="interface_MfgActivities_38572.htm" />
+<ITEM type="interface" name="MfgToolMotions" href="interface_MfgToolMotions_39976.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Enumerations" type="enum"  ctype="enum" >
+<ITEM type="enum" name="CatManufacturingPrecedenceType" href="enum_CatManufacturingPrecedenceType_72241.htm" />
+</ITEM>
+</Root>

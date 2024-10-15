@@ -1,0 +1,288 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchAppConnector (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchAppConnector','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppConnector','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchAppConnector','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchAppConnector','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchAppConnector<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchAppConnector_43384','SchAppConnector','0');</script>
+<b><i>  Manage a schematic connector.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AppConnect"><b>AppConnect</b></a>
+<dd>  Connect to an input connector.
+ <dt>
+    <a href="#AppConnectBranch"><b>AppConnectBranch</b></a>
+<dd>  Connect to an input connector for Branch.
+ <dt>
+    <a href="#AppDisconnect"><b>AppDisconnect</b></a>
+<dd>  Disconnect from an input connector.
+ <dt>
+    <a href="#AppGetAssociatedConnectable"><b>AppGetAssociatedConnectable</b></a>
+<dd>  Find the application object that owns this connector.
+ <dt>
+    <a href="#AppIsCntrConnected"><b>AppIsCntrConnected</b></a>
+<dd>  Query whether the connector has been connected.
+ <dt>
+    <a href="#AppListCompatibleTypes"><b>AppListCompatibleTypes</b></a>
+<dd>  Find all the class types of connector that are compatible with
+ this connector for connections.
+ <dt>
+    <a href="#AppListConnections"><b>AppListConnections</b></a>
+<dd>  Find all the connections that include this connector.
+ <dt>
+    <a href="#AppOKToNoShowConnectedCntr"><b>AppOKToNoShowConnectedCntr</b></a>
+<dd>  Query whether it is OK to no show the connector after it is connected.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AppConnect"><dt>
+
+<table><tr><td>o Func <b>AppConnect</b>(<td><script type="text/javascript"> activateLink('SchAppConnector','SchAppConnector')</script> <td><tt>iCntrToConnect</tt>) As <script type="text/javascript"> activateLink('SchAppConnection','SchAppConnection')</script> </table></dt>
+<dl>
+  <dd>
+ Connect to an input connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCntrToConnect</tt>
+   <dd>   A schematic connector object to connect to
+ </dd>
+    <dt><tt> oConnection</tt>
+   <dd>   Connection created
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppConnector
+ Dim objArg1 As SchAppConnector
+ Dim objArg2 As SchAppConnection
+  ...
+ Set objArg2 = objThisIntf.<font color="red">AppConnect</font>(objArg1)
+ </pre>
+
+</dl>
+</dl>
+<a name="AppConnectBranch"><dt>
+
+<table><tr><td>o Func <b>AppConnectBranch</b>(<td><script type="text/javascript"> activateLink('SchAppConnector','SchAppConnector')</script> <td><tt>iCntrToConnect</tt>) As <script type="text/javascript"> activateLink('SchAppConnection','SchAppConnection')</script> </table></dt>
+<dl>
+  <dd>
+ Connect to an input connector for Branch.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCntrToConnect</tt>
+   <dd>   A schematic connector object to connect to
+ </dd>
+    <dt><tt> oConnection</tt>
+   <dd>   Connection created
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppConnector
+ Dim objArg1 As SchAppConnector
+ Dim objArg2 As SchAppConnection
+  ...
+ Set objArg2 = objThisIntf.<font color="red">AppConnectBranch</font>(objArg1)
+ </pre>
+
+</dl>
+</dl>
+<a name="AppDisconnect"><dt>
+
+<table><tr><td>o Sub <b>AppDisconnect</b>(<td><script type="text/javascript"> activateLink('SchAppConnector','SchAppConnector')</script> <td><tt>iCntrToDisConnect</tt>)</table></dt>
+<dl>
+  <dd>
+ Disconnect from an input connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCntrToDisconnect</tt>
+   <dd>   A schematic connector object to disconnect from
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppConnector
+ Dim objArg1 As SchAppConnector
+  ...
+ objThisIntf.<font color="red">AppDisconnect</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+<a name="AppGetAssociatedConnectable"><dt>
+
+<table><tr><td>o Func <b>AppGetAssociatedConnectable</b>(<td>) As <script type="text/javascript"> activateLink('SchAppConnectable','SchAppConnectable')</script> </table></dt>
+<dl>
+  <dd>
+ Find the application object that owns this connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oConnectable</tt>
+   <dd>   An application object that the connector belongs to.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppConnector
+ Dim objArg1 As SchAppConnectable
+  ...
+ Set objArg1 = objThisIntf.<font color="red">AppGetAssociatedConnectable</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="AppIsCntrConnected"><dt>
+
+<table><tr><td>o Sub <b>AppIsCntrConnected</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>oBYes</tt>)</table></dt>
+<dl>
+  <dd>
+ Query whether the connector has been connected. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oBYes</tt>
+   <dd>   If TRUE, then it is connected
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppConnector
+ Dim bVar1 As boolean
+  ...
+ objThisIntf.<font color="red">AppIsCntrConnected</font>bVar1
+ </pre>
+
+</dl>
+</dl>
+<a name="AppListCompatibleTypes"><dt>
+
+<table><tr><td>o Func <b>AppListCompatibleTypes</b>(<td>) As <script type="text/javascript"> activateLink('SchListOfBSTRs','SchListOfBSTRs')</script> </table></dt>
+<dl>
+  <dd>
+ Find all the class types of connector that are compatible with
+ this connector for connections.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLCntrCompatClassTypes</tt>
+   <dd>   A list of all the class types of connectors that are compatible
+   with this connector for connections.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppConnector
+ Dim objArg1 As SchListOfBSTRs
+  ...
+ Set objArg1 = objThisIntf.<font color="red">AppListCompatibleTypes</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="AppListConnections"><dt>
+
+<table><tr><td>o Func <b>AppListConnections</b>(<td><script type="text/javascript"> activateLink('SchListOfBSTRs','SchListOfBSTRs')</script> <td><tt>iLCntnClassFilter</tt>) As <script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> </table></dt>
+<dl>
+  <dd>
+ Find all the connections that include this connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLCntnClassFilter</tt>
+   <dd>   A list of all the class types for filtering the output connection
+   list.
+ </dd>
+    <dt><tt> oLConnections</tt>
+   <dd>   A list of connections that include this connector
+   (members are CATISchAppConnection interface pointers).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppConnector
+ Dim objArg1 As SchListOfBSTRs
+ Dim objArg2 As SchListOfObjects
+  ...
+ Set objArg2 = objThisIntf.<font color="red">AppListConnections</font>(objArg1)
+ </pre>
+
+</dl>
+</dl>
+<a name="AppOKToNoShowConnectedCntr"><dt>
+
+<table><tr><td>o Sub <b>AppOKToNoShowConnectedCntr</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>oBYes</tt>)</table></dt>
+<dl>
+  <dd>
+ Query whether it is OK to no show the connector after it is connected.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oBYes</tt>
+   <dd>   If TRUE, then it is OK to no show.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchAppConnector
+ Dim bVar1 As boolean
+  ...
+ objThisIntf.<font color="red">AppOKToNoShowConnectedCntr</font>bVar1
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ElecRoutingItf Interface CATIEwrUipWires</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ElecRoutingItf.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIEwrUipWires','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIEwrUipWires','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIEwrUipWires','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIEwrUipWires','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ElecRoutingItf Interface CATIEwrUipWires</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIEwrUipWires_23845','CATIEwrUipWires','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATIEwrUipWires</b>
+</p>
+<p>
+<b><i> Interface dedicated to wires.</i></b><br>
+
+ <b>Role</b>: This interface is used to list the wires to route</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#ListWires(CATListValCATUnicodeString*,CATListValCATUnicodeString*,CATLONG32&amp;,CATEwrWire*&amp;)"><b>ListWires</b></a>(CATListValCATUnicodeString*,CATListValCATUnicodeString*,CATLONG32&amp;,CATEwrWire*&amp;)
+<dd>  Retrieves the list of wires for a given list of systems and a given list of criteria.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="ListWires"></a><a name="ListWires(CATListValCATUnicodeString*,CATListValCATUnicodeString*,CATLONG32&amp;,CATEwrWire*&amp;)"></a> <dt> o <b>ListWires</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ListWires</b>(<td> const <script type="text/javascript"> activateLink('CATListValCATUnicodeString','CATListValCATUnicodeString*')</script> <td><tt>iListOfSystems</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATListValCATUnicodeString','CATListValCATUnicodeString*')</script> <td><tt>iListOfCriteria</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLONG32','CATLONG32&amp;')</script> <td><tt>oWiresCount</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATEwrWire','CATEwrWire*&amp;')</script> <td><tt>oListOfWires</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the list of wires for a given list of systems and a given list of criteria.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iListOfSystems</tt>
+   <dd>  The list of systems.
+ </dd>
+    <dt><tt> iListOfCriteria</tt>
+   <dd>  The list of criteria. This argument can be used to list the wires for a configuration (may be NULL).
+ </dd>
+    <dt><tt> oWiresCount</tt>
+   <dd>  The number of wires
+ </dd>
+    <dt><tt> oListOfWires</tt>
+   <dd>  The list of wires
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value. 
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>The wires have been retrieved.</dd>
+     <dt>E_FAIL </dt>
+     <dd>Error while retrieving the wires.</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIEwrUipWires.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATEwrInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

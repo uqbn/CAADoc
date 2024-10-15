@@ -1,0 +1,135 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATGSMIDLItf HybridShapePointOnSurface (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATGSMIDLItf.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('HybridShapePointOnSurface','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapePointOnSurface','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('HybridShapePointOnSurface','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapePointOnSurface','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>HybridShapePointOnSurface<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_HybridShapePointOnSurface_39882','HybridShapePointOnSurface','0');</script>
+<b><i> Represents the Point on Surface feature objects.</i></b><br>
+
+ <b>Role</b>:  Allows to access data of the point feature created with a
+ geodesic distance in a direction to a reference point on a surface
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('Length','');return false">Length</a>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('Reference','');return false">Reference</a>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeDirection','');return false">HybridShapeDirection</a>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeFactory','');return false">HybridShapeFactory</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Direction"><b>Direction</b></a>
+<dd>  Returns or Sets the direction from the reference point in which the point is computed.
+ <dt>
+    <a href="#Offset"><b>Offset</b></a>
+<dd>  Returns  the geodesic length.
+ <dt>
+    <a href="#Point"><b>Point</b></a>
+<dd>  Returns or Sets the reference point.
+ <dt>
+    <a href="#Surface"><b>Surface</b></a>
+<dd>  Returns or Sets the surface.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Direction"><dt>
+
+<table><tr><td>o Property <b>Direction</b>(<td>) As <script type="text/javascript"> activateLink('HybridShapeDirection','HybridShapeDirection')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or Sets the direction from the reference point in which the point is computed.
+ <dl>
+ <dt>Example</dt>:
+ <dd>
+ This example retrieves in <code>oDirection</code> the direction from the 
+  reference point for <code>PointOnSurface</code> feature.
+ <pre>
+ Dim oDirection As CATIAHybridShapeDirection
+ Set oDirection  = PointOnSurface.<font color="red">Direction</font>
+ </pre>
+ </dl>
+</dl>
+<a name="Offset"><dt>
+
+<table><tr><td>o Property <b>Offset</b>(<td>) As <script type="text/javascript"> activateLink('Length','Length')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns  the geodesic length.
+ <dl>
+ <dt>Example</dt>:
+ <dd>
+ This example retrieves in <code>oGeodesicOffset</code> the offset (Geodesic Length) from the reference point for <code>PointOnSurface</code> feature.
+ <pre>
+ Dim oGeodesicOffset As CATIAReference
+ Set oGeodesicOffset  = PointOnSurface.<font color="red">GeodesicOffset</font>
+ </pre>
+ </dl>
+</dl>
+<a name="Point"><dt>
+
+<table><tr><td>o Property <b>Point</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or Sets the reference point.
+ <br>  This data is not mandatory.
+ <br>  If no point is given, the middle point on the surface is taken.
+ <br>Sub-element(s) supported (see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+<a href="#" onClick="openLink('Vertex','');return false">Vertex</a>. <dl>
+ <dt>Example</dt>:
+ <dd>
+ This example retrieves in <code>oPointRef</code> the reference point for <code>PointOnSurface</code> feature.
+ <pre>
+ Dim oPointRef As CATIAReference
+ Set oPointRef  = PointOnSurface.<font color="red">PointRef</font>
+ </pre>
+ </dl>
+</dl>
+<a name="Surface"><dt>
+
+<table><tr><td>o Property <b>Surface</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or Sets the surface.
+ <br>Sub-element(s) supported (see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+<a href="#" onClick="openLink('Face','');return false">Face</a>.<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>oSurface</code> the supporting surface for <code>PointOnSurface</code> feature.
+ <pre>
+ Dim oSurface As CATIAReference
+ Set oSurface  = PointOnSurface.<font color="red">Surface</font>
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

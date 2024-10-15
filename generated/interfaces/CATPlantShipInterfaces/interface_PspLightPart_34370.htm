@@ -1,0 +1,108 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATPlantShipInterfaces PspLightPart (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATPlantShipInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('PspLightPart','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PspLightPart','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('PspLightPart','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PspLightPart','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PspLightPart<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_PspLightPart_34370','PspLightPart','0');</script>
+<b><i> Represents the light part.</i></b><br>
+
+ <b>Role</b>: To access light object data.<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetDefinition"><b>GetDefinition</b></a>
+<dd>  Retrieves the points defining the object.
+ <dt>
+    <a href="#SetDefinition"><b>SetDefinition</b></a>
+<dd>  Set the points defining the light object.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetDefinition"><dt>
+
+<table><tr><td>o Func <b>GetDefinition</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iRelAxis</tt>) As <script type="text/javascript"> activateLink('PspListOfDoubles','PspListOfDoubles')</script> </table></dt>
+<dl>
+  <dd>
+ Retrieves the points defining the object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iRelAxis</tt>
+   <dd>   The relative axis object (Nothing means relative to parent).
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    List of points defining object. A list of X-Y-Z coordinates 
+ of the points. 3 doubles per point.
+ 
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As PspLightPart
+ Dim objArg1 As Product
+ Dim objArg2 As PspListOfDoubles
+ Set objArg1 = Nothing
+  ...
+ Set objArg2 = objThisIntf.<font color="red">GetDefinition</font> (objArg1)
+ </pre>
+
+</dl>
+</dl>
+<a name="SetDefinition"><dt>
+
+<table><tr><td>o Sub <b>SetDefinition</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iRelAxis</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iListPoints</tt>)</table></dt>
+<dl>
+  <dd>
+ Set the points defining the light object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iRelAxis</tt>
+   <dd>   The relative axis object (Nothing means relative to parent).
+ </dd>
+    <dt><tt> oListPoints</tt>
+   <dd>   List of points defining object. A list of X-Y-Z coordinates 
+ of the points. 3 doubles per point.
+
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As PspLightPart
+ Dim objArg1 As CATSafeArrayVariant
+ Dim dbVar2(3) As CATSafeArrayVariant
+  ...
+ objThisIntf.<font color="red">SetDefinition</font> objArg1, dbVar2
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

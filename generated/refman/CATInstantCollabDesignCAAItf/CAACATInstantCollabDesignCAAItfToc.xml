@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="CATIColId" href="interface_CATIColId_42477.htm" />
+<ITEM type="interface" name="CATIColInvariantId" href="interface_CATIColInvariantId_54512.htm" />
+<ITEM type="interface" name="CATIColMergeContextTable" href="interface_CATIColMergeContextTable_67244.htm" />
+<ITEM type="interface" name="CATIColMergeItem" href="interface_CATIColMergeItem_51113.htm" />
+<ITEM type="interface" name="CATIColMergeable" href="interface_CATIColMergeable_51145.htm" />
+<ITEM type="interface" name="CATIColSharable" href="interface_CATIColSharable_49653.htm" />
+<ITEM type="interface" name="CATICollabServices" href="interface_CATICollabServices_54949.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+<ITEM type="class" name="CATColIMergeableAdapter" href="class_CATColIMergeableAdapter_62054.htm" />
+<ITEM type="class" name="CATColISharableAdapter" href="class_CATColISharableAdapter_59857.htm" />
+<ITEM type="class" name="CATCollabLocalInfo" href="class_CATCollabLocalInfo_51827.htm" />
+<ITEM type="class" name="CATCollabWsInfo" href="class_CATCollabWsInfo_47121.htm" />
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Enumerations" type="enum"  ctype="enum" >
+<ITEM type="enum" name="CATIColMergeContextFlag" href="enum_CATIColMergeContextFlag_61721.htm" />
+<ITEM type="enum" name="CATIColMergeContextRole" href="enum_CATIColMergeContextRole_62196.htm" />
+</ITEM>
+<ITEM name="Functions" type="function"  ctype="function">
+<ITEM type="function" name="CATColAfterMerge" href="function_CATColAfterMerge_223119.htm" />
+<ITEM type="function" name="CATColBeforeMerge" href="function_CATColBeforeMerge_439571.htm" />
+<ITEM type="function" name="CATColCanBeSharedAs" href="function_CATColCanBeSharedAs_171666.htm" />
+<ITEM type="function" name="CATColComputeMergeFlagFromContext" href="function_CATColComputeMergeFlagFromContext_506469.htm" />
+<ITEM type="function" name="CATColGetAllSharableObjects" href="function_CATColGetAllSharableObjects_199261.htm" />
+<ITEM type="function" name="CATColGetMergeContextTable" href="function_CATColGetMergeContextTable_182507.htm" />
+<ITEM type="function" name="CATColGetShareAccess" href="function_CATColGetShareAccess_181410.htm" />
+<ITEM type="function" name="CATColIsSharable" href="function_CATColIsSharable_75193.htm" />
+<ITEM type="function" name="CATColListAvailableShareMode" href="function_CATColListAvailableShareMode_167452.htm" />
+<ITEM type="function" name="CATColMerge" href="function_CATColMerge_136414.htm" />
+<ITEM type="function" name="CATColShareAs" href="function_CATColShareAs_435201.htm" />
+<ITEM type="function" name="CATCreateCATICollabServices" href="function_CATCreateCATICollabServices_102783.htm" />
+</ITEM>
+<ITEM name="Macros" type="define"  ctype="define">
+<ITEM type="define" name="CATLISTP_APPLY_RELEASE" href="define_CATLISTP_APPLY_RELEASE_54982.htm" />
+<ITEM type="define" name="SizeCollabUUID" href="define_SizeCollabUUID_45196.htm" />
+</ITEM>
+<ITEM name="Typedefs" type="typedef"  ctype="typedef">
+<ITEM type="typedef" name="CATListOfShareAccess" href="typedef_CATListOfShareAccess_56721.htm" />
+</ITEM>
+</Root>

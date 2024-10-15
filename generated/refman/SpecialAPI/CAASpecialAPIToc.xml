@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Structures" type="struct"  ctype="struct" >
+<ITEM type="struct" name="CATFileInfo64" href="struct_CATFileInfo64_12233.htm" />
+</ITEM>
+<ITEM name="Macros" type="define"  ctype="define">
+<ITEM type="define" name="CATINT32ToPtr" href="define_CATINT32ToPtr_12436.htm" />
+<ITEM type="define" name="CATLONG32ToPtr" href="define_CATLONG32ToPtr_13451.htm" />
+<ITEM type="define" name="CATPtrToINT32" href="define_CATPtrToINT32_11556.htm" />
+<ITEM type="define" name="CATPtrToLONG32" href="define_CATPtrToLONG32_12411.htm" />
+<ITEM type="define" name="CATPtrToUINT32" href="define_CATPtrToUINT32_12572.htm" />
+<ITEM type="define" name="CATPtrToULONG32" href="define_CATPtrToULONG32_13496.htm" />
+<ITEM type="define" name="CATUINT32ToPtr" href="define_CATUINT32ToPtr_13532.htm" />
+<ITEM type="define" name="CATULONG32ToPtr" href="define_CATULONG32ToPtr_14616.htm" />
+<ITEM type="define" name="FAILED" href="define_FAILED_6536.htm" />
+<ITEM type="define" name="NULL" href="define_NULL_5946.htm" />
+<ITEM type="define" name="SUCCEEDED" href="define_SUCCEEDED_7957.htm" />
+</ITEM>
+<ITEM name="Typedefs" type="typedef"  ctype="typedef">
+<ITEM type="typedef" name="BYTE" href="typedef_BYTE_6545.htm" />
+<ITEM type="typedef" name="CATINT32" href="typedef_CATINT32_7921.htm" />
+<ITEM type="typedef" name="CATINTPTR" href="typedef_CATINTPTR_8989.htm" />
+<ITEM type="typedef" name="CATLONG" href="typedef_CATLONG_7674.htm" />
+<ITEM type="typedef" name="CATLONG32" href="typedef_CATLONG32_8431.htm" />
+<ITEM type="typedef" name="CATLONG64" href="typedef_CATLONG64_8468.htm" />
+<ITEM type="typedef" name="CATLONGINT" href="typedef_CATLONGINT_9565.htm" />
+<ITEM type="typedef" name="CATLONGPTR" href="typedef_CATLONGPTR_9644.htm" />
+<ITEM type="typedef" name="CATUC2Bytes" href="typedef_CATUC2Bytes_11317.htm" />
+<ITEM type="typedef" name="CATUINT32" href="typedef_CATUINT32_8512.htm" />
+<ITEM type="typedef" name="CATUINTPTR" href="typedef_CATUINTPTR_9725.htm" />
+<ITEM type="typedef" name="CATULONG32" href="typedef_CATULONG32_9091.htm" />
+<ITEM type="typedef" name="CATULONG64" href="typedef_CATULONG64_9133.htm" />
+<ITEM type="typedef" name="CATULONGINT" href="typedef_CATULONGINT_10359.htm" />
+<ITEM type="typedef" name="CATULONGPTR" href="typedef_CATULONGPTR_10449.htm" />
+<ITEM type="typedef" name="DWORD" href="typedef_DWORD_6844.htm" />
+<ITEM type="typedef" name="HRESULT" href="typedef_HRESULT_7774.htm" />
+<ITEM type="typedef" name="LONG" href="typedef_LONG_6529.htm" />
+<ITEM type="typedef" name="ULONG" href="typedef_ULONG_6833.htm" />
+<ITEM type="typedef" name="WORD" href="typedef_WORD_6528.htm" />
+</ITEM>
+</Root>

@@ -1,0 +1,71 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATTPSInterfaces ProjectedToleranceZone (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATTPSInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('ProjectedToleranceZone','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ProjectedToleranceZone','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('ProjectedToleranceZone','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ProjectedToleranceZone','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ProjectedToleranceZone<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_ProjectedToleranceZone_39674','ProjectedToleranceZone','0');</script>
+<b><i> Interface for accessing projected tolerance zone informations of a TPS.</i></b><br>
+
+
+         ========|   Position      Length     
+         /       |<----------->|<----------->|
+  Toleranced     |             |             |
+  Surface  - - - +------->     +=============+
+      \          |\       \               \
+        \        | Origin Direction       Projected Tolerance Zone
+         ========|<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Length"><b>Length</b></a>
+<dd>  Retrieves length of the projected tolerance zone (in millimeters).
+ <dt>
+    <a href="#Position"><b>Position</b></a>
+<dd>  Retrieves position of the projected tolerance zone (in millimeters).
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Length"><dt>
+
+<table><tr><td>o Property <b>Length</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Retrieves length of the projected tolerance zone (in millimeters).
+ The length defines the ending point of the tolerance zone. 
+ This point can be computed by using Origin and Direction of the axis.
+</dl>
+<a name="Position"><dt>
+
+<table><tr><td>o Property <b>Position</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Retrieves position of the projected tolerance zone (in millimeters).
+ The position defines the starting point of the tolerance zone.
+ This point can be computed by using Origin and Direction of the axis.
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

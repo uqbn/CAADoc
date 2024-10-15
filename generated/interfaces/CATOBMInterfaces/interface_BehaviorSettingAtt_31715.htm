@@ -1,0 +1,288 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATOBMInterfaces BehaviorSettingAtt (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATOBMInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('BehaviorSettingAtt','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('BehaviorSettingAtt','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('BehaviorSettingAtt','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('BehaviorSettingAtt','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>BehaviorSettingAtt<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_BehaviorSettingAtt_31715','BehaviorSettingAtt','0');</script>
+<b><i> Enables attribute access to BKT options.</i></b><br>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#BKTAccessRights"><b>BKTAccessRights</b></a>
+<dd>  Returns or sets the BKTAccessRights parameter.
+ <dt>
+    <a href="#BKTBehaviorOperationMessage"><b>BKTBehaviorOperationMessage</b></a>
+<dd>  Returns or sets the BKTBehaviorOperationMessage parameter.
+ <dt>
+    <a href="#BKTSpecificationTree"><b>BKTSpecificationTree</b></a>
+<dd>  Returns or sets the BKTSpecificationTree parameter.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetBKTAccessRightsInfo"><b>GetBKTAccessRightsInfo</b></a>
+<dd>   Retrieves environment informations for the BKTAccessRights parameter.
+ <dt>
+    <a href="#GetBKTBehaviorOperationMessageInfo"><b>GetBKTBehaviorOperationMessageInfo</b></a>
+<dd>   Retrieves environment informations for the BKTBehaviorOperationMessage parameter.
+ <dt>
+    <a href="#GetBKTSpecificationTreeInfo"><b>GetBKTSpecificationTreeInfo</b></a>
+<dd>   Retrieves environment informations for the BKTSpecificationTree parameter.
+ <dt>
+    <a href="#SetBKTAccessRightsLock"><b>SetBKTAccessRightsLock</b></a>
+<dd>  Locks or unlocks the BKTAccessRights parameter.
+ <dt>
+    <a href="#SetBKTBehaviorOperationMessageLock"><b>SetBKTBehaviorOperationMessageLock</b></a>
+<dd>  Locks or unlocks the BKTBehaviorOperationMessage parameter.
+ <dt>
+    <a href="#SetBKTSpecificationTreeLock"><b>SetBKTSpecificationTreeLock</b></a>
+<dd>  Locks or unlocks the BKTSpecificationTree parameter.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="BKTAccessRights"><dt>
+
+<table><tr><td>o Property <b>BKTAccessRights</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the BKTAccessRights parameter.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iBKTAccessRights</tt>
+   <dd> oBKTAccessRights	<b>Legal values</b>:
+	<br><tt>0 :</tt>  User mode
+ 	<br><tt>1:</tt>   Administrator mode
+ 	<br><tt>2:</tt>   Expert mode
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd> 	<b>Legal values</b>:
+	<br><tt>S_OK :</tt>   on Success
+ 	<br><tt>E_FAIL:</tt>  on failure
+</dl>
+</dl>
+<a name="BKTBehaviorOperationMessage"><dt>
+
+<table><tr><td>o Property <b>BKTBehaviorOperationMessage</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the BKTBehaviorOperationMessage parameter.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iBKTBehaviorOperationMessage</tt>
+   <dd> oBKTBehaviorOperationMessage	<b>Legal values</b>:
+	<br><tt>0 :</tt>  No operation messages
+ 	<br><tt>1:</tt>  with operation messages
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd> 	<b>Legal values</b>:
+	<br><tt>S_OK :</tt>   on Success
+ 	<br><tt>E_FAIL:</tt>  on failure
+</dl>
+</dl>
+<a name="BKTSpecificationTree"><dt>
+
+<table><tr><td>o Property <b>BKTSpecificationTree</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the BKTSpecificationTree parameter.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iBKTSpecificationTree</tt>
+   <dd> oBKTSpecificationTree	<b>Legal values</b>:
+	<br><tt>0 :</tt> hides behaviors variables
+ 	<br><tt>1:</tt>  displays behaviors variables
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd> 	<b>Legal values</b>:
+	<br><tt>S_OK :</tt>   on Success
+ 	<br><tt>E_FAIL:</tt>  on failure
+</dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetBKTAccessRightsInfo"><dt>
+
+<table><tr><td>o Func <b>GetBKTAccessRightsInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioAdminLevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioLocked</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+  Retrieves environment informations for the BKTAccessRights parameter.
+ <br><b>Role</b>:Retrieves the state of the BKTAccessRights parameter 
+ in the current environment. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioAdminLevel</tt>
+   <dd>       <br>If the parameter is locked, AdminLevel gives the administration
+       level that imposes the value of the parameter.
+	 <br>If the parameter is not locked, AdminLevel gives the administration
+       level that will give the value of the parameter after a reset.
+ </dd>
+    <dt><tt> ioLocked</tt>
+   <dd>      Indicates if the parameter has been locked.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>        Indicates if the parameter has been explicitly modified or remain
+      to the administrated value.
+</dl>
+</dl>
+<a name="GetBKTBehaviorOperationMessageInfo"><dt>
+
+<table><tr><td>o Func <b>GetBKTBehaviorOperationMessageInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioAdminLevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioLocked</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+  Retrieves environment informations for the BKTBehaviorOperationMessage parameter.
+ <br><b>Role</b>:Retrieves the state of the BKTBehaviorOperationMessage parameter 
+ in the current environment. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioAdminLevel</tt>
+   <dd>       <br>If the parameter is locked, AdminLevel gives the administration
+       level that imposes the value of the parameter.
+	 <br>If the parameter is not locked, AdminLevel gives the administration
+       level that will give the value of the parameter after a reset.
+ </dd>
+    <dt><tt> ioLocked</tt>
+   <dd>      Indicates if the parameter has been locked.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>        Indicates if the parameter has been explicitly modified or remain
+      to the administrated value.
+</dl>
+</dl>
+<a name="GetBKTSpecificationTreeInfo"><dt>
+
+<table><tr><td>o Func <b>GetBKTSpecificationTreeInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioAdminLevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioLocked</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+  Retrieves environment informations for the BKTSpecificationTree parameter.
+ <br><b>Role</b>:Retrieves the state of the BKTSpecificationTree parameter 
+ in the current environment. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioAdminLevel</tt>
+   <dd>       <br>If the parameter is locked, AdminLevel gives the administration
+       level that imposes the value of the parameter.
+	 <br>If the parameter is not locked, AdminLevel gives the administration
+       level that will give the value of the parameter after a reset.
+ </dd>
+    <dt><tt> ioLocked</tt>
+   <dd>      Indicates if the parameter has been locked.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>        Indicates if the parameter has been explicitly modified or remain
+      to the administrated value.
+</dl>
+</dl>
+<a name="SetBKTAccessRightsLock"><dt>
+
+<table><tr><td>o Sub <b>SetBKTAccessRightsLock</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLocked</tt>)</table></dt>
+<dl>
+  <dd>
+ Locks or unlocks the BKTAccessRights parameter.
+ <br><b>Role</b>:Locks or unlocks the BKTAccessRights parameter if it is possible
+ in the current administrative context. In user mode this method will always
+ return E_FAIL.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLocked</tt>
+   <dd>	the locking operation to be performed
+	<b>Legal values</b>:
+	<br><tt>TRUE :</tt>   to lock the parameter.
+ 	<br><tt>FALSE:</tt>   to unlock the parameter.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetBKTBehaviorOperationMessageLock"><dt>
+
+<table><tr><td>o Sub <b>SetBKTBehaviorOperationMessageLock</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLocked</tt>)</table></dt>
+<dl>
+  <dd>
+ Locks or unlocks the BKTBehaviorOperationMessage parameter.
+ <br><b>Role</b>:Locks or unlocks the BKTBehaviorOperationMessage parameter if it is possible
+ in the current administrative context. In user mode this method will always
+ return E_FAIL.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLocked</tt>
+   <dd>	the locking operation to be performed
+	<b>Legal values</b>:
+	<br><tt>TRUE :</tt>   to lock the parameter.
+ 	<br><tt>FALSE:</tt>   to unlock the parameter.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetBKTSpecificationTreeLock"><dt>
+
+<table><tr><td>o Sub <b>SetBKTSpecificationTreeLock</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLocked</tt>)</table></dt>
+<dl>
+  <dd>
+ Locks or unlocks the BKTSpecificationTree parameter.
+ <br><b>Role</b>:Locks or unlocks the BKTSpecificationTree parameter if it is possible
+ in the current administrative context. In user mode this method will always
+ return E_FAIL.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLocked</tt>
+   <dd>	the locking operation to be performed
+	<b>Legal values</b>:
+	<br><tt>TRUE :</tt>   to lock the parameter.
+ 	<br><tt>FALSE:</tt>   to unlock the parameter.</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

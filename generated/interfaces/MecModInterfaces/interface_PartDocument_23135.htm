@@ -1,0 +1,86 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>MecModInterfaces PartDocument (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../MecModInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('PartDocument','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PartDocument','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('PartDocument','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PartDocument','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PartDocument<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_PartDocument_23135','PartDocument','0');</script>
+<b><i> Represents the Document object for parts.</i></b><br>
+
+ <br><b>Role</b>:
+ When a PartDocument object is created, a Part object is also created.
+ This Part object is the root object  of the Part structure.
+ <p> A reference Product object is also created in each PartDocument. It is used to access Publications,
+ PartNumber.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('Product','');return false">Product</a>, <a href="#" onClick="openLink('Part','');return false">Part</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Part"><b>Part</b></a>
+<dd>  Returns the root Part object from the current part document.
+ <dt>
+    <a href="#Product"><b>Product</b></a>
+<dd>  Returns the root Product object from the current part document.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Part"><dt>
+
+<table><tr><td>o Property <b>Part</b>(<td>) As <script type="text/javascript"> activateLink('Part','Part')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the root Part object from the current part document.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example retrieves in <tt>RootPart</tt> the root Part
+ object of the active document, assumed to be a part document:
+ <pre>
+ Set RootPart = CATIA.ActiveDocument.<font color="red">Part</font>
+</pre>
+ </dl>
+</dl>
+<a name="Product"><dt>
+
+<table><tr><td>o Property <b>Product</b>(<td>) As <script type="text/javascript"> activateLink('Product','Product')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the root Product object from the current part document.
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example retrieves in <tt>RootProd</tt> the root Product
+ object of the active document, assumed to be a part document:
+ <pre>
+ Set RootProd = CATIA.ActiveDocument.<font color="red">Part</font>
+</pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

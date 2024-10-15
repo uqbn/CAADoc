@@ -1,0 +1,126 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces Interface CATISamAccess</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISamAccess','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamAccess','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISamAccess','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamAccess','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisInterfaces Interface CATISamAccess</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISamAccess_33310','CATISamAccess','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISamAccess</b>
+</p>
+<p>
+<b><i> Interface to access the containers of an Analysis document.</i></b><br>
+
+ <b>Role</b>: Query this interface on a document to retrieve its containers.<br>
+ If it succeeds you can access the
+ <ul><li>Specification container that implement the CATISamAnalysisContainer Interface 
+         by using the standard GetSpecContainer method</li>
+     <li>Field Model container</li>
+     <li>PostproContainer container</li>
+ </ul>
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATISamAnalysisContainer','');return false">CATISamAnalysisContainer</a>, <a href="#" onClick="openLink('CATAnalysisExplicitModel','');return false">CATAnalysisExplicitModel</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetExplicitContainer(CATIContainer*&amp;)"><b>GetExplicitContainer</b></a>(CATIContainer*&amp;)
+<dd>  Retrieves the field Model container of the analysis document.
+ <dt> o 
+    <a href="#GetMeshingContainer(CATIContainer*&amp;)"><b>GetMeshingContainer</b></a>(CATIContainer*&amp;)
+<dd>  Retrieves the Meshing feature container of the document.
+ <dt> o 
+    <a href="#GetPostproContainer(CATIContainer*&amp;)"><b>GetPostproContainer</b></a>(CATIContainer*&amp;)
+<dd>  Retrieves the PostproContainer container of the document.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetExplicitContainer"></a><a name="GetExplicitContainer(CATIContainer*&amp;)"></a> <dt> o <b>GetExplicitContainer</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetExplicitContainer</b>(<td><script type="text/javascript"> activateLink('CATIContainer','CATIContainer*&amp;')</script> <td><tt>oContainer</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the field Model container of the analysis document.<br>
+ This container will the result view of a Finite Element model.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oContainer</tt>
+   <dd> [out , CATBaseUnknown#Release] The field Model container.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetMeshingContainer"></a><a name="GetMeshingContainer(CATIContainer*&amp;)"></a> <dt> o <b>GetMeshingContainer</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetMeshingContainer</b>(<td><script type="text/javascript"> activateLink('CATIContainer','CATIContainer*&amp;')</script> <td><tt>oContainer</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the Meshing feature container of the document.<br>
+ This container will manage the meshing specifications.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oContainer</tt>
+   <dd> [out , CATBaseUnknown#Release] The Meshingcontainer.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetPostproContainer"></a><a name="GetPostproContainer(CATIContainer*&amp;)"></a> <dt> o <b>GetPostproContainer</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetPostproContainer</b>(<td><script type="text/javascript"> activateLink('CATIContainer','CATIContainer*&amp;')</script> <td><tt>oContainer</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the PostproContainer container of the document.<br>
+ This container will manage Images (for Finite Element visualization).
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oContainer</tt>
+   <dd> [out , CATBaseUnknown#Release] The Postprocessing container.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISamAccess.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisInterface</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

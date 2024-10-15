@@ -1,0 +1,114 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>DMAPSInterfaces Interface CATISPPActivityRoot</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../DMAPSInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISPPActivityRoot','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISPPActivityRoot','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISPPActivityRoot','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISPPActivityRoot','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>DMAPSInterfaces Interface CATISPPActivityRoot</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISPPActivityRoot_32088','CATISPPActivityRoot','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISPPActivityRoot</b>
+</p>
+<p>
+<b><i> Interface to manage specific fonctionnalities for process root.</i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AddLibraryToUse(SEQUENCE(octet)&amp;)"><b>AddLibraryToUse</b></a>(SEQUENCE(octet)&amp;)
+<dd>   Adds a path to library in the list of libraries associated to the process.
+ <dt> o 
+    <a href="#AddLibraryToUse(CATUnicodeString&amp;)"><b>AddLibraryToUse</b></a>(CATUnicodeString&amp;)
+<dd>   Adds a path to library in the list of libraries associated to the process.
+ <dt> o 
+    <a href="#GetListOfLibraryContainer()"><b>GetListOfLibraryContainer</b></a>()
+<dd>   Returns list of libraries containers associated to the process.
+ <dt> o 
+    <a href="#GetListOfLibraryPath()"><b>GetListOfLibraryPath</b></a>()
+<dd>   Returns list of paths to libraries associated to the process.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AddLibraryToUse"></a><a name="AddLibraryToUse(SEQUENCE(octet)&amp;)"></a> <dt> o <b>AddLibraryToUse</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATIContainer','CATIContainer_var')</script>  <b>AddLibraryToUse</b>(<td> const <script type="text/javascript"> activateLink('SEQUENCE(octet)','SEQUENCE(octet)&amp;')</script> <td><tt>iDocSymlink</tt>)<script type="text/javascript"> activateLink('0',' = 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+  Adds a path to library in the list of libraries associated to the process.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  	Handler on the the libray container
+</dl>
+</dl>
+<a name="AddLibraryToUse"></a><a name="AddLibraryToUse(CATUnicodeString&amp;)"></a> <dt> o <b>AddLibraryToUse</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATIContainer','CATIContainer_var')</script>  <b>AddLibraryToUse</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iLibraryName</tt>)<script type="text/javascript"> activateLink('0',' = 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+  Adds a path to library in the list of libraries associated to the process.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  	Handler on the the libray container
+</dl>
+</dl>
+<a name="GetListOfLibraryContainer"></a><a name="GetListOfLibraryContainer()"></a> <dt> o <b>GetListOfLibraryContainer</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATListValCATBaseUnknown','CATListValCATBaseUnknown_var*')</script>  <b>GetListOfLibraryContainer</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+  Returns list of libraries containers associated to the process.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  	List of handlers on the the libray container
+</dl>
+</dl>
+<a name="GetListOfLibraryPath"></a><a name="GetListOfLibraryPath()"></a> <dt> o <b>GetListOfLibraryPath</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATListOfCATUnicodeString','CATListOfCATUnicodeString*')</script>  <b>GetListOfLibraryPath</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+  Returns list of paths to libraries associated to the process.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  	List of paths
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISPPActivityRoot.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATProcessInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

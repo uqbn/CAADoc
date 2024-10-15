@@ -1,0 +1,209 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>MecModInterfaces Interface CATIMf3DAxisSystemManager</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../MecModInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMf3DAxisSystemManager','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMf3DAxisSystemManager','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMf3DAxisSystemManager','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMf3DAxisSystemManager','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>MecModInterfaces Interface CATIMf3DAxisSystemManager</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMf3DAxisSystemManager_46211','CATIMf3DAxisSystemManager','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIMf3DAxisSystemManager</b>
+</p>
+<p>
+<b><i> Interface to manage the axis systems.</i></b><br>
+
+ <b>Role:</b>This interface enables you:
+ <ul>
+ <li>To know all the axis systems created by the <a href="#" onClick="openLink('CATIMf3DAxisSystemFactory','');return false">CATIMf3DAxisSystemFactory</a> interface into a Part document. See the 
+<a href="#" onClick="openLink('','GetAxisSystems');return false">GetAxisSystems</a> method. </li> <li>To set or retrieve the current axis system.
+  See 
+<a href="#" onClick="openLink('','SetCurrentAxisSystem');return false">SetCurrentAxisSystem</a> and  
+<a href="#" onClick="openLink('','GetCurrentAxisSystem');return false">GetCurrentAxisSystem</a> respectively. </li> <li>To translate the coordinates of a point ( 
+<a href="#" onClick="openLink('','ConvertPointCoordinates');return false">ConvertPointCoordinates</a> ) or a   vector ( 
+<a href="#" onClick="openLink('','ConvertVectorCoordinates');return false">ConvertVectorCoordinates</a> ) in the current axis system.</li> </ul>
+ <br>This interface is implemented by the specification container of the Part document. You 
+ retrieve it by at least two means:
+ <ul>
+ <li>
+<a href="#" onClick="openLink('CATIContainerOfDocument','GetSpecContainer');return false">CATIContainerOfDocument.GetSpecContainer</a> </li> <li>
+<a href="#" onClick="openLink('CATInit','GetRootContainer');return false">CATInit.GetRootContainer</a> </li> </ul>
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIMf3DAxisSystem','');return false">CATIMf3DAxisSystem</a>, <a href="#" onClick="openLink('CATIMf3DAxisSystemFactory','');return false">CATIMf3DAxisSystemFactory</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#ConvertPointCoordinates(CATBoolean,CATMathPoint&amp;,CATMathPoint&amp;)"><b>ConvertPointCoordinates</b></a>(CATBoolean,CATMathPoint&amp;,CATMathPoint&amp;)
+<dd>  Converts point coordinates in the current axis system.
+ <dt> o 
+    <a href="#ConvertVectorCoordinates(CATBoolean,CATMathVector&amp;,CATMathVector&amp;)"><b>ConvertVectorCoordinates</b></a>(CATBoolean,CATMathVector&amp;,CATMathVector&amp;)
+<dd>  Converts vector coordinates in the current axis system.
+ <dt> o 
+    <a href="#GetAxisSystems(CATLISTV(CATIMf3DAxisSystem_var)&amp;)"><b>GetAxisSystems</b></a>(CATLISTV(CATIMf3DAxisSystem_var)&amp;)
+<dd>  Retrieves all the axis systems of the Part document.
+ <dt> o 
+    <a href="#GetCurrentAxisSystem(CATIMf3DAxisSystem_var&amp;)"><b>GetCurrentAxisSystem</b></a>(CATIMf3DAxisSystem_var&amp;)
+<dd>  Retrieves the current axis system.
+ <dt> o 
+    <a href="#SetCurrentAxisSystem(CATIMf3DAxisSystem_var&amp;)"><b>SetCurrentAxisSystem</b></a>(CATIMf3DAxisSystem_var&amp;)
+<dd>  Sets an axis system as the current one.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="ConvertPointCoordinates"></a><a name="ConvertPointCoordinates(CATBoolean,CATMathPoint&amp;,CATMathPoint&amp;)"></a> <dt> o <b>ConvertPointCoordinates</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ConvertPointCoordinates</b>(<td> const <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script> <td><tt>iAbsoluteToCurrent</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathPoint','CATMathPoint&amp;')</script> <td><tt>iPointToConvert</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATMathPoint','CATMathPoint&amp;')</script> <td><tt>oConvertedPoint</tt>)<script type="text/javascript"> activateLink('const=0',' const=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Converts point coordinates in the current axis system.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAbsoluteToCurrent</tt>
+   <dd>     <ul>
+      <li>If TRUE, converts the coordinates from the absolute axis system 
+          to the current axis system. </li>
+      <li>If FALSE, converts the coordinates from the current axis systen 
+          to the absolute axis system. </li>
+     </ul>
+   </dd>
+    <dt><tt> iPointToConvert</tt>
+   <dd>			The mathematical point to convert. 
+   </dd>
+    <dt><tt> oConvertedPoint</tt>
+   <dd>			The converted mathematical point.</dd>
+</dl>
+</dl>
+</dl>
+<a name="ConvertVectorCoordinates"></a><a name="ConvertVectorCoordinates(CATBoolean,CATMathVector&amp;,CATMathVector&amp;)"></a> <dt> o <b>ConvertVectorCoordinates</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ConvertVectorCoordinates</b>(<td> const <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script> <td><tt>iAbsoluteToCurrent</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathVector','CATMathVector&amp;')</script> <td><tt>iVectorToConvert</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATMathVector','CATMathVector&amp;')</script> <td><tt>oConvertedVector</tt>)<script type="text/javascript"> activateLink('const=0',' const=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Converts vector coordinates in the current axis system.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAbsoluteToCurrent</tt>
+   <dd>     <ul>
+      <li>If TRUE, converts the coordinates from the absolute axis system 
+          to the current axis system. </li>
+      <li>If FALSE, converts the coordinates from the current axis systen 
+          to the absolute axis system. </li>
+     </ul>
+   </dd>
+    <dt><tt> iVectorToConvert</tt>
+   <dd>			The mathematical vector to convert. 
+   </dd>
+    <dt><tt> oConvertedVector</tt>
+   <dd>			The converted mathematical vector.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetAxisSystems"></a><a name="GetAxisSystems(CATLISTV(CATIMf3DAxisSystem_var)&amp;)"></a> <dt> o <b>GetAxisSystems</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetAxisSystems</b>(<td><script type="text/javascript"> activateLink('CATLISTV(CATIMf3DAxisSystem_var)','CATLISTV(CATIMf3DAxisSystem_var)&amp;')</script> <td><tt>oAxisSystemList</tt>)<script type="text/javascript"> activateLink('=0',' const =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves all the axis systems of the Part document.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oAxisSystemList</tt>
+   <dd>      The axis system list.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetCurrentAxisSystem"></a><a name="GetCurrentAxisSystem(CATIMf3DAxisSystem_var&amp;)"></a> <dt> o <b>GetCurrentAxisSystem</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetCurrentAxisSystem</b>(<td><script type="text/javascript"> activateLink('CATIMf3DAxisSystem_var','CATIMf3DAxisSystem_var&amp;')</script> <td><tt>oCurrentAxisSystem</tt>)<script type="text/javascript"> activateLink('const=0',' const=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the current axis system.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oCurrentAxisSystem</tt>
+   <dd>      The current axis system. If the value is NULL_var, there is no current axis 
+      system.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetCurrentAxisSystem"></a><a name="SetCurrentAxisSystem(CATIMf3DAxisSystem_var&amp;)"></a> <dt> o <b>SetCurrentAxisSystem</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetCurrentAxisSystem</b>(<td> const <script type="text/javascript"> activateLink('CATIMf3DAxisSystem_var','CATIMf3DAxisSystem_var&amp;')</script> <td><tt>iAxisSystem</tt>)<script type="text/javascript"> activateLink('=0',' const =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets an axis system as the current one.
+ <br><b>Role:</b>This method enables you to set an axis system as current. It
+ guarantees that only one axis system is current in the Part document. Set an axis 
+ system the current one can be useful:
+ <ul>
+ <li>To use the 
+<a href="#" onClick="openLink('','ConvertPointCoordinates');return false">ConvertPointCoordinates</a> and 
+<a href="#" onClick="openLink('','ConvertVectorCoordinates');return false">ConvertVectorCoordinates</a>  to translate the point/vector coordinates in this axis system.</li>
+ <li>In an interactive session, to control the current axis system which is used by 
+ some commands such as Point. These commands can display points (or vectors )
+ coordinates in the current axis system.</li>
+ </ul>
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAxisSystem</tt>
+   <dd>      The new current axis system. If the value is NULL_var, there is no current axis 
+      system, the coordinates are always displayed in the absolute axis system.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>   E_FAIL if the <tt>iAxisSystem</tt> is not orthogonal - 
+<a href="#" onClick="openLink('CATAxisSystemIsDirect','');return false">CATAxisSystemIsDirect</a>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMf3DAxisSystemManager.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATMecModInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

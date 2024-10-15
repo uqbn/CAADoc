@@ -1,0 +1,135 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATMatInterfaces Material (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATMatInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Material','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Material','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Material','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Material','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Material<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Material_18974','Material','0');</script>
+<b><i> Represents a Material object.</i></b><br>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#AnalysisMaterial"><b>AnalysisMaterial</b></a>
+<dd>  Returns the analysis material object from the current material.
+ <dt>
+    <a href="#RenderingMaterial"><b>RenderingMaterial</b></a>
+<dd>  Returns the rendering material object from the current material.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#CopyRenderingDataFrom"><b>CopyRenderingDataFrom</b></a>
+<dd>  Copy rendering data from a material to the current material.
+ <dt>
+    <a href="#CreateAnalysisData"><b>CreateAnalysisData</b></a>
+<dd>  Create a default analysis material on the current material.
+ <dt>
+    <a href="#CreateRenderingData"><b>CreateRenderingData</b></a>
+<dd>  Create a default rendering material on the current material.
+ <dt>
+    <a href="#ExistAnalysisData"><b>ExistAnalysisData</b></a>
+<dd>  Returns true if a analysis material exists on the current material.
+ <dt>
+    <a href="#ExistRenderingData"><b>ExistRenderingData</b></a>
+<dd>  Returns true if a rendering material exists on the current material.
+ <dt>
+    <a href="#GetIcon"><b>GetIcon</b></a>
+<dd>  Write the icon of a material to disc.
+ <dt>
+    <a href="#PutIcon"><b>PutIcon</b></a>
+<dd>  Read the icon of a material from JPEG file.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="AnalysisMaterial"><dt>
+
+<table><tr><td>o Property <b>AnalysisMaterial</b>(<td>) As <script type="text/javascript"> activateLink('AnalysisMaterial','AnalysisMaterial')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the analysis material object from the current material.
+</dl>
+<a name="RenderingMaterial"><dt>
+
+<table><tr><td>o Property <b>RenderingMaterial</b>(<td>) As <script type="text/javascript"> activateLink('RenderingMaterial','RenderingMaterial')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the rendering material object from the current material.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="CopyRenderingDataFrom"><dt>
+
+<table><tr><td>o Sub <b>CopyRenderingDataFrom</b>(<td><script type="text/javascript"> activateLink('RenderingMaterial','RenderingMaterial')</script> <td><tt>iRenderingMaterial</tt>)</table></dt>
+<dl>
+  <dd>
+ Copy rendering data from a material to the current material.
+</dl>
+<a name="CreateAnalysisData"><dt>
+
+<table><tr><td>o Func <b>CreateAnalysisData</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iLabel</tt>) As <script type="text/javascript"> activateLink('AnalysisMaterial','AnalysisMaterial')</script> </table></dt>
+<dl>
+  <dd>
+ Create a default analysis material on the current material.
+</dl>
+<a name="CreateRenderingData"><dt>
+
+<table><tr><td>o Func <b>CreateRenderingData</b>(<td>) As <script type="text/javascript"> activateLink('RenderingMaterial','RenderingMaterial')</script> </table></dt>
+<dl>
+  <dd>
+ Create a default rendering material on the current material.
+</dl>
+<a name="ExistAnalysisData"><dt>
+
+<table><tr><td>o Func <b>ExistAnalysisData</b>(<td>) As <script type="text/javascript"> activateLink('short','short')</script> </table></dt>
+<dl>
+  <dd>
+ Returns true if a analysis material exists on the current material.
+</dl>
+<a name="ExistRenderingData"><dt>
+
+<table><tr><td>o Func <b>ExistRenderingData</b>(<td>) As <script type="text/javascript"> activateLink('short','short')</script> </table></dt>
+<dl>
+  <dd>
+ Returns true if a rendering material exists on the current material.
+</dl>
+<a name="GetIcon"><dt>
+
+<table><tr><td>o Sub <b>GetIcon</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iPath</tt>)</table></dt>
+<dl>
+  <dd>
+ Write the icon of a material to disc.
+ The parameter is the path of the folder where the JPEG is going to be written
+ Ex : E:\folder\
+</dl>
+<a name="PutIcon"><dt>
+
+<table><tr><td>o Sub <b>PutIcon</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iPath</tt>)</table></dt>
+<dl>
+  <dd>
+ Read the icon of a material from JPEG file.
+ The parameter is the path of the folder where the JPEG is going to be read
+ Ex : E:\folder\
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

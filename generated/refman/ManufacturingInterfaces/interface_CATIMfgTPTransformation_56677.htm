@@ -1,0 +1,168 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ManufacturingInterfaces Interface CATIMfgTPTransformation</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ManufacturingInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMfgTPTransformation','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgTPTransformation','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMfgTPTransformation','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgTPTransformation','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ManufacturingInterfaces Interface CATIMfgTPTransformation</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMfgTPTransformation_56677','CATIMfgTPTransformation','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIMfgTPTransformation</b>
+</p>
+<p>
+<b><i> Interface usefull to make transformation on tool path objects.</i></b><br>
+
+ <b>Role</b>: Tool path can be transformed wih methods of this interface.
+
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIMfgTPModification','');return false">CATIMfgTPModification</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Duplicate(CATIMfgToolPath_var&amp;,CATBoolean,CATIMfgToolPathFactory_var)"><b>Duplicate</b></a>(CATIMfgToolPath_var&amp;,CATBoolean,CATIMfgToolPathFactory_var)
+<dd>    Duplicate a tool path.
+ <dt> o 
+    <a href="#Merge(CATIMfgToolPath_var&amp;)"><b>Merge</b></a>(CATIMfgToolPath_var&amp;)
+<dd>    Merge two tool pathes.
+ <dt> o 
+    <a href="#Reverse()"><b>Reverse</b></a>()
+<dd>    Reverse a tool path.
+ <dt> o 
+    <a href="#Split(int,CATIMfgToolPath_var&amp;)"><b>Split</b></a>(int,CATIMfgToolPath_var&amp;)
+<dd>    Split a tool path.
+ <dt> o 
+    <a href="#Transform(CATMathTransformation*,CATBoolean)"><b>Transform</b></a>(CATMathTransformation*,CATBoolean)
+<dd>    Transform a tool path with a given transformation.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Duplicate"></a><a name="Duplicate(CATIMfgToolPath_var&amp;,CATBoolean,CATIMfgToolPathFactory_var)"></a> <dt> o <b>Duplicate</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>Duplicate</b>(<td><script type="text/javascript"> activateLink('CATIMfgToolPath_var','CATIMfgToolPath_var&amp;')</script> <td><tt>ioToolPath</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script> <td><tt>iToolPathIsCreated</tt><td><tt>=FALSE</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIMfgToolPathFactory','CATIMfgToolPathFactory_var')</script> <td><tt>iFactory</tt><td><tt>=NULL_var</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+   Duplicate a tool path.<br>
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioToolPath</tt>
+   <dd>      The tool path which will contained the copy of the original tool path.
+   </dd>
+    <dt><tt> iToolPathIsCreated</tt>
+   <dd>      If FALSE, create the component of the tool path.
+   </dd>
+    <dt><tt> iFactory</tt>
+   <dd>      Factory where the toolpath is duplicated. If NULL_var, the used toolpath factory
+      is the toolpath factory of the original toolpath
+</dd>
+</dl>
+</dl>
+</dl>
+<a name="Merge"></a><a name="Merge(CATIMfgToolPath_var&amp;)"></a> <dt> o <b>Merge</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>Merge</b>(<td> const <script type="text/javascript"> activateLink('CATIMfgToolPath_var','CATIMfgToolPath_var&amp;')</script> <td><tt>iToolPath</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+   Merge two tool pathes.<br>
+   Tool Path  = Tool Path->Merge(iToolPath) is equivalent to 
+   Tool Path  = Tool Path + iToolPath
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iToolPath</tt>
+   <dd>      The tool path what will be merged.
+</dd>
+</dl>
+</dl>
+</dl>
+<a name="Reverse"></a><a name="Reverse()"></a> <dt> o <b>Reverse</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>Reverse</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+   Reverse a tool path.<br>
+
+</dl>
+<a name="Split"></a><a name="Split(int,CATIMfgToolPath_var&amp;)"></a> <dt> o <b>Split</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>Split</b>(<td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iNumpt</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIMfgToolPath_var','CATIMfgToolPath_var&amp;')</script> <td><tt>oToolPath</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+   Split a tool path.<br>
+   When splitting a tool path, the first part will be keeped by the original tool path
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNumpt</tt>
+   <dd>		 The index of the point used to split the tool path
+   </dd>
+    <dt><tt> oToolPath</tt>
+   <dd>      The tool path which will contained the second part of the original tool path.
+</dd>
+</dl>
+</dl>
+</dl>
+<a name="Transform"></a><a name="Transform(CATMathTransformation*,CATBoolean)"></a> <dt> o <b>Transform</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>Transform</b>(<td><script type="text/javascript"> activateLink('CATMathTransformation','CATMathTransformation*')</script> <td><tt>iTransfo</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script> <td><tt>iTransformToolAxis</tt><td><tt>= FALSE</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+   Transform a tool path with a given transformation.<br>
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iTransfo</tt>
+   <dd>		 the transformation to apply to the tool path
+   </dd>
+    <dt><tt> iTransformToolAxis</tt>
+   <dd>      The tool axis will also be transformed.
+</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMfgTPTransformation.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>MfgItfEnv</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

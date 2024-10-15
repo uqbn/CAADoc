@@ -1,0 +1,278 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMOperatorsInterfaces Interface CATICGMDistancePointBody</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMOperatorsInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATICGMDistancePointBody','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMDistancePointBody','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATICGMDistancePointBody','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMDistancePointBody','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GMOperatorsInterfaces Interface CATICGMDistancePointBody</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATICGMDistancePointBody_53449','CATICGMDistancePointBody','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATICGMDistancePointBody</b>
+</p>
+<p>
+<b><i> Class defining the operator for finding the minimum distance between 
+ a <code>CATMathPoint</code> and a <code>CATBody</code>.</i></b><br>
+
+ To use the operator:
+ <ul>
+ <li>Create it with the <code>CATCGMCreateDistancePointBody</code> global function, giving the <code>CATBody</code> as input,
+ <li>Call SetPoint method with a <a href="#" onClick="openLink('CATMathPoint','');return false">CATMathPoint</a>, <li>Run the operator,
+ <li>Retrieve the results with the GetResult... methods
+ </ul>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetPoint(CATMathPoint&amp;)"><b>GetPoint</b></a>(CATMathPoint&amp;)
+<dd>  Get the input point.
+ <dt> o 
+    <a href="#GetResultCell()"><b>GetResultCell</b></a>()
+<dd>   Get the result <code>CATCell</code>.
+ <dt> o 
+    <a href="#GetResultDistance()"><b>GetResultDistance</b></a>()
+<dd>  Get the result distance.
+ <dt> o 
+    <a href="#GetResultMathPoint(CATMathPoint&amp;)"><b>GetResultMathPoint</b></a>(CATMathPoint&amp;)
+<dd>   Get the result <code>CATMathPoint</code>.
+ <dt> o 
+    <a href="#GetResultPoint()"><b>GetResultPoint</b></a>()
+<dd>   Get the result <code>CATPoint</code>.
+ <dt> o 
+    <a href="#GetSignMode()"><b>GetSignMode</b></a>()
+<dd>  Get the sign mode.
+ <dt> o 
+    <a href="#Run()"><b>Run</b></a>()
+<dd>  Runs this operator.
+ <dt> o 
+    <a href="#SetPoint(CATMathPoint&amp;)"><b>SetPoint</b></a>(CATMathPoint&amp;)
+<dd>  Set the input point.
+ <dt> o 
+    <a href="#SetSignMode(CATDistanceSignMode)"><b>SetSignMode</b></a>(CATDistanceSignMode)
+<dd>  Define the sign mode.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetPoint"></a><a name="GetPoint(CATMathPoint&amp;)"></a> <dt> o <b>GetPoint</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>GetPoint</b>(<td><script type="text/javascript"> activateLink('CATMathPoint','CATMathPoint&amp;')</script> <td><tt>oPoint</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get the input point.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oPoint</tt>
+   <dd>   The point (that has been set using SetPoint method) from which the minimum 
+   distance to the given body is to be found</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetResultCell"></a><a name="GetResultCell()"></a> <dt> o <b>GetResultCell</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCell','CATCell *')</script>  <b>GetResultCell</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Get the result <code>CATCell</code>.
+ 
+<dl>
+  <dt> <b>Description:</b> 
+  <dd>    Returns the 
+<a href="#" onClick="openLink('CATCell','');return false">CATCell</a> in given body on which the result point lies (calculated by the operator in the last run).   This 
+<a href="#" onClick="openLink('CATCell','');return false">CATCell</a> can be 
+<a href="#" onClick="openLink('CATFace','');return false">CATFace</a>, 
+<a href="#" onClick="openLink('CATEdge','');return false">CATEdge</a> or 
+<a href="#" onClick="openLink('CATVertex','');return false">CATVertex</a>. It can also be 
+<a href="#" onClick="openLink('CATVolume','');return false">CATVolume</a>, if the   sign mode is <code>CATDistanceSignModeZero</code> and if the point is found to be inside the volume.
+ 
+  <dt> <b>Returns:</b> 
+  <dd>    The cell in the given body on which the result point lies.
+</dl>
+</dl>
+<a name="GetResultDistance"></a><a name="GetResultDistance()"></a> <dt> o <b>GetResultDistance</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('double','double')</script>  <b>GetResultDistance</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get the result distance.
+ 
+<dl>
+  <dt> <b>Description:</b> 
+  <dd>    Returns the minimum distance between the given point and body calculated by the operator in the last run.
+   <br>
+   <ul>
+   <li>If the sign mode is <code>CATDistanceSignModeSigned</code>, then result distance 
+   may be negative. If it is negative, then it means that the point is inside the body and 
+   the absolute value gives the minimum distance of the point from the shell of the body.
+   <li>If the sign mode is <code>CATDistanceSignModeZero</code>, and if the point is inside 
+   the body, then result distance value is returned is zero.
+   <li>If the sign mode is <code>CATDistanceSignModeUnsigned</code>, and if the point is inside 
+   the body, then result distance value is always non-negative and is equal to the distance of
+   the point from the shell of the body.
+   </ul>
+ 
+  <dt> <b>Returns:</b> 
+  <dd>    Result distance between the point and the body.
+</dl>
+</dl>
+<a name="GetResultMathPoint"></a><a name="GetResultMathPoint(CATMathPoint&amp;)"></a> <dt> o <b>GetResultMathPoint</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>GetResultMathPoint</b>(<td><script type="text/javascript"> activateLink('CATMathPoint','CATMathPoint&amp;')</script> <td><tt>oMathPoint</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Get the result <code>CATMathPoint</code>.
+ 
+<dl>
+  <dt> <b>Description:</b> 
+  <dd>    Returns the result 
+<a href="#" onClick="openLink('CATMathPoint','');return false">CATMathPoint</a> on the given body (calculated by the operator in the last run). 
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oPoint</tt>
+   <dd>   The result </dd>
+<a href="#" onClick="openLink('CATMathPoint','');return false">CATMathPoint</a> on the given body.
+</dl>
+</dl>
+</dl>
+<a name="GetResultPoint"></a><a name="GetResultPoint()"></a> <dt> o <b>GetResultPoint</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATPoint','CATPoint *')</script>  <b>GetResultPoint</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Get the result <code>CATPoint</code>.
+ 
+<dl>
+  <dt> <b>Description:</b> 
+  <dd>    Returns the result 
+<a href="#" onClick="openLink('CATPoint','');return false">CATPoint</a> on the given body calculated by the operator in the last run. 
+  <dt> <b>Returns:</b> 
+  <dd>    The result 
+<a href="#" onClick="openLink('CATPoint','');return false">CATPoint</a> on the given body.   This gives the result in the context of the result cell.
+     <ol>
+     <li> If the result cell is a 
+<a href="#" onClick="openLink('CATFace','');return false">CATFace</a>,   then the returned 
+<a href="#" onClick="openLink('CATPoint','');return false">CATPoint</a> will be of type 
+<a href="#" onClick="openLink('CATPointOnSurface','');return false">CATPointOnSurface</a>     <li> If the result cell is a 
+<a href="#" onClick="openLink('CATEdge','');return false">CATEdge</a>,   then the returned 
+<a href="#" onClick="openLink('CATPoint','');return false">CATPoint</a> will be of type 
+<a href="#" onClick="openLink('CATPointOnCurve','');return false">CATPointOnCurve</a>     <li> If the result cell is a 
+<a href="#" onClick="openLink('CATVertex','');return false">CATVertex</a>, then the returned 
+<a href="#" onClick="openLink('CATPoint','');return false">CATPoint</a> will be of type 
+<a href="#" onClick="openLink('CATCartesianPoint','');return false">CATCartesianPoint</a>     <li> If the result cell is a 
+<a href="#" onClick="openLink('CATVolume','');return false">CATVolume</a>, then the returned 
+<a href="#" onClick="openLink('CATPoint','');return false">CATPoint</a> will be of type 
+<a href="#" onClick="openLink('CATCartesianPoint','');return false">CATCartesianPoint</a>     </ol>
+   <br>Note: The returned 
+<a href="#" onClick="openLink('CATPoint','');return false">CATPoint</a> is created in the same container as the given 
+<a href="#" onClick="openLink('CATBody','');return false">CATBody</a> and it is owned by the caller.   A new point is created each time this method is called. After use, call the 
+<a href="#" onClick="openLink('CATICGMContainer','Remove');return false">CATICGMContainer.Remove</a> method.
+</dl>
+</dl>
+<a name="GetSignMode"></a><a name="GetSignMode()"></a> <dt> o <b>GetSignMode</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATDistanceSignMode','CATDistanceSignMode')</script>  <b>GetSignMode</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get the sign mode.
+ <code>CATDistanceSignModeDefault</code> is interpreted as <code>CATDistanceSignModeSigned</code>.
+ See the documentation of 
+<a href="#" onClick="openLink('CATDistanceSignMode','');return false">CATDistanceSignMode</a> to know more about the different sign modes 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    Sign mode defined in the operator
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATDistanceSignMode','');return false">CATDistanceSignMode</a>
+</dl>
+</dl>
+<a name="Run"></a><a name="Run()"></a> <dt> o <b>Run</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>Run</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Runs this operator.
+ <br>Note: You must call SetPoint before Run.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>     0 if the operator runs successfully and 1 otherwise.
+</dl>
+</dl>
+<a name="SetPoint"></a><a name="SetPoint(CATMathPoint&amp;)"></a> <dt> o <b>SetPoint</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetPoint</b>(<td> const <script type="text/javascript"> activateLink('CATMathPoint','CATMathPoint&amp;')</script> <td><tt>iPoint</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Set the input point.
+ <br>Note: If you want to find the distance of more than one points from the same body,
+   then to get better performance, you can call SetPoint and Run as many times on 
+   the same operator, rather than creating a new operator every time for each point.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPoint</tt>
+   <dd>   The point from which the minimum distance to the given body is to be found</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetSignMode"></a><a name="SetSignMode(CATDistanceSignMode)"></a> <dt> o <b>SetSignMode</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetSignMode</b>(<td><script type="text/javascript"> activateLink('CATDistanceSignMode','CATDistanceSignMode')</script> <td><tt>iSignMode</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Define the sign mode. The default is "Signed" mode. 
+ <code>CATDistanceSignModeDefault</code> is interpreted as <code>CATDistanceSignModeSigned</code>.
+ See the documentation of 
+<a href="#" onClick="openLink('CATDistanceSignMode','');return false">CATDistanceSignMode</a> to know more about the different sign modes available and their meanings.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSignMode</tt>
+   <dd>   Sign mode to be defined
+ </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATDistanceSignMode','');return false">CATDistanceSignMode</a>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATICGMDistancePointBody.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGMOperatorsInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

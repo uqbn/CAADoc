@@ -1,0 +1,112 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces Interface CATISamDisplayModel</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISamDisplayModel','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamDisplayModel','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISamDisplayModel','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamDisplayModel','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisInterfaces Interface CATISamDisplayModel</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISamDisplayModel_42917','CATISamDisplayModel','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISamDisplayModel</b>
+</p>
+<p>
+<b><i>  Analysis 2D Display model access.</i></b><br>
+
+ Allows to connect a 2D Display feature under an analysis set or an analysis entity.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AddDisplay(CATISpecObject*)"><b>AddDisplay</b></a>(CATISpecObject*)
+<dd>  Adds a new Display in the model.
+ <dt> o 
+    <a href="#ListDisplay(CATLISTV(CATBaseUnknown_var)*&amp;)"><b>ListDisplay</b></a>(CATLISTV(CATBaseUnknown_var)*&amp;)
+<dd>  List all display's in the model.
+ <dt> o 
+    <a href="#RemoveDisplay(CATISpecObject*)"><b>RemoveDisplay</b></a>(CATISpecObject*)
+<dd>  Removes a display from the model.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AddDisplay"></a><a name="AddDisplay(CATISpecObject*)"></a> <dt> o <b>AddDisplay</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AddDisplay</b>(<td> const <script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject*')</script> <td><tt>ipiDisplay</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Adds a new Display in the model.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ipiDisplay</tt>
+   <dd> the Display feature.</dd>
+</dl>
+</dl>
+</dl>
+<a name="ListDisplay"></a><a name="ListDisplay(CATLISTV(CATBaseUnknown_var)*&amp;)"></a> <dt> o <b>ListDisplay</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ListDisplay</b>(<td><script type="text/javascript"> activateLink('CATLISTV(CATBaseUnknown_var)','CATLISTV(CATBaseUnknown_var)*&amp;')</script> <td><tt>oDisplayList</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ List all display's in the model.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDisplayList</tt>
+   <dd> the Display features.</dd>
+</dl>
+</dl>
+</dl>
+<a name="RemoveDisplay"></a><a name="RemoveDisplay(CATISpecObject*)"></a> <dt> o <b>RemoveDisplay</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RemoveDisplay</b>(<td> const <script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject*')</script> <td><tt>ipiDisplay</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Removes a display from the model.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ipiDisplay</tt>
+   <dd> the Display feature.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISamDisplayModel.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisInterface</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

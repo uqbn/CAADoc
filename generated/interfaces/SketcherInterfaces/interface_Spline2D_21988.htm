@@ -1,0 +1,125 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>SketcherInterfaces Spline2D (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../SketcherInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Spline2D','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Spline2D','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Spline2D','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Spline2D','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Spline2D<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Spline2D_21988','Spline2D','0');</script>
+<b><i>    Class defining a spline in 2D Space.</i></b><br>
+  A 2D spline is defined by its constituting
+   control points.<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetControlPoints"><b>GetControlPoints</b></a>
+<dd>   Returns the control points making up the spline.
+ <dt>
+    <a href="#GetNumberOfControlPoints"><b>GetNumberOfControlPoints</b></a>
+<dd> 
+
+ Returns the number of Control Points of the Spline
+       
+ <dt>
+    <a href="#InsertControlPointAfter"><b>InsertControlPointAfter</b></a>
+<dd>   Inserts control points in the spline.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetControlPoints"><dt>
+
+<table><tr><td>o Sub <b>GetControlPoints</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oCtrlPoints</tt>)</table></dt>
+<dl>
+  <dd>
+  Returns the control points making up the spline.
+  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oCtrlPoints</tt>
+   <dd>  The control points of the spline
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example fetches the list of control points defining the<br>
+ spline<tt>mySpline</tt>:
+ <pre>
+ mySpline.GetControlPoints <b>ControlPoints</b>
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="GetNumberOfControlPoints"><dt>
+
+<table><tr><td>o Func <b>GetNumberOfControlPoints</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+
+
+ Returns the number of Control Points of the Spline
+       
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oNumber</tt>
+   <dd>       The number of control points*
+</dd>
+</dl>
+</dl>
+</dl>
+<a name="InsertControlPointAfter"><dt>
+
+<table><tr><td>o Sub <b>InsertControlPointAfter</b>(<td><script type="text/javascript"> activateLink('Point2D','Point2D')</script> <td><tt>iCtrlPoint</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iPosition</tt>)</table></dt>
+<dl>
+  <dd>
+  Inserts control points in the spline.  If a 2D point is given (and not a control<br>
+  point), a new control point is created and aggregated in the spline.
+  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCtrlPoint</tt>
+   <dd>  The new point to be inserted. (@see CATIAPoint2D and CATIAControlPoint2D<br>
+   for more information).
+  </dd>
+    <dt><tt> iPosition</tt>
+   <dd>  The position at which to insert the point.<br>
+  To insert a new control point as the first element, set iPosition to 0.
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example inserts a control point <tt>myCtrlPoint</tt> as the second<br>
+ element of the spline<tt>mySpline</tt>:
+ <pre>
+ call mySpline.<b>InsertControlPointAfter</b> (myCtrlPoint, 1)
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

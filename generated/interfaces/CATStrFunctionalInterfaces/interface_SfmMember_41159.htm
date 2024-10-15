@@ -1,0 +1,165 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATStrFunctionalInterfaces SfmMember (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATStrFunctionalInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SfmMember','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmMember','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SfmMember','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmMember','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SfmMember<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SfmMember_41159','SfmMember','0');</script>
+<b><i> Interface to manage the structure frame modeling member object
+ <b>Role</b>:  Allows accessing and setting of member's data.</i></b><br>
+
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('SfmFactory','');return false">SfmFactory</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Angle"><b>Angle</b></a>
+<dd>  Returns or sets the member's angle.
+ <dt>
+    <a href="#AngleParam"><b>AngleParam</b></a>
+<dd>  <dt>
+    <a href="#HorizontalAnchorPointOffset"><b>HorizontalAnchorPointOffset</b></a>
+<dd>  Returns the member's horizontal anchor point offset.
+ <dt>
+    <a href="#HorizontalAnchorPointOffsetParam"><b>HorizontalAnchorPointOffsetParam</b></a>
+<dd>  <dt>
+    <a href="#VerticalAnchorPointOffset"><b>VerticalAnchorPointOffset</b></a>
+<dd>  Returns or sets the member's vertical anchor point offset.
+ <dt>
+    <a href="#VerticalAnchorPointOffsetParam"><b>VerticalAnchorPointOffsetParam</b></a>
+<dd> </dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Flip"><b>Flip</b></a>
+<dd>  Flip the member's section according to X axis.
+ <dt>
+    <a href="#IsFlip"><b>IsFlip</b></a>
+<dd>  Get the flip status of the member's section.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Angle"><dt>
+
+<table><tr><td>o Property <b>Angle</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the member's angle.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>Angle</code> the angle of the <code>SfmMember</code> feature.
+ <pre>
+ Dim Angle As Double
+ Set Angle = SfmMember.<font color="red">Angle</font>
+ </pre>
+ </dl>
+</dl>
+<a name="AngleParam"><dt>
+
+<table><tr><td>o Property <b>AngleParam</b>(<td>) As <script type="text/javascript"> activateLink('Angle','Angle')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="HorizontalAnchorPointOffset"><dt>
+
+<table><tr><td>o Property <b>HorizontalAnchorPointOffset</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the member's horizontal anchor point offset.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>HAPOffset</code> the horizontal anchor point offset of the <code>SfmMember</code> feature.
+ <pre>
+ Dim HAPOffset As Double
+ Set HAPOffset = SfmMember.<font color="red">HorizontalAnchorPointOffset</font>
+ </pre>
+ </dl>
+</dl>
+<a name="HorizontalAnchorPointOffsetParam"><dt>
+
+<table><tr><td>o Property <b>HorizontalAnchorPointOffsetParam</b>(<td>) As <script type="text/javascript"> activateLink('Length','Length')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="VerticalAnchorPointOffset"><dt>
+
+<table><tr><td>o Property <b>VerticalAnchorPointOffset</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the member's vertical anchor point offset.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>VAPOffset</code> the vertical anchor point offset of the <code>SfmMember</code> feature.
+ <pre>
+ Dim VAPOffset As Double
+ Set VAPOffset = SfmMember.<font color="red">VerticalAnchorPointOffset</font>
+ </pre>
+ </dl>
+</dl>
+<a name="VerticalAnchorPointOffsetParam"><dt>
+
+<table><tr><td>o Property <b>VerticalAnchorPointOffsetParam</b>(<td>) As <script type="text/javascript"> activateLink('Length','Length')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Flip"><dt>
+
+<table><tr><td>o Sub <b>Flip</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Flip the member's section according to X axis.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example flips the section of the <code>SfmMember</code> feature.
+ <pre>
+ SfmMember.<font color="red">Flip</font>
+ </pre>
+ </dl>
+</dl>
+<a name="IsFlip"><dt>
+
+<table><tr><td>o Func <b>IsFlip</b>(<td>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+ Get the flip status of the member's section.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>FlipStatus</code> the flip status of the <code>SfmMember</code> feature.
+ <pre>
+ Dim FlipStatus As Boolean
+ Set FlipStatus = SfmMember.<font color="red">IsFlip</font>
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

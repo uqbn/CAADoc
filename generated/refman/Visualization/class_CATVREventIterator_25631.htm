@@ -1,0 +1,163 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>Visualization Class CATVREventIterator</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../Visualization.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATVREventIterator','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATVREventIterator','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATVREventIterator','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATVREventIterator','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Visualization Class CATVREventIterator</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATVREventIterator_25631','CATVREventIterator','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATVREventIterator</b>
+</p>
+<p>
+<b><i> Class to directly access the device driver events in the event set structure.</i></b><br>
+
+ <b>Role</b> : Whereas the <a href="#" onClick="openLink('CATVRDispatcherOnIdle','');return false">CATVRDispatcherOnIdle</a> gives you access to the event on every idle, the CATVREventIterator allows you to directly access the event set
+ structure anytime. 
+ The iterator also acts as a filter so that you can only access the events whose types
+ were specifified at the object construction. 
+ You iterate on a frozen event set. Call 
+<a href="#" onClick="openLink('','Synchronize');return false">Synchronize</a> to update that frozen set with the newly arrived events.
+ You may access the event set from any thread.
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATVREventIterator(CATListOfCATVRDeviceEvent)"><b>CATVREventIterator</b></a>(CATListOfCATVRDeviceEvent)
+<dd>  Construct a CATVREventIterator
+ <br>Do not use the created instance in a thread different from the one
+ used for creation.
+ <dt> o 
+    <a href="#~CATVREventIterator()"><b>~CATVREventIterator</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Current()"><b>Current</b></a>()
+<dd>   Return the current pointed event.
+ <dt> o 
+    <a href="#Newer()"><b>Newer</b></a>()
+<dd>   Return the event immediatly more recent than the last pointed event.
+ <dt> o 
+    <a href="#Newest()"><b>Newest</b></a>()
+<dd>   Return the newest event you may access in the event set.
+ <dt> o 
+    <a href="#Older()"><b>Older</b></a>()
+<dd>   Return the event immediatly older than the last pointed event.
+ <dt> o 
+    <a href="#Oldest()"><b>Oldest</b></a>()
+<dd>   Return the oldest event you may access in the event set.
+ <dt> o 
+    <a href="#Synchronize()"><b>Synchronize</b></a>()
+<dd>  Update the frozen iteration event set on the dynamic event set.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATVREventIterator"></a><a name="CATVREventIterator(CATListOfCATVRDeviceEvent)"></a> <dt> o <b>CATVREventIterator</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATVREventIterator</b>(<td><script type="text/javascript"> activateLink('CATListOfCATVRDeviceEvent','CATListOfCATVRDeviceEvent')</script> <td><tt>iEventsToParse</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Construct a CATVREventIterator
+ <br>Do not use the created instance in a thread different from the one
+ used for creation.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEventsToParse</tt>
+   <dd>    iEventsToParse refers to the event types you are interested in.
+   You will then iterate on these event types only.</dd>
+</dl>
+</dl>
+</dl>
+<a name="~CATVREventIterator"></a><a name="~CATVREventIterator()"></a> <dt> o <b>~CATVREventIterator</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>~CATVREventIterator</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Current"></a><a name="Current()"></a> <dt> o <b>Current</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATVRDeviceEvent','CATVRDeviceEvent*')</script>  <b>Current</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Return the current pointed event.
+</dl>
+<a name="Newer"></a><a name="Newer()"></a> <dt> o <b>Newer</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATVRDeviceEvent','CATVRDeviceEvent*')</script>  <b>Newer</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Return the event immediatly more recent than the last pointed event.
+ <br><b>Legal values</b>: The returned event pointer may be NULL.
+</dl>
+<a name="Newest"></a><a name="Newest()"></a> <dt> o <b>Newest</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATVRDeviceEvent','CATVRDeviceEvent*')</script>  <b>Newest</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Return the newest event you may access in the event set.
+</dl>
+<a name="Older"></a><a name="Older()"></a> <dt> o <b>Older</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATVRDeviceEvent','CATVRDeviceEvent*')</script>  <b>Older</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Return the event immediatly older than the last pointed event.
+ <br><b>Legal values</b>: The returned event pointer may be NULL.
+</dl>
+<a name="Oldest"></a><a name="Oldest()"></a> <dt> o <b>Oldest</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATVRDeviceEvent','CATVRDeviceEvent*')</script>  <b>Oldest</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Return the oldest event you may access in the event set.
+</dl>
+<a name="Synchronize"></a><a name="Synchronize()"></a> <dt> o <b>Synchronize</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>Synchronize</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Update the frozen iteration event set on the dynamic event set.
+ <br>At anytime, you may only access the events posted between the two last 
+ calls to Synchronize. This call is time consuming. You should not
+ use it at a frequency high above the draw rate.
+</dl>
+<hr>
+ This object is included in the file: <b>CATVREventIterator.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATVisVR</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

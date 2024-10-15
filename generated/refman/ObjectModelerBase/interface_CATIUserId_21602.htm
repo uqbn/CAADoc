@@ -1,0 +1,93 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ObjectModelerBase Interface CATIUserId</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ObjectModelerBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIUserId','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIUserId','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIUserId','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIUserId','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ObjectModelerBase Interface CATIUserId</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIUserId_21602','CATIUserId','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIUserId</b>
+</p>
+<p>
+<b><i> Interface to access a container user identifier.</i></b><br>
+
+ <br> An implementation of this interface is supplied and you must use it as is. You should not reimplement it.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetUserId()"><b>GetUserId</b></a>()
+<dd>  Returns a user identifier of a container.
+ <dt> o 
+    <a href="#SetUserId(CATUnicodeString&amp;)"><b>SetUserId</b></a>(CATUnicodeString&amp;)
+<dd>  Sets a user identifier to an applicative container.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetUserId"></a><a name="GetUserId()"></a> <dt> o <b>GetUserId</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script>  <b>GetUserId</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns a user identifier of a container.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  			The identifier of the container.
+</dl>
+</dl>
+<a name="SetUserId"></a><a name="SetUserId(CATUnicodeString&amp;)"></a> <dt> o <b>SetUserId</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetUserId</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iId</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets a user identifier to an applicative container.
+ <br><b>Note:</b> This method should not be called on an applicative container for which the caller 
+ is not responsible (ie an applicative container that the caller has created using the 
+<a href="#" onClick="openLink('CATCreateApplicativeContainer','');return false">CATCreateApplicativeContainer</a> global function)  By calling this method on an applicative container that doesn't belong to him, the caller can 
+ corrupt the corresponding V5 document.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iId</tt>
+   <dd>         The identifier to associate with the container.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIUserId.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATObjectModelerBase</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

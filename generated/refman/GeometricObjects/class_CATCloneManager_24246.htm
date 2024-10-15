@@ -1,0 +1,254 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GeometricObjects Class CATCloneManager</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GeometricObjects.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATCloneManager','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATCloneManager','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATCloneManager','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATCloneManager','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GeometricObjects Class CATCloneManager</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATCloneManager_24246','CATCloneManager','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATCloneManager</b>
+</p>
+<p>
+<b><i> Class representing the process of duplication of a CATICGMObject.</i></b><br>
+<br>
+ <ul>
+ <li>The clone process takes the forward links into account
+ <li>A CATCloneManager can process several CATICGMObjects at the same time.
+ <li>A CATCloneManager has two modes of duplication:
+<dl><dt>CatCGMSingleDuplicate</dt><dd>Only duplicates the objects
+ that are <tt>Add</tt>ed to the CATCloneManager 
+    <dt>CatCGMFullDuplicate</dt><dd>Duplicates the objects
+ that are <tt>Add</tt>ed to the CATCloneManager and the forward linked objects.
+</dl>
+ <li>A CATCloneManager offers two types of methods:
+<ul>
+ <li>"user methods" that are called by the application programmer 
+ to clone CATICGMObjects: <tt>Add</tt>, <tt>Run</tt>, <tt>ReadImage</tt>, 
+ <tt>WriteReport</tt>, <tt>GetFactory</tt>
+ <li>"object methods" that are called by the CATICGMObjects to
+ ask for the clone of their forward linked objects. 
+ These methods must not be normally called,
+ except in the <tt>CATICGMObject::Clone</tt> method, 
+ if you intend to create your own CATICGMObject class.
+</ul>
+ <li>The objects of this class are transient and cannot be streamed
+ </ul>
+ code sample :
+ <pre>
+ CATCloneManager MyManager(MyGeoFactory);
+ MyManager.Add(MyCGMObject);
+ MyManager.Run();
+ CATICGMObject* ClonedObject=MyManager.ReadImage(MyCGMObject);
+ MyManager.WriteReport(MyJournal, CATCGMJournal::Modification);
+ </pre></p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATCloneManager(CATGeoFactory*,CATCloneManagerType,CATSoftwareConfiguration*)"><b>CATCloneManager</b></a>(CATGeoFactory*,CATCloneManagerType,CATSoftwareConfiguration*)
+<dd>  Constructs a CATCloneManager.
+ <dt> o 
+    <a href="#~CATCloneManager()"><b>~CATCloneManager</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Add(CATICGMObject*,CATICGMObject*)"><b>Add</b></a>(CATICGMObject*,CATICGMObject*)
+<dd>  Adds a CATICGMObject to clone with <tt>this</tt> CATCloneManager.
+ <dt> o 
+    <a href="#ReadImage(CATICGMObject*)"><b>ReadImage</b></a>(CATICGMObject*)
+<dd>  Returns a pointer to the CATICGMObject (called "image") corresponding to the clone 
+ by <tt>this</tt> of a given <tt>iObject</tt>.
+ <dt> o 
+    <a href="#Run()"><b>Run</b></a>()
+<dd>  Runs the CATCloneManager process.
+ <dt> o 
+    <a href="#WriteReport(CATCGMJournalList*&amp;,CATCGMJournal::Type,CATBoolean)"><b>WriteReport</b></a>(CATCGMJournalList*&amp;,CATCGMJournal::Type,CATBoolean)
+<dd>  Writes the topological journal associated with <tt>this</tt> CATCloneManager process.
+ <dt> o 
+    <a href="#WriteReport(CATICGMObject*,CATCGMJournalList*&amp;,CATCGMJournal::Type,CATBoolean)"><b>WriteReport</b></a>(CATICGMObject*,CATCGMJournalList*&amp;,CATCGMJournal::Type,CATBoolean)
+<dd>  Writes the topological journal for one object.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATCloneManager"></a><a name="CATCloneManager(CATGeoFactory*,CATCloneManagerType,CATSoftwareConfiguration*)"></a> <dt> o <b>CATCloneManager</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATCloneManager</b>(<td><script type="text/javascript"> activateLink('CATGeoFactory','CATGeoFactory*')</script> <td><tt>iFactory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATCloneManagerType','CATCloneManagerType')</script> <td><tt>iType</tt><td><tt>= CatCGMSingleDuplicate</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSoftwareConfiguration','CATSoftwareConfiguration*')</script> <td><tt>iConfig</tt><td><tt>= NULL</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a CATCloneManager.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFactory</tt>
+   <dd> The pointer to the factory of the resulting objects.
+ </dd>
+    <dt><tt> iType</tt>
+   <dd> The type of duplication.
+ </dd>
+    <dt><tt>  iConfig</tt>
+   <dd> The pointer to the configuration.Should not be <tt>NULL</tt> in case of topological objects.</dd>
+</dl>
+</dl>
+</dl>
+<a name="~CATCloneManager"></a><a name="~CATCloneManager()"></a> <dt> o <b>~CATCloneManager</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATCloneManager</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Add"></a><a name="Add(CATICGMObject*,CATICGMObject*)"></a> <dt> o <b>Add</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>Add</b>(<td><script type="text/javascript"> activateLink('CATICGMObject','CATICGMObject*')</script> <td><tt>iObjectToClone</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATICGMObject','CATICGMObject*')</script> <td><tt>iWhereToPaste</tt><td><tt>= 0</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Adds a CATICGMObject to clone with <tt>this</tt> CATCloneManager.
+<br>All the added objects must belong
+ to the same factory.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iObjectToClone</tt>
+   <dd> The pointer to the object to add to the CATCloneManager. 
+ </dd>
+    <dt><tt> iWhereToPaste</tt>
+   <dd> If not NULL, it forces the duplication of <tt>iObjectToClone</tt> to be
+ the object <tt>iWhereToPaste</tt>.  
+ This can be used to copy and paste objects from one container to another one.
+ Notice that there is no transformation here.</dd>
+</dl>
+</dl>
+</dl>
+<a name="ReadImage"></a><a name="ReadImage(CATICGMObject*)"></a> <dt> o <b>ReadImage</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATICGMObject','CATICGMObject*')</script>  <b>ReadImage</b>(<td><script type="text/javascript"> activateLink('CATICGMObject','CATICGMObject*')</script> <td><tt>iObject</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns a pointer to the CATICGMObject (called "image") corresponding to the clone 
+ by <tt>this</tt> of a given <tt>iObject</tt>.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iObject</tt>
+   <dd> The pointer to the object which the image is asked for.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The pointer to the image if it exists. <tt>0</tt> otherwise.
+</dl>
+</dl>
+<a name="Run"></a><a name="Run()"></a> <dt> o <b>Run</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>Run</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Runs the CATCloneManager process.
+ This method should be called only once.
+</dl>
+<a name="WriteReport"></a><a name="WriteReport(CATCGMJournalList*&amp;,CATCGMJournal::Type,CATBoolean)"></a> <dt> o <b>WriteReport</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>WriteReport</b>(<td><script type="text/javascript"> activateLink('CATCGMJournalList','CATCGMJournalList*&amp;')</script> <td><tt>ioJournal</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATCGMJournal::Type','CATCGMJournal::Type')</script> <td><tt>iType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script> <td><tt>iAddInfo</tt><td><tt>= CATBoolean(1)</tt>)<script type="text/javascript"> activateLink('const',' const')</script>  </table></dt>
+<dl>
+  <dd>
+ Writes the topological journal associated with <tt>this</tt> CATCloneManager process.
+ <br>The journal follows the modifications of the topological
+ objects.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioJournal</tt>
+   <dd> The pointer to the journal to fill
+ </dd>
+    <dt><tt> iType</tt>
+   <dd> The type of modification to be written.
+ The attribute to put to the face that have just been cloned.
+ <dl><dt><tt>CATCGMJournal::Creation</tt></dt><dd>All the duplicated faces are written
+ as created into the journal 
+      <dt><tt>CATCGMJournal::Modification</tt></dt><dd>All the duplicated faces are written
+ as modified into the journal 
+	  </dl>
+ </dd>
+    <dt><tt> iAddInfo</tt>
+   <dd> The activation of the journal info .
+ <br><b>Legal values</b>:
+ <tt>TRUE</tt> for the activation, <tt>FALSE</tt> otherwise.</dd>
+</dl>
+</dl>
+</dl>
+<a name="WriteReport"></a><a name="WriteReport(CATICGMObject*,CATCGMJournalList*&amp;,CATCGMJournal::Type,CATBoolean)"></a> <dt> o <b>WriteReport</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>WriteReport</b>(<td><script type="text/javascript"> activateLink('CATICGMObject','CATICGMObject*')</script> <td><tt>iObject</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATCGMJournalList','CATCGMJournalList*&amp;')</script> <td><tt>ioJournal</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATCGMJournal::Type','CATCGMJournal::Type')</script> <td><tt>iType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script> <td><tt>iAddInfo</tt><td><tt>= CATBoolean(1)</tt>)<script type="text/javascript"> activateLink('const',' const')</script>  </table></dt>
+<dl>
+  <dd>
+ Writes the topological journal for one object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iObject</tt>
+   <dd> The pointer to the object to follow.
+ </dd>
+    <dt><tt> ioJournal</tt>
+   <dd> The pointer to the journal to fill
+ </dd>
+    <dt><tt> iType</tt>
+   <dd> The type of modification to be written.
+ The attribute to put to the face that have just been cloned.
+ <dl><dt><tt>CATCGMJournal::Creation</tt></dt><dd>All the duplicated faces are written
+ as created into the journal 
+      <dt><tt>CATCGMJournal::Modification</tt></dt><dd>All the duplicated faces are written
+ as modified into the journal 
+	  </dl>
+ </dd>
+    <dt><tt> iAddInfo</tt>
+   <dd> The activation of the journal info .
+ <br><b>Legal values</b>:
+ <tt>TRUE</tt> for the activation, <tt>FALSE</tt> otherwise.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATCloneManager.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGeometricObjects</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

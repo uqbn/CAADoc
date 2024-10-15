@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="SimulationInterfaces" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="1" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="Replay" initial="R" htmlFileName="interface_Replay_25245" fatherClass="AnyObject" fatherId="9080" DSCharacteristic="interface" id="25245" abstract="" />
+<method name="AddProductMotion" htmlFileName="interface_Replay_25245" containerName="Replay" containerType="interface" id="41285" status="0" isProperty="0" initial="A" argList="" abstract="Adds a product to be taken into account in the Replay object." />
+<method name="AddSample" htmlFileName="interface_Replay_25245" containerName="Replay" containerType="interface" id="32245" status="0" isProperty="0" initial="A" argList="" abstract="" />
+<method name="GetNbProductMotion" htmlFileName="interface_Replay_25245" containerName="Replay" containerType="interface" id="44678" status="0" isProperty="0" initial="G" argList="" abstract="Get the number of channel related to products." />
+<method name="GetNbSample" htmlFileName="interface_Replay_25245" containerName="Replay" containerType="interface" id="34124" status="0" isProperty="0" initial="G" argList="" abstract="Get the number of samples for a channel number." />
+<method name="GetProduct" htmlFileName="interface_Replay_25245" containerName="Replay" containerType="interface" id="33366" status="0" isProperty="0" initial="G" argList="" abstract="Get the product for a channel." />
+<method name="GetSamplePosition" htmlFileName="interface_Replay_25245" containerName="Replay" containerType="interface" id="43036" status="0" isProperty="0" initial="G" argList="" abstract="Get the sample values." />
+<method name="GetSampleTime" htmlFileName="interface_Replay_25245" containerName="Replay" containerType="interface" id="36495" status="0" isProperty="0" initial="G" argList="" abstract="Get the sample time." />
+<method name="RemoveSample" htmlFileName="interface_Replay_25245" containerName="Replay" containerType="interface" id="35404" status="0" isProperty="0" initial="R" argList="" abstract="Remove a specific sample." />
+</fw>

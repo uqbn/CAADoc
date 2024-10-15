@@ -1,0 +1,146 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ElecDeviceItf Interface CATIElbInternalSplice</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ElecDeviceItf.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIElbInternalSplice','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIElbInternalSplice','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIElbInternalSplice','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIElbInternalSplice','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ElecDeviceItf Interface CATIElbInternalSplice</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIElbInternalSplice_32764','CATIElbInternalSplice','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIElbInternalSplice</b>
+</p>
+<p>
+<b><i> Interface to manage Internal Splices.</i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetLinkedBundleSegmentExtremity(CATIEhiBnlSegmentExtremity*&amp;)"><b>GetLinkedBundleSegmentExtremity</b></a>(CATIEhiBnlSegmentExtremity*&amp;)
+<dd>  Get the bundle segment extremity linked to an internal splice.
+ <dt> o 
+    <a href="#LinkBundleSegmentExtremity(CATIEhiBnlSegmentExtremity*&amp;)"><b>LinkBundleSegmentExtremity</b></a>(CATIEhiBnlSegmentExtremity*&amp;)
+<dd>  Link to a bundle segment extremity.
+ <dt> o 
+    <a href="#ListTerminations(CATListValCATBaseUnknown_var*&amp;)"><b>ListTerminations</b></a>(CATListValCATBaseUnknown_var*&amp;)
+<dd>  List of Terminations.
+ <dt> o 
+    <a href="#UnLinkBundleSegmentExtremity()"><b>UnLinkBundleSegmentExtremity</b></a>()
+<dd>  UnLink to a bundle segment extremity.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetLinkedBundleSegmentExtremity"></a><a name="GetLinkedBundleSegmentExtremity(CATIEhiBnlSegmentExtremity*&amp;)"></a> <dt> o <b>GetLinkedBundleSegmentExtremity</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetLinkedBundleSegmentExtremity</b>(<td><script type="text/javascript"> activateLink('CATIEhiBnlSegmentExtremity','CATIEhiBnlSegmentExtremity*&amp;')</script> <td><tt>oBundleSegmentExtr</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get the bundle segment extremity linked to an internal splice.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oBundleSegmentExtr</tt>
+   <dd>   The bundle segment extremity linked to the internal splice
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    Return code
+</dl>
+</dl>
+<a name="LinkBundleSegmentExtremity"></a><a name="LinkBundleSegmentExtremity(CATIEhiBnlSegmentExtremity*&amp;)"></a> <dt> o <b>LinkBundleSegmentExtremity</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>LinkBundleSegmentExtremity</b>(<td><script type="text/javascript"> activateLink('CATIEhiBnlSegmentExtremity','CATIEhiBnlSegmentExtremity*&amp;')</script> <td><tt>iBundleSegmentExtr</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Link to a bundle segment extremity.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iBundleSegmentExtr</tt>
+   <dd>   The bundle segment extremity to link to the internal splice
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    Return code
+</dl>
+</dl>
+<a name="ListTerminations"></a><a name="ListTerminations(CATListValCATBaseUnknown_var*&amp;)"></a> <dt> o <b>ListTerminations</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ListTerminations</b>(<td><script type="text/javascript"> activateLink('CATListValCATBaseUnknown_var','CATListValCATBaseUnknown_var*&amp;')</script> <td><tt>oTerminations</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ List of Terminations.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oTerminations</tt>
+   <dd>   The list
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    Return code
+</dl>
+</dl>
+<a name="UnLinkBundleSegmentExtremity"></a><a name="UnLinkBundleSegmentExtremity()"></a> <dt> o <b>UnLinkBundleSegmentExtremity</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>UnLinkBundleSegmentExtremity</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ UnLink to a bundle segment extremity.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iBundleSegmentExtr</tt>
+   <dd>   The bundle segment extremity to unlink with the internal splice
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    Return code
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIElbInternalSplice.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATElbInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

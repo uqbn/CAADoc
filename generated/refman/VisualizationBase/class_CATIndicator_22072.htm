@@ -1,0 +1,151 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>VisualizationBase Class CATIndicator</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../VisualizationBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIndicator','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIndicator','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIndicator','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIndicator','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>VisualizationBase Class CATIndicator</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATIndicator_22072','CATIndicator','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATIndicator</b>
+</p>
+<p>
+<b><i>
+ Class defines a behavior in the back of a viewer.</i></b><br>
+
+
+ This class is used by application to have informations when mouse is on
+ <br>no manipulator controlled representation.
+
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATIndicator(CATCommand*,CATString&amp;,CATViewpoint*,CATVizBaseManipulatorMediator*)"><b>CATIndicator</b></a>(CATCommand*,CATString&amp;,CATViewpoint*,CATVizBaseManipulatorMediator*)
+<dd> 
+ Default constructor.
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetMultiSelBehavior()"><b>GetMultiSelBehavior</b></a>()
+<dd>  Gets the multisel behaviour of this indicator.
+ <dt> o 
+    <a href="#GetViewpoint()"><b>GetViewpoint</b></a>()
+<dd>  Gets the associated viewpoint.
+ <dt> o 
+    <a href="#SetMultiSelBehavior(int)"><b>SetMultiSelBehavior</b></a>(int)
+<dd>  Activates or deactivates the multisel behaviour.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATIndicator"></a><a name="CATIndicator(CATCommand*,CATString&amp;,CATViewpoint*,CATVizBaseManipulatorMediator*)"></a> <dt> o <b>CATIndicator</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATIndicator</b>(<td><script type="text/javascript"> activateLink('CATCommand','CATCommand*')</script> <td><tt>Father</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATString','CATString&amp;')</script> <td><tt>iName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATViewpoint','CATViewpoint*')</script> <td><tt>iViewpoint</tt><td><tt>=NULL</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATVizBaseManipulatorMediator','CATVizBaseManipulatorMediator*')</script> <td><tt>i_pManipulatorMediator</tt><td><tt>= NULL</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+
+ Default constructor.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFather</tt>
+   <dd>   a pointer to the father command of the manipulator
+ </dd>
+    <dt><tt> iName</tt>
+   <dd>   a name for the manipulator
+ </dd>
+    <dt><tt> iViewpoint</tt>
+   <dd>   The viewpoint on which the indicator must be put.</dd>
+</dl>
+</dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetMultiSelBehavior"></a><a name="GetMultiSelBehavior()"></a> <dt> o <b>GetMultiSelBehavior</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('int','int')</script>  <b>GetMultiSelBehavior</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets the multisel behaviour of this indicator.
+
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>         0 if the multisel behaviour is deactivated.
+        <br>A positive value means the multisel behaviour is activated.
+</dl>
+</dl>
+<a name="GetViewpoint"></a><a name="GetViewpoint()"></a> <dt> o <b>GetViewpoint</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATViewpoint','CATViewpoint*')</script>  <b>GetViewpoint</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets the associated viewpoint.
+
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>         The associated viewpoint.
+</dl>
+</dl>
+<a name="SetMultiSelBehavior"></a><a name="SetMultiSelBehavior(int)"></a> <dt> o <b>SetMultiSelBehavior</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>SetMultiSelBehavior</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iActivate</tt><td><tt>=1 </tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Activates or deactivates the multisel behaviour.
+ <br>When multisel behaviour is activated a trap of selection
+ is drawn when you click and drag from a no manipulator 
+ controlled representation.
+ <br>In this case, a call to 
+<a href="#" onClick="openLink('CATManipulator','SendCommandSpecificObject');return false">CATManipulator.SendCommandSpecificObject</a> with a CATPathElement in parameter will return a list of 
+ 
+<a href="#" onClick="openLink('CATPathElement','');return false">CATPathElement</a>.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iActivate</tt>
+   <dd>        Indicates if the multisel behaviour must be acivate or deactivate.
+        <br>0 value means a deactivation, a positive value activates it.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIndicator.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATViz</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

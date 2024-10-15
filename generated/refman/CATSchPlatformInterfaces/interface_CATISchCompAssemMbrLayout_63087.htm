@@ -1,0 +1,118 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Interface CATISchCompAssemMbrLayout</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISchCompAssemMbrLayout','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchCompAssemMbrLayout','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISchCompAssemMbrLayout','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchCompAssemMbrLayout','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Interface CATISchCompAssemMbrLayout</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISchCompAssemMbrLayout_63087','CATISchCompAssemMbrLayout','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISchCompAssemMbrLayout</b>
+</p>
+<p>
+<b><i> Interface to control the positioning of a member of a
+ Schematic component assembly relative to the component
+ assembly.</i></b><br>
+
+ <b>Role</b>: To manage the matrx for the position of the
+ graphic of an component assembly member.
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetLayoutMatrix(double*)"><b>GetLayoutMatrix</b></a>(double*)
+<dd>  Gets the matrix for layout of the component assembly member graphic.
+ <dt> o 
+    <a href="#SetLayoutMatrix(double[6])"><b>SetLayoutMatrix</b></a>(double[6])
+<dd>  Sets the matrix for layout of the component assembly member graphic.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetLayoutMatrix"></a><a name="GetLayoutMatrix(double*)"></a> <dt> o <b>GetLayoutMatrix</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetLayoutMatrix</b>(<td><script type="text/javascript"> activateLink('double','double*')</script> <td><tt>oDb6TransMatrix</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets the matrix for layout of the component assembly member graphic.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDb6TransMatrix</tt>
+   <dd>   The orientation matrix.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="SetLayoutMatrix"></a><a name="SetLayoutMatrix(double[6])"></a> <dt> o <b>SetLayoutMatrix</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetLayoutMatrix</b>(<td> const <script type="text/javascript"> activateLink('double[6','double[6]')</script> <td><tt>iDb6TransMatrix</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the matrix for layout of the component assembly member graphic.
+ The component assembly member must also implement the 
+<a href="#" onClick="openLink('CATISchAppAssemblyMember','');return false">CATISchAppAssemblyMember</a> 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDb6TransMatrix</tt>
+   <dd>   The orientation matrix in the form of a delta, [x1,y1,x2,y2,o1,o2].
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISchCompAssemMbrLayout.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

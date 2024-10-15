@@ -1,0 +1,191 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces AnalysisCases (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('AnalysisCases','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisCases','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('AnalysisCases','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisCases','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>AnalysisCases<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_AnalysisCases_33766','AnalysisCases','0');</script>
+<b><i>   The collection of analysis case making an Analysis.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Add"><b>Add</b></a>
+<dd>  Creates a new case and adds it to the case collection.
+ <dt>
+    <a href="#AddExistingCase"><b>AddExistingCase</b></a>
+<dd>  Adds an existing analysis case to the analysis cases collection.
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns a case using its index or its name from the case
+ collection.
+ <dt>
+    <a href="#NewCase"><b>NewCase</b></a>
+<dd>  Creates a new case and adds it to the case collection.
+ <dt>
+    <a href="#Remove"><b>Remove</b></a>
+<dd>  Removes a case using its index or its name from the case collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Add"><dt>
+
+<table><tr><td>o Func <b>Add</b>(<td>) As <script type="text/javascript"> activateLink('AnalysisCase','AnalysisCase')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new case and adds it to the case collection.
+ This case will be plugged under the analysis model.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The created case <! @sample >
+ <dt><b>Example:</b>
+ <dd>
+ The following example creates a case <tt>NewCase</tt> 
+ in the case collection of the <tt>ModelAnalysis</tt> Analysis model <p>.
+ <pre>
+ Dim ModelAnalysis As AnalysisModel
+ Dim NewCase As AnalysisCase
+ Set NewCase = ModelAnalysis.AnalysisCases.<font color="red">Add</font>()
+ </pre>
+</dl>
+</dl>
+<a name="AddExistingCase"><dt>
+
+<table><tr><td>o Sub <b>AddExistingCase</b>(<td><script type="text/javascript"> activateLink('AnalysisCase','AnalysisCase')</script> <td><tt>iCase</tt>)</table></dt>
+<dl>
+  <dd>
+ Adds an existing analysis case to the analysis cases collection.<br>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCase</tt>
+   <dd> The Existing Analysis Case.
+
+ <! @sample >
+ <dt><b>Example:</b>
+ <dd>
+ This example adds <tt>ThisAnalysisCase</tt> in the <tt>analysisCases</tt> analysis cases collection. 
+ <pre>
+ Dim ThisAnalysisCase As AnalysisCase
+ Dim analysisCases As AnalysisCases
+ ...
+ analysisCases.<font color="red">AddExistingCase</font>(ThisAnalysisCase)
+ </pre></dd>
+</dl>
+</dl>
+</dl>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('AnalysisCase','AnalysisCase')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a case using its index or its name from the case
+ collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the case to retrieve from
+   the collection of cases.
+   As a numeric, this index is the rank of the case
+   in the collection. The index of the first case in the collection is 1,
+   and the index of the last case is Count.
+   As a string, it is the name you assigned to the case using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property. 
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved case.
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves in <tt> ThisCase</tt> the fifth case
+ in the collection and in <tt> ThatCase</tt> the case
+ named <tt>"MyCase</tt> in the case collection of the <tt>AnalysisModel</tt> Analysis model.
+ <pre>
+ Set CaseColl = AnalysisModel.AnalysisCases
+ Set ThisCase = CaseColl.<font color="red">Item</font>(5)
+ Set ThatCase = CaseColl.<font color="red">Item</font>("MyCase")
+ </pre>
+</dl>
+</dl>
+<a name="NewCase"><dt>
+
+<table><tr><td>o Func <b>NewCase</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iType</tt>) As <script type="text/javascript"> activateLink('AnalysisCase','AnalysisCase')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new case and adds it to the case collection.
+ This case will be plugged under the analysis model.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The created case <! @sample >
+ <dt><b>Example:</b>
+ <dd>
+ The following example creates a case <tt>NewCase</tt> 
+ in the case collection of the <tt>ModelAnalysis</tt> Analysis model <p>.
+ <pre>
+ Dim ModelAnalysis As AnalysisModel
+ Dim NewCase As AnalysisCase
+ Set NewCase = ModelAnalysis.AnalysisCases.<font color="red">NewCase("AnalysisPreproCase")</font>()
+ </pre>
+</dl>
+</dl>
+<a name="Remove"><dt>
+
+<table><tr><td>o Sub <b>Remove</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes a case using its index or its name from the case collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the case to retrieve from
+   the collection of cases.
+   As a numeric, this index is the rank of the case
+   in the collection. The index of the first case in the collection is 1,
+   and the index of the last case is Count.
+   As a string, it is the name you assigned to the case using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property.
+ <dt><b>Example:</b>
+ <dd>
+ This example removes the fifth case in the collection.
+ <pre>
+ AnalysisModel.AnalysisCases<font color="red">.Remove (5)</font>
+ </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

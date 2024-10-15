@@ -1,0 +1,106 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PartInterfaces Scaling2 (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../PartInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Scaling2','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Scaling2','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Scaling2','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Scaling2','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Scaling2<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Scaling2_15763','Scaling2','0');</script>
+<b><i> Represents the Scaling2 feature object.</i></b><br>
+ 
+ This solid feature is created from  an underlying HybridShapeScaling 
+ aggregated by the Scaling.
+
+ <b>Role</b>: To access the data of the feature object.
+ This data includes: 
+ <ul>
+ <li> The element to be transformed using the Scaling2</li>
+ <li> The reference element for the Scaling2 which is a point or a plane</li>
+ <li> The ratio and its value </li>
+</ul> 
+ Use the CATIAShapeFactory to create Part object.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('ShapeFactory','');return false">ShapeFactory</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Center"><b>Center</b></a>
+<dd>  Returns or sets the reference element.
+ <dt>
+    <a href="#Ratio"><b>Ratio</b></a>
+<dd>  Returns the scaling ratio.
+ <dt>
+    <a href="#RatioValue"><b>RatioValue</b></a>
+<dd>  Returns or sets the scaling ratio value.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Center"><dt>
+
+<table><tr><td>o Property <b>Center</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the reference element.This element can be a point or a plane.<br>
+ To set the property, you can use one of the following 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> objects:  
+<a href="#" onClick="openLink('PlanarFace','');return false">PlanarFace</a> or 
+<a href="#" onClick="openLink('Vertex','');return false">Vertex</a>.   <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves in <code>RefElem</code> the reference element for the <code>Scaling2</code> hybrid shape feature.
+<pre>
+ Dim RefElem As Reference
+ Set RefElem = Scaling2.<font color="red">Center</font>
+</pre>
+</dl>
+</dl>
+<a name="Ratio"><dt>
+
+<table><tr><td>o Property <b>Ratio</b>(<td>) As <script type="text/javascript"> activateLink('RealParam','RealParam')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the scaling ratio.
+</dl>
+<a name="RatioValue"><dt>
+
+<table><tr><td>o Property <b>RatioValue</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the scaling ratio value.
+ <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves in <code>Value</code> the ratio value for the <code>Scaling</code> hybrid shape feature.
+<pre>
+ Dim Value As double
+ Set Value = Scaling2.<font color="red">RatioValue</font>
+</pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

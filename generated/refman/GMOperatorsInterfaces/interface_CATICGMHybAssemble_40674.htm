@@ -1,0 +1,158 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMOperatorsInterfaces Interface CATICGMHybAssemble</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMOperatorsInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATICGMHybAssemble','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMHybAssemble','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATICGMHybAssemble','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMHybAssemble','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GMOperatorsInterfaces Interface CATICGMHybAssemble</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATICGMHybAssemble_40674','CATICGMHybAssemble','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATICGMHybAssemble</b>
+</p>
+<p>
+<b><i> Class defining the operator that assembles two bodies.</i></b><br>
+
+<br>
+ This operator operates on the 2D (CATShell), 1D (CATWire) and 0D (CATVertexInVolume)
+ domains of a CATBody.
+ It follows the general frame of all operator and satisfies to the smart mechanism: the
+ input bodies are not modified. A new resulting body is created, 
+ possibly sharing data with the input bodies.
+<ul>
+ <li>CATICGMHybAssemble is created with the CATCGMCreateTopAssemble global function. 
+ It must be
+ directly released with the <tt>Release</tt> method after use.
+ It is not streamable. 
+<li>The result is accessed with the <tt>GetResult</tt> method. If you do not want 
+ to keep the resulting body, use the <a href="#" onClick="openLink('CATICGMContainer','Remove');return false">CATICGMContainer.Remove</a> method to remove it from the  geometric factory.
+</ul>
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATCGMCreateTopAssemble','');return false">CATCGMCreateTopAssemble</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetSuppressBody()"><b>GetSuppressBody</b></a>()
+<dd>  Retrieves the suppressed cells in a body.
+ <dt> o 
+    <a href="#GetSuppressMode()"><b>GetSuppressMode</b></a>()
+<dd>  Returns the suppress mode.
+ <dt> o 
+    <a href="#Run()"><b>Run</b></a>()
+<dd>  <dt> o 
+    <a href="#SetCellsToMerge(CATLISTP(CATCell)&amp;)"><b>SetCellsToMerge</b></a>(CATLISTP(CATCell)&amp;)
+<dd>  Specifies a list of cells to be merged in a local join.
+ <dt> o 
+    <a href="#SetSuppressMode(int)"><b>SetSuppressMode</b></a>(int)
+<dd>  Activates suppress mode : in the case of invalid cells, 
+ operator does a second pass after having removed them.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetSuppressBody"></a><a name="GetSuppressBody()"></a> <dt> o <b>GetSuppressBody</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBody','CATBody *')</script>  <b>GetSuppressBody</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the suppressed cells in a body.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The suppressed body: the body contains all suppressed cells.
+</dl>
+</dl>
+<a name="GetSuppressMode"></a><a name="GetSuppressMode()"></a> <dt> o <b>GetSuppressMode</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetSuppressMode</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the suppress mode.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   <br><b>Legal values</b>:
+ <dl><dt><tt>0</tt><dd> suppress mode not active.
+     <dt><tt>1</tt><dd> suppress mode is active.</dl>
+</dl>
+</dl>
+<a name="Run"></a><a name="Run()"></a> <dt> o <b>Run</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>Run</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="SetCellsToMerge"></a><a name="SetCellsToMerge(CATLISTP(CATCell)&amp;)"></a> <dt> o <b>SetCellsToMerge</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetCellsToMerge</b>(<td> const <script type="text/javascript"> activateLink('CATLISTP(CATCell)','CATLISTP(CATCell)&amp;')</script> <td><tt>iListOfCells</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Specifies a list of cells to be merged in a local join.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCellsToMerge</tt>
+   <dd> The cells to be merged.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetSuppressMode"></a><a name="SetSuppressMode(int)"></a> <dt> o <b>SetSuppressMode</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetSuppressMode</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>yes_or_no</tt><td><tt>= 1</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Activates suppress mode : in the case of invalid cells, 
+ operator does a second pass after having removed them.
+ Invalid cells may be retrieved with method GetSupressBody.
+ <br> This option is not activated by default.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> yes_or_no</tt>
+   <dd> <br><b>Legal values</b>:
+ <dl><dt><tt>0</tt><dd> No assemble with invalid cells.
+     <dt><tt>1</tt><dd> Force assemble with invalid cells.</dl></dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATICGMHybAssemble.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGMOperatorsInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

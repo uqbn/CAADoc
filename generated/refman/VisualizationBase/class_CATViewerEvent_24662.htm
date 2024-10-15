@@ -1,0 +1,140 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>VisualizationBase Notification CATViewerEvent</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../VisualizationBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATViewerEvent','notification','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATViewerEvent','notification','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATViewerEvent','notification','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATViewerEvent','notification','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>VisualizationBase Notification CATViewerEvent</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATViewerEvent_24662','CATViewerEvent','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATViewerEvent</b>
+</p>
+<p>
+<b><i> Event notifying of something happening to the viewer.</i></b><br>
+
+
+ <b>Role</b>: Notify of anything happening to the viewer. it
+ also contains additionnale information about what was
+ under the mouse when it happened.
+ These notifications are kept inside more precise events that are
+ generated from them like manipulation notifications.</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATViewerEvent(CATDeviceEvent*,CATPickPath*)"><b>CATViewerEvent</b></a>(CATDeviceEvent*,CATPickPath*)
+<dd>  nodoc
+ <dt> o 
+    <a href="#~CATViewerEvent()"><b>~CATViewerEvent</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetPickPath()"><b>GetPickPath</b></a>()
+<dd>  Retrieves the referenced object under the mouse.
+ <dt> o 
+    <a href="#GetPickPathUnder()"><b>GetPickPathUnder</b></a>()
+<dd>  Retrieves the referenced object under the mouse.
+ <dt> o 
+    <a href="#InitPickPathList()"><b>InitPickPathList</b></a>()
+<dd>  Moves the referenced object to the first object under the mouse.
+ <dt> o 
+    <a href="#MoveToNextPickPath()"><b>MoveToNextPickPath</b></a>()
+<dd>  Moves teh referenced object to the next object under the mouse.
+</dl>
+<dl>
+</dl>
+<dl>
+ <h2>Data Member Index</h2> <br>
+ <dt> o 
+    <a href="#Viewer"><b>Viewer</b></a>
+<dd>  Viewer in which the event occured.
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATViewerEvent"></a><a name="CATViewerEvent(CATDeviceEvent*,CATPickPath*)"></a> <dt> o <b>CATViewerEvent</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATViewerEvent</b>(<td><script type="text/javascript"> activateLink('CATDeviceEvent','CATDeviceEvent*')</script> <td><tt>e</tt><td><tt>= NULL</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATPickPath','CATPickPath*')</script> <td><tt>p</tt><td><tt>= NULL</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ nodoc
+</dl>
+<a name="~CATViewerEvent"></a><a name="~CATViewerEvent()"></a> <dt> o <b>~CATViewerEvent</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATViewerEvent</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetPickPath"></a><a name="GetPickPath()"></a> <dt> o <b>GetPickPath</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATPickPath','CATPickPath *')</script>  <b>GetPickPath</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the referenced object under the mouse.   The object is given using a CATPickPath
+
+</dl>
+<a name="GetPickPathUnder"></a><a name="GetPickPathUnder()"></a> <dt> o <b>GetPickPathUnder</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATPickPath','CATPickPath *')</script>  <b>GetPickPathUnder</b>(<td>)<script type="text/javascript"> activateLink('const','const')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the referenced object under the mouse.   The object is given using a CATPickPath
+   This method regenerates the referenced object to take
+   into account any change in the model that may have occured
+   from the time the event was sent.
+
+</dl>
+<a name="InitPickPathList"></a><a name="InitPickPathList()"></a> <dt> o <b>InitPickPathList</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>InitPickPathList</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Moves the referenced object to the first object under the mouse.
+</dl>
+<a name="MoveToNextPickPath"></a><a name="MoveToNextPickPath()"></a> <dt> o <b>MoveToNextPickPath</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('int','int')</script>  <b>MoveToNextPickPath</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Moves teh referenced object to the next object under the mouse.
+</dl>
+ <h2>Data Members</h2> <br>
+<a name="Viewer"></a> <dt> o <b>Viewer</b>
+<pre>
+  public CATViewer *Viewer</dt>
+</pre>
+<dl>
+  <dd>
+ Viewer in which the event occured.
+</dl>
+<hr>
+ This object is included in the file: <b>CATViewerEvent.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATViz</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

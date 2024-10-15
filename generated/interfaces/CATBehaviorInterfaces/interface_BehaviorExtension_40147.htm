@@ -1,0 +1,83 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATBehaviorInterfaces BehaviorExtension (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATBehaviorInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('BehaviorExtension','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('BehaviorExtension','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('BehaviorExtension','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('BehaviorExtension','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>BehaviorExtension<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_BehaviorExtension_40147','BehaviorExtension','0');</script>
+<b><i> Manages the behaviors of a technological object.</i></b><br>
+
+ <b>Role</b>: This interface allows to select and perform the behaviors (tasks) associated to a technological object.
+ A behavior extension is obtained from an object using the method GetItem of CATIABase with in argument the keyword "CATGetBehaviorExtension".
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ <pre>
+ Set RootPart = CATIA.ActiveDocument.Part
+ Set MyExtension = RootPart.GetItem(<font color="red">"CATGetBehaviorExtensions"</font>)
+ Set listBehavior = MyExtension.Behaviors
+ MyExtension.SelectBehavior("MyBehavior") 
+ </pre>
+ </dl><hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#ExtensionClass"><b>ExtensionClass</b></a>
+<dd>  Returns the type of the technological object associated to this behavior extension.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#SelectBehavior"><b>SelectBehavior</b></a>
+<dd>  Selects and executes a behavior of the technological object.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="ExtensionClass"><dt>
+
+<table><tr><td>o Property <b>ExtensionClass</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the type of the technological object associated to this behavior extension.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="SelectBehavior"><dt>
+
+<table><tr><td>o Func <b>SelectBehavior</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>BehaviorName</tt>) As <script type="text/javascript"> activateLink('Behavior','Behavior')</script> </table></dt>
+<dl>
+  <dd>
+ Selects and executes a behavior of the technological object. The wanted behavior is specified by its name.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> BehaviorName</tt>
+   <dd>	 the name of the behavior.</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

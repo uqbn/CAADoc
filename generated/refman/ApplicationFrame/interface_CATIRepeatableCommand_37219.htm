@@ -1,0 +1,73 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ApplicationFrame Interface CATIRepeatableCommand</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ApplicationFrame.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIRepeatableCommand','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIRepeatableCommand','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIRepeatableCommand','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIRepeatableCommand','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ApplicationFrame Interface CATIRepeatableCommand</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIRepeatableCommand_37219','CATIRepeatableCommand','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATIRepeatableCommand</b>
+</p>
+<p>
+<b><i> Interface to override the default behavior for command repeating.</i></b><br>
+
+ <b>Role</b>:
+ This interface class provides a method to override the default behavior for command repeating,
+ when the user double-clicks on the command :
+ For Undefined and Shared commands, each clic launches the command (so a double-clic launches 
+ the command twice);
+ For exclusive commands, the double-clic sets the repeat mode, and the command will loop.
+ For exemple, the following instruction in the RepeatCommand method for a shared command 
+ will make it loop as if it was an exclusive command : 
+ SetBehavior (CATDlgEngRepeat);</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#RepeatCommand()"><b>RepeatCommand</b></a>()
+<dd>  Overrides the default behavior for command repeating.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="RepeatCommand"></a><a name="RepeatCommand()"></a> <dt> o <b>RepeatCommand</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>RepeatCommand</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Overrides the default behavior for command repeating.
+</dl>
+<hr>
+ This object is included in the file: <b>CATIRepeatableCommand.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATApplicationFrame</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,143 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchDropOffView (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchDropOffView','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchDropOffView','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchDropOffView','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchDropOffView','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchDropOffView<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchDropOffView_41550','SchDropOffView','0');</script>
+<b><i>  Manage the drop off views in a schematic viewer.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddDropOffView"><b>AddDropOffView</b></a>
+<dd>  Adds a drafting view to the schematics diagram.
+ <dt>
+    <a href="#ListDropOffViews"><b>ListDropOffViews</b></a>
+<dd>  Lists drafting views in this schematics diagram.
+ <dt>
+    <a href="#RemoveDropOffView"><b>RemoveDropOffView</b></a>
+<dd>  Removes a drafting view from the schematics diagram.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddDropOffView"><dt>
+
+<table><tr><td>o Sub <b>AddDropOffView</b>(<td><script type="text/javascript"> activateLink('DrawingView','DrawingView')</script> <td><tt>iView</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('DrawingView','DrawingView')</script> <td><tt>oView</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iDb2PosXY</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iDb1Scale</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iDb1Angl</tt>)</table></dt>
+<dl>
+  <dd>
+ Adds a drafting view to the schematics diagram.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iView</tt>
+   <dd>   pointer to drafting view to add
+ </dd>
+    <dt><tt> oView</tt>
+   <dd>   pointer to newly added drafting in this document
+ </dd>
+    <dt><tt> iDb2PosXY</tt>
+   <dd>   pointer to XY coordinate for placement, if NULL, the position is the same 
+   as that of the input view.
+ </dd>
+    <dt><tt> iDb1Scale</tt>
+   <dd>   scale of view added, if NULL, scale is assumed to be that of the input view.
+ </dd>
+    <dt><tt> iDb1Angle</tt>
+   <dd>   The view orientation, if NULL, orientation is assumed to be that of the input view.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchDropOffView
+ Dim objArg1 As DrawingView
+ Dim objArg2 As DrawingView
+ Dim dbVar3(2) As CATSafeArrayVariant
+
+
+  ...
+ objThisIntf.<font color="red">AddDropOffView</font>objArg1,objArg2,dbVar3,dbVar3,dbVar3
+ </pre>
+
+</dl>
+</dl>
+<a name="ListDropOffViews"><dt>
+
+<table><tr><td>o Func <b>ListDropOffViews</b>(<td>) As <script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> </table></dt>
+<dl>
+  <dd>
+ Lists drafting views in this schematics diagram.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLDropOffViews</tt>
+   <dd>   A list of drafting views
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchDropOffView
+ Dim objArg1 As SchListOfObjects
+  ...
+ Set objArg1 = objThisIntf.<font color="red">ListDropOffViews</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="RemoveDropOffView"><dt>
+
+<table><tr><td>o Sub <b>RemoveDropOffView</b>(<td><script type="text/javascript"> activateLink('DrawingView','DrawingView')</script> <td><tt>iViewToRemove</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes a drafting view from the schematics diagram.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iViewToRemove</tt>
+   <dd>   pointer to drafting view to remove
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchDropOffView
+ Dim objArg1 As DrawingView
+  ...
+ objThisIntf.<font color="red">RemoveDropOffView</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

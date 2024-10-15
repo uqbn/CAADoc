@@ -1,0 +1,208 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces Interface CATISamAnalysisManager</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISamAnalysisManager','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamAnalysisManager','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISamAnalysisManager','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamAnalysisManager','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisInterfaces Interface CATISamAnalysisManager</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISamAnalysisManager_49185','CATISamAnalysisManager','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISamAnalysisManager</b>
+</p>
+<p>
+<b><i> Interface to manage Analysis Manager behaviour.</i></b><br>
+
+ <b>Role</b>:In the Analysis Document, an <b>Analysis Manager</b> is the data 
+ dedicated to set and manage the 
+ <ul><li><b>Analysis Models</b></li>
+     <li><b>Analysis Cases</b></li> </ul>
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATISamAnalysisModel','');return false">CATISamAnalysisModel</a>, <a href="#" onClick="openLink('CATISamAnalysisCase','');return false">CATISamAnalysisCase</a>, <a href="#" onClick="openLink('CATISamDocumentManager','');return false">CATISamDocumentManager</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetAllAnalysisModels(CATLISTV(CATBaseUnknown_var)&amp;)"><b>GetAllAnalysisModels</b></a>(CATLISTV(CATBaseUnknown_var)&amp;)
+<dd>  Retrieves all the Analysis Models in the context of the Analysis Manager.
+ <dt> o 
+    <a href="#GetAnalysisModelByName(CATUnicodeString&amp;,CATISamAnalysisModel*&amp;)"><b>GetAnalysisModelByName</b></a>(CATUnicodeString&amp;,CATISamAnalysisModel*&amp;)
+<dd>  Retrieves the Analysis Model whose Name is <b>iName</b>.
+ <dt> o 
+    <a href="#GetCurrentModel(CATISpecObject*&amp;)"><b>GetCurrentModel</b></a>(CATISpecObject*&amp;)
+<dd>  Retrieves the current Analysis model.
+ <dt> o 
+    <a href="#GetDocumentManager(CATISamDocumentManager_var&amp;)"><b>GetDocumentManager</b></a>(CATISamDocumentManager_var&amp;)
+<dd>  Retrieves the Document Manager of the current Analysis Manager.
+ <dt> o 
+    <a href="#GetWorkbench(CATString&amp;)"><b>GetWorkbench</b></a>(CATString&amp;)
+<dd>  Retrieves  the most accurate workbench.
+ <dt> o 
+    <a href="#SetCurrentModel(CATISpecObject*)"><b>SetCurrentModel</b></a>(CATISpecObject*)
+<dd>  Sets the current Analysis model.
+ <dt> o 
+    <a href="#SetWorkbench(CATString&amp;)"><b>SetWorkbench</b></a>(CATString&amp;)
+<dd>  Sets the most accurate workbench.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetAllAnalysisModels"></a><a name="GetAllAnalysisModels(CATLISTV(CATBaseUnknown_var)&amp;)"></a> <dt> o <b>GetAllAnalysisModels</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetAllAnalysisModels</b>(<td><script type="text/javascript"> activateLink('CATLISTV(CATBaseUnknown_var)','CATLISTV(CATBaseUnknown_var)&amp;')</script> <td><tt>oAnalysisModels</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves all the Analysis Models in the context of the Analysis Manager.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oCasesList</tt>
+   <dd> collection of cases found.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetAnalysisModelByName"></a><a name="GetAnalysisModelByName(CATUnicodeString&amp;,CATISamAnalysisModel*&amp;)"></a> <dt> o <b>GetAnalysisModelByName</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetAnalysisModelByName</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATISamAnalysisModel','CATISamAnalysisModel*&amp;')</script> <td><tt>opiAnalysisModel</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the Analysis Model whose Name is <b>iName</b>.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iName</tt>
+   <dd> Name of the case we are looking for.
+ </dd>
+    <dt><tt> oAnalysisModel</tt>
+   <dd> [out , CATBaseUnknown#Release] The AnalysisModel retreived</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetCurrentModel"></a><a name="GetCurrentModel(CATISpecObject*&amp;)"></a> <dt> o <b>GetCurrentModel</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetCurrentModel</b>(<td><script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject*&amp;')</script> <td><tt>opiModel</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the current Analysis model.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oModel</tt>
+   <dd> [out , CATBaseUnknown#Release] The current Analysis model.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The call status. 
+ <br><b>Legal values</b>: S_OK, E_FAIL
+</dl>
+</dl>
+<a name="GetDocumentManager"></a><a name="GetDocumentManager(CATISamDocumentManager_var&amp;)"></a> <dt> o <b>GetDocumentManager</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetDocumentManager</b>(<td><script type="text/javascript"> activateLink('CATISamDocumentManager_var','CATISamDocumentManager_var&amp;')</script> <td><tt>ospDocumentManager</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the Document Manager of the current Analysis Manager.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDocumentManager</tt>
+   <dd>  The document Manager</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetWorkbench"></a><a name="GetWorkbench(CATString&amp;)"></a> <dt> o <b>GetWorkbench</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetWorkbench</b>(<td><script type="text/javascript"> activateLink('CATString','CATString&amp;')</script> <td><tt>oWorkbenchName</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves  the most accurate workbench.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oWorkbenchName</tt>
+   <dd></dd>
+</dl>
+</dl>
+</dl>
+<a name="SetCurrentModel"></a><a name="SetCurrentModel(CATISpecObject*)"></a> <dt> o <b>SetCurrentModel</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetCurrentModel</b>(<td> const <script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject*')</script> <td><tt>ipiModel</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the current Analysis model.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iModel</tt>
+   <dd>  The Analysis model to set as current. The CATISpecObject is to be considered as
+ a CATISamAnalysisModel.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The call status. 
+ <br><b>Legal values</b>: S_OK, E_FAIL
+</dl>
+</dl>
+<a name="SetWorkbench"></a><a name="SetWorkbench(CATString&amp;)"></a> <dt> o <b>SetWorkbench</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetWorkbench</b>(<td> const <script type="text/javascript"> activateLink('CATString','CATString&amp;')</script> <td><tt>iWorkbenchName</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the most accurate workbench.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iWorkbenchName</tt>
+   <dd> the identifier of the Workbench</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISamAnalysisManager.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisInterface</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

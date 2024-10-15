@@ -1,0 +1,135 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GeometricObjects Interface CATLinearLaw</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GeometricObjects.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATLinearLaw','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATLinearLaw','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATLinearLaw','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATLinearLaw','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GeometricObjects Interface CATLinearLaw</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATLinearLaw_22835','CATLinearLaw','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATLinearLaw</b>
+</p>
+<p>
+<b><i> Interface representing a linear law.</i></b><br>
+
+<br>A law is a function <tt>L</tt> of one parameter <tt>iT</tt> on a given 1D interval
+ <tt>[iTmin,iTmax]</tt>.  A linear law is line segment between <tt>L(iTmin)=iValueAtTMin</tt>
+ and <tt>L(iTmax)=iValueAtTMax</tt>.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetLawEquation(double&amp;,double&amp;)"><b>GetLawEquation</b></a>(double&amp;,double&amp;)
+<dd>  Retrieves the coefficient of the law equation.
+ <dt> o 
+    <a href="#GetLimitConstraints(double&amp;,double&amp;,double&amp;,double&amp;)"><b>GetLimitConstraints</b></a>(double&amp;,double&amp;,double&amp;,double&amp;)
+<dd>  Retrieves the limits constraints.
+ <dt> o 
+    <a href="#SetLawEquation(double,double)"><b>SetLawEquation</b></a>(double,double)
+<dd>  Modifies the law definition by its the equation coefficients.
+ <dt> o 
+    <a href="#SetLimitConstraints(double,double,double,double)"><b>SetLimitConstraints</b></a>(double,double,double,double)
+<dd>  Modifies the limits constraints.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetLawEquation"></a><a name="GetLawEquation(double&amp;,double&amp;)"></a> <dt> o <b>GetLawEquation</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>GetLawEquation</b>(<td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>ioSlope</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>ioValueAtZero</tt>)<script type="text/javascript"> activateLink('0',' const = 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the coefficient of the law equation.
+ <br><tt>L(iT)= ioSlope*iT + ioValueAtZero</tt>.
+</dl>
+<a name="GetLimitConstraints"></a><a name="GetLimitConstraints(double&amp;,double&amp;,double&amp;,double&amp;)"></a> <dt> o <b>GetLimitConstraints</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>GetLimitConstraints</b>(<td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>ioTMin</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>ioValueAtTMin</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>ioTMax</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>ioValueAtTMax</tt>)<script type="text/javascript"> activateLink('0',' const = 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the limits constraints.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioTMin</tt>
+   <dd> The lower bound of the definition interval.
+ </dd>
+    <dt><tt> ioValueAtTMin</tt>
+   <dd> The law value on the lower bound of the definition interval.
+ </dd>
+    <dt><tt> ioTMax</tt>
+   <dd> The upper bound of the definition interval.
+ </dd>
+    <dt><tt> ioValueAtTMax</tt>
+   <dd> The law value on the upper bound of the definition interval.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetLawEquation"></a><a name="SetLawEquation(double,double)"></a> <dt> o <b>SetLawEquation</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetLawEquation</b>(<td> const <script type="text/javascript"> activateLink('double','double')</script> <td><tt>iNewSlope</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('double','double')</script> <td><tt>iNewValueAtZero</tt>)<script type="text/javascript"> activateLink('0',' = 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the law definition by its the equation coefficients.
+ <br><tt>L(iT)= iNewSlope*iT + iNewValueAtZero</tt>.
+</dl>
+<a name="SetLimitConstraints"></a><a name="SetLimitConstraints(double,double,double,double)"></a> <dt> o <b>SetLimitConstraints</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetLimitConstraints</b>(<td> const <script type="text/javascript"> activateLink('double','double')</script> <td><tt>iNewTMin</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('double','double')</script> <td><tt>iNewValueAtTMin</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('double','double')</script> <td><tt>iNewTMax</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('double','double')</script> <td><tt>iNewValueAtTMax</tt>)<script type="text/javascript"> activateLink('0',' = 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the limits constraints.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iTMin</tt>
+   <dd> The lower bound of the definition interval.
+ </dd>
+    <dt><tt> iValueAtTMin</tt>
+   <dd> The law value on the lower bound of the definition interval.
+ </dd>
+    <dt><tt> iTMax</tt>
+   <dd> The upper bound of the definition interval.
+ </dd>
+    <dt><tt> iValueAtTMax</tt>
+   <dd> The law value on the upper bound of the definition interval.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATLinearLaw.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGeometricObjects</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

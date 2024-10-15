@@ -1,0 +1,95 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ComponentsCatalogsInterfaces Interface CATICatalogLink</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ComponentsCatalogsInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATICatalogLink','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICatalogLink','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATICatalogLink','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICatalogLink','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ComponentsCatalogsInterfaces Interface CATICatalogLink</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATICatalogLink_53592','CATICatalogLink','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATICatalogLink</b>
+</p>
+<p>
+<b><i> Interface to manage link with a catalog description.</i></b><br>
+
+ <b>Role</b>: Interface to manage link with a catalog description in the case of instantiation.<br>
+ A CATICatalogLink object is given as parameter to the <a href="#" onClick="openLink('CATICatalogInstantiation','RunInstantiationCmd');return false">CATICatalogInstantiation.RunInstantiationCmd</a> method.
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetPointedDescription(CATICatalogDescription**)"><b>GetPointedDescription</b></a>(CATICatalogDescription**)
+<dd>    Retrieves the pointed description.
+ <dt> o 
+    <a href="#GetRootPointedCatalog(CATILinkableObject**)"><b>GetRootPointedCatalog</b></a>(CATILinkableObject**)
+<dd>    Retrieves the pointed catalog if the pointed description is in a another container.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetPointedDescription"></a><a name="GetPointedDescription(CATICatalogDescription**)"></a> <dt> o <b>GetPointedDescription</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetPointedDescription</b>(<td><script type="text/javascript"> activateLink('CATICatalogDescription','CATICatalogDescription**')</script> <td><tt>oDescription</tt>)<script type="text/javascript"> activateLink('0',' const = 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+   Retrieves the pointed description.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDescription</tt>
+   <dd> [out, CATBaseUnknown#Release]       the pointed description.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetRootPointedCatalog"></a><a name="GetRootPointedCatalog(CATILinkableObject**)"></a> <dt> o <b>GetRootPointedCatalog</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetRootPointedCatalog</b>(<td><script type="text/javascript"> activateLink('CATILinkableObject','CATILinkableObject**')</script> <td><tt>oLinkObject</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+   Retrieves the pointed catalog if the pointed description is in a another container.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLinkObject</tt>
+   <dd>  [out, CATBaseUnknown#Release]       the pointed catalog.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATICatalogLink.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATCclInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

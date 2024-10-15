@@ -1,0 +1,132 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ManufacturingInterfaces ManufacturingInsert (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../ManufacturingInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('ManufacturingInsert','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ManufacturingInsert','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('ManufacturingInsert','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ManufacturingInsert','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ManufacturingInsert<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_ManufacturingInsert_48493','ManufacturingInsert','0');</script>
+<b><i>   The interface to access a CATIAManufacturingInsert.</i></b><br>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#InsertType"><b>InsertType</b></a>
+<dd>  Return the technological type of a the insert.
+ <dt>
+    <a href="#NumberOfAttributes"><b>NumberOfAttributes</b></a>
+<dd>  Give the Number of attributes of an insert object.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetAttribute"><b>GetAttribute</b></a>
+<dd>  Retrieve by is name the attribute of an insert object.
+ <dt>
+    <a href="#GetAttributeNLSName"><b>GetAttributeNLSName</b></a>
+<dd>  Gives the NLS value of an insert object
+ Example:
+ The following example gives in NLSresult the NLS value of the "MFG_COMMENT" attributes 
+ of the insert CurrentInsert
+ NLSresult = CurrentInsert.
+ <dt>
+    <a href="#GetListOfAttributeUnits"><b>GetListOfAttributeUnits</b></a>
+<dd>  Retrieve the list of attribute units of an insert object.
+ <dt>
+    <a href="#GetListOfAttributes"><b>GetListOfAttributes</b></a>
+<dd>  Retrieve the list of attributes of an insert object.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="InsertType"><dt>
+
+<table><tr><td>o Property <b>InsertType</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Return the technological type of a the insert.
+ Example:
+ The following example return the insert type theType of to the insert CurrentInsert
+ theType=CurrentInsert.InsertType.
+</dl>
+<a name="NumberOfAttributes"><dt>
+
+<table><tr><td>o Property <b>NumberOfAttributes</b>(<td>) As <script type="text/javascript"> activateLink('short','short')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Give the Number of attributes of an insert object.
+ Example:
+ The following example returns the Number of attributes of the insert object CurrentInsert.
+ Number = CurrentInsert.NumberOfAttributes.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetAttribute"><dt>
+
+<table><tr><td>o Func <b>GetAttribute</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iAttribut</tt>) As <script type="text/javascript"> activateLink('Parameter','Parameter')</script> </table></dt>
+<dl>
+  <dd>
+ Retrieve by is name the attribute of an insert object.
+ Each attribute is a CKE object.
+ Example:
+ The following example retreives in MachiningQuality the attribute 
+ MfgMachiningQuality of the insert CurrentInsert
+ <pre>
+ Set MachiningQuality = CurrentInsert.GetAttribute(MfgMachiningQuality).
+</dl>
+<a name="GetAttributeNLSName"><dt>
+
+<table><tr><td>o Func <b>GetAttributeNLSName</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iAttributName</tt>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Gives the NLS value of an insert object
+ Example:
+ The following example gives in NLSresult the NLS value of the "MFG_COMMENT" attributes 
+ of the insert CurrentInsert
+ NLSresult = CurrentInsert.GetAttributeNLSName("MFG_COMMENT").
+</dl>
+<a name="GetListOfAttributeUnits"><dt>
+
+<table><tr><td>o Sub <b>GetListOfAttributeUnits</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oListOfAttributeUnits</tt>)</table></dt>
+<dl>
+  <dd>
+ Retrieve the list of attribute units of an insert object.
+ The number of items in the output array is equal to the number of attributes of the insert.
+ When an attribute has no unit definition, the corresponding unit item in the output array is a blank string.
+ Example:
+ The following example retrieves in TabAttributeUnits the list of attribute units 
+ of the insert object CurrentInsert
+ call CurrentInsert.GetListOfAttributeUnits(TabAttributeUnits).
+</dl>
+<a name="GetListOfAttributes"><dt>
+
+<table><tr><td>o Sub <b>GetListOfAttributes</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oListOfAttributes</tt>)</table></dt>
+<dl>
+  <dd>
+ Retrieve the list of attributes of an insert object.
+ Each attribute is returned as the name of a CKE object.
+ Example:
+ The following example retrieves in TabAttributes the list of attributes
+ of the insert object CurrentInsert
+ call CurrentInsert.GetListOfAttributes(TabAttributes).
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

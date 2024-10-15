@@ -1,0 +1,134 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>StructureInterfaces StrPlates (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../StructureInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('StrPlates','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('StrPlates','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('StrPlates','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('StrPlates','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>StrPlates<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_StrPlates_25478','StrPlates','0');</script>
+<b><i> A collection of the Plate objects contained in a given
+ Product object of a ProductDocument object.</i></b><br>
+
+ A Product object can aggregate one or zero Plates collection.
+ This collection is retrieved using the <a href="#" onClick="openLink('Product','GetTechnologicalObject');return false">Product.GetTechnologicalObject</a> method of the product. 
+ <! @sample>
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ The following example retrieves the plate collection from the
+ <tt>oProduct</tt> Product.
+ <pre>
+ Dim oPlates as AnyObject
+ Set oPlates = oProduct.GetTechnologicalObject("StructurePlates")
+ </pre>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns a plate from its index in the Plates collection.
+ <dt>
+    <a href="#Remove"><b>Remove</b></a>
+<dd>  Removes a plate from the Plates collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('StrPlate','StrPlate')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a plate from its index in the Plates collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index of the plate to retrieve in the collection of plates.
+   This index can either be the rank of the plate in the collection
+   or the name you assign to the plate.
+   As a numerics, this index is the rank of the plate 
+   in the collection.
+   The index of the first plate in the collection is 1, and
+   the index of the last plate is Count.
+   As a string, it is the name you assigned to the plate using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property  
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved plate <! @sample>
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ The following example returns in <tt>ThisPlate</tt> the third plate,
+ and in <tt>ThatPlate</tt> the plate named
+ <tt>EndPlate_1</tt> in the <tt>Assembly_1</tt> plate collection.
+ <pre>
+ Dim ThisPlate As Plate
+ Set ThisPlate = Assembly_1.<font color="red">Item</font>(3)
+ Dim ThatPlate As Plate
+ Set ThatPlate = Assembly.<font color="red">Item</font>("EndPlate_1")
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="Remove"><dt>
+
+<table><tr><td>o Sub <b>Remove</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes a plate from the Plates collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index of the plate to remove.
+   This index can either be the rank of the plate in the collection
+   or the name you assigned to the plate.
+   As a numerics, this index is the rank of the plate 
+   in the collection.
+   The index of the first plate in the collection is 1, and
+   the index of the last plate is Count.
+   As a string, it is the name you assigned to the plate using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property  <! @sample>
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ The following example removes the sixth plate and the plate named
+ <tt>EndPlate_1</tt> from the <tt>Assembly_1</tt> plate collection.
+ <pre>
+ Assembly_1.<font color="red">Remove</font>(6)
+ Assembly_1.<font color="red">Remove</font>("EndPlate_1")
+ </pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

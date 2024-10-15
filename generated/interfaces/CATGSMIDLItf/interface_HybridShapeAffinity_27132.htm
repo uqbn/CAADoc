@@ -1,0 +1,252 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATGSMIDLItf HybridShapeAffinity (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATGSMIDLItf.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('HybridShapeAffinity','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapeAffinity','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('HybridShapeAffinity','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapeAffinity','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>HybridShapeAffinity<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_HybridShapeAffinity_27132','HybridShapeAffinity','0');</script>
+<b><i> Represents the hybrid shape affinity feature object.</i></b><br>
+
+ <b>Role</b>: To access the data of the hybrid shape affinity feature object.
+ This data includes:
+ <ul>
+ <li>The element to transform using the affinity </li>
+ <li>The affinity reference coordinate system origin </li>
+ <li>The affinity reference coordinate system reference plane </li>
+ <li>The affinity reference coordinate system first direction </li>
+ <li>The affinity ratio along the x, y and z directions of the reference coordinate system </li>
+ <li>The element to transform using the affinity </li>
+ </ul>
+ <p>The reference coordinate system is always a direct one.
+ <p>  LICENSING INFORMATION: Creation of volume result requires GSO License
+ <br> if GSO License is not granted , settting of Volume context has not effect 
+ <br> 
+ <p>Use the  CATIAHybridShapeFactory to create a HybridShapeAffinity object.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeFactory','');return false">HybridShapeFactory</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#AxisFirstDirection"><b>AxisFirstDirection</b></a>
+<dd>  Returns or sets the first direction of the reference coordinate system.
+ <dt>
+    <a href="#AxisOrigin"><b>AxisOrigin</b></a>
+<dd>  Returns or sets the origin of the reference coordinate system.
+ <dt>
+    <a href="#AxisPlane"><b>AxisPlane</b></a>
+<dd>  Returns or sets the reference plane of the reference coordinate system.
+ <dt>
+    <a href="#CreationMode"><b>CreationMode</b></a>
+<dd>   Returns or sets the creation mode(creation or modification).
+ <dt>
+    <a href="#ElemToTransform"><b>ElemToTransform</b></a>
+<dd>  Returns or sets the element to transform using the affinity.
+ <dt>
+    <a href="#VolumeResult"><b>VolumeResult</b></a>
+<dd>   Returns or sets the volume result.
+ <dt>
+    <a href="#XRatios"><b>XRatios</b></a>
+<dd>  Returns the affinity ratio along the X Direction of the reference coordinate system.
+ <dt>
+    <a href="#YRatios"><b>YRatios</b></a>
+<dd>  Returns the affinity ratio along the Y Direction of the reference coordinate system.
+ <dt>
+    <a href="#ZRatios"><b>ZRatios</b></a>
+<dd>  Returns the affinity ratio along the Z Direction of the reference coordinate system.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="AxisFirstDirection"><dt>
+
+<table><tr><td>o Property <b>AxisFirstDirection</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the first direction of the reference coordinate system.
+ <br>Sub-element(s) supported (see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+<a href="#" onClick="openLink('RectilinearTriDimFeatEdge','');return false">RectilinearTriDimFeatEdge</a>, 
+<a href="#" onClick="openLink('RectilinearBiDimFeatEdge','');return false">RectilinearBiDimFeatEdge</a> or 
+<a href="#" onClick="openLink('RectilinearMonoDimFeatEdge','');return false">RectilinearMonoDimFeatEdge</a>. <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves in <code>FirstDir</code> the first direction of the reference coordinate system
+ used by the <code>Affinity</code> hybrid shape feature.
+ <pre>
+ Dim FirstDir As Reference 
+ Set FirstDir = Affinity.<font color="red">AxisFirstDirection</font>
+ </pre>
+ </dl>
+</dl>
+<a name="AxisOrigin"><dt>
+
+<table><tr><td>o Property <b>AxisOrigin</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the origin of the reference coordinate system.
+ <br>Sub-element(s) supported (see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+<a href="#" onClick="openLink('Vertex','');return false">Vertex</a>. <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves in <code>Origin</code> the origin of the reference coordinate system
+ used by the <code>Affinity</code> hybrid shape feature.
+ <pre>
+ Dim Origin As Reference 
+ Set Origin = Affinity.<font color="red">AxisOrigin</font>
+ </pre>
+ </dl>
+</dl>
+<a name="AxisPlane"><dt>
+
+<table><tr><td>o Property <b>AxisPlane</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the reference plane of the reference coordinate system.
+ <br>Sub-element(s) supported (see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+<a href="#" onClick="openLink('PlanarFace','');return false">PlanarFace</a>. <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves in <code>RefPlane</code> the reference plane of the reference coordinate system
+ used by the <code>Affinity</code> hybrid shape feature.
+ <pre>
+ Dim RefPlane As Reference 
+ Set RefPlane = Affinity.<font color="red">AxisPlane</font>
+ </pre>
+ </dl>
+</dl>
+<a name="CreationMode"><dt>
+
+<table><tr><td>o Property <b>CreationMode</b>(<td>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+  Returns or sets the creation mode(creation or modification).
+ <br><b>Legal values</b>: <b>True</b> if the result is a creation feature 
+ and <b>False</b> if the result is a modification feature.
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  This example sets that the mode of
+ the <code>hybShpAffinity</code> hybrid shape affinity to creation
+ <pre>
+ hybShpAffinity.<font color="red">CreationMode</font> = True
+ </pre>
+</dl>
+</dl>
+<a name="ElemToTransform"><dt>
+
+<table><tr><td>o Property <b>ElemToTransform</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the element to transform using the affinity.
+ <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves in <code>ElementToTransform</code> the element to transform
+ for the <code>Affinity</code> hybrid shape feature.
+ <pre>
+ Dim ElementToTransform As Reference 
+ Set ElementToTransform = Affinity.<font color="red">ElemToTransform</font>
+ </pre>
+ </dl>
+</dl>
+<a name="VolumeResult"><dt>
+
+<table><tr><td>o Property <b>VolumeResult</b>(<td>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+  Returns or sets the volume result.
+ <br><b>Legal values</b>: <b>True</b> if the result of affinity is required as volume 
+ (option is effective only in case of volumes,requires GSO License) and <b>False</b> if it is needed as surface .
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  This example sets that the result of
+ the <code>hybShpAffinity</code> hybrid shape affinity is volume.
+ <pre>
+ hybShpAffinity.<font color="red">VolumeResult</font> = True
+ </pre>
+</dl>
+</dl>
+<a name="XRatios"><dt>
+
+<table><tr><td>o Property <b>XRatios</b>(<td>) As <script type="text/javascript"> activateLink('RealParam','RealParam')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the affinity ratio along the X Direction of the reference coordinate system.
+ <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves in <code>X</code> the ratio of the affinity along the X Direction
+ of the reference coordinate system
+ used by the <code>Affinity</code> hybrid shape feature.
+ <pre>
+ Dim X As RealParam 
+ Set X = Affinity.<font color="red">XRatios</font>
+ </pre>
+ </dl>
+</dl>
+<a name="YRatios"><dt>
+
+<table><tr><td>o Property <b>YRatios</b>(<td>) As <script type="text/javascript"> activateLink('RealParam','RealParam')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the affinity ratio along the Y Direction of the reference coordinate system.
+ <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves in <code>Y</code> the ratio of the affinity along the Y Direction
+ of the reference coordinate system
+ used by the <code>Affinity</code> hybrid shape feature.
+ <pre>
+ Dim Y As RealParam 
+ Set Y = Affinity.<font color="red">YRatios</font>
+ </pre>
+ </dl>
+</dl>
+<a name="ZRatios"><dt>
+
+<table><tr><td>o Property <b>ZRatios</b>(<td>) As <script type="text/javascript"> activateLink('RealParam','RealParam')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the affinity ratio along the Z Direction of the reference coordinate system.
+ <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves in <code>Z</code> the ratio of the affinity along the Z Direction
+ of the reference coordinate system
+ used by the <code>Affinity</code> hybrid shape feature.
+ <pre>
+ Dim Z As RealParam 
+ Set Z = Affinity.<font color="red">ZRatios</font>
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

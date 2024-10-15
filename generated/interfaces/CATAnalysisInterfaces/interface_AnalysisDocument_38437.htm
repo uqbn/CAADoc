@@ -1,0 +1,71 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces AnalysisDocument (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('AnalysisDocument','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisDocument','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('AnalysisDocument','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisDocument','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>AnalysisDocument<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_AnalysisDocument_38437','AnalysisDocument','0');</script>
+<b><i> Represents the document object for analysis.</i></b><br>
+
+ This objects is used for all CAE applications to defines specifications and managed associated results.<br>
+ The document for analysis data is typed as ".CATAnalysis".<br>  
+ When an analysis document object is created, an analysis manager is also created.<br>
+ This analysis manager is the root object at the top of the 
+ structure of the Analysis document. 
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('Document','');return false">Document</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Analysis"><b>Analysis</b></a>
+<dd>  Returns the root analysis object from the current analysis document.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Analysis"><dt>
+
+<table><tr><td>o Property <b>Analysis</b>(<td>) As <script type="text/javascript"> activateLink('AnalysisManager','AnalysisManager')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the root analysis object from the current analysis document.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>RootAnalysis</tt> the root analysis
+ object of the active document, assumed to be an analysis document:
+ <pre>
+ Dim AnalysisDocument As Document
+ Set AnalysisDocument = CATIA.<font color="red">ActiveDocument</font>
+ Dim RootAnalysis As AnalysisManager
+ Set RootAnalysis = AnalysisDocument.<font color="red">Analysis</font>
+</pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

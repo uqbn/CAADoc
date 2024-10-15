@@ -1,0 +1,80 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>DraftingInterfaces Interface CATIDftDocumentServices</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../DraftingInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIDftDocumentServices','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIDftDocumentServices','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIDftDocumentServices','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIDftDocumentServices','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>DraftingInterfaces Interface CATIDftDocumentServices</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIDftDocumentServices_46000','CATIDftDocumentServices','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIDftDocumentServices</b>
+</p>
+<p>
+<b><i> Interface implemented by the drawing document used to get the drawing feature.</i></b><br>
+
+ <b>Role</b>: This interface give an access to the drawing. It avoids navigating
+ in the document container structure.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetDrawing(IID,void**)"><b>GetDrawing</b></a>(IID,void**)
+<dd>  Gets the drawing feature in a drawing document.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetDrawing"></a><a name="GetDrawing(IID,void**)"></a> <dt> o <b>GetDrawing</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetDrawing</b>(<td> const <script type="text/javascript"> activateLink('IID','IID')</script> <td><tt>iid</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('void','void**')</script> <td><tt>oDrw</tt>)<script type="text/javascript"> activateLink('=0',' =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets the drawing feature in a drawing document.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iid</tt>
+   <dd>   The interface on the drawing.
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIDrawing','');return false">CATIDrawing</a>
+    <dt><tt> oDrw</tt>
+   <dd>   The drawing</dd>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIDftDocumentServices.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATDraftingInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

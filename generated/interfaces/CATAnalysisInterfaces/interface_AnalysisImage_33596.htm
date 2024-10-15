@@ -1,0 +1,360 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces AnalysisImage (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('AnalysisImage','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisImage','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('AnalysisImage','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisImage','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>AnalysisImage<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_AnalysisImage_33596','AnalysisImage','0');</script>
+<b><i> Represents the analysis image object.</i></b><br>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#AnalysisColorMap"><b>AnalysisColorMap</b></a>
+<dd>  Returns the color map object associated with an analysis image.
+ <dt>
+    <a href="#AnalysisImages"><b>AnalysisImages</b></a>
+<dd>  Returns the analysis images collection associated with an analysis image.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#ExportData"><b>ExportData</b></a>
+<dd>  Extracts image results.
+ <dt>
+    <a href="#ExportDataInGlobalAxis"><b>ExportDataInGlobalAxis</b></a>
+<dd>  Extracts image results.
+ <dt>
+    <a href="#ExportDataInManualAxis"><b>ExportDataInManualAxis</b></a>
+<dd>  Extracts image results.
+ <dt>
+    <a href="#ExportDataInUserAxis"><b>ExportDataInUserAxis</b></a>
+<dd>  Extracts image results.
+ <dt>
+    <a href="#ExportDataWithMeshPartId"><b>ExportDataWithMeshPartId</b></a>
+<dd>  Extracts image results and location with mesh part name (as identifier).
+ <dt>
+    <a href="#ResetSelection"><b>ResetSelection</b></a>
+<dd>  Resets all selections in an image.
+ <dt>
+    <a href="#SetActivationStatus"><b>SetActivationStatus</b></a>
+<dd>  Activates oe deactivates an image.
+ <dt>
+    <a href="#SetCurrentOccurrence"><b>SetCurrentOccurrence</b></a>
+<dd>  Sets occurrence number for an image.
+ <dt>
+    <a href="#SetSelection"><b>SetSelection</b></a>
+<dd>  Adds a selection to an image.
+ <dt>
+    <a href="#Update"><b>Update</b></a>
+<dd>  Updates an image.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="AnalysisColorMap"><dt>
+
+<table><tr><td>o Property <b>AnalysisColorMap</b>(<td>) As <script type="text/javascript"> activateLink('AnalysisColorMap','AnalysisColorMap')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the color map object associated with an analysis image.
+</dl>
+<a name="AnalysisImages"><dt>
+
+<table><tr><td>o Property <b>AnalysisImages</b>(<td>) As <script type="text/javascript"> activateLink('AnalysisImages','AnalysisImages')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the analysis images collection associated with an analysis image.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="ExportData"><dt>
+
+<table><tr><td>o Sub <b>ExportData</b>(<td><script type="text/javascript"> activateLink('Folder','Folder')</script> <td><tt>iFolder</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iFileName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iExtensionType</tt>)</table></dt>
+<dl>
+  <dd>
+ Extracts image results.
+ <br>The export is done related to an existing image 
+ and will be stored in a CATIA Folder as a Text file or as an Excel file.
+ <br><b>Limitations</b>:
+ <ul>
+ <li>The allowed output positions are:
+ node, element, center of element, and node of element</li>
+ <li>The allowed values are: integer, real or double</li>
+ <li>The allowed value types are: average or discontinuous iso, symbol, fringe or text</li>
+ </ul>
+ <p>To export data with mesh-part identification use 
+<a href="#" onClick="openLink('','ExportDataWithMeshPartId');return false">ExportDataWithMeshPartId</a> </p> 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFolder</tt>
+   <dd>  The folder to store the file to create </dd>
+    <dt><tt> iFileName</tt>
+   <dd> The name of the file to create </dd>
+    <dt><tt> iExtensionType</tt>
+   <dd>    The extension of the file
+ <br><b>Legal values</b>:
+ <ul>
+ <li>"xls" for a Microsoft Excel workbook</li>
+ <li>"txt" for a text file.</li>
+ </ul></dd>
+</dl>
+</dl>
+</dl>
+<a name="ExportDataInGlobalAxis"><dt>
+
+<table><tr><td>o Sub <b>ExportDataInGlobalAxis</b>(<td><script type="text/javascript"> activateLink('Folder','Folder')</script> <td><tt>iFolder</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iFileName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iExtensionType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATAxisOrientationType','CATAxisOrientationType')</script> <td><tt>iAxisOrientationType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iExportMeshPartID</tt>)</table></dt>
+<dl>
+  <dd>
+ Extracts image results.
+ <br>The export is done related to an existing image 
+ and will be stored in a CATIA Folder as a Text file or as an Excel file.
+ <br><b>Limitations</b>:
+ <ul>
+ <li>The allowed output positions are:
+ node, element, center of element, and node of element</li>
+ <li>The allowed values are: integer, real or double</li>
+ <li>The allowed value types are: average or discontinuous iso, symbol, fringe or text</li>
+ </ul>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFolder</tt>
+   <dd>  The folder to store the file to create </dd>
+    <dt><tt> iFileName</tt>
+   <dd> The name of the file to create </dd>
+    <dt><tt> iExtensionType</tt>
+   <dd>    The extension of the file
+ <br><b>Legal values</b>:
+ <ul>
+ <li>"xls" for a Microsoft Excel workbook</li>
+ <li>"txt" for a text file.</li>
+ </ul>
+ </dd>
+    <dt><tt> iAxisOrientationType</tt>
+   <dd> Coordinate system type of location axis system </dd>
+    <dt><tt> iExportMeshPartID</tt>
+   <dd> Flag for exporting with meshpartid or not</dd>
+</dl>
+</dl>
+</dl>
+<a name="ExportDataInManualAxis"><dt>
+
+<table><tr><td>o Sub <b>ExportDataInManualAxis</b>(<td><script type="text/javascript"> activateLink('Folder','Folder')</script> <td><tt>iFolder</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iFileName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iExtensionType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iOrigin</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iXDirection</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iYDirection</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iZDirection</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATAxisOrientationType','CATAxisOrientationType')</script> <td><tt>iAxisOrientationType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iExportMeshPartID</tt>)</table></dt>
+<dl>
+  <dd>
+ Extracts image results.
+ <br>The export is done related to an existing image 
+ and will be stored in a CATIA Folder as a Text file or as an Excel file.
+ <br><b>Limitations</b>:
+ <ul>
+ <li>The allowed output positions are:
+ node, element, center of element, and node of element</li>
+ <li>The allowed values are: integer, real or double</li>
+ <li>The allowed value types are: average or discontinuous iso, symbol, fringe or text</li>
+ </ul>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFolder</tt>
+   <dd>  The folder to store the file to create </dd>
+    <dt><tt> iFileName</tt>
+   <dd> The name of the file to create </dd>
+    <dt><tt> iExtensionType</tt>
+   <dd>    The extension of the file
+ <br><b>Legal values</b>:
+ <ul>
+ <li>"xls" for a Microsoft Excel workbook</li>
+ <li>"txt" for a text file.</li>
+ </ul>
+ </dd>
+    <dt><tt> iOrigin</tt>
+   <dd> Origin of Location axis system </dd>
+    <dt><tt> iXDirection</tt>
+   <dd> co-ordinates of a point on X- axis of Location axis system </dd>
+    <dt><tt> iYDirection</tt>
+   <dd> co-ordinates of a point on Y- axis of Location axis system </dd>
+    <dt><tt> iZDirection</tt>
+   <dd> co-ordinates of a point on Z- axis of Location axis system </dd>
+    <dt><tt> iAxisOrientationType</tt>
+   <dd> Coordinate system type of location axis system </dd>
+    <dt><tt> iExportMeshPartID</tt>
+   <dd> Flag for exporting with meshpartid or not</dd>
+</dl>
+</dl>
+</dl>
+<a name="ExportDataInUserAxis"><dt>
+
+<table><tr><td>o Sub <b>ExportDataInUserAxis</b>(<td><script type="text/javascript"> activateLink('Folder','Folder')</script> <td><tt>iFolder</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iFileName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iExtensionType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('AxisSystem','AxisSystem')</script> <td><tt>iAxisSystem</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATAxisOrientationType','CATAxisOrientationType')</script> <td><tt>iAxisOrientationType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iExportMeshPartID</tt>)</table></dt>
+<dl>
+  <dd>
+ Extracts image results.
+ <br>The export is done related to an existing image 
+ and will be stored in a CATIA Folder as a Text file or as an Excel file.
+ <br><b>Limitations</b>:
+ <ul>
+ <li>The allowed output positions are:
+ node, element, center of element, and node of element</li>
+ <li>The allowed values are: integer, real or double</li>
+ <li>The allowed value types are: average or discontinuous iso, symbol, fringe or text</li>
+ </ul>
+ <p>To export data with mesh-part identification use 
+<a href="#" onClick="openLink('','ExportDataWithMeshPartId');return false">ExportDataWithMeshPartId</a> </p> 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFolder</tt>
+   <dd>  The folder to store the file to create </dd>
+    <dt><tt> iFileName</tt>
+   <dd> The name of the file to create </dd>
+    <dt><tt> iExtensionType</tt>
+   <dd>    The extension of the file
+ <br><b>Legal values</b>:
+ <ul>
+ <li>"xls" for a Microsoft Excel workbook</li>
+ <li>"txt" for a text file.</li>
+ </ul>
+ </dd>
+    <dt><tt> iAxisSystem</tt>
+   <dd> Reference to the axis system to be used for location transformation. </dd>
+    <dt><tt> iProduct</tt>
+   <dd> Reference to the product, where the above axis system is defined.   </dd>
+    <dt><tt> iAxisOrientationType</tt>
+   <dd> Coordinate system type of location axis system </dd>
+    <dt><tt> iExportMeshPartID</tt>
+   <dd> Flag for exporting with meshpartid or not</dd>
+</dl>
+</dl>
+</dl>
+<a name="ExportDataWithMeshPartId"><dt>
+
+<table><tr><td>o Sub <b>ExportDataWithMeshPartId</b>(<td><script type="text/javascript"> activateLink('Folder','Folder')</script> <td><tt>iFolder</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iFileName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iExtensionType</tt>)</table></dt>
+<dl>
+  <dd>
+ Extracts image results and location with mesh part name (as identifier).
+ <br>The export is done related to an existing image 
+ and will be stored in a CATIA Folder as a Text file or as an Excel file.
+ <br><b>Limitations</b>:
+ <ul>
+ <li>The allowed output positions are:
+ element, center of element, and node of element</li>
+ <li>The allowed values are: integer, real or double</li>
+ <li>The allowed value types are: average or discontinuous iso, symbol, fringe or text</li>
+ </ul>
+ <p>To export data with mesh-part identification use 
+<a href="#" onClick="openLink('','ExportData');return false">ExportData</a> </p> 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFolder</tt>
+   <dd>  The folder to store the file to create </dd>
+    <dt><tt> iFileName</tt>
+   <dd> The name of the file to create </dd>
+    <dt><tt> iExtensionType</tt>
+   <dd>    The extension of the file
+ <br><b>Legal values</b>:
+ <ul>
+ <li>"xls" for a Microsoft Excel workbook</li>
+ <li>"txt" for a text file.</li>
+ </ul></dd>
+</dl>
+</dl>
+</dl>
+<a name="ResetSelection"><dt>
+
+<table><tr><td>o Sub <b>ResetSelection</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Resets all selections in an image.
+ <br>This is done related to an existing image
+</dl>
+<a name="SetActivationStatus"><dt>
+
+<table><tr><td>o Sub <b>SetActivationStatus</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iActivationStatus</tt>)</table></dt>
+<dl>
+  <dd>
+ Activates oe deactivates an image.
+ <br>This is done related to an existing image 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iActivationStatus</tt>
+   <dd>  To activate or not the current image.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetCurrentOccurrence"><dt>
+
+<table><tr><td>o Sub <b>SetCurrentOccurrence</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iOccurrenceNumber</tt>)</table></dt>
+<dl>
+  <dd>
+ Sets occurrence number for an image.
+ <br>This is done related to an existing image
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iOccurrenceNumber</tt>
+   <dd>  The number to select <br><b>Legal value</b>: 1 &le; iOccurrenceNumber &le; nbOccurrence</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetSelection"><dt>
+
+<table><tr><td>o Sub <b>SetSelection</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iReference</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iReplaceMode</tt>)</table></dt>
+<dl>
+  <dd>
+ Adds a selection to an image.
+ <br>This is done related to an existing image 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iReference</tt>
+   <dd>  The selectionGroup to add </dd>
+    <dt><tt> iReplaceMode</tt>
+   <dd> To replace or not the current selections.</dd>
+</dl>
+</dl>
+</dl>
+<a name="Update"><dt>
+
+<table><tr><td>o Sub <b>Update</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Updates an image. 
+ <br>This is done related to an existing image
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,144 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>KnowledgeInterfaces Interface CATICkeType</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../KnowledgeInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATICkeType','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICkeType','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATICkeType','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICkeType','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>KnowledgeInterfaces Interface CATICkeType</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATICkeType_26865','CATICkeType','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATICkeType</b>
+</p>
+<p>
+<b><i>    Interface dedicated to parameters type management.</i></b><br>
+
+ <b>Role</b>: This interface is used to classify parameters from their types.<br>
+ It concerns simple types as StringType, RealType, BooleanType and IntegerType<br>
+ or  dimension types such as AngleType, LengthType, etc... <br>
+     that implement specifically CATICkeMagnitude<br>
+ or  enumtypes<br>
+     that implement specifically CATIEnumere<br>
+ 
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATICkeMagnitude','');return false">CATICkeMagnitude</a>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIEnumere','');return false">CATIEnumere</a>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIParmDictionary','');return false">CATIParmDictionary</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#IsaKindOf(CATICkeType_var&amp;)"><b>IsaKindOf</b></a>(CATICkeType_var&amp;)
+<dd>  Tests if this type is a subtype of the one in argument.
+ <dt> o 
+    <a href="#IsaKindOf(CATUnicodeString&amp;)"><b>IsaKindOf</b></a>(CATUnicodeString&amp;)
+<dd>  Tests if this type is a subtype of the one in argument.
+ <dt> o 
+    <a href="#Name()"><b>Name</b></a>()
+<dd>  Returns the name of the type (internal identifier).
+ <dt> o 
+    <a href="#Show()"><b>Show</b></a>()
+<dd>  Returns a NLS string that represents the type.
+ <dt> o 
+    <a href="#UserName()"><b>UserName</b></a>()
+<dd>  Returns the type NLS name.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="IsaKindOf"></a><a name="IsaKindOf(CATICkeType_var&amp;)"></a> <dt> o <b>IsaKindOf</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCke::Boolean','CATCke::Boolean')</script>  <b>IsaKindOf</b>(<td> const <script type="text/javascript"> activateLink('CATICkeType_var','CATICkeType_var&amp;')</script> <td><tt>iType</tt>)<script type="text/javascript"> activateLink('=0',' const =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Tests if this type is a subtype of the one in argument.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iType</tt>
+   <dd> type compared to <br><b>Legal values</b>:return value can be 
+ <tt>CATCke::True</tt> if this type is a sub-type of the other, or
+ <tt>CATCke::False</tt> if it isn't</dd>
+</dl>
+</dl>
+</dl>
+<a name="IsaKindOf"></a><a name="IsaKindOf(CATUnicodeString&amp;)"></a> <dt> o <b>IsaKindOf</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCke::Boolean','CATCke::Boolean')</script>  <b>IsaKindOf</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iTypeName</tt>)<script type="text/javascript"> activateLink('=0',' const =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Tests if this type is a subtype of the one in argument.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iTypeName</tt>
+   <dd> name of the type compared to <br><b>Legal values</b>:return value can be 
+ <tt>CATCke::True</tt> if this type is a sub-type of the other, or
+ <tt>CATCke::False</tt> if it isn't</dd>
+</dl>
+</dl>
+</dl>
+<a name="Name"></a><a name="Name()"></a> <dt> o <b>Name</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script>  <b>Name</b>(<td>)<script type="text/javascript"> activateLink('=0','const =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the name of the type (internal identifier).
+ This name is the one used to find a type by its name in CATParmDictionary methods.<br>
+</dl>
+<a name="Show"></a><a name="Show()"></a> <dt> o <b>Show</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script>  <b>Show</b>(<td>)<script type="text/javascript"> activateLink('=0','const =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns a NLS string that represents the type.
+ Must be used to show the type to the users.
+</dl>
+<a name="UserName"></a><a name="UserName()"></a> <dt> o <b>UserName</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script>  <b>UserName</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the type NLS name.
+</dl>
+<hr>
+ This object is included in the file: <b>CATICkeType.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>KnowledgeItf</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

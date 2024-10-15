@@ -1,0 +1,154 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Interface CATISchDropOffView</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISchDropOffView','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchDropOffView','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISchDropOffView','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchDropOffView','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Interface CATISchDropOffView</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISchDropOffView_47542','CATISchDropOffView','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISchDropOffView</b>
+</p>
+<p>
+<b><i> Interface to manage drafting views within the schematics environment.</i></b><br>
+
+ <b>Role</b>: Manages drafting views within a schematics diagram.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AddDropOffView(CATIDftView*,CATIDftView**,double*,double*,double*)"><b>AddDropOffView</b></a>(CATIDftView*,CATIDftView**,double*,double*,double*)
+<dd>  Adds a drafting view to the schematics diagram.
+ <dt> o 
+    <a href="#ListDropOffViews(CATIUnknownList**)"><b>ListDropOffViews</b></a>(CATIUnknownList**)
+<dd>  Lists drafting views in this schematics diagram.
+ <dt> o 
+    <a href="#RemoveDropOffView(CATIDftView*)"><b>RemoveDropOffView</b></a>(CATIDftView*)
+<dd>  Removes a drafting view from the schematics diagram.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AddDropOffView"></a><a name="AddDropOffView(CATIDftView*,CATIDftView**,double*,double*,double*)"></a> <dt> o <b>AddDropOffView</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AddDropOffView</b>(<td><script type="text/javascript"> activateLink('CATIDftView','CATIDftView*')</script> <td><tt>iView</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIDftView','CATIDftView**')</script> <td><tt>oView</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double*')</script> <td><tt>iDb2PosXY</tt><td><tt>=NULL</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double*')</script> <td><tt>iDb1Scale</tt><td><tt>= NULL</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double*')</script> <td><tt>iDb1Angle</tt><td><tt>= NULL</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Adds a drafting view to the schematics diagram.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iView</tt>
+   <dd>   pointer to drafting view to add
+ </dd>
+    <dt><tt> oView</tt>
+   <dd>   pointer to newly added drafting in this document
+ </dd>
+    <dt><tt> iDb2PosXY</tt>
+   <dd>   pointer to XY coordinate for placement, if NULL, the position is the same 
+   as that of the input view.
+ </dd>
+    <dt><tt> iDb1Scale</tt>
+   <dd>   scale of view added, if NULL, scale is assumed to be that of the input view.
+ </dd>
+    <dt><tt> iDb1Angle</tt>
+   <dd>   The view orientation, if NULL, orientation is assumed to be that of the input view.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="ListDropOffViews"></a><a name="ListDropOffViews(CATIUnknownList**)"></a> <dt> o <b>ListDropOffViews</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ListDropOffViews</b>(<td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oLDropOffViews</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Lists drafting views in this schematics diagram.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLDropOffViews</tt>
+   <dd>   A list of drafting views
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="RemoveDropOffView"></a><a name="RemoveDropOffView(CATIDftView*)"></a> <dt> o <b>RemoveDropOffView</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RemoveDropOffView</b>(<td><script type="text/javascript"> activateLink('CATIDftView','CATIDftView*')</script> <td><tt>iViewToRemove</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Removes a drafting view from the schematics diagram.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iViewToRemove</tt>
+   <dd>   pointer to drafting view to remove
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISchDropOffView.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

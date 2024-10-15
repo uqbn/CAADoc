@@ -1,0 +1,80 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchWorkbench (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchWorkbench','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchWorkbench','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchWorkbench','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchWorkbench','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchWorkbench<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchWorkbench_39137','SchWorkbench','0');</script>
+<b><i> Represents a workbench on a schematic document.</i></b><br>
+
+ <b>Role</b>:A workbench is a set of commands that can be used to create, modify
+ and edit the objects making up the document.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('Document','');return false">Document</a>
+</dl>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#FindInterface"><b>FindInterface</b></a>
+<dd>  This method returns an interface handle to an object.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="FindInterface"><dt>
+
+<table><tr><td>o Func <b>FindInterface</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iInterfaceName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBaseDispatch','CATBaseDispatch')</script> <td><tt>iObject</tt>) As <script type="text/javascript"> activateLink('CATBaseDispatch','CATBaseDispatch')</script> </table></dt>
+<dl>
+  <dd>
+ This method returns an interface handle to an object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iInterfaceName</tt>
+   <dd>   interface name to search for ("CATIAxxxx")
+ </dd>
+    <dt><tt> iObject</tt>
+   <dd>   The object to search for the required interface.
+ </dd>
+    <dt><tt> oInterfaceFound</tt>
+   <dd>   interface handle found
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  The following example retrieves a <code>CATIAInterfaceNameToFind</code> handle to the
+ <code>CATIAxxxx_iObject</code> in <code>interfaceFound</code> using the Schematics workbench object
+ <code>schWorkbench</code>.
+ <pre>
+ Dim interfaceFound As AnyObject
+ Set interfaceFound = CATIASchWorkbench.<font color="red">FindInterface</font>("InterfaceNameToFind",CATIAProduct_iObject)
+ </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

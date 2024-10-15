@@ -1,0 +1,172 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATStrFunctionalInterfaces SfmSlots (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATStrFunctionalInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SfmSlots','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmSlots','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SfmSlots','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmSlots','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SfmSlots<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SfmSlots_40509','SfmSlots','0');</script>
+<b><i> Interface to create, remove and access existing slot.</i></b><br>
+
+ <b>Role</b>:  Allows creating,removing and accessing slot object.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('SfmSlots','');return false">SfmSlots</a>, <a href="#" onClick="openLink('SfmSuperPlate','');return false">SfmSuperPlate</a>, <a href="#" onClick="openLink('SfmProfile','');return false">SfmProfile</a>, <a href="#" onClick="openLink('SfmConnectionParameters','');return false">SfmConnectionParameters</a>
+</dl>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddSlot"><b>AddSlot</b></a>
+<dd>  Creates a New Slot.
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Gets existing Slot.
+ <dt>
+    <a href="#RemoveSlot"><b>RemoveSlot</b></a>
+<dd>  Removes Existing Slot.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddSlot"><dt>
+
+<table><tr><td>o Func <b>AddSlot</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iPenetratedElement</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iPenetratingObject</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iSlotName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SfmConnectionParameters','SfmConnectionParameters')</script> <td><tt>iListParameters</tt>) As <script type="text/javascript"> activateLink('SfmSlot','SfmSlot')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a New Slot.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPenetratedElement</tt>
+   <dd> [in]     Object on which slot will be created(Plate/Profile).
+ </dd>
+    <dt><tt> iPenetratingObject</tt>
+   <dd> [in]      Object using which slot will be created(Profile).
+ </dd>
+    <dt><tt> iSlotName</tt>
+   <dd> [in]      Slot Name.
+ </dd>
+    <dt><tt> iListParameters</tt>
+   <dd> [in]      List of UDF parameters.
+ </dd>
+    <dt><tt> oSfmSlot</tt>
+   <dd> [out]      Created Slot.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example creates a new Slot on Plate.
+ <pre>
+ Dim PenetratedRef, PenetratingRef As Reference
+ Set PenetratedRef = PartObj.CreateReferenceFromObject(SfmSuperPlateObj)
+ Set PenetratingRef = PartObj.CreateReferenceFromObject(SfmSuperStiffenerObj)
+ Dim SlotFactory As SfmOperationFactory
+ Set SlotFactory = PartObj.GetCustomerFactory("SfmOperationFactory")
+ Dim oListSlotParams As SfmConnectionParameters
+ Dim oListSlotPramNames() As Variant
+ SlotFactory.GetSlotParameters SfmSuperStiffenerObj, "Tee_Slot_thru_Plate", oListSlotParams, oListSlotPramNames
+ Dim SlotsonPlate As SfmSlots
+ Set SlotsonPlate = SfmSuperPlateObj.GetSlotsOnPlate
+ Dim NewSlot As SfmSlot
+ Set NewSlot = SlotsonPlate.<font color="red">AddSlot(PenetratedRef, PenetratedRef, "Tee_Slot_thru_Plate", oListSlotParams, oListSlotPramNames)</font>
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('SfmSlot','SfmSlot')</script> </table></dt>
+<dl>
+  <dd>
+ Gets existing Slot.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd> [in]     Index of the Slot to be retrieved.  
+ </dd>
+    <dt><tt> oSfmSlot</tt>
+   <dd> [out]      The retrieved slot.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example gets existing slot on a Plate.
+ <pre>
+ Dim SlotsonPlate As SfmSlots
+ Set SlotsonPlate = SfmSuperPlateObj.GetSlotsOnPlate
+ Dim CntSlotsOnPlate As Long
+ CntSlotsOnPlate = SlotsonPlate.Count
+ Dim SlotObj As SfmSlot
+ For i = 1 To CntSlotsOnPlate
+ Set SlotObj = SlotsonPlate.<font color="red">Item(i)</font>
+ Next
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="RemoveSlot"><dt>
+
+<table><tr><td>o Sub <b>RemoveSlot</b>(<td><script type="text/javascript"> activateLink('SfmSlot','SfmSlot')</script> <td><tt>iSfmSlot</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes Existing Slot.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSfmSlot</tt>
+   <dd> [in]     Slot to be removed.  
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example removes existing slot on a Plate.
+ <pre>
+ Dim SlotsonPlate As SfmSlots
+ Set SlotsonPlate = SfmSuperPlateObj.GetSlotsOnPlate
+ Dim SlotObj As SfmSlot
+ Set SlotObj = SlotsonPlate.Item(1)
+ SlotsonPlate.<font color="red">RemoveSlot(SlotObj)</font>
+ </pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,210 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>SketcherInterfaces Ellipse2D (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../SketcherInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Ellipse2D','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Ellipse2D','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Ellipse2D','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Ellipse2D','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Ellipse2D<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Ellipse2D_22786','Ellipse2D','0');</script>
+<b><i>    Class defining an ellipse in 2D Space.</i></b><br>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#CenterPoint"><b>CenterPoint</b></a>
+<dd>        Returns the center point of the ellipse.
+ <dt>
+    <a href="#MajorRadius"><b>MajorRadius</b></a>
+<dd>        Returns the radius of the ellipse major axis
+       
+ <dt>
+    <a href="#MinorRadius"><b>MinorRadius</b></a>
+<dd>        Returns the radius of the ellipse minor axis
+       
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetCenter"><b>GetCenter</b></a>
+<dd>        Returns the center of the ellipse in 2D
+       space
+       
+ <dt>
+    <a href="#GetMajorAxis"><b>GetMajorAxis</b></a>
+<dd>        Returns the unit vector of the major axis of the ellipse in 2D
+       space
+       
+ <dt>
+    <a href="#GetMinorAxis"><b>GetMinorAxis</b></a>
+<dd>        Returns the unit vector of the minor axis of the ellipse in 2D
+       space
+       
+ <dt>
+    <a href="#SetData"><b>SetData</b></a>
+<dd>        Modifies the caracteristics of the ellipse
+       
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="CenterPoint"><dt>
+
+<table><tr><td>o Property <b>CenterPoint</b>(<td>) As <script type="text/javascript"> activateLink('Point2D','Point2D')</script> </table></dt>
+<dl>
+  <dd>
+       Returns the center point of the ellipse.
+       
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCenterPoint</tt>
+   <dd>          The center point of the ellipse</dd>
+</dl>
+</dl>
+</dl>
+<a name="MajorRadius"><dt>
+
+<table><tr><td>o Property <b>MajorRadius</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+       Returns the radius of the ellipse major axis
+       
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oMajorRadius</tt>
+   <dd>       The radius of the major axis</dd>
+</dl>
+</dl>
+</dl>
+<a name="MinorRadius"><dt>
+
+<table><tr><td>o Property <b>MinorRadius</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+       Returns the radius of the ellipse minor axis
+       
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oMinorRadius</tt>
+   <dd>       The radius of the minor axis</dd>
+</dl>
+</dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetCenter"><dt>
+
+<table><tr><td>o Sub <b>GetCenter</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oCenter</tt>)</table></dt>
+<dl>
+  <dd>
+       Returns the center of the ellipse in 2D
+       space
+       
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oCenter[0]</tt>
+   <dd>                     The X Coordinate of the center point of the ellipse
+       </dd>
+    <dt><tt> oCenter[1]</tt>
+   <dd>       The Y Coordinate of the center point of the ellipse</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetMajorAxis"><dt>
+
+<table><tr><td>o Sub <b>GetMajorAxis</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oMajorAxis</tt>)</table></dt>
+<dl>
+  <dd>
+       Returns the unit vector of the major axis of the ellipse in 2D
+       space
+       
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oMajorAxis[0]</tt>
+   <dd>       The length of the major axis
+       </dd>
+    <dt><tt> oMajorAxis[1]</tt>
+   <dd>       The length of the major axis</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetMinorAxis"><dt>
+
+<table><tr><td>o Sub <b>GetMinorAxis</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oMajorAxis</tt>)</table></dt>
+<dl>
+  <dd>
+       Returns the unit vector of the minor axis of the ellipse in 2D
+       space
+       
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oMinorAxis[0]</tt>
+   <dd>       The length of the major axis
+       </dd>
+    <dt><tt> oMinorAxis[1]</tt>
+   <dd>       The length of the major axis</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetData"><dt>
+
+<table><tr><td>o Sub <b>SetData</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iCenterX</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iCenterY</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iMajorX</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iMajorY</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iMajorRadius</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iMinorRadius</tt>)</table></dt>
+<dl>
+  <dd>
+       Modifies the caracteristics of the ellipse
+       
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCenterX</tt>
+   <dd>                     The X Coordinate of the ellipse center
+       </dd>
+    <dt><tt> iCenterY</tt>
+   <dd>       The Y Coordinate of the ellipse center
+       </dd>
+    <dt><tt> iMajorX</tt>
+   <dd>       The X coordinate of the Major axis direction
+       </dd>
+    <dt><tt> iMajorY</tt>
+   <dd>       The Y coordinate of the Major axis direction
+       </dd>
+    <dt><tt> iMajorRadius</tt>
+   <dd>       The length of the major axis
+       </dd>
+    <dt><tt> iMinorRadius</tt>
+   <dd>       The length of the minor axis</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

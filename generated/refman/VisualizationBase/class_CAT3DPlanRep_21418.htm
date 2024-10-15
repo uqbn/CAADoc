@@ -1,0 +1,149 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>VisualizationBase Class CAT3DPlanRep</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../VisualizationBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CAT3DPlanRep','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CAT3DPlanRep','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CAT3DPlanRep','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CAT3DPlanRep','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>VisualizationBase Class CAT3DPlanRep</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CAT3DPlanRep_21418','CAT3DPlanRep','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CAT3DPlanRep</b>
+</p>
+<p>
+<b><i> Class to create a graphic representation with a plane.</i></b><br>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CAT3DPlanRep()"><b>CAT3DPlanRep</b></a>()
+<dd>  Default constructor.
+ <dt> o 
+    <a href="#CAT3DPlanRep(CATMathPointf&amp;,CATMathDirectionf&amp;,CATMathDirectionf&amp;,float)"><b>CAT3DPlanRep</b></a>(CATMathPointf&amp;,CATMathDirectionf&amp;,CATMathDirectionf&amp;,float)
+<dd>  Constructs a graphic representation from an origin, two directions,
+ and a lenght expressed in millimeters.
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Get(CATMathPointf&amp;,CATMathDirectionf&amp;,CATMathDirectionf&amp;)"><b>Get</b></a>(CATMathPointf&amp;,CATMathDirectionf&amp;,CATMathDirectionf&amp;)
+<dd>  Retrieves information about the plane.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CAT3DPlanRep"></a><a name="CAT3DPlanRep()"></a> <dt> o <b>CAT3DPlanRep</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CAT3DPlanRep</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Default constructor.
+</dl>
+<a name="CAT3DPlanRep"></a><a name="CAT3DPlanRep(CATMathPointf&amp;,CATMathDirectionf&amp;,CATMathDirectionf&amp;,float)"></a> <dt> o <b>CAT3DPlanRep</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CAT3DPlanRep</b>(<td> const <script type="text/javascript"> activateLink('CATMathPointf','CATMathPointf&amp;')</script> <td><tt>iOrigin</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathDirectionf','CATMathDirectionf&amp;')</script> <td><tt>iDirection1</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathDirectionf','CATMathDirectionf&amp;')</script> <td><tt>iDirection2</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('float','float')</script> <td><tt>iLengthInMM</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a graphic representation from an origin, two directions,
+ and a lenght expressed in millimeters.
+ <pre>
+
+                         -----------------------------      ^
+                        |                             |     |
+                        |          iDirection1        |     |     
+                        |              ^              |     |
+                        |              |              |     |
+                        |              |  iDirection2 |     |
+                        |              x --->         |     | iLenghtInMM
+                        |           iOrigin           |     |
+                        |                             |     |
+                        |                             |     |
+                        |                             |     |
+                        |                             |     |
+                        |                             |     |
+                         -----------------------------      v
+
+                         <--------------------------->
+                                  iLenghtInMM
+       
+
+ </pre>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iOrigin</tt>
+   <dd>   The square center. 
+ </dd>
+    <dt><tt> iDirection1</tt>
+   <dd>   The first direction which
+   is parallel to two of the edges.
+ </dd>
+    <dt><tt> iDirection2</tt>
+   <dd>   The second direction which is parallel
+   to the two other edges.
+ </dd>
+    <dt><tt> iLengthInMM</tt>
+   <dd>   The square length expressed in millimeters.</dd>
+</dl>
+</dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Get"></a><a name="Get(CATMathPointf&amp;,CATMathDirectionf&amp;,CATMathDirectionf&amp;)"></a> <dt> o <b>Get</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>Get</b>(<td><script type="text/javascript"> activateLink('CATMathPointf','CATMathPointf&amp;')</script> <td><tt>ioOrigin</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATMathDirectionf','CATMathDirectionf&amp;')</script> <td><tt>ioDirection1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATMathDirectionf','CATMathDirectionf&amp;')</script> <td><tt>ioDirection2</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves information about the plane.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioOrigin</tt>
+   <dd>   The square center. 
+ </dd>
+    <dt><tt> ioDirection1</tt>
+   <dd>   The first direction which
+   is parallel to two of the edges.
+ </dd>
+    <dt><tt> ioDirection2</tt>
+   <dd>   The second direction which is parallel
+   to the two other edges.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CAT3DPlanRep.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATViz</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

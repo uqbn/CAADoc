@@ -1,0 +1,88 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>DraftingInterfaces DrawingThread (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../DraftingInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('DrawingThread','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('DrawingThread','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('DrawingThread','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('DrawingThread','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>DrawingThread<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_DrawingThread_27607','DrawingThread','0');</script>
+<b><i>   Represents a drawing thread in a drawing view.</i></b><br>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Type"><b>Type</b></a>
+<dd>  Returns or sets a CatThreadType (threaded or taped) on a thread.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#IsLinkedTo"><b>IsLinkedTo</b></a>
+<dd>  Specifies which kind of objects the thread is linked to.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Type"><dt>
+
+<table><tr><td>o Property <b>Type</b>(<td>) As <script type="text/javascript"> activateLink('CatThreadType','CatThreadType')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets a CatThreadType (threaded or taped) on a thread.
+ Be careful, this method is only available on threads which are linked to 2D circle geometry
+ <!-- @sample -->
+ </dl>
+ <dt><b>Example:</b>
+ <dd>
+ The following example sets the type Taped in <tt>MyThread</tt>
+ <pre>
+  If MyThread.IsLinkedTo()=cat2DCircle Then
+     <font color="red">MyThread.Type = catTaped</font>
+   End If
+ </pre>
+ </dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="IsLinkedTo"><dt>
+
+<table><tr><td>o Func <b>IsLinkedTo</b>(<td>) As <script type="text/javascript"> activateLink('CatThreadLinkedTo','CatThreadLinkedTo')</script> </table></dt>
+<dl>
+  <dd>
+ Specifies which kind of objects the thread is linked to.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  oLinkedType   The type of thread link
+ <!-- @sample -->
+ </dl>
+ <dt><b>Example:</b>
+ <dd>
+ The following example retrieves the <font color="red">CatThreadLinkedTo</font> in <tt>MyThread</tt>
+ This view belongs to the drawing view collection of the drawing sheet
+ <pre>
+ ThreadLinkType = MyThread.<font color="red">IsLinkedTo</font>
+ </pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

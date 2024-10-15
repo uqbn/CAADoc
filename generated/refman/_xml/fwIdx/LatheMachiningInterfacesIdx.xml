@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="LatheMachiningInterfaces" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="0" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="CATILatheProgramAddin" initial="C" htmlFileName="interface_CATILatheProgramAddin_53211" fatherClass="CATIWorkbenchAddin" fatherId="31255" DSCharacteristic="interface" id="53211" abstract="Interface to add toolbars in the Lathe Machining Workbench." />
+</fw>

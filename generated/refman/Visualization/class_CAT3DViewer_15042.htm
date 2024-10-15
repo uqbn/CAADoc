@@ -1,0 +1,129 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>Visualization Class CAT3DViewer</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../Visualization.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CAT3DViewer','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CAT3DViewer','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CAT3DViewer','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CAT3DViewer','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Visualization Class CAT3DViewer</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CAT3DViewer_15042','CAT3DViewer','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CAT3DViewer</b>
+</p>
+<p>
+<b><i> Class to display 3D Graphic Representations on the screen.</i></b><br>
+
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CAT3DViewer(CATDialog*,CATString&amp;,CATDlgStyle,int,int,CATViewerStyle)"><b>CAT3DViewer</b></a>(CATDialog*,CATString&amp;,CATDlgStyle,int,int,CATViewerStyle)
+<dd>  Constructs a CAT3DViewer.
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#ClassId()"><b>ClassId</b></a>()
+<dd>    Returns the class identifier for which the given object is an instance.
+ <dt> o 
+    <a href="#GetGlobalBoundingSphere()"><b>GetGlobalBoundingSphere</b></a>()
+<dd>   Gets the CAT3DBoundingSphere of the scene displayed by the CAT3DViewer.
+ <dt> o 
+    <a href="#ReframeOn(CAT3DBoundingSphere&amp;)"><b>ReframeOn</b></a>(CAT3DBoundingSphere&amp;)
+<dd>  Modifies the Main 3D viewpoint so that the specified CAT3DBoundingSphere 
+ takes as much place as possible on the screen.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CAT3DViewer"></a><a name="CAT3DViewer(CATDialog*,CATString&amp;,CATDlgStyle,int,int,CATViewerStyle)"></a> <dt> o <b>CAT3DViewer</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CAT3DViewer</b>(<td><script type="text/javascript"> activateLink('CATDialog','CATDialog*')</script> <td><tt>iFather</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATString','CATString&amp;')</script> <td><tt>iName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATDlgStyle','CATDlgStyle')</script> <td><tt>iStyle</tt><td><tt>=CATDlgFraNoTitle</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iWidth</tt><td><tt>= 800</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iHeight</tt><td><tt>= 500</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATViewerStyle','CATViewerStyle')</script> <td><tt>iViewerStyle</tt><td><tt>=NULL</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a CAT3DViewer.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFather</tt>
+   <dd>   </dd>
+    <dt><tt> iStyle</tt>
+   <dd> </dd>
+    <dt><tt> iWidth</tt>
+   <dd>  Width in pixel </dd>
+    <dt><tt> iHeight</tt>
+   <dd> Height in pixel </dd>
+    <dt><tt> iViewerStyle</tt>
+   <dd> Options of the viewer's behaviour.</dd>
+</dl>
+</dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="ClassId"></a><a name="ClassId()"></a> <dt> o <b>ClassId</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('','const CLSID & __stdcall')</script>  <b>ClassId</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+   Returns the class identifier for which the given object is an instance.
+</dl>
+<a name="GetGlobalBoundingSphere"></a><a name="GetGlobalBoundingSphere()"></a> <dt> o <b>GetGlobalBoundingSphere</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CAT3DBoundingSphere','CAT3DBoundingSphere')</script>  <b>GetGlobalBoundingSphere</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Gets the CAT3DBoundingSphere of the scene displayed by the CAT3DViewer.
+</dl>
+<a name="ReframeOn"></a><a name="ReframeOn(CAT3DBoundingSphere&amp;)"></a> <dt> o <b>ReframeOn</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>ReframeOn</b>(<td> const <script type="text/javascript"> activateLink('CAT3DBoundingSphere','CAT3DBoundingSphere&amp;')</script> <td><tt>iBs3D</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the Main 3D viewpoint so that the specified CAT3DBoundingSphere 
+ takes as much place as possible on the screen.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iBs3D</tt>
+   <dd> The CAT3DBoundingSphere you want to reframe on </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CAT3DBoundingSphere','');return false">CAT3DBoundingSphere</a>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CAT3DViewer.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATVisualization</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

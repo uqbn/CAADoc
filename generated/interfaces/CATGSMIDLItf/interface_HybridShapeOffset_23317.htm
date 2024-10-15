@@ -1,0 +1,142 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATGSMIDLItf HybridShapeOffset (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATGSMIDLItf.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('HybridShapeOffset','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapeOffset','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('HybridShapeOffset','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapeOffset','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>HybridShapeOffset<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_HybridShapeOffset_23317','HybridShapeOffset','0');</script>
+<b><i> Represents the hybrid shape offset feature object.</i></b><br>
+
+ <b>Role</b>: To access the data of the hybrid shape offset feature object.
+ This data includes:
+ <ul>
+ <li> The element to offset </li>
+ <li> The offset direction </li>
+ <li> The offset value </li>
+ </ul>
+ <p>Use the  CATIAHybridShapeFactory to create a HybridShapeOffset object.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeFactory','');return false">HybridShapeFactory</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#OffsetDirection"><b>OffsetDirection</b></a>
+<dd>  Returns or sets whether the offset direction is to be inverted.
+ <dt>
+    <a href="#OffsetValue"><b>OffsetValue</b></a>
+<dd>  Returns or sets the offset value.
+ <dt>
+    <a href="#OffsetedObject"><b>OffsetedObject</b></a>
+<dd>  Returns or sets the face to offset.
+ <dt>
+    <a href="#SuppressMode"><b>SuppressMode</b></a>
+<dd>  Returns or sets suppress mode.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddTrickyFace"><b>AddTrickyFace</b></a>
+<dd>  Adds a tricky face object on the object.
+ <dt>
+    <a href="#GetTrickyFace"><b>GetTrickyFace</b></a>
+<dd>  Returns the invalid face object on the object.
+ <dt>
+    <a href="#RemoveTrickyFace"><b>RemoveTrickyFace</b></a>
+<dd>  Remove the tricky face object on the object.
+ <dt>
+    <a href="#SetOffsetValue"><b>SetOffsetValue</b></a>
+<dd>  Set Offset value with input as double.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="OffsetDirection"><dt>
+
+<table><tr><td>o Property <b>OffsetDirection</b>(<td>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets whether the offset direction is to be inverted.
+ <br><b>True</b> to invert the offset direction.
+</dl>
+<a name="OffsetValue"><dt>
+
+<table><tr><td>o Property <b>OffsetValue</b>(<td>) As <script type="text/javascript"> activateLink('Length','Length')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the offset value.
+</dl>
+<a name="OffsetedObject"><dt>
+
+<table><tr><td>o Property <b>OffsetedObject</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the face to offset. 
+ <br>Sub-element(s) supported (see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+<a href="#" onClick="openLink('Face','');return false">Face</a>.
+</dl>
+<a name="SuppressMode"><dt>
+
+<table><tr><td>o Property <b>SuppressMode</b>(<td>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets suppress mode.
+ <br><b>True</b> to activate suppress mode
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddTrickyFace"><dt>
+
+<table><tr><td>o Sub <b>AddTrickyFace</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iTrickyFace</tt>)</table></dt>
+<dl>
+  <dd>
+ Adds a tricky face object on the object.
+</dl>
+<a name="GetTrickyFace"><dt>
+
+<table><tr><td>o Func <b>GetTrickyFace</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iRank</tt>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the invalid face object on the object. 
+ <br> param :  iRank =position of faces ionvalid for offset
+</dl>
+<a name="RemoveTrickyFace"><dt>
+
+<table><tr><td>o Sub <b>RemoveTrickyFace</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iRank</tt>)</table></dt>
+<dl>
+  <dd>
+ Remove the tricky face object on the object. 
+ <br> param :  iRank =position of the face in the list of TrickyFaces
+</dl>
+<a name="SetOffsetValue"><dt>
+
+<table><tr><td>o Sub <b>SetOffsetValue</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iOffset</tt>)</table></dt>
+<dl>
+  <dd>
+ Set Offset value with input as double. 
+ <br> To be replace in further release by integration in the pragma put_xxx
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

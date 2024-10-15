@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <fw name="CAACompositesItf" htmlProductID="" inDS="1" maskFw="0" isIDLOnly="1" depth="2" footer="
+&lt;/body&gt;
+&lt;hr&gt;&lt;p&gt;&lt;i&gt;
+Copyright &amp;#169; 1999-2011, Dassault Syst&amp;#232;mes. All rights reserved.&lt;/i&gt;&lt;/p&gt;
+&lt;/html&gt;">
+<class name="CompositesMaterial" initial="C" htmlFileName="interface_CompositesMaterial_32217" fatherClass="AnyObject" fatherId="9080" DSCharacteristic="interface" id="32217" abstract="Represents a Composites Material object." />
+<method name="CreateCompositesData" htmlFileName="interface_CompositesMaterial_32217" containerName="CompositesMaterial" containerType="interface" id="55084" status="0" isProperty="0" initial="C" argList="" abstract="Create a default composites properties on the current material." />
+<method name="ExistCompositesData" htmlFileName="interface_CompositesMaterial_32217" containerName="CompositesMaterial" containerType="interface" id="53207" status="0" isProperty="0" initial="E" argList="" abstract="Returns true if a composites properties exists on the current material." />
+<method name="CuredThickness" htmlFileName="interface_CompositesMaterial_32217" containerName="CompositesMaterial" containerType="interface" id="45167" status="96" isProperty="1" initial="C" argList="" abstract="returns or set the cured thicknes defined in Composites tab in mm." />
+<method name="FabricWidth" htmlFileName="interface_CompositesMaterial_32217" containerName="CompositesMaterial" containerType="interface" id="41190" status="96" isProperty="1" initial="F" argList="" abstract="returns or set the fabric width defined in Composites tab in mm." />
+<method name="LimitDeformation" htmlFileName="interface_CompositesMaterial_32217" containerName="CompositesMaterial" containerType="interface" id="48293" status="96" isProperty="1" initial="L" argList="" abstract="returns or set the limit deformation defined in Composites tab in radian." />
+<method name="MassCost" htmlFileName="interface_CompositesMaterial_32217" containerName="CompositesMaterial" containerType="interface" id="38496" status="96" isProperty="1" initial="M" argList="" abstract="returns or set the cost per mess defined in Composites tab in $ per kg." />
+<method name="MaterialType" htmlFileName="interface_CompositesMaterial_32217" containerName="CompositesMaterial" containerType="interface" id="42442" status="96" isProperty="1" initial="M" argList="" abstract="returns or set the material type defined in Composites tab." />
+<method name="MaxDeformation" htmlFileName="interface_CompositesMaterial_32217" containerName="CompositesMaterial" containerType="interface" id="45240" status="96" isProperty="1" initial="M" argList="" abstract="returns or set the maximum deformation defined in Composites tab in radian." />
+<method name="SurfacicWeigth" htmlFileName="interface_CompositesMaterial_32217" containerName="CompositesMaterial" containerType="interface" id="44888" status="96" isProperty="1" initial="S" argList="" abstract="returns or set the surfacic weigth defined in Composites tab in kg per m2." />
+<method name="UncuredThickness" htmlFileName="interface_CompositesMaterial_32217" containerName="CompositesMaterial" containerType="interface" id="48219" status="96" isProperty="1" initial="U" argList="" abstract="returns or set the uncured thicknes defined in Composites tab in mm." />
+</fw>

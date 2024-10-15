@@ -1,0 +1,86 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>InfInterfaces LightSource (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../InfInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('LightSource','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('LightSource','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('LightSource','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('LightSource','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>LightSource<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_LightSource_17621','LightSource','0');</script>
+<b><i> Represents the light source.</i></b><br>
+
+ The light source is the object that stores lighting data used by a
+ viewer to display a scene where a document is presented.
+ Two kinds of light sources are available: an infinite light source
+ and a neon lighting system simulating a set of parallel neon tubes.<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetDirection"><b>GetDirection</b></a>
+<dd>  Returns the lighting direction as an array of 3 variants.
+ <dt>
+    <a href="#PutDirection"><b>PutDirection</b></a>
+<dd>  Defines the lighting direction as an array of 3 variants.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetDirection"><dt>
+
+<table><tr><td>o Sub <b>GetDirection</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oDirection</tt>)</table></dt>
+<dl>
+  <dd>
+ Returns the lighting direction as an array of 3 variants.
+ This value is available with an infinite light source only.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example gets the lighting direction of the <tt>LightSource</tt>
+ light source to the direction with components (5,8,-2).
+ <pre>
+ Dim direction(2)
+ LightSource.<font color="red">GetDirection</font> direction
+ </pre>
+ </dl>
+</dl>
+<a name="PutDirection"><dt>
+
+<table><tr><td>o Sub <b>PutDirection</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oDirection</tt>)</table></dt>
+<dl>
+  <dd>
+ Defines the lighting direction as an array of 3 variants.
+ This value can be set with an infinite light source only.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example defines the lighting direction of the <tt>LightSource</tt>
+ light source to the direction with components (5,8,-2).
+ <pre>
+ LightSource.<font color="red">PutDirection</font> Array(5,8,-2)
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

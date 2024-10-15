@@ -1,0 +1,139 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>DraftingInterfaces Interface CATIDrwBreakElem</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../DraftingInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIDrwBreakElem','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIDrwBreakElem','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIDrwBreakElem','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIDrwBreakElem','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>DraftingInterfaces Interface CATIDrwBreakElem</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIDrwBreakElem_31350','CATIDrwBreakElem','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIDrwBreakElem</b>
+</p>
+<p>
+<b><i> Interface of the breakElem object.</i></b><br>
+
+ <b>Role</b>:  breakElem objects are necessary to defined the profile on which an areafill will be built.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIDrwAnnotationFactory','CreateDrwAreaFill');return false">CATIDrwAnnotationFactory.CreateDrwAreaFill</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetCurve()"><b>GetCurve</b></a>()
+<dd>  Get the shetch element.
+ <dt> o 
+    <a href="#GetParameter1()"><b>GetParameter1</b></a>()
+<dd>  Get the first parameter.
+ <dt> o 
+    <a href="#GetParameter2()"><b>GetParameter2</b></a>()
+<dd>  Get the second parameter.
+ <dt> o 
+    <a href="#SetComment(CATUnicodeString)"><b>SetComment</b></a>(CATUnicodeString)
+<dd>  Set the comment.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetCurve"></a><a name="GetCurve()"></a> <dt> o <b>GetCurve</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATI2DCurve','CATI2DCurve_var')</script>  <b>GetCurve</b>(<td>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get the shetch element.
+		This sketch element is one element of one contour, intersected in the parameters 
+     described before.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd> 		the CATI2DCurve  corresponding to the skecth element referenced.
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIDrwAreaFill','');return false">CATIDrwAreaFill</a>, <a href="#" onClick="openLink('CATI2DCurve','');return false">CATI2DCurve</a>
+</dl>
+</dl>
+<a name="GetParameter1"></a><a name="GetParameter1()"></a> <dt> o <b>GetParameter1</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('double','double')</script>  <b>GetParameter1</b>(<td>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get the first parameter.
+		This parameter is the one of sketch element where there is a relevant intersection 
+     of one contour of the Areafill it defines.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd> 		the double corresponding to the first intersection it has.
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIDrwAreaFill','');return false">CATIDrwAreaFill</a>
+</dl>
+</dl>
+<a name="GetParameter2"></a><a name="GetParameter2()"></a> <dt> o <b>GetParameter2</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('double','double')</script>  <b>GetParameter2</b>(<td>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get the second parameter.
+		This parameter is the one of sketch element where there is a relevant intersection 
+     of one contour of the Areafill it defines.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd> 		the double corresponding to the second intersection it has.
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIDrwAreaFill','');return false">CATIDrwAreaFill</a>
+</dl>
+</dl>
+<a name="SetComment"></a><a name="SetComment(CATUnicodeString)"></a> <dt> o <b>SetComment</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetComment</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script> <td><tt>iComment</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Set the comment.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iComment</tt>
+   <dd>		String to define what you want to identify.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIDrwBreakElem.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATDraftingInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

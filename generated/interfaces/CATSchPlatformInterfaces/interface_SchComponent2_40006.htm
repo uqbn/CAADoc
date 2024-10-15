@@ -1,0 +1,140 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchComponent2 (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchComponent2','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchComponent2','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchComponent2','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchComponent2','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchComponent2<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchComponent2_40006','SchComponent2','0');</script>
+<b><i>  Manage a schematic component.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#PlaceInSpace"><b>PlaceInSpace</b></a>
+<dd>  Place a component in space, unconnected to other objects.
+ <dt>
+    <a href="#PlaceOnObject"><b>PlaceOnObject</b></a>
+<dd>  Place a component connected to another component or insert into a route.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="PlaceInSpace"><dt>
+
+<table><tr><td>o Sub <b>PlaceInSpace</b>(<td><script type="text/javascript"> activateLink('SchGRRComp','SchGRRComp')</script> <td><tt>iGRR</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iDb6Axis</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Document','Document')</script> <td><tt>iDoc</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchComponent','SchComponent')</script> <td><tt>oNewComponent</tt>)</table></dt>
+<dl>
+  <dd>
+ Place a component in space, unconnected to other objects.
+ It will create local reference (from a catalog referenced document)
+ if necessary.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGRR</tt>
+   <dd>   Pointer to the component graphical representation.
+   if NULL the "Primary" graphical representation will be used.
+ </dd>
+    <dt><tt> iDb6Axis[6]</tt>
+   <dd>   X-axis of the local axis of the new instance
+   Y-axis of the local axis of the new instance
+   X-Y coordinates of the orgin of the new instance.
+   This axis defines the orientation and location of the new instance
+   in space.
+ </dd>
+    <dt><tt> iDoc</tt>
+   <dd>   Pointer to a document to create the object in. If NULL, the
+   document associated with the current Editor will be used.
+ </dd>
+    <dt><tt> oNewComponent</tt>
+   <dd>   Interface pointer to the new component instance placed.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchComponent2
+ Dim objArg1 As SchGRRComp
+ Dim dbVar2(6) As CATSafeArrayVariant
+ Dim objArg3 As Document
+ Dim objArg4 As SchComponent
+  ...
+ objThisIntf.<font color="red">PlaceInSpace</font>objArg1,dbVar2,objArg3,objArg4
+ </pre>
+
+</dl>
+</dl>
+<a name="PlaceOnObject"><dt>
+
+<table><tr><td>o Sub <b>PlaceOnObject</b>(<td><script type="text/javascript"> activateLink('SchGRRComp','SchGRRComp')</script> <td><tt>iGRR</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iDb6Axis</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchAppConnectable','SchAppConnectable')</script> <td><tt>iObjectToConnect</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Document','Document')</script> <td><tt>iDoc</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchComponent','SchComponent')</script> <td><tt>oNewComponent</tt>)</table></dt>
+<dl>
+  <dd>
+ Place a component connected to another component or insert into a route. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGRR</tt>
+   <dd>   Pointer to the component graphical representation.
+   if NULL the "Primary" graphical representation will be used.
+ </dd>
+    <dt><tt> iDb6Axis[6]</tt>
+   <dd>   X-axis of the local axis of the new instance
+   Y-axis of the local axis of the new instance
+   X-Y coordinates of the orgin of the new instance.
+   This axis defines the orientation and location of the new instance
+   in space.
+ </dd>
+    <dt><tt> iObjectToConnect</tt>
+   <dd>   Pointer to a component to connect the new instance to or a route object
+   to insert new component into.
+ </dd>
+    <dt><tt> iDoc</tt>
+   <dd>   Pointer to a document to create the object in. If NULL, the
+   document associated with the current Editor will be used.
+ </dd>
+    <dt><tt> oNewComponent</tt>
+   <dd>   Interface pointer to the new component instance placed.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchComponent2
+ Dim objArg1 As SchGRRComp
+ Dim dbVar2(6) As CATSafeArrayVariant
+ Dim objArg3 As SchAppConnectable
+ Dim objArg4 As Document
+ Dim objArg5 As SchComponent
+  ...
+ objThisIntf.<font color="red">PlaceOnObject</font>objArg1,dbVar2,objArg3,objArg4,objArg5
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

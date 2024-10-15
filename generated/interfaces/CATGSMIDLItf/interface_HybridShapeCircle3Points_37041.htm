@@ -1,0 +1,149 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATGSMIDLItf HybridShapeCircle3Points (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATGSMIDLItf.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('HybridShapeCircle3Points','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapeCircle3Points','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('HybridShapeCircle3Points','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapeCircle3Points','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>HybridShapeCircle3Points<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_HybridShapeCircle3Points_37041','HybridShapeCircle3Points','0');</script>
+<b><i> Represents the hybrid shape circle object defined using three points.</i></b><br>
+
+ <b>Role</b>: To access the data of the hybrid shape circle object.
+ <p>This data includes the circle three passing points.
+ <p>Use the CATIAHybridShapeFactory to create a HybridShapeCircle2PointsRad object.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeFactory','');return false">HybridShapeFactory</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Element1"><b>Element1</b></a>
+<dd>  Returns or sets the circle first passing point.
+ <dt>
+    <a href="#Element2"><b>Element2</b></a>
+<dd>  Returns or sets the circle second passing point.
+ <dt>
+    <a href="#Element3"><b>Element3</b></a>
+<dd>  Returns or sets the circle third passing point.
+ <dt>
+    <a href="#Support"><b>Support</b></a>
+<dd>  Returns or sets the circle support surface.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#RemoveSupport"><b>RemoveSupport</b></a>
+<dd>  Removes the support surface.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Element1"><dt>
+
+<table><tr><td>o Property <b>Element1</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the circle first passing point.
+ <br>Sub-element(s) supported (see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+<a href="#" onClick="openLink('Vertex','');return false">Vertex</a>. <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves the first passing point
+ of the <code>HybShpCircle3Pt</code> hybrid shape circle
+ in <code>HybShpCircle3PtFirstPassingPoint</code> point.
+ <pre>
+ Dim HybShpCircle3PtFirstPassingPoint As Reference
+ Set HybShpCircle3PtFirstPassingPoint= HybShpCircle3Pt.<font color="red">Element1</font>
+ </pre>
+ </dl>
+</dl>
+<a name="Element2"><dt>
+
+<table><tr><td>o Property <b>Element2</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the circle second passing point.
+ <br>Sub-element(s) supported (see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+<a href="#" onClick="openLink('Vertex','');return false">Vertex</a>. <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example sets the second passing point
+ of the <code>HybShpCircle3Pt</code> hybrid shape circle
+ as the <code>Point2</code> point.
+ <pre>
+ HybShpCircle3Pt.<font color="red">Element2</font> Point2
+ </pre>
+ </dl>
+</dl>
+<a name="Element3"><dt>
+
+<table><tr><td>o Property <b>Element3</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the circle third passing point.
+ <br>Sub-element(s) supported (see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+<a href="#" onClick="openLink('Vertex','');return false">Vertex</a>. <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves the third passing point
+ of the <code>HybShpCircle3Pt</code> hybrid shape circle
+ in <code>HybShpCircle3PtThirdPassingPoint</code> point.
+ <pre>
+ Dim HybShpCircle3PtThirdPassingPoint As Reference
+ Set HybShpCircle3PtThirdPassingPoint= HybShpCircle3Pt.<font color="red">Element3</font>
+ </pre>
+ </dl>
+</dl>
+<a name="Support"><dt>
+
+<table><tr><td>o Property <b>Support</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the circle support surface.
+ <br>Sub-element(s) supported (see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+<a href="#" onClick="openLink('Face','');return false">Face</a>. <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves in <code>HybShpCircleSupportSurf</code> the support surface
+ of the <code>HybShpCircle</code> hybrid shape circle.
+ <pre>
+ Dim HybShpCircleSupportSurf As Reference 
+ HybShpCircleSupportSurf = HybShpCircle.<font color="red">Support</font>
+ </pre>
+ </dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="RemoveSupport"><dt>
+
+<table><tr><td>o Sub <b>RemoveSupport</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Removes the support surface.
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

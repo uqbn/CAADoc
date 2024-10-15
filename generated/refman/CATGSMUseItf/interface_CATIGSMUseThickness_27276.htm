@@ -1,0 +1,244 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATGSMUseItf Interface CATIGSMUseThickness</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATGSMUseItf.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIGSMUseThickness','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIGSMUseThickness','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIGSMUseThickness','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIGSMUseThickness','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATGSMUseItf Interface CATIGSMUseThickness</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIGSMUseThickness_27276','CATIGSMUseThickness','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIGSMUseThickness</b>
+</p>
+<p>
+<b><i> Interface of the thickness on a surface.</i></b><br>
+
+ <b>Role</b>: Allows you to get and set the thickness of a surface: a surface,
+ an orientation, a thickness1 value and a thickness2 value.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetCkeThickness1Value(CATICkeParm_var&amp;)"><b>GetCkeThickness1Value</b></a>(CATICkeParm_var&amp;)
+<dd>  Gets the first thickness value.
+ <dt> o 
+    <a href="#GetCkeThickness2Value(CATICkeParm_var&amp;)"><b>GetCkeThickness2Value</b></a>(CATICkeParm_var&amp;)
+<dd>  Gets the second thickness value.
+ <dt> o 
+    <a href="#GetOrientation(CATGSMOrientation&amp;)"><b>GetOrientation</b></a>(CATGSMOrientation&amp;)
+<dd>  Gets the orientation of the thickness.
+ <dt> o 
+    <a href="#GetThickness1Value(double&amp;)"><b>GetThickness1Value</b></a>(double&amp;)
+<dd>  Gets the first thickness value.
+ <dt> o 
+    <a href="#GetThickness2Value(double&amp;)"><b>GetThickness2Value</b></a>(double&amp;)
+<dd>  Gets the second thickness value.
+ <dt> o 
+    <a href="#InvertOrientation()"><b>InvertOrientation</b></a>()
+<dd>  Inverts the orientation.
+ <dt> o 
+    <a href="#SetOrientation(CATGSMOrientation)"><b>SetOrientation</b></a>(CATGSMOrientation)
+<dd>  Sets the orientation of the thickness.
+ <dt> o 
+    <a href="#SetThickness1Value(double)"><b>SetThickness1Value</b></a>(double)
+<dd>  Sets the first thickness value in MKS (meters).
+ <dt> o 
+    <a href="#SetThickness1Value(CATICkeParm_var)"><b>SetThickness1Value</b></a>(CATICkeParm_var)
+<dd>  Sets the first thickness value.
+ <dt> o 
+    <a href="#SetThickness2Value(double)"><b>SetThickness2Value</b></a>(double)
+<dd>  Sets the second thickness value in MKS (meters).
+ <dt> o 
+    <a href="#SetThickness2Value(CATICkeParm_var)"><b>SetThickness2Value</b></a>(CATICkeParm_var)
+<dd>  Sets the second thickness value.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetCkeThickness1Value"></a><a name="GetCkeThickness1Value(CATICkeParm_var&amp;)"></a> <dt> o <b>GetCkeThickness1Value</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetCkeThickness1Value</b>(<td><script type="text/javascript"> activateLink('CATICkeParm_var','CATICkeParm_var&amp;')</script> <td><tt>oThickness1Value</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets the first thickness value.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oThickness1Value</tt>
+   <dd>      Thickness1 value</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetCkeThickness2Value"></a><a name="GetCkeThickness2Value(CATICkeParm_var&amp;)"></a> <dt> o <b>GetCkeThickness2Value</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetCkeThickness2Value</b>(<td><script type="text/javascript"> activateLink('CATICkeParm_var','CATICkeParm_var&amp;')</script> <td><tt>oThickness2Value</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets the second thickness value.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oThickness2Value</tt>
+   <dd>      Thickness2 value</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetOrientation"></a><a name="GetOrientation(CATGSMOrientation&amp;)"></a> <dt> o <b>GetOrientation</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetOrientation</b>(<td><script type="text/javascript"> activateLink('CATGSMOrientation','CATGSMOrientation&amp;')</script> <td><tt>oOrientation</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets the orientation of the thickness.
+  
+<dl>
+</dl>
+</dl>
+<a name="GetThickness1Value"></a><a name="GetThickness1Value(double&amp;)"></a> <dt> o <b>GetThickness1Value</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetThickness1Value</b>(<td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oThickness1Value</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets the first thickness value.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oThickness1Value</tt>
+   <dd>      Thickness1 value</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetThickness2Value"></a><a name="GetThickness2Value(double&amp;)"></a> <dt> o <b>GetThickness2Value</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetThickness2Value</b>(<td><script type="text/javascript"> activateLink('double','double&amp;')</script> <td><tt>oThickness2Value</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets the second thickness value.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oThickness2Value</tt>
+   <dd>      Thickness2 value</dd>
+</dl>
+</dl>
+</dl>
+<a name="InvertOrientation"></a><a name="InvertOrientation()"></a> <dt> o <b>InvertOrientation</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>InvertOrientation</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Inverts the orientation.
+</dl>
+<a name="SetOrientation"></a><a name="SetOrientation(CATGSMOrientation)"></a> <dt> o <b>SetOrientation</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetOrientation</b>(<td> const <script type="text/javascript"> activateLink('CATGSMOrientation','CATGSMOrientation')</script> <td><tt>iOrientation</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the orientation of the thickness.
+  
+<dl>
+</dl>
+</dl>
+<a name="SetThickness1Value"></a><a name="SetThickness1Value(double)"></a> <dt> o <b>SetThickness1Value</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetThickness1Value</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iThickness1Value</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the first thickness value in MKS (meters).
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iThickness1Value</tt>
+   <dd>      Thickness1 value</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetThickness1Value"></a><a name="SetThickness1Value(CATICkeParm_var)"></a> <dt> o <b>SetThickness1Value</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetThickness1Value</b>(<td> const <script type="text/javascript"> activateLink('CATICkeParm','CATICkeParm_var')</script> <td><tt>iThickness1Value</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the first thickness value.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iThickness1Value</tt>
+   <dd>      Thickness1 value</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetThickness2Value"></a><a name="SetThickness2Value(double)"></a> <dt> o <b>SetThickness2Value</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetThickness2Value</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iThickness2Value</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the second thickness value in MKS (meters).
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iThickness2Value</tt>
+   <dd>      Thickness2 value</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetThickness2Value"></a><a name="SetThickness2Value(CATICkeParm_var)"></a> <dt> o <b>SetThickness2Value</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetThickness2Value</b>(<td> const <script type="text/javascript"> activateLink('CATICkeParm','CATICkeParm_var')</script> <td><tt>iThickness2Value</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the second thickness value.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iThickness2Value</tt>
+   <dd>      Thickness2 value</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIGSMUseThickness.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGSMUseItf</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

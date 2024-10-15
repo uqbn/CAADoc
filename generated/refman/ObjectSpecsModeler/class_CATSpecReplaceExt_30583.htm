@@ -1,0 +1,205 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ObjectSpecsModeler Class CATSpecReplaceExt</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ObjectSpecsModeler.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATSpecReplaceExt','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSpecReplaceExt','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATSpecReplaceExt','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSpecReplaceExt','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ObjectSpecsModeler Class CATSpecReplaceExt</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATSpecReplaceExt_30583','CATSpecReplaceExt','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATSpecReplaceExt</b>
+</p>
+<p>
+<b><i> Base class to give implementation for CATIReplace.</i></b><br>
+
+ <b>usage:</b> Only IsElementValidForReplace method needs to be overloaded.
+ To subscribe to replace, this object also has to implement CATIAttrBehavior.
+
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIReplace','');return false">CATIReplace</a>, <a href="#" onClick="openLink('CATIAttrBehavior','');return false">CATIAttrBehavior</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATSpecReplaceExt()"><b>CATSpecReplaceExt</b></a>()
+<dd>  Constructs a CATSpecReplaceExt.
+ <dt> o 
+    <a href="#~CATSpecReplaceExt()"><b>~CATSpecReplaceExt</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetRequestedBehavior(CATUnicodeString&amp;,CATListPtrIID**,int*)"><b>GetRequestedBehavior</b></a>(CATUnicodeString&amp;,CATListPtrIID**,int*)
+<dd>  Method to describe expected behavior on object valuating an attribute.
+ <dt> o 
+    <a href="#IsElementValidForReplace(CATUnicodeString&amp;,CATBaseUnknown_var&amp;,CATUnicodeString&amp;,int&amp;,CATBaseUnknown_var&amp;)"><b>IsElementValidForReplace</b></a>(CATUnicodeString&amp;,CATBaseUnknown_var&amp;,CATUnicodeString&amp;,int&amp;,CATBaseUnknown_var&amp;)
+<dd>  Determine wether the candidate element is allowed to replace the existing one.
+ <dt> o 
+    <a href="#Replace(CATUnicodeString&amp;,CATBaseUnknown_var&amp;,CATBaseUnknown_var&amp;)"><b>Replace</b></a>(CATUnicodeString&amp;,CATBaseUnknown_var&amp;,CATBaseUnknown_var&amp;)
+<dd>  Valuates a given attribute with an other object.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATSpecReplaceExt"></a><a name="CATSpecReplaceExt()"></a> <dt> o <b>CATSpecReplaceExt</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATSpecReplaceExt</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a CATSpecReplaceExt.
+</dl>
+<a name="~CATSpecReplaceExt"></a><a name="~CATSpecReplaceExt()"></a> <dt> o <b>~CATSpecReplaceExt</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATSpecReplaceExt</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetRequestedBehavior"></a><a name="GetRequestedBehavior(CATUnicodeString&amp;,CATListPtrIID**,int*)"></a> <dt> o <b>GetRequestedBehavior</b>
+
+<dt>  <table><tr><td>  protected virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetRequestedBehavior</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iAttributeName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListPtrIID','CATListPtrIID**')</script> <td><tt>oBehaviorArray</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int*')</script> <td><tt>oBehaviorSize</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Method to describe expected behavior on object valuating an attribute.
+ Returns, for a given attribute, the expected behavior of its valuating objects.
+ <b> Usage: </b> 
+ <pre>Output values must be valuated as follows :
+   oBehaviorArray = new CATListPtrIID[2];
+   oBehaviorArraySize = 2;
+   // Way #1.
+   CATListPtrIID subList (3);
+   subList[1] = &IID_CATIHello;
+   subList[2] = &IID_CATIBonjour;
+   subList[3] = &IID_CATIBuenosDias;
+   oBehaviorArray[0] = subList;
+   // Way #2.
+   oBehaviorArray[1].Append(&IID_CATIAufwiedersehen);
+   oBehaviorArray[1].Append(&IID_CATIArrivederci);
+ </pre>
+ <pre>To sum up: result = [ { CATIHello, CATIBonjour, CATIBuenosDias },
+                       { CATIAufwiedersehen, CATIArrivederci } ]
+ </pre>
+ <p>The result will be translated as 
+ ( CATIHello AND CATIBonjour AND CATIBuenosDias ) OR ( CATIAufwiedersehen AND CATIArrivederci ).</p>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAttrName</tt>
+   <dd>   name of the concerned attribute.
+ </dd>
+    <dt><tt> oBehaviorArray</tt>
+   <dd>   Array of lists of interfaces in the CATListPtrIID[] format.
+   <br>This list is a combination of interfaces that must be implemented by any object valuating the attribute.
+ </dd>
+    <dt><tt> oBehaviorSize</tt>
+   <dd>   The size of the array of lists of interfaces in the CATListPtrIID[] format.</dd>
+</dl>
+</dl>
+</dl>
+<a name="IsElementValidForReplace"></a><a name="IsElementValidForReplace(CATUnicodeString&amp;,CATBaseUnknown_var&amp;,CATUnicodeString&amp;,int&amp;,CATBaseUnknown_var&amp;)"></a> <dt> o <b>IsElementValidForReplace</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>IsElementValidForReplace</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iAttributeName</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>iElement</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oMessage</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>oElementValidity</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>iOldValue</tt><td><tt>=NULL_var</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Determine wether the candidate element is allowed to replace the existing one.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAttributeName</tt>
+   <dd>        name of attribute which value has to be replace.
+ </dd>
+    <dt><tt> iElement</tt>
+   <dd>        candidate element for replace.
+ </dd>
+    <dt><tt> oMessage</tt>
+   <dd>        explains returned HRESULT.
+        <br><b>Legal values</b>: 
+         <br><tt>"No adhesion to CATIAttrBehavior"</tt> if this doesn't implement CATIAttrBehavior.
+         then rc is <tt> E_NOTIMPL </tt>.
+        <br><tt> "Element is invalid "</tt> if element is invalid for replace, 
+         then rc is <tt> E_FAILED </tt>.
+ </dd>
+    <dt><tt> oElementValidity</tt>
+   <dd> <br><b>Legal values </b>: 
+     <tt> 0 if element is not valid </tt>,
+     <br><tt> 1 if element is valid </tt>.
+ </dd>
+    <dt><tt> iOldValue</tt>
+   <dd>        position of the feature to replace if the attribute is a list.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  HRESULT <br><b>Legal values </b>: 
+     <tt>  S_OK   </tt>,
+     <tt>  E_FAIL  </tt>,
+     <tt>  E_NOTIMPL </tt>
+</dl>
+</dl>
+<a name="Replace"></a><a name="Replace(CATUnicodeString&amp;,CATBaseUnknown_var&amp;,CATBaseUnknown_var&amp;)"></a> <dt> o <b>Replace</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>Replace</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iAttributeName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>new_element</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>old_value</tt><td><tt>=NULL_var </tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Valuates a given attribute with an other object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAttributeName</tt>
+   <dd>        name of the attribute which value has to be replace.
+ </dd>
+    <dt><tt> iElement</tt>
+   <dd>        candidate element for replace.
+ </dd>
+    <dt><tt> iOldValue</tt>
+   <dd>        position of the feature to replace if the attribute is a list.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  HRESULT <br><b>Legal values </b>: 
+     <tt>  S_OK   </tt>,
+     <tt>  E_FAIL  </tt>,
+     <tt>  E_NOTIMPL </tt>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATSpecReplaceExt.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATObjectSpecsModeler</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ObjectModelerBase Interface CATIDocRoots</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ObjectModelerBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIDocRoots','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIDocRoots','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIDocRoots','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIDocRoots','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ObjectModelerBase Interface CATIDocRoots</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIDocRoots_24106','CATIDocRoots','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIDocRoots</b>
+</p>
+<p>
+<b><i> Interface allowing access to document's root element.</i></b><br>
+
+ <b> Note: </b> V5 documents should not implement
+ this interface which is only used for import in ProductStructure.
+ <br> To get the root element of a document, use GetRootContainer of CATInit.
+
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATInit','');return false">CATInit</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GiveDocRoots()"><b>GiveDocRoots</b></a>()
+<dd>  Returns the root element.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GiveDocRoots"></a><a name="GiveDocRoots()"></a> <dt> o <b>GiveDocRoots</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATListValCATBaseUnknown','CATListValCATBaseUnknown_var*')</script>  <b>GiveDocRoots</b>(<td>)<script type="text/javascript"> activateLink('=0','=0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the root element.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>       it's suppose to return a list of objects, but nowadays there
+      is only one root in each document and it's the first element returned
+      in the list.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIDocRoots.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATObjectModelerBase</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

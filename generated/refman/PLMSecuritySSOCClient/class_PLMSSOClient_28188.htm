@@ -1,0 +1,169 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PLMSecuritySSOCClient Class PLMSSOClient</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../PLMSecuritySSOCClient.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('PLMSSOClient','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PLMSSOClient','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('PLMSSOClient','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PLMSSOClient','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PLMSecuritySSOCClient Class PLMSSOClient</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_PLMSSOClient_28188','PLMSSOClient','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>PLMSSOClient</b>
+</p>
+<p>
+<b><i> <b>Role</b>:
+ This interface enables a CAA application running within VPM Navigator
+ to retrieve credentials when an SSO Authentication has been already 
+ performed in VPM Navigator.</i></b><br>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#PLMSSOClient()"><b>PLMSSOClient</b></a>()
+<dd>  the default Constructor.
+ <dt> o 
+    <a href="#~PLMSSOClient()"><b>~PLMSSOClient</b></a>()
+<dd>  the destructor.
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetAuthenticatedUsername(CATUnicodeString&amp;)"><b>GetAuthenticatedUsername</b></a>(CATUnicodeString&amp;)
+<dd>  Get the authenticated username.
+ <dt> o 
+    <a href="#GetCredentialSetForApplication(CATUnicodeString,CATUnicodeString,PLMSSOCredentialSet&amp;)"><b>GetCredentialSetForApplication</b></a>(CATUnicodeString,CATUnicodeString,PLMSSOCredentialSet&amp;)
+<dd>  Retrieve all credentials for a given instance of a given application.
+ <dt> o 
+    <a href="#IsAlreadyAuthenticated(CATBoolean&amp;)"><b>IsAlreadyAuthenticated</b></a>(CATBoolean&amp;)
+<dd>  Test if the there have been an SSO authentication already.
+ <dt> o 
+    <a href="#IsSSOActivated(CATBoolean&amp;)"><b>IsSSOActivated</b></a>(CATBoolean&amp;)
+<dd>  Test if the SSO runtime has been turned on.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="PLMSSOClient"></a><a name="PLMSSOClient()"></a> <dt> o <b>PLMSSOClient</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>PLMSSOClient</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ the default Constructor.
+</dl>
+<a name="~PLMSSOClient"></a><a name="~PLMSSOClient()"></a> <dt> o <b>~PLMSSOClient</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>~PLMSSOClient</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ the destructor.
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetAuthenticatedUsername"></a><a name="GetAuthenticatedUsername(CATUnicodeString&amp;)"></a> <dt> o <b>GetAuthenticatedUsername</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetAuthenticatedUsername</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oUserName</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Get the authenticated username.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> 	oUserName:</tt>
+   <dd> the authenticated username.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  	S_OK if successful return E_FAIL otherwise.
+ 
+</dl>
+</dl>
+<a name="GetCredentialSetForApplication"></a><a name="GetCredentialSetForApplication(CATUnicodeString,CATUnicodeString,PLMSSOCredentialSet&amp;)"></a> <dt> o <b>GetCredentialSetForApplication</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetCredentialSetForApplication</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script> <td><tt>iApplicationType</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script> <td><tt>iApplicationInstanceName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('PLMSSOCredentialSet','PLMSSOCredentialSet&amp;')</script> <td><tt>pCredentials</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieve all credentials for a given instance of a given application.
+ for the authenticated user.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iApplicationType</tt>
+   <dd>		The name of the application you want to 
+		retrieve credentials for. this name must me the same as the one 
+		used in the .CredentialSet file in $os/resources/credentials/ folder
+		it is name the of the attribute applicationType of the the 
+		Element Node SSOCredentialSet.
+ </dd>
+    <dt><tt> iApplicationInstanceName</tt>
+   <dd>		The name used for credentialSet instance name in the SSO 
+		Administration Console.
+      if a blank string is passed, the default instance of credentialSet will be 
+		returned for the given iApplicationType for the authenticatedUser.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  	S_OK if successful return E_FAIL otherwise.
+ 
+</dl>
+</dl>
+<a name="IsAlreadyAuthenticated"></a><a name="IsAlreadyAuthenticated(CATBoolean&amp;)"></a> <dt> o <b>IsAlreadyAuthenticated</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>IsAlreadyAuthenticated</b>(<td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean&amp;')</script> <td><tt>oIsAuthenticated</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Test if the there have been an SSO authentication already.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  	TRUE if yes FALSE otherwise.
+ 
+</dl>
+</dl>
+<a name="IsSSOActivated"></a><a name="IsSSOActivated(CATBoolean&amp;)"></a> <dt> o <b>IsSSOActivated</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>IsSSOActivated</b>(<td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean&amp;')</script> <td><tt>oIsActivated</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Test if the SSO runtime has been turned on.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  	TRUE if SSO has been activated else return FALSE.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>PLMSSOClient.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>PLMSSOCAAClient</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

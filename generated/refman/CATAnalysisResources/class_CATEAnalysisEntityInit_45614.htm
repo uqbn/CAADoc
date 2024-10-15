@@ -1,0 +1,204 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisResources Class CATEAnalysisEntityInit</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisResources.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATEAnalysisEntityInit','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEAnalysisEntityInit','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATEAnalysisEntityInit','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEAnalysisEntityInit','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisResources Class CATEAnalysisEntityInit</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATEAnalysisEntityInit_45614','CATEAnalysisEntityInit','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATEAnalysisEntityInit</b>
+</p>
+<p>
+<b><i> Adapter for the implementation of CATISamAnalysisEntityInit interface.</i></b><br>
+
+ It can be used for AnalysisEntity.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATISamAnalysisEntityInit','');return false">CATISamAnalysisEntityInit</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATEAnalysisEntityInit()"><b>CATEAnalysisEntityInit</b></a>()
+<dd>  Default constructor.
+ <dt> o 
+    <a href="#~CATEAnalysisEntityInit()"><b>~CATEAnalysisEntityInit</b></a>()
+<dd>  Destructor.
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AggregateInSet()"><b>AggregateInSet</b></a>()
+<dd>  Informs about the parent of an entity.
+ <dt> o 
+    <a href="#CheckAnalysisSet(CATISamAnalysisSet*)"><b>CheckAnalysisSet</b></a>(CATISamAnalysisSet*)
+<dd>  Checks if an Analysis set if allowed.
+ <dt> o 
+    <a href="#GetAnalysisSetType(CATUnicodeString&amp;)"><b>GetAnalysisSetType</b></a>(CATUnicodeString&amp;)
+<dd>  Returns analysis set allowed as parent.
+ <dt> o 
+    <a href="#InitWhenPositioned()"><b>InitWhenPositioned</b></a>()
+<dd>  Initializes the analysis entity.
+ <dt> o 
+    <a href="#Initialize()"><b>Initialize</b></a>()
+<dd>  Initializes the analysis entity.
+ <dt> o 
+    <a href="#Remove(int)"><b>Remove</b></a>(int)
+<dd>  Removes the object.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATEAnalysisEntityInit"></a><a name="CATEAnalysisEntityInit()"></a> <dt> o <b>CATEAnalysisEntityInit</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATEAnalysisEntityInit</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Default constructor.
+</dl>
+<a name="~CATEAnalysisEntityInit"></a><a name="~CATEAnalysisEntityInit()"></a> <dt> o <b>~CATEAnalysisEntityInit</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATEAnalysisEntityInit</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Destructor.
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AggregateInSet"></a><a name="AggregateInSet()"></a> <dt> o <b>AggregateInSet</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>AggregateInSet</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Informs about the parent of an entity.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <br><b>Legal values</b>:
+ <ul>
+ <li><font color="red">TRUE</font color="red"> The entity is aggregated by the set. </li>
+ <li><font color="red">FALSE</font color="red"> The entity is  aggregated by the Finite Element Model 
+ <font color="red">Default behavior</font color="red">. </li>
+ </ul>
+</dl>
+</dl>
+<a name="CheckAnalysisSet"></a><a name="CheckAnalysisSet(CATISamAnalysisSet*)"></a> <dt> o <b>CheckAnalysisSet</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>CheckAnalysisSet</b>(<td> const <script type="text/javascript"> activateLink('CATISamAnalysisSet','CATISamAnalysisSet*')</script> <td><tt>ipiAnalysisSet</tt>)<script type="text/javascript"> activateLink('',' ')</script>  </table></dt>
+<dl>
+  <dd>
+ Checks if an Analysis set if allowed.<br>
+ Warning : this method will be called on a StartUp and therefor some CATISamExplicit methods will not work.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ipiAnalysisSet</tt>
+   <dd> Interface pointer on a CATISamAnalysisSet. </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <br><b>Legal values</b>:
+ <ul>
+ <li><font color="red">0</font color="red"> the set is not valid. 
+ <li><font color="red">1</font color="red"> the set is  valid. 
+ </ul>
+</dl>
+</dl>
+<a name="GetAnalysisSetType"></a><a name="GetAnalysisSetType(CATUnicodeString&amp;)"></a> <dt> o <b>GetAnalysisSetType</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetAnalysisSetType</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oAllowedSetType</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns analysis set allowed as parent. <br>
+ Warning : this method will be called on a StartUp and therefor some CATISamExplicit methods will not work.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oAllowedSetType</tt>
+   <dd> analysis set type . </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <br><b>Legal values</b>:
+ <ul>
+ <li><font color="red">0</font color="red"> no set found. 
+ <li><font color="red">1</font color="red"> 1 set found. 
+ <li><font color="red">2</font color="red"> too many set found. 
+ </ul>
+</dl>
+</dl>
+<a name="InitWhenPositioned"></a><a name="InitWhenPositioned()"></a> <dt> o <b>InitWhenPositioned</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>InitWhenPositioned</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Initializes the analysis entity.<br>
+ This Method is called after the entity is positioned under a set, an entity or a basic component, this means
+ 
+<a href="#" onClick="openLink('CATISamAnalysisSet','AddAnalysisEntity');return false">CATISamAnalysisSet.AddAnalysisEntity</a>
+</dl>
+<a name="Initialize"></a><a name="Initialize()"></a> <dt> o <b>Initialize</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>Initialize</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Initializes the analysis entity.<br>
+ This Method is systematically called after the entity creation, this means
+ 
+<a href="#" onClick="openLink('CATISamAnalysisModelFactory','CreateAnalysisEntity');return false">CATISamAnalysisModelFactory.CreateAnalysisEntity</a>
+</dl>
+<a name="Remove"></a><a name="Remove(int)"></a> <dt> o <b>Remove</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>Remove</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iForCloseContext</tt>)<script type="text/javascript"> activateLink('',' ')</script>  </table></dt>
+<dl>
+  <dd>
+ Removes the object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iForCloseContext</tt>
+   <dd>      param to specify context of remove. If removes happens while closing a document,
+      some actions don't need to be execute for example.
+ <br> 1 if remove acts while closing a document ...</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATEAnalysisEntityInit.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisResources</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

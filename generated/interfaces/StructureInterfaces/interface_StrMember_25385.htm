@@ -1,0 +1,272 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>StructureInterfaces StrMember (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../StructureInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('StrMember','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('StrMember','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('StrMember','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('StrMember','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>StrMember<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_StrMember_25385','StrMember','0');</script>
+<b><i> Represents a member object.</i></b><br>
+ The member object aggregates a section coming
+ from a catalog, a support and two extremities.
+
+ The member object inherits all methods from the structure object and the 
+ product object.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Angle"><b>Angle</b></a>
+<dd>  Returns or set the orientation of the section on the support object.
+ <dt>
+    <a href="#AngleParameter"><b>AngleParameter</b></a>
+<dd>  Returns the parameter used to define the orientation of the section on the
+ support object.
+ <dt>
+    <a href="#CurrentAnchorPointName"><b>CurrentAnchorPointName</b></a>
+<dd>  Returns or sets the current anchor point used to locate the section on the
+ support object.
+ <dt>
+    <a href="#EndExtremity"><b>EndExtremity</b></a>
+<dd>  Returns the member's end extremity object.
+ <dt>
+    <a href="#InputSupport"><b>InputSupport</b></a>
+<dd>  Retrieves the input support.
+ <dt>
+    <a href="#Section"><b>Section</b></a>
+<dd>  Returns or sets the section object.
+ <dt>
+    <a href="#StartExtremity"><b>StartExtremity</b></a>
+<dd>  Returns the member's start extremity object.
+ <dt>
+    <a href="#Support"><b>Support</b></a>
+<dd>  Retrieves the result support object.
+ <dt>
+    <a href="#SurfaceReference"><b>SurfaceReference</b></a>
+<dd>  Retrieves or sets the surface reference object for the member.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#CreateCutback"><b>CreateCutback</b></a>
+<dd>  Creates a cutback object between two member objects.
+ <dt>
+    <a href="#Flip"><b>Flip</b></a>
+<dd>  Flips the section.
+ <dt>
+    <a href="#Rotate"><b>Rotate</b></a>
+<dd>   Rotates the section on its support object.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Angle"><dt>
+
+<table><tr><td>o Property <b>Angle</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or set the orientation of the section on the support object.
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ angle = Member_1.<font color="red">Angle</font>
+ </pre>
+</dl>
+</dl>
+<a name="AngleParameter"><dt>
+
+<table><tr><td>o Property <b>AngleParameter</b>(<td>) As <script type="text/javascript"> activateLink('Parameter','Parameter')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the parameter used to define the orientation of the section on the
+ support object.
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim angle As Parameter
+ Set angle = Member_1.<font color="red">AngleParameter</font>
+ </pre>
+</dl>
+</dl>
+<a name="CurrentAnchorPointName"><dt>
+
+<table><tr><td>o Property <b>CurrentAnchorPointName</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the current anchor point used to locate the section on the
+ support object.
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ name = Member_1.<font color="red">CurrentAnchorPointName</font>
+ </pre>
+</dl>
+</dl>
+<a name="EndExtremity"><dt>
+
+<table><tr><td>o Property <b>EndExtremity</b>(<td>) As <script type="text/javascript"> activateLink('StrMemberExtremity','StrMemberExtremity')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the member's end extremity object.
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim extremity As StrMemberExtremity
+ Set extremity = Member_1.<font color="red">EndExtremity</font>
+ </pre>
+</dl>
+</dl>
+<a name="InputSupport"><dt>
+
+<table><tr><td>o Property <b>InputSupport</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Retrieves the input support. The input support is the given support at the creation
+ of the member.
+</dl>
+<a name="Section"><dt>
+
+<table><tr><td>o Property <b>Section</b>(<td>) As <script type="text/javascript"> activateLink('StrSection','StrSection')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns or sets the section object.
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim section As StrSection
+ Set section = Member_1.<font color="red">Section</font>
+ </pre>
+</dl>
+</dl>
+<a name="StartExtremity"><dt>
+
+<table><tr><td>o Property <b>StartExtremity</b>(<td>) As <script type="text/javascript"> activateLink('StrMemberExtremity','StrMemberExtremity')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the member's start extremity object.
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim extremity As StrMemberExtremity
+ Set extremity = Member_1.<font color="red">StartExtremity</font>
+ </pre>
+</dl>
+</dl>
+<a name="Support"><dt>
+
+<table><tr><td>o Property <b>Support</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Retrieves the result support object. 
+
+ For example, if your member object is created using two points, the result
+ support object will be the line joining these two points.
+</dl>
+<a name="SurfaceReference"><dt>
+
+<table><tr><td>o Property <b>SurfaceReference</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Retrieves or sets the surface reference object for the member. The 
+ section will be oriented using this surface reference object if one is set.
+ Nevertheless, the surface reference object can be null.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example sets the reference object to null.
+ <pre>
+ myMember.<font color="red">SurfaceReference</font> = Nothing
+ </pre>
+ </dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="CreateCutback"><dt>
+
+<table><tr><td>o Func <b>CreateCutback</b>(<td><script type="text/javascript"> activateLink('StrMember','StrMember')</script> <td><tt>iMember</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CatStrCutbackType','CatStrCutbackType')</script> <td><tt>iCutback</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iOffset</tt>) As <script type="text/javascript"> activateLink('StrCutback','StrCutback')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a cutback object between two member objects.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iMember</tt>
+   <dd>	The relimiting member
+ </dd>
+    <dt><tt> iCutback</tt>
+   <dd>	The type of the cutback.
+ </dd>
+    <dt><tt> iOffset</tt>
+   <dd>	The offset used in the cutback.
+
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  The following example create a cutback 
+ 
+ <pre>
+ Dim cutback As StrCutback
+ Set cutback = Member_1.<font color="red">CreateCutback</font>(Member_2, catStrWeldedType, 0.05)  
+ </pre>
+</dl>
+</dl>
+<a name="Flip"><dt>
+
+<table><tr><td>o Sub <b>Flip</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Flips the section. Useful for asymetric section as the angle section, or the channel
+ section.
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Member_1.<font color="red">Rotate</font>(1,25)
+ </pre>
+</dl>
+</dl>
+<a name="Rotate"><dt>
+
+<table><tr><td>o Sub <b>Rotate</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iAngle</tt>)</table></dt>
+<dl>
+  <dd>
+  Rotates the section on its support object. The given angle is applied using
+ the current orientation of the section.
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim extremity As StrMemberExtremity
+ Set extremity = Member_1.<font color="red">StartExtremity</font>
+ </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

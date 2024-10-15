@@ -1,0 +1,153 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>SpaceAnalysisInterfaces Clashes (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../SpaceAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Clashes','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Clashes','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Clashes','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Clashes','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Clashes<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Clashes_32354','Clashes','0');</script>
+<b><i>   A collection of all Clash objects currently managed by the application.</i></b><br>
+
+ <p>The method <tt>GetTechnologicalObject("Clashes")</tt> on the root product, allows you to retrieve this collection.<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Add"><b>Add</b></a>
+<dd>  Creates a Clash object which takes all products into account
+ and adds it to the Clashes collection.
+ <dt>
+    <a href="#AddFromSel"><b>AddFromSel</b></a>
+<dd>  Creates a Clash object which takes all products in the selection into account
+ and adds it to the Clashes collection.
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns a Clash object using its index or its name from the Clashes collection.
+ <dt>
+    <a href="#Remove"><b>Remove</b></a>
+<dd>  Removes a Clash object from the Clashes collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Add"><dt>
+
+<table><tr><td>o Func <b>Add</b>(<td>) As <script type="text/javascript"> activateLink('Clash','Clash')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a Clash object which takes all products into account
+ and adds it to the Clashes collection.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The created Clash
+ 
+  <dt> <b>Example:</b> 
+  <dd>     This example creates a new Clash in the <tt>TheClashes</tt> collection.
+    <pre>
+    Dim NewClash As Clash
+    Set NewClash = TheClashes.<font color="red">Add</font>
+    </pre>
+</dl>
+</dl>
+<a name="AddFromSel"><dt>
+
+<table><tr><td>o Func <b>AddFromSel</b>(<td>) As <script type="text/javascript"> activateLink('Clash','Clash')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a Clash object which takes all products in the selection into account
+ and adds it to the Clashes collection.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The created Clash
+ 
+  <dt> <b>Example:</b> 
+  <dd>     This example creates a new Clash in the <tt>TheClashes</tt> collection.
+    <pre>
+    Dim NewClash As Clash
+    Set NewClash = TheClashes.<font color="red">AddFromSel</font>
+    </pre>
+</dl>
+</dl>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('Clash','Clash')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a Clash object using its index or its name from the Clashes collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>    The index or the name of the Clash to retrieve from the collection of Clashes.
+    As a numerics, this index is the rank of the Clash in the collection.
+    The index of the first Clash in the collection is 1, and
+    the index of the last Clash is Count.
+    As a string, it is the name you assigned to the Clash.
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>     This example retrieves in <tt>ThisClash</tt> the ninth Clash,
+    and in <tt>ThatClash</tt> the Clash named
+    <tt>Clash Of MyProduct</tt> from the <tt>TheClashes</tt> collection. 
+    <pre>
+    Dim ThisClash As Clash
+    Set ThisClash = TheClashes.<font color="red">Item</font>(9)
+    Dim ThatClash As Clash
+    Set ThatClash = TheClashes.<font color="red">Item</font>("Clash Of MyProduct")
+    </pre>
+</dl>
+</dl>
+<a name="Remove"><dt>
+
+<table><tr><td>o Sub <b>Remove</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes a Clash object from the Clashes collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>    The index or the name of the Clash to remove from the collection of Clashes.
+    As a numerics, this index is the rank of the Clash in the collection.
+    The index of the first Clash in the collection is 1, and
+    the index of the last Clash is Count.
+    As a string, it is the name you assigned to the Clash.
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>     The following example removes the tenth Clash and the Clash named
+    <tt>Clash Of MyProduct</tt> from the <tt>TheClashes</tt> collection.
+    <pre>
+    TheClashes.<font color="red">Remove</font>(10)
+    TheClashes.<font color="red">Remove</font>("Clash Of MyProduct")
+    </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,209 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>DNBHumanModelingInterfaces SWKManikin (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../DNBHumanModelingInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SWKManikin','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SWKManikin','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SWKManikin','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SWKManikin','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SWKManikin<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SWKManikin_41749','SWKManikin','0');</script>
+<b><i>  This interface groups the methods directly related to the definition of
+  a manikin.</i></b><br>
+  <br>Its main purpose is to provide bridges to the other interfaces
+  related to a manikin.
+  <br>
+  Once these interfaces are recovered, it is possible to have access to 
+  their specific functionalities.
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Anthro"><b>Anthro</b></a>
+<dd>  Returns the anthropometry of the current manikin.
+ <dt>
+    <a href="#Body"><b>Body</b></a>
+<dd>  Returns the body of the current manikin.
+ <dt>
+    <a href="#BodyNode"><b>BodyNode</b></a>
+<dd>  Returns the body node of the current manikin.
+ <dt>
+    <a href="#Ergo"><b>Ergo</b></a>
+<dd>  Returns the ergonomic analysis of the current manikin.
+ <dt>
+    <a href="#IKManager"><b>IKManager</b></a>
+<dd>  Returns the inverse kinematics (IK) engine of the current manikin.
+ <dt>
+    <a href="#LineOfSightNode"><b>LineOfSightNode</b></a>
+<dd>  Returns the Line of sight node of the current manikin.
+ <dt>
+    <a href="#Move"><b>Move</b></a>
+<dd>  Returns the manikin's move object.
+ <dt>
+    <a href="#ProfilesNode"><b>ProfilesNode</b></a>
+<dd>  Returns the Profiles node of the current manikin.
+ <dt>
+    <a href="#SettingsNode"><b>SettingsNode</b></a>
+<dd>  Returns the settings node of the current manikin.
+ <dt>
+    <a href="#Vision"><b>Vision</b></a>
+<dd>  Returns the vision of the current manikin.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Anthro"><dt>
+
+<table><tr><td>o Property <b>Anthro</b>(<td>) As <script type="text/javascript"> activateLink('SWKAnthro','SWKAnthro')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the anthropometry of the current manikin.
+ The anthropometry can also be obtained by invoking
+ method GetItem (from <code>AnyObject</code>)
+ with the character string "<font color="green">Anthro</font>"
+ as an argument.
+
+</dl>
+<a name="Body"><dt>
+
+<table><tr><td>o Property <b>Body</b>(<td>) As <script type="text/javascript"> activateLink('SWKBody','SWKBody')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the body of the current manikin.
+ The body can also be obtained by invoking
+ method GetItem (from <code>AnyObject</code>)
+ with the character string "<font color="green">Body</font>"
+ as an argument.
+
+</dl>
+<a name="BodyNode"><dt>
+
+<table><tr><td>o Property <b>BodyNode</b>(<td>) As <script type="text/javascript"> activateLink('SWKSegmentNode','SWKSegmentNode')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the body node of the current manikin.
+ The body node is the node named "Body", as it
+ appears underneath the manikin in the specification
+ tree.  This body node can also be obtained by invoking
+ method GetItem (from <code>AnyObject</code>)
+ with the character string "<font color="green">BodyNode</font>"
+ as an argument.
+
+</dl>
+<a name="Ergo"><dt>
+
+<table><tr><td>o Property <b>Ergo</b>(<td>) As <script type="text/javascript"> activateLink('SWKErgo','SWKErgo')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the ergonomic analysis of the current manikin.
+ The ergo can also be obtained by invoking
+ method GetItem (from <code>AnyObject</code>)
+ with the character string "<font color="green">Ergo</font>"
+ as an argument.
+
+</dl>
+<a name="IKManager"><dt>
+
+<table><tr><td>o Property <b>IKManager</b>(<td>) As <script type="text/javascript"> activateLink('SWKIKManager','SWKIKManager')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the inverse kinematics (IK) engine of the current manikin.
+ The IK manager can also be obtained by invoking
+ method GetItem (from <code>AnyObject</code>)
+ with the character string "<font color="green">IKManager</font>"
+ as an argument.
+
+</dl>
+<a name="LineOfSightNode"><dt>
+
+<table><tr><td>o Property <b>LineOfSightNode</b>(<td>) As <script type="text/javascript"> activateLink('SWKLineOfSightNode','SWKLineOfSightNode')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the Line of sight node of the current manikin.
+ The Line of sight node can also be obtained by invoking
+ method GetItem (from <code>AnyObject</code>)
+ with the character string "<font color="green">LineOfSightNode</font>"
+ as an argument.
+
+</dl>
+<a name="Move"><dt>
+
+<table><tr><td>o Property <b>Move</b>(<td>) As <script type="text/javascript"> activateLink('Move','Move')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the manikin's move object.
+ The move object is aggregated by the manikin object
+ and itself aggregates a movable object
+ to which you can apply a move transformation
+ by means of an isometry matrix. It moves the manikin's
+ representation according to this isometry.
+
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  This example retrieves the move object for the manikin
+ <code>myManikin</code>.
+ <pre>
+ Dim myManikinMoveObject As Move
+ Set myManikinMoveObject = myManikin.<font color="red">Move</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="ProfilesNode"><dt>
+
+<table><tr><td>o Property <b>ProfilesNode</b>(<td>) As <script type="text/javascript"> activateLink('SWKNode','SWKNode')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the Profiles node of the current manikin.
+ The Profiles node can also be obtained by invoking
+ method GetItem (from <code>AnyObject</code>)
+ with the character string "<font color="green">ProfilesNode</font>"
+ as an argument.
+
+</dl>
+<a name="SettingsNode"><dt>
+
+<table><tr><td>o Property <b>SettingsNode</b>(<td>) As <script type="text/javascript"> activateLink('SWKNode','SWKNode')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the settings node of the current manikin.
+ The Settings node can also be obtained by invoking
+ method GetItem (from <code>AnyObject</code>)
+ with the character string "<font color="green">SettingsNode</font>"
+ as an argument.
+
+</dl>
+<a name="Vision"><dt>
+
+<table><tr><td>o Property <b>Vision</b>(<td>) As <script type="text/javascript"> activateLink('SWKVision','SWKVision')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the vision of the current manikin.
+ The vision can also be obtained by invoking
+ method GetItem (from <code>AnyObject</code>)
+ with the character string "<font color="green">Vision</font>"
+ as an argument.
+
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

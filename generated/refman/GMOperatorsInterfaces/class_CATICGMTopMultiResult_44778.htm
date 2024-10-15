@@ -1,0 +1,129 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMOperatorsInterfaces Class CATICGMTopMultiResult</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMOperatorsInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATICGMTopMultiResult','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMTopMultiResult','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATICGMTopMultiResult','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMTopMultiResult','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GMOperatorsInterfaces Class CATICGMTopMultiResult</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATICGMTopMultiResult_44778','CATICGMTopMultiResult','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATICGMTopMultiResult</b>
+</p>
+<p>
+<b><i> Base class for all the operators that output several resulting bodies.</i></b><br>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATICGMTopMultiResult()"><b>CATICGMTopMultiResult</b></a>()
+<dd>  Constructor
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#BeginningResult()"><b>BeginningResult</b></a>()
+<dd>  Initializes the iterator to the resulting bodies created after a run of <tt>this</tt> operator.
+ <dt> o 
+    <a href="#GetNumberOfResults()"><b>GetNumberOfResults</b></a>()
+<dd>  Returns the number of bodies that are created after a run of <tt>this</tt> operator.
+ <dt> o 
+    <a href="#GetResult(CATCGMJournalList*)"><b>GetResult</b></a>(CATCGMJournalList*)
+<dd>  Returns a pointer to the current body.
+ <dt> o 
+    <a href="#NextResult()"><b>NextResult</b></a>()
+<dd>   Skips to the next (and the first in particular) resulting body created after a run of <tt>this</tt> operator.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATICGMTopMultiResult"></a><a name="CATICGMTopMultiResult()"></a> <dt> o <b>CATICGMTopMultiResult</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATICGMTopMultiResult</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructor
+</dl>
+ <h2>Methods</h2> <br>
+<a name="BeginningResult"></a><a name="BeginningResult()"></a> <dt> o <b>BeginningResult</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>BeginningResult</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Initializes the iterator to the resulting bodies created after a run of <tt>this</tt> operator.
+</dl>
+<a name="GetNumberOfResults"></a><a name="GetNumberOfResults()"></a> <dt> o <b>GetNumberOfResults</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATLONG32','CATLONG32')</script>  <b>GetNumberOfResults</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the number of bodies that are created after a run of <tt>this</tt> operator.
+</dl>
+<a name="GetResult"></a><a name="GetResult(CATCGMJournalList*)"></a> <dt> o <b>GetResult</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBody','CATBody *')</script>  <b>GetResult</b>(<td><script type="text/javascript"> activateLink('CATCGMJournalList','CATCGMJournalList*')</script> <td><tt>iJournal</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns a pointer to the current body.
+ <br>To call after the <tt>Next</tt> method.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iJournal</tt>
+   <dd> The associated journal if not <tt>0</tt>.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  A pointer to the current body.
+</dl>
+</dl>
+<a name="NextResult"></a><a name="NextResult()"></a> <dt> o <b>NextResult</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>NextResult</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Skips to the next (and the first in particular) resulting body created after a run of <tt>this</tt> operator.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The existence of the current resulting body.
+ <br><b>Legal values</b>:
+ <dl><dt><tt>TRUE</tt></dt><dd>if there is a next solution body.
+ <dt><tt>FALSE</tt></dt><dd>there is no solution body anymore.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATICGMTopMultiResult.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGMOperatorsInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

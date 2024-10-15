@@ -1,0 +1,166 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces Notification CATSamQuerySelectFocusNotification</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATSamQuerySelectFocusNotification','notification','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSamQuerySelectFocusNotification','notification','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATSamQuerySelectFocusNotification','notification','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSamQuerySelectFocusNotification','notification','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisInterfaces Notification CATSamQuerySelectFocusNotification</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATSamQuerySelectFocusNotification_81546','CATSamQuerySelectFocusNotification','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATSamQuerySelectFocusNotification</b>
+</p>
+<p>
+<b><i> Base class for notifications related to Dialog agent acquisition.</i></b><br>
+
+ <b>Role</b>: This modification is linked with the <a href="#" onClick="openLink('CATISamEditionCmd','');return false">CATISamEditionCmd</a> implementation. It is dedicated to warn the Edition Command of the Analysis Entity
+ when it must delegate the selection management to the implementing command and when this
+ delegation is ended.
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATISamEditionCmd','');return false">CATISamEditionCmd</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATSamQuerySelectFocusNotification(CATDialogAgent*)"><b>CATSamQuerySelectFocusNotification</b></a>(CATDialogAgent*)
+<dd>  Constructs a notification.
+ <dt> o 
+    <a href="#~CATSamQuerySelectFocusNotification()"><b>~CATSamQuerySelectFocusNotification</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetAgent()"><b>GetAgent</b></a>()
+<dd>  Returns the active DialogAgent.
+ <dt> o 
+    <a href="#GetTypeQuery()"><b>GetTypeQuery</b></a>()
+<dd>  Returns the current TypeQuery status.
+ <dt> o 
+    <a href="#SetAgent(CATDialogAgent*)"><b>SetAgent</b></a>(CATDialogAgent*)
+<dd>  Sets the active DialogAgent.
+ <dt> o 
+    <a href="#SetTypeQuery(CATSamTypeQuery)"><b>SetTypeQuery</b></a>(CATSamTypeQuery)
+<dd>  Sets the current TypeQuery.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATSamQuerySelectFocusNotification"></a><a name="CATSamQuerySelectFocusNotification(CATDialogAgent*)"></a> <dt> o <b>CATSamQuerySelectFocusNotification</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATSamQuerySelectFocusNotification</b>(<td><script type="text/javascript"> activateLink('CATDialogAgent','CATDialogAgent*')</script> <td><tt>iAgent</tt><td><tt>= NULL</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a notification.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAgent</tt>
+   <dd> Dialog agent that will manage the selection.</dd>
+</dl>
+</dl>
+</dl>
+<a name="~CATSamQuerySelectFocusNotification"></a><a name="~CATSamQuerySelectFocusNotification()"></a> <dt> o <b>~CATSamQuerySelectFocusNotification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATSamQuerySelectFocusNotification</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetAgent"></a><a name="GetAgent()"></a> <dt> o <b>GetAgent</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATDialogAgent','CATDialogAgent *')</script>  <b>GetAgent</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the active DialogAgent.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAgent</tt>
+   <dd> DialogAgent</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetTypeQuery"></a><a name="GetTypeQuery()"></a> <dt> o <b>GetTypeQuery</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATSamTypeQuery','CATSamTypeQuery')</script>  <b>GetTypeQuery</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the current TypeQuery status.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  CATSamTypeQuery.
+</dl>
+</dl>
+<a name="SetAgent"></a><a name="SetAgent(CATDialogAgent*)"></a> <dt> o <b>SetAgent</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>SetAgent</b>(<td><script type="text/javascript"> activateLink('CATDialogAgent','CATDialogAgent*')</script> <td><tt>iAgent</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the active DialogAgent.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAgent</tt>
+   <dd> DialogAgent</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetTypeQuery"></a><a name="SetTypeQuery(CATSamTypeQuery)"></a> <dt> o <b>SetTypeQuery</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>SetTypeQuery</b>(<td><script type="text/javascript"> activateLink('CATSamTypeQuery','CATSamTypeQuery')</script> <td><tt>iTypeQuery</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the current TypeQuery.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iTypeQuery</tt>
+   <dd> TypeQuery status.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATSamFocusNotifications.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisToolkit</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

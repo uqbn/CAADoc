@@ -1,0 +1,86 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>KnowledgeInterfaces Interface CATIAddLibrary</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../KnowledgeInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIAddLibrary','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIAddLibrary','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIAddLibrary','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIAddLibrary','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>KnowledgeInterfaces Interface CATIAddLibrary</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIAddLibrary_30644','CATIAddLibrary','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATIAddLibrary</b>
+</p>
+<p>
+<b><i>    Interface to implement to add libraries.</i></b><br>
+
+ <b>Role</b>: This interface helps us to find your specific user functions that you would like to add to our language.
+ <br>
+ Usage:    
+   If you want to customise the Knowledge tools (by adding functions, measures,etc...)<br>
+ 
+ <li>Implement this interface on one class that we call XX for example (that
+ will also implement CATICreateInstance).</li>
+ <li>In the Add method create all the functions, measures, etc... and add them to CATParmDictionary.</li>
+ <li>Create an Object Modeler dictionary (.dico file) explaining that XX implements CATICreateInstance and CATIAddLibrary in
+ <br>Those methods will be called by our product at its initialisation <br> 
+ <br>For example, you may want to create a max(double,double) function that could then be used in formulas, checks or programs<br>
+ <br>
+ The algorithm to find all functions is the following :<br>
+ We scan the Object Modeler Dictionnaries to find all objects implementing CATIAddLibrary and CATICreateInstance :
+ <br> for each object, we create it with CATICreateInstance, then get the
+ CATIAddLibrary interface on it and call the Add Method.<br>
+ In the Add method, you can use the CreateFunction method. <br>
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATICkeSignature','');return false">CATICkeSignature</a>, <a href="#" onClick="openLink('CATICkeArg','');return false">CATICkeArg</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Add()"><b>Add</b></a>()
+<dd>  Add your own user functions here.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Add"></a><a name="Add()"></a> <dt> o <b>Add</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>Add</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Add your own user functions here.
+</dl>
+<hr>
+ This object is included in the file: <b>CATIAddLibrary.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>KnowledgeItf</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMModelInterfaces Interface CATICGMPositionPtVolOperator</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMModelInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATICGMPositionPtVolOperator','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMPositionPtVolOperator','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATICGMPositionPtVolOperator','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMPositionPtVolOperator','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GMModelInterfaces Interface CATICGMPositionPtVolOperator</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATICGMPositionPtVolOperator_56861','CATICGMPositionPtVolOperator','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATICGMPositionPtVolOperator</b>
+</p>
+<p>
+<b><i> Class defining the operator that tests the position of a 3D point 
+ with respect to a volume.</i></b><br>
+
+ The CATICGMPositionPtVolOperator operator is created with the 
+ <tt>CATCGMCreatePositionPtVolOperator</tt> global function.
+ It must be directly released with the <tt>Release</tt> method
+ method after use. It is not streamable. 
+<li>It must be executed by the <tt>Run</tt> method. 
+<li>The result ot the test is accessed with the <tt>GetLocationResult</tt> method.
+</ul></p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetLocationResult()"><b>GetLocationResult</b></a>()
+<dd>  Returns the 3D point location.
+ <dt> o 
+    <a href="#Run()"><b>Run</b></a>()
+<dd>  Runs <tt>this</tt> operator.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetLocationResult"></a><a name="GetLocationResult()"></a> <dt> o <b>GetLocationResult</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATLocation','CATLocation')</script>  <b>GetLocationResult</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the 3D point location.
+ <br>To be called after the <tt>Run</tt> method.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <dl>
+ <dt><tt>CATLocationInner</tt><dd> if the point is inside the volume
+ <dt><tt>CATLocationOuter</tt><dd> if the point is out of the volume
+ <dt><tt>CATLocationFull</tt><dd> if the point is on the boundary of
+ the volume.
+ </dl>
+</dl>
+</dl>
+<a name="Run"></a><a name="Run()"></a> <dt> o <b>Run</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>Run</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Runs <tt>this</tt> operator.
+</dl>
+<hr>
+ This object is included in the file: <b>CATICGMPositionPtVolOperator.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGMModelInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

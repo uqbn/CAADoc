@@ -1,0 +1,71 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GenKnowledgeInterfaces ExpertRuleRuntime (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../GenKnowledgeInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('ExpertRuleRuntime','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ExpertRuleRuntime','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('ExpertRuleRuntime','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ExpertRuleRuntime','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ExpertRuleRuntime<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_ExpertRuleRuntime_42042','ExpertRuleRuntime','0');</script>
+<b><i> Represents the ExpertRuleRuntime object.</i></b><br>
+
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Priority"><b>Priority</b></a>
+<dd>  Returns or sets the priority of the rule.
+ <dt>
+    <a href="#RuleEdition"><b>RuleEdition</b></a>
+<dd>  Returns the editable object corresponding to this rule.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Priority"><dt>
+
+<table><tr><td>o Property <b>Priority</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the priority of the rule. The priority of expert rules
+ indicates the order in which the rules are evaluated. Rules with
+ the same priority are evaluated in the order of their creation.
+</dl>
+<a name="RuleEdition"><dt>
+
+<table><tr><td>o Property <b>RuleEdition</b>(<td>) As <script type="text/javascript"> activateLink('ExpertRule','ExpertRule')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the editable object corresponding to this rule.
+ Be careful that, according to your licence, or the type of rule
+ you're handling, you may not have the right to edit the rule.
+
+ Dim aRuleEdition As ExpertRule
+ Set aRuleEdition = aRuleRuntime.RuleEdition
+
+ If not(aRuleEdition is Nothing) Then
+   CATIA.SystemService.Print aRuleEdition.Body
+ End if
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Interface CATISchAppContCutAndPaste</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISchAppContCutAndPaste','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchAppContCutAndPaste','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISchAppContCutAndPaste','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchAppContCutAndPaste','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Interface CATISchAppContCutAndPaste</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISchAppContCutAndPaste_62069','CATISchAppContCutAndPaste','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISchAppContCutAndPaste</b>
+</p>
+<p>
+<b><i> Interface to provide component group post copy-paste behavior.</i></b><br>
+
+ <b>Role</b>: To be called by CATISchContCutAndPastable implementation 
+ on the Schematic component group extensions.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AppPostCCPCompGroupProcess(IUnknown*,CATBaseUnknown_Associations&amp;,IUnknown*)"><b>AppPostCCPCompGroupProcess</b></a>(IUnknown*,CATBaseUnknown_Associations&amp;,IUnknown*)
+<dd>  Application post process after copy paste a component group.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AppPostCCPCompGroupProcess"></a><a name="AppPostCCPCompGroupProcess(IUnknown*,CATBaseUnknown_Associations&amp;,IUnknown*)"></a> <dt> o <b>AppPostCCPCompGroupProcess</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppPostCCPCompGroupProcess</b>(<td><script type="text/javascript"> activateLink('IUnknown','IUnknown*')</script> <td><tt>iCompGroupSource</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBaseUnknown_Associations','CATBaseUnknown_Associations&amp;')</script> <td><tt>ioAssociationOfObjects</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('IUnknown','IUnknown*')</script> <td><tt>iCompGroupTarget</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Application post process after copy paste a component group.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCompGroupSource</tt>
+   <dd>        the schematic component group extensions in the source
+        container
+ </dd>
+    <dt><tt> iCompGroupTarget</tt>
+   <dd>        the schematic component group extensions in the target
+        container
+ </dd>
+    <dt><tt> ioAssociationOfObjects</tt>
+   <dd>        couples of objects source/target.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISchAppContCutAndPaste.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

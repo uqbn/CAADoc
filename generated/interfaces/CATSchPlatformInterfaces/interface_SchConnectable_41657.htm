@@ -1,0 +1,81 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchConnectable (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchConnectable','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchConnectable','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchConnectable','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchConnectable','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchConnectable<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchConnectable_41657','SchConnectable','0');</script>
+<b><i>  Represents schematic objects that can be connected to others.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#ListConnectors"><b>ListConnectors</b></a>
+<dd>  Find all the connectors of this schematic object on a specific
+ graphical image.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="ListConnectors"><dt>
+
+<table><tr><td>o Func <b>ListConnectors</b>(<td><script type="text/javascript"> activateLink('SchListOfBSTRs','SchListOfBSTRs')</script> <td><tt>iLCntrClassFilter</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchGRR','SchGRR')</script> <td><tt>iGRR</tt>) As <script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> </table></dt>
+<dl>
+  <dd>
+ Find all the connectors of this schematic object on a specific
+ graphical image.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLCntrClassFilter</tt>
+   <dd>   A list of all the class types for filtering the output connector
+   list.
+ </dd>
+    <dt><tt> iGRR</tt>
+   <dd>   Pointer to the graphical image
+ </dd>
+    <dt><tt> oLCntrs</tt>
+   <dd>   A list of connectors included in this connection.
+   (members are CATISchAppConnector interface pointers).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchConnectable
+ Dim objArg1 As SchListOfBSTRs
+ Dim objArg2 As SchGRR
+ Dim objArg3 As SchListOfObjects
+  ...
+ Set objArg3 = objThisIntf.<font color="red">ListConnectors</font>(objArg1,objArg2)
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,139 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>SurfaceMachiningInterfaces Interface CATISmgMachiningAreaParts</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../SurfaceMachiningInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISmgMachiningAreaParts','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISmgMachiningAreaParts','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISmgMachiningAreaParts','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISmgMachiningAreaParts','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SurfaceMachiningInterfaces Interface CATISmgMachiningAreaParts</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISmgMachiningAreaParts_67512','CATISmgMachiningAreaParts','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISmgMachiningAreaParts</b>
+</p>
+<p>
+<b><i> Interface dedicated to part elements of a Machining Area.</i></b><br>
+
+ <br><b>Role</b>: This interface offers services to retrieve part elements
+ from a Machining Area.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetGeometricElements(CATLISTP(CATGeometry)&amp;,int,int)"><b>GetGeometricElements</b></a>(CATLISTP(CATGeometry)&amp;,int,int)
+<dd>  Retrieves the geometric elements from the part of a Machining Area.
+ <dt> o 
+    <a href="#GetStatus(int&amp;)"><b>GetStatus</b></a>(int&amp;)
+<dd>  Checks if the part is a mandatory parameter.
+ <dt> o 
+    <a href="#SetStatus(int)"><b>SetStatus</b></a>(int)
+<dd>  Modifies the geometry status of the part.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetGeometricElements"></a><a name="GetGeometricElements(CATLISTP(CATGeometry)&amp;,int,int)"></a> <dt> o <b>GetGeometricElements</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetGeometricElements</b>(<td><script type="text/javascript"> activateLink('CATLISTP(CATGeometry)','CATLISTP(CATGeometry)&amp;')</script> <td><tt>oGeometricElements</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iAllGeometricElements</tt><td><tt>= 0</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iDuplicate</tt><td><tt>= 0</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the geometric elements from the part of a Machining Area.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAllGeometricElements</tt>
+   <dd>   Specifies if all geometric elements must be retrieved.
+   <br><b>Legal values</b>: The parameter can be
+   <dl>
+     <dt><tt>0</tt>   <dd>Only geometric elements on the visible space are retrieved (default value)
+     <dt><tt>1</tt>   <dd>All geometric elements are retrieved
+   </dl>
+
+ </dd>
+    <dt><tt> iDuplicate</tt>
+   <dd>   Specifies if the geometric elements must be duplicated
+   <br><b>Legal values</b>: The parameter can be
+   <dl>
+     <dt><tt>0</tt>   <dd>Geometric elements are duplicated only if necessary in a product context (default value)
+     <dt><tt>1</tt>   <dd>Geometric elements are duplicated
+   </dl>
+
+ </dd>
+    <dt><tt> oGeometricElements</tt>
+   <dd>   The geometric elements found.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetStatus"></a><a name="GetStatus(int&amp;)"></a> <dt> o <b>GetStatus</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetStatus</b>(<td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>oState</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Checks if the part is a mandatory parameter.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oState</tt>
+   <dd>   <br><b>Legal values</b>:
+   <dl>
+     <dt><tt>0</tt>   <dd> The part is an optional parameter
+     <dt><tt>1</tt>   <dd> The part is a mandatory parameter
+   </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="SetStatus"></a><a name="SetStatus(int)"></a> <dt> o <b>SetStatus</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetStatus</b>(<td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iState</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the geometry status of the part.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iState</tt>
+   <dd>   <br><b>Legal values</b>:
+   <dl>
+     <dt><tt>0</tt>   <dd> The part is an optional parameter 
+     <dt><tt>1</tt>   <dd> The part is a mandatory parameter (default)
+   </dl></dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISmgMachiningAreaParts.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>SmgItfEnv</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

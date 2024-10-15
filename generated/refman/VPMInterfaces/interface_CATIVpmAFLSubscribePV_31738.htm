@@ -1,0 +1,99 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>VPMInterfaces Interface CATIVpmAFLSubscribePV</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../VPMInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIVpmAFLSubscribePV','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIVpmAFLSubscribePV','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIVpmAFLSubscribePV','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIVpmAFLSubscribePV','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>VPMInterfaces Interface CATIVpmAFLSubscribePV</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIVpmAFLSubscribePV_31738','CATIVpmAFLSubscribePV','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIVpmAFLSubscribePV</b>
+</p>
+<p>
+<b><i> Interface for Subscribers to Product-View events.</i></b><br>
+
+ <b>Role</b>: The interface provides callback functions handling Product-View events.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#EventAddPVAfter(CATIVpmAFLAction_var&amp;,CATIConfigurableObject_var&amp;)"><b>EventAddPVAfter</b></a>(CATIVpmAFLAction_var&amp;,CATIConfigurableObject_var&amp;)
+<dd>  The function which is called back after a product-view is added.
+ <dt> o 
+    <a href="#EventAddPVBefore(CATIVpmAFLAction_var&amp;,CATIConfigurableObject_var&amp;)"><b>EventAddPVBefore</b></a>(CATIVpmAFLAction_var&amp;,CATIConfigurableObject_var&amp;)
+<dd>  The function which is called back before a product-view is added.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="EventAddPVAfter"></a><a name="EventAddPVAfter(CATIVpmAFLAction_var&amp;,CATIConfigurableObject_var&amp;)"></a> <dt> o <b>EventAddPVAfter</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>EventAddPVAfter</b>(<td><script type="text/javascript"> activateLink('CATIVpmAFLAction_var','CATIVpmAFLAction_var&amp;')</script> <td><tt>iAction</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIConfigurableObject_var','CATIConfigurableObject_var&amp;')</script> <td><tt>iCfgObj</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ The function which is called back after a product-view is added.
+  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAction</tt>
+   <dd>    The action to which the PV is related.
+  </dd>
+    <dt><tt> iCfgObj</tt>
+   <dd>    The configuration object to which the PV is related.</dd>
+</dl>
+</dl>
+</dl>
+<a name="EventAddPVBefore"></a><a name="EventAddPVBefore(CATIVpmAFLAction_var&amp;,CATIConfigurableObject_var&amp;)"></a> <dt> o <b>EventAddPVBefore</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>EventAddPVBefore</b>(<td><script type="text/javascript"> activateLink('CATIVpmAFLAction_var','CATIVpmAFLAction_var&amp;')</script> <td><tt>iAction</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIConfigurableObject_var','CATIConfigurableObject_var&amp;')</script> <td><tt>iCfgObj</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ The function which is called back before a product-view is added.
+  
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAction</tt>
+   <dd>    The action to which the PV is related.
+  </dd>
+    <dt><tt> iCfgObj</tt>
+   <dd>    The configuration object to which the PV is related.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIVpmAFLSubscribePV.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>GUIDVPMInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

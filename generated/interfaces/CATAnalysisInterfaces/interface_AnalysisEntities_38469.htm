@@ -1,0 +1,127 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces AnalysisEntities (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('AnalysisEntities','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisEntities','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('AnalysisEntities','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisEntities','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>AnalysisEntities<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_AnalysisEntities_38469','AnalysisEntities','0');</script>
+<b><i>   The collection of analysis entities.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Add"><b>Add</b></a>
+<dd>  Creates a new analysis entity and adds it to the analysis entities collection.
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns an analysis entity using its index or its name from the analysis entities collection.
+ <dt>
+    <a href="#Remove"><b>Remove</b></a>
+<dd>  Removes a entity using its index or its name from the entity collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Add"><dt>
+
+<table><tr><td>o Func <b>Add</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iType</tt>) As <script type="text/javascript"> activateLink('AnalysisEntity','AnalysisEntity')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new analysis entity and adds it to the analysis entities collection.<br>
+ This collection may be extracted from an analysis set.The Analysis entity will be created on the Analysis Model.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iType</tt>
+   <dd> The type of the entity to create.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The created analysis entity
+ 
+  <dt> <b>Example:</b> 
+  <dd>  This example create <tt>ThisAnalysisEntity</tt> in the <tt>analysisEntities</tt> collection <br>
+ The entity to create is supposed to be a pressure defined in a load set.<br>
+ <pre>
+ Dim analysisEntities As CATIAAnalysisEntities
+ Dim ThisAnalysisEntity As AnalysisEntity
+ Set ThisAnalysisEntity = analysisEntities.Add("SAMPressure")
+ </pre>
+</dl>
+</dl>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('AnalysisEntity','AnalysisEntity')</script> </table></dt>
+<dl>
+  <dd>
+ Returns an analysis entity using its index or its name from the analysis entities collection. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the analysis entity to retrieve from
+   the collection of analysis entities.
+   As a numerics, this index is the rank of the analysis entity
+   in the collection.
+   The index of the first analysis entity in the collection is 1, and
+   the index of the last analysis entity is Count.
+   As a string, it is the name you assigned to the analysis entity using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property or when creating it using   the 
+<a href="#" onClick="openLink('','Add');return false">Add</a> method. 
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved analysis entity
+</dl>
+</dl>
+<a name="Remove"><dt>
+
+<table><tr><td>o Sub <b>Remove</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes a entity using its index or its name from the entity collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the entity to retrieve from
+   the collection of entities.
+   As a numeric, this index is the rank of the entity
+   in the collection. The index of the first entity in the collection is 1,
+   and the index of the last entity is Count.
+   As a string, it is the name you assigned to the entity using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property.
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

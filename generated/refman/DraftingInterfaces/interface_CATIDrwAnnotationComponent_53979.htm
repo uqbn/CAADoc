@@ -1,0 +1,148 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>DraftingInterfaces Interface CATIDrwAnnotationComponent</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../DraftingInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIDrwAnnotationComponent','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIDrwAnnotationComponent','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIDrwAnnotationComponent','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIDrwAnnotationComponent','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>DraftingInterfaces Interface CATIDrwAnnotationComponent</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIDrwAnnotationComponent_53979','CATIDrwAnnotationComponent','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIDrwAnnotationComponent</b>
+</p>
+<p>
+<b><i> Interfaces to handle global aspects of annotation object.</i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetOrientationReference()"><b>GetOrientationReference</b></a>()
+<dd>   Returns the orientation reference of an annotation.
+ <dt> o 
+    <a href="#GetTextBox(CATMathPoint2D&amp;,CATMathPoint2D&amp;,CATMathPoint2D&amp;,CATMathPoint2D&amp;)"><b>GetTextBox</b></a>(CATMathPoint2D&amp;,CATMathPoint2D&amp;,CATMathPoint2D&amp;,CATMathPoint2D&amp;)
+<dd>  Returns characteristic points of the text included in a AnnotationComponent.
+ <dt> o 
+    <a href="#GetTextBoxDisplay(CATDftTextBoxDisplay&amp;)"><b>GetTextBoxDisplay</b></a>(CATDftTextBoxDisplay&amp;)
+<dd>  Used to read the display mode of the annotation value.
+ <dt> o 
+    <a href="#SetOrientationReference(int)"><b>SetOrientationReference</b></a>(int)
+<dd>   Set the orientation reference of an annotation.
+ <dt> o 
+    <a href="#SetTextBoxDisplay(CATDftTextBoxDisplay)"><b>SetTextBoxDisplay</b></a>(CATDftTextBoxDisplay)
+<dd>  Used to manage the display mode of the annotation value.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetOrientationReference"></a><a name="GetOrientationReference()"></a> <dt> o <b>GetOrientationReference</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetOrientationReference</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Returns the orientation reference of an annotation.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <br>0 : Sheet orientation
+ <br>1 : View orientation
+</dl>
+</dl>
+<a name="GetTextBox"></a><a name="GetTextBox(CATMathPoint2D&amp;,CATMathPoint2D&amp;,CATMathPoint2D&amp;,CATMathPoint2D&amp;)"></a> <dt> o <b>GetTextBox</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>GetTextBox</b>(<td><script type="text/javascript"> activateLink('CATMathPoint2D','CATMathPoint2D&amp;')</script> <td><tt>oPt1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATMathPoint2D','CATMathPoint2D&amp;')</script> <td><tt>oPt2</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATMathPoint2D','CATMathPoint2D&amp;')</script> <td><tt>oPt3</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATMathPoint2D','CATMathPoint2D&amp;')</script> <td><tt>oPt4</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns characteristic points of the text included in a AnnotationComponent. <br>Note :
+ <pre>
+ oPt3 -------------- oPt4
+      !  T e x t   !
+ oPt1 -------------- oPt2
+ </pre>
+ The points are computed without leaders but the Frame is included
+</dl>
+<a name="GetTextBoxDisplay"></a><a name="GetTextBoxDisplay(CATDftTextBoxDisplay&amp;)"></a> <dt> o <b>GetTextBoxDisplay</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetTextBoxDisplay</b>(<td><script type="text/javascript"> activateLink('CATDftTextBoxDisplay','CATDftTextBoxDisplay&amp;')</script> <td><tt>oModeDisplay</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Used to read the display mode of the annotation value.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oModeDisplay</tt>
+   <dd> </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATDftTextBoxDisplay','');return false">CATDftTextBoxDisplay</a>
+</dl>
+</dl>
+<a name="SetOrientationReference"></a><a name="SetOrientationReference(int)"></a> <dt> o <b>SetOrientationReference</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetOrientationReference</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>OrientReference</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Set the orientation reference of an annotation.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> OrientReference</tt>
+   <dd> <br>0 : Sheet orientation
+ <br>1 : View orientation</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetTextBoxDisplay"></a><a name="SetTextBoxDisplay(CATDftTextBoxDisplay)"></a> <dt> o <b>SetTextBoxDisplay</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetTextBoxDisplay</b>(<td><script type="text/javascript"> activateLink('CATDftTextBoxDisplay','CATDftTextBoxDisplay')</script> <td><tt>iModeDisplay</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Used to manage the display mode of the annotation value.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iModeDisplay</tt>
+   <dd> </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATDftTextBoxDisplay','');return false">CATDftTextBoxDisplay</a>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIDrwAnnotationComponent.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATDraftingInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

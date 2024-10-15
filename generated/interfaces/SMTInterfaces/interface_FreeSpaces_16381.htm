@@ -1,0 +1,99 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>SMTInterfaces FreeSpaces (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../SMTInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('FreeSpaces','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('FreeSpaces','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('FreeSpaces','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('FreeSpaces','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>FreeSpaces<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_FreeSpaces_16381','FreeSpaces','0');</script>
+<b><i>   Interface to compute Free Spaces.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Add"><b>Add</b></a>
+<dd>    Compute a free space around a selected product.
+ <dt>
+    <a href="#AddAroundAny"><b>AddAroundAny</b></a>
+<dd>    Compute a free space around any products.
+ <dt>
+    <a href="#AddAroundProducts"><b>AddAroundProducts</b></a>
+<dd>    Compute a free space around a reference selection
+ <dt>
+    <a href="#AddFromFile"><b>AddFromFile</b></a>
+<dd>    Compute a free space from a file.
+ <dt>
+    <a href="#AddInflatingFromFile"><b>AddInflatingFromFile</b></a>
+<dd>    Compute an inflating free space from a file.
+ <dt>
+    <a href="#AddSplitFromFile"><b>AddSplitFromFile</b></a>
+<dd>    Compute a split free space from a file.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Add"><dt>
+
+<table><tr><td>o Func <b>Add</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProductForFreeSpace</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iAccuracy</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iXmin</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iXmax</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iYmin</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iYmax</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iZmin</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iZmax</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iTypeFreeSpace</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iXpt</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iYpt</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iZpt</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iHoles</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iShapeName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iActivatedShape</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iDefaultShape</tt>) As <script type="text/javascript"> activateLink('FreeSpace','FreeSpace')</script> </table></dt>
+<dl>
+  <dd>
+   Compute a free space around a selected product.
+</dl>
+<a name="AddAroundAny"><dt>
+
+<table><tr><td>o Func <b>AddAroundAny</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iAccuracy</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iXmin</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iXmax</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iYmin</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iYmax</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iZmin</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iZmax</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iShapeName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iTypeFreeSpace</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iHoles</tt>) As <script type="text/javascript"> activateLink('FreeSpace','FreeSpace')</script> </table></dt>
+<dl>
+  <dd>
+   Compute a free space around any products.
+</dl>
+<a name="AddAroundProducts"><dt>
+
+<table><tr><td>o Func <b>AddAroundProducts</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iAccuracy</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iXmin</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iXmax</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iYmin</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iYmax</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iZmin</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iZmax</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iShapeName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iTypeFreeSpace</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iHoles</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iReferenceSelection</tt>) As <script type="text/javascript"> activateLink('FreeSpace','FreeSpace')</script> </table></dt>
+<dl>
+  <dd>
+   Compute a free space around a reference selection
+</dl>
+<a name="AddFromFile"><dt>
+
+<table><tr><td>o Func <b>AddFromFile</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iFileName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iShapeName</tt>) As <script type="text/javascript"> activateLink('FreeSpace','FreeSpace')</script> </table></dt>
+<dl>
+  <dd>
+   Compute a free space from a file.
+</dl>
+<a name="AddInflatingFromFile"><dt>
+
+<table><tr><td>o Func <b>AddInflatingFromFile</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iFileName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iShapeName</tt>) As <script type="text/javascript"> activateLink('FreeSpace','FreeSpace')</script> </table></dt>
+<dl>
+  <dd>
+   Compute an inflating free space from a file.
+</dl>
+<a name="AddSplitFromFile"><dt>
+
+<table><tr><td>o Func <b>AddSplitFromFile</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iX</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iY</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iZ</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iNx</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iNy</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iNz</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iFileName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iShapeName</tt>) As <script type="text/javascript"> activateLink('FreeSpace','FreeSpace')</script> </table></dt>
+<dl>
+  <dd>
+   Compute a split free space from a file.
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

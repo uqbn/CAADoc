@@ -1,0 +1,179 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATGSMIDLItf HybridShapeCircleCenterAxis (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATGSMIDLItf.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('HybridShapeCircleCenterAxis','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapeCircleCenterAxis','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('HybridShapeCircleCenterAxis','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapeCircleCenterAxis','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>HybridShapeCircleCenterAxis<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_HybridShapeCircleCenterAxis_45004','HybridShapeCircleCenterAxis','0');</script>
+<b><i>   Represents the hybrid shape circle object defined using a point and axis/line.</i></b><br>
+
+ <b>Role</b>: To access the data of the hybrid shape circle center axis object.
+ <p>This data includes:
+ <ul>
+ <li>Point</li>
+ <li>Axis/Line </li>
+ <li>Value of radius/diameter </li>
+ <li>Diameter Mode </li>
+ <li>Projection Mode </li>
+ </ul>
+ <p>Use the CATIAHybridShapeFactory to create a HybridShapeCircleCenterAxis object.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeFactory','AddNewCircleCenterAxis');return false">HybridShapeFactory.AddNewCircleCenterAxis</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Axis"><b>Axis</b></a>
+<dd>  Returns or sets the Axis of the circle.
+ <dt>
+    <a href="#Diameter"><b>Diameter</b></a>
+<dd>  Returns the circle diameter.
+ <dt>
+    <a href="#DiameterMode"><b>DiameterMode</b></a>
+<dd>   Returns or sets the DiameterMode.
+ <dt>
+    <a href="#Point"><b>Point</b></a>
+<dd>  Returns or sets the Point of the circle.
+ <dt>
+    <a href="#ProjectionMode"><b>ProjectionMode</b></a>
+<dd>   Returns or sets the ProjectionMode.
+ <dt>
+    <a href="#Radius"><b>Radius</b></a>
+<dd>  Returns the circle radius.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Axis"><dt>
+
+<table><tr><td>o Property <b>Axis</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the Axis of the circle.
+ <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves in <code>CircleAxis</code> the Axis of plane in which circle is lying
+ from <code>HybShpCircle</code> hybrid shape circle center axis feature
+ <pre>
+ Dim CircleAxis As Reference 
+ Set CircleAxis = HybShpCircle.<font color="red">Axis</font>
+ </pre>
+ </dl>
+</dl>
+<a name="Diameter"><dt>
+
+<table><tr><td>o Property <b>Diameter</b>(<td>) As <script type="text/javascript"> activateLink('Length','Length')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the circle diameter.
+ It is expressed as a 
+<a href="#" onClick="openLink('Length','');return false">Length</a> literal. Succeeds only if DiameterMode is set to True. </dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves in <code>HybShpCircleDiameter</code> the diameter
+ of the <code>HybShpCircle</code> hybrid shape circle center axis feature
+ <pre>
+ Dim HybShpCircleDiameter As Length
+ HybShpCircleDiameter = HybShpCircle.<font color="red">Diameter</font>
+ </pre>
+ </dl>
+</dl>
+<a name="DiameterMode"><dt>
+
+<table><tr><td>o Property <b>DiameterMode</b>(<td>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+  Returns or sets the DiameterMode.
+ <br><b>Legal values</b>: <b>True</b> implies diameter
+ <b>False</b> implies radius (default).
+  When DiameterMode is changed, Radius/Diameter value, which is stored will not be modified.
+  
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>   This example sets that the DiameterMode of
+  the <code>HybShpCircle</code> hybrid shape circle center axis feature
+  <pre>
+  HybShpCircle.<font color="red">DiameterMode</font> = True
+  </pre>
+</dl>
+</dl>
+<a name="Point"><dt>
+
+<table><tr><td>o Property <b>Point</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the Point of the circle.
+ <dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves in <code>CirclePoint</code> the point used for
+ center computation from <code>HybShpCircle</code> hybrid shape circle center axis feature
+ <pre>
+ Dim CirclePoint As Reference 
+ Set CirclePoint = HybShpCircle.<font color="red">Point</font>
+ </pre>
+ </dl>
+</dl>
+<a name="ProjectionMode"><dt>
+
+<table><tr><td>o Property <b>ProjectionMode</b>(<td>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+  Returns or sets the ProjectionMode.
+ <br><b>Legal values</b>: <b>True</b> (default) implies point will be projected on to axis/line
+ <b>False</b> implies that point will be center of the circle.
+  
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>   This example sets that the ProjectionMode of
+  the <code>HybShpCircle</code> hybrid shape circle center axis feature
+  <pre>
+  HybShpCircle.<font color="red">ProjectionMode</font> = True
+  </pre>
+</dl>
+</dl>
+<a name="Radius"><dt>
+
+<table><tr><td>o Property <b>Radius</b>(<td>) As <script type="text/javascript"> activateLink('Length','Length')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the circle radius.
+ It is expressed as a 
+<a href="#" onClick="openLink('Length','');return false">Length</a> literal. Succeeds only if DiameterMode is set to False. </dl>
+ <dt><b>Example</b>:
+ <dd>
+ This example retrieves in <code>HybShpCircleRadius</code> the radius
+ of the <code>HybShpCircle</code> hybrid shape circle center axis feature
+ <pre>
+ Dim HybShpCircleRadius As Length
+ HybShpCircleRadius = HybShpCircle.<font color="red">Radius</font>
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

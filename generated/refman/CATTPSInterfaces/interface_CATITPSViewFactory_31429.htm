@@ -1,0 +1,100 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATTPSInterfaces Interface CATITPSViewFactory</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATTPSInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATITPSViewFactory','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATITPSViewFactory','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATITPSViewFactory','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATITPSViewFactory','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATTPSInterfaces Interface CATITPSViewFactory</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATITPSViewFactory_31429','CATITPSViewFactory','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATITPSViewFactory</b>
+</p>
+<p>
+<b><i> Interface for the TPS Factory of View.</i></b><br>
+ This factory is implemented on the
+ Set object. All the created TPSViews belongs to the Set from which this 
+ interface is retrieved.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CreateView(CATITPSView**,CATMathPlane*,CATDftViewType,CATITTRSList*,CATMathTransformation*,CATTPSViewAssociativity,CATITPSView*,double)"><b>CreateView</b></a>(CATITPSView**,CATMathPlane*,CATDftViewType,CATITTRSList*,CATMathTransformation*,CATTPSViewAssociativity,CATITPSView*,double)
+<dd>  Create a new TPS View in the set.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="CreateView"></a><a name="CreateView(CATITPSView**,CATMathPlane*,CATDftViewType,CATITTRSList*,CATMathTransformation*,CATTPSViewAssociativity,CATITPSView*,double)"></a> <dt> o <b>CreateView</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>CreateView</b>(<td><script type="text/javascript"> activateLink('CATITPSView','CATITPSView**')</script> <td><tt>oTPSView</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathPlane','CATMathPlane*')</script> <td><tt>iViewPlane</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATDftViewType','CATDftViewType')</script> <td><tt>iViewType</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATITTRSList','CATITTRSList*')</script> <td><tt>ipiTTRSList</tt><td><tt>= NULL</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathTransformation','CATMathTransformation*')</script> <td><tt>ipViewTransf</tt><td><tt>= NULL</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATTPSViewAssociativity','CATTPSViewAssociativity')</script> <td><tt>iAssocAtCreation</tt><td><tt>= CATTPSViewAssocAsSetting</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATITPSView','CATITPSView*')</script> <td><tt>ipiTPSMotherView</tt><td><tt>= NULL</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iZFromMotherView</tt><td><tt>= 0.0</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Create a new TPS View in the set. The associated drafting view is
+ simultaneously created.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oView</tt>
+   <dd>      The new created TPSView.
+   </dd>
+    <dt><tt> iViewPlane</tt>
+   <dd>      The reference plane in 3D for the created view.
+   </dd>
+    <dt><tt> iViewType</tt>
+   <dd>      Type of view to be created. Allowed types are FrontView, SectionView
+      and SectionCutView. If any other type is provided the view will not
+      be created.
+   </dd>
+    <dt><tt> ipiTTRSList</tt>
+   <dd>      calculated by method if NULL. Internal use only.
+      The TTRS referencing the selected plane (for update purposes).
+   </dd>
+    <dt><tt> ipViewTransf</tt>
+   <dd>      The transformation between the TTRS Local axis (X,Y) and the view plane
+   </dd>
+    <dt><tt> iAssocAtCreation</tt>
+   <dd>      This parameter allows the creation of a view with or without associativity
+      to the geometry. It overruns the dedicated setting in tools/options.
+   </dd>
+    <dt><tt> piTPSMotherView</tt>
+   <dd>      The mother view to create a projected view (left, right, top, bottom, rear)
+   </dd>
+    <dt><tt> iZFromMotherView</tt>
+   <dd>      The distance between mother view origin and created projected view origin</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATITPSViewFactory.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

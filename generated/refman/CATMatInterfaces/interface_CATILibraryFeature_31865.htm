@@ -1,0 +1,97 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATMatInterfaces Interface CATILibraryFeature</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATMatInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATILibraryFeature','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATILibraryFeature','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATILibraryFeature','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATILibraryFeature','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATMatInterfaces Interface CATILibraryFeature</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATILibraryFeature_31865','CATILibraryFeature','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATILibraryFeature</b>
+</p>
+<p>
+<b><i>  Interface to manage families of materials.</i></b><br>
+
+ <b>Role</b>: A material document (such document is stored in a file suffixed by CATMaterial)
+ contains one material library,
+ which contains itself several material families. A library contains at least one
+ family.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIMaterialDocument','');return false">CATIMaterialDocument</a>, <a href="#" onClick="openLink('CATIFamilyFeature','');return false">CATIFamilyFeature</a>, <a href="#" onClick="openLink('CATIMaterialFeature','');return false">CATIMaterialFeature</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetFamily(int)"><b>GetFamily</b></a>(int)
+<dd>  Returns a family using its index.
+ <dt> o 
+    <a href="#GetFamilyCount()"><b>GetFamilyCount</b></a>()
+<dd>  Returns the count of families in the material document.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetFamily"></a><a name="GetFamily(int)"></a> <dt> o <b>GetFamily</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATIFamilyFeature','CATIFamilyFeature*')</script>  <b>GetFamily</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iIndex</tt><td><tt>=0</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns a family using its index.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index of the family. This value ranges from 1 to  </dd>
+<a href="#" onClick="openLink('','GetFamilyCount');return false">GetFamilyCount</a> 
+  <dt> <b>Returns:</b> 
+  <dd>    The material family object if iIndex is valid and NULL otherwise.
+</dl>
+</dl>
+</dl>
+<a name="GetFamilyCount"></a><a name="GetFamilyCount()"></a> <dt> o <b>GetFamilyCount</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>GetFamilyCount</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the count of families in the material document.
+ <br>
+ <b>Note</b>: A material document can't be empty and this value is therefore greater than 0.
+</dl>
+<hr>
+ This object is included in the file: <b>CATILibraryFeature.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATMatInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>VisualizationBase Class CATDynamicGP</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../VisualizationBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATDynamicGP','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATDynamicGP','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATDynamicGP','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATDynamicGP','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>VisualizationBase Class CATDynamicGP</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATDynamicGP_21310','CATDynamicGP','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATDynamicGP</b>
+</p>
+<p>
+<b><i> Base class of dynamic graphic primitives.</i></b><br>
+ A graphic primitive is said dynamic when its representation, on the screen,
+ is viewpoint or viewport dependant.
+ You cannot delete a dynamic graphic primitive. You must use the 
+ CATGraphicPrimite::Destroy static method to delete a graphic primitive.
+ The differed destruction is activated between  the culling and the 
+ drawing processing. 
+ This class has a <tt>Draw</tt> method that must be called by a representation (CATRep)
+ in <tt>DrawShading</tt> method. It is not necessery to overload the <tt>Draw</tt>
+ method of the CATDynamicGP class.</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATDynamicGP()"><b>CATDynamicGP</b></a>()
+<dd>  Constructs a CATDynamicGP.
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Draw(CATRender&amp;)"><b>Draw</b></a>(CATRender&amp;)
+<dd>  Draws the dynamic graphic primitive.
+ <dt> o 
+    <a href="#ImmediateDraw(CATRender&amp;,CATViewpoint*,CATViewport*)"><b>ImmediateDraw</b></a>(CATRender&amp;,CATViewpoint*,CATViewport*)
+<dd>  Draws the dynamic graphic primitive.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATDynamicGP"></a><a name="CATDynamicGP()"></a> <dt> o <b>CATDynamicGP</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATDynamicGP</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a CATDynamicGP.
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Draw"></a><a name="Draw(CATRender&amp;)"></a> <dt> o <b>Draw</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>Draw</b>(<td><script type="text/javascript"> activateLink('CATRender','CATRender&amp;')</script> <td><tt>iRender</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Draws the dynamic graphic primitive.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iRender</tt>
+   <dd>   The render through which the primitive is drawn.</dd>
+</dl>
+</dl>
+</dl>
+<a name="ImmediateDraw"></a><a name="ImmediateDraw(CATRender&amp;,CATViewpoint*,CATViewport*)"></a> <dt> o <b>ImmediateDraw</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>ImmediateDraw</b>(<td><script type="text/javascript"> activateLink('CATRender','CATRender&amp;')</script> <td><tt>iRender</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATViewpoint','CATViewpoint*')</script> <td><tt>iViewPoint</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATViewport','CATViewport*')</script> <td><tt>iViewPort</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Draws the dynamic graphic primitive.<br>
+ <b>Role</b>:
+  Every dynamic graphic primitive must overloaded the
+  <tt>ImmediateDraw</tt> method. This method allows the immediate
+  mode rendering. This method is called through the call to <tt>Draw</tt>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iRender</tt>
+   <dd>   The render through which the primitive is drawn.
+ </dd>
+    <dt><tt> iViewpoint</tt>
+   <dd>   The viewpoint through which the primitive is seen.
+ </dd>
+    <dt><tt> iViewport</tt>
+   <dd>   The viewport in which the primitive is located.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATDynamicGP.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATViz</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

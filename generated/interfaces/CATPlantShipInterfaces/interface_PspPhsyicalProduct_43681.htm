@@ -1,0 +1,153 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATPlantShipInterfaces PspPhsyicalProduct (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATPlantShipInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('PspPhsyicalProduct','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PspPhsyicalProduct','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('PspPhsyicalProduct','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PspPhsyicalProduct','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PspPhsyicalProduct<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_PspPhsyicalProduct_43681','PspPhsyicalProduct','0');</script>
+<b><i> Represents the interface to manage the technological connectors on physical objects.</i></b><br>
+
+ <b>Role</b>: To manage connectors on physical objects.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Connectors"><b>Connectors</b></a>
+<dd>  Returns a list of Part connectors of the object.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddConnector"><b>AddConnector</b></a>
+<dd>  Returns the added connector on the object.
+ <dt>
+    <a href="#RemoveConnector"><b>RemoveConnector</b></a>
+<dd>  Removes part connector.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Connectors"><dt>
+
+<table><tr><td>o Property <b>Connectors</b>(<td>) As <script type="text/javascript"> activateLink('PspListOfObjects','PspListOfObjects')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns a list of Part connectors of the object.  
+    
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As PspPhsyicalProduct  
+ Dim objArg1 As PspListOfObjects
+  ...
+ Set objArg1 = objThisIntf.<font color="red">Connectors</font> 
+ </pre>
+
+</dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddConnector"><dt>
+
+<table><tr><td>o Func <b>AddConnector</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iClassFilter</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iFaceCntr</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CatPspIDLPartConnectorType','CatPspIDLPartConnectorType')</script> <td><tt>ieFaceType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iAlignmentCntr</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CatPspIDLPartConnectorType','CatPspIDLPartConnectorType')</script> <td><tt>ieAlignType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iClockCntr</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CatPspIDLPartConnectorType','CatPspIDLPartConnectorType')</script> <td><tt>ieClockType</tt>) As <script type="text/javascript"> activateLink('PspPartConnector','PspPartConnector')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the added connector on the object.  
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iuClassFilter</tt>
+   <dd>  Connector class type. If null string application default connector class will be used.
+ </dd>
+    <dt><tt> iFaceCntr</tt>
+   <dd>  A face connector
+ </dd>
+    <dt><tt> ieFaceType</tt>
+   <dd>  Face connector type
+ </dd>
+    <dt><tt> iAlignmentCntr</tt>
+   <dd>  An alignment connector
+ </dd>
+    <dt><tt> ieAlignType</tt>
+   <dd>  Alignment connector type
+ </dd>
+    <dt><tt> iClockCntr</tt>
+   <dd>  A clock connector
+ </dd>
+    <dt><tt> ieClockType</tt>
+   <dd>  A clock connector type  
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    Part connector added
+
+    
+ 
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As PspPhsyicalProduct
+
+ Dim strVar1 As CATBSTR
+ Dim objArg2 As Reference
+ Dim objArg3 As catPspIDLPartConnectorType
+ Dim objArg4 As Reference
+ Dim objArg5 As catPspIDLPartConnectorType
+ Dim objArg6 As Reference
+ Dim objArg7 As catPspIDLPartConnectorType
+ Dim objArg8 As PspPartConnector
+  ...
+ objArg8 = objThisIntf.<font color="red">AddConnector</font> (strVar1, objArg2,objArg3,objArg4, objArg5,objArg6,objArg7 )
+ </pre>
+
+</dl>
+</dl>
+<a name="RemoveConnector"><dt>
+
+<table><tr><td>o Sub <b>RemoveConnector</b>(<td><script type="text/javascript"> activateLink('PspPartConnector','PspPartConnector')</script> <td><tt>iCntrToRemove</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes part connector.  
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCntrToRemove</tt>
+   <dd>   Part connector to be removed
+  
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As PspPhsyicalProduct
+
+ Dim objArg1 As PspPartConnector
+  ...
+ objThisIntf.<font color="red">RemoveConnector</font> objArg1
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,197 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>DraftingInterfaces Interface CATIDrwCenterLine</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../DraftingInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIDrwCenterLine','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIDrwCenterLine','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIDrwCenterLine','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIDrwCenterLine','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>DraftingInterfaces Interface CATIDrwCenterLine</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIDrwCenterLine_33269','CATIDrwCenterLine','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIDrwCenterLine</b>
+</p>
+<p>
+<b><i> Interface to manage a center lines or thread.</i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AddReference(CATISpecObject_var)"><b>AddReference</b></a>(CATISpecObject_var)
+<dd>  Add a reference object to the axis line.
+ <dt> o 
+    <a href="#GetDirectionRef()"><b>GetDirectionRef</b></a>()
+<dd>  Get direction reference.
+ <dt> o 
+    <a href="#GetOverRuns(CATListOfDouble&amp;)"><b>GetOverRuns</b></a>(CATListOfDouble&amp;)
+<dd>  Get over run values.
+ <dt> o 
+    <a href="#GetReferences()"><b>GetReferences</b></a>()
+<dd>  Get reference object list.
+ <dt> o 
+    <a href="#RemoveReference(CATISpecObject_var&amp;)"><b>RemoveReference</b></a>(CATISpecObject_var&amp;)
+<dd>  Remove a reference object from an axis line.
+ <dt> o 
+    <a href="#SetDirectionRef(CATBaseUnknown_var)"><b>SetDirectionRef</b></a>(CATBaseUnknown_var)
+<dd>  Set direction reference.
+ <dt> o 
+    <a href="#SetOverRuns(CATListOfDouble&amp;)"><b>SetOverRuns</b></a>(CATListOfDouble&amp;)
+<dd>  Set over run values.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AddReference"></a><a name="AddReference(CATISpecObject_var)"></a> <dt> o <b>AddReference</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>AddReference</b>(<td><script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject_var')</script> <td><tt>iReference</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Add a reference object to the axis line. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iReference</tt>
+   <dd>   Reference object.
+   <br>This object must implement IDMCircle2D.
+ </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('IDMCircle2D','');return false">IDMCircle2D</a>
+</dl>
+</dl>
+<a name="GetDirectionRef"></a><a name="GetDirectionRef()"></a> <dt> o <b>GetDirectionRef</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject_var')</script>  <b>GetDirectionRef</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get direction reference.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    Direction reference.
+   <br>This object implements IDMLine2D or IDMCircle2D.
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('IDMLine2D','');return false">IDMLine2D</a>, <a href="#" onClick="openLink('IDMCircle2D','');return false">IDMCircle2D</a>
+</dl>
+</dl>
+<a name="GetOverRuns"></a><a name="GetOverRuns(CATListOfDouble&amp;)"></a> <dt> o <b>GetOverRuns</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>GetOverRuns</b>(<td><script type="text/javascript"> activateLink('CATListOfDouble','CATListOfDouble&amp;')</script> <td><tt>oOverruns</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get over run values.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oOverruns</tt>
+   <dd>   Over run values.
+   <br>Remark : It's a four element list.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetReferences"></a><a name="GetReferences()"></a> <dt> o <b>GetReferences</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATLISTV(CATISpecObject_var)','CATLISTV(CATISpecObject_var)')</script>  <b>GetReferences</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get reference object list.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    List of reference objects.
+</dl>
+</dl>
+<a name="RemoveReference"></a><a name="RemoveReference(CATISpecObject_var&amp;)"></a> <dt> o <b>RemoveReference</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>RemoveReference</b>(<td> const <script type="text/javascript"> activateLink('CATISpecObject_var','CATISpecObject_var&amp;')</script> <td><tt>iReference</tt><td><tt>= NULL_var</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Remove a reference object from an axis line. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iReference</tt>
+   <dd>   Reference object to remove.
+   <br>This object must implement IDMCircle2D.
+ </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('IDMCircle2D','');return false">IDMCircle2D</a>
+</dl>
+</dl>
+<a name="SetDirectionRef"></a><a name="SetDirectionRef(CATBaseUnknown_var)"></a> <dt> o <b>SetDirectionRef</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetDirectionRef</b>(<td><script type="text/javascript"> activateLink('CATBaseUnknown','CATBaseUnknown_var')</script> <td><tt>iDirRef</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Set direction reference.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDirRef</tt>
+   <dd>   Direction reference.
+   <br>This object must implement IDMLine2D or IDMCircle2D.
+ </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('IDMLine2D','');return false">IDMLine2D</a>, <a href="#" onClick="openLink('IDMCircle2D','');return false">IDMCircle2D</a>
+</dl>
+</dl>
+<a name="SetOverRuns"></a><a name="SetOverRuns(CATListOfDouble&amp;)"></a> <dt> o <b>SetOverRuns</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetOverRuns</b>(<td><script type="text/javascript"> activateLink('CATListOfDouble','CATListOfDouble&amp;')</script> <td><tt>iOverruns</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Set over run values.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iOverruns</tt>
+   <dd>   Over run values.
+   <br>Remark : It must be a four element list.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIDrwCenterLine.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATDraftingInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

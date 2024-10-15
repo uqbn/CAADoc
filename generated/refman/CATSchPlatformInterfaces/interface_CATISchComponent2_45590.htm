@@ -1,0 +1,148 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Interface CATISchComponent2</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISchComponent2','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchComponent2','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISchComponent2','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchComponent2','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Interface CATISchComponent2</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISchComponent2_45590','CATISchComponent2','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISchComponent2</b>
+</p>
+<p>
+<b><i> Interface to manage a Schematic component object.</i></b><br>
+ 
+ <b>Role</b>: Defines Schematic component object behaviors</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#PlaceInSpace(CATISchGRRComp*,double[6],CATDocument*,CATISchComponent**)"><b>PlaceInSpace</b></a>(CATISchGRRComp*,double[6],CATDocument*,CATISchComponent**)
+<dd>  Place a component in space, unconnected to other objects.
+ <dt> o 
+    <a href="#PlaceOnObject(CATISchGRRComp*,double[6],CATISchAppConnectable*,CATDocument*,CATISchComponent**)"><b>PlaceOnObject</b></a>(CATISchGRRComp*,double[6],CATISchAppConnectable*,CATDocument*,CATISchComponent**)
+<dd>  Place a component connected to another component or insert into a route.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="PlaceInSpace"></a><a name="PlaceInSpace(CATISchGRRComp*,double[6],CATDocument*,CATISchComponent**)"></a> <dt> o <b>PlaceInSpace</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>PlaceInSpace</b>(<td><script type="text/javascript"> activateLink('CATISchGRRComp','CATISchGRRComp*')</script> <td><tt>iGRR</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('double[6','double[6]')</script> <td><tt>iDb6Axis</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATDocument','CATDocument*')</script> <td><tt>iDoc</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATISchComponent','CATISchComponent**')</script> <td><tt>oNewComponent</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Place a component in space, unconnected to other objects.
+ It will create local reference (from a catalog referenced document)
+ if necessary.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGRR</tt>
+   <dd>   Pointer to the component graphical representation.
+   if NULL the "Primary" graphical representation will be used.
+ </dd>
+    <dt><tt> iDb6Axis[6]</tt>
+   <dd>   X-axis of the local axis of the new instance
+   Y-axis of the local axis of the new instance
+   X-Y coordinates of the orgin of the new instance.
+   This axis defines the orientation and location of the new instance
+   in space.
+ </dd>
+    <dt><tt> iDoc</tt>
+   <dd>   Pointer to a document to create the object in. If NULL, the
+   document associated with the current Editor will be used.
+ </dd>
+    <dt><tt> oNewComponent</tt>
+   <dd>   Interface pointer to the new component instance placed.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="PlaceOnObject"></a><a name="PlaceOnObject(CATISchGRRComp*,double[6],CATISchAppConnectable*,CATDocument*,CATISchComponent**)"></a> <dt> o <b>PlaceOnObject</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>PlaceOnObject</b>(<td><script type="text/javascript"> activateLink('CATISchGRRComp','CATISchGRRComp*')</script> <td><tt>iGRR</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('double[6','double[6]')</script> <td><tt>iDb6Axis</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATISchAppConnectable','CATISchAppConnectable*')</script> <td><tt>iObjectToConnect</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATDocument','CATDocument*')</script> <td><tt>iDoc</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATISchComponent','CATISchComponent**')</script> <td><tt>oNewComponent</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Place a component connected to another component or insert into a route. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGRR</tt>
+   <dd>   Pointer to the component graphical representation.
+   if NULL the "Primary" graphical representation will be used.
+ </dd>
+    <dt><tt> iDb6Axis[6]</tt>
+   <dd>   X-axis of the local axis of the new instance
+   Y-axis of the local axis of the new instance
+   X-Y coordinates of the orgin of the new instance.
+   This axis defines the orientation and location of the new instance
+   in space.
+ </dd>
+    <dt><tt> iObjectToConnect</tt>
+   <dd>   Pointer to a component to connect the new instance to or a route object
+   to insert new component into.
+ </dd>
+    <dt><tt> iDoc</tt>
+   <dd>   Pointer to a document to create the object in. If NULL, the
+   document associated with the current Editor will be used.
+ </dd>
+    <dt><tt> oNewComponent</tt>
+   <dd>   Interface pointer to the new component instance placed.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISchComponent2.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

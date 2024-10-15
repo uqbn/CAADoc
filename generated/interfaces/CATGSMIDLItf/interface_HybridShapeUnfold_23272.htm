@@ -1,0 +1,234 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATGSMIDLItf HybridShapeUnfold (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATGSMIDLItf.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('HybridShapeUnfold','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapeUnfold','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('HybridShapeUnfold','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapeUnfold','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>HybridShapeUnfold<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_HybridShapeUnfold_23272','HybridShapeUnfold','0');</script>
+<b><i> Represents the hybrid shape Unfold feature object.</i></b><br>
+
+ <b>Role</b>: To access the data of the hybrid shape Unfold feature object.
+ This data includes:
+ <ul>
+ <li>The shell to unfold</li>
+ <li>The edges to tear</li>
+ </ul>
+ <p>Use the  CATIAHybridShapeFactory to create a HybridShapeUnfold object.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeFactory','');return false">HybridShapeFactory</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#DirectionToUnfold"><b>DirectionToUnfold</b></a>
+<dd>  Returns or sets the direction to unfold.
+ <dt>
+    <a href="#EdgeToTearPositioningOrientation"><b>EdgeToTearPositioningOrientation</b></a>
+<dd>  Returns or sets the positioning orientation when the reference origin is located on an edge to tear.
+ <dt>
+    <a href="#OriginToUnfold"><b>OriginToUnfold</b></a>
+<dd>  Returns or sets the origin to unfold.
+ <dt>
+    <a href="#SurfaceToUnfold"><b>SurfaceToUnfold</b></a>
+<dd>  Returns or sets the surface to unfold.
+ <dt>
+    <a href="#SurfaceType"><b>SurfaceType</b></a>
+<dd>  Returns or sets the type of surface to unfold.
+ <dt>
+    <a href="#TargetOrientationMode"><b>TargetOrientationMode</b></a>
+<dd>  Returns or sets the mode for target surface orientation.
+ <dt>
+    <a href="#TargetPlane"><b>TargetPlane</b></a>
+<dd>  Returns or sets the target plane.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddEdgeToTear"><b>AddEdgeToTear</b></a>
+<dd>  Adds an edge to tear.
+ <dt>
+    <a href="#GetEdgeToTear"><b>GetEdgeToTear</b></a>
+<dd>  Retrieves an element used by the hybrid shape unfold feature object.
+ <dt>
+    <a href="#RemoveEdgeToTear"><b>RemoveEdgeToTear</b></a>
+<dd>  Removes an element used by the hybrid shape unfold feature object.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="DirectionToUnfold"><dt>
+
+<table><tr><td>o Property <b>DirectionToUnfold</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the direction to unfold.
+</dl>
+<a name="EdgeToTearPositioningOrientation"><dt>
+
+<table><tr><td>o Property <b>EdgeToTearPositioningOrientation</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the positioning orientation when the reference origin is located on an edge to tear.
+ <ul>
+ <li>0= The orientation is undefined </li>
+ <li>1= The orientation is the default one </li>
+ <li>2= The orientation is inversed </li>
+ </ul>
+</dl>
+<a name="OriginToUnfold"><dt>
+
+<table><tr><td>o Property <b>OriginToUnfold</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the origin to unfold.
+</dl>
+<a name="SurfaceToUnfold"><dt>
+
+<table><tr><td>o Property <b>SurfaceToUnfold</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the surface to unfold.
+ <br>Sub-element(s) supported (see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+<a href="#" onClick="openLink('Face','');return false">Face</a>, 
+<a href="#" onClick="openLink('TriDimFeatEdge','');return false">TriDimFeatEdge</a> and 
+<a href="#" onClick="openLink('BiDimFeatEdge','');return false">BiDimFeatEdge</a>. </dl>
+</dl>
+<a name="SurfaceType"><dt>
+
+<table><tr><td>o Property <b>SurfaceType</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the type of surface to unfold.
+ <ul>
+ <li>0= The type of surface is not defined </li>
+ <li>1= The type of surface is ruled </li>
+ <li>2= The type of surface is all </li>
+ </ul>
+</dl>
+<a name="TargetOrientationMode"><dt>
+
+<table><tr><td>o Property <b>TargetOrientationMode</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the mode for target surface orientation.
+ <ul>
+ <li>0= No axis inversion </li>
+ <li>1= U inversion axis </li>
+ <li>2= V inversion axis </li>
+ <li>3= U inversion axis and V inversion axis </li>
+ <li>4= U inversion axis and swap U and V axis </li>
+ <li>5= V inversion axis and swap U and V axis </li>
+ <li>6= U inversion axis, V inversion axis and swap U and V axis </li>
+ <li>7= Swap U and V axis </li>
+ </ul>
+</dl>
+<a name="TargetPlane"><dt>
+
+<table><tr><td>o Property <b>TargetPlane</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the target plane.
+ <br>Sub-element(s) supported (see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  </dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddEdgeToTear"><dt>
+
+<table><tr><td>o Sub <b>AddEdgeToTear</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iElement</tt>)</table></dt>
+<dl>
+  <dd>
+ Adds an edge to tear.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEdge</tt>
+   <dd>		The edge to tear to add to the hybrid shape feature object.
+ <br>Sub-element(s) supported (see </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+<a href="#" onClick="openLink('Edge','');return false">Edge</a> </dl>
+ <dt><b>Examples</b>:
+ <dd>
+ The following example adds the <code>iElement</code> feature object to the 
+ <code>HybridShapeUnfold</code> object.
+ <pre>
+ HybridShapeUnfold.<font color="red">AddEdgeToTear</font> iElement
+ </pre>
+</dl>
+</dl>
+<a name="GetEdgeToTear"><dt>
+
+<table><tr><td>o Func <b>GetEdgeToTear</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iRank</tt>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Retrieves an element used by the hybrid shape unfold feature object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iRank</tt>
+   <dd>		The rank of the element to read.
+ </dl>
+ <dt><b>Examples</b>:
+ <dd>
+ The following example gets the <code>oElement</code> feature object of the 
+ <code>HybridShapeUnfold</code> object at the position <code>iRank</code>.
+ <pre>
+ Dim oElement As Reference
+ Set oElement = HybridShapeUnfold.<font color="red">GetEdgeToTear</font> (iRank).
+ </pre></dd>
+</dl>
+</dl>
+</dl>
+<a name="RemoveEdgeToTear"><dt>
+
+<table><tr><td>o Sub <b>RemoveEdgeToTear</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iRank</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes an element used by the hybrid shape unfold feature object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iRank</tt>
+   <dd>		The rank of the element to remove.
+ </dl>
+ <dt><b>Examples</b>:
+ <dd>
+ The following example removes the feature object from the 
+ <code>HybridShapeUnfold</code> object at the position <code>iRank</code>.
+ <pre>
+ HybridShapeUnfold.<font color="red">RemoveEdgeToTear</font> iRank.
+ </pre></dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

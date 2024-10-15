@@ -1,0 +1,138 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATTPSInterfaces Interface CATITPSReferenceFrame</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATTPSInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATITPSReferenceFrame','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATITPSReferenceFrame','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATITPSReferenceFrame','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATITPSReferenceFrame','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATTPSInterfaces Interface CATITPSReferenceFrame</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATITPSReferenceFrame_36499','CATITPSReferenceFrame','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATITPSReferenceFrame</b>
+</p>
+<p>
+<b><i> Interface designed to manage reference frame associated to a TPS.</i></b><br>
+
+ Reference frame is composed of three boxes.
+ <pre>
+ <r>                        Reference Frame
+ <r>                       / 
+ <r>                 _____|_____
+ <r>                /           \
+ <r>        ---------------------
+ <r>        |   |   |Box|Box|Box|
+ <r>        |   |   | 1 | 2 | 3 |
+ <r>        ---------------------
+ <pre>
+ Reference Frame must be defined with the SetFrame method that returns a 
+ semantic diagnostic on the input frame. When not in a definition context,
+ this diagnostic on frame is included in global diagnostic returned by 
+ CATITPSSemanticValidity::Check() method.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetAllDatumsSimple(CATITPSList**)"><b>GetAllDatumsSimple</b></a>(CATITPSList**)
+<dd>  Retrieves all datums simple used in Reference Frame.
+ <dt> o 
+    <a href="#GetFrame(wchar_t**,wchar_t**,wchar_t**)"><b>GetFrame</b></a>(wchar_t**,wchar_t**,wchar_t**)
+<dd>  Retrieves Frame of the TPS.
+ <dt> o 
+    <a href="#SetFrame(wchar_t*,wchar_t*,wchar_t*,wchar_t**)"><b>SetFrame</b></a>(wchar_t*,wchar_t*,wchar_t*,wchar_t**)
+<dd>  Set Frame of the TPS.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetAllDatumsSimple"></a><a name="GetAllDatumsSimple(CATITPSList**)"></a> <dt> o <b>GetAllDatumsSimple</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetAllDatumsSimple</b>(<td><script type="text/javascript"> activateLink('CATITPSList','CATITPSList**')</script> <td><tt>oDatums</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves all datums simple used in Reference Frame.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDatums</tt>
+   <dd>     All objects of the collection adhere to CATITPSDatumSimple.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetFrame"></a><a name="GetFrame(wchar_t**,wchar_t**,wchar_t**)"></a> <dt> o <b>GetFrame</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetFrame</b>(<td><script type="text/javascript"> activateLink('wchar_t','wchar_t**')</script> <td><tt>oFirstBox</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('wchar_t','wchar_t**')</script> <td><tt>oSecondBox</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('wchar_t','wchar_t**')</script> <td><tt>oThirdBox</tt>)<script type="text/javascript"> activateLink('0',' const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves Frame of the TPS.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oFirstBox</tt>
+   <dd>   </dd>
+    <dt><tt> oSecondBox</tt>
+   <dd>   </dd>
+    <dt><tt> oThirdBox</tt>
+   <dd>     Texts in first, second and third boxes.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetFrame"></a><a name="SetFrame(wchar_t*,wchar_t*,wchar_t*,wchar_t**)"></a> <dt> o <b>SetFrame</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetFrame</b>(<td> const <script type="text/javascript"> activateLink('wchar_t','wchar_t*')</script> <td><tt>iFirstBox</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('wchar_t','wchar_t*')</script> <td><tt>iSecondBox</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('wchar_t','wchar_t*')</script> <td><tt>iThirdBox</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('wchar_t','wchar_t**')</script> <td><tt>oDiagnostic</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Set Frame of the TPS. Frame is defined by a string in each box.
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFirstBox</tt>
+   <dd>   </dd>
+    <dt><tt> iSecondBox</tt>
+   <dd>   </dd>
+    <dt><tt> iThirdBox</tt>
+   <dd>     Texts in first, second and third boxes.
+   </dd>
+    <dt><tt> oDiagnostic</tt>
+   <dd>     Message that contains semantic diagnostic on Reference Frame.
+     It is composed of [0...n] NLS Keys separated by blank.
+     <tt>oDiagnostic</tt> must be deleted after use.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATITPSReferenceFrame.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

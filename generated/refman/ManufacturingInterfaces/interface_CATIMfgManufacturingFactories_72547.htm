@@ -1,0 +1,184 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ManufacturingInterfaces Interface CATIMfgManufacturingFactories</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ManufacturingInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMfgManufacturingFactories','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgManufacturingFactories','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMfgManufacturingFactories','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgManufacturingFactories','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ManufacturingInterfaces Interface CATIMfgManufacturingFactories</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMfgManufacturingFactories_72547','CATIMfgManufacturingFactories','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIMfgManufacturingFactories</b>
+</p>
+<p>
+<b><i> Interface to manage manufacturing factories.</i></b><br>
+
+ <br><b>Role</b>: CATIMfgManufacturingFactories has methods to 
+ manage manufacturing factories.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetManufacturingActivityFactory(CATIContainer_var&amp;)"><b>GetManufacturingActivityFactory</b></a>(CATIContainer_var&amp;)
+<dd>  Retrieves the manufacturing activity factory.
+ <dt> o 
+    <a href="#GetManufacturingFeatureFactory(CATIContainer_var&amp;)"><b>GetManufacturingFeatureFactory</b></a>(CATIContainer_var&amp;)
+<dd>  Retrieves the manufacturing feature factory.
+ <dt> o 
+    <a href="#GetManufacturingToolFactory(CATIContainer_var&amp;)"><b>GetManufacturingToolFactory</b></a>(CATIContainer_var&amp;)
+<dd>  Retrieves the manufacturing Tool factory.
+ <dt> o 
+    <a href="#GetManufacturingToolPathFactory(CATIContainer_var&amp;)"><b>GetManufacturingToolPathFactory</b></a>(CATIContainer_var&amp;)
+<dd>  Retrieves the manufacturing Tool path factory.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetManufacturingActivityFactory"></a><a name="GetManufacturingActivityFactory(CATIContainer_var&amp;)"></a> <dt> o <b>GetManufacturingActivityFactory</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetManufacturingActivityFactory</b>(<td><script type="text/javascript"> activateLink('CATIContainer_var','CATIContainer_var&amp;')</script> <td><tt>oActivityFactory</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the manufacturing activity factory.
+ <br><b>Role</b>: GetManufacturingActivityFactory retrieves 
+ the manufacturing activity factory
+<br><b>Usage</b>:
+  CATIMfgManufacturingFactories *piFact=NULL;
+
+  CATString ClassName("CATMfgManufacturingFactories");
+  CATInstantiateComponent (ClassName,
+                            CATIMfgManufacturingFactories::ClassId(),
+                            (void**) &piFact);
+   .....................
+
+   HRESULT Res = piFact->GetManufacturingActivityFactory (oActivityFactory)=0;
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oActivityFactory</tt>
+   <dd> The manufacturing activity factory.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetManufacturingFeatureFactory"></a><a name="GetManufacturingFeatureFactory(CATIContainer_var&amp;)"></a> <dt> o <b>GetManufacturingFeatureFactory</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetManufacturingFeatureFactory</b>(<td><script type="text/javascript"> activateLink('CATIContainer_var','CATIContainer_var&amp;')</script> <td><tt>oFeatureFactory</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the manufacturing feature factory.
+ <br><b>Role</b>: GetManufacturingFeatureFactory retrieves 
+ the manufacturing feature factory
+<br><b>Usage</b>:
+  CATIMfgManufacturingFactories *piFact=NULL;
+
+  CATString ClassName("CATMfgManufacturingFactories");
+  CATIInstanciateComponent (ClassName,
+                            CATIMfgManufacturingFactories::ClassId(),
+                            piFact);
+   .....................
+
+   HRESULT Res = piFact->GetManufacturingFeatureFactory (oFeatureFactory);
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oFeatureFactory</tt>
+   <dd> The manufacturing feature factory.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetManufacturingToolFactory"></a><a name="GetManufacturingToolFactory(CATIContainer_var&amp;)"></a> <dt> o <b>GetManufacturingToolFactory</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetManufacturingToolFactory</b>(<td><script type="text/javascript"> activateLink('CATIContainer_var','CATIContainer_var&amp;')</script> <td><tt>oToolFactory</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the manufacturing Tool factory.
+ <br><b>Role</b>: GetManufacturingToolFactory retrieves 
+ the manufacturing Tool factory
+<br><b>Usage</b>:
+  CATIMfgManufacturingFactories *piFact=NULL;
+
+  CATString ClassName("CATMfgManufacturingFactories");
+  CATInstantiateComponent (ClassName,
+                            CATIMfgManufacturingFactories::ClassId(),
+                            (void**) &piFact);
+   .....................
+
+   HRESULT Res = piFact->GetManufacturingToolFactory (oToolFactory);
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oToolFactory</tt>
+   <dd> The manufacturing Tool factory.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetManufacturingToolPathFactory"></a><a name="GetManufacturingToolPathFactory(CATIContainer_var&amp;)"></a> <dt> o <b>GetManufacturingToolPathFactory</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetManufacturingToolPathFactory</b>(<td><script type="text/javascript"> activateLink('CATIContainer_var','CATIContainer_var&amp;')</script> <td><tt>oToolPathFactory</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the manufacturing Tool path factory.
+ <br><b>Role</b>: GetManufacturingToolPathFactory retrieves 
+ the manufacturing Tool path factory
+<br><b>Usage</b>:
+  CATIMfgManufacturingFactories *piFact=NULL;
+
+  CATString ClassName("CATMfgManufacturingFactories");
+  CATInstantiateComponent (ClassName,
+                            CATIMfgManufacturingFactories::ClassId(),
+                            (void**) &piFact);
+   .....................
+
+   HRESULT Res = piFact->GetManufacturingToolPathFactory (oToolFactory);
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oToolPathFactory</tt>
+   <dd> The manufacturing Tool Path factory.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMfgManufacturingFactories.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>MfgItfEnv</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

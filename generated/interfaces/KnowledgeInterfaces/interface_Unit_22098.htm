@@ -1,0 +1,150 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>KnowledgeInterfaces Unit (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../KnowledgeInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Unit','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Unit','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Unit','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Unit','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Unit<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Unit_22098','Unit','0');</script>
+<b><i>   Represents CATIAUnit object.</i></b><br>
+
+ This interface allows convertion.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Magnitude"><b>Magnitude</b></a>
+<dd>  Returns the magnitude associated to the unit.
+ <dt>
+    <a href="#Symbol"><b>Symbol</b></a>
+<dd>  Returns the symbol associated to the unit.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#ConvertFromMKS"><b>ConvertFromMKS</b></a>
+<dd>  Convert the initial value (expressed in MKS unit) in its equivalent in the current unit.
+ <dt>
+    <a href="#ConvertFromStorageUnit"><b>ConvertFromStorageUnit</b></a>
+<dd>  Convert the initial value (expressed in storage unit) in its equivalent in the current unit.
+ <dt>
+    <a href="#ConvertToMKS"><b>ConvertToMKS</b></a>
+<dd>  Convert the initial value in its equivalent in MKS unit.
+ <dt>
+    <a href="#ConvertToStorageUnit"><b>ConvertToStorageUnit</b></a>
+<dd>  Convert the initial value in its equivalent in storage unit.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Magnitude"><dt>
+
+<table><tr><td>o Property <b>Magnitude</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the magnitude associated to the unit.
+</dl>
+<a name="Symbol"><dt>
+
+<table><tr><td>o Property <b>Symbol</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the symbol associated to the unit.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="ConvertFromMKS"><dt>
+
+<table><tr><td>o Func <b>ConvertFromMKS</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iValueInMKS</tt>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Convert the initial value (expressed in MKS unit) in its equivalent in the current unit.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iValueInThisUnit</tt>
+   <dd>   The initial value in MKS unit.
+ </dd>
+    <dt><tt> oValueInMKS</tt>
+   <dd>   The final value in the current unit.</dd>
+</dl>
+</dl>
+</dl>
+<a name="ConvertFromStorageUnit"><dt>
+
+<table><tr><td>o Func <b>ConvertFromStorageUnit</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iValueInStorageUnit</tt>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Convert the initial value (expressed in storage unit) in its equivalent in the current unit.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iValueInStorageUnit</tt>
+   <dd>   The initial value in storage unit.
+ </dd>
+    <dt><tt> oValueInThisUnit</tt>
+   <dd>   The final value in the current unit.</dd>
+</dl>
+</dl>
+</dl>
+<a name="ConvertToMKS"><dt>
+
+<table><tr><td>o Func <b>ConvertToMKS</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iValueInThisUnit</tt>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Convert the initial value in its equivalent in MKS unit.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iValueInThisUnit</tt>
+   <dd>   The initial value in the current unit.
+ </dd>
+    <dt><tt> oValueInMKS</tt>
+   <dd>   The final value in the corresponding MKS unit.</dd>
+</dl>
+</dl>
+</dl>
+<a name="ConvertToStorageUnit"><dt>
+
+<table><tr><td>o Func <b>ConvertToStorageUnit</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iValueInThisUnit</tt>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Convert the initial value in its equivalent in storage unit.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iValueInThisUnit</tt>
+   <dd>   The initial value in the current unit.
+ </dd>
+    <dt><tt> oValueInStorageUnit</tt>
+   <dd>   The final value in the corresponding storage unit.</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="CATIAttrMappingInfo" href="interface_CATIAttrMappingInfo_40083.htm" />
+<ITEM type="interface" name="CATIPDMId0" href="interface_CATIPDMId0_26054.htm" />
+<ITEM type="interface" name="CATIPDMLog0" href="interface_CATIPDMLog0_27138.htm" />
+<ITEM type="interface" name="CATIPDMLogObject0" href="interface_CATIPDMLogObject0_35005.htm" />
+<ITEM type="interface" name="CATIPDMPersistency" href="interface_CATIPDMPersistency_38603.htm" />
+<ITEM type="interface" name="CATIPDMSaveAction" href="interface_CATIPDMSaveAction_36046.htm" />
+<ITEM type="interface" name="CATIPDMSaveInfo" href="interface_CATIPDMSaveInfo_32743.htm" />
+<ITEM type="interface" name="CATIPDMSaveInfo1" href="interface_CATIPDMSaveInfo1_33478.htm" />
+<ITEM type="interface" name="CATIPDMUEAllowDocumentLoading" href="interface_CATIPDMUEAllowDocumentLoading_63534.htm" />
+<ITEM type="interface" name="CATIPDMUECreate" href="interface_CATIPDMUECreate_32398.htm" />
+<ITEM type="interface" name="CATIPDMUEDocumentName" href="interface_CATIPDMUEDocumentName_43173.htm" />
+<ITEM type="interface" name="CATIPDMUELoadProcess" href="interface_CATIPDMUELoadProcess_41376.htm" />
+<ITEM type="interface" name="CATIPDMUEOnCancel" href="interface_CATIPDMUEOnCancel_35229.htm" />
+<ITEM type="interface" name="CATIPDMUEReadMode" href="interface_CATIPDMUEReadMode_35144.htm" />
+<ITEM type="interface" name="CATIPDMUEResId" href="interface_CATIPDMUEResId_30647.htm" />
+<ITEM type="interface" name="CATIPDMUESaveProcess" href="interface_CATIPDMUESaveProcess_41542.htm" />
+<ITEM type="interface" name="CATIPDMUnixNTMapping" href="interface_CATIPDMUnixNTMapping_41350.htm" />
+<ITEM type="interface" name="CATIPLMIdentificator" href="interface_CATIPLMIdentificator_42176.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+<ITEM type="class" name="CATEnoAttrMappingEnumDef" href="class_CATEnoAttrMappingEnumDef_47698.htm" />
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+<ITEM type="collection" name="CATListOfCATIPLMIdentificator" href="class_CATListOfCATIPLMIdentificator_59949.htm" />
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Enumerations" type="enum"  ctype="enum" >
+<ITEM type="enum" name="CATPDMLogStatus" href="enum_CATPDMLogStatus_30398.htm" />
+<ITEM type="enum" name="CATPDMModType" href="enum_CATPDMModType_27293.htm" />
+</ITEM>
+</Root>

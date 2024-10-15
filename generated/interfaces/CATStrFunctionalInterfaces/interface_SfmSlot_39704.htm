@@ -1,0 +1,294 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATStrFunctionalInterfaces SfmSlot (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATStrFunctionalInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SfmSlot','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmSlot','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SfmSlot','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmSlot','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SfmSlot<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SfmSlot_39704','SfmSlot','0');</script>
+<b><i> Interface to Get and Set inputs to existing Slot.</i></b><br>
+ 
+ <b>Role</b>:  Allows managing (mainly retreiving parameters)Slots.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('SfmProfile','');return false">SfmProfile</a>, <a href="#" onClick="openLink('SfmSuperPlate','');return false">SfmSuperPlate</a>, <a href="#" onClick="openLink('SfmSlots','');return false">SfmSlots</a>, <a href="#" onClick="openLink('SfmConnectionParameters','');return false">SfmConnectionParameters</a>
+</dl>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetCntnDetailName"><b>GetCntnDetailName</b></a>
+<dd>  Gets the name of the UDF used for creating the slot.
+ <dt>
+    <a href="#GetCntnDetailParameters"><b>GetCntnDetailParameters</b></a>
+<dd>  Gets the parameters set on the UDF.
+ <dt>
+    <a href="#GetConnectionCoordinate"><b>GetConnectionCoordinate</b></a>
+<dd>  Gets thelocation of existing slot.
+ <dt>
+    <a href="#GetMasterObject"><b>GetMasterObject</b></a>
+<dd>  Gets the Penetrating Element used in the creation of the Slot.
+ <dt>
+    <a href="#GetSlaveObject"><b>GetSlaveObject</b></a>
+<dd>  Gets the Penetrated Element used in the creation of the Slot.
+ <dt>
+    <a href="#SetSlaveObject"><b>SetSlaveObject</b></a>
+<dd>  Sets/Replaces the Penetrated Element used in the creation of the Slot.
+ <dt>
+    <a href="#UpdateConnectionsSet"><b>UpdateConnectionsSet</b></a>
+<dd>  Updates the Connection Set.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetCntnDetailName"><dt>
+
+<table><tr><td>o Func <b>GetCntnDetailName</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Gets the name of the UDF used for creating the slot.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oUDFName</tt>
+   <dd> [in]      Name of the UDF.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+ <dl>
+ <dt>Example</dt>:
+ <dd>
+ This example gives the name of the UDF used in creating the slot.
+ <pre>
+ Dim SlotsonPlate As SfmSlots
+ Set SlotsonPlate = SfmSuperPlateObj.GetSlotsOnPlate
+ Dim SlotObj As SfmSlot
+ Set SlotObj = SlotsonPlate.Item(1)
+ Dim UDFName As String
+ UDFName = SlotObj.<font color="red">GetCntnDetailName</font>
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="GetCntnDetailParameters"><dt>
+
+<table><tr><td>o Func <b>GetCntnDetailParameters</b>(<td>) As <script type="text/javascript"> activateLink('SfmConnectionParameters','SfmConnectionParameters')</script> </table></dt>
+<dl>
+  <dd>
+ Gets the parameters set on the UDF.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oListOfSlotParameters</tt>
+   <dd> [in]      List of SfmConnectionParameters.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+ <dl>
+ <dt>Example</dt>:
+ <dd>
+ This retrieves the Parameter List and checks vlaues assigned to these parameters.
+ <pre>
+ Dim SlotsonPlate As SfmSlots
+ Set SlotsonPlate = SfmSuperPlateObj.GetSlotsOnPlate
+ Dim SlotObj As SfmSlot
+ Set SlotObj = SlotsonPlate.Item(1)
+ Dim oListSlotParams As SfmConnectionParameters
+ oListSlotParams = SlotObj.<font color="red">GetCntnDetailParameters</font>
+ Dim UDFParam As Parameter
+ ParamCount = oListSlotParams.Count
+ Dim Value As String
+ For i = 1 To ParamCount
+  Set UDFParam = oListSlotParams.Item(i)  
+  Value = UDFParam.ValueAsString
+ Next
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="GetConnectionCoordinate"><dt>
+
+<table><tr><td>o Func <b>GetConnectionCoordinate</b>(<td>) As <script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> </table></dt>
+<dl>
+  <dd>
+ Gets thelocation of existing slot.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oCoordinate</tt>
+   <dd> [out]      The Coordinates.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+ <dl>
+ <dt>Example</dt>:
+ <dd>
+ The example retrieves slot Coordinates defined on start end.
+ <pre>
+ Dim SlotsonPlate As SfmSlots
+ Set SlotsonPlate = SfmSuperPlateObj.GetSlotsOnPlate
+ Dim SlotObj As SfmSlot
+ Set SlotObj = SlotsonPlate.Item(1)
+ Dim Coord() As Variant
+ Dim x,y,z as Double
+ Coord() = SlotObj.<font color="red">GetConnectionCoordinate</font>
+ x = Coord(0)
+ y = Coord(1)
+ z = Coord(2)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="GetMasterObject"><dt>
+
+<table><tr><td>o Func <b>GetMasterObject</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Gets the Penetrating Element used in the creation of the Slot.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oPenetratingObject</tt>
+   <dd> [out]      The retrieved element(Profile).
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example gets the Master Object.
+ <pre>
+ Dim SlotsonPlate As SfmSlots
+ Set SlotsonPlate = SfmSuperPlateObj.GetSlotsOnPlate
+ Dim SlotObj As SfmSlot
+ Set SlotObj = SlotsonPlate.Item(1)
+ Dim oPenetratingRef As Reference
+ Set oPenetratingRef = SlotObj.<font color="red">GetMasterObject</font>
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="GetSlaveObject"><dt>
+
+<table><tr><td>o Func <b>GetSlaveObject</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Gets the Penetrated Element used in the creation of the Slot.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oPenetratedObject</tt>
+   <dd> [out]      The retrieved element(Plate/Profile).
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example gets the Slave Object.
+ <pre>
+ Dim SlotsonPlate As SfmSlots
+ Set SlotsonPlate = SfmSuperPlateObj.GetSlotsOnPlate
+ Dim SlotObj As SfmSlot
+ Set SlotObj = SlotsonPlate.Item(1)
+ Dim oPenetratedRef As Reference
+ Set oPenetratedRef = SlotObj.<font color="red">GetSlaveObject</font>
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="SetSlaveObject"><dt>
+
+<table><tr><td>o Sub <b>SetSlaveObject</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iSlaveObject</tt>)</table></dt>
+<dl>
+  <dd>
+ Sets/Replaces the Penetrated Element used in the creation of the Slot.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSlaveObject</tt>
+   <dd> [in]      The retrieved element(Plate/Profile).
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+ <dl>
+ <dt>Example</dt>:
+ <dd>
+ This example sets the Slave Object.
+ <pre>
+ Dim SlotsonPlate As SfmSlots
+ Set SlotsonPlate = SfmSuperPlateObj.GetSlotsOnPlate
+ Dim SlotObj As SfmSlot
+ Set SlotObj = SlotsonPlate.Item(1)
+ Dim oPenetratedRef As Reference
+ Set oPenetratedRef = PartObj.CreateReferenceFromObject(SfmNewPlateObj)
+ SlotObj.<font color="red">SetSlaveObject(oPenetratedRef)</font>
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="UpdateConnectionsSet"><dt>
+
+<table><tr><td>o Sub <b>UpdateConnectionsSet</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Updates the Connection Set.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+ <dl>
+ <dt>Example</dt>:
+ <dd>
+ The example Updates the Connection Set.
+ <pre>
+ Dim SlotsonPlate As SfmSlots
+ Set SlotsonPlate = SfmSuperPlateObj.GetSlotsOnPlate
+ Dim SlotObj As SfmSlot
+ Set SlotObj = SlotsonPlate.Item(1)
+ SlotObj.<font color="red">UpdateConnectionsSet</font>
+ </pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

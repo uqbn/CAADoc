@@ -1,0 +1,78 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMOperatorsInterfaces Class CATICGMTopGeodesicLineOperator</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMOperatorsInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATICGMTopGeodesicLineOperator','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMTopGeodesicLineOperator','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATICGMTopGeodesicLineOperator','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMTopGeodesicLineOperator','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GMOperatorsInterfaces Class CATICGMTopGeodesicLineOperator</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATICGMTopGeodesicLineOperator_67463','CATICGMTopGeodesicLineOperator','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATICGMTopGeodesicLineOperator</b>
+</p>
+<p>
+<b><i> Class defining a topological operator that builds a geodesic line on a shell.</i></b><br>
+
+ <br> The definition of the line is:
+ <ul><li> passing by a point, in a given direction, with first and second length.
+ <li> If first length>0 (or<0) and second length2<0 (or>0), the point will be cleaned.
+</ul>
+<br> This operator follows the general scheme of the topological operators.
+<li> Create the operator with the <tt>CATCGMCreateTopGeodesicLineOperatorFromDirection</tt> global function.
+<li> Run with the <tt>Run</tt> method. 
+<li> Get the result body by the <tt>GetResult</tt> method. 
+<li> Release the operator with the <tt>Release</tt> method.
+</ul>
+<br>The created body can be removed from the factory with the 
+ <a href="#" onClick="openLink('CATICGMContainer','Remove');return false">CATICGMContainer.Remove</a> method as any CATICGMObject.
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATICGMTopGeodesicLineOperator()"><b>CATICGMTopGeodesicLineOperator</b></a>()
+<dd>  Constructor
+</dl>
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATICGMTopGeodesicLineOperator"></a><a name="CATICGMTopGeodesicLineOperator()"></a> <dt> o <b>CATICGMTopGeodesicLineOperator</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATICGMTopGeodesicLineOperator</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructor
+</dl>
+<hr>
+ This object is included in the file: <b>CATICGMTopGeodesicLineOperator.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGMOperatorsInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

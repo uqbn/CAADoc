@@ -1,0 +1,190 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchMovable (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchMovable','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchMovable','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchMovable','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchMovable','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchMovable<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchMovable_36908','SchMovable','0');</script>
+<b><i>  Manage the transformation of a schematic component.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Rotate"><b>Rotate</b></a>
+<dd>  Rotate a schematic object with an angle in radian.
+ <dt>
+    <a href="#Scale"><b>Scale</b></a>
+<dd>  Scale a schematic object with a scale factor.
+ <dt>
+    <a href="#ScaleSelectedObjects"><b>ScaleSelectedObjects</b></a>
+<dd>  Scale a list of schematic objects with a scale factor.
+ <dt>
+    <a href="#Transform"><b>Transform</b></a>
+<dd>  Transform a schematic object with a transformation matrix.
+ <dt>
+    <a href="#Translate"><b>Translate</b></a>
+<dd>  Translate a schematic object with a vector.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Rotate"><dt>
+
+<table><tr><td>o Sub <b>Rotate</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iDb1RotationAngleInRadian</tt>)</table></dt>
+<dl>
+  <dd>
+ Rotate a schematic object with an angle in radian.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDb1RotationAngleInRadian</tt>
+   <dd>   Rotation angle (from x-axis) in radian.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchMovable
+
+  ...
+ objThisIntf.<font color="red">Rotate</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="Scale"><dt>
+
+<table><tr><td>o Sub <b>Scale</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iDb1ScaleFactor</tt>)</table></dt>
+<dl>
+  <dd>
+ Scale a schematic object with a scale factor.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDb1ScaleFactor</tt>
+   <dd>   The current scale factor of the component.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchMovable
+
+  ...
+ objThisIntf.<font color="red">Scale</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="ScaleSelectedObjects"><dt>
+
+<table><tr><td>o Sub <b>ScaleSelectedObjects</b>(<td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>iLCntblToScale</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iDb1ScaleFactor</tt>)</table></dt>
+<dl>
+  <dd>
+ Scale a list of schematic objects with a scale factor.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLCntblToScale</tt>
+   <dd>   List of selected objects to scale.
+ </dd>
+    <dt><tt> oDb1ScaleFactor</tt>
+   <dd>   The current scale factor.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchMovable
+ Dim objArg1 As SchListOfObjects
+
+  ...
+ objThisIntf.<font color="red">ScaleSelectedObjects</font>objArg1,objArg1
+ </pre>
+
+</dl>
+</dl>
+<a name="Transform"><dt>
+
+<table><tr><td>o Sub <b>Transform</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iDb6TransMatrix</tt>)</table></dt>
+<dl>
+  <dd>
+ Transform a schematic object with a transformation matrix.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDb6TransMatrix</tt>
+   <dd>   Transformation matrix.
+   See </dd>
+</dl>
+<a href="#" onClick="openLink('SchGRRComp','GetTransformation2D');return false">SchGRRComp.GetTransformation2D</a>   for explanation of this argument.
+    
+ 
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchMovable
+ Dim dbVar1(6) As CATSafeArrayVariant
+  ...
+ objThisIntf.<font color="red">Transform</font>dbVar1
+ </pre>
+
+</dl>
+</dl>
+<a name="Translate"><dt>
+
+<table><tr><td>o Sub <b>Translate</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iDb2Vector</tt>)</table></dt>
+<dl>
+  <dd>
+ Translate a schematic object with a vector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDb2Vector</tt>
+   <dd>   X-Y components of a translation vector.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchMovable
+ Dim dbVar1(2) As CATSafeArrayVariant
+  ...
+ objThisIntf.<font color="red">Translate</font>dbVar1
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

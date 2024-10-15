@@ -1,0 +1,174 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ManufacturingInterfaces Interface CATIMfgStartupFactories</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ManufacturingInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMfgStartupFactories','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgStartupFactories','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMfgStartupFactories','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgStartupFactories','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ManufacturingInterfaces Interface CATIMfgStartupFactories</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMfgStartupFactories_56664','CATIMfgStartupFactories','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIMfgStartupFactories</b>
+</p>
+<p>
+<b><i> Interface to manage manufacturing Startup factories.</i></b><br>
+
+ <br><b>Role</b>: CATIMfgStartupFactories has methods to 
+ manage manufacturing  Startup factories in Customer catalogs.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CreateMachiningFeatureSU(CATISpecObject**,CATICatalog*,CATUnicodeString&amp;,CATUnicodeString&amp;)"><b>CreateMachiningFeatureSU</b></a>(CATISpecObject**,CATICatalog*,CATUnicodeString&amp;,CATUnicodeString&amp;)
+<dd>  Creates a new Feature StartUp in the provided client catalog.
+ <dt> o 
+    <a href="#CreateMachiningOperationSU(CATISpecObject**,CATICatalog*,CATIContainer*,CATUnicodeString&amp;,CATUnicodeString&amp;,CATListOfCATUnicodeString&amp;)"><b>CreateMachiningOperationSU</b></a>(CATISpecObject**,CATICatalog*,CATIContainer*,CATUnicodeString&amp;,CATUnicodeString&amp;,CATListOfCATUnicodeString&amp;)
+<dd>  Creates a new StartUp in the provided client catalog.
+ <dt> o 
+    <a href="#CreateManufacturingSetupSU(CATISpecObject**,CATICatalog*,CATIContainer*,CATUnicodeString&amp;,CATUnicodeString&amp;)"><b>CreateManufacturingSetupSU</b></a>(CATISpecObject**,CATICatalog*,CATIContainer*,CATUnicodeString&amp;,CATUnicodeString&amp;)
+<dd>  Creates a new StartUp in the provided client catalog.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="CreateMachiningFeatureSU"></a><a name="CreateMachiningFeatureSU(CATISpecObject**,CATICatalog*,CATUnicodeString&amp;,CATUnicodeString&amp;)"></a> <dt> o <b>CreateMachiningFeatureSU</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>CreateMachiningFeatureSU</b>(<td><script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject**')</script> <td><tt>piNewStartUp</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATICatalog','CATICatalog*')</script> <td><tt>piClientCatalog</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>pUserTypeName</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>pSuperTypeName</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates a new Feature StartUp in the provided client catalog.
+ <br> <b>Role:</b> Allows the creation of a new client Feature StartUp deriving from
+ the StartUp found in the Machining catalog.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> opiNewStartUp</tt>
+   <dd>      the new client Feature StartUp created.
+ </dd>
+    <dt><tt> ipiClientCatalog</tt>
+   <dd>      the Client catalog in which you want to create the new StartUp.
+ </dd>
+    <dt><tt> ipUserTypeName</tt>
+   <dd>      the late type of the new client StartUp to be created.
+ </dd>
+    <dt><tt> ipSuperTypeName</tt>
+   <dd>      the late type of the deriving StartUp.
+ </dd>
+    <dt><tt> ipCatalogName</tt>
+   <dd>      the name of the catalog (without .feat or .CATfct suffix) in which the deriving
+         StartUp can be found. Today the only one authorized is "MachiningFeature".
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>       S_OK: the new StartUp has been created.
+	 <br> E_FAIL: the new StartUp has not been created.
+</dl>
+</dl>
+<a name="CreateMachiningOperationSU"></a><a name="CreateMachiningOperationSU(CATISpecObject**,CATICatalog*,CATIContainer*,CATUnicodeString&amp;,CATUnicodeString&amp;,CATListOfCATUnicodeString&amp;)"></a> <dt> o <b>CreateMachiningOperationSU</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>CreateMachiningOperationSU</b>(<td><script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject**')</script> <td><tt>piNewStartUp</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATICatalog','CATICatalog*')</script> <td><tt>piClientCatalog</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIContainer','CATIContainer*')</script> <td><tt>piActivityCont</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>pActivityTypeName</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>pActivitySuperTypeName</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATListOfCATUnicodeString','CATListOfCATUnicodeString&amp;')</script> <td><tt>pFeatureTypeNameList</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates a new StartUp in the provided client catalog.
+ <br> <b>Role:</b> Allows the creation of a new client StartUp deriving from
+ the StartUp found in the Machining catalog file.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> opiNewStartUp</tt>
+   <dd>      the new client StartUp created.
+ </dd>
+    <dt><tt> ipiClientCatalog</tt>
+   <dd>      the client catalog in which the new client StartUp is to be created.
+ </dd>
+    <dt><tt> ipiActivityCont</tt>
+   <dd>      the activity container in which the new client StartUp is to be created.
+ </dd>
+    <dt><tt> ipActivityTypeName</tt>
+   <dd>      the late type of the new client StartUp to be created.
+ </dd>
+    <dt><tt> ipActivitySuperTypeName</tt>
+   <dd>      the late type of the deriving StartUp.Today the only one authorized is "MfgUserDefinedMO".
+ </dd>
+    <dt><tt> ipFeatureTypeNameList</tt>
+   <dd>      the list of the features names you want to authorized on this Startup.
+      this list can be empty.
+      if this list contained Client feature, you must have opened the client catalog containing these client feature 
+      Startup before calling this service.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>       S_OK: the new StartUp has been created.
+	 <br> E_FAIL: the new StartUp has not been created.
+</dl>
+</dl>
+<a name="CreateManufacturingSetupSU"></a><a name="CreateManufacturingSetupSU(CATISpecObject**,CATICatalog*,CATIContainer*,CATUnicodeString&amp;,CATUnicodeString&amp;)"></a> <dt> o <b>CreateManufacturingSetupSU</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>CreateManufacturingSetupSU</b>(<td><script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject**')</script> <td><tt>piNewStartUp</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATICatalog','CATICatalog*')</script> <td><tt>piClientCatalog</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIContainer','CATIContainer*')</script> <td><tt>piActivityCont</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>pActivityTypeName</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>pActivitySuperTypeName</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates a new StartUp in the provided client catalog.
+ <br> <b>Role:</b> Allows the creation of a new client StartUp deriving from
+ the StartUp found in the Machining catalog file.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> opiNewStartUp</tt>
+   <dd>      the new client StartUp created.
+ </dd>
+    <dt><tt> ipiClientCatalog</tt>
+   <dd>      the client catalog in which the new client StartUp is to be created.
+ </dd>
+    <dt><tt> ipiActivityCont</tt>
+   <dd>      the activity container in which the new client StartUp is to be created.
+ </dd>
+    <dt><tt> ipActivityTypeName</tt>
+   <dd>      the late type of the new client StartUp to be created.
+ </dd>
+    <dt><tt> ipActivitySuperTypeName</tt>
+   <dd>      the late type of the deriving StartUp.Today the only one authorized is "MfgUserDefinedPO".
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>       S_OK: the new StartUp has been created.
+	 <br> E_FAIL: the new StartUp has not been created.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMfgStartupFactories.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>MfgItfEnv</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

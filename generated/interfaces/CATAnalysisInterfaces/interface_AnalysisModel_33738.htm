@@ -1,0 +1,144 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces AnalysisModel (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('AnalysisModel','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisModel','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('AnalysisModel','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisModel','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>AnalysisModel<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_AnalysisModel_33738','AnalysisModel','0');</script>
+<b><i>   Represent the  analysis model object.</i></b><br>
+
+ <b>Role</b>: In the analysis document, an analysis model is the object
+ dedicated to set and manage all the required data for the discretization 
+ and idealization of a Finite Element model. <br>
+ This object gives access to:
+ <ul>
+ <li> A collection of AnalysisCase.</li>
+ <li> A collection of AnalysisSets (All the input sets like properties, groups).</li>
+ <li> A AnalysisPostManager object for reporting.</li>
+ </ul><hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#AdaptivityManager"><b>AdaptivityManager</b></a>
+<dd>  Returns the AdaptivityManager defined on the analysis model.
+ <dt>
+    <a href="#AnalysisCases"><b>AnalysisCases</b></a>
+<dd>  Returns the collection of analysis cases defined on the analysis model.
+ <dt>
+    <a href="#AnalysisSets"><b>AnalysisSets</b></a>
+<dd>  Returns the analysis sets collection associated with a analysis model.
+ <dt>
+    <a href="#MeshManager"><b>MeshManager</b></a>
+<dd>  Returns the MeshManager defined on the analysis model.
+ <dt>
+    <a href="#PostManager"><b>PostManager</b></a>
+<dd>  Returns the Postprocessing  manager defined on the analysis model.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#RunTransition"><b>RunTransition</b></a>
+<dd>  Apply a transition to the analysis model.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="AdaptivityManager"><dt>
+
+<table><tr><td>o Property <b>AdaptivityManager</b>(<td>) As <script type="text/javascript"> activateLink('AnalysisAdaptivityManager','AnalysisAdaptivityManager')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the AdaptivityManager defined on the analysis model.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  a CATIAAnalysisAdaptivityManager.
+</dl>
+</dl>
+<a name="AnalysisCases"><dt>
+
+<table><tr><td>o Property <b>AnalysisCases</b>(<td>) As <script type="text/javascript"> activateLink('AnalysisCases','AnalysisCases')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the collection of analysis cases defined on the analysis model.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  oAnalysisCases Collection of cases.
+</dl>
+</dl>
+<a name="AnalysisSets"><dt>
+
+<table><tr><td>o Property <b>AnalysisSets</b>(<td>) As <script type="text/javascript"> activateLink('AnalysisSets','AnalysisSets')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the analysis sets collection associated with a analysis model.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  a collection of  CATIAAnalysisSets.
+</dl>
+</dl>
+<a name="MeshManager"><dt>
+
+<table><tr><td>o Property <b>MeshManager</b>(<td>) As <script type="text/javascript"> activateLink('AnalysisMeshManager','AnalysisMeshManager')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the MeshManager defined on the analysis model.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  a CATIAAnalysisMeshManager.
+</dl>
+</dl>
+<a name="PostManager"><dt>
+
+<table><tr><td>o Property <b>PostManager</b>(<td>) As <script type="text/javascript"> activateLink('AnalysisPostManager','AnalysisPostManager')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the Postprocessing  manager defined on the analysis model.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  oPostManager the AnalysisPostManager Object.
+</dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="RunTransition"><dt>
+
+<table><tr><td>o Sub <b>RunTransition</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iTransitionName</tt>)</table></dt>
+<dl>
+  <dd>
+ Apply a transition to the analysis model.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> Transition</tt>
+   <dd> name.</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

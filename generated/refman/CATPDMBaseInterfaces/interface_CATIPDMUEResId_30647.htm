@@ -1,0 +1,74 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATPDMBaseInterfaces Interface CATIPDMUEResId</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATPDMBaseInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIPDMUEResId','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPDMUEResId','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIPDMUEResId','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIPDMUEResId','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATPDMBaseInterfaces Interface CATIPDMUEResId</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIPDMUEResId_30647','CATIPDMUEResId','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATIPDMUEResId</b>
+</p>
+<p>
+<b><i> Interface enabling the custom definition of PDMId dedicated to interoperability between CATIAV5 and VPMV4.</i></b><br>
+
+ <b>Role</b>: Interface enabling a customer to define its own Id policy for the PDMId
+ This interface is implied in the VPMV4 openess to CATIA V5, where PDMId are made of CO-ID COMP-ID.  
+ When needed it has to be implemented on the late type : CATUEPDMResId
+ PDMId customer implementation is needed when the customer wants to customize its PDMIds.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CreateId()"><b>CreateId</b></a>()
+<dd>  Creation of the Id .
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="CreateId"></a><a name="CreateId()"></a> <dt> o <b>CreateId</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATDbBinary','CATDbBinary')</script>  <b>CreateId</b>(<td>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Creation of the Id .
+ This Id will be used to generate a PDMId for VPM 
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>     CATDbBinary on 8 octets
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIPDMUEResId.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATPDMBaseItf</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

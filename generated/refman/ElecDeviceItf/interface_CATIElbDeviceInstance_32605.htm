@@ -1,0 +1,121 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ElecDeviceItf Interface CATIElbDeviceInstance</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ElecDeviceItf.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIElbDeviceInstance','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIElbDeviceInstance','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIElbDeviceInstance','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIElbDeviceInstance','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ElecDeviceItf Interface CATIElbDeviceInstance</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIElbDeviceInstance_32605','CATIElbDeviceInstance','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIElbDeviceInstance</b>
+</p>
+<p>
+<b><i> Interface to manage Equipments.</i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Disconnect(CATIElbDeviceInstance*)"><b>Disconnect</b></a>(CATIElbDeviceInstance*)
+<dd> 
+ 
+ <dt> o 
+    <a href="#GetConnectedDevice(CATBaseUnknown*,CATBaseUnknown*&amp;,CATBaseUnknown*&amp;)"><b>GetConnectedDevice</b></a>(CATBaseUnknown*,CATBaseUnknown*&amp;,CATBaseUnknown*&amp;)
+<dd> 
+ 
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Disconnect"></a><a name="Disconnect(CATIElbDeviceInstance*)"></a> <dt> o <b>Disconnect</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>Disconnect</b>(<td><script type="text/javascript"> activateLink('CATIElbDeviceInstance','CATIElbDeviceInstance*')</script> <td><tt>ipDeviceInstance</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ipDeviceInstance</tt>
+   <dd>   The instance of the device to be disconnected 	
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value. 
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>no error. </dd>
+     <dt>E_FAIL </dt>
+     <dd>Error occured while disconnecting devices.</dd>
+   </dl>
+</dl>
+</dl>
+<a name="GetConnectedDevice"></a><a name="GetConnectedDevice(CATBaseUnknown*,CATBaseUnknown*&amp;,CATBaseUnknown*&amp;)"></a> <dt> o <b>GetConnectedDevice</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetConnectedDevice</b>(<td><script type="text/javascript"> activateLink('CATBaseUnknown','CATBaseUnknown*')</script> <td><tt>ipCnctPt</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBaseUnknown','CATBaseUnknown*&amp;')</script> <td><tt>opDevice</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBaseUnknown','CATBaseUnknown*&amp;')</script> <td><tt>opCnctPt</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ipCnctPt</tt>
+   <dd>   The connection point on which the searched device is connected 
+   The connection point can  be a Cavity,  a ShellCnctPt, a ConnectorCnctPt or  a BackShellCnctPt. 
+ </dd>
+    <dt><tt> opDevice</tt>
+   <dd>   The device instance connected to the current device.
+ </dd>
+    <dt><tt> opCnctPt</tt>
+   <dd>   The connection point reference of the searched device implied in the 'connection'.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value. 
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>no error. </dd>
+     <dt>E_FAIL </dt>
+     <dd>Error occured while retrieving connected device.</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIElbDeviceInstance.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATElbInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,83 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>InfInterfaces FileComponent (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../InfInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('FileComponent','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('FileComponent','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('FileComponent','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('FileComponent','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>FileComponent<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_FileComponent_20196','FileComponent','0');</script>
+<b><i> Represents the file object.</i></b><br>
+
+ <b>Role</b>: The file object allows to manipulate files with UNIX and Windows.
+ Use it instead of the one of Visual Basic to make portable macros.  
+ Its gives access to information about the file
+ and can open a file as a <a href="#" onClick="openLink('TextStream','');return false">TextStream</a> object.
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#ParentFolder"><b>ParentFolder</b></a>
+<dd>  Returns or sets the parent folder of the file.
+ <dt>
+    <a href="#Path"><b>Path</b></a>
+<dd>  Returns the full path of the file.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="ParentFolder"><dt>
+
+<table><tr><td>o Property <b>ParentFolder</b>(<td>) As <script type="text/javascript"> activateLink('Folder','Folder')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the parent folder of the file.
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example sets the folder <tt>ParentFold</tt> as parent of the file <tt>TestFile</tt>.
+ This moves the file into <tt>ParentFold</tt>.
+ <pre>
+ TestFile.<font color="red">ParentFolder</font>=ParentFold
+ </pre>
+ </dl>
+</dl>
+<a name="Path"><dt>
+
+<table><tr><td>o Property <b>Path</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the full path of the file. 
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves in <tt>FilePath</tt> the path of
+ the File <tt>TestFile</tt>.
+ <pre>
+ Dim FilePath As String
+ FilePath = TestFile.<font color="red">Path</font>
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

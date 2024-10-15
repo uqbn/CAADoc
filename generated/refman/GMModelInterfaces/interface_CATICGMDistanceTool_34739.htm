@@ -1,0 +1,102 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMModelInterfaces Interface CATICGMDistanceTool</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMModelInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATICGMDistanceTool','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMDistanceTool','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATICGMDistanceTool','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMDistanceTool','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GMModelInterfaces Interface CATICGMDistanceTool</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATICGMDistanceTool_34739','CATICGMDistanceTool','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATICGMDistanceTool</b>
+</p>
+<p>
+<b><i> Class defining the type of parallel computation.</i></b><br>
+
+ <br> This class is created by :
+ <ul> <li> <a href="#" onClick="openLink('CATCGMCreateTopEuclidianDistanceTool','');return false">CATCGMCreateTopEuclidianDistanceTool</a> that computes the parallel with the euclidian distance
+ </ul>
+ This class is the base class for some supplied classes, but you must not derive it yourself.
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetCompositeLaw()"><b>GetCompositeLaw</b></a>()
+<dd>  Returns the law used to compute the distance.
+ <dt> o 
+    <a href="#GetSide()"><b>GetSide</b></a>()
+<dd>  Returns the side on which the parallel is computed.
+ <dt> o 
+    <a href="#GetType()"><b>GetType</b></a>()
+<dd>  Returns the type of tool :
+ GeodesicDistanceToolType_Euclidian or GeodesicDistanceToolType_Geodesic.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetCompositeLaw"></a><a name="GetCompositeLaw()"></a> <dt> o <b>GetCompositeLaw</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCompositeLaw','CATCompositeLaw *')</script>  <b>GetCompositeLaw</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the law used to compute the distance.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The pointer to the law.
+</dl>
+</dl>
+<a name="GetSide"></a><a name="GetSide()"></a> <dt> o <b>GetSide</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('short','short')</script>  <b>GetSide</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the side on which the parallel is computed.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The side value.
+ <br><b>Legal values </b>: <tt>1</tt> for the left side, <tt>-1</tt> for the right side.
+</dl>
+</dl>
+<a name="GetType"></a><a name="GetType()"></a> <dt> o <b>GetType</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('short','short')</script>  <b>GetType</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the type of tool :
+ GeodesicDistanceToolType_Euclidian or GeodesicDistanceToolType_Geodesic.
+</dl>
+<hr>
+ This object is included in the file: <b>CATICGMDistanceTool.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGMModelInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

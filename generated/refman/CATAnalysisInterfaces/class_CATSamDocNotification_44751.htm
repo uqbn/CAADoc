@@ -1,0 +1,140 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces Notification CATSamDocNotification</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATSamDocNotification','notification','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSamDocNotification','notification','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATSamDocNotification','notification','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATSamDocNotification','notification','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisInterfaces Notification CATSamDocNotification</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATSamDocNotification_44751','CATSamDocNotification','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATSamDocNotification</b>
+</p>
+<p>
+<b><i> Class representing a notification send when the analysis document is
+ loaded of saved.</i></b><br>
+
+ <b>Role</b>: An instance of this class is sent by the CATAnalysis document 
+ when the load or save operation are performed.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATSamDocActionType','');return false">CATSamDocActionType</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATSamDocNotification(CATSamDocActionType,CATDocument*)"><b>CATSamDocNotification</b></a>(CATSamDocActionType,CATDocument*)
+<dd>  <dt> o 
+    <a href="#CATSamDocNotification(CATSamDocActionType,CATDocument*,CATUnicodeString,CATUnicodeString)"><b>CATSamDocNotification</b></a>(CATSamDocActionType,CATDocument*,CATUnicodeString,CATUnicodeString)
+<dd>  <dt> o 
+    <a href="#~CATSamDocNotification()"><b>~CATSamDocNotification</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetActionType()"><b>GetActionType</b></a>()
+<dd>  Returns the action type.
+ <dt> o 
+    <a href="#GetDocument()"><b>GetDocument</b></a>()
+<dd>  Returns the document involved.
+ <dt> o 
+    <a href="#GiveNewName()"><b>GiveNewName</b></a>()
+<dd>  Returns the new name of the document after a renaming.
+ <dt> o 
+    <a href="#GiveOldName()"><b>GiveOldName</b></a>()
+<dd>  Returns the old name of the document before a renaming.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATSamDocNotification"></a><a name="CATSamDocNotification(CATSamDocActionType,CATDocument*)"></a> <dt> o <b>CATSamDocNotification</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATSamDocNotification</b>(<td><script type="text/javascript"> activateLink('CATSamDocActionType','CATSamDocActionType')</script> <td><tt>iActionType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATDocument','CATDocument*')</script> <td><tt>iDocument</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="CATSamDocNotification"></a><a name="CATSamDocNotification(CATSamDocActionType,CATDocument*,CATUnicodeString,CATUnicodeString)"></a> <dt> o <b>CATSamDocNotification</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATSamDocNotification</b>(<td><script type="text/javascript"> activateLink('CATSamDocActionType','CATSamDocActionType')</script> <td><tt>iActionType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATDocument','CATDocument*')</script> <td><tt>iDocument</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script> <td><tt>iOldName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script> <td><tt>iNewName</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="~CATSamDocNotification"></a><a name="~CATSamDocNotification()"></a> <dt> o <b>~CATSamDocNotification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATSamDocNotification</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetActionType"></a><a name="GetActionType()"></a> <dt> o <b>GetActionType</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATSamDocActionType','CATSamDocActionType')</script>  <b>GetActionType</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the action type.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  action type.
+</dl>
+</dl>
+<a name="GetDocument"></a><a name="GetDocument()"></a> <dt> o <b>GetDocument</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATDocument','CATDocument*')</script>  <b>GetDocument</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the document involved.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  the analysis document.
+</dl>
+</dl>
+<a name="GiveNewName"></a><a name="GiveNewName()"></a> <dt> o <b>GiveNewName</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script>  <b>GiveNewName</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the new name of the document after a renaming.
+</dl>
+<a name="GiveOldName"></a><a name="GiveOldName()"></a> <dt> o <b>GiveOldName</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script>  <b>GiveOldName</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the old name of the document before a renaming.
+</dl>
+<hr>
+ This object is included in the file: <b>CATSamDocNotification.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisToolkit</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

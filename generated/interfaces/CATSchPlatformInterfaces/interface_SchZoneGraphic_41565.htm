@@ -1,0 +1,127 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchZoneGraphic (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchZoneGraphic','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchZoneGraphic','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchZoneGraphic','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchZoneGraphic','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchZoneGraphic<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchZoneGraphic_41565','SchZoneGraphic','0');</script>
+<b><i>  Manage graphical representations of a schematic zone.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddGraphicalRepresentation"><b>AddGraphicalRepresentation</b></a>
+<dd>  Add a graphical representation to a zone.
+ <dt>
+    <a href="#ListGraphicalRepresentations"><b>ListGraphicalRepresentations</b></a>
+<dd>  List all graphical representations of a zone.
+ <dt>
+    <a href="#RemoveGraphicalRepresentation"><b>RemoveGraphicalRepresentation</b></a>
+<dd>  Remove a graphical representation from a zone.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddGraphicalRepresentation"><dt>
+
+<table><tr><td>o Sub <b>AddGraphicalRepresentation</b>(<td><script type="text/javascript"> activateLink('SchGRRZone','SchGRRZone')</script> <td><tt>iGRRToAdd</tt>)</table></dt>
+<dl>
+  <dd>
+ Add a graphical representation to a zone.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGRRToAdd</tt>
+   <dd>   The graphical representation to be added to the zone.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchZoneGraphic
+ Dim objArg1 As SchGRRZone
+  ...
+ objThisIntf.<font color="red">AddGraphicalRepresentation</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+<a name="ListGraphicalRepresentations"><dt>
+
+<table><tr><td>o Func <b>ListGraphicalRepresentations</b>(<td>) As <script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> </table></dt>
+<dl>
+  <dd>
+ List all graphical representations of a zone.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLGRR</tt>
+   <dd>   A list of graphical representations
+   (members are CATISchGRRZone interface pointers).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchZoneGraphic
+ Dim objArg1 As SchListOfObjects
+  ...
+ Set objArg1 = objThisIntf.<font color="red">ListGraphicalRepresentations</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="RemoveGraphicalRepresentation"><dt>
+
+<table><tr><td>o Sub <b>RemoveGraphicalRepresentation</b>(<td><script type="text/javascript"> activateLink('SchGRRZone','SchGRRZone')</script> <td><tt>iGRRToRemove</tt>)</table></dt>
+<dl>
+  <dd>
+ Remove a graphical representation from a zone.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGRRToRemove</tt>
+   <dd>   The graphical representation to be removed from the zone.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchZoneGraphic
+ Dim objArg1 As SchGRRZone
+  ...
+ objThisIntf.<font color="red">RemoveGraphicalRepresentation</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

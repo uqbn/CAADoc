@@ -1,0 +1,112 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>MechanicalCommands Interface CATIUdfFeatureSet</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../MechanicalCommands.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIUdfFeatureSet','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIUdfFeatureSet','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIUdfFeatureSet','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIUdfFeatureSet','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>MechanicalCommands Interface CATIUdfFeatureSet</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIUdfFeatureSet_33229','CATIUdfFeatureSet','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIUdfFeatureSet</b>
+</p>
+<p>
+<b><i> Interface to handle the set of User Feature reference or of Power Copy.</i></b><br>
+
+ <br><b>Role</b> This interface is implemented by references created by 
+ <a href="#" onClick="openLink('CATIUdfFactory','');return false">CATIUdfFactory</a>.
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AppendFeature(CATISpecObject_var&amp;)"><b>AppendFeature</b></a>(CATISpecObject_var&amp;)
+<dd>  Add a new feature into the set.
+ <dt> o 
+    <a href="#GetListFeature()"><b>GetListFeature</b></a>()
+<dd>  Reads list of feature included in the set.
+ <dt> o 
+    <a href="#GetType(int&amp;)"><b>GetType</b></a>(int&amp;)
+<dd>  Reads the type of this set.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AppendFeature"></a><a name="AppendFeature(CATISpecObject_var&amp;)"></a> <dt> o <b>AppendFeature</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppendFeature</b>(<td> const <script type="text/javascript"> activateLink('CATISpecObject_var','CATISpecObject_var&amp;')</script> <td><tt>iSpec</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Add a new feature into the set.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSpec</tt>
+   <dd>   Feature to add. This object must implement </dd>
+<a href="#" onClick="openLink('CATIUdfFeature','');return false">CATIUdfFeature</a> .
+</dl>
+</dl>
+</dl>
+<a name="GetListFeature"></a><a name="GetListFeature()"></a> <dt> o <b>GetListFeature</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATLISTV(CATBaseUnknown_var)','CATLISTV(CATBaseUnknown_var)*')</script>  <b>GetListFeature</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Reads list of feature included in the set.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    List of features
+</dl>
+</dl>
+<a name="GetType"></a><a name="GetType(int&amp;)"></a> <dt> o <b>GetType</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetType</b>(<td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>oType</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Reads the type of this set.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oType</tt>
+   <dd>   0 : It's the set of Power Copy, 1 : It's the set of User Feature 
+   2 : It's the set of Power Copy Instance</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIUdfFeatureSet.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATUdfInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

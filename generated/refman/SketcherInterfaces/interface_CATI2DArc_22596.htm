@@ -1,0 +1,95 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>SketcherInterfaces Interface CATI2DArc</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../SketcherInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATI2DArc','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATI2DArc','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATI2DArc','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATI2DArc','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SketcherInterfaces Interface CATI2DArc</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATI2DArc_22596','CATI2DArc','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATI2DArc</b>
+</p>
+<p>
+<b><i> </i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetSupportCurve(IID&amp;,CATBaseUnknown**)"><b>GetSupportCurve</b></a>(IID&amp;,CATBaseUnknown**)
+<dd>  This method returns the Curve on which the Arc is lying.
+ <dt> o 
+    <a href="#SetSupportCurve(CATBaseUnknown*)"><b>SetSupportCurve</b></a>(CATBaseUnknown*)
+<dd>  This method changes the Curve on which the Arc is lying.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetSupportCurve"></a><a name="GetSupportCurve(IID&amp;,CATBaseUnknown**)"></a> <dt> o <b>GetSupportCurve</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetSupportCurve</b>(<td> const <script type="text/javascript"> activateLink('IID','IID&amp;')</script> <td><tt>iIID</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBaseUnknown','CATBaseUnknown**')</script> <td><tt>oCurve</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ This method returns the Curve on which the Arc is lying.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt>iIID</tt></tt>
+   <dd> [in] Interface identifier for which a pointer is requested.
+ </dd>
+    <dt><tt> <tt>oCurve</tt></tt>
+   <dd> [out] Pointer to the support Curve.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetSupportCurve"></a><a name="SetSupportCurve(CATBaseUnknown*)"></a> <dt> o <b>SetSupportCurve</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetSupportCurve</b>(<td><script type="text/javascript"> activateLink('CATBaseUnknown','CATBaseUnknown*')</script> <td><tt>iCurve</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ This method changes the Curve on which the Arc is lying.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt>iCurve</tt></tt>
+   <dd> [in] Pointer to the new support Curve.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATI2DArc.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATSketcherInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

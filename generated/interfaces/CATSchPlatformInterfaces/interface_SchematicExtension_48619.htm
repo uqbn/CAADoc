@@ -1,0 +1,109 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchematicExtension (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchematicExtension','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchematicExtension','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchematicExtension','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchematicExtension','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchematicExtension<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchematicExtension_48619','SchematicExtension','0');</script>
+<b><i>  Manage schematic extensions.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddExtension"><b>AddExtension</b></a>
+<dd>  Adds a Schematic extension to an application object.
+ <dt>
+    <a href="#RemoveExtension"><b>RemoveExtension</b></a>
+<dd>  Removes a Schematic extension to an application object.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddExtension"><dt>
+
+<table><tr><td>o Sub <b>AddExtension</b>(<td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>iAppObjToBeExtended</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CatSchIDLExtensionType','CatSchIDLExtensionType')</script> <td><tt>iExtensionType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>iLGRR</tt>)</table></dt>
+<dl>
+  <dd>
+ Adds a Schematic extension to an application object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAppObjToBeExtended</tt>
+   <dd>   The application object to be extended.
+ </dd>
+    <dt><tt> iExtensionType</tt>
+   <dd>   The extension type.
+ </dd>
+    <dt><tt> iLGRR</tt>
+   <dd>   If iLGRR is not NULL, then its members will be linked to the extension as graphics
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchematicExtension
+ Dim objArg1 As AnyObject
+
+ Dim objArg3 As SchListOfObjects
+  ...
+ objThisIntf.<font color="red">AddExtension</font>objArg1,CatSchIDLExtensionType_Enum,objArg3
+ </pre>
+
+</dl>
+</dl>
+<a name="RemoveExtension"><dt>
+
+<table><tr><td>o Sub <b>RemoveExtension</b>(<td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>iAppExtendedObj</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CatSchIDLExtensionType','CatSchIDLExtensionType')</script> <td><tt>iExtensionType</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes a Schematic extension to an application object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAppExtendedObj</tt>
+   <dd>   The application object to be have its extension removed.
+ </dd>
+    <dt><tt> iExtensionType</tt>
+   <dd>   The extension type.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchematicExtension
+ Dim objArg1 As AnyObject
+
+  ...
+ objThisIntf.<font color="red">RemoveExtension</font>objArg1,CatSchIDLExtensionType_Enum
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

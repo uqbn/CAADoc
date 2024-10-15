@@ -1,0 +1,132 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATStrFunctionalInterfaces SfmEndcutManager (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATStrFunctionalInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SfmEndcutManager','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmEndcutManager','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SfmEndcutManager','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmEndcutManager','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SfmEndcutManager<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SfmEndcutManager_49760','SfmEndcutManager','0');</script>
+<b><i> Interface to get information on available endcuts from catalog.</i></b><br>
+ 
+ <b>Role</b>:  Allows to see avaiable endcuts and their reuired inputs.<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetAvailableEndcuts"><b>GetAvailableEndcuts</b></a>
+<dd>  Gets the list of available endcuts for a given family and type from the catalog.
+ <dt>
+    <a href="#GetEndcutSpecifications"><b>GetEndcutSpecifications</b></a>
+<dd>  Gets the Specifications required to define a particular Endcut.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetAvailableEndcuts"><dt>
+
+<table><tr><td>o Func <b>GetAvailableEndcuts</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iSectionFamily</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iEndcutType</tt>) As <script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> </table></dt>
+<dl>
+  <dd>
+ Gets the list of available endcuts for a given family and type from the catalog.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSectionFamily</tt>
+   <dd> [in]     The name of the Section Family(Tee,Angle,Bulb).
+ </dd>
+    <dt><tt> iType</tt>
+   <dd> [in]   The Type of Endcut(Snipe,Trim,Weld).
+ </dd>
+    <dt><tt> oListEndcutNames</tt>
+   <dd> [out]   A list of the available Endcuts.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+ <dl>
+ <dt><b>Example:<b>
+ <dd>
+ This Example retrieves the list of avaliable Endcuts for Tee ProfileType and Snipe EndcutType.
+ <pre>
+ Dim FactoryObj As SfmOperationFactory
+ Set FactoryObj = PartObj.GetCustomerFactory("SfmOperationFactory")
+ Dim EndCutManagerObj As SfmEndcutManager
+ Set EndCutManagerObj = FactoryObj.GetEndcutManager
+ Dim ListOfEndCutNames() As Variant
+ ListOfEndCutNames = EndCutManagerObj.<font color="red">GetAvailableEndcuts("Tee", "Snipe")</font>
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="GetEndcutSpecifications"><dt>
+
+<table><tr><td>o Sub <b>GetEndcutSpecifications</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iSectionFamily</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iEndcutType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iEndcutName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oListOfContextNames</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SfmConnectionParameters','SfmConnectionParameters')</script> <td><tt>oListEndCutParameters</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oListOfEndCutParamNames</tt>)</table></dt>
+<dl>
+  <dd>
+ Gets the Specifications required to define a particular Endcut.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSectionFamily</tt>
+   <dd> [in]     The Section Family(Tee,Angle,Bulb).
+ </dd>
+    <dt><tt> iEndcutType</tt>
+   <dd> [in]   The EndcutType(Snipe,Trim,Weld).
+ </dd>
+    <dt><tt> iEndcutName</tt>
+   <dd> [in]   The Name of the Endcut sought from GetAvailableEndcuts Method.
+ </dd>
+    <dt><tt> oListOfContextNames</tt>
+   <dd> [out]   The Limit Names for the Endcut(Cutbacks & Contextual only). The List will be empty for Cutom Endcut.
+ </dd>
+    <dt><tt> oListEndCutParameters</tt>
+   <dd> [out]   A list of Parameters published by the UDF. The default values can be read using this output.
+ </dd>
+    <dt><tt> oListOfEndCutParamNames</tt>
+   <dd> [out]   A list of Parameter Names published by the UDF.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <code>S_OK</code> if everything ran ok
+ <dl>
+ <dt><b>Example:<b>
+ <dd>
+ This Example retrieves the list of avaliable Endcuts for Tee ProfileType and Snipe EndcutType.
+ <pre>
+ Dim FactoryObj As SfmOperationFactory
+ Set FactoryObj = PartObj.GetCustomerFactory("SfmOperationFactory")
+ Dim EndCutManagerObj As SfmEndcutManager
+ Set EndCutManagerObj = FactoryObj.GetEndcutManager
+ Dim ListOfContextNames, ListOfUDFParamNames As Variant
+ Dim ListOfUDFParameters As SfmConnectionParameters
+ EndCutManagerObj.<font color="red">GetEndcutSpecifications "Tee", "Snipe", "T-CTX-PLATE", ListOfContextNames, ListOfUDFParameters, ListOfUDFParamNames</font>
+ </pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

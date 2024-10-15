@@ -1,0 +1,25 @@
+Language="VBSCRIPT"
+Sub CATMain()
+
+Set documents1 = CATIA.Documents
+Set partDocument1 = documents1.Item("Design_Unit_004.CATPart")
+Set part1 = partDocument1.Part
+Set plate= part1.FindObjectByName("Deck_005")
+Set  plateref=part1.CreateReferenceFromObject(plate)
+
+'Create Opening Using Sketch Mode
+
+Set sketch= part1.FindObjectByName("Sketch.19")
+Set  sketchref=part1.CreateReferenceFromObject(sketch)
+Set Factory =  part1.GetCustomerFactory("SfmFunctionFactory")
+Set OpeningUsingSketch =Factory.CreateOpening("FunctionalOpening",1,sketchref, plateref)
+part1.Update
+
+' Create Opening Using 3D Object Mode
+Set Object =  part1.FindObjectByName("Volume Extrude.1")
+Set  ObjectRef = part1.CreateReferenceFromObject(Object)
+Set OpeningUsing3DObj  = Factory.CreateOpening("FunctionalOpening",0,ObjectRef, plateref)
+part1.Update
+
+
+End Sub

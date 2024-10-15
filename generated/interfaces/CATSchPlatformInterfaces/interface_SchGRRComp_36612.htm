@@ -1,0 +1,288 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchGRRComp (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchGRRComp','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchGRRComp','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchGRRComp','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchGRRComp','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchGRRComp<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchGRRComp_36612','SchGRRComp','0');</script>
+<b><i>  Manage the graphical representation of a schematic component.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetPosition"><b>GetPosition</b></a>
+<dd>  Get the current position of the component.
+ <dt>
+    <a href="#GetRotationAngle"><b>GetRotationAngle</b></a>
+<dd>  Get the current rotation angle (from x-axis in radian) of the component.
+ <dt>
+    <a href="#GetScale"><b>GetScale</b></a>
+<dd>  Get the current scale factor of the component.
+ <dt>
+    <a href="#GetTransformation2D"><b>GetTransformation2D</b></a>
+<dd>  Get the local coordinate reference frame (with respect to absolute
+ coordinate system) of the component.
+ <dt>
+    <a href="#SetPosition"><b>SetPosition</b></a>
+<dd>  Set the current position of the component.
+ <dt>
+    <a href="#SetRotationAngle"><b>SetRotationAngle</b></a>
+<dd>  Set the current rotation angle (from x-axis in radian) of the component.
+ <dt>
+    <a href="#SetScale"><b>SetScale</b></a>
+<dd>  Set the current scale factor of the component.
+ <dt>
+    <a href="#SetTransformation2D"><b>SetTransformation2D</b></a>
+<dd>  Set the local coordinate reference frame (with respect to absolute
+ coordinate system) of the component.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetPosition"><dt>
+
+<table><tr><td>o Sub <b>GetPosition</b>(<td><script type="text/javascript"> activateLink('SchListOfDoubles','SchListOfDoubles')</script> <td><tt>oDb2Position</tt>)</table></dt>
+<dl>
+  <dd>
+ Get the current position of the component.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDb2Position</tt>
+   <dd>   The current position of the component.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRComp
+ Dim objArg1 As SchListOfDoubles
+  ...
+ objThisIntf.<font color="red">GetPosition</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+<a name="GetRotationAngle"><dt>
+
+<table><tr><td>o Sub <b>GetRotationAngle</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>oDb1RotationAngleInRad</tt>)</table></dt>
+<dl>
+  <dd>
+ Get the current rotation angle (from x-axis in radian) of the component.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDb1RotationAngleInRad</tt>
+   <dd>   The current angle of the component in radian.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRComp
+ Dim dbVar As Double;
+
+  ...
+ objThisIntf.<font color="red">GetRotationAngle</font>dbVar
+ </pre>
+
+</dl>
+</dl>
+<a name="GetScale"><dt>
+
+<table><tr><td>o Sub <b>GetScale</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>oDb1ScaleFactor</tt>)</table></dt>
+<dl>
+  <dd>
+ Get the current scale factor of the component.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDb1ScaleFactor</tt>
+   <dd>   The current scale factor of the component.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRComp
+ Dim dbVar As Double;
+  ...
+ objThisIntf.<font color="red">GetScale</font>dbVar
+ </pre>
+
+</dl>
+</dl>
+<a name="GetTransformation2D"><dt>
+
+<table><tr><td>o Sub <b>GetTransformation2D</b>(<td><script type="text/javascript"> activateLink('SchListOfDoubles','SchListOfDoubles')</script> <td><tt>oDb6TransMatrix</tt>)</table></dt>
+<dl>
+  <dd>
+ Get the local coordinate reference frame (with respect to absolute
+ coordinate system) of the component.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDb6TransMatrix</tt>
+   <dd>   An double array of 6 members.
+   Transformation matrix that defines the local coordinate reference frame
+   of the component
+   member 1, 2 - defines the x-axis of the local coordinate reference frame.
+   member 3, 4 - defines the y-axis of the local coordinate reference frame.
+   member 5, 6 - defines the origin of the local coordinate reference frame
+   One can also interpret this as the transformation matrix that would move
+   the component from the absolute coordinate frame to the current position
+   and orientation. As such, the member 5,6 define the translational vector
+   Furthemore, rotation angle and scale factor can be calculated from
+   member 1 to 4.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRComp
+ Dim objArg1 As SchListOfDoubles
+  ...
+ objThisIntf.<font color="red">GetTransformation2D</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+<a name="SetPosition"><dt>
+
+<table><tr><td>o Sub <b>SetPosition</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oDb2Position</tt>)</table></dt>
+<dl>
+  <dd>
+ Set the current position of the component.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDb2Position</tt>
+   <dd>   The position of the component to be set.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRComp
+ Dim dbVar1(x) As CATSafeArrayVariant
+  ...
+ objThisIntf.<font color="red">SetPosition</font>dbVar1
+ </pre>
+
+</dl>
+</dl>
+<a name="SetRotationAngle"><dt>
+
+<table><tr><td>o Sub <b>SetRotationAngle</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iDb1RotationAngleInRad</tt>)</table></dt>
+<dl>
+  <dd>
+ Set the current rotation angle (from x-axis in radian) of the component.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDb1RotationAngleInRad</tt>
+   <dd>   The rotation angle of the component in radian to be set.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRComp
+ Dim dbVar As Double;
+  ...
+ objThisIntf.<font color="red">SetRotationAngle</font>dbVar
+ </pre>
+
+</dl>
+</dl>
+<a name="SetScale"><dt>
+
+<table><tr><td>o Sub <b>SetScale</b>(<td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iDb1ScaleFactor</tt>)</table></dt>
+<dl>
+  <dd>
+ Set the current scale factor of the component.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDb1ScaleFactor</tt>
+   <dd>   The scale factor of the component to be set.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRComp
+ Dim dbVar As Double;
+
+  ...
+ objThisIntf.<font color="red">SetScale</font>dbVar
+ </pre>
+
+</dl>
+</dl>
+<a name="SetTransformation2D"><dt>
+
+<table><tr><td>o Sub <b>SetTransformation2D</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>iDb6TransMatrix</tt>)</table></dt>
+<dl>
+  <dd>
+ Set the local coordinate reference frame (with respect to absolute
+ coordinate system) of the component.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iDb6TransMatrix</tt>
+   <dd>   Transformation matrix to be set.
+   See </dd>
+</dl>
+<a href="#" onClick="openLink('','GetTransformation2D');return false">GetTransformation2D</a> for explanation of this argument.    
+ 
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchGRRComp
+ Dim dbVar1(6) As CATSafeArrayVariant
+  ...
+ objThisIntf.<font color="red">SetTransformation2D</font>dbVar1
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

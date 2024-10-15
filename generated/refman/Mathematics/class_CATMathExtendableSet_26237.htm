@@ -1,0 +1,130 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>Mathematics Class CATMathExtendableSet</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../Mathematics.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATMathExtendableSet','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATMathExtendableSet','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATMathExtendableSet','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATMathExtendableSet','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Mathematics Class CATMathExtendableSet</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATMathExtendableSet_26237','CATMathExtendableSet','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATMathExtendableSet</b>
+</p>
+<p>
+<b><i> Class handling the allocation for a set or grid
+ of points or vectors.</i></b><br>
+
+<br>This class contains an array of pointers, and is derived to specialize
+ the type of pointers and the operations that can be done.</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATMathExtendableSet()"><b>CATMathExtendableSet</b></a>()
+<dd>  Constructs an empty CATMathExtendableSet of null size.
+ <dt> o 
+    <a href="#CATMathExtendableSet(CATLONG32)"><b>CATMathExtendableSet</b></a>(CATLONG32)
+<dd>  
+ <dt> o 
+    <a href="#~CATMathExtendableSet()"><b>~CATMathExtendableSet</b></a>()
+<dd>  Destructor.
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Compress()"><b>Compress</b></a>()
+<dd>  Releases the unused memory according to the last specified size.
+ <dt> o 
+    <a href="#GetAllCoef()"><b>GetAllCoef</b></a>()
+<dd>  Gets all coef.
+ <dt> o 
+    <a href="#Initialize(CATLONG32)"><b>Initialize</b></a>(CATLONG32)
+<dd>  Initializes a CATMathExtendableSet of a given size.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATMathExtendableSet"></a><a name="CATMathExtendableSet()"></a> <dt> o <b>CATMathExtendableSet</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATMathExtendableSet</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs an empty CATMathExtendableSet of null size.
+</dl>
+<a name="CATMathExtendableSet"></a><a name="CATMathExtendableSet(CATLONG32)"></a> <dt> o <b>CATMathExtendableSet</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATMathExtendableSet</b>(<td><script type="text/javascript"> activateLink('CATLONG32','CATLONG32')</script> <td><tt>iSizeInDouble</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ 
+<dl>
+  <dt> <b>Deprecated:</b> 
+  <dd>  V5R20 Initialize
+ Constructs a CATMathExtendableSet of a given size.
+ <br>Throws an error if the given size is not positive.
+</dl>
+</dl>
+<a name="~CATMathExtendableSet"></a><a name="~CATMathExtendableSet()"></a> <dt> o <b>~CATMathExtendableSet</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATMathExtendableSet</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Destructor.
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Compress"></a><a name="Compress()"></a> <dt> o <b>Compress</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>Compress</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Releases the unused memory according to the last specified size.
+<br>This is particulary useful after a modification of a derived object.
+</dl>
+<a name="GetAllCoef"></a><a name="GetAllCoef()"></a> <dt> o <b>GetAllCoef</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('double','const double *')</script>  <b>GetAllCoef</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Gets all coef. 
+<br>The array is a part of "this" and must not be deallocated.
+</dl>
+<a name="Initialize"></a><a name="Initialize(CATLONG32)"></a> <dt> o <b>Initialize</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>Initialize</b>(<td><script type="text/javascript"> activateLink('CATLONG32','CATLONG32')</script> <td><tt>iSizeInDouble</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Initializes a CATMathExtendableSet of a given size.
+ <br>Return E_FAIL if the given size is not positive, S_OK otherwise.
+</dl>
+<hr>
+ This object is included in the file: <b>CATMathExtendableSet.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATMathematics</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

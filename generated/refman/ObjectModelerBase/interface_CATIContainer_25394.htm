@@ -1,0 +1,95 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ObjectModelerBase Interface CATIContainer</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ObjectModelerBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIContainer','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIContainer','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIContainer','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIContainer','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ObjectModelerBase Interface CATIContainer</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIContainer_25394','CATIContainer','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIContainer</b>
+</p>
+<p>
+<b><i> Interface to structure a document.</i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#ListMembersHere(CATIdent,SEQUENCE(CATBaseUnknown_ptr)&amp;)"><b>ListMembersHere</b></a>(CATIdent,SEQUENCE(CATBaseUnknown_ptr)&amp;)
+<dd>  Searches all objects implementing a specific interface into  the container.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="ListMembersHere"></a><a name="ListMembersHere(CATIdent,SEQUENCE(CATBaseUnknown_ptr)&amp;)"></a> <dt> o <b>ListMembersHere</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATLONG32','CATLONG32')</script>  <b>ListMembersHere</b>(<td> const <script type="text/javascript"> activateLink('CATIdent','CATIdent')</script> <td><tt>interfaceID</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SEQUENCE(CATBaseUnknown_ptr)','SEQUENCE(CATBaseUnknown_ptr)&amp;')</script> <td><tt>ioListObj</tt>)<script type="text/javascript"> activateLink('=0','=0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Searches all objects implementing a specific interface into  the container.<BR><BR>
+ <B>role:</B><BR>This method searches all objects implementing a specified interface given in argument and fill the sequence with them. Each object contained in the returned sequence must be released after user.<BR><BR>
+ <B>example</B>: <BR>
+ <TABLE>
+   <TR><TD>&nbsp;&nbsp; CATIContainer* pCATIContainer = ... // we suppose that pointer is well initialized.</TD></TR>
+   <TR><TD>&nbsp;&nbsp; SEQUENCE(CATBaseUnknown_ptr) ListObj;</TD></TR>
+   <TR><TD>&nbsp;&nbsp; CATLONG32 NbObj = pCATIContainer-><B>ListMembersHere("CATIexample", ListObj)</B>;</TD></TR>
+   <TR><TD>&nbsp;&nbsp; for (int i=0; i < NbObj; i++)</TD></TR>
+   <TR><TD>&nbsp;&nbsp; {</TD></TR>
+   <TR><TD>&nbsp;&nbsp;&nbsp;&nbsp; CATIexample* pCATIexample = NULL;</TD></TR>
+   <TR><TD>&nbsp;&nbsp;&nbsp;&nbsp; if (ListObj[i] && SUCCEEDED(ListObj[i]->QueryInterface(IID_CATIexample, (void**)&pCATIexample))</TD></TR>
+   <TR><TD>&nbsp;&nbsp;&nbsp;&nbsp; { </TD></TR>
+   <TR><TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pCATIexample->Release();</TD></TR>
+   <TR><TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pCATIexample = NULL;</TD></TR>
+   <TR><TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ListObj[i]-><B>Release()</B>;</TD></TR>
+   <TR><TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ListObj[i] = NULL;</B>;</TD></TR>
+   <TR><TD>&nbsp;&nbsp;&nbsp;&nbsp; }</TD></TR>
+   <TR><TD>&nbsp;&nbsp; }</TD></TR>
+ </TABLE>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> interfaceID</tt>
+   <dd> The name of the interface searched. </dd>
+    <dt><tt> ioListObj</tt>
+   <dd> The list of all objects found that implement this interface. Each object  of the list must be release. </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The number of objects found.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIContainer.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATObjectModelerBase</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

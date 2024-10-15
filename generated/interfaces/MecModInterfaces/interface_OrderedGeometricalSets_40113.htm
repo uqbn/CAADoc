@@ -1,0 +1,105 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>MecModInterfaces OrderedGeometricalSets (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../MecModInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('OrderedGeometricalSets','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('OrderedGeometricalSets','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('OrderedGeometricalSets','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('OrderedGeometricalSets','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>OrderedGeometricalSets<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_OrderedGeometricalSets_40113','OrderedGeometricalSets','0');</script>
+<b><i> A collection of the OrderedGeometricalSet objects.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Add"><b>Add</b></a>
+<dd>  Creates a new ordered geometrical set and adds it to the OrderedGeometricalSets collection.
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns a ordered geometrical set using its index or its name from the ordered geometrical set
+ collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Add"><dt>
+
+<table><tr><td>o Func <b>Add</b>(<td>) As <script type="text/javascript"> activateLink('OrderedGeometricalSet','OrderedGeometricalSet')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new ordered geometrical set and adds it to the OrderedGeometricalSets collection.
+ Thisordered geometrical set becomes the current one
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The created ordered geometrical set <! @sample >
+ <dt><b>Example:</b>
+ <dd>
+ The following example creates a ordered geometrical set named <tt>newOrderedGeometricalSet</tt>
+ in the ordered geometrical set collection of the <tt>rootPart</tt> part
+ in the <tt>partDoc</tt> part document. <tt>NewPartBody</tt> becomes
+ the in work object of <tt>partDoc</tt>.
+ <pre>
+ Set NewPartBody = rootPart.OrderedGeometricalSets.<font color="red">Add</font>()
+ </pre>
+</dl>
+</dl>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('OrderedGeometricalSet','OrderedGeometricalSet')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a ordered geometrical set using its index or its name from the ordered geometrical set
+ collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the ordered geometrical set to retrieve from
+   the collection of ordered geometrical sets.
+   As a numerics, this index is the rank of the ordered geometrical set
+   in the collection.
+   The index of the first ordered geometrical set in the collection is 1, and
+   the index of the last ordered geometrical set is Count.
+   As a string, it is the name you assigned to the ordered geometrical set using
+   the </dd>
+</dl>
+<a href="#" onClick="openLink('AnyObject','Name');return false">AnyObject.Name</a> property. 
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved ordered geometrical set <dt><b>Example:</b>
+ <dd>
+ This example retrieves in <tt>ThisOrderedGeometricalSet</tt> the fifth ordered geometrical set 
+ in the collection and in <tt>ThatOrderedGeometricalSet</tt> the ordered geometrical set 
+ named <tt>MyOrderedGeometricalSet</tt> in the ordered geometrical set collection of the <tt>partDoc</tt>
+ part document.
+ <pre>
+ Set orderedGeometricalSetColl = partDoc.Part.OrderedGeometricalSets
+ Set ThisOrderedGeometricalSet = orderedGeometricalSetColl.<font color="red">Item</font>(5)
+ Set ThatOrderedGeometricalSet = orderedGeometricalSetColl.<font color="red">Item</font>("MyOrderedGeometricalSet")
+ </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

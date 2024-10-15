@@ -1,0 +1,79 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSketcherUseItf Interface IDMPlane</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSketcherUseItf.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('IDMPlane','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('IDMPlane','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('IDMPlane','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('IDMPlane','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSketcherUseItf Interface IDMPlane</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_IDMPlane_20147','IDMPlane','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>IDMPlane</b>
+</p>
+<p>
+<b><i> This interface describes the planar surface.</i></b><br>
+
+ The single method defined here provides access to the plane’s parameters. If this is 
+ the geometry type of the object, this interface’s REFIID serves as its geometry typing
+ information.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetPlaneData(double[3],double[3])"><b>GetPlaneData</b></a>(double[3],double[3])
+<dd>  Provides the Client access to the plane’s parameters.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetPlaneData"></a><a name="GetPlaneData(double[3],double[3])"></a> <dt> o <b>GetPlaneData</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetPlaneData</b>(<td><script type="text/javascript"> activateLink('double[3','double[3]')</script> <td><tt>iRootPoint</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double[3','double[3]')</script> <td><tt>oNormalVector</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Provides the Client access to the plane’s parameters.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt>double</tt>
+   <dd> iRootPoint[3]</tt> [out] Outputs a point on the plane.
+ </dd>
+    <dt><tt> <tt>double</tt>
+   <dd> oNormalVector[3]</tt> [out] Outputs a unit vector perpendicular to the plane.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>IDMPlane.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATSketcherUseItf</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

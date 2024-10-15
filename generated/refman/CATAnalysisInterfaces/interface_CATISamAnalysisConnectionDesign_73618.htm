@@ -1,0 +1,103 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces Interface CATISamAnalysisConnectionDesign</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISamAnalysisConnectionDesign','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamAnalysisConnectionDesign','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISamAnalysisConnectionDesign','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISamAnalysisConnectionDesign','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisInterfaces Interface CATISamAnalysisConnectionDesign</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISamAnalysisConnectionDesign_73618','CATISamAnalysisConnectionDesign','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATISamAnalysisConnectionDesign</b>
+</p>
+<p>
+<b><i>  Interface to manage "AnalysisDesignConnection".</i></b><br>
+
+ <b>Role</b>:
+ This interface allows to 
+ <ul><li> retrieve the two list of supports defined on the Analysis Connection</li></ul></p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetConnectedSupports(CATLISTV(CATBaseUnknown_var)&amp;,CATLISTV(CATBaseUnknown_var)&amp;)"><b>GetConnectedSupports</b></a>(CATLISTV(CATBaseUnknown_var)&amp;,CATLISTV(CATBaseUnknown_var)&amp;)
+<dd>  Retrieve Analysis Connection Supports.
+ <dt> o 
+    <a href="#GetConnectionDesigners(CATLISTV(CATBaseUnknown_var)&amp;,CATLISTV(CATISpecObject_var)*&amp;,CATLISTV(CATBaseUnknown_var)&amp;,CATLISTV(CATISpecObject_var)*&amp;)"><b>GetConnectionDesigners</b></a>(CATLISTV(CATBaseUnknown_var)&amp;,CATLISTV(CATISpecObject_var)*&amp;,CATLISTV(CATBaseUnknown_var)&amp;,CATLISTV(CATISpecObject_var)*&amp;)
+<dd>  Retrieve Analysis Connection Supports.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetConnectedSupports"></a><a name="GetConnectedSupports(CATLISTV(CATBaseUnknown_var)&amp;,CATLISTV(CATBaseUnknown_var)&amp;)"></a> <dt> o <b>GetConnectedSupports</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetConnectedSupports</b>(<td><script type="text/javascript"> activateLink('CATLISTV(CATBaseUnknown_var)','CATLISTV(CATBaseUnknown_var)&amp;')</script> <td><tt>oConnectorList1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTV(CATBaseUnknown_var)','CATLISTV(CATBaseUnknown_var)&amp;')</script> <td><tt>oConnectorList2</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieve Analysis Connection Supports.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oConnectorList1</tt>
+   <dd>  Connectors list associated to the First Component of the connection </dd>
+    <dt><tt> oConnectorList2</tt>
+   <dd>  Connectors list associated to the Second Component of the connection</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetConnectionDesigners"></a><a name="GetConnectionDesigners(CATLISTV(CATBaseUnknown_var)&amp;,CATLISTV(CATISpecObject_var)*&amp;,CATLISTV(CATBaseUnknown_var)&amp;,CATLISTV(CATISpecObject_var)*&amp;)"></a> <dt> o <b>GetConnectionDesigners</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetConnectionDesigners</b>(<td><script type="text/javascript"> activateLink('CATLISTV(CATBaseUnknown_var)','CATLISTV(CATBaseUnknown_var)&amp;')</script> <td><tt>oConnectorList1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTV(CATISpecObject_var)','CATLISTV(CATISpecObject_var)*&amp;')</script> <td><tt>oMeshPartList1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTV(CATBaseUnknown_var)','CATLISTV(CATBaseUnknown_var)&amp;')</script> <td><tt>oConnectorList2</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTV(CATISpecObject_var)','CATLISTV(CATISpecObject_var)*&amp;')</script> <td><tt>oMeshPartList2</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieve Analysis Connection Supports.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oConnectorList1</tt>
+   <dd>  Connectors list associated to the First Component of the connection </dd>
+    <dt><tt> oMeshPartList1</tt>
+   <dd>   Retrieves the list of Mesh Parts defined on the First Component of the connection </dd>
+    <dt><tt> oConnectorList2</tt>
+   <dd>  Connectors list associated to the Second Component of the connection </dd>
+    <dt><tt> oMeshPartList2</tt>
+   <dd>   Retrieves the list of Mesh Parts defined on the Second Component of the connection</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISamAnalysisConnectionDesign.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisInterface</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

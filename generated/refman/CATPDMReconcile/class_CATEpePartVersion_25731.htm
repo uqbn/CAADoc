@@ -1,0 +1,127 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATPDMReconcile Class CATEpePartVersion</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATPDMReconcile.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATEpePartVersion','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEpePartVersion','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATEpePartVersion','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEpePartVersion','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATPDMReconcile Class CATEpePartVersion</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATEpePartVersion_25731','CATEpePartVersion','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATEpePartVersion</b>
+</p>
+<p>
+<b><i> Class representing a Part.</i></b><br>
+
+
+ <b>Role</b>:
+ Define a Part Version in CATIA & in VPDM repository.</p>
+<hr>
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetExposedEntity()"><b>GetExposedEntity</b></a>()
+<dd>  Access to object reconciliator internal object.
+ <dt> o 
+    <a href="#GetExposedEntity(CATScmPartVersion*)"><b>GetExposedEntity</b></a>(CATScmPartVersion*)
+<dd>  Access to CAA reconciliator object from other reconciliator objects.
+ <dt> o 
+    <a href="#IsRootPart()"><b>IsRootPart</b></a>()
+<dd>  Identifies if part is root of an assembly.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetExposedEntity"></a><a name="GetExposedEntity()"></a> <dt> o <b>GetExposedEntity</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATScmPartVersion','CATScmPartVersion *')</script>  <b>GetExposedEntity</b>(<td>)<script type="text/javascript"> activateLink('const','const ')</script>  </table></dt>
+<dl>
+  <dd>
+ Access to object reconciliator internal object.
+
+ <b>Role:</b> Access to object reconciliator internal object..
+ 
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  Method return code 
+ <br><b>Legal values</b>: Returns <b><i>NULL</i></b> if one error occur, otherwise provide access
+ associated  <b><i>CATScmPartVersion</i></b>.
+</dl>
+</dl>
+<a name="GetExposedEntity"></a><a name="GetExposedEntity(CATScmPartVersion*)"></a> <dt> o <b>GetExposedEntity</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('CATEpePartVersion','CATEpePartVersion *')</script>  <b>GetExposedEntity</b>(<td> const <script type="text/javascript"> activateLink('CATScmPartVersion','CATScmPartVersion*')</script> <td><tt>ixObj</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Access to CAA reconciliator object from other reconciliator objects.
+
+ <b>Role:</b> Access to CAA reconciliator object from other reconciliator objects.
+ 
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  Method return code 
+ <br><b>Legal values</b>: Returns <b><i>NULL</i></b> if one error occur, otherwise provide access
+ associated <b><i>CATEpePartVersion</i></b>. 
+ 
+ 
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ixObj</tt>
+   <dd>  Internal session entity.</dd>
+</dl>
+</dl>
+</dl>
+<a name="IsRootPart"></a><a name="IsRootPart()"></a> <dt> o <b>IsRootPart</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('int','int')</script>  <b>IsRootPart</b>(<td>)<script type="text/javascript"> activateLink('const','const ')</script>  </table></dt>
+<dl>
+  <dd>
+ Identifies if part is root of an assembly.
+
+ <b>Role:</b> Identifies if part is root of an assembly.
+  (ie this part is not used by any other part.)
+  NB: This method is usable only when instance model is built
+
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  Method return code 
+ <br><b>Legal values</b>: Returns <b><i>1</i></b> if this object is an assembly root and <b><i>0</i></b> otherwise.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATEpePartVersion.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATPDMReconcileModel</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

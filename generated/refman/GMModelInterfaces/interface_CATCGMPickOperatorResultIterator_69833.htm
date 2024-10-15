@@ -1,0 +1,109 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMModelInterfaces Interface CATCGMPickOperatorResultIterator</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMModelInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATCGMPickOperatorResultIterator','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATCGMPickOperatorResultIterator','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATCGMPickOperatorResultIterator','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATCGMPickOperatorResultIterator','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GMModelInterfaces Interface CATCGMPickOperatorResultIterator</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATCGMPickOperatorResultIterator_69833','CATCGMPickOperatorResultIterator','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATCGMPickOperatorResultIterator</b>
+</p>
+<p>
+<b><i> Iterator through picked objects as computed by the picking operator
+ </i></b><br>
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATCGMPickOperator','');return false">CATCGMPickOperator</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Begin()"><b>Begin</b></a>()
+<dd>  Set the iterator to the beginning.
+ <dt> o 
+    <a href="#End()"><b>End</b></a>()
+<dd>  Returns TRUE if the iterator has reached the end.
+ <dt> o 
+    <a href="#Get()"><b>Get</b></a>()
+<dd>  Returns the picked object at the current iterator position.
+ <dt> o 
+    <a href="#operator++()"><b>operator++</b></a>()
+<dd>  Increment the iterator.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Begin"></a><a name="Begin()"></a> <dt> o <b>Begin</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>Begin</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Set the iterator to the beginning.
+</dl>
+<a name="End"></a><a name="End()"></a> <dt> o <b>End</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>End</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns TRUE if the iterator has reached the end.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    TRUE or FALSE
+</dl>
+</dl>
+<a name="Get"></a><a name="Get()"></a> <dt> o <b>Get</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCGMPickOperatorPickedObject','const CATCGMPickOperatorPickedObject*')</script>  <b>Get</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the picked object at the current iterator position.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    The picked object.
+</dl>
+</dl>
+<a name="operator++"></a><a name="operator++()"></a> <dt> o <b>operator++</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCGMPickOperatorResultIterator','CATCGMPickOperatorResultIterator&')</script>  <b>operator++</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Increment the iterator.
+</dl>
+<hr>
+ This object is included in the file: <b>CATCGMPickOperatorResultIterator.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGMModelInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

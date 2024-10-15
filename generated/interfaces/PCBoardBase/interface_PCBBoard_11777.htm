@@ -1,0 +1,219 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PCBoardBase PCBBoard (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../PCBoardBase.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('PCBBoard','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PCBBoard','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('PCBBoard','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('PCBBoard','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>PCBBoard<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_PCBBoard_11777','PCBBoard','0');</script>
+<b><i> </i></b><br>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Owner"><b>Owner</b></a>
+<dd>  Allow to get and set the attribute owner of a Panel or a Board
+ The possible  values  are MCAD, ECAD, UNKNOWN
+ 
+ <dt>
+    <a href="#Part"><b>Part</b></a>
+<dd>  set the pad of a Board or a component or a panel.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#create_pcbhole"><b>create_pcbhole</b></a>
+<dd> 
+  This method allows to add a Pcb hole to a board or a panel.
+ <dt>
+    <a href="#create_pcbpattern"><b>create_pcbpattern</b></a>
+<dd> 
+  This method allows to add a Pcb pattern of hole to a board or a panel.
+ <dt>
+    <a href="#create_zone"><b>create_zone</b></a>
+<dd> 
+  This method allows to add a constraint area to a board.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Owner"><dt>
+
+<table><tr><td>o Property <b>Owner</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Allow to get and set the attribute owner of a Panel or a Board
+ The possible  values  are MCAD, ECAD, UNKNOWN
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <UL>          <LH>The result of the method:
+         <LI>S_OK if succeeded
+         <LI>E_FAIL if failed
+         </UL>
+</dl>
+</dl>
+<a name="Part"><dt>
+
+<table><tr><td>o Property <b>Part</b>(<td>) As <script type="text/javascript"> activateLink('Pad','Pad')</script> </table></dt>
+<dl>
+  <dd>
+ set the pad of a Board or a component or a panel.
+
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="create_pcbhole"><dt>
+
+<table><tr><td>o Sub <b>create_pcbhole</b>(<td><script type="text/javascript"> activateLink('Hole','Hole')</script> <td><tt>iHole</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iplatingStyle</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iAssociatedPartName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iHoleType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iHoleOwner</tt>)</table></dt>
+<dl>
+  <dd>
+
+  This method allows to add a Pcb hole to a board or a panel. 
+ 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iHole</tt>
+   <dd> This parameter represents the hole to transform in Pcb hole
+
+ </dd>
+    <dt><tt> iplatingStyle</tt>
+   <dd>  This parameter represents the plating style of the hole.  
+ The differents values are  PTH or NPTH
+
+ </dd>
+    <dt><tt> iAssociatedPartName</tt>
+   <dd> This parameter represents name of the associated part to the hole. 
+ The possible values are : 
+    the name of the instance of component in which the hole is defined. 
+    BOARD if the hole is defined in the Board part
+    PANEL If the hole is defined in the Panel part
+    NOREFDES is the hole is defined in a non Electronic Part. 
+
+ </dd>
+    <dt><tt> iHoleType</tt>
+   <dd> This parameter represents the function of the hole. 
+ The differents values are :
+    PIN if the hole is associated with a component pin
+    VIA if the hole is associated with  a conductive via
+    MTG if the hole is used for mounting purposes
+    TOOL if the hole is used for tooling purposes
+    Other  ( User defined ) 
+
+ </dd>
+    <dt><tt> iHoleOwner</tt>
+   <dd> The parameter represents the owner of the hole. 
+ The possible values are : MCAD, ECAD, UNOWNED
+
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <UL>          <LH>The result of the method:
+         <LI>S_OK if succeeded
+         <LI>E_FAIL if failed
+         </UL>
+</dl>
+</dl>
+<a name="create_pcbpattern"><dt>
+
+<table><tr><td>o Sub <b>create_pcbpattern</b>(<td><script type="text/javascript"> activateLink('Pattern','Pattern')</script> <td><tt>iPattern</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iplatingStyle</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iAssociatedPartName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iHoleType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iHoleOwner</tt>)</table></dt>
+<dl>
+  <dd>
+
+  This method allows to add a Pcb pattern of hole to a board or a panel. 
+  If the motif hole of the pattern is pcb hole, the input value are not taken into account
+  
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPattern</tt>
+   <dd> This parameter represents the Pattern  to transform in Pcb Pattern 
+
+ </dd>
+    <dt><tt> iplatingStyle</tt>
+   <dd>  This parameter represents the plating style of the hole.  
+ The differents values are  PTH or NPTH
+
+ </dd>
+    <dt><tt> iAssociatedPartName</tt>
+   <dd> This parameter represents name of the associated part to the hole. 
+ The possible values are : 
+    the name of the instance of component in which the hole is defined. 
+    BOARD if the hole is defined in the Board part
+    PANEL If the hole is defined in the Panel part
+    NOREFDES is the hole is defined in a non Electronic Part. 
+
+ </dd>
+    <dt><tt> iHoleType</tt>
+   <dd> This parameter represents the function of the hole. 
+ The differents values are :
+    PIN if the hole is associated with a component pin
+    VIA if the hole is associated with  a conductive via
+    MTG if the hole is used for mounting purposes
+    TOOL if the hole is used for tooling purposes
+    Other  ( User defined ) 
+
+ </dd>
+    <dt><tt> iHoleOwner</tt>
+   <dd> The parameter represents the owner of the hole. 
+ The possible values are : MCAD, ECAD, UNOWNED
+
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <UL>          <LH>The result of the method:
+         <LI>S_OK if succeeded
+         <LI>E_FAIL if failed
+         </UL>
+</dl>
+</dl>
+<a name="create_zone"><dt>
+
+<table><tr><td>o Sub <b>create_zone</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>zonetype</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Pad','Pad')</script> <td><tt>iPad</tt>)</table></dt>
+<dl>
+  <dd>
+
+  This method allows to add a constraint area to a board.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> zonetype</tt>
+   <dd> This parameter represents the type of the zone to create
+ The differents values are ROUTE_OUTLINE, PLACE_OUTLINE, OTHER_OUTLINE,
+ VIA_KEEPOUT, PLACE_KEEPOUT, PLACE_REGION, ROUTE_KEEPOUT
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <UL>          <LH>The result of the method:
+         <LI>S_OK if succeeded
+         <LI>E_FAIL if failed
+         </UL>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

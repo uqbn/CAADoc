@@ -1,0 +1,219 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATStrFunctionalInterfaces SfmManager (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATStrFunctionalInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SfmManager','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmManager','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SfmManager','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmManager','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SfmManager<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SfmManager_42078','SfmManager','0');</script>
+<b><i> Services about Structure Functional Modeler applications: SFD and SDD.</i></b><br>
+
+ <b>Role</b>: To manage some services.<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddHull"><b>AddHull</b></a>
+<dd>  Add the Hull feature according to the PRM resources.
+ <dt>
+    <a href="#GetHull"><b>GetHull</b></a>
+<dd>  Returns the Hull feature in the part.
+ <dt>
+    <a href="#GetPlaneSystems"><b>GetPlaneSystems</b></a>
+<dd>  Returns the list of PlaneSystems in the part.
+ <dt>
+    <a href="#GetReferencePlane"><b>GetReferencePlane</b></a>
+<dd>  Returns a reference plane in the specific PlaneSystems.
+ <dt>
+    <a href="#GetSuperMembers"><b>GetSuperMembers</b></a>
+<dd>  Returns the list of SuperMembers in the part.
+ <dt>
+    <a href="#GetSuperPlates"><b>GetSuperPlates</b></a>
+<dd>  Returns the list of SuperPlates in the part.
+ <dt>
+    <a href="#GetSuperStiffeners"><b>GetSuperStiffeners</b></a>
+<dd>  Returns the list of SuperStiffeners in the part.
+ <dt>
+    <a href="#InitResources"><b>InitResources</b></a>
+<dd>  Initialize environment (PRM resources).
+ <dt>
+    <a href="#SynchronizeHull"><b>SynchronizeHull</b></a>
+<dd>  Synchronize PlaneSystems according with the PRM resources.
+ <dt>
+    <a href="#SynchronizePlanes"><b>SynchronizePlanes</b></a>
+<dd>  Synchronize PlaneSystems according with the PRM resources.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddHull"><dt>
+
+<table><tr><td>o Sub <b>AddHull</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Add the Hull feature according to the PRM resources.
+ <br><b>Role</b>: Allows adding the Hull feature according to the PRM resources.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok.
+</dl>
+</dl>
+<a name="GetHull"><dt>
+
+<table><tr><td>o Func <b>GetHull</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the Hull feature in the part.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>Hull</code> the Hull object.
+ <pre>
+ Dim Hull As Reference
+ SfmManager.<font color="red">GetHull</font> Hull
+ </pre>
+ </dl>
+</dl>
+<a name="GetPlaneSystems"><dt>
+
+<table><tr><td>o Func <b>GetPlaneSystems</b>(<td>) As <script type="text/javascript"> activateLink('References','References')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the list of PlaneSystems in the part.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>PlaneSystems</code> the list of PlaneSystems objects.
+ <pre>
+ Dim PlaneSystems As References
+ SfmManager.<font color="red">GetPlaneSystems</font> PlaneSystems
+ </pre>
+ </dl>
+</dl>
+<a name="GetReferencePlane"><dt>
+
+<table><tr><td>o Func <b>GetReferencePlane</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iPlaneSystemIndex</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iPlaneIndex</tt>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a reference plane in the specific PlaneSystems.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>RefPlane</code> the reference planes contained into the 1st PlaneSystem,
+ and which has CROSS.12 as a name.
+ <pre>
+ Dim RefPlane As Reference
+ SfmManager.<font color="red">GetReferencePlane</font> 1, "CROSS.12", RefPlane
+ </pre>
+ </dl>
+</dl>
+<a name="GetSuperMembers"><dt>
+
+<table><tr><td>o Func <b>GetSuperMembers</b>(<td>) As <script type="text/javascript"> activateLink('References','References')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the list of SuperMembers in the part.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>SuperMembers</code> the list of SuperMembers objects.
+ <pre>
+ Dim SuperMembers As References
+ SfmManager.<font color="red">GetSuperMembers</font> SuperMembers
+ </pre>
+ </dl>
+</dl>
+<a name="GetSuperPlates"><dt>
+
+<table><tr><td>o Func <b>GetSuperPlates</b>(<td>) As <script type="text/javascript"> activateLink('References','References')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the list of SuperPlates in the part.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>SuperPlates</code> the list of SuperPlates objects.
+ <pre>
+ Dim SuperPlates As References
+ SfmManager.<font color="red">GetSuperPlates</font> SuperPlates
+ </pre>
+ </dl>
+</dl>
+<a name="GetSuperStiffeners"><dt>
+
+<table><tr><td>o Func <b>GetSuperStiffeners</b>(<td>) As <script type="text/javascript"> activateLink('References','References')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the list of SuperStiffeners in the part.
+<dl>
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>SuperStiffeners</code> the list of SuperStiffeners objects.
+ <pre>
+ Dim SuperStiffeners As References
+ SfmManager.<font color="red">GetSuperStiffeners</font> SuperStiffeners
+ </pre>
+ </dl>
+</dl>
+<a name="InitResources"><dt>
+
+<table><tr><td>o Sub <b>InitResources</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Initialize environment (PRM resources).
+ <br><b>Role</b>: Allows initializing environment (PRM resources).
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok.
+</dl>
+</dl>
+<a name="SynchronizeHull"><dt>
+
+<table><tr><td>o Sub <b>SynchronizeHull</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Synchronize PlaneSystems according with the PRM resources.
+ <br><b>Role</b>: Allows synchronizing the PlaneSystems with the PRM resources.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok.
+</dl>
+</dl>
+<a name="SynchronizePlanes"><dt>
+
+<table><tr><td>o Sub <b>SynchronizePlanes</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Synchronize PlaneSystems according with the PRM resources.
+ <br><b>Role</b>: Allows synchronizing the PlaneSystems with the PRM resources.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok.
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

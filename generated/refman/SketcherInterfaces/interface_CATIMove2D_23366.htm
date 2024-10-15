@@ -1,0 +1,116 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>SketcherInterfaces Interface CATIMove2D</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../SketcherInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMove2D','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMove2D','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMove2D','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMove2D','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SketcherInterfaces Interface CATIMove2D</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMove2D_23366','CATIMove2D','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIMove2D</b>
+</p>
+<p>
+<b><i> Geometric transformation of 2D elements.</i></b><br>
+
+ <b>Role</b>: This interface is used to transform 2D elements onto their
+ background plane. The method <a href="#" onClick="openLink('CATIMove2D','GetMovable');return false">CATIMove2D.GetMovable</a> gives the list of elements which have to be transformated to transform the element
+ itself.
+ BeforeMove() and AfterMove() are new methods to improve behavior of 
+ 2D transformation.
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AfterMove()"><b>AfterMove</b></a>()
+<dd>  Allows to restore normal behavior after moving.
+ <dt> o 
+    <a href="#BeforeMove()"><b>BeforeMove</b></a>()
+<dd>  Allows to take any kind of measure before moving.
+ <dt> o 
+    <a href="#GetMovable()"><b>GetMovable</b></a>()
+<dd>  Gives the list of elements which have to be transformated to transform the
+ element itself.
+ <dt> o 
+    <a href="#Move(CATMathTransformation2D&amp;)"><b>Move</b></a>(CATMathTransformation2D&amp;)
+<dd>  Geometric transformation of 2D elements.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AfterMove"></a><a name="AfterMove()"></a> <dt> o <b>AfterMove</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AfterMove</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Allows to restore normal behavior after moving.
+</dl>
+<a name="BeforeMove"></a><a name="BeforeMove()"></a> <dt> o <b>BeforeMove</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>BeforeMove</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Allows to take any kind of measure before moving.
+</dl>
+<a name="GetMovable"></a><a name="GetMovable()"></a> <dt> o <b>GetMovable</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATListValCATBaseUnknown','CATListValCATBaseUnknown_var')</script>  <b>GetMovable</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gives the list of elements which have to be transformated to transform the
+ element itself.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <tt>CATLISTV(CATBaseUnknown_var)</tt> The list of handlers corresponds to the family which has to be transformed.
+</dl>
+</dl>
+<a name="Move"></a><a name="Move(CATMathTransformation2D&amp;)"></a> <dt> o <b>Move</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>Move</b>(<td><script type="text/javascript"> activateLink('CATMathTransformation2D','CATMathTransformation2D&amp;')</script> <td><tt>ioTransfo</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Geometric transformation of 2D elements.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> <tt>CATMathTransformation2D</tt>
+   <dd> &ioTransfo</tt> [inout] The 2D transformation list of handlers corresponding to the expected family.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMove2D.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATSketcherInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

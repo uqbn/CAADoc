@@ -1,0 +1,100 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>DraftingInterfaces Interface CATIDrwBreakElemFactory</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../DraftingInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIDrwBreakElemFactory','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIDrwBreakElemFactory','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIDrwBreakElemFactory','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIDrwBreakElemFactory','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>DraftingInterfaces Interface CATIDrwBreakElemFactory</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIDrwBreakElemFactory_45381','CATIDrwBreakElemFactory','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIDrwBreakElemFactory</b>
+</p>
+<p>
+<b><i> Interface to create BreakElem.</i></b><br>
+
+ <b>Role</b>: Use this interface to create BreakElem in the objet which  
+ implements this interface (i.e. a view).</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CreateBreakElem(CATI2DCurve_var,double,double,CATUnicodeString,int,int,int)"><b>CreateBreakElem</b></a>(CATI2DCurve_var,double,double,CATUnicodeString,int,int,int)
+<dd>  Creates a CATIDrwBreakElem.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="CreateBreakElem"></a><a name="CreateBreakElem(CATI2DCurve_var,double,double,CATUnicodeString,int,int,int)"></a> <dt> o <b>CreateBreakElem</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATIDrwBreakElem','CATIDrwBreakElem_var')</script>  <b>CreateBreakElem</b>(<td><script type="text/javascript"> activateLink('CATI2DCurve','CATI2DCurve_var')</script> <td><tt>iCurve</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iCoordx</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iCoordy</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script> <td><tt>iName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iIndex</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iCreation</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>icontainment</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates a CATIDrwBreakElem.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCurve</tt>
+   <dd>		This sketch element is one element of one contour, intersected in the parameters 
+     described below.
+ </dd>
+    <dt><tt> iCoordx</tt>
+   <dd>		Parameter of the first intersection.
+ </dd>
+    <dt><tt> iCoordy</tt>
+   <dd>		Parameter of the second intersection.
+ </dd>
+    <dt><tt> iName</tt>
+   <dd>		String containing a comment or its identifier.
+ </dd>
+    <dt><tt> iIndex</tt>
+   <dd>		number to index it in the contour it belongs.
+ </dd>
+    <dt><tt> iCreation</tt>
+   <dd>		Status of creation or modification.
+ </dd>
+    <dt><tt> iContainment</tt>
+   <dd>		Index of containment.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>      the new CATIBreakElem.
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIDrwAreaFill','');return false">CATIDrwAreaFill</a>, <a href="#" onClick="openLink('CATI2DCurve','');return false">CATI2DCurve</a>, <a href="#" onClick="openLink('CATIDrwBreakElem','');return false">CATIDrwBreakElem</a>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIDrwBreakElemFactory.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATDraftingInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,172 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>StructureInterfaces StrSection (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../StructureInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('StrSection','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('StrSection','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('StrSection','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('StrSection','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>StrSection<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_StrSection_26455','StrSection','0');</script>
+<b><i> Represents the section object.</i></b><br>
+
+ The section object is created from a part document in which a sketch has to
+ be defined.
+ <br>
+ The sketch object may contain one or several contour but all of them have
+ to be closed.
+ <br>
+ Predefined anchor points objects are calculated from the geometrical contour
+ as the top bottom point, the center gravity point, etc.
+ <br>
+ User anchor points can be created in the sketch using the parametric geometry
+ or not. However the names of these points have to prefixed by the string "Str"
+ to be recognized as structure anchor points.
+ <br>
+ Some attributes are defined on the section object but cannot be modified.
+ <br>
+ A group of attributes defines the section name, the family name, and the
+ the name of the catalog where the section comes from.
+ <br>
+ Another attribute called the profile type defines the type of the parametric
+ contour used to create the section. The contour can be a Tee, an angle, a channel,
+ a square tube, and so on. These predefined contours are useful to create a new
+ catalog with some standard contours.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#CatalogName"><b>CatalogName</b></a>
+<dd>  Returns the parameter defining the catalog name.
+ <dt>
+    <a href="#FamilyName"><b>FamilyName</b></a>
+<dd>  Returns the parameter defining the family name.
+ <dt>
+    <a href="#ProfileType"><b>ProfileType</b></a>
+<dd>  Returns the parameter defining the profile type of the section.
+ <dt>
+    <a href="#SectionName"><b>SectionName</b></a>
+<dd>  Returns the parameter defining the section name.
+ <dt>
+    <a href="#StrAnchorPoints"><b>StrAnchorPoints</b></a>
+<dd>  Returns the collection of anchor points.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetProperty"><b>GetProperty</b></a>
+<dd>  Get a property value.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="CatalogName"><dt>
+
+<table><tr><td>o Property <b>CatalogName</b>(<td>) As <script type="text/javascript"> activateLink('Parameter','Parameter')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the parameter defining the catalog name. 
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim name As Parameter
+ Set name = Section_1.<font color="red">CatalogName</font>
+ </pre>
+</dl>
+</dl>
+<a name="FamilyName"><dt>
+
+<table><tr><td>o Property <b>FamilyName</b>(<td>) As <script type="text/javascript"> activateLink('Parameter','Parameter')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the parameter defining the family name. 
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim name As Parameter
+ Set name = Section_1.<font color="red">FamilyName</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="ProfileType"><dt>
+
+<table><tr><td>o Property <b>ProfileType</b>(<td>) As <script type="text/javascript"> activateLink('Parameter','Parameter')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the parameter defining the profile type of the section. 
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim type As Parameter
+ Set type = Section_1.<font color="red">ProfileType</font>
+ </pre>
+</dl>
+</dl>
+<a name="SectionName"><dt>
+
+<table><tr><td>o Property <b>SectionName</b>(<td>) As <script type="text/javascript"> activateLink('Parameter','Parameter')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the parameter defining the section name.
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim name As Parameter
+ Set name = Section_1.<font color="red">SectionName</font>
+ </pre>
+</dl>
+</dl>
+<a name="StrAnchorPoints"><dt>
+
+<table><tr><td>o Property <b>StrAnchorPoints</b>(<td>) As <script type="text/javascript"> activateLink('StrAnchorPoints','StrAnchorPoints')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the collection of anchor points.
+ <pre>
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  Dim anchorPts As StrAnchorPoints
+ Set anchorPts = Section_1.<font color="red">StrAnchorPoints</font>  
+ </pre>
+</dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetProperty"><dt>
+
+<table><tr><td>o Sub <b>GetProperty</b>(<td><script type="text/javascript"> activateLink('CATStrSectionProperties','CATStrSectionProperties')</script> <td><tt>iProperty</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>oValue</tt>)</table></dt>
+<dl>
+  <dd>
+ Get a property value. 
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim type As Parameter
+ Set type = Section_1.<font color="red">GetProperty(CatStrArea)</font>
+ </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

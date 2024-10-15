@@ -1,0 +1,199 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>Mathematics Class CATMathDirectionf</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../Mathematics.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATMathDirectionf','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATMathDirectionf','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATMathDirectionf','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATMathDirectionf','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Mathematics Class CATMathDirectionf</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATMathDirectionf_21062','CATMathDirectionf','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATMathDirectionf</b>
+</p>
+<p>
+<b><i> Class representing a temporary normalized vector in dimension 3 in float
+  precision.</i></b><br>
+
+ <br> Warning: the coordinates (<tt> float x , y , z ;</tt>) are public.
+  If you change them, you must apply Normalize.</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATMathDirectionf()"><b>CATMathDirectionf</b></a>()
+<dd>  Constructs a (1,0,0) vector in float precision.
+ <dt> o 
+    <a href="#CATMathDirectionf(float[])"><b>CATMathDirectionf</b></a>(float[])
+<dd>  Constructs from an array[3] of float coordinates.
+ <dt> o 
+    <a href="#CATMathDirectionf(float,float,float)"><b>CATMathDirectionf</b></a>(float,float,float)
+<dd>  Constructs a (1,0,0) vector in float precision.
+ <dt> o 
+    <a href="#CATMathDirectionf(float,float,float)"><b>CATMathDirectionf</b></a>(float,float,float)
+<dd>  Constructs a CATMathDirectionf from three float  coordinates.
+ <dt> o 
+    <a href="#CATMathDirectionf(CATMathVectorf&amp;)"><b>CATMathDirectionf</b></a>(CATMathVectorf&amp;)
+<dd>  Constructs from a CATMathVectorf.
+ <dt> o 
+    <a href="#CATMathDirectionf(CATMathDirection&amp;)"><b>CATMathDirectionf</b></a>(CATMathDirection&amp;)
+<dd>  Constructs from a CATMathDirection.
+ <dt> o 
+    <a href="#CATMathDirectionf(CATMathDirectionf&amp;)"><b>CATMathDirectionf</b></a>(CATMathDirectionf&amp;)
+<dd>  Copy constructor.
+ <dt> o 
+    <a href="#CATMathDirectionf(CATMathPointf&amp;,CATMathPointf&amp;)"><b>CATMathDirectionf</b></a>(CATMathPointf&amp;,CATMathPointf&amp;)
+<dd>  Constructs the CATMathDirectionf as the difference of two CATMathPointfs.
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetValue(CATMathDirection&amp;)"><b>GetValue</b></a>(CATMathDirection&amp;)
+<dd>  Retrieves a CATMathDirectionf into a CATMathdirection.
+ <dt> o 
+    <a href="#Normalize()"><b>Normalize</b></a>()
+<dd>  Normalizes a CATMathDirection.
+ <dt> o 
+    <a href="#operator-()"><b>operator-</b></a>()
+<dd>  Defines the opposite of a CATMathDirectionf.
+ <dt> o 
+    <a href="#operator^(CATMathVectorf&amp;)"><b>operator^</b></a>(CATMathVectorf&amp;)
+<dd>  Defines the cross product with a CATMathVectorf.
+ <dt> o 
+    <a href="#operator^(CATMathDirectionf&amp;)"><b>operator^</b></a>(CATMathDirectionf&amp;)
+<dd>  Defines the cross product with another CATMathDirectionf.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATMathDirectionf"></a><a name="CATMathDirectionf()"></a> <dt> o <b>CATMathDirectionf</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATMathDirectionf</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a (1,0,0) vector in float precision.
+</dl>
+<a name="CATMathDirectionf"></a><a name="CATMathDirectionf(float[])"></a> <dt> o <b>CATMathDirectionf</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATMathDirectionf</b>(<td> const <script type="text/javascript"> activateLink('float','float[]')</script> <td><tt>iCoord</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs from an array[3] of float coordinates.
+</dl>
+<a name="CATMathDirectionf"></a><a name="CATMathDirectionf(float,float,float)"></a> <dt> o <b>CATMathDirectionf</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATMathDirectionf</b>(<td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iFirstCoord</tt><td><tt>= 1. </tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iSecondCoord</tt><td><tt>= 0.</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iThirdCoord</tt><td><tt>= 0. </tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a (1,0,0) vector in float precision.
+</dl>
+<a name="CATMathDirectionf"></a><a name="CATMathDirectionf(float,float,float)"></a> <dt> o <b>CATMathDirectionf</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATMathDirectionf</b>(<td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iFirstCoord</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iSecondCoord</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('float','float')</script> <td><tt>iThirdCoord</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a CATMathDirectionf from three float  coordinates.
+</dl>
+<a name="CATMathDirectionf"></a><a name="CATMathDirectionf(CATMathVectorf&amp;)"></a> <dt> o <b>CATMathDirectionf</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATMathDirectionf</b>(<td> const <script type="text/javascript"> activateLink('CATMathVectorf','CATMathVectorf&amp;')</script> <td><tt>iVector</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs from a CATMathVectorf.
+</dl>
+<a name="CATMathDirectionf"></a><a name="CATMathDirectionf(CATMathDirection&amp;)"></a> <dt> o <b>CATMathDirectionf</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATMathDirectionf</b>(<td> const <script type="text/javascript"> activateLink('CATMathDirection','CATMathDirection&amp;')</script> <td><tt>iDirectionInDouble</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs from a CATMathDirection.
+</dl>
+<a name="CATMathDirectionf"></a><a name="CATMathDirectionf(CATMathDirectionf&amp;)"></a> <dt> o <b>CATMathDirectionf</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATMathDirectionf</b>(<td> const <script type="text/javascript"> activateLink('CATMathDirectionf','CATMathDirectionf&amp;')</script> <td><tt>iDirectionToCopy</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Copy constructor.
+</dl>
+<a name="CATMathDirectionf"></a><a name="CATMathDirectionf(CATMathPointf&amp;,CATMathPointf&amp;)"></a> <dt> o <b>CATMathDirectionf</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATMathDirectionf</b>(<td> const <script type="text/javascript"> activateLink('CATMathPointf','CATMathPointf&amp;')</script> <td><tt>iPoint1</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathPointf','CATMathPointf&amp;')</script> <td><tt>iPoint2</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs the CATMathDirectionf as the difference of two CATMathPointfs.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The renormalized CATMathDirectionf <tt>iPoint2 - iPoint1</tt>.
+ <br>Sets to (1.f,0.f) if null.
+</dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetValue"></a><a name="GetValue(CATMathDirection&amp;)"></a> <dt> o <b>GetValue</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>GetValue</b>(<td><script type="text/javascript"> activateLink('CATMathDirection','CATMathDirection&amp;')</script> <td><tt>oDirectionInDouble</tt>)<script type="text/javascript"> activateLink('const',' const')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves a CATMathDirectionf into a CATMathdirection.
+</dl>
+<a name="Normalize"></a><a name="Normalize()"></a> <dt> o <b>Normalize</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('void','void')</script>  <b>Normalize</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Normalizes a CATMathDirection.
+<br> Sets to (1,0,0) if null vector. This must be applied if you change
+ the coordinates.
+</dl>
+<a name="operator-"></a><a name="operator-()"></a> <dt> o <b>operator-</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATMathDirectionf','CATMathDirectionf')</script>  <b>operator-</b>(<td>)<script type="text/javascript"> activateLink('const','const ')</script>  </table></dt>
+<dl>
+  <dd>
+ Defines the opposite of a CATMathDirectionf.
+</dl>
+<a name="operator^"></a><a name="operator^(CATMathVectorf&amp;)"></a> <dt> o <b>operator^</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATMathVectorf','CATMathVectorf')</script>  <b>operator^</b>(<td> const <script type="text/javascript"> activateLink('CATMathVectorf','CATMathVectorf&amp;')</script> <td><tt>iVector</tt>)<script type="text/javascript"> activateLink('const',' const')</script>  </table></dt>
+<dl>
+  <dd>
+ Defines the cross product with a CATMathVectorf.
+</dl>
+<a name="operator^"></a><a name="operator^(CATMathDirectionf&amp;)"></a> <dt> o <b>operator^</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATMathVectorf','CATMathVectorf')</script>  <b>operator^</b>(<td> const <script type="text/javascript"> activateLink('CATMathDirectionf','CATMathDirectionf&amp;')</script> <td><tt>iOtherDirection</tt>)<script type="text/javascript"> activateLink('const',' const')</script>  </table></dt>
+<dl>
+  <dd>
+ Defines the cross product with another CATMathDirectionf.
+</dl>
+<hr>
+ This object is included in the file: <b>CATMathDirectionf.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATMathematics</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

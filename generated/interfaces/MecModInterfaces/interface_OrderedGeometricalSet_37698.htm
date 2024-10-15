@@ -1,0 +1,160 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>MecModInterfaces OrderedGeometricalSet (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../MecModInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('OrderedGeometricalSet','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('OrderedGeometricalSet','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('OrderedGeometricalSet','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('OrderedGeometricalSet','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>OrderedGeometricalSet<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_OrderedGeometricalSet_37698','OrderedGeometricalSet','0');</script>
+<b><i> The object is an ordered geometrical set.</i></b><br>
+
+ The ordered geometrical set manages a set of hybrid shapes,
+ a set of bodies and a set of ordered geometrical sets.
+<br>
+ It belongs to the <a href="#" onClick="openLink('OrderedGeometricalSets','');return false">OrderedGeometricalSets</a> collection of a 
+<a href="#" onClick="openLink('Part','');return false">Part</a>   or 
+<a href="#" onClick="openLink('OrderedGeometricalSet','');return false">OrderedGeometricalSet</a> object.
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Bodies"><b>Bodies</b></a>
+<dd>  Returns the ordered geometrical set's Bodies collection.
+ <dt>
+    <a href="#HybridShapes"><b>HybridShapes</b></a>
+<dd>  Returns the list of hybrid shapes included in the ordered geometrical set.
+ <dt>
+    <a href="#OrderedGeometricalSets"><b>OrderedGeometricalSets</b></a>
+<dd>  Returns the ordered geometrical set's OrderedGeometricalSets collection.
+ <dt>
+    <a href="#OrderedSketches"><b>OrderedSketches</b></a>
+<dd>  Returns the ordered geometrical set's Sketches collection.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#InsertHybridShape"><b>InsertHybridShape</b></a>
+<dd>  Inserts a hybrid shape to the ordered geometrical set.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Bodies"><dt>
+
+<table><tr><td>o Property <b>Bodies</b>(<td>) As <script type="text/javascript"> activateLink('Bodies','Bodies')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the ordered geometrical set's Bodies collection.
+ <! sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>bodyColl</tt> the collection
+ of bodies of the ordered geometrical set <tt>OrderedGeometricalSet1</tt> :
+ <pre>
+ Set bodyColl = OrderedGeometricalSet1.<font color="red">Bodies</font>
+</pre>
+ </dl>
+</dl>
+<a name="HybridShapes"><dt>
+
+<table><tr><td>o Property <b>HybridShapes</b>(<td>) As <script type="text/javascript"> activateLink('HybridShapes','HybridShapes')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the list of hybrid shapes included in the ordered geometrical set.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  oHybridShapes   The list of hybrid shapes in the ordered geometrical set (@see CATIAHybridShapes<br>
+   for more information).
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>HybridShapes1</tt> the list of <br> 
+ hybrid shapes in the ordered geometrical set<tt>OrderedGeometricalSet1</tt>:
+ <pre>
+ Dim HybridShapes1 As HybridShapes
+ Set HybridShapes1 = OrderedGeometricalSet1.<b>HybridShapes</b>
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="OrderedGeometricalSets"><dt>
+
+<table><tr><td>o Property <b>OrderedGeometricalSets</b>(<td>) As <script type="text/javascript"> activateLink('OrderedGeometricalSets','OrderedGeometricalSets')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the ordered geometrical set's OrderedGeometricalSets collection.
+ <! sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>OrderedGeometricalSetColl</tt> the collection
+ of  ordered geometrical set of the ordered geometrical set <tt>OrderedGeometricalSet1</tt> :
+ <pre>
+ Set OrderedGeometricalSetColl = OrderedGeometricalSet1.<font color="red">OrderedGeometricalSets</font>
+</pre>
+ </dl>
+</dl>
+<a name="OrderedSketches"><dt>
+
+<table><tr><td>o Property <b>OrderedSketches</b>(<td>) As <script type="text/javascript"> activateLink('Sketches','Sketches')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the ordered geometrical set's Sketches collection.
+ These sketches are those inside the ordered geometrical set at all levels.
+ <! sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>The following example returns in <tt>sketchesCollection</tt> the collection
+ of sketches of an ordered geometrical set :
+ <pre>
+ Set sketchesCollection = OrderedGeometricalSet1.<font color="red">OrderedSketches</font>
+</pre>
+ </dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="InsertHybridShape"><dt>
+
+<table><tr><td>o Sub <b>InsertHybridShape</b>(<td><script type="text/javascript"> activateLink('HybridShape','HybridShape')</script> <td><tt>iHybridShape</tt>)</table></dt>
+<dl>
+  <dd>
+ Inserts a hybrid shape to the ordered geometrical set.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iHybridShape</tt>
+   <dd>   The hybrid shape to insert.
+ <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example inserts the hybrid shape <tt>HybridShape1</tt>
+ to the ordered geometrical set <tt>OrderedGeometricalSet1</tt>:
+ <pre>
+ OrderedGeometricalSet1.InsertHybridShape (HybridShape1)
+ </pre>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

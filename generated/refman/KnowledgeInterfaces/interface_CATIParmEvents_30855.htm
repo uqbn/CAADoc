@@ -1,0 +1,143 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>KnowledgeInterfaces Interface CATIParmEvents</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../KnowledgeInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIParmEvents','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIParmEvents','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIParmEvents','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIParmEvents','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>KnowledgeInterfaces Interface CATIParmEvents</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIParmEvents_30855','CATIParmEvents','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIParmEvents</b>
+</p>
+<p>
+<b><i>    Interface dedicated to parameters events management.</i></b><br>
+
+ <b>Role</b>: This interface is used to add subscription to parameters events.<br>
+ It is implemented on parameters.
+ 4 events are available<br>
+  <li> <b>ChangeValue</b> when value is actually changed </li>
+  <li> <b>Rename</b> when parameter is actually renamed </li>
+  <li> <b>ChangeVisu</b> when <br>
+      <li> for internal reasons :
+         <li>visibility change</li>    
+         <li>user access change</li>
+         <li>driving relation set or unset</li>
+         <li>magnitude current unit change</li></li>
+      <li> for external reason : (SendChangeVisu)
+         <li>driving relation is activated or desactivated</li> </li>
+ </li>
+  <li> <b>Delete</b> when literal is deleted (before deletion)</li>
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATParmNotification','');return false">CATParmNotification</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetChangeValueNotification()"><b>GetChangeValueNotification</b></a>()
+<dd>  Returns change value notification.
+ <dt> o 
+    <a href="#GetChangeVisuNotification()"><b>GetChangeVisuNotification</b></a>()
+<dd>  Returns change visu notification.
+ <dt> o 
+    <a href="#GetDeleteNotification()"><b>GetDeleteNotification</b></a>()
+<dd>  Returns delete notification.
+ <dt> o 
+    <a href="#GetRenameNotification()"><b>GetRenameNotification</b></a>()
+<dd>  Returns rename notification.
+ <dt> o 
+    <a href="#SendChangeValueNotification(CATCke::Boolean&amp;)"><b>SendChangeValueNotification</b></a>(CATCke::Boolean&amp;)
+<dd>  Produces the change value event dispatch on the parameter.
+ <dt> o 
+    <a href="#SendChangeVisuNotification()"><b>SendChangeVisuNotification</b></a>()
+<dd>  Produces the change visu event dispatch on the parameter.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetChangeValueNotification"></a><a name="GetChangeValueNotification()"></a> <dt> o <b>GetChangeValueNotification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCallbackEvent','CATCallbackEvent')</script>  <b>GetChangeValueNotification</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns change value notification.
+</dl>
+<a name="GetChangeVisuNotification"></a><a name="GetChangeVisuNotification()"></a> <dt> o <b>GetChangeVisuNotification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCallbackEvent','CATCallbackEvent')</script>  <b>GetChangeVisuNotification</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns change visu notification.
+</dl>
+<a name="GetDeleteNotification"></a><a name="GetDeleteNotification()"></a> <dt> o <b>GetDeleteNotification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCallbackEvent','CATCallbackEvent')</script>  <b>GetDeleteNotification</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns delete notification.
+</dl>
+<a name="GetRenameNotification"></a><a name="GetRenameNotification()"></a> <dt> o <b>GetRenameNotification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCallbackEvent','CATCallbackEvent')</script>  <b>GetRenameNotification</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns rename notification.
+</dl>
+<a name="SendChangeValueNotification"></a><a name="SendChangeValueNotification(CATCke::Boolean&amp;)"></a> <dt> o <b>SendChangeValueNotification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SendChangeValueNotification</b>(<td> const <script type="text/javascript"> activateLink('CATCke::Boolean','CATCke::Boolean&amp;')</script> <td><tt>iChanged</tt><td><tt>= 1</tt>)<script type="text/javascript"> activateLink('=0',' =0')</script>  </table></dt>
+<dl>
+  <dd>
+ Produces the change value event dispatch on the parameter. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iChanged</tt>
+   <dd> :   	indicates if value has actually changed<br>.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SendChangeVisuNotification"></a><a name="SendChangeVisuNotification()"></a> <dt> o <b>SendChangeVisuNotification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SendChangeVisuNotification</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Produces the change visu event dispatch on the parameter.
+</dl>
+<hr>
+ This object is included in the file: <b>CATIParmEvents.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>KnowledgeItf</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

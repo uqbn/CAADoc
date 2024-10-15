@@ -1,0 +1,178 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Interface CATISchInternalFlow</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISchInternalFlow','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchInternalFlow','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISchInternalFlow','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchInternalFlow','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Interface CATISchInternalFlow</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISchInternalFlow_49797','CATISchInternalFlow','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISchInternalFlow</b>
+</p>
+<p>
+<b><i> Interface to query Schematic internal flow information 
+ on a component.</i></b><br>
+
+ <b>Role</b>: To query internal flow properties.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetInsertionType(CATSchInternalFlowType*)"><b>GetInsertionType</b></a>(CATSchInternalFlowType*)
+<dd>  Get insertion flow type.
+ <dt> o 
+    <a href="#GetStatus(CATSchInternalFlowStatus*)"><b>GetStatus</b></a>(CATSchInternalFlowStatus*)
+<dd>  Get insertion flow status.
+ <dt> o 
+    <a href="#ListSchConnectors(CATIUnknownList**)"><b>ListSchConnectors</b></a>(CATIUnknownList**)
+<dd>  List all schematic connectors associated with an internal flow.
+ <dt> o 
+    <a href="#SetStatus(CATSchInternalFlowStatus)"><b>SetStatus</b></a>(CATSchInternalFlowStatus)
+<dd>  Set insertion flow status.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetInsertionType"></a><a name="GetInsertionType(CATSchInternalFlowType*)"></a> <dt> o <b>GetInsertionType</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetInsertionType</b>(<td><script type="text/javascript"> activateLink('CATSchInternalFlowType','CATSchInternalFlowType*')</script> <td><tt>oEInternalFlowType</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get insertion flow type.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oEInternalFlowType</tt>
+   <dd>   Internal flow type.
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATSchInternalFlowType','');return false">CATSchInternalFlowType</a>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="GetStatus"></a><a name="GetStatus(CATSchInternalFlowStatus*)"></a> <dt> o <b>GetStatus</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetStatus</b>(<td><script type="text/javascript"> activateLink('CATSchInternalFlowStatus','CATSchInternalFlowStatus*')</script> <td><tt>oEInternalFlowStatus</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get insertion flow status.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oEInternalFlowStatus</tt>
+   <dd>   Internal flow status.
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATSchInternalFlowStatus','');return false">CATSchInternalFlowStatus</a>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="ListSchConnectors"></a><a name="ListSchConnectors(CATIUnknownList**)"></a> <dt> o <b>ListSchConnectors</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ListSchConnectors</b>(<td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oLSchCntrs</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ List all schematic connectors associated with an internal flow.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLSchCntrs</tt>
+   <dd>   A list of schematic connector objects
+   (members are CATISchCntrLocation interface pointers).
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="SetStatus"></a><a name="SetStatus(CATSchInternalFlowStatus)"></a> <dt> o <b>SetStatus</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetStatus</b>(<td> const <script type="text/javascript"> activateLink('CATSchInternalFlowStatus','CATSchInternalFlowStatus')</script> <td><tt>iEInternalFlowStatus</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Set insertion flow status.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEInternalFlowStatus</tt>
+   <dd>   Internal flow status.
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATSchInternalFlowStatus','');return false">CATSchInternalFlowStatus</a>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISchInternalFlow.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

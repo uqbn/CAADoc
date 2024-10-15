@@ -1,0 +1,98 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>InteractiveInterfaces Interface CATIIniLayer</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../InteractiveInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIIniLayer','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIIniLayer','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIIniLayer','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIIniLayer','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>InteractiveInterfaces Interface CATIIniLayer</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIIniLayer_32220','CATIIniLayer','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIIniLayer</b>
+</p>
+<p>
+<b><i> Interface to a layer.</i></b><br>
+
+ <b>Role</b>:
+ This interface gives a read access to a layer.
+ <br>This interface is implemented on all the layers. The <a href="#" onClick="openLink('CATIIniDocumentLayersDefinition','');return false">CATIIniDocumentLayersDefinition</a> interface returns pointers to CATIIniLayer and you can use CATIIniLayer methods to retrieve the name or the comment of the corresponding layer.
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetName(CATUnicodeString&amp;)"><b>GetName</b></a>(CATUnicodeString&amp;)
+<dd>   Retrieves the layer name.
+ <dt> o 
+    <a href="#GetNumber(int&amp;)"><b>GetNumber</b></a>(int&amp;)
+<dd>   Retrieves the layer number.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetName"></a><a name="GetName(CATUnicodeString&amp;)"></a> <dt> o <b>GetName</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetName</b>(<td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oLayerName</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Retrieves the layer name.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    The layer name.
+ 
+  <dt> <b>Returns:</b> 
+  <dd>  <br><b>Legal values</b>:<ul>
+ <li>S_OK if the read access succeeded</li>
+ <li>E_FAIL if the interface pointer is wrong</li></ul>
+</dl>
+</dl>
+<a name="GetNumber"></a><a name="GetNumber(int&amp;)"></a> <dt> o <b>GetNumber</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetNumber</b>(<td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>oLayerNumber</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Retrieves the layer number.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    The layer number.
+ 
+  <dt> <b>Returns:</b> 
+  <dd>  <br><b>Legal values</b>:<ul>
+ <li>S_OK if the read access succeeded</li>
+ <li>E_FAIL if the interface pointer is wrong</li></ul>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIIniLayer.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATInteractiveInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

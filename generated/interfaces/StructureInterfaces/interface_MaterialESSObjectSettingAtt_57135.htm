@@ -1,0 +1,177 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>StructureInterfaces MaterialESSObjectSettingAtt (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../StructureInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('MaterialESSObjectSettingAtt','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('MaterialESSObjectSettingAtt','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('MaterialESSObjectSettingAtt','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('MaterialESSObjectSettingAtt','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>MaterialESSObjectSettingAtt<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_MaterialESSObjectSettingAtt_57135','MaterialESSObjectSettingAtt','0');</script>
+<b><i>   The interface to access a CATIAMaterialESSObjectSettingAtt.</i></b><br>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#MemberMaterial"><b>MemberMaterial</b></a>
+<dd>  Returns or sets the MemberMaterial parameter.
+ <dt>
+    <a href="#PlateMaterial"><b>PlateMaterial</b></a>
+<dd>  Returns or sets the PlateMaterial parameter.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetMemberMaterialInfo"><b>GetMemberMaterialInfo</b></a>
+<dd>   Retrieves environment informations for the MemberMaterial parameter.
+ <dt>
+    <a href="#GetPlateMaterialInfo"><b>GetPlateMaterialInfo</b></a>
+<dd>   Retrieves environment informations for the PlateMaterial parameter.
+ <dt>
+    <a href="#SetMemberMaterialLock"><b>SetMemberMaterialLock</b></a>
+<dd>  Locks or unlocks the MemberMaterial parameter.
+ <dt>
+    <a href="#SetPlateMaterialLock"><b>SetPlateMaterialLock</b></a>
+<dd>  Locks or unlocks the PlateMaterial parameter.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="MemberMaterial"><dt>
+
+<table><tr><td>o Property <b>MemberMaterial</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the MemberMaterial parameter.
+ <p>
+ Ensure consistency with the C++ interface to which the work is delegated.
+</dl>
+<a name="PlateMaterial"><dt>
+
+<table><tr><td>o Property <b>PlateMaterial</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the PlateMaterial parameter.
+ <p>
+ Ensure consistency with the C++ interface to which the work is delegated.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetMemberMaterialInfo"><dt>
+
+<table><tr><td>o Func <b>GetMemberMaterialInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioAdminLevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioLocked</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+  Retrieves environment informations for the MemberMaterial parameter.
+ <br><b>Role</b>:Retrieves the state of the MemberMaterial parameter 
+ in the current environment. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioAdminLevel</tt>
+   <dd>       <br>If the parameter is locked, AdminLevel gives the administration
+       level that imposes the value of the parameter.
+	 <br>If the parameter is not locked, AdminLevel gives the administration
+       level that will give the value of the parameter after a reset.
+ </dd>
+    <dt><tt> ioLocked</tt>
+   <dd>      Indicates if the parameter has been locked.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>        Indicates if the parameter has been explicitly modified or remain
+      to the administrated value.
+</dl>
+</dl>
+<a name="GetPlateMaterialInfo"><dt>
+
+<table><tr><td>o Func <b>GetPlateMaterialInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioAdminLevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>ioLocked</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+  Retrieves environment informations for the PlateMaterial parameter.
+ <br><b>Role</b>:Retrieves the state of the PlateMaterial parameter 
+ in the current environment. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ioAdminLevel</tt>
+   <dd>       <br>If the parameter is locked, AdminLevel gives the administration
+       level that imposes the value of the parameter.
+	 <br>If the parameter is not locked, AdminLevel gives the administration
+       level that will give the value of the parameter after a reset.
+ </dd>
+    <dt><tt> ioLocked</tt>
+   <dd>      Indicates if the parameter has been locked.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>        Indicates if the parameter has been explicitly modified or remain
+      to the administrated value.
+</dl>
+</dl>
+<a name="SetMemberMaterialLock"><dt>
+
+<table><tr><td>o Sub <b>SetMemberMaterialLock</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLocked</tt>)</table></dt>
+<dl>
+  <dd>
+ Locks or unlocks the MemberMaterial parameter.
+ <br><b>Role</b>:Locks or unlocks the MemberMaterial parameter if it is possible
+ in the current administrative context. In user mode this method will always
+ return E_FAIL.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLocked</tt>
+   <dd>	the locking operation to be performed
+	<b>Legal values</b>:
+	<br><tt>TRUE :</tt>   to lock the parameter.
+ 	<br><tt>FALSE:</tt>   to unlock the parameter.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetPlateMaterialLock"><dt>
+
+<table><tr><td>o Sub <b>SetPlateMaterialLock</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLocked</tt>)</table></dt>
+<dl>
+  <dd>
+ Locks or unlocks the PlateMaterial parameter.
+ <br><b>Role</b>:Locks or unlocks the PlateMaterial parameter if it is possible
+ in the current administrative context. In user mode this method will always
+ return E_FAIL.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLocked</tt>
+   <dd>	the locking operation to be performed
+	<b>Legal values</b>:
+	<br><tt>TRUE :</tt>   to lock the parameter.
+ 	<br><tt>FALSE:</tt>   to unlock the parameter.</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

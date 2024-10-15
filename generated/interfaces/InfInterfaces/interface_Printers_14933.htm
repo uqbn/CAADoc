@@ -1,0 +1,78 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>InfInterfaces Printers (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../InfInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Printers','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Printers','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Printers','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Printers','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Printers<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Printers_14933','Printers','0');</script>
+<b><i> A collection of all the Printer objects managed by the application.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns a printer using its index or its device name from the Printers collection.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('Printer','Printer')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a printer using its index or its device name from the Printers collection.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the printer to retrieve from
+   the collection of printers.
+   As a numerics, this index is the rank of the printer
+   in the collection.
+   The index of the first printer in the collection is 1, and
+   the index of the last printer is Count.
+   As a string, it is the DeviceName of the printer.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved printer <! @sample >
+ <dt><b>Example:</b>
+ <dd>
+ This example returns in <tt>ThisPrinter</tt> the third printer
+ in the collection, and in <tt>ThatPrinter</tt> the printer named
+ <tt>LaserPrinter</tt>.
+ <pre>
+ Dim ThisPrinter As Printer
+ Set ThisPrinter = CATIA.Printers.<font color="red">Item</font>(3)
+ Dim ThatPrinter As Printer
+ Set ThatPrinter = CATIA.Printers.<font color="red">Item</font>("LaserPrinter")
+ </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

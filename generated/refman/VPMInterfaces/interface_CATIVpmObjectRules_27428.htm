@@ -1,0 +1,159 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>VPMInterfaces Interface CATIVpmObjectRules</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../VPMInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIVpmObjectRules','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIVpmObjectRules','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIVpmObjectRules','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIVpmObjectRules','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>VPMInterfaces Interface CATIVpmObjectRules</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIVpmObjectRules_27428','CATIVpmObjectRules','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIVpmObjectRules</b>
+</p>
+<p>
+<b><i> This class enables to access to rules related to a domain.</i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetEntityName(CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;)"><b>GetEntityName</b></a>(CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;)
+<dd>  
+ <dt> o 
+    <a href="#GetLateChild(CATUnicodeString&amp;,CATListOfCATUnicodeString&amp;)"><b>GetLateChild</b></a>(CATUnicodeString&amp;,CATListOfCATUnicodeString&amp;)
+<dd>  
+ <dt> o 
+    <a href="#GetLateType(CATUnicodeString&amp;,void*,CATUnicodeString&amp;,CATUnicodeString&amp;)"><b>GetLateType</b></a>(CATUnicodeString&amp;,void*,CATUnicodeString&amp;,CATUnicodeString&amp;)
+<dd>  
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetEntityName"></a><a name="GetEntityName(CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;)"></a> <dt> o <b>GetEntityName</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetEntityName</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iLateType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oSupLateType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oEntityName</tt>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ 
+<dl>
+  <dt> <b>Deprecated:</b> 
+  <dd>  V5R14.
+ Get the name of the entity and the super late type for a late type 
+ 
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLateType</tt>
+   <dd> - Late type </dd>
+    <dt><tt> oSupLateType</tt>
+   <dd> - Super late type </dd>
+    <dt><tt> oEntityName</tt>
+   <dd> - Name of the entity  </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <br><b>Legal values</b>
+   <dl>
+     <dt>S_OK</dt>
+     <dd>iLateType exists</dd>
+     <dt>E_FAIL</dt>
+     <dd>iLateType does not exist</dd>
+   </dl>
+
+</dl>
+</dl>
+<a name="GetLateChild"></a><a name="GetLateChild(CATUnicodeString&amp;,CATListOfCATUnicodeString&amp;)"></a> <dt> o <b>GetLateChild</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetLateChild</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iSupLateType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListOfCATUnicodeString','CATListOfCATUnicodeString&amp;')</script> <td><tt>oListOfSubLateType</tt>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ 
+<dl>
+  <dt> <b>Deprecated:</b> 
+  <dd>  V5R14.
+ Get a list of Late children for a specific object 
+ 
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSupLateType</tt>
+   <dd> - LateType of object </dd>
+    <dt><tt> oListOfSubLateType</tt>
+   <dd> - List of Late child  </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <br><b>Legal values</b>
+   <dl>
+     <dt>S_OK</dt>
+     <dd>SubLateType exists</dd>
+     <dt>E_FAIL</dt>
+     <dd>SubLateType does not exist</dd>
+   </dl>
+
+</dl>
+</dl>
+<a name="GetLateType"></a><a name="GetLateType(CATUnicodeString&amp;,void*,CATUnicodeString&amp;,CATUnicodeString&amp;)"></a> <dt> o <b>GetLateType</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetLateType</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iEntityName</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('void','void*')</script> <td><tt>iRealObjectPtr</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oSupLateType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oLateType</tt>)<script type="text/javascript"> activateLink('0','const = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ 
+<dl>
+  <dt> <b>Deprecated:</b> 
+  <dd>  V5R14.
+ Get a late type and super late type from an real entity  
+ 
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEntityName</tt>
+   <dd> - Name of the real entity </dd>
+    <dt><tt> iRealObjectPtr</tt>
+   <dd> - Pointer on the real entity </dd>
+    <dt><tt> oSupLateType</tt>
+   <dd> - Super late type </dd>
+    <dt><tt> oLateType</tt>
+   <dd> - Late type  </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <br><b>Legal values</b>
+   <dl>
+     <dt>S_OK</dt>
+     <dd>The real entity exists</dd>
+     <dt>E_FAIL</dt>
+     <dd>The real entity does not exist</dd>
+   </dl>
+
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIVpmObjectRules.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>GUIDVPMInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

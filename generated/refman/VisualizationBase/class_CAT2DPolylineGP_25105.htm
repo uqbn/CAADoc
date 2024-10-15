@@ -1,0 +1,136 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>VisualizationBase Class CAT2DPolylineGP</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../VisualizationBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CAT2DPolylineGP','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CAT2DPolylineGP','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CAT2DPolylineGP','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CAT2DPolylineGP','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>VisualizationBase Class CAT2DPolylineGP</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CAT2DPolylineGP_25105','CAT2DPolylineGP','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CAT2DPolylineGP</b>
+</p>
+<p>
+<b><i> Class to create the graphic primitive of a 2D polyline.</i></b><br>
+
+ <b>Role</b>: <pre>
+              Example of a CAT2DPolyline made of four points :
+
+              point 1 X--------------------X point 2
+                                           |
+                                           |
+                                   point 3 X-----------------------X point 4
+              </pre></p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CAT2DPolylineGP(float[],int,int)"><b>CAT2DPolylineGP</b></a>(float[],int,int)
+<dd>  Constructs a 2D polyline graphic primitive from a list of points.
+ <dt> o 
+    <a href="#CAT2DPolylineGP(CATMathPoint2Df[],int,int)"><b>CAT2DPolylineGP</b></a>(CATMathPoint2Df[],int,int)
+<dd>  Constructs a 2D polyline graphic primitive from a list of points.
+</dl>
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CAT2DPolylineGP"></a><a name="CAT2DPolylineGP(float[],int,int)"></a> <dt> o <b>CAT2DPolylineGP</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CAT2DPolylineGP</b>(<td> const <script type="text/javascript"> activateLink('float','float[]')</script> <td><tt>iPoints</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iNbPoints</tt><td><tt>=2</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iAlloc</tt><td><tt>=ALLOCATE</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a 2D polyline graphic primitive from a list of points.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPoints</tt>
+   <dd>   Array containing the x, y  coordinates for
+   each point of the polyline. Its size is equal
+   to two times the number of points. So, the coordinates
+   x, y of the first point are respectively stored in iPoints[0], and  iPoints[1],
+   the coordinates x, y of the second point, in iPoints[2], iPoints[3], and so on...
+ </dd>
+    <dt><tt> iNbPoints</tt>
+   <dd>   The number of points used to define the polyline.
+   <br><b>Legal values</b>: the default value is 2.
+ </dd>
+    <dt><tt> iAlloc</tt>
+   <dd>   Parameter used to specify whether to allocate or not the data.
+    <br><b>Legal values</b>:
+   <ul>
+      <li>ALLOCATE :
+        All data are duplicated into the graphic primitive</li>
+      <li>DONT_ALLOCATEb :
+        The graphic primitive has a pointer to the data given as parameter</li>
+   </ul>
+</dd>
+</dl>
+</dl>
+</dl>
+<a name="CAT2DPolylineGP"></a><a name="CAT2DPolylineGP(CATMathPoint2Df[],int,int)"></a> <dt> o <b>CAT2DPolylineGP</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CAT2DPolylineGP</b>(<td> const <script type="text/javascript"> activateLink('CATMathPoint2Df','CATMathPoint2Df[]')</script> <td><tt>iPoints</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iNbPoints</tt><td><tt>=2</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('int','int')</script> <td><tt>iAlloc</tt><td><tt>=ALLOCATE</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a 2D polyline graphic primitive from a list of points.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPoints</tt>
+   <dd>   Array containing 2D points which define the polyline. Its size is equal
+   to one time the number of points.
+ </dd>
+    <dt><tt> iNbPoints</tt>
+   <dd>   The number of points used to define the polyline.
+   <br><b>Legal values</b>: the default value is 2.
+ </dd>
+    <dt><tt> iAlloc</tt>
+   <dd>   Parameter used to specify whether to allocate the data or not.
+    <br><b>Legal values</b>:
+   <ul>
+      <li>ALLOCATE :
+        All data are duplicated into the graphic primitive</li>
+      <li>DONT_ALLOCATEb :
+        The graphic primitive has a pointer to the data given as parameter</li>
+   </ul>
+</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CAT2DPolylineGP.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATViz</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

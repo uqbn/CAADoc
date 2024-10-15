@@ -1,0 +1,210 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATCommonLayoutInterfaces Interface CATICloPartSelection</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATCommonLayoutInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATICloPartSelection','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICloPartSelection','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATICloPartSelection','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICloPartSelection','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATCommonLayoutInterfaces Interface CATICloPartSelection</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATICloPartSelection_54644','CATICloPartSelection','0');</script>
+<p><b>Usage: you can reimplement this interface by deriving the supplied <a href="../CATCommonLayoutInterfaces/class_CATECloPartSelectionAdapter_68428.htm">CATECloPartSelectionAdapter</a> adapter class.</b></p>
+<hr>
+<p>
+ interface <b>CATICloPartSelection</b>
+</p>
+<p>
+<b><i> Describe the functionality of your interface here
+ <p>
+ Using this prefered syntax will enable mkdoc to document your class.</i></b><br>
+
+ <p><b>BOA  information</b>:  this  interface  can  be  implemented 
+  using  the  BOA  (Basic  Object  Adapter). 
+  To  know  more  about  the  BOA,  refer  to  the  CAA  Encyclopedia  home  page.   
+  Click  Middleware  at  the  bottom  left,  then  click  the  Object  Modeler  tab  page. 
+  Several  articles  deal  with  the  BOA.</p></p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#FilterPartSelection(CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,CATIUnknownList*,CATIUnknownList*,CATIUnknownList*,CATIUnknownList*&amp;)"><b>FilterPartSelection</b></a>(CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,CATIUnknownList*,CATIUnknownList*,CATIUnknownList*,CATIUnknownList*&amp;)
+<dd>  Interrupt the part place process before catalog part selection and override or modify the selection process.
+ <dt> o 
+    <a href="#IsExternalProgramNeeded(CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,int&amp;)"><b>IsExternalProgramNeeded</b></a>(CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,int&amp;)
+<dd>  Method called by part placement UI to determine if a call to RefinePartSelection is needed.
+ <dt> o 
+    <a href="#RefinePartSelection(CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,CATIUnknownList*,CATIUnknownList*,CATIUnknownList*,IUnknown*,CATListValCATUnicodeString&amp;)"><b>RefinePartSelection</b></a>(CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,CATIUnknownList*,CATIUnknownList*,CATIUnknownList*,IUnknown*,CATListValCATUnicodeString&amp;)
+<dd>  Provide an supplemental part selection available from the part placement panel after the part placement engine selection has taken place.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="FilterPartSelection"></a><a name="FilterPartSelection(CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,CATIUnknownList*,CATIUnknownList*,CATIUnknownList*,CATIUnknownList*&amp;)"></a> <dt> o <b>FilterPartSelection</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>FilterPartSelection</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iuStandard</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iuSpec</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iuPartType</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList*')</script> <td><tt>iLFilterParameters</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList*')</script> <td><tt>iLSortParameters</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList*')</script> <td><tt>iListDescription</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList*&amp;')</script> <td><tt>oListDescription</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Interrupt the part place process before catalog part selection and override or modify the selection process.
+ 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iuStandard</tt>
+   <dd>    input: The standard  
+ </dd>
+    <dt><tt> iuSpec</tt>
+   <dd>   input: The material specification ( NULL is non-spec)
+ </dd>
+    <dt><tt> iuPartType</tt>
+   <dd>   input: part type of the parts 
+ </dd>
+    <dt><tt> iLFilterParameters</tt>
+   <dd>   input: The list of parameters used in the search. (this could be all the parameters used, 
+          or only the ones that actually match keywords.)
+ </dd>
+    <dt><tt> iLSortParameters</tt>
+   <dd>   input: A list of parameters used to sort the results of the search. 
+          The list is sort by descriptions that best match parameters in this list.
+          (this could be all the parameters used, or only the ones that actually match keywords.)
+ </dd>
+    <dt><tt> iListDescription</tt>
+   <dd>   input: list of the catalog descriptions available for selection
+ </dd>
+    <dt><tt> iLParameters</tt>
+   <dd>   input: list of paramaters used by part placement
+ </dd>
+    <dt><tt> oListDescription</tt>
+   <dd>   output: list of catalog descriptions to be displayed for user selection
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    A boolean value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>SUCCEEDED</dt>
+     <dt>FAILED</dt>
+   </dl>
+</dl>
+</dl>
+<a name="IsExternalProgramNeeded"></a><a name="IsExternalProgramNeeded(CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,int&amp;)"></a> <dt> o <b>IsExternalProgramNeeded</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>IsExternalProgramNeeded</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iuApplicationContext</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iuStandard</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iuSpec</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iuPartType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int&amp;')</script> <td><tt>oiActivate</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Method called by part placement UI to determine if a call to RefinePartSelection is needed.
+ 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iuApplicationContext</tt>
+   <dd>    input: The application currently being used (e.g. CATPiping, CATTubing)  
+ </dd>
+    <dt><tt> iuStandard</tt>
+   <dd>    input: The standard  
+ </dd>
+    <dt><tt> iuSpec</tt>
+   <dd>   input: The material specification ( NULL is non-spec)
+ </dd>
+    <dt><tt> iuPartType</tt>
+   <dd>   input: part type of the parts 
+ </dd>
+    <dt><tt> oiActivate</tt>
+   <dd>   output: flag to determine external program use. 1: Activate external program. 0: Do not activate.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    A boolean value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>SUCCEEDED</dt>
+     <dt>FAILED</dt>
+   </dl>
+</dl>
+</dl>
+<a name="RefinePartSelection"></a><a name="RefinePartSelection(CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,CATUnicodeString&amp;,CATIUnknownList*,CATIUnknownList*,CATIUnknownList*,IUnknown*,CATListValCATUnicodeString&amp;)"></a> <dt> o <b>RefinePartSelection</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RefinePartSelection</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iuApplicationContext</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iuStandard</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iuSpec</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iuPartType</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList*')</script> <td><tt>iLEnvironmentParameters</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList*')</script> <td><tt>iLFilterParameters</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList*')</script> <td><tt>iLSortParameters</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('IUnknown','IUnknown*')</script> <td><tt>ipiCatalogObjectToBeSearched</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListValCATUnicodeString','CATListValCATUnicodeString&amp;')</script> <td><tt>opListPartNumbersFound</tt>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Provide an supplemental part selection available from the part placement panel after the part placement engine selection has taken place.
+ 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iuApplicationContext</tt>
+   <dd>    input: The application currently being used (e.g. CATPiping, CATTubing)  
+ </dd>
+    <dt><tt> iuStandard</tt>
+   <dd>    input: The standard  
+ </dd>
+    <dt><tt> iuSpec</tt>
+   <dd>   input: The material specification ( NULL is non-spec)
+ </dd>
+    <dt><tt> iuPartType</tt>
+   <dd>   input: part type of the parts 
+ </dd>
+    <dt><tt> iLEnvironmentParameters</tt>
+   <dd>   input: A list of parameters from by the parent product under which the part will be placed. 
+ </dd>
+    <dt><tt> iLFilterParameters</tt>
+   <dd>   input: The list of parameters used in the search. (this could be all the parameters used, 
+          or only the ones that actually match keywords.)
+ </dd>
+    <dt><tt> iLSortParameters</tt>
+   <dd>   input: A list of parameters used to sort the results of the search. 
+          The list is sort by descriptions that best match parameters in this list.
+          (this could be all the parameters used, or only the ones that actually match keywords.)
+ </dd>
+    <dt><tt> iListDescription</tt>
+   <dd>   input: list of the catalog descriptions available for selection
+ </dd>
+    <dt><tt> iPartChapter</tt>
+   <dd>   input: chapter that the part placement engine searched.
+ </dd>
+    <dt><tt> opListPartNumbersFound</tt>
+   <dd>   output: list of part numbers found by this method.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    A boolean value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>SUCCEEDED</dt>
+     <dt>FAILED</dt>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATICloPartSelection.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

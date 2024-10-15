@@ -1,0 +1,122 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATIAApplicationFrame Class CATExtIContextualMenu</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATIAApplicationFrame.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATExtIContextualMenu','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATExtIContextualMenu','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATExtIContextualMenu','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATExtIContextualMenu','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATIAApplicationFrame Class CATExtIContextualMenu</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATExtIContextualMenu_44204','CATExtIContextualMenu','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATExtIContextualMenu</b>
+</p>
+<p>
+<b><i> Adapter class of the CATIContextualMenu interface.</i></b><br>
+
+ <br>Two ways to implement this interface:
+ <ol>
+ <li>You want to customize a default menu which contains these commands: Cut, Copy, Paste, 
+ PasteSpecial, Delete, Open Properties, Selection Sets, Define Selection Sets , Hide/Show and
+ some commands about the graph if your window contains one. 
+ <br>So in the constructor of your data extension you 
+ retrieve the default contextual menu, thanks to <a href="#" onClick="openLink('','GetContextualMenu');return false">GetContextualMenu</a>, and you create  several items, that you chain to it. It is not necessary to overwrite the 
+ <tt>GetContextualMenu</tt> method.
+ <br>Example of constructor:
+ <pre>
+  MyDataExtentiobnClass::MyDataExtentionClass
+ {
+    CATCmdContainer * pMenu = NULL ; 
+    CATExtIContextualMenu::GetContextualMenu(pMenu);
+    CATCmdStarter   * pst1  = new CATCmdStarter   ("xxx"); 
+    .....
+    pMenu->AddChild(pst1);
+ }
+ </pre> 
+ </li>
+ <li>You want a specific contextual menu. 
+ <br>So you write a data extension in overwriting
+ 
+<a href="#" onClick="openLink('','GetContextualMenu');return false">GetContextualMenu</a> to return your own menu. Your extension creates a   
+<a href="#" onClick="openLink('CATCmdContainer','');return false">CATCmdContainer</a> (the menu) and manages completely its content and its destruction.</li> </ol>
+ 
+ 
+<dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIContextualSubMenu','');return false">CATIContextualSubMenu</a>, <a href="#" onClick="openLink('CATCmdAccess','');return false">CATCmdAccess</a>, <a href="#" onClick="openLink('CATCmdStarter','');return false">CATCmdStarter</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATExtIContextualMenu()"><b>CATExtIContextualMenu</b></a>()
+<dd>   Default constructor.
+ <dt> o 
+    <a href="#~CATExtIContextualMenu()"><b>~CATExtIContextualMenu</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetContextualMenu(CATCmdContainer*&amp;)"><b>GetContextualMenu</b></a>(CATCmdContainer*&amp;)
+<dd>  Returns the contextual menu.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATExtIContextualMenu"></a><a name="CATExtIContextualMenu()"></a> <dt> o <b>CATExtIContextualMenu</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATExtIContextualMenu</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+  Default constructor. 
+ <br><b>Note:</b>Initializes the contextual menu with commands defined at the top of 
+ this page.
+</dl>
+<a name="~CATExtIContextualMenu"></a><a name="~CATExtIContextualMenu()"></a> <dt> o <b>~CATExtIContextualMenu</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>~CATExtIContextualMenu</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetContextualMenu"></a><a name="GetContextualMenu(CATCmdContainer*&amp;)"></a> <dt> o <b>GetContextualMenu</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetContextualMenu</b>(<td><script type="text/javascript"> activateLink('CATCmdContainer','CATCmdContainer*&amp;')</script> <td><tt>oMenu</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the contextual menu.
+ <br><b>Note:</b>This method returns the contextual menu. Its content can change between 
+ two calls.
+</dl>
+<hr>
+ This object is included in the file: <b>CATExtIContextualMenu.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATIAApplicationFrame</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

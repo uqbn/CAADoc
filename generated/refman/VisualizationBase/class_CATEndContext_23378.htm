@@ -1,0 +1,91 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>VisualizationBase Notification CATEndContext</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../VisualizationBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATEndContext','notification','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEndContext','notification','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATEndContext','notification','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEndContext','notification','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>VisualizationBase Notification CATEndContext</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATEndContext_23378','CATEndContext','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATEndContext</b>
+</p>
+<p>
+<b><i> Class to notify the end of context task.</i></b><br>
+
+ <b>Role</b>: This notification sent by a <a href="#" onClick="openLink('CATManipulator','');return false">CATManipulator</a> indicates  that the mouse button 3 is released or the callback task is ended.
+ The items of the context menu are automatically destroyed when
+ this notification is sent.
+ It can be received by any 
+<a href="#" onClick="openLink('CATCommand','');return false">CATCommand</a> class by means of the callback through the 
+<a href="#" onClick="openLink('CATCommand','AddAnalyseNotificationCB');return false">CATCommand.AddAnalyseNotificationCB</a> method.
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATEndContext(CATNotification*)"><b>CATEndContext</b></a>(CATNotification*)
+<dd>  Constructs a CATEndContext notification.
+ <dt> o 
+    <a href="#~CATEndContext()"><b>~CATEndContext</b></a>()
+<dd> </dl>
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATEndContext"></a><a name="CATEndContext(CATNotification*)"></a> <dt> o <b>CATEndContext</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATEndContext</b>(<td><script type="text/javascript"> activateLink('CATNotification','CATNotification*')</script> <td><tt>iNotification</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a CATEndContext notification.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNotification</tt>
+   <dd>    The device event notification.
+   This notification contains the manipulation device 
+   parameters like mouse position.</dd>
+</dl>
+</dl>
+</dl>
+<a name="~CATEndContext"></a><a name="~CATEndContext()"></a> <dt> o <b>~CATEndContext</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATEndContext</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+<hr>
+ This object is included in the file: <b>CATEndContext.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATViz</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

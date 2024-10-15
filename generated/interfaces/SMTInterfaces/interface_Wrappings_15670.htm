@@ -1,0 +1,163 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>SMTInterfaces Wrappings (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../SMTInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Wrappings','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Wrappings','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Wrappings','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Wrappings','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Wrappings<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Wrappings_15670','Wrappings','0');</script>
+<b><i> Interface to compute Wrappings</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Add"><b>Add</b></a>
+<dd>  Compute a wrapping on the selected products.
+ <dt>
+    <a href="#CleanUp"><b>CleanUp</b></a>
+<dd>  Cleans up.
+ <dt>
+    <a href="#ComputeAWrapping"><b>ComputeAWrapping</b></a>
+<dd>  Compute a wrapping on the selected products.
+ <dt>
+    <a href="#ComputeAWrappingWithAReference"><b>ComputeAWrappingWithAReference</b></a>
+<dd>  Compute a wrapping on the selected products, according to a reference product.
+ <dt>
+    <a href="#WrappingShapeName"><b>WrappingShapeName</b></a>
+<dd>  Returns the name of the associated shape.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Add"><dt>
+
+<table><tr><td>o Func <b>Add</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProductToWrapping</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iAccuracy</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iRatio</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iShapeName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iActivatedShape</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>iDefaultShape</tt>) As <script type="text/javascript"> activateLink('Wrapping','Wrapping')</script> </table></dt>
+<dl>
+  <dd>
+ Compute a wrapping on the selected products. <b>This method is deprecated!</b>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iProductToWrapping</tt>
+   <dd>   The selected products on which you want to perform a wrapping.
+ </dd>
+    <dt><tt> iAccuracy</tt>
+   <dd>   The grain accuracy.
+ </dd>
+    <dt><tt> iRatio</tt>
+   <dd>   The ratio.
+ </dd>
+    <dt><tt> iShapeName</tt>
+   <dd>   The associated shape name.
+ </dd>
+    <dt><tt> iActivatedShape</tt>
+   <dd>   Do we activate the shape ?
+ </dd>
+    <dt><tt> iDefaultShape</tt>
+   <dd>   Do we activate the shape as default shape ?
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     oWrapping: Document containing the result.
+</dl>
+</dl>
+<a name="CleanUp"><dt>
+
+<table><tr><td>o Sub <b>CleanUp</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Cleans up.
+</dl>
+<a name="ComputeAWrapping"><dt>
+
+<table><tr><td>o Func <b>ComputeAWrapping</b>(<td><script type="text/javascript"> activateLink('Group','Group')</script> <td><tt>GroupOfSelectedProducts</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iAccuracy</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iRation</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iAccuracyForSimplification</tt>) As <script type="text/javascript"> activateLink('Document','Document')</script> </table></dt>
+<dl>
+  <dd>
+ Compute a wrapping on the selected products.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> GroupOfSelectedProducts</tt>
+   <dd>   The selected products on which you want to perform a wrapping.
+ </dd>
+    <dt><tt> iAccuracy</tt>
+   <dd>   The grain accuracy.
+ </dd>
+    <dt><tt> iRation</tt>
+   <dd>   The ratio.
+ </dd>
+    <dt><tt> iAccuracyForSimplification</tt>
+   <dd>   The accuracy for the simplification. equals -1 if no simplification
+   is to be performed.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     WrappingDocument: Document containing the result.
+</dl>
+</dl>
+<a name="ComputeAWrappingWithAReference"><dt>
+
+<table><tr><td>o Func <b>ComputeAWrappingWithAReference</b>(<td><script type="text/javascript"> activateLink('Group','Group')</script> <td><tt>iGroupOfSelectedProducts</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iReferenceProduct</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iAccuracy</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iRation</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iAccuracyForSimplification</tt>) As <script type="text/javascript"> activateLink('Document','Document')</script> </table></dt>
+<dl>
+  <dd>
+ Compute a wrapping on the selected products, according to a reference product.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> GroupOfSelectedProducts</tt>
+   <dd>   The selected products on which you want to perform a wrapping.
+ </dd>
+    <dt><tt> iReferenceProduct</tt>
+   <dd>   Product taken as a reference.
+ </dd>
+    <dt><tt> iAccuracy</tt>
+   <dd>   The grain accuracy.
+ </dd>
+    <dt><tt> iRation</tt>
+   <dd>   The ratio.
+ </dd>
+    <dt><tt> iAccuracyForSimplification</tt>
+   <dd>   The accuracy for the simplification. equals -1 if no simplification
+   is to be performed.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     WrappingDocument: Document containing the result.
+</dl>
+</dl>
+<a name="WrappingShapeName"><dt>
+
+<table><tr><td>o Func <b>WrappingShapeName</b>(<td>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the name of the associated shape.
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,168 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Interface CATISchRouteGraphic</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISchRouteGraphic','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchRouteGraphic','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISchRouteGraphic','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchRouteGraphic','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Interface CATISchRouteGraphic</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISchRouteGraphic_49587','CATISchRouteGraphic','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISchRouteGraphic</b>
+</p>
+<p>
+<b><i> Interface to manage Schematic component's association with its
+ graphic representation objects.</i></b><br>
+  
+ <b>Role</b>: To modify component's links to its
+ graphical representations.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AddGraphicalPrimitive(CATISchGRRRoute*)"><b>AddGraphicalPrimitive</b></a>(CATISchGRRRoute*)
+<dd>  Add a graphical primitive to a route.
+ <dt> o 
+    <a href="#ListGraphicalPrimitives(CATIUnknownList**)"><b>ListGraphicalPrimitives</b></a>(CATIUnknownList**)
+<dd>  List all graphical primitives of a route.
+ <dt> o 
+    <a href="#RemoveAllGraphicalPrimitives()"><b>RemoveAllGraphicalPrimitives</b></a>()
+<dd>  Remove all graphical primitives of a route, including alternate 
+ graphical primitives.
+ <dt> o 
+    <a href="#RemoveGraphicalPrimitive(CATISchGRRRoute*)"><b>RemoveGraphicalPrimitive</b></a>(CATISchGRRRoute*)
+<dd>  Remove a graphical primitive from a route.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AddGraphicalPrimitive"></a><a name="AddGraphicalPrimitive(CATISchGRRRoute*)"></a> <dt> o <b>AddGraphicalPrimitive</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AddGraphicalPrimitive</b>(<td><script type="text/javascript"> activateLink('CATISchGRRRoute','CATISchGRRRoute*')</script> <td><tt>iGRRToAdd</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Add a graphical primitive to a route.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGRRToAdd</tt>
+   <dd>   The route graphical primitive to be added to the route.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="ListGraphicalPrimitives"></a><a name="ListGraphicalPrimitives(CATIUnknownList**)"></a> <dt> o <b>ListGraphicalPrimitives</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ListGraphicalPrimitives</b>(<td><script type="text/javascript"> activateLink('CATIUnknownList','CATIUnknownList**')</script> <td><tt>oLGRR</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ List all graphical primitives of a route.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLGRR</tt>
+   <dd>   A list of graphical primitives
+   (members are CATISchGRRRoute interface pointers).
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="RemoveAllGraphicalPrimitives"></a><a name="RemoveAllGraphicalPrimitives()"></a> <dt> o <b>RemoveAllGraphicalPrimitives</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RemoveAllGraphicalPrimitives</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Remove all graphical primitives of a route, including alternate 
+ graphical primitives.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="RemoveGraphicalPrimitive"></a><a name="RemoveGraphicalPrimitive(CATISchGRRRoute*)"></a> <dt> o <b>RemoveGraphicalPrimitive</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RemoveGraphicalPrimitive</b>(<td><script type="text/javascript"> activateLink('CATISchGRRRoute','CATISchGRRRoute*')</script> <td><tt>iGRRToRemove</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Remove a graphical primitive from a route.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGRRToRemove</tt>
+   <dd>   The route graphical primitive to be removed from the component.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISchRouteGraphic.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GeometricObjects Interface CATConstantLaw</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GeometricObjects.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATConstantLaw','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATConstantLaw','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATConstantLaw','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATConstantLaw','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GeometricObjects Interface CATConstantLaw</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATConstantLaw_25647','CATConstantLaw','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATConstantLaw</b>
+</p>
+<p>
+<b><i> Interface representing a linear law.</i></b><br>
+
+<br>A law is a function <tt>L</tt> of one parameter <tt>iT</tt> on a given 1D interval
+ <tt>[iTmin,iTmax]</tt>. A constant law is such that <tt>L(iT)=iConstant</tt> on the
+ definition interval.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetValue()"><b>GetValue</b></a>()
+<dd>  Returns the constant value of <tt>this</tt> CATConstantLaw.
+ <dt> o 
+    <a href="#SetValue(double)"><b>SetValue</b></a>(double)
+<dd>  Modifies the constant value of <tt>this</tt> CATConstantLaw.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetValue"></a><a name="GetValue()"></a> <dt> o <b>GetValue</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('double','double')</script>  <b>GetValue</b>(<td>)<script type="text/javascript"> activateLink('0','const = 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the constant value of <tt>this</tt> CATConstantLaw.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The constant value.
+</dl>
+</dl>
+<a name="SetValue"></a><a name="SetValue(double)"></a> <dt> o <b>SetValue</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetValue</b>(<td> const <script type="text/javascript"> activateLink('double','double')</script> <td><tt>iNewValue</tt>)<script type="text/javascript"> activateLink('0',' = 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Modifies the constant value of <tt>this</tt> CATConstantLaw.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNewValue</tt>
+   <dd> The new constant value.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATConstantLaw.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGeometricObjects</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

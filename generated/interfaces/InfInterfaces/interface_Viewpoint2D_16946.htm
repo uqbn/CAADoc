@@ -1,0 +1,110 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>InfInterfaces Viewpoint2D (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../InfInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Viewpoint2D','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Viewpoint2D','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Viewpoint2D','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Viewpoint2D','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Viewpoint2D<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Viewpoint2D_16946','Viewpoint2D','0');</script>
+<b><i> Represents the 2D viewpoint.</i></b><br>
+
+ The 2D viewpoint is the object that stores data which defines how your
+ objects are seen to enable their display by a 2D viewer.
+ This data includes namely the origin of the scene,
+ that is the center of the displayed area, and the zoom factor.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Zoom"><b>Zoom</b></a>
+<dd>  Returns or sets the zoom factor associated with the viewpoint.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetOrigin"><b>GetOrigin</b></a>
+<dd>  Gets the coordinates of the origin of the viewpoint.
+ <dt>
+    <a href="#PutOrigin"><b>PutOrigin</b></a>
+<dd>  Sets the coordinates of the origin of the viewpoint.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Zoom"><dt>
+
+<table><tr><td>o Property <b>Zoom</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the zoom factor associated with the viewpoint.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves in <tt>ZoomFactor</tt> the zoom factor associated
+ with the <tt>NiceViewpoint</tt> viewpoint, tests if it is less than 1,
+ and if so, sets it to one and applies it to the viewpoint.
+ <pre>
+ ZoomFactor = NiceViewpoint.<font color="red">Zoom</font>
+ If ZoomFactor &lt; 1 Then
+  ZoomFactor = 1
+  NiceViewpoint.<font color="red">Zoom</font>(ZoomFactor)
+ End If
+ </pre>
+ </dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetOrigin"><dt>
+
+<table><tr><td>o Sub <b>GetOrigin</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oOrigin</tt>)</table></dt>
+<dl>
+  <dd>
+ Gets the coordinates of the origin of the viewpoint.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example Gets the origin of the <tt>NiceViewpoint</tt> viewpoint.
+ <pre>
+ Dim origin(1)
+ NiceViewpoint.<font color="red">GetOrigin</font> origin
+ </pre>
+ </dl>
+</dl>
+<a name="PutOrigin"><dt>
+
+<table><tr><td>o Sub <b>PutOrigin</b>(<td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oOrigin</tt>)</table></dt>
+<dl>
+  <dd>
+ Sets the coordinates of the origin of the viewpoint.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example sets the origin of the <tt>NiceViewpoint</tt> viewpoint
+ to the point with coordinates (5, 8).
+ <pre>
+ NiceViewpoint.<font color="red">PutOrigin</font> Array(5, 8)
+ </pre>
+ </dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

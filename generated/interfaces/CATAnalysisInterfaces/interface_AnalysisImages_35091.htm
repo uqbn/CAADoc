@@ -1,0 +1,147 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces AnalysisImages (Collection)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('AnalysisImages','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisImages','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('AnalysisImages','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('AnalysisImages','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>AnalysisImages<font size=-1> (Collection)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_AnalysisImages_35091','AnalysisImages','0');</script>
+<b><i>   The collection of analysis images.</i></b><br>
+
+ <p><hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Add"><b>Add</b></a>
+<dd>  Creates a new image and adds it to the analysis image collection.
+ <dt>
+    <a href="#Item"><b>Item</b></a>
+<dd>  Returns an analysis image using its index or its name from the analysis images collection.
+ <dt>
+    <a href="#RemoveImage"><b>RemoveImage</b></a>
+<dd>  Deletes the Analysis Image from the analysis images collection of the Analysis Set.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Add"><dt>
+
+<table><tr><td>o Func <b>Add</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iImageName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iHideExistingImages</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iShowMesh</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iDuplicate</tt>) As <script type="text/javascript"> activateLink('AnalysisImage','AnalysisImage')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a new image and adds it to the analysis image collection.<br>
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iImageName</tt>
+   <dd> The name of the image to create.
+ </dd>
+    <dt><tt> iHideExistingImages</tt>
+   <dd> To deactivate or not all the activated images before create the new image.
+ </dd>
+    <dt><tt> iShowMesh</tt>
+   <dd> To show or not the mesh image.
+ </dd>
+    <dt><tt> iDuplicate</tt>
+   <dd> To duplicate or not the new image, if same image already exists in collection of images.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The created Analysis Image
+ 
+  <dt> <b>Example:</b> 
+  <dd>  This example create <tt>ThisAnalysisImage</tt> in the <tt>analysisImages</tt>analysis <br>
+ images collection. The image to create is supposed to be a mesh deformed image. <br>
+ <pre>
+ Dim ThisAnalysisImage As AnalysisImage
+ Set ThisAnalysisImage = analysisImages.Add("Mesh_Deformed", True, False, False)
+ </pre>
+</dl>
+</dl>
+<a name="Item"><dt>
+
+<table><tr><td>o Func <b>Item</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('AnalysisImage','AnalysisImage')</script> </table></dt>
+<dl>
+  <dd>
+ Returns an analysis image using its index or its name from the analysis images collection. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   The index or the name of the analysis image to retrieve from
+   the collection of analysis images.
+   This index is the rank of the analysis image in the collection.
+   The index of the first analysis image in the collection is 1, and
+   the index of the last analysis image is Count.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The retrieved analysis image
+ 
+  <dt> <b>Example:</b> 
+  <dd>  This example retrieves in <tt>ThisAnalysisImage</tt> the third analysis image.
+ <pre>
+ Dim ThisAnalysisImage As AnalysisImage
+ Set ThisAnalysisImage = analysisImages.<font color="red">Item</font>(3)
+ </pre>
+</dl>
+</dl>
+<a name="RemoveImage"><dt>
+
+<table><tr><td>o Sub <b>RemoveImage</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iImageIdentifier</tt>)</table></dt>
+<dl>
+  <dd>
+ Deletes the Analysis Image from the analysis images collection of the Analysis Set. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iImageIdentifier</tt>
+   <dd>   The index or the name of the analysis image to delete from the Analysis Set.
+   Note: The index given is the position of the image in the Analysis Set.
+   Note: The name given is the string got from analysisImage.Name
+	  If the index or the name specified is not present in the Analysis Set, this method FAILS.
+   The index of the first analysis image in the collection is 1, and
+   the index of the last analysis image is Count.
+
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  Example 1
+ In this example analysisImages1 is the Analysis Set and analysisImage1 is the image present in it.
+ imageName = analysisImage1.Name
+ analysisImages1.RemoveImage(imageName)
+ 
+ Example 2
+ analysisImages1.RemoveImage(4)
+ In this example 4 is the index of the Image to be deleted in Analysis Set: analysisImages1
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

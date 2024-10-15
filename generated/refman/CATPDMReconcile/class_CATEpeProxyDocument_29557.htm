@@ -1,0 +1,164 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATPDMReconcile Class CATEpeProxyDocument</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATPDMReconcile.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATEpeProxyDocument','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEpeProxyDocument','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATEpeProxyDocument','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEpeProxyDocument','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATPDMReconcile Class CATEpeProxyDocument</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATEpeProxyDocument_29557','CATEpeProxyDocument','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATEpeProxyDocument</b>
+</p>
+<p>
+<b><i> Class representing a not loaded CATIA document.</i></b><br>
+
+
+ <b>Role</b>:
+ Define a not loaded CATIA document in a reconciliation session. Document to be
+ reloaded from VPDM repository.</p>
+<hr>
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetDirectoryPath()"><b>GetDirectoryPath</b></a>()
+<dd>  Gets directory path of the not loaded CATIA document.
+ <dt> o 
+    <a href="#GetDocumentType()"><b>GetDocumentType</b></a>()
+<dd>  Gets document type.
+ <dt> o 
+    <a href="#GetExposedEntity()"><b>GetExposedEntity</b></a>()
+<dd>  Access to object reconciliator internal object.
+ <dt> o 
+    <a href="#GetExposedEntity(CATScmProxyDocument*)"><b>GetExposedEntity</b></a>(CATScmProxyDocument*)
+<dd>  Access to CAA reconciliator object from other reconciliator objects.
+ <dt> o 
+    <a href="#GetFilePath()"><b>GetFilePath</b></a>()
+<dd>  Gets file path of the not loaded CATIA document.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetDirectoryPath"></a><a name="GetDirectoryPath()"></a> <dt> o <b>GetDirectoryPath</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script>  <b>GetDirectoryPath</b>(<td>)<script type="text/javascript"> activateLink('const','const ')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets directory path of the not loaded CATIA document.
+
+ <br><b>Role</b>: Gets directory path of the not loaded CATIA document.
+ 
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   String that represents the directory path.
+
+</dl>
+</dl>
+<a name="GetDocumentType"></a><a name="GetDocumentType()"></a> <dt> o <b>GetDocumentType</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script>  <b>GetDocumentType</b>(<td>)<script type="text/javascript"> activateLink('const','const ')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets document type.
+
+ <br><b>Role</b>: Gets document type of the not loaded CATIA document.
+ 
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   String that represents the document type.
+
+</dl>
+</dl>
+<a name="GetExposedEntity"></a><a name="GetExposedEntity()"></a> <dt> o <b>GetExposedEntity</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATScmProxyDocument','CATScmProxyDocument *')</script>  <b>GetExposedEntity</b>(<td>)<script type="text/javascript"> activateLink('const','const ')</script>  </table></dt>
+<dl>
+  <dd>
+ Access to object reconciliator internal object.
+
+ <b>Role:</b> Access to object reconciliator internal object..
+ 
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  Method return code 
+ <br><b>Legal values</b>: Returns <b><i>NULL</i></b> if one error occur, otherwise provide access
+ associated  <b><i>CATScmProxyDocument</i></b>.
+</dl>
+</dl>
+<a name="GetExposedEntity"></a><a name="GetExposedEntity(CATScmProxyDocument*)"></a> <dt> o <b>GetExposedEntity</b>
+
+<dt>  <table><tr><td>  public static <script type="text/javascript"> activateLink('CATEpeProxyDocument','CATEpeProxyDocument *')</script>  <b>GetExposedEntity</b>(<td> const <script type="text/javascript"> activateLink('CATScmProxyDocument','CATScmProxyDocument*')</script> <td><tt>ixObj</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Access to CAA reconciliator object from other reconciliator objects.
+
+ <b>Role:</b> Access to CAA reconciliator object from other reconciliator objects.
+ 
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  Method return code 
+ <br><b>Legal values</b>: Returns <b><i>NULL</i></b> if one error occur, otherwise provide access
+ associated <b><i>CATEpeProxyDocument</i></b>. 
+ 
+ 
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ixObj</tt>
+   <dd>  Internal session entity.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetFilePath"></a><a name="GetFilePath()"></a> <dt> o <b>GetFilePath</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString')</script>  <b>GetFilePath</b>(<td>)<script type="text/javascript"> activateLink('const','const ')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets file path of the not loaded CATIA document.
+
+ <br><b>Role</b>: Gets complete file path of the not loaded CATIA document.
+ 
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   String that represents the complete file path.
+
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATEpeProxyDocument.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATPDMReconcileModel</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

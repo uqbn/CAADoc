@@ -1,0 +1,117 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>VPMInterfaces Interface CATIAVPMObjectVersion</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../VPMInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIAVPMObjectVersion','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIAVPMObjectVersion','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIAVPMObjectVersion','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIAVPMObjectVersion','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>VPMInterfaces Interface CATIAVPMObjectVersion</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIAVPMObjectVersion_32980','CATIAVPMObjectVersion','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIAVPMObjectVersion</b>
+</p>
+<p>
+<b><i> Interface to create and manage CATIAVPMObjectVersion.</i></b><br>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#get_DocumentedObject(long,CATIAVPMObject*&amp;)"><b>get_DocumentedObject</b></a>(long,CATIAVPMObject*&amp;)
+<dd>  Retrieves the Documented Object corresponding to the index.
+ <dt> o 
+    <a href="#get_DocumentedObjectCount(long,long&amp;)"><b>get_DocumentedObjectCount</b></a>(long,long&amp;)
+<dd>  Retrieves Count of the Documented Objects attached with Documentation or Representation link.
+ <dt> o 
+    <a href="#get_ObjectMaster(CATIAVPMObjectMaster*&amp;)"><b>get_ObjectMaster</b></a>(CATIAVPMObjectMaster*&amp;)
+<dd>  Retrieves the master object of the CATIAVPMObjectVersion.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="get_DocumentedObject"></a><a name="get_DocumentedObject(long,CATIAVPMObject*&amp;)"></a> <dt> o <b>get_DocumentedObject</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>get_DocumentedObject</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>index</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIAVPMObject','CATIAVPMObject*&amp;')</script> <td><tt>VPMObject</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the Documented Object corresponding to the index.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> index</tt>
+   <dd>   The index.
+ </dd>
+    <dt><tt> VPMObject</tt>
+   <dd>   The CATIAVPMObject.</dd>
+</dl>
+</dl>
+</dl>
+<a name="get_DocumentedObjectCount"></a><a name="get_DocumentedObjectCount(long,long&amp;)"></a> <dt> o <b>get_DocumentedObjectCount</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>get_DocumentedObjectCount</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>mode</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long&amp;')</script> <td><tt>NbItems</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves Count of the Documented Objects attached with Documentation or Representation link.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> mode</tt>
+   <dd>   The mode is REPRESENTATION / DOCUMENTATION or both (default comportment).
+ </dd>
+    <dt><tt> NbItems</tt>
+   <dd>   The number of Documented Objects corresponding to the mode.</dd>
+</dl>
+</dl>
+</dl>
+<a name="get_ObjectMaster"></a><a name="get_ObjectMaster(CATIAVPMObjectMaster*&amp;)"></a> <dt> o <b>get_ObjectMaster</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>get_ObjectMaster</b>(<td><script type="text/javascript"> activateLink('CATIAVPMObjectMaster','CATIAVPMObjectMaster*&amp;')</script> <td><tt>ObjectMaster</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the master object of the CATIAVPMObjectVersion.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> ObjectMaster</tt>
+   <dd>   The CATIAVPMObjectMaster.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIAVPMObjectVersion.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>GUIDVPMInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

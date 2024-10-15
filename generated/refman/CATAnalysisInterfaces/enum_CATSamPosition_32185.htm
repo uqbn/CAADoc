@@ -1,0 +1,98 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisInterfaces Enumeration CATSamPosition</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>CATAnalysisInterfaces Enumeration CATSamPosition</h1>
+<pre>
+enum <b>CATSamPosition</b> {
+  CATSamPositionNode,
+  CATSamPositionElement,
+  CATSamPositionCenter,
+  CATSamPositionDof,
+  CATSamPositionNodeOfElement,
+  CATSamPositionEdge,
+  CATSamPositionFace,
+  CATSamPositionGauss,
+  CATSamPositionVirtualNode,
+  CATSamPositionVirtualElement,
+  CATSamPositionUserDefined,
+  CATSamPositionGroup,
+  CATSamPositionSet,
+  CATSamPositionLast
+}
+</pre>
+<b><i> The positions on which field data entities can be applied to.</i></b><br>
+
+ <dl>
+  <dt> <b>Values:</b>
+  <dd>
+    <dl>
+    <dt><tt> CATSamPositionNode</tt>
+   <dd>   A node.
+ </dd>
+    <dt><tt> CATSamPositionElement</tt>
+   <dd>   An element.
+ </dd>
+    <dt><tt> CATSamPositionCenter</tt>
+   <dd>   The center of an element.
+ </dd>
+    <dt><tt> CATSamPositionDof</tt>
+   <dd>   A degree of freedom.<br>
+   <b>Note</b> : all positions defined after this one (and none before)
+   need a number to be specified with the apply definition<br>.
+   The valid numbers for this position are defined by <b>CATSamDof</b>.
+ </dd>
+    <dt><tt> CATSamPositionNodeOfElement</tt>
+   <dd>   A node of an element.
+ </dd>
+    <dt><tt> CATSamPositionEdge</tt>
+   <dd>   An edge of an element.
+ </dd>
+    <dt><tt> CATSamPositionFace</tt>
+   <dd>   A face of an element.
+ </dd>
+    <dt><tt> CATSamPositionGauss</tt>
+   <dd>   A gauss point of an element.
+ </dd>
+    <dt><tt> CATSamPositionVirtualNode</tt>
+   <dd>   A virtual node.
+ </dd>
+    <dt><tt> CATSamPositionVirtualElement</tt>
+   <dd>   A virtual element.
+ </dd>
+    <dt><tt> CATSamPositionUserDefined</tt>
+   <dd>   An user defined position.
+ </dd>
+    <dt><tt> CATSamPositionGroup</tt>
+   <dd>   A Group position.
+ </dd>
+    <dt><tt> CATSamPositionSet</tt>
+   <dd>   A Set position.
+ </dd>
+    <dt><tt> CATSamPositionLast</tt>
+   <dd>   No position type defined.<br>
+   It also represents the number of valid enumerated values.
+ </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATSamDof','');return false">CATSamDof</a>
+</dl>
+<hr>
+ This object is included in the file: <b>CATAnalysisExplicitDefinitions.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

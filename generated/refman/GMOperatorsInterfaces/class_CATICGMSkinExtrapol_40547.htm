@@ -1,0 +1,224 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMOperatorsInterfaces Class CATICGMSkinExtrapol</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMOperatorsInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATICGMSkinExtrapol','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMSkinExtrapol','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATICGMSkinExtrapol','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATICGMSkinExtrapol','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>GMOperatorsInterfaces Class CATICGMSkinExtrapol</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATICGMSkinExtrapol_40547','CATICGMSkinExtrapol','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATICGMSkinExtrapol</b>
+</p>
+<p>
+<b><i> Class representing an operator that extrapolates a shell body.</i></b><br>
+
+<br>The edges to extrapolate must be on the boundary of the shell, or 
+ must lie on a bounding edge of a shell.
+<br>The extrapolation values can be different for each edge. A positive
+ value defines an extrapolation along the outside direction of the shell.
+<br>Current limitation: the operator runs on bodies that
+ only contain one shell, made of only one face. Moreover,
+ the extrapolation gives a result that is continuous in curvature.
+ To use it:
+ <ul>
+ <li>Create it with the <tt>CATCGMCreateSkinExtrapol</tt> global function.
+ <li>Tune it with appropriate options, using the <tt>SetXxx</tt> methods. 
+ <li>Run it
+ <li>Get the resulting body, using the <tt>GetResult</tt> method. If you do not want 
+ to keep the resulting body, use the <a href="#" onClick="openLink('CATICGMContainer','Remove');return false">CATICGMContainer.Remove</a> method to remove it from the  geometric factory, after the operator deletion.
+<li>Release the operator with the <tt>Release</tt> method after use.
+</ul>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATICGMSkinExtrapol()"><b>CATICGMSkinExtrapol</b></a>()
+<dd>  Constructor
+</dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Append(CATEdge*,CATLength)"><b>Append</b></a>(CATEdge*,CATLength)
+<dd>  Appends an edge to extrapolate.
+ <dt> o 
+    <a href="#Append(CATLISTP(CATEdge)&amp;,CATLength)"><b>Append</b></a>(CATLISTP(CATEdge)&amp;,CATLength)
+<dd>  Appends a list of edges to extrapolate.
+ <dt> o 
+    <a href="#GetJournal()"><b>GetJournal</b></a>()
+<dd>  Returns a pointer to the topological journal dedicated to <tt>this</tt> CATICGMSkinExtrapol operator.
+ <dt> o 
+    <a href="#GetResult()"><b>GetResult</b></a>()
+<dd>  Returns the pointer to the resulting body.
+ <dt> o 
+    <a href="#Run()"><b>Run</b></a>()
+<dd>  Runs <tt>this</tt> operator.
+ <dt> o 
+    <a href="#SetDefaultExtrapolationValue(CATLength)"><b>SetDefaultExtrapolationValue</b></a>(CATLength)
+<dd>  Selects all the edges of the shell boundary and sets to them a common extrapolation value.
+ <dt> o 
+    <a href="#SetFreezeMode(CATBodyFreezeMode)"><b>SetFreezeMode</b></a>(CATBodyFreezeMode)
+<dd>  Sets the ability to later modify the resulting body.
+ <dt> o 
+    <a href="#SetPropagationMode(int)"><b>SetPropagationMode</b></a>(int)
+<dd>  Defines the propagation mode of the extrapolation value.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATICGMSkinExtrapol"></a><a name="CATICGMSkinExtrapol()"></a> <dt> o <b>CATICGMSkinExtrapol</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATICGMSkinExtrapol</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructor
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Append"></a><a name="Append(CATEdge*,CATLength)"></a> <dt> o <b>Append</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>Append</b>(<td><script type="text/javascript"> activateLink('CATEdge','CATEdge*')</script> <td><tt>iBoundaryEdge</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLength','CATLength')</script> <td><tt>iExtrapolValue</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Appends an edge to extrapolate.
+ It replaces the current value of an already selected edges by <tt>iExtrapolValue</tt>.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iBoundaryEdge</tt>
+   <dd> The edge to append.
+ </dd>
+    <dt><tt> iExtrapolValue</tt>
+   <dd> The extrapolation value for the <tt>iBoundaryEdge</tt> edge.</dd>
+</dl>
+</dl>
+</dl>
+<a name="Append"></a><a name="Append(CATLISTP(CATEdge)&amp;,CATLength)"></a> <dt> o <b>Append</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>Append</b>(<td> const <script type="text/javascript"> activateLink('CATLISTP(CATEdge)','CATLISTP(CATEdge)&amp;')</script> <td><tt>iBoundaryEdges</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLength','CATLength')</script> <td><tt>iExtrapolValue</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Appends a list of edges to extrapolate.
+ It replaces the current value of an already selected edges by <tt>iExtrapolValue</tt>.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iBoundaryEdges</tt>
+   <dd> The list of edges to append.
+ </dd>
+    <dt><tt> iExtrapolValue</tt>
+   <dd> The common extrapolation value for all the edges of the <tt>iBoundaryEdges</tt> list.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetJournal"></a><a name="GetJournal()"></a> <dt> o <b>GetJournal</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATCGMJournalList','CATCGMJournalList *')</script>  <b>GetJournal</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns a pointer to the topological journal dedicated to <tt>this</tt> CATICGMSkinExtrapol operator.
+ <br>Only available if a journal was given at the creation of the operator.
+</dl>
+<a name="GetResult"></a><a name="GetResult()"></a> <dt> o <b>GetResult</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBody','CATBody *')</script>  <b>GetResult</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the pointer to the resulting body.
+</dl>
+<a name="Run"></a><a name="Run()"></a> <dt> o <b>Run</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('int','int')</script>  <b>Run</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Runs <tt>this</tt> operator.
+</dl>
+<a name="SetDefaultExtrapolationValue"></a><a name="SetDefaultExtrapolationValue(CATLength)"></a> <dt> o <b>SetDefaultExtrapolationValue</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetDefaultExtrapolationValue</b>(<td><script type="text/javascript"> activateLink('CATLength','CATLength')</script> <td><tt>iExtrapolValue</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Selects all the edges of the shell boundary and sets to them a common extrapolation value.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iExtrapolValue</tt>
+   <dd> The new current extrapolation value of the already selected edges.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetFreezeMode"></a><a name="SetFreezeMode(CATBodyFreezeMode)"></a> <dt> o <b>SetFreezeMode</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetFreezeMode</b>(<td><script type="text/javascript"> activateLink('CATBodyFreezeMode','CATBodyFreezeMode')</script> <td><tt>iFreezeMode</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the ability to later modify the resulting body.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFreezeMode</tt>
+   <dd> The freeze mode.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetPropagationMode"></a><a name="SetPropagationMode(int)"></a> <dt> o <b>SetPropagationMode</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetPropagationMode</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iPropagationMode</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Defines the propagation mode of the extrapolation value.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPropagationMode<dl></tt>
+   <dd>
+<dt><tt>0</tt></dt><dd> No propagation of the extrapolation value.
+<dt><tt>1</tt></dt><dd> Defines the automatic definition of the extrapolation value on an edge
+ to the one of its tangential adjacent edges.
+ This mode is used by default at the creation of the operator.
+</dl></dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATICGMSkinExtrapol.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGMOperatorsInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,153 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>DNBHumanModelingInterfaces SWKSegmentNode (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../DNBHumanModelingInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SWKSegmentNode','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SWKSegmentNode','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SWKSegmentNode','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SWKSegmentNode','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SWKSegmentNode<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SWKSegmentNode_46338','SWKSegmentNode','0');</script>
+<b><i>  This interface characterizes a segment node.</i></b><br>
+<br>
+  A segment node is a convenient way to regroup segments.
+  The segment nodes are the entities that appear under the
+  manikin in the specification tree, and that regroup segments
+  together (i.e. "Trunk", "Cervical", "Right Fingers").
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#NbChildrenNodes"><b>NbChildrenNodes</b></a>
+<dd>  Returns the number of children segment nodes under this node.
+ <dt>
+    <a href="#NbChildrenSegments"><b>NbChildrenSegments</b></a>
+<dd>  Returns the number of children segments under this node.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetSegment"><b>GetSegment</b></a>
+<dd>  Returns a specific child of the segment node, based on an index.
+ <dt>
+    <a href="#GetSegmentNode"><b>GetSegmentNode</b></a>
+<dd>  Returns a specific child of the segment node, based on an index.
+ <dt>
+    <a href="#MirrorCopyPosture"><b>MirrorCopyPosture</b></a>
+<dd>  Copy the posture on the equivalent segment node, on the other side
+ of the manikin.
+ <dt>
+    <a href="#ResetPosture"><b>ResetPosture</b></a>
+<dd>  Set the posture of all segment under this node back to their default position.
+ <dt>
+    <a href="#SwapPosture"><b>SwapPosture</b></a>
+<dd>  Swap the posture with the equivalent segment node, on the other side
+ of the manikin.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="NbChildrenNodes"><dt>
+
+<table><tr><td>o Property <b>NbChildrenNodes</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the number of children segment nodes under this node.
+
+</dl>
+<a name="NbChildrenSegments"><dt>
+
+<table><tr><td>o Property <b>NbChildrenSegments</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the number of children segments under this node.
+
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetSegment"><dt>
+
+<table><tr><td>o Func <b>GetSegment</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>piIndex</tt>) As <script type="text/javascript"> activateLink('SWKSegment','SWKSegment')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a specific child of the segment node, based on an index.<br>
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> piIndex</tt>
+   <dd>  The index of the segment to retrieve.<br> The first segment is at index 0.<br>
+ The value of this parameter should not be higher than the
+ number of segments on this segment node, minus 1.
+</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetSegmentNode"><dt>
+
+<table><tr><td>o Func <b>GetSegmentNode</b>(<td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>piIndex</tt>) As <script type="text/javascript"> activateLink('SWKSegmentNode','SWKSegmentNode')</script> </table></dt>
+<dl>
+  <dd>
+ Returns a specific child of the segment node, based on an index.<br>
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> piIndex</tt>
+   <dd>  The index of the segment node to retrieve.<br> The first segment is at index 0.<br>
+ The value of this parameter should not be higher than the
+ number of children nodes on this segment node, minus 1.
+</dd>
+</dl>
+</dl>
+</dl>
+<a name="MirrorCopyPosture"><dt>
+
+<table><tr><td>o Sub <b>MirrorCopyPosture</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Copy the posture on the equivalent segment node, on the other side
+ of the manikin. For instance, it copies the posture from the
+ right leg to the left leg.
+
+</dl>
+<a name="ResetPosture"><dt>
+
+<table><tr><td>o Sub <b>ResetPosture</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Set the posture of all segment under this node back to their default position.
+
+</dl>
+<a name="SwapPosture"><dt>
+
+<table><tr><td>o Sub <b>SwapPosture</b>(<td>)</table></dt>
+<dl>
+  <dd>
+ Swap the posture with the equivalent segment node, on the other side
+ of the manikin. For instance, the right leg takes the posture of
+ the left leg, and vice versa.
+
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

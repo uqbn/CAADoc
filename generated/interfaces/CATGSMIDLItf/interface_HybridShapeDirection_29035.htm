@@ -1,0 +1,261 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATGSMIDLItf HybridShapeDirection (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATGSMIDLItf.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('HybridShapeDirection','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapeDirection','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('HybridShapeDirection','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapeDirection','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>HybridShapeDirection<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_HybridShapeDirection_29035','HybridShapeDirection','0');</script>
+<b><i> Represents the hybrid shape direction feature object.</i></b><br>
+
+ <b>Role</b>: To access the data of the hybrid shape direction feature object.
+ A direction can be specified using:
+ <ul>
+ <li>A line: the direction is tangent to the line</li>
+ <li>A plane: the direction is normal to the plane</li>
+ <li>Its components</li>
+ </ul>
+ <p>Use the  CATIAHybridShapeFactory to create a HybridShapeDirection object.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeFactory','');return false">HybridShapeFactory</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Object"><b>Object</b></a>
+<dd>  Returns or sets the object that specifies the direction.
+ <dt>
+    <a href="#RefAxisSystem"><b>RefAxisSystem</b></a>
+<dd>  Returns or Sets the reference Axis System for Direction feature.
+ <dt>
+    <a href="#Type"><b>Type</b></a>
+<dd>  Returns the direction type.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#DirectionSpecification"><b>DirectionSpecification</b></a>
+<dd>  Queries the direction specification status.
+ <dt>
+    <a href="#GetX"><b>GetX</b></a>
+<dd>  Returns the direction X component.
+ <dt>
+    <a href="#GetXVal"><b>GetXVal</b></a>
+<dd>  Returns the direction X component as Double.
+ <dt>
+    <a href="#GetY"><b>GetY</b></a>
+<dd>  Returns the direction Y component.
+ <dt>
+    <a href="#GetYVal"><b>GetYVal</b></a>
+<dd>  Returns the direction Y component as Double.
+ <dt>
+    <a href="#GetZ"><b>GetZ</b></a>
+<dd>  Returns the direction Z component.
+ <dt>
+    <a href="#GetZVal"><b>GetZVal</b></a>
+<dd>  Returns the direction Z component as Double.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Object"><dt>
+
+<table><tr><td>o Property <b>Object</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the object that specifies the direction.
+ <br>This object can be a line or a plane.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oObject</tt>
+   <dd>    The object (a line or a plane) that specifies the direction<br>
+ <br>Sub-element(s) supported (see </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+<a href="#" onClick="openLink('RectilinearTriDimFeatEdge','');return false">RectilinearTriDimFeatEdge</a>, 
+<a href="#" onClick="openLink('RectilinearBiDimFeatEdge','');return false">RectilinearBiDimFeatEdge</a> or 
+<a href="#" onClick="openLink('RectilinearMonoDimFeatEdge','');return false">RectilinearMonoDimFeatEdge</a>.
+</dl>
+</dl>
+<a name="RefAxisSystem"><dt>
+
+<table><tr><td>o Property <b>RefAxisSystem</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or Sets the reference Axis System for Direction feature.
+<br>This data is not mandatory, if element is null, the absolute axis system is taken.
+<br>When an element is given, X, Y and Z are considered in this Axis system.
+<dt>Example</dt>:
+<dd>
+ This example retrieves in <code>oRefAxis</code> the reference Axis System for <code>Direction</code> feature.
+ <pre>
+ Dim oRefAxis As CATIAReference
+ Set oRefAxis  = Direction.<font color="red">RefAxisSystem</font>
+ </pre>
+ </dl>
+</dl>
+<a name="Type"><dt>
+
+<table><tr><td>o Property <b>Type</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the direction type.
+ <br><b>Legal value</b>: The direction type can be: 
+ <dl>
+   <dt>0</dt>
+   <dd>The direction is specified using an object (a line or a plane). 
+       In the case of a plane, the direction is the normal to the plane</dd>
+   <dt>1</dt>
+   <dd>The direction is specified using its components</dd>
+ </dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="DirectionSpecification"><dt>
+
+<table><tr><td>o Func <b>DirectionSpecification</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Queries the direction specification status. 
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oDir</tt>
+   <dd>       direction specification =  0 : Direction is not specified.
+                              =  1 : Direction is specified and is valid.
+                              = -1 : Direction is specified but is not valid.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetX"><dt>
+
+<table><tr><td>o Func <b>GetX</b>(<td>) As <script type="text/javascript"> activateLink('RealParam','RealParam')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the direction X component. This method succeeds only when direction is specified using components.
+ It fails when direction is specified using a geometrical element i.e Line, Plane. 
+ In such cases use GetXVal method instead.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oCoordinates</tt>
+   <dd>    The direction X component</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetXVal"><dt>
+
+<table><tr><td>o Func <b>GetXVal</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the direction X component as Double. This method succeeds irrespective of the way direction is
+ specified.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oX</tt>
+   <dd>    The direction X component</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetY"><dt>
+
+<table><tr><td>o Func <b>GetY</b>(<td>) As <script type="text/javascript"> activateLink('RealParam','RealParam')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the direction Y component. This method succeeds only when direction is specified using components.
+ It fails when direction is specified using a geometrical element i.e Line, Plane. 
+ In such cases use GetYVal method instead.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oCoordinates</tt>
+   <dd>    The direction Y component</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetYVal"><dt>
+
+<table><tr><td>o Func <b>GetYVal</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the direction Y component as Double.This method succeeds irrespective of the way direction is
+ specified.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oY</tt>
+   <dd>    The direction Y component</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetZ"><dt>
+
+<table><tr><td>o Func <b>GetZ</b>(<td>) As <script type="text/javascript"> activateLink('RealParam','RealParam')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the direction Z component. This method succeeds only when direction is specified using components.
+ It fails when direction is specified using a geometrical element i.e Line, Plane. 
+ In such cases use GetZVal method instead.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oCoordinates</tt>
+   <dd>    The direction Z component</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetZVal"><dt>
+
+<table><tr><td>o Func <b>GetZVal</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the direction Z component as Double.This method succeeds irrespective of the way direction is
+ specified.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oZ</tt>
+   <dd>   The direction Z component</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

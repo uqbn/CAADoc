@@ -1,0 +1,162 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ManufacturingInterfaces Interface CATIMfgToolAssembly</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ManufacturingInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMfgToolAssembly','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgToolAssembly','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMfgToolAssembly','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgToolAssembly','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ManufacturingInterfaces Interface CATIMfgToolAssembly</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMfgToolAssembly_47876','CATIMfgToolAssembly','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIMfgToolAssembly</b>
+</p>
+<p>
+<b><i> Interface dedicated to Tool Assembly objects management.</i></b><br>
+
+ <b>Role</b>: This interface offers services to manage mainly the associated tool and insert.<br>
+ Common attributes are declared in CATMfgToolAssemblyConstant.<br>
+
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIMfgResource','');return false">CATIMfgResource</a>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIMfgTool','');return false">CATIMfgTool</a>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIMfgInsert','');return false">CATIMfgInsert</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetInsert(CATBaseUnknown_var&amp;)"><b>GetInsert</b></a>(CATBaseUnknown_var&amp;)
+<dd>  Returns the insert associated with the tool assembly.
+ <dt> o 
+    <a href="#GetTool(CATBaseUnknown_var&amp;)"><b>GetTool</b></a>(CATBaseUnknown_var&amp;)
+<dd>  Returns the tool associated with the tool assembly.
+ <dt> o 
+    <a href="#RemoveInsert()"><b>RemoveInsert</b></a>()
+<dd>  Removes the insert associated with this tool assembly.
+ <dt> o 
+    <a href="#RemoveTool()"><b>RemoveTool</b></a>()
+<dd>  Removes the tool associated with this tool assembly.
+ <dt> o 
+    <a href="#SetInsert(CATBaseUnknown_var&amp;)"><b>SetInsert</b></a>(CATBaseUnknown_var&amp;)
+<dd>  Associates the insert with the tool assembly.
+ <dt> o 
+    <a href="#SetTool(CATBaseUnknown_var&amp;)"><b>SetTool</b></a>(CATBaseUnknown_var&amp;)
+<dd>  Associates the tool with the tool assembly.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetInsert"></a><a name="GetInsert(CATBaseUnknown_var&amp;)"></a> <dt> o <b>GetInsert</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetInsert</b>(<td><script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>oInsert</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the insert associated with the tool assembly.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oInsert</tt>
+   <dd>     The insert</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetTool"></a><a name="GetTool(CATBaseUnknown_var&amp;)"></a> <dt> o <b>GetTool</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetTool</b>(<td><script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>oTool</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the tool associated with the tool assembly.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oTool</tt>
+   <dd>     The tool</dd>
+</dl>
+</dl>
+</dl>
+<a name="RemoveInsert"></a><a name="RemoveInsert()"></a> <dt> o <b>RemoveInsert</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RemoveInsert</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Removes the insert associated with this tool assembly.
+</dl>
+<a name="RemoveTool"></a><a name="RemoveTool()"></a> <dt> o <b>RemoveTool</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RemoveTool</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Removes the tool associated with this tool assembly.
+</dl>
+<a name="SetInsert"></a><a name="SetInsert(CATBaseUnknown_var&amp;)"></a> <dt> o <b>SetInsert</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetInsert</b>(<td> const <script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>iInsert</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Associates the insert with the tool assembly.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iInsert</tt>
+   <dd>     The insert</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetTool"></a><a name="SetTool(CATBaseUnknown_var&amp;)"></a> <dt> o <b>SetTool</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetTool</b>(<td> const <script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>iTool</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Associates the tool with the tool assembly.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iTool</tt>
+   <dd>     The tool</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMfgToolAssembly.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>MfgItfEnv</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

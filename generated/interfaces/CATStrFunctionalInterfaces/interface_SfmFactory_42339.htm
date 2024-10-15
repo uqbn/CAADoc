@@ -1,0 +1,562 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATStrFunctionalInterfaces SfmFactory (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATStrFunctionalInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SfmFactory','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmFactory','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SfmFactory','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SfmFactory','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SfmFactory<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SfmFactory_42339','SfmFactory','0');</script>
+<b><i> Interface to create Structure Functional Modeler Objects.</i></b><br>
+
+ <b>Role</b>: To create the structure object such as SuperPlate, Stiffener, StiffenerOnFreeEdge, Beam, Opening and Connection.<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddAdvSuperPlate"><b>AddAdvSuperPlate</b></a>
+<dd>  Creates an advanced SuperPlate.
+ <dt>
+    <a href="#AddMemberCrv"><b>AddMemberCrv</b></a>
+<dd>  Creates a SuperMember on a curve.
+ <dt>
+    <a href="#AddMemberCrvOnRef"><b>AddMemberCrvOnRef</b></a>
+<dd>  Creates a SuperMember on a curve and on a reference surface.
+ <dt>
+    <a href="#AddMemberPtLength"><b>AddMemberPtLength</b></a>
+<dd>  Creates a straight SuperMember defined by a point, a direction and a length.
+ <dt>
+    <a href="#AddMemberPtOnCrvPt"><b>AddMemberPtOnCrvPt</b></a>
+<dd>  Creates a straight SuperMember between a point on curve and a point.
+ <dt>
+    <a href="#AddMemberPtOnCrvPtOnCrv"><b>AddMemberPtOnCrvPtOnCrv</b></a>
+<dd>  Creates a straight SuperMember between two points on curve.
+ <dt>
+    <a href="#AddMemberPtPt"><b>AddMemberPtPt</b></a>
+<dd>  Creates a straight SuperMember between two points.
+ <dt>
+    <a href="#AddMemberPtPtOnCrv"><b>AddMemberPtPtOnCrv</b></a>
+<dd>  Creates a straight SuperMember between a point and a point on curve.
+ <dt>
+    <a href="#AddMemberPtUpToLimit"><b>AddMemberPtUpToLimit</b></a>
+<dd>  Creates a straight member defined by a point, a direction and a limit.
+ <dt>
+    <a href="#AddMemberSurfSurf"><b>AddMemberSurfSurf</b></a>
+<dd>  Creates a SuperMember by the intersection of two surfaces.
+ <dt>
+    <a href="#AddSuperPlate"><b>AddSuperPlate</b></a>
+<dd>  Creates a SuperPlate.
+ <dt>
+    <a href="#AddSuperStiffener"><b>AddSuperStiffener</b></a>
+<dd>  Creates a SuperStiffener.
+ <dt>
+    <a href="#GetManager"><b>GetManager</b></a>
+<dd>  Retrieved the services manager.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddAdvSuperPlate"><dt>
+
+<table><tr><td>o Func <b>AddAdvSuperPlate</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iCategory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iSupport</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iDestination</tt>) As <script type="text/javascript"> activateLink('SfmSuperPlate','SfmSuperPlate')</script> </table></dt>
+<dl>
+  <dd>
+ Creates an advanced SuperPlate.
+ <br><b>Role</b>: Allows creating an advanced SuperPlate, ie with the concave limit mode.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCategory</tt>
+   <dd> [in]   Category.
+ </dd>
+    <dt><tt> iSupport</tt>
+   <dd> [in]   Support surface.
+ </dd>
+    <dt><tt> iDestination</tt>
+   <dd> [in]   SuperPlate's destination.
+ </dd>
+    <dt><tt> oSuperPlate</tt>
+   <dd> [out]   SuperPlate.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok.
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('SfmSuperPlate','');return false">SfmSuperPlate</a>
+</dl>
+</dl>
+<a name="AddMemberCrv"><dt>
+
+<table><tr><td>o Func <b>AddMemberCrv</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iCategory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iSectionName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iCurve</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iDestination</tt>) As <script type="text/javascript"> activateLink('SfmMemberCurve','SfmMemberCurve')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a SuperMember on a curve.
+ <br><b>Role</b>: Allows creating a member on a curve.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCategory</tt>
+   <dd> [in]   Member's category.
+ </dd>
+    <dt><tt> iSectionName</tt>
+   <dd> [in]   Name of the section.
+ </dd>
+    <dt><tt> iCurve</tt>
+   <dd> [in]   Curve.
+ <br>Sub-element(s) supported (see </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+    <dt><tt> iDestination</tt>
+   <dd> [in]   Member's destination.
+ </dd>
+    <dt><tt> oMember</tt>
+   <dd> [out]   Member.
+ </dd>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok.
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('SfmMemberCurve','');return false">SfmMemberCurve</a>
+</dl>
+</dl>
+<a name="AddMemberCrvOnRef"><dt>
+
+<table><tr><td>o Func <b>AddMemberCrvOnRef</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iCategory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iSectionName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iCurve</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iReference</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iDestination</tt>) As <script type="text/javascript"> activateLink('SfmMemberCurve','SfmMemberCurve')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a SuperMember on a curve and on a reference surface.
+ <br><b>Role</b>: Allows creating a member on a curve, perpendicular to a reference surface.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCategory</tt>
+   <dd> [in]   Member's category.
+ </dd>
+    <dt><tt> iSectionName</tt>
+   <dd> [in]   Name of the section.
+ </dd>
+    <dt><tt> iCurve</tt>
+   <dd> [in]   Curve.
+ <br>Sub-element(s) supported (see </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+    <dt><tt> iReference</tt>
+   <dd> [in]   Surface on which the curve must lay down.
+ </dd>
+    <dt><tt> iDestination</tt>
+   <dd> [in]   Member's destination.
+ </dd>
+    <dt><tt> oMember</tt>
+   <dd> [out]   Member.
+ </dd>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok.
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('SfmMemberCurve','');return false">SfmMemberCurve</a>
+</dl>
+</dl>
+<a name="AddMemberPtLength"><dt>
+
+<table><tr><td>o Func <b>AddMemberPtLength</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iCategory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iSectionName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iPoint</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iDirection</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iLength</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iDestination</tt>) As <script type="text/javascript"> activateLink('SfmMemberPointLength','SfmMemberPointLength')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a straight SuperMember defined by a point, a direction and a length.
+ <br><b>Role</b>: Allows creating a member defined by a point, a direction and a length.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCategory</tt>
+   <dd> [in]   Member's category.
+ </dd>
+    <dt><tt> iSectionName</tt>
+   <dd> [in]   Name of the section.
+ </dd>
+    <dt><tt> iPoint</tt>
+   <dd> [in]   Point.
+ </dd>
+    <dt><tt> iDirection</tt>
+   <dd> [in]   Direction element: it can be a line or a plane.
+ </dd>
+    <dt><tt> iLength</tt>
+   <dd> [in]   Length.
+ </dd>
+    <dt><tt> iDestination</tt>
+   <dd> [in]   Member's destination.
+ </dd>
+    <dt><tt> oMember</tt>
+   <dd> [out]   Member.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok.
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('SfmMemberPointLength','');return false">SfmMemberPointLength</a>
+</dl>
+</dl>
+<a name="AddMemberPtOnCrvPt"><dt>
+
+<table><tr><td>o Func <b>AddMemberPtOnCrvPt</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iCategory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iSectionName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iCurve1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iRatioMode1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iOffset1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iPoint2</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iDestination</tt>) As <script type="text/javascript"> activateLink('SfmMember2Points','SfmMember2Points')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a straight SuperMember between a point on curve and a point.
+ <br><b>Role</b>: Allows creating a member between a point on curve and a point.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCategory</tt>
+   <dd> [in]   Member's category.
+ </dd>
+    <dt><tt> iSectionName</tt>
+   <dd> [in]   Name of the section.
+ </dd>
+    <dt><tt> iCurve1</tt>
+   <dd> [in]   Curve.
+ </dd>
+    <dt><tt> iRatioMode1</tt>
+   <dd> [in]   If true then Ratio, if false then Length mode for the point on curve.
+ </dd>
+    <dt><tt> iOffset1</tt>
+   <dd> [in]   Offset.
+ </dd>
+    <dt><tt> iPoint2</tt>
+   <dd> [in]   Point.
+ </dd>
+    <dt><tt> iDestination</tt>
+   <dd> [in]   Member's destination.
+ </dd>
+    <dt><tt> oMember</tt>
+   <dd> [out]   Member.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok.
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('SfmMember2Points','');return false">SfmMember2Points</a>
+</dl>
+</dl>
+<a name="AddMemberPtOnCrvPtOnCrv"><dt>
+
+<table><tr><td>o Func <b>AddMemberPtOnCrvPtOnCrv</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iCategory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iSectionName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iCurve1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iRatioMode1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iOffset1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iCurve2</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iRatioMode2</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iOffset2</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iDestination</tt>) As <script type="text/javascript"> activateLink('SfmMember2Points','SfmMember2Points')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a straight SuperMember between two points on curve.
+ <br><b>Role</b>: Allows creating a member between two points on curve.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCategory</tt>
+   <dd> [in]   Member's category.
+ </dd>
+    <dt><tt> iSectionName</tt>
+   <dd> [in]   Name of the section.
+ </dd>
+    <dt><tt> iCurve1</tt>
+   <dd> [in]   Curve.
+ </dd>
+    <dt><tt> iRatioMode1</tt>
+   <dd> [in]   If true then Ratio, if false then Length mode for the point on curve.
+ </dd>
+    <dt><tt> iOffset1</tt>
+   <dd> [in]   Offset.
+ </dd>
+    <dt><tt> iCurve2</tt>
+   <dd> [in]   Curve.
+ </dd>
+    <dt><tt> iRatioMode2</tt>
+   <dd> [in]   If true then Ratio, if false then Length mode for the point on curve.
+ </dd>
+    <dt><tt> iOffset2</tt>
+   <dd> [in]   Offset.
+ </dd>
+    <dt><tt> iDestination</tt>
+   <dd> [in]   Member's destination.
+ </dd>
+    <dt><tt> oMember</tt>
+   <dd> [out]   Member.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok.
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('SfmMember2Points','');return false">SfmMember2Points</a>
+</dl>
+</dl>
+<a name="AddMemberPtPt"><dt>
+
+<table><tr><td>o Func <b>AddMemberPtPt</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iCategory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iSectionName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iPoint1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iPoint2</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iDestination</tt>) As <script type="text/javascript"> activateLink('SfmMember2Points','SfmMember2Points')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a straight SuperMember between two points.
+ <br><b>Role</b>: Allows creating a member between two points.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCategory</tt>
+   <dd> [in]   Member's category.
+ </dd>
+    <dt><tt> iSectionName</tt>
+   <dd> [in]   Name of the section.
+ </dd>
+    <dt><tt> iPoint1</tt>
+   <dd> [in]   Point.
+ </dd>
+    <dt><tt> iPoint2</tt>
+   <dd> [in]   Point.
+ </dd>
+    <dt><tt> iDestination</tt>
+   <dd> [in]   Member's destination.
+ </dd>
+    <dt><tt> oMember</tt>
+   <dd> [out]   Member.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok.
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('SfmMember2Points','');return false">SfmMember2Points</a>
+</dl>
+</dl>
+<a name="AddMemberPtPtOnCrv"><dt>
+
+<table><tr><td>o Func <b>AddMemberPtPtOnCrv</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iCategory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iSectionName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iPoint1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iCurve2</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iRatioMode2</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('double','double')</script> <td><tt>iOffset2</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iDestination</tt>) As <script type="text/javascript"> activateLink('SfmMember2Points','SfmMember2Points')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a straight SuperMember between a point and a point on curve.
+ <br><b>Role</b>: Allows creating a member between a point and a point on curve.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCategory</tt>
+   <dd> [in]   Member's category.
+ </dd>
+    <dt><tt> iSectionName</tt>
+   <dd> [in]   Name of the section.
+ </dd>
+    <dt><tt> iPoint1</tt>
+   <dd> [in]   Point.
+ </dd>
+    <dt><tt> iCurve2</tt>
+   <dd> [in]   Curve.
+ </dd>
+    <dt><tt> iRatioMode2</tt>
+   <dd> [in]   If true then Ratio, if false then Length mode for the point on curve.
+ </dd>
+    <dt><tt> iOffset2</tt>
+   <dd> [in]   Offset.
+ </dd>
+    <dt><tt> iDestination</tt>
+   <dd> [in]   Member's destination.
+ </dd>
+    <dt><tt> oMember</tt>
+   <dd> [out]   Member.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok.
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('SfmMember2Points','');return false">SfmMember2Points</a>
+</dl>
+</dl>
+<a name="AddMemberPtUpToLimit"><dt>
+
+<table><tr><td>o Func <b>AddMemberPtUpToLimit</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iCategory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iSectionName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iPoint</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iDirection</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iLimit</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iDestination</tt>) As <script type="text/javascript"> activateLink('SfmMemberPointUpToLimit','SfmMemberPointUpToLimit')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a straight member defined by a point, a direction and a limit.
+ <br><b>Role</b>: Allows creating a member defined by a point, a direction and a limit.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCategory</tt>
+   <dd> [in]   Member's category.
+ </dd>
+    <dt><tt> iSectionName</tt>
+   <dd> [in]   Name of the section.
+ </dd>
+    <dt><tt> iPoint</tt>
+   <dd> [in]   Point.
+ </dd>
+    <dt><tt> iDirection</tt>
+   <dd> [in]   Direction element: it can be a line or a plane.
+ </dd>
+    <dt><tt> iLimit</tt>
+   <dd> [in]   Limit: it can be any kind of geometric element.
+ </dd>
+    <dt><tt> iDestination</tt>
+   <dd> [in]   Member's destination.
+ </dd>
+    <dt><tt> oMember</tt>
+   <dd> [out]   Member.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok.
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('SfmMemberPointUpToLimit','');return false">SfmMemberPointUpToLimit</a>
+</dl>
+</dl>
+<a name="AddMemberSurfSurf"><dt>
+
+<table><tr><td>o Func <b>AddMemberSurfSurf</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iCategory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iSectionName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iSurface1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iSurface2</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iDestination</tt>) As <script type="text/javascript"> activateLink('SfmMemberSurfSurf','SfmMemberSurfSurf')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a SuperMember by the intersection of two surfaces.
+ <br><b>Role</b>: Allows creating a member by the intersection of two surfaces.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCategory</tt>
+   <dd> [in]   Member's category.
+ </dd>
+    <dt><tt> iSectionName</tt>
+   <dd> [in]   Name of the section.
+ </dd>
+    <dt><tt> iSurface1</tt>
+   <dd> [in]   First surface.
+ </dd>
+    <dt><tt> iSurface2</tt>
+   <dd> [in]   Second surface.
+ </dd>
+    <dt><tt> iDestination</tt>
+   <dd> [in]   Member's destination.
+ </dd>
+    <dt><tt> oMember</tt>
+   <dd> [out]   Member.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok.
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('SfmMemberSurfSurf','');return false">SfmMemberSurfSurf</a>
+</dl>
+</dl>
+<a name="AddSuperPlate"><dt>
+
+<table><tr><td>o Func <b>AddSuperPlate</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iCategory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iSupport</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iDestination</tt>) As <script type="text/javascript"> activateLink('SfmSuperPlate','SfmSuperPlate')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a SuperPlate.
+ <br><b>Role</b>: Allows creating a SuperPlate in the regular limit mode (split mode).
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCategory</tt>
+   <dd> [in]   Category.
+ </dd>
+    <dt><tt> iSupport</tt>
+   <dd> [in]   Support surface.
+ </dd>
+    <dt><tt> iDestination</tt>
+   <dd> [in]   SuperPlate's destination.
+ </dd>
+    <dt><tt> oSuperPlate</tt>
+   <dd> [out]   SuperPlate.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok.
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('SfmSuperPlate','');return false">SfmSuperPlate</a>
+</dl>
+</dl>
+<a name="AddSuperStiffener"><dt>
+
+<table><tr><td>o Func <b>AddSuperStiffener</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iCategory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iSectionName</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SfmSuperPlate','SfmSuperPlate')</script> <td><tt>iSuperPlate</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iWebSupport</tt>) As <script type="text/javascript"> activateLink('SfmStiffener','SfmStiffener')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a SuperStiffener.
+ <br><b>Role</b>: Allows creating a SuperStiffener in the normal to plate mode with the WebSideLeft anchor point.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCategory</tt>
+   <dd> [in]   Category.
+ </dd>
+    <dt><tt> iSectionName</tt>
+   <dd> [in]   Section name.
+ </dd>
+    <dt><tt> iSuperPlate</tt>
+   <dd> [in]   SuperPlate to be stiffened.
+ </dd>
+    <dt><tt> oSuperStiffener</tt>
+   <dd> [out]   SuperStiffener.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok.
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('SfmStiffener','');return false">SfmStiffener</a>
+</dl>
+</dl>
+<a name="GetManager"><dt>
+
+<table><tr><td>o Func <b>GetManager</b>(<td>) As <script type="text/javascript"> activateLink('SfmManager','SfmManager')</script> </table></dt>
+<dl>
+  <dd>
+ Retrieved the services manager.
+ <br><b>Role</b>: Allows getting the services manager.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    <code>S_OK</code> if everything ran ok.
+ 
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('SfmManager','');return false">SfmManager</a>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

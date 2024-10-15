@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="Add" href="interface_Add_13508.htm" />
+<ITEM type="interface" name="Affinity" href="interface_Affinity_16337.htm" />
+<ITEM type="interface" name="AngularRepartition" href="interface_AngularRepartition_29692.htm" />
+<ITEM type="interface" name="Assemble" href="interface_Assemble_16137.htm" />
+<ITEM type="interface" name="AutoDraft" href="interface_AutoDraft_16956.htm" />
+<ITEM type="interface" name="AutoFillet" href="interface_AutoFillet_17951.htm" />
+<ITEM type="interface" name="AxisToAxis" href="interface_AxisToAxis_17879.htm" />
+<ITEM type="interface" name="BooleanShape" href="interface_BooleanShape_19931.htm" />
+<ITEM type="interface" name="Chamfer" href="interface_Chamfer_15430.htm" />
+<ITEM type="interface" name="CircPattern" href="interface_CircPattern_19085.htm" />
+<ITEM type="interface" name="CloseSurface" href="interface_CloseSurface_19992.htm" />
+<ITEM type="interface" name="ConstRadEdgeFillet" href="interface_ConstRadEdgeFillet_28558.htm" />
+<ITEM type="interface" name="Draft" href="interface_Draft_14286.htm" />
+<ITEM type="interface" name="DraftDomain" href="interface_DraftDomain_18876.htm" />
+<ITEM type="interface" name="DraftDomains" href="interface_DraftDomains_20141.htm" />
+<ITEM type="interface" name="DressUpShape" href="interface_DressUpShape_19943.htm" />
+<ITEM type="interface" name="EdgeFillet" href="interface_EdgeFillet_17878.htm" />
+<ITEM type="interface" name="FaceFillet" href="interface_FaceFillet_17867.htm" />
+<ITEM type="interface" name="Fillet" href="interface_Fillet_14837.htm" />
+<ITEM type="interface" name="Groove" href="interface_Groove_14854.htm" />
+<ITEM type="interface" name="Hole" href="interface_Hole_13838.htm" />
+<ITEM type="interface" name="Intersect" href="interface_Intersect_17111.htm" />
+<ITEM type="interface" name="Limit" href="interface_Limit_14310.htm" />
+<ITEM type="interface" name="LinearRepartition" href="interface_LinearRepartition_27841.htm" />
+<ITEM type="interface" name="Loft" href="interface_Loft_13871.htm" />
+<ITEM type="interface" name="Mirror" href="interface_Mirror_14897.htm" />
+<ITEM type="interface" name="Pad" href="interface_Pad_13505.htm" />
+<ITEM type="interface" name="Pattern" href="interface_Pattern_15519.htm" />
+<ITEM type="interface" name="Pocket" href="interface_Pocket_14822.htm" />
+<ITEM type="interface" name="Prism" href="interface_Prism_14313.htm" />
+<ITEM type="interface" name="RectPattern" href="interface_RectPattern_19102.htm" />
+<ITEM type="interface" name="Remove" href="interface_Remove_14837.htm" />
+<ITEM type="interface" name="RemoveFace" href="interface_RemoveFace_17637.htm" />
+<ITEM type="interface" name="Repartition" href="interface_Repartition_19241.htm" />
+<ITEM type="interface" name="ReplaceFace" href="interface_ReplaceFace_18513.htm" />
+<ITEM type="interface" name="Revolution" href="interface_Revolution_18204.htm" />
+<ITEM type="interface" name="Rib" href="interface_Rib_13509.htm" />
+<ITEM type="interface" name="Rotate" href="interface_Rotate_14811.htm" />
+<ITEM type="interface" name="Scaling" href="interface_Scaling_15413.htm" />
+<ITEM type="interface" name="Scaling2" href="interface_Scaling2_15763.htm" />
+<ITEM type="interface" name="SewSurface" href="interface_SewSurface_17826.htm" />
+<ITEM type="interface" name="Shaft" href="interface_Shaft_14276.htm" />
+<ITEM type="interface" name="ShapeFactory" href="interface_ShapeFactory_20269.htm" />
+<ITEM type="interface" name="Shell" href="interface_Shell_14270.htm" />
+<ITEM type="interface" name="SketchBasedShape" href="interface_SketchBasedShape_25190.htm" />
+<ITEM type="interface" name="Slot" href="interface_Slot_13886.htm" />
+<ITEM type="interface" name="SolidCombine" href="interface_SolidCombine_19954.htm" />
+<ITEM type="interface" name="Split" href="interface_Split_14315.htm" />
+<ITEM type="interface" name="Stiffener" href="interface_Stiffener_17032.htm" />
+<ITEM type="interface" name="SurfaceBasedShape" href="interface_SurfaceBasedShape_26733.htm" />
+<ITEM type="interface" name="Sweep" href="interface_Sweep_14280.htm" />
+<ITEM type="interface" name="Symmetry" href="interface_Symmetry_16389.htm" />
+<ITEM type="interface" name="ThickSurface" href="interface_ThickSurface_19952.htm" />
+<ITEM type="interface" name="Thickness" href="interface_Thickness_17128.htm" />
+<ITEM type="interface" name="Thread" href="interface_Thread_14731.htm" />
+<ITEM type="interface" name="TransformationShape" href="interface_TransformationShape_31098.htm" />
+<ITEM type="interface" name="Translate" href="interface_Translate_17048.htm" />
+<ITEM type="interface" name="Trim" href="interface_Trim_13859.htm" />
+<ITEM type="interface" name="TritangentFillet" href="interface_TritangentFillet_25776.htm" />
+<ITEM type="interface" name="UserPattern" href="interface_UserPattern_19114.htm" />
+<ITEM type="interface" name="UserRepartition" href="interface_UserRepartition_24576.htm" />
+<ITEM type="interface" name="VarRadEdgeFillet" href="interface_VarRadEdgeFillet_25223.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Enumerations" type="enum"  ctype="enum" >
+<ITEM type="enum" name="CatCSHoleMode" href="enum_CatCSHoleMode_17752.htm" />
+<ITEM type="enum" name="CatChamferMode" href="enum_CatChamferMode_19322.htm" />
+<ITEM type="enum" name="CatChamferOrientation" href="enum_CatChamferOrientation_32438.htm" />
+<ITEM type="enum" name="CatChamferPropagation" href="enum_CatChamferPropagation_32286.htm" />
+<ITEM type="enum" name="CatCircularPatternParameters" href="enum_CatCircularPatternParameters_50079.htm" />
+<ITEM type="enum" name="CatDraftMode" href="enum_CatDraftMode_16809.htm" />
+<ITEM type="enum" name="CatDraftMultiselectionMode" href="enum_CatDraftMultiselectionMode_43981.htm" />
+<ITEM type="enum" name="CatDraftNeutralPropagationMode" href="enum_CatDraftNeutralPropagationMode_55179.htm" />
+<ITEM type="enum" name="CatFilletBitangencyType" href="enum_CatFilletBitangencyType_36649.htm" />
+<ITEM type="enum" name="CatFilletBoundaryRelimitation" href="enum_CatFilletBoundaryRelimitation_53248.htm" />
+<ITEM type="enum" name="CatFilletEdgePropagation" href="enum_CatFilletEdgePropagation_38869.htm" />
+<ITEM type="enum" name="CatFilletTrimSupport" href="enum_CatFilletTrimSupport_30658.htm" />
+<ITEM type="enum" name="CatFilletVariation" href="enum_CatFilletVariation_26331.htm" />
+<ITEM type="enum" name="CatHoleAnchorMode" href="enum_CatHoleAnchorMode_23846.htm" />
+<ITEM type="enum" name="CatHoleBottomType" href="enum_CatHoleBottomType_24485.htm" />
+<ITEM type="enum" name="CatHoleThreadSide" href="enum_CatHoleThreadSide_23708.htm" />
+<ITEM type="enum" name="CatHoleThreadStandard" href="enum_CatHoleThreadStandard_31573.htm" />
+<ITEM type="enum" name="CatHoleThreadingMode" href="enum_CatHoleThreadingMode_29331.htm" />
+<ITEM type="enum" name="CatHoleType" href="enum_CatHoleType_15894.htm" />
+<ITEM type="enum" name="CatLimitMode" href="enum_CatLimitMode_16875.htm" />
+<ITEM type="enum" name="CatMergeMode" href="enum_CatMergeMode_16770.htm" />
+<ITEM type="enum" name="CatPrismExtrusionDirection" href="enum_CatPrismExtrusionDirection_44720.htm" />
+<ITEM type="enum" name="CatPrismOrientation" href="enum_CatPrismOrientation_28480.htm" />
+<ITEM type="enum" name="CatRectangularPatternParameters" href="enum_CatRectangularPatternParameters_59263.htm" />
+<ITEM type="enum" name="CatSewingIntersectionMode" href="enum_CatSewingIntersectionMode_41376.htm" />
+<ITEM type="enum" name="CatSplitSide" href="enum_CatSplitSide_16913.htm" />
+<ITEM type="enum" name="CatThreadPolarity" href="enum_CatThreadPolarity_24647.htm" />
+<ITEM type="enum" name="CatThreadSide" href="enum_CatThreadSide_17946.htm" />
+<ITEM type="enum" name="CatThreadStandard" href="enum_CatThreadStandard_24099.htm" />
+</ITEM>
+</Root>

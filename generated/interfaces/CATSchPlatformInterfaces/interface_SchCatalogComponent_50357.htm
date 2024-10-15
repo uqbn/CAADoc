@@ -1,0 +1,108 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchCatalogComponent (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchCatalogComponent','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchCatalogComponent','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchCatalogComponent','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchCatalogComponent','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchCatalogComponent<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchCatalogComponent_50357','SchCatalogComponent','0');</script>
+<b><i>  Manage a schematic component catalog.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#QueryDropAbility"><b>QueryDropAbility</b></a>
+<dd>  Check to see if it is OK to be dropped to the current document.
+ <dt>
+    <a href="#QueryDropCompGroupAbility"><b>QueryDropCompGroupAbility</b></a>
+<dd>  Check to see if it is OK to be dropped a component group 
+ to the current document.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="QueryDropAbility"><dt>
+
+<table><tr><td>o Func <b>QueryDropAbility</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>oBYes</tt>) As <script type="text/javascript"> activateLink('SchGRRComp','SchGRRComp')</script> </table></dt>
+<dl>
+  <dd>
+ Check to see if it is OK to be dropped to the current document.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oBYes</tt>
+   <dd>   If TRUE, then it is OK to be dropped.
+ </dd>
+    <dt><tt> oPointedToComp</tt>
+   <dd>   Graphical representation of a component pointed-to by the
+   catalog description 
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchCatalogComponent
+ Dim bVar1 As boolean
+ Dim objArg2 As SchGRRComp
+  ...
+ Set objArg2 = objThisIntf.<font color="red">QueryDropAbility</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="QueryDropCompGroupAbility"><dt>
+
+<table><tr><td>o Func <b>QueryDropCompGroupAbility</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>oBYes</tt>) As <script type="text/javascript"> activateLink('SchCompGroupExt','SchCompGroupExt')</script> </table></dt>
+<dl>
+  <dd>
+ Check to see if it is OK to be dropped a component group 
+ to the current document.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oBYes</tt>
+   <dd>   If TRUE, then it is OK to be dropped.
+ </dd>
+    <dt><tt> oPointedToGroup</tt>
+   <dd>   Component group extension pointed-to by the catalog description
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchCatalogComponent
+ Dim bVar1 As boolean
+ Dim objArg2 As SchCompGroupExt
+  ...
+ Set objArg2 = objThisIntf.<font color="red">QueryDropCompGroupAbility</font>
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

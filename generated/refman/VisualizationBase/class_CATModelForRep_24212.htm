@@ -1,0 +1,96 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>VisualizationBase Class CATModelForRep</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../VisualizationBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATModelForRep','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATModelForRep','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATModelForRep','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATModelForRep','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>VisualizationBase Class CATModelForRep</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATModelForRep_24212','CATModelForRep','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATModelForRep</b>
+</p>
+<p>
+<b><i>  Base class for dialog help objects.</i></b><br>
+
+  <b>Role:</b> 
+  This class is a the main class (implementation) of a component that 
+  implements a visualization interface.
+  It is dedicated to hold a graphic representation of an object that is 
+  not part of the document, but is used to ease the dialog. This
+  representation is to be built outside and set to the component.
+  <br><br>
+  For example, it can hold the representation of a local 3D-axis system to 
+  enable the end user to indicate an axis.
+  Such a component it can be put into the <i>CATISO</i> to be displayed, and thus 
+  selectable. Converted as a <a href="#" onClick="openLink('CATPathElement','');return false">CATPathElement</a>, it can be put into the   
+<a href="#" onClick="openLink('CATHSO','');return false">CATHSO</a>,   and 
+<a href="#" onClick="openLink('CATPSO','');return false">CATPSO</a> objects to be highlighted, and prehighlighted respectively.  <br><br>
+  Since this class is a base class, do not use it directly. Use its 
+  derived classes instead:
+  <ul>
+  <li>
+<a href="#" onClick="openLink('CATModelForRep2D','');return false">CATModelForRep2D</a> that implements CATI2DGeoVisu</li>    <li>
+<a href="#" onClick="openLink('CATModelForRep3D','');return false">CATModelForRep3D</a> that implements CATI3DGeoVisu</li>  </ul>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#~CATModelForRep()"><b>~CATModelForRep</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GiveRep()"><b>GiveRep</b></a>()
+<dd>  Returns a pointer to the graphic representation.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="~CATModelForRep"></a><a name="~CATModelForRep()"></a> <dt> o <b>~CATModelForRep</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATModelForRep</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GiveRep"></a><a name="GiveRep()"></a> <dt> o <b>GiveRep</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATRep','CATRep *')</script>  <b>GiveRep</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns a pointer to the graphic representation.
+</dl>
+<hr>
+ This object is included in the file: <b>CATModelForRep.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATViz</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

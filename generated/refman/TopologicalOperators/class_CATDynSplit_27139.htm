@@ -1,0 +1,152 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>TopologicalOperators Class CATDynSplit</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../TopologicalOperators.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATDynSplit','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATDynSplit','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATDynSplit','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATDynSplit','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>TopologicalOperators Class CATDynSplit</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATDynSplit_27139','CATDynSplit','0');</script>
+<p><b>Usage: you must use this class as is. You should never derive it.</b></p>
+<hr>
+<p>
+ public class <b>CATDynSplit</b>
+</p>
+<p>
+<b><i> Class defining the operator that splits a 3D body.</i></b><br>
+
+<br>
+ The CATDynSplit operator follows the global frame of the topological operators and satisfies the smart mechanism: 
+ the input bodies are not modified. A new resulting body is created, 
+ possibly sharing data with the input bodies.
+<ul>
+ <li>A CATDynSplit operator is created with the <tt>CATCreateDynSplit</tt> global function:
+ It must be directly deleted after use with the usual C++ <tt>delete</tt> operator. It is not streamable. 
+<li>Options can be precised (such as the splitting object) with the <tt>SetXxx</tt> methods, before
+ asking for the computation with the <tt>Run</tt> method. 
+<li>In both cases, the result is accessed with the <tt>GetResult</tt> method. If you do not want 
+ to keep the resulting body, use the <a href="#" onClick="openLink('CATICGMContainer','Remove');return false">CATICGMContainer.Remove</a> method to remove it from the  geometric factory.
+</ul>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#~CATDynSplit()"><b>~CATDynSplit</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetRelimitation()"><b>GetRelimitation</b></a>()
+<dd>  Indicates whether the Split Operation has removed some material to the body or not.
+ <dt> o 
+    <a href="#SetSplit(CATBody*)"><b>SetSplit</b></a>(CATBody*)
+<dd>  Defines the splitting body.
+ <dt> o 
+    <a href="#SetSplit(CATPlane*)"><b>SetSplit</b></a>(CATPlane*)
+<dd>  Defines the splitting plane.
+ <dt> o 
+    <a href="#SetSplit(CATSurface*)"><b>SetSplit</b></a>(CATSurface*)
+<dd>  Defines the splitting surface.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="~CATDynSplit"></a><a name="~CATDynSplit()"></a> <dt> o <b>~CATDynSplit</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATDynSplit</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetRelimitation"></a><a name="GetRelimitation()"></a> <dt> o <b>GetRelimitation</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>GetRelimitation</b>(<td>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Indicates whether the Split Operation has removed some material to the body or not.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>  <tt>TRUE</tt> if it has removed some material, <tt>FALSE</tt> otherwise.
+</dl>
+</dl>
+<a name="SetSplit"></a><a name="SetSplit(CATBody*)"></a> <dt> o <b>SetSplit</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetSplit</b>(<td><script type="text/javascript"> activateLink('CATBody','CATBody*')</script> <td><tt>iSplittingBody</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Defines the splitting body.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSplittingBody</tt>
+   <dd> The pointer to the body that splits the input body. <tt>iSplittingBody</tt> can contain several
+ shell domains if their orientations are compatible.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetSplit"></a><a name="SetSplit(CATPlane*)"></a> <dt> o <b>SetSplit</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetSplit</b>(<td><script type="text/javascript"> activateLink('CATPlane','CATPlane*')</script> <td><tt>iSplittingPlane</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Defines the splitting plane.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSplittingPlane</tt>
+   <dd> The pointer to the plane that splits the input body.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetSplit"></a><a name="SetSplit(CATSurface*)"></a> <dt> o <b>SetSplit</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('void','void')</script>  <b>SetSplit</b>(<td><script type="text/javascript"> activateLink('CATSurface','CATSurface*')</script> <td><tt>iSplittingSurface</tt>)<script type="text/javascript"> activateLink('=0','=0')</script>  </table></dt>
+<dl>
+  <dd>
+ Defines the splitting surface.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iSplittingSurface</tt>
+   <dd> The pointer to the surface that splits the input body.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATDynSplit.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATTopologicalOperators</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,107 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ManufacturingInterfaces Interface CATIMfgToolAssembly3DVisuCustom</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ManufacturingInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMfgToolAssembly3DVisuCustom','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgToolAssembly3DVisuCustom','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMfgToolAssembly3DVisuCustom','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgToolAssembly3DVisuCustom','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ManufacturingInterfaces Interface CATIMfgToolAssembly3DVisuCustom</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMfgToolAssembly3DVisuCustom_77333','CATIMfgToolAssembly3DVisuCustom','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATIMfgToolAssembly3DVisuCustom</b>
+</p>
+<p>
+<b><i>    Interface dedicated to tool assembly objects 3D visualization.</i></b><br>
+
+ <b>Role</b>: This interface offers services to manage the tool assemblies objects.
+ visualization in 3D mode.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIMfgToolAssembly','');return false">CATIMfgToolAssembly</a>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATI3DGeoVisu','');return false">CATI3DGeoVisu</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#BuildRep()"><b>BuildRep</b></a>()
+<dd>  Builds the Tool Assembly object representation.
+ <dt> o 
+    <a href="#SetLocation(CATMathPoint&amp;,CATMathVector&amp;,CAT3DBagRep*,CATMathVector*)"><b>SetLocation</b></a>(CATMathPoint&amp;,CATMathVector&amp;,CAT3DBagRep*,CATMathVector*)
+<dd>  Sets the Tool Assembly visu location.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="BuildRep"></a><a name="BuildRep()"></a> <dt> o <b>BuildRep</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATRep','CATRep*')</script>  <b>BuildRep</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Builds the Tool Assembly object representation.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>   The representation of the tool assembly or NULL if failed
+</dl>
+</dl>
+<a name="SetLocation"></a><a name="SetLocation(CATMathPoint&amp;,CATMathVector&amp;,CAT3DBagRep*,CATMathVector*)"></a> <dt> o <b>SetLocation</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetLocation</b>(<td> const <script type="text/javascript"> activateLink('CATMathPoint','CATMathPoint&amp;')</script> <td><tt>iTipPoint</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathVector','CATMathVector&amp;')</script> <td><tt>iAxis</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CAT3DBagRep','CAT3DBagRep*')</script> <td><tt>iBagRep</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATMathVector','CATMathVector*')</script> <td><tt>ipRadial</tt><td><tt>= NULL</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Sets the Tool Assembly visu location.
+ Describe the Tool Tip point and the Tool axis on which the 
+ representation should be displayed.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iTipPoint</tt>
+   <dd> : CATMathPoint representing the Tool Tip point </dd>
+    <dt><tt> iAxis</tt>
+   <dd>     : CATMathVector representing the Tool axis (spindle axis of the machine for lathe) </dd>
+    <dt><tt> iBagRep</tt>
+   <dd>   : Representation bag on which is applied the transformation </dd>
+    <dt><tt> ipRadial</tt>
+   <dd>  : Optional CATMathVector representing the radial axis of the machine for lathe </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    S_OK when the method succeeds, and E_FAIL otherwise
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMfgToolAssembly3DVisuCustom.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>MfgItfEnv</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

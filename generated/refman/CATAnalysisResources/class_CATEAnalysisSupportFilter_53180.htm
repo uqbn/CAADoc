@@ -1,0 +1,186 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATAnalysisResources Class CATEAnalysisSupportFilter</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATAnalysisResources.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATEAnalysisSupportFilter','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEAnalysisSupportFilter','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATEAnalysisSupportFilter','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEAnalysisSupportFilter','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATAnalysisResources Class CATEAnalysisSupportFilter</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATEAnalysisSupportFilter_53180','CATEAnalysisSupportFilter','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATEAnalysisSupportFilter</b>
+</p>
+<p>
+<b><i> Adapter for the implementation of CATISamSupportFilter interface.</i></b><br>
+
+ It can be used for AnalysisEntity or AnalysisSet.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATISamSupportFilter','');return false">CATISamSupportFilter</a>
+</dl>
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATEAnalysisSupportFilter()"><b>CATEAnalysisSupportFilter</b></a>()
+<dd>  <dt> o 
+    <a href="#~CATEAnalysisSupportFilter()"><b>~CATEAnalysisSupportFilter</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetNLSid(CATBaseUnknown*,CATString&amp;)"><b>GetNLSid</b></a>(CATBaseUnknown*,CATString&amp;)
+<dd>  This method allows to define the NLS name that will appear in the support frame.
+ <dt> o 
+    <a href="#GetSelectableObject(CATPathElement*,CATBaseUnknown*&amp;,CATBaseUnknown*&amp;)"><b>GetSelectableObject</b></a>(CATPathElement*,CATBaseUnknown*&amp;,CATBaseUnknown*&amp;)
+<dd>  This method returns consistent data for the support 
+ definition of the implementing Analysis Data.
+ <dt> o 
+    <a href="#GetStatus(CATPathElement*)"><b>GetStatus</b></a>(CATPathElement*)
+<dd>  This method checks if the given PathElement contains
+ an object that could be used as support for the implementing Analysis 
+ Data.
+ <dt> o 
+    <a href="#ValidateSupport(CATBaseUnknown*,CATBaseUnknown*)"><b>ValidateSupport</b></a>(CATBaseUnknown*,CATBaseUnknown*)
+<dd>  This method allows specific Check for IDL validation.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATEAnalysisSupportFilter"></a><a name="CATEAnalysisSupportFilter()"></a> <dt> o <b>CATEAnalysisSupportFilter</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATEAnalysisSupportFilter</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+<a name="~CATEAnalysisSupportFilter"></a><a name="~CATEAnalysisSupportFilter()"></a> <dt> o <b>~CATEAnalysisSupportFilter</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATEAnalysisSupportFilter</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetNLSid"></a><a name="GetNLSid(CATBaseUnknown*,CATString&amp;)"></a> <dt> o <b>GetNLSid</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetNLSid</b>(<td> const <script type="text/javascript"> activateLink('CATBaseUnknown','CATBaseUnknown*')</script> <td><tt>iLinkable</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATString','CATString&amp;')</script> <td><tt>oNLSid</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ This method allows to define the NLS name that will appear in the support frame. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLinkable</tt>
+   <dd>    The selected support </dd>
+    <dt><tt> oNLSid</tt>
+   <dd>       The NLS ID for the selected object.										 The ID for the plural form should be oNLSid_s</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetSelectableObject"></a><a name="GetSelectableObject(CATPathElement*,CATBaseUnknown*&amp;,CATBaseUnknown*&amp;)"></a> <dt> o <b>GetSelectableObject</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetSelectableObject</b>(<td><script type="text/javascript"> activateLink('CATPathElement','CATPathElement*')</script> <td><tt>iPath</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBaseUnknown','CATBaseUnknown*&amp;')</script> <td><tt>oLinkable</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBaseUnknown','CATBaseUnknown*&amp;')</script> <td><tt>oSpecObject</tt>)<script type="text/javascript"> activateLink('',' ')</script>  </table></dt>
+<dl>
+  <dd>
+ This method returns consistent data for the support 
+ definition of the implementing Analysis Data.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPath</tt>
+   <dd>    PathElement which is scanned to find consistent support entity.
+ </dd>
+    <dt><tt> oLinkable</tt>
+   <dd>  [out , CATBaseUnknown#Release]   Represents the object to link with.
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATISamAnalysisSupport','');return false">CATISamAnalysisSupport</a>
+    <dt><tt> oSpecObject</tt>
+   <dd>  [out , CATBaseUnknown#Release]   Represents the product instance.
+   </dd>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATISamAnalysisSupport','');return false">CATISamAnalysisSupport</a>
+  <dt> <b>Returns:</b> 
+  <dd>    E_NOTIMPL for this implementation
+</dl>
+</dl>
+<a name="GetStatus"></a><a name="GetStatus(CATPathElement*)"></a> <dt> o <b>GetStatus</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBoolean','CATBoolean')</script>  <b>GetStatus</b>(<td><script type="text/javascript"> activateLink('CATPathElement','CATPathElement*')</script> <td><tt>iPath</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ This method checks if the given PathElement contains
+ an object that could be used as support for the implementing Analysis 
+ Data.
+ <br><b>WARNING</b> The treatment of this method has to be fast, because
+ it will be used for pre hilighting.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPath</tt>
+   <dd>    PathElement which is scanned to find consistent support entity.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    TRUE if an autorized datum has been found in the given Path.
+</dl>
+</dl>
+<a name="ValidateSupport"></a><a name="ValidateSupport(CATBaseUnknown*,CATBaseUnknown*)"></a> <dt> o <b>ValidateSupport</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>ValidateSupport</b>(<td> const <script type="text/javascript"> activateLink('CATBaseUnknown','CATBaseUnknown*')</script> <td><tt>iLinkable</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATBaseUnknown','CATBaseUnknown*')</script> <td><tt>iSpecObject</tt>)<script type="text/javascript"> activateLink('',' ')</script>  </table></dt>
+<dl>
+  <dd>
+ This method allows specific Check for IDL validation. (Will be introducted in R14)
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLinkable</tt>
+   <dd>       The pointed Object of the connector </dd>
+    <dt><tt> iSpecObject</tt>
+   <dd>     The positionning Object of the connector  </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATISamAnalysisSupport','');return false">CATISamAnalysisSupport</a>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATEAnalysisSupportFilter.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATAnalysisResources</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="CATIMSHAdvWorkbenchAddin" href="interface_CATIMSHAdvWorkbenchAddin_50419.htm" />
+<ITEM type="interface" name="CATIMSHAssociativity" href="interface_CATIMSHAssociativity_43264.htm" />
+<ITEM type="interface" name="CATIMSHConnectivity" href="interface_CATIMSHConnectivity_41199.htm" />
+<ITEM type="interface" name="CATIMSHCriterion" href="interface_CATIMSHCriterion_35409.htm" />
+<ITEM type="interface" name="CATIMSHGroup" href="interface_CATIMSHGroup_29685.htm" />
+<ITEM type="interface" name="CATIMSHLocalSpecification" href="interface_CATIMSHLocalSpecification_53759.htm" />
+<ITEM type="interface" name="CATIMSHMesh" href="interface_CATIMSHMesh_28297.htm" />
+<ITEM type="interface" name="CATIMSHMeshDomain" href="interface_CATIMSHMeshDomain_36487.htm" />
+<ITEM type="interface" name="CATIMSHMeshManager" href="interface_CATIMSHMeshManager_38195.htm" />
+<ITEM type="interface" name="CATIMSHMeshPart" href="interface_CATIMSHMeshPart_33447.htm" />
+<ITEM type="interface" name="CATIMSHMesher" href="interface_CATIMSHMesher_30776.htm" />
+<ITEM type="interface" name="CATIMSHSelectedEdge" href="interface_CATIMSHSelectedEdge_39644.htm" />
+<ITEM type="interface" name="CATIMSHSelectedElement" href="interface_CATIMSHSelectedElement_46437.htm" />
+<ITEM type="interface" name="CATIMSHSelectedFace" href="interface_CATIMSHSelectedFace_39543.htm" />
+<ITEM type="interface" name="CATIMSHSelectedNode" href="interface_CATIMSHSelectedNode_39904.htm" />
+<ITEM type="interface" name="CATIMSHTrapSelector" href="interface_CATIMSHTrapSelector_40591.htm" />
+<ITEM type="interface" name="CATIMSHVisuManager" href="interface_CATIMSHVisuManager_38420.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+<ITEM type="class" name="CATMSHConnectivityServices" href="class_CATMSHConnectivityServices_54939.htm" />
+<ITEM type="class" name="CATMSHCriterionServices" href="class_CATMSHCriterionServices_46977.htm" />
+<ITEM type="class" name="CATMSHElement" href="class_CATMSHElement_28408.htm" />
+<ITEM type="class" name="CATMSHElementVisuAttribute" href="class_CATMSHElementVisuAttribute_54631.htm" />
+<ITEM type="class" name="CATMSHExtIConnectivity" href="class_CATMSHExtIConnectivity_44837.htm" />
+<ITEM type="class" name="CATMSHExtICriterion" href="class_CATMSHExtICriterion_38039.htm" />
+<ITEM type="class" name="CATMSHExtIMesher" href="class_CATMSHExtIMesher_32413.htm" />
+<ITEM type="class" name="CATMSHGeometricalEngine" href="class_CATMSHGeometricalEngine_46169.htm" />
+<ITEM type="class" name="CATMSHListOfMeshPart" href="class_CATMSHListOfMeshPart_39496.htm" />
+<ITEM type="class" name="CATMSHMeshDomain" href="class_CATMSHMeshDomain_32452.htm" />
+<ITEM type="class" name="CATMSHMeshManagerServices" href="class_CATMSHMeshManagerServices_51282.htm" />
+<ITEM type="class" name="CATMSHNode" href="class_CATMSHNode_24791.htm" />
+<ITEM type="class" name="CATMSHNodeVisuAttribute" href="class_CATMSHNodeVisuAttribute_46901.htm" />
+<ITEM type="class" name="CATMSHSelectionTrap" href="class_CATMSHSelectionTrap_38073.htm" />
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+<ITEM type="notification" name="CATMSHModifyNotification" href="class_CATMSHModifyNotification_49289.htm" />
+</ITEM>
+<ITEM name="Structures" type="struct"  ctype="struct" >
+<ITEM type="struct" name="CATMSHAssElementEdge" href="struct_CATMSHAssElementEdge_39806.htm" />
+<ITEM type="struct" name="CATMSHAssElementFace" href="struct_CATMSHAssElementFace_39699.htm" />
+<ITEM type="struct" name="CATMSHConnecInfos" href="struct_CATMSHConnecInfos_34788.htm" />
+<ITEM type="struct" name="CATMSHCriterionInfos" href="struct_CATMSHCriterionInfos_40764.htm" />
+</ITEM>
+<ITEM name="Enumerations" type="enum"  ctype="enum" >
+<ITEM type="enum" name="CATMSHExternalReferenceStatus" href="enum_CATMSHExternalReferenceStatus_62407.htm" />
+<ITEM type="enum" name="CATMSHTrapMode" href="enum_CATMSHTrapMode_28991.htm" />
+</ITEM>
+</Root>

@@ -1,0 +1,144 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Class CATEASchAppDeleteCheck2</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATEASchAppDeleteCheck2','class','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEASchAppDeleteCheck2','class','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATEASchAppDeleteCheck2','class','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATEASchAppDeleteCheck2','class','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Class CATEASchAppDeleteCheck2</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATEASchAppDeleteCheck2_53184','CATEASchAppDeleteCheck2','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATEASchAppDeleteCheck2</b>
+</p>
+<p>
+<b><i> Super class to derive implementation for interface CATISchAppDeleteCheck2.</i></b><br>
+
+ <b>Role</b>: Adaptor</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATEASchAppDeleteCheck2()"><b>CATEASchAppDeleteCheck2</b></a>()
+<dd>  Constructs an empty CATEASchAppDeleteCheck2.
+ <dt> o 
+    <a href="#~CATEASchAppDeleteCheck2()"><b>~CATEASchAppDeleteCheck2</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AppOkToDelete(CATBoolean*)"><b>AppOkToDelete</b></a>(CATBoolean*)
+<dd>  Reports if an application object can be deleted.
+ <dt> o 
+    <a href="#AppOkToDeleteWithMessage(CATBoolean*,CATUnicodeString&amp;,CATUnicodeString&amp;)"><b>AppOkToDeleteWithMessage</b></a>(CATBoolean*,CATUnicodeString&amp;,CATUnicodeString&amp;)
+<dd>  Reports if an application object can be deleted.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATEASchAppDeleteCheck2"></a><a name="CATEASchAppDeleteCheck2()"></a> <dt> o <b>CATEASchAppDeleteCheck2</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATEASchAppDeleteCheck2</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs an empty CATEASchAppDeleteCheck2.
+</dl>
+<a name="~CATEASchAppDeleteCheck2"></a><a name="~CATEASchAppDeleteCheck2()"></a> <dt> o <b>~CATEASchAppDeleteCheck2</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATEASchAppDeleteCheck2</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AppOkToDelete"></a><a name="AppOkToDelete(CATBoolean*)"></a> <dt> o <b>AppOkToDelete</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppOkToDelete</b>(<td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean*')</script> <td><tt>oOk</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Reports if an application object can be deleted.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oOK</tt>
+   <dd>   Pointer to the CATBoolean to receive the ok.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="AppOkToDeleteWithMessage"></a><a name="AppOkToDeleteWithMessage(CATBoolean*,CATUnicodeString&amp;,CATUnicodeString&amp;)"></a> <dt> o <b>AppOkToDeleteWithMessage</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppOkToDeleteWithMessage</b>(<td><script type="text/javascript"> activateLink('CATBoolean','CATBoolean*')</script> <td><tt>oOk</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oUCaption</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>oUMessage</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Reports if an application object can be deleted. 
+ Also returns the caption and message text to be used 
+ as a feedback message for the delete operation.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oOK</tt>
+   <dd>   Pointer to the CATBoolean to receive the ok.
+ </dd>
+    <dt><tt> oCaption</tt>
+   <dd>   CATUnicodeString used for the caption of the message box.
+ </dd>
+    <dt><tt> oMessage</tt>
+   <dd>   CATUnicodeString used as the feedback message.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATEASchAppDeleteCheck2.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATSchItfCPP</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

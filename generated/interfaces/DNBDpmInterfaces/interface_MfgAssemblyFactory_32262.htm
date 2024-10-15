@@ -1,0 +1,313 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>DNBDpmInterfaces MfgAssemblyFactory (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../DNBDpmInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('MfgAssemblyFactory','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('MfgAssemblyFactory','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('MfgAssemblyFactory','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('MfgAssemblyFactory','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>MfgAssemblyFactory<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_MfgAssemblyFactory_32262','MfgAssemblyFactory','0');</script>
+<b><i> Represents the factory to creates a manufacturing assembly.</i></b><br>
+
+
+ <br><b>Role</b>: It gives access to the C++ DNBIMfgAssemblyFactory interface methods
+ Such as 
+ <ul>
+ <li> Creates a manufacturing assembly </li>
+ </ul>
+ <! @sample>
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example fetches an instance of a Manufacturing Assembly factory in a a active document and then creates a manufactring assembly
+ <pre>
+ Dim objMAfact As MfgAssemblyFactory
+ Set objMAfact =  CATIA.ActiveDocument.GetItem("MfgAssemblyFactory")
+ </pre>
+ </dd>
+ </dl><hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#CreateMfgAssembly"><b>CreateMfgAssembly</b></a>
+<dd>  Creates a manufacturing assembly of given type "iType".
+ <dt>
+    <a href="#GetNumberOfMfgAssemblies"><b>GetNumberOfMfgAssemblies</b></a>
+<dd>  Get the number of Manufacturing Assemblies in MA Applicative Container 
+ 
+ <dt>
+    <a href="#GetNumberofALLMfgAssy"><b>GetNumberofALLMfgAssy</b></a>
+<dd>  Get the number of Manufacturing Assemblies(MA) of given type in MA Applicative Container 
+ 
+ <dt>
+    <a href="#RemoveMfgAssembly"><b>RemoveMfgAssembly</b></a>
+<dd>  Removes a given Manufacturing Assembly from the MA Applicative Container.
+ <dt>
+    <a href="#RetrieveMfgAssembly"><b>RetrieveMfgAssembly</b></a>
+<dd>  Retrieve all the Manufacturing Assemblies of a given name.
+ <dt>
+    <a href="#RetrieveMfgAssemblyAtIndex"><b>RetrieveMfgAssemblyAtIndex</b></a>
+<dd>  Retrieves a Manufacturing Assembly at the given index from the MA Applicative Container.
+ <dt>
+    <a href="#RetriveALLMfgAssy"><b>RetriveALLMfgAssy</b></a>
+<dd>  Retrieve all the Manufacturing Assemblies of a given type.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="CreateMfgAssembly"><dt>
+
+<table><tr><td>o Func <b>CreateMfgAssembly</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iNameBSTR</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iPartNumberBSTR</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('DNBIAMfgAssemblyType','DNBIAMfgAssemblyType')</script> <td><tt>iType</tt>) As <script type="text/javascript"> activateLink('Item','Item')</script> </table></dt>
+<dl>
+  <dd>
+ Creates a manufacturing assembly of given type "iType". This API cannot be used to create a Manufacturing Assembly of type AST(assemblySpecTree) or Manufacturing Output(manufacturingOutput)
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNameBSTR</tt>
+   <dd>   Name of the manufacturing assembly 
+ </dd>
+    <dt><tt> iPartNumberBSTR</tt>
+   <dd>   Part-number of the manufacturing assembly 
+ </dd>
+    <dt><tt> iType</tt>
+   <dd>   Type of the Manufacturing Assembly. If its value is "notSpecified" (or 4), the new assembly created will be of type "manufacturingAssembly"
+ </dd>
+    <dt><tt> oMfgAssembly</tt>
+   <dd>   Handler of the Manufacturing Assembly created 
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example creates a Manufacturing Assembly of type "manufacturingKit" having MAName as "MKit1" and part-number as "Kit1"
+ <pre>
+ Dim matype As DNBIAMfgAssemblyType
+ matype=manufacturingKit
+ Dim MA As MfgAssembly (Or Dim MA As item)
+ objMAfact.CreateMfgAssembly "MKit1","Kit1",matype,MA
+		where objMAfact is a instance of Automation Interface for Manufacturing Assembly as shown earlier
+ </pre>
+ </dd>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="GetNumberOfMfgAssemblies"><dt>
+
+<table><tr><td>o Func <b>GetNumberOfMfgAssemblies</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Get the number of Manufacturing Assemblies in MA Applicative Container 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oNumOfMfgAssemblies</tt>
+   <dd>   number of Manufacturing Assemblies in MA Applicative Container
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ For example getting the number of Manufacturing assemblies and displaying them in the Message Box.
+ <pre>
+ Dim nbMfgAssemblies 
+ Set nbMfgAssemblies =  objMAfact.GetNumberOfMfgAssemblies
+ MsgBox  nbMfgAssemblies
+ </pre>
+ </dd>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="GetNumberofALLMfgAssy"><dt>
+
+<table><tr><td>o Sub <b>GetNumberofALLMfgAssy</b>(<td><script type="text/javascript"> activateLink('DNBIAMfgAssemblyType','DNBIAMfgAssemblyType')</script> <td><tt>iType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>oNumOfMfgAssemblies</tt>)</table></dt>
+<dl>
+  <dd>
+ Get the number of Manufacturing Assemblies(MA) of given type in MA Applicative Container 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iType</tt>
+   <dd>   Type of MA to be considered. If its value is "notSpecified" (or 4), all the MAs will be considered
+ </dd>
+    <dt><tt> oNumOfMfgAssemblies</tt>
+   <dd>   Number of MAs found
+ <dl>
+ <dt><b>Example:</b>
+ <dd>	
+ For example getting the number of MA of type "manufacturingKit" and displaying them in the Message Box.
+ <pre>
+ Dim matype As DNBIAMfgAssemblyType
+ matype=manufacturingKit
+ Dim nbMfgAssemblies 
+ objMAfact.GetNumberofALLMfgAssy matype,nbMfgAssemblies
+ MsgBox  nbMfgAssemblies
+ </pre>
+ </dd>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="RemoveMfgAssembly"><dt>
+
+<table><tr><td>o Sub <b>RemoveMfgAssembly</b>(<td><script type="text/javascript"> activateLink('Item','Item')</script> <td><tt>iMfgAssembly</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes a given Manufacturing Assembly from the MA Applicative Container. Please note that the AST MA cannot be removed 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iMfgAssembly</tt>
+   <dd>   Manufacturing assembly to be removed or deleted
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ For example deleting the first MA from the Applicative Container 
+ <pre>
+ Dim mfgAssy As Item
+ Set mfgAssy =  objMAfact.RetrieveMfgAssemblyAtIndex(1)
+ objMAfact.RemoveMfgAssembly mfgAssy
+ </pre>
+ </dd>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="RetrieveMfgAssembly"><dt>
+
+<table><tr><td>o Sub <b>RetrieveMfgAssembly</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iNameBSTR</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oMfgAssemblies</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>oNumOfMfgAssemblies</tt>)</table></dt>
+<dl>
+  <dd>
+ Retrieve all the Manufacturing Assemblies of a given name. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iNameBSTR</tt>
+   <dd>   Name of the manufacturing assembly 
+ </dd>
+    <dt><tt> oMfgAssemblies</tt>
+   <dd>   Array of the Items of the type "MfgAssembly". Array need to be allocated before passing.
+	In case, if the size allocated is found to be less than the actual number of Manufacturing Assemblies found, the number of MAs returned will be equal to size of array passed only
+ </dd>
+    <dt><tt> oNumOfMfgAssemblies</tt>
+   <dd>   Number of MAs found with the given name. If the actual number of MAs found is greater than the size of the array passed, then value returned will be equal to the size of the array itself.
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ For example retriving all the MAs with the name "MA_TYPE1" from the MA Applicative Container
+ <pre>
+ Dim nbMfgAssemblies 
+ Set nbMfgAssemblies =  objMAfact.GetNumberOfMfgAssemblies
+ Dim MAList() As AnyObject
+ ReDim MAList(nbMfgAssemblies-1)
+ Dim NbMA 
+ objMAfact.RetrieveMfgAssembly "MA_TYPE1",MAList,NbMA
+ MsgBox  NbMA
+ </pre>
+ </dd>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="RetrieveMfgAssemblyAtIndex"><dt>
+
+<table><tr><td>o Func <b>RetrieveMfgAssemblyAtIndex</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('Item','Item')</script> </table></dt>
+<dl>
+  <dd>
+ Retrieves a Manufacturing Assembly at the given index from the MA Applicative Container.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>   Index 
+ </dd>
+    <dt><tt> oItem</tt>
+   <dd>   Manufacturing Assembly at the above Index 
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ For example retriving all the MAs from the Applicative Container
+ <pre>
+ Dim nbMfgAssemblies 
+ Set nbMfgAssemblies =  objMAfact.GetNumberOfMfgAssemblies
+ For II = 0 to MyNum-1
+   Dim mfgAssy As Item
+    Set mfgAssy =  objMAfact.RetrieveMfgAssemblyAtIndex(II)
+	Next
+ </pre>
+ </dd>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+<a name="RetriveALLMfgAssy"><dt>
+
+<table><tr><td>o Sub <b>RetriveALLMfgAssy</b>(<td><script type="text/javascript"> activateLink('DNBIAMfgAssemblyType','DNBIAMfgAssemblyType')</script> <td><tt>iType</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSafeArrayVariant','CATSafeArrayVariant')</script> <td><tt>oAllMAs</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('long','long')</script> <td><tt>oNumOfMfgAssemblies</tt>)</table></dt>
+<dl>
+  <dd>
+ Retrieve all the Manufacturing Assemblies of a given type. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iType</tt>
+   <dd>   Type of manufacturing assemblies to be retrieved. If its value is "notSpecified" (or 4), all the manufacturing assemblies will be returned
+ </dd>
+    <dt><tt> oMfgAssemblies</tt>
+   <dd>   Array of the Items of the type "MfgAssembly". Array need to be allocated before passing.
+	 In case, if the size allocated is found to be less than the actual number of Manufacturing Assemblies found, the number of MAs returned will be equal to size of array passed only
+ </dd>
+    <dt><tt> oNumOfMfgAssemblies</tt>
+   <dd>   Number of MAs found. If the actual number of MAs found is greater than the size of the array passed, then value returned will be equal to the size of the array itself.
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ For example: Code for retriving all the MAs of type "manufacturingKit" from the MA Applicative Container
+ <pre>
+ Dim matype As DNBIAMfgAssemblyType
+ matype=manufacturingKit
+ Dim nbMfgAssemblies 
+ objMAfact.GetNumberofALLMfgAssy matype,nbMfgAssemblies
+ Dim MAList() As AnyObject
+ ReDim MAList(nbMfgAssemblies)
+ Dim NbMA
+ objMAfact.RetriveALLMfgAssy matype,MAList,NbMA
+ </pre>
+ </dd>
+ </dl></dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

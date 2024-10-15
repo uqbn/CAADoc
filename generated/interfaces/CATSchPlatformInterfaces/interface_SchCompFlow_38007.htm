@@ -1,0 +1,173 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchCompFlow (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchCompFlow','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchCompFlow','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchCompFlow','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchCompFlow','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchCompFlow<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchCompFlow_38007','SchCompFlow','0');</script>
+<b><i>  Manage the internal flow of a schematic component.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddInternalFlow"><b>AddInternalFlow</b></a>
+<dd>  Add an internal flow to a component.
+ <dt>
+    <a href="#AddInternalFlowSpecifyGRR"><b>AddInternalFlowSpecifyGRR</b></a>
+<dd>  Add an internal flow to a component.
+ <dt>
+    <a href="#ListInternalFlows"><b>ListInternalFlows</b></a>
+<dd>  List all internal flow objects of a component.
+ <dt>
+    <a href="#RemoveInternalFlow"><b>RemoveInternalFlow</b></a>
+<dd>  Remove an internal flow from a component.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddInternalFlow"><dt>
+
+<table><tr><td>o Func <b>AddInternalFlow</b>(<td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>iLFlowCntrs</tt>) As <script type="text/javascript"> activateLink('SchInternalFlow','SchInternalFlow')</script> </table></dt>
+<dl>
+  <dd>
+ Add an internal flow to a component.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLFlowCntrs</tt>
+   <dd>   List of connectors (2) to be connected by the flow.
+   (members should be CATISchAppConnector interface pointer)
+ </dd>
+    <dt><tt> oInternalFlowAdded</tt>
+   <dd>   Internal flow object added/created
+   (CATISchInternalFlow interface pointer).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchCompFlow
+ Dim objArg1 As SchListOfObjects
+ Dim objArg2 As SchInternalFlow
+  ...
+ Set objArg2 = objThisIntf.<font color="red">AddInternalFlow</font>(objArg1)
+ </pre>
+
+</dl>
+</dl>
+<a name="AddInternalFlowSpecifyGRR"><dt>
+
+<table><tr><td>o Func <b>AddInternalFlowSpecifyGRR</b>(<td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>iLFlowCntrs</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> <td><tt>iLOwnerGRR</tt>) As <script type="text/javascript"> activateLink('SchInternalFlow','SchInternalFlow')</script> </table></dt>
+<dl>
+  <dd>
+ Add an internal flow to a component. Specifying which
+ graphical images the connector graphics are on.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iLFlowCntrs</tt>
+   <dd>   List of connectors (2) to be connected by the flow.
+   (members should be CATISchAppConnector interface pointer)
+ </dd>
+    <dt><tt> iLOwnerImages</tt>
+   <dd>   List of CATISchGRRComp interface pointers
+ </dd>
+    <dt><tt> oInternalFlowAdded</tt>
+   <dd>   Internal flow object added/created
+   (CATISchInternalFlow interface pointer).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchCompFlow
+ Dim objArg1 As SchListOfObjects
+ Dim objArg2 As SchListOfObjects
+ Dim objArg3 As SchInternalFlow
+  ...
+ Set objArg3 = objThisIntf.<font color="red">AddInternalFlowSpecifyGRR</font>(objArg1,objArg2)
+ </pre>
+
+</dl>
+</dl>
+<a name="ListInternalFlows"><dt>
+
+<table><tr><td>o Func <b>ListInternalFlows</b>(<td>) As <script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> </table></dt>
+<dl>
+  <dd>
+ List all internal flow objects of a component.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLInternalFlow</tt>
+   <dd>   A list of internal flow objects 
+   (members are CATISchInternalFlow interface pointers).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchCompFlow
+ Dim objArg1 As SchListOfObjects
+  ...
+ Set objArg1 = objThisIntf.<font color="red">ListInternalFlows</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="RemoveInternalFlow"><dt>
+
+<table><tr><td>o Sub <b>RemoveInternalFlow</b>(<td><script type="text/javascript"> activateLink('SchInternalFlow','SchInternalFlow')</script> <td><tt>iInternalFlowToRemove</tt>)</table></dt>
+<dl>
+  <dd>
+ Remove an internal flow from a component.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iInternalFlowToRemove</tt>
+   <dd>   Internal flow object to be removed.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchCompFlow
+ Dim objArg1 As SchInternalFlow
+  ...
+ objThisIntf.<font color="red">RemoveInternalFlow</font>objArg1
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

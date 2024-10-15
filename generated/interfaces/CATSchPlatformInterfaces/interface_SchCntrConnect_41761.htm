@@ -1,0 +1,112 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchCntrConnect (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchCntrConnect','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchCntrConnect','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchCntrConnect','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchCntrConnect','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchCntrConnect<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchCntrConnect_41761','SchCntrConnect','0');</script>
+<b><i>  Manage the a schematic connector.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetTransformMatrix"><b>GetTransformMatrix</b></a>
+<dd>  Get the transformation matrix needed to transform 'this' connector to be 
+ coincident and aligned with the 'connect to' connector.
+ <dt>
+    <a href="#OKToConnect"><b>OKToConnect</b></a>
+<dd>  Query whether 'this' connector can be connected to the specified
+ connector, that is, whether their positions are coincident.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetTransformMatrix"><dt>
+
+<table><tr><td>o Sub <b>GetTransformMatrix</b>(<td><script type="text/javascript"> activateLink('SchGRRCntr','SchGRRCntr')</script> <td><tt>iGRRCntr</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('SchListOfDoubles','SchListOfDoubles')</script> <td><tt>oDb6Matrix</tt>)</table></dt>
+<dl>
+  <dd>
+ Get the transformation matrix needed to transform 'this' connector to be 
+ coincident and aligned with the 'connect to' connector.
+ NOTE: "alignment" in this context means that the connectors' alignment
+       vectors are facing opposite directions.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGRRCntr</tt>
+   <dd>   Pointer to the image of the 'connect to' connector. 
+ </dd>
+    <dt><tt> oDb6Matrix</tt>
+   <dd>   Transformation matrix.
+   for explanation of this argument.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchCntrConnect
+ Dim objArg1 As SchGRRCntr
+ Dim objArg2 As SchListOfDoubles
+  ...
+ objThisIntf.<font color="red">GetTransformMatrix</font>objArg1,objArg2
+ </pre>
+
+</dl>
+</dl>
+<a name="OKToConnect"><dt>
+
+<table><tr><td>o Sub <b>OKToConnect</b>(<td><script type="text/javascript"> activateLink('SchGRRCntr','SchGRRCntr')</script> <td><tt>iGRRCntr</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>oBYes</tt>)</table></dt>
+<dl>
+  <dd>
+ Query whether 'this' connector can be connected to the specified
+ connector, that is, whether their positions are coincident.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGRRCntr</tt>
+   <dd>   Pointer to the image of the 'connect to' connector. 
+ </dd>
+    <dt><tt> oBYes</tt>
+   <dd>   If TRUE, then it is OK to connect.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchCntrConnect
+ Dim objArg1 As SchGRRCntr
+ Dim bVar2 As boolean
+  ...
+ objThisIntf.<font color="red">OKToConnect</font>objArg1,bVar2
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

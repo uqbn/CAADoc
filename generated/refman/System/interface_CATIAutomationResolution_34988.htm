@@ -1,0 +1,94 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>System Interface CATIAutomationResolution</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../System.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIAutomationResolution','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIAutomationResolution','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIAutomationResolution','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIAutomationResolution','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>System Interface CATIAutomationResolution</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIAutomationResolution_34988','CATIAutomationResolution','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATIAutomationResolution</b>
+</p>
+<p>
+<b><i> Interface for the resolution mechanism of the macros generation.</i></b><br>
+
+ <b>Role:</b>
+ This interface must be implemented by objects that want to specify a custom
+ access path in the Automation container-content hierarchy.
+ <br>
+ It contains a single method which generates a <tt>CATIScriptMethodCall</tt>.
+ This generated object describes how to access the object from its container.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATIScriptManager','');return false">CATIScriptManager</a>, <a href="#" onClick="openLink('CATIScriptJournal','');return false">CATIScriptJournal</a>, <a href="#" onClick="openLink('CATIScriptMethodCall','');return false">CATIScriptMethodCall</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetResolution(CATIScriptMethodCall*&amp;,CATBaseDispatch*)"><b>GetResolution</b></a>(CATIScriptMethodCall*&amp;,CATBaseDispatch*)
+<dd>  Retrieves the resolution of the object.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetResolution"></a><a name="GetResolution(CATIScriptMethodCall*&amp;,CATBaseDispatch*)"></a> <dt> o <b>GetResolution</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetResolution</b>(<td><script type="text/javascript"> activateLink('CATIScriptMethodCall','CATIScriptMethodCall*&amp;')</script> <td><tt>oResolution</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBaseDispatch','CATBaseDispatch*')</script> <td><tt>iObjectToResolve</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Retrieves the resolution of the object.
+ <br><b>Role:</b>
+ Retrieves a <tt>CATIScriptMethodCall</tt> which describes how 
+ to access the object from its container.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oResolution</tt>
+   <dd> The returned method call that describes the resolution of the object.
+ </dd>
+    <dt><tt> iObjectToResolve</tt>
+   <dd> The object to resolve.
+ This parameter can be used to delegate the resolution of an object to another one.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>   S_OK if the operation succeeded, E_FAIL otherwise.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIAutomationResolution.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>JS0GROUP</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

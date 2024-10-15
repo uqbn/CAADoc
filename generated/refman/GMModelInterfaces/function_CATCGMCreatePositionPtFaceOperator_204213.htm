@@ -1,0 +1,52 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>GMModelInterfaces Global Function CATCGMCreatePositionPtFaceOperator</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../GMModelInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>GMModelInterfaces Global Function CATCGMCreatePositionPtFaceOperator</h1>
+
+<br><dt><table><tr><td>  <script type="text/javascript"> activateLink('CATICGMPositionPtFaceOperator',' CATICGMPositionPtFaceOperator *')</script>  <b>CATCGMCreatePositionPtFaceOperator</b>(<td><script type="text/javascript"> activateLink('CATGeoFactory','CATGeoFactory*')</script> <td><tt>iFactory</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iNbPoints</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSurParam','CATSurParam[]')</script> <td><tt>iPoints</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATFace','CATFace*')</script> <td><tt>iFace</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates an operator to test the position of a point with regards to a face.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFactory</tt>
+   <dd> The factory of the geometry. 
+ </dd>
+    <dt><tt> iNbPoints</tt>
+   <dd> The number of points to test in the array <tt>iPoints</tt>.
+ </dd>
+    <dt><tt> iPoints</tt>
+   <dd> The array <tt>[iNbPoints]</tt> of points to test, that must be on the surface of <tt>iFace</tt>.
+ </dd>
+    <dt><tt> iFace</tt>
+   <dd> The pointer to the face.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  [out, IUnknown#Release] The pointer to the created operator. To be released with the <tt>Release</tt> method after use.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATICGMPositionPtFaceOperator.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATGMModelInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,112 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATGSMIDLItf HybridShapePlane3Points (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATGSMIDLItf.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('HybridShapePlane3Points','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapePlane3Points','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('HybridShapePlane3Points','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('HybridShapePlane3Points','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>HybridShapePlane3Points<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_HybridShapePlane3Points_34744','HybridShapePlane3Points','0');</script>
+<b><i> Represents the hybrid shape plane through three points feature object.</i></b><br>
+
+ <b>Role</b>: Allows to access data of the plane feature passing though three points.
+ This data includes:
+ <ul>
+ <li> The first point </li>
+ <li> The second point </li>
+ <li> The third point </li>
+ </ul>
+ Use the CATIAHybridShapeFactory to create HybridShapeFeature object.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('HybridShapeFactory','');return false">HybridShapeFactory</a>
+</dl>
+<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#First"><b>First</b></a>
+<dd>  Returns or sets the first point.
+ <dt>
+    <a href="#Second"><b>Second</b></a>
+<dd>  Returns or sets the second point.
+ <dt>
+    <a href="#Third"><b>Third</b></a>
+<dd>  Returns or sets the third point.
+</dl>
+<dl>
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="First"><dt>
+
+<table><tr><td>o Property <b>First</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the first point. 
+ <br>Sub-element(s) supported (see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+<a href="#" onClick="openLink('Vertex','');return false">Vertex</a>.  <dl>
+ <dt><b>Example</b>:
+ This example retrieves in <code>FirstPoint</code> the first point for the <code>Plane</code> passing through three points hybrid shape feature.
+<pre>
+ Dim FirstPoint As Reference
+ Set FirstPoint = Plane3Points.<font color="red">First</font>
+</pre>
+</dl>
+</dl>
+<a name="Second"><dt>
+
+<table><tr><td>o Property <b>Second</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the second point. 
+ <br>Sub-element(s) supported (see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+<a href="#" onClick="openLink('Vertex','');return false">Vertex</a>.  <dl>
+ <dt><b>Example</b>:
+ This example retrieves in <code>SecondPoint</code> the second point for the <code>Plane</code> passing through three points hybrid shape feature.
+<pre>
+ Dim SecondPoint As Reference
+ Set SecondPoint = Plane3Points.<font color="red">Second</font>
+</pre>
+</dl>
+</dl>
+<a name="Third"><dt>
+
+<table><tr><td>o Property <b>Third</b>(<td>) As <script type="text/javascript"> activateLink('Reference','Reference')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the third point. 
+ <br>Sub-element(s) supported (see 
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object):  
+<a href="#" onClick="openLink('Vertex','');return false">Vertex</a>.  <dl>
+ <dt><b>Example</b>:
+ This example retrieves in <code>ThirdPoint</code> the third point for the <code>Plane</code> passing through three points hybrid shape feature.
+<pre>
+ Dim ThridPoint As Reference
+ Set ThirdPoint = Plane3Points.<font color="red">Third</font>
+</pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

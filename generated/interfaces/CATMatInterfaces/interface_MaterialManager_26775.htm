@@ -1,0 +1,165 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATMatInterfaces MaterialManager (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATMatInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('MaterialManager','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('MaterialManager','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('MaterialManager','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('MaterialManager','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>MaterialManager<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_MaterialManager_26775','MaterialManager','0');</script>
+<b><i> Interface to manage material manager object.</i></b><br>
+
+ <b>Role</b>: A material manager is used to manage materials application on geometrical objects.<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#ApplyMaterialOnBody"><b>ApplyMaterialOnBody</b></a>
+<dd>  Apply a Material on a Body.
+ <dt>
+    <a href="#ApplyMaterialOnHybridBody"><b>ApplyMaterialOnHybridBody</b></a>
+<dd>  Apply a Material on a Hybrid Body.
+ <dt>
+    <a href="#ApplyMaterialOnPart"><b>ApplyMaterialOnPart</b></a>
+<dd>  Apply a Material on a Part.
+ <dt>
+    <a href="#ApplyMaterialOnProduct"><b>ApplyMaterialOnProduct</b></a>
+<dd>  Apply a Material on a Product.
+ <dt>
+    <a href="#ApplyMaterialOnUserMaterial"><b>ApplyMaterialOnUserMaterial</b></a>
+<dd>  Apply a Material on a User Material (Analysis entity).
+ <dt>
+    <a href="#GetMaterialOnBody"><b>GetMaterialOnBody</b></a>
+<dd>  Get a Material on a Body.
+ <dt>
+    <a href="#GetMaterialOnHybridBody"><b>GetMaterialOnHybridBody</b></a>
+<dd>  Get a Material on a Hybrid Body.
+ <dt>
+    <a href="#GetMaterialOnPart"><b>GetMaterialOnPart</b></a>
+<dd>  Get a Material on a Part.
+ <dt>
+    <a href="#GetMaterialOnProduct"><b>GetMaterialOnProduct</b></a>
+<dd>  Get a Material on a Product.
+ <dt>
+    <a href="#GetMaterialOnUserMaterial"><b>GetMaterialOnUserMaterial</b></a>
+<dd>  Get a Material on a User Material (Analysis entity).
+ <dt>
+    <a href="#ReplaceMaterialLinks"><b>ReplaceMaterialLinks</b></a>
+<dd>  In current session, replace all links towards a material 1 with a link towards 
+ an other material 2.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="ApplyMaterialOnBody"><dt>
+
+<table><tr><td>o Sub <b>ApplyMaterialOnBody</b>(<td><script type="text/javascript"> activateLink('Body','Body')</script> <td><tt>iBody</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Material','Material')</script> <td><tt>iMaterial</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('short','short')</script> <td><tt>iLinkMode</tt>)</table></dt>
+<dl>
+  <dd>
+ Apply a Material on a Body.
+ If Material is NULL, deletes the material already applied on the Body
+</dl>
+<a name="ApplyMaterialOnHybridBody"><dt>
+
+<table><tr><td>o Sub <b>ApplyMaterialOnHybridBody</b>(<td><script type="text/javascript"> activateLink('HybridBody','HybridBody')</script> <td><tt>iHybridBody</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Material','Material')</script> <td><tt>iMaterial</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('short','short')</script> <td><tt>iLinkMode</tt>)</table></dt>
+<dl>
+  <dd>
+ Apply a Material on a Hybrid Body.
+ If Material is NULL, deletes the material already applied on the Hybrid Body
+</dl>
+<a name="ApplyMaterialOnPart"><dt>
+
+<table><tr><td>o Sub <b>ApplyMaterialOnPart</b>(<td><script type="text/javascript"> activateLink('Part','Part')</script> <td><tt>iPart</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Material','Material')</script> <td><tt>iMaterial</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('short','short')</script> <td><tt>iLinkMode</tt>)</table></dt>
+<dl>
+  <dd>
+ Apply a Material on a Part.
+ If Material is NULL, deletes the material already applied on the Part
+</dl>
+<a name="ApplyMaterialOnProduct"><dt>
+
+<table><tr><td>o Sub <b>ApplyMaterialOnProduct</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Material','Material')</script> <td><tt>iMaterial</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('short','short')</script> <td><tt>iLinkMode</tt>)</table></dt>
+<dl>
+  <dd>
+ Apply a Material on a Product.
+ If Material is NULL, deletes the material already applied on the Product
+</dl>
+<a name="ApplyMaterialOnUserMaterial"><dt>
+
+<table><tr><td>o Sub <b>ApplyMaterialOnUserMaterial</b>(<td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>iUserMaterial</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Material','Material')</script> <td><tt>iMaterial</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('short','short')</script> <td><tt>iLinkMode</tt>)</table></dt>
+<dl>
+  <dd>
+ Apply a Material on a User Material (Analysis entity).
+ Warning: iUserMaterial should be a CATIAAnalysisEntity object.
+ If Material is NULL, deletes the material already applied on the User Material
+</dl>
+<a name="GetMaterialOnBody"><dt>
+
+<table><tr><td>o Sub <b>GetMaterialOnBody</b>(<td><script type="text/javascript"> activateLink('Body','Body')</script> <td><tt>iBody</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Material','Material')</script> <td><tt>oMaterial</tt>)</table></dt>
+<dl>
+  <dd>
+ Get a Material on a Body.
+ Material returned is NULL if no material is applied on the Body
+</dl>
+<a name="GetMaterialOnHybridBody"><dt>
+
+<table><tr><td>o Sub <b>GetMaterialOnHybridBody</b>(<td><script type="text/javascript"> activateLink('HybridBody','HybridBody')</script> <td><tt>iHybridBody</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Material','Material')</script> <td><tt>oMaterial</tt>)</table></dt>
+<dl>
+  <dd>
+ Get a Material on a Hybrid Body.
+ Material returned is NULL if no material is applied on the Hybrid Body
+</dl>
+<a name="GetMaterialOnPart"><dt>
+
+<table><tr><td>o Sub <b>GetMaterialOnPart</b>(<td><script type="text/javascript"> activateLink('Part','Part')</script> <td><tt>iPart</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Material','Material')</script> <td><tt>oMaterial</tt>)</table></dt>
+<dl>
+  <dd>
+ Get a Material on a Part.
+ Material returned is NULL if no material is applied on the Part
+</dl>
+<a name="GetMaterialOnProduct"><dt>
+
+<table><tr><td>o Sub <b>GetMaterialOnProduct</b>(<td><script type="text/javascript"> activateLink('Product','Product')</script> <td><tt>iProduct</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Material','Material')</script> <td><tt>oMaterial</tt>)</table></dt>
+<dl>
+  <dd>
+ Get a Material on a Product.
+ Material returned is NULL if no material is applied on the Product
+</dl>
+<a name="GetMaterialOnUserMaterial"><dt>
+
+<table><tr><td>o Sub <b>GetMaterialOnUserMaterial</b>(<td><script type="text/javascript"> activateLink('AnyObject','AnyObject')</script> <td><tt>iUserMaterial</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Material','Material')</script> <td><tt>oMaterial</tt>)</table></dt>
+<dl>
+  <dd>
+ Get a Material on a User Material (Analysis entity).
+ Warning: iUserMaterial should be a CATIAAnalysisEntity object.
+ Material returned is NULL if no material is applied on the User Material
+</dl>
+<a name="ReplaceMaterialLinks"><dt>
+
+<table><tr><td>o Sub <b>ReplaceMaterialLinks</b>(<td><script type="text/javascript"> activateLink('Material','Material')</script> <td><tt>iMaterial1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Material','Material')</script> <td><tt>iMaterial2</tt>)</table></dt>
+<dl>
+  <dd>
+ In current session, replace all links towards a material 1 with a link towards 
+ an other material 2.
+ N.B. Both materials entered should be in a material library.
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,143 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>NavigatorInterfaces Hyperlink (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../NavigatorInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Hyperlink','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Hyperlink','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Hyperlink','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Hyperlink','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Hyperlink<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Hyperlink_25505','Hyperlink','0');</script>
+<b><i>  Represents a hyperlink marker.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddUrl"><b>AddUrl</b></a>
+<dd>  Adds a url to an Hyperlink.
+ <dt>
+    <a href="#CountObject"><b>CountObject</b></a>
+<dd>  Returns the number of Url which are linked to the Hyperlink.
+ <dt>
+    <a href="#ItemObject"><b>ItemObject</b></a>
+<dd>  Returns an Url which is linked to the Hyperlink using its index.
+ <dt>
+    <a href="#RemoveObject"><b>RemoveObject</b></a>
+<dd>  Removes an Url which is linked to the Hyperlink using its index.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddUrl"><dt>
+
+<table><tr><td>o Sub <b>AddUrl</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iUrl</tt>)</table></dt>
+<dl>
+  <dd>
+ Adds a url to an Hyperlink.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iUrl</tt>
+   <dd>    The URL to be added to the Hyperlink.
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>     This example links <tt>TheUrl</tt> to the <tt>NewHyperlink</tt> Hyperlink.
+    <pre>
+    NewHyperlink.<font color="red">AddUrl</font>(TheUrl)
+    </pre>
+</dl>
+</dl>
+<a name="CountObject"><dt>
+
+<table><tr><td>o Func <b>CountObject</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the number of Url which are linked to the Hyperlink.
+ 
+<dl>
+  <dt> <b>Example:</b> 
+  <dd>     This example reads the number of Url in the Hyperlink <tt>NewHyperlink </tt>.
+    <pre>
+    Dim number As Integer
+    number = NewHyperlink.<font color="red">CountObject</font>
+    </pre>
+</dl>
+</dl>
+<a name="ItemObject"><dt>
+
+<table><tr><td>o Func <b>ItemObject</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Returns an Url which is linked to the Hyperlink using its index.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>    The index of the Url in the Hyperlink.
+    The index of the first object is 1, and
+    the index of the last object is CountObject.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>     The retrieved Url
+ 
+  <dt> <b>Example:</b> 
+  <dd>     This example retrieves in <tt>ThisUrl</tt> the ninth object
+    from the <tt>NewHyperlink </tt> Hyperlink.
+    <pre>
+    Dim ThisUrl As String
+    Set ThisUrl = NewHyperlink.<font color="red">ItemObject</font>(9)
+    </pre>
+</dl>
+</dl>
+<a name="RemoveObject"><dt>
+
+<table><tr><td>o Sub <b>RemoveObject</b>(<td><script type="text/javascript"> activateLink('CATVariant','CATVariant')</script> <td><tt>iIndex</tt>)</table></dt>
+<dl>
+  <dd>
+ Removes an Url which is linked to the Hyperlink using its index.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>    The index of the object in the Hyperlink.
+    The index of the first object is 1, and
+    the index of the last object is CountObject.
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>     This example removes the ninth Url
+    from the <tt>NewHyperlink </tt> Hyperlink.
+    <pre>
+    NewHyperlink.<font color="red">RemoveObject</font>(9)
+    </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

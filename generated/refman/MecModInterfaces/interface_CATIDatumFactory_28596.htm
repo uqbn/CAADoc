@@ -1,0 +1,137 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>MecModInterfaces Interface CATIDatumFactory</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../MecModInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIDatumFactory','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIDatumFactory','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIDatumFactory','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIDatumFactory','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>MecModInterfaces Interface CATIDatumFactory</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIDatumFactory_28596','CATIDatumFactory','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIDatumFactory</b>
+</p>
+<p>
+<b><i> Interface to create datum features.</i></b><br>
+
+ <b>Role</b>: A datum feature is a geometrical feature (<a href="#" onClick="openLink('CATIGeometricalElement','');return false">CATIGeometricalElement</a> ) without geometrical specification. It is created with a topological object (a <tt>CATBody</tt>)
+ which represents its result. 
+ <p>For a geometrical feature there is only one <tt>CATBody</tt> and 
+ a <tt>CATBody</tt> can only be associated with one geometrical feature. So do not use the same 
+ <tt>CATBody</tt> for two instances of datum.</p>
+ <p>This interface contains two methods which create the new
+ geometrical element into the current set ( 
+<a href="#" onClick="openLink('CATIMechanicalRootFactory','');return false">CATIMechanicalRootFactory</a> ). If the current set  is not available, a new one can be created to insert the new feature.</p>
+ This interface is implemented by the specification container of the Part Document 
+ that you can retrieve by these two interfaces:
+ <ul>
+ <li>
+<a href="#" onClick="openLink('CATIContainerOfDocument','GetSpecContainer');return false">CATIContainerOfDocument.GetSpecContainer</a> </li> <li>
+<a href="#" onClick="openLink('CATInit','GetRootContainer');return false">CATInit.GetRootContainer</a> </li> </ul>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#InstanciateDatum(CATBody*,CATISpecObject*&amp;)"><b>InstanciateDatum</b></a>(CATBody*,CATISpecObject*&amp;)
+<dd>  Creates a datum feature.
+ <dt> o 
+    <a href="#InstanciateDatum(CATBody*,CATLISTP(CATCell)*,CATListOfCATUnicodeString*,CATISpecObject*&amp;)"><b>InstanciateDatum</b></a>(CATBody*,CATLISTP(CATCell)*,CATListOfCATUnicodeString*,CATISpecObject*&amp;)
+<dd>  Creates a datum feature.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="InstanciateDatum"></a><a name="InstanciateDatum(CATBody*,CATISpecObject*&amp;)"></a> <dt> o <b>InstanciateDatum</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>InstanciateDatum</b>(<td><script type="text/javascript"> activateLink('CATBody','CATBody*')</script> <td><tt>iBody</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject*&amp;')</script> <td><tt>oDatumFeature</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates a datum feature.
+ <br><b>Role:</b>This method creates a datum feature with an automatic naming for
+ the cells. 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iBody</tt>
+   <dd>  The <tt>CATBody</tt> to associate with the geometrical feature.
+ </dd>
+    <dt><tt> oDatumFeature</tt>
+   <dd> The new geometrical feature. Depending on the content of the <tt>CATBody</tt>, it can be:
+  <ul>
+   <li>a Point, a Line, a Circle, a Plane feature: The <tt>CATBody</tt> has only one domain</li>
+   <li>a GSMZeroDim,GSMMonoDim,GSMBiDim, Solid: The <tt>CATBody</tt> has several 
+  domains with the same dimension. Respectively 0,1, 2 and 3.</li>
+   <li>a GeometricalElement3D feature, otherwise </li>
+  </ul></dd>
+</dl>
+</dl>
+</dl>
+<a name="InstanciateDatum"></a><a name="InstanciateDatum(CATBody*,CATLISTP(CATCell)*,CATListOfCATUnicodeString*,CATISpecObject*&amp;)"></a> <dt> o <b>InstanciateDatum</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>InstanciateDatum</b>(<td><script type="text/javascript"> activateLink('CATBody','CATBody*')</script> <td><tt>iBody</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTP(CATCell)','CATLISTP(CATCell)*')</script> <td><tt>iGNUserCells</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATListOfCATUnicodeString','CATListOfCATUnicodeString*')</script> <td><tt>iUserKeys</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATISpecObject','CATISpecObject*&amp;')</script> <td><tt>oDatumFeature</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates a datum feature.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iBody</tt>
+   <dd>  The <tt>CATBody</tt> to associate with the geometrical feature.
+ </dd>
+    <dt><tt> iGNUserCells</tt>
+   <dd>  The list of followed cells (<tt>CATCell</tt>). A followed cell is
+     <ul>
+      <li>The faces of a solid,</li>
+      <li>The boundary edges and the faces of a shell,</li>
+      <li>The extremity vertices and the edges of a wire.</li>
+     </ul>
+ </dd>
+    <dt><tt> iUserKeys</tt>
+   <dd>  The list of corresponding keys. (Only number keys are authorized). 
+ </dd>
+    <dt><tt> oDatumFeature</tt>
+   <dd> The new geometrical feature. Depending on the content of the <tt>CATBody</tt>, it can be:
+  <ul>
+   <li>a GSMZeroDim,GSMMonoDim,GSMBiDim, Solid: The <tt>CATBody</tt> has several 
+  domains with the same dimension. Respectively 0,1, 2 and 3.</li>
+   <li>a GeometricalElement3D feature, otherwise </li>
+  </ul></dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIDatumFactory.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATMecModInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

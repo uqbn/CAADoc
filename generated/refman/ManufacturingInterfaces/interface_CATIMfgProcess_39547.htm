@@ -1,0 +1,88 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ManufacturingInterfaces Interface CATIMfgProcess</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ManufacturingInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIMfgProcess','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgProcess','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIMfgProcess','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIMfgProcess','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ManufacturingInterfaces Interface CATIMfgProcess</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIMfgProcess_39547','CATIMfgProcess','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIMfgProcess</b>
+</p>
+<p>
+<b><i> Interface dedicated to Manufacturing User Defined Setup creation
+   under the process node.</i></b><br>
+
+ <p></p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#AppendSetup(CATUnicodeString&amp;,CATBaseUnknown_var&amp;,CATBaseUnknown_var&amp;)"><b>AppendSetup</b></a>(CATUnicodeString&amp;,CATBaseUnknown_var&amp;,CATBaseUnknown_var&amp;)
+<dd>    Create a new user defined setup under the Process node.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="AppendSetup"></a><a name="AppendSetup(CATUnicodeString&amp;,CATBaseUnknown_var&amp;,CATBaseUnknown_var&amp;)"></a> <dt> o <b>AppendSetup</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>AppendSetup</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iPartOperationType</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>iInsertionlevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBaseUnknown_var','CATBaseUnknown_var&amp;')</script> <td><tt>oPartOperation</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+   Create a new user defined setup under the Process node.
+ <b> Note: </b> The startup must have been created in client calalog,
+ by using CATIMfgStartupFactories interface, CreateManufacturingSetupSU method,
+ for example.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iPartOperationType</tt>
+   <dd>     The type of the setup, defined in the client catalog file.
+ </dd>
+    <dt><tt> iInsertionlevel</tt>
+   <dd>     The insertion level of the part operation to be created.
+ </dd>
+    <dt><tt> oPartOperation</tt>
+   <dd>     The part operation which was created.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>       S_OK: the new part operation has been created.
+	 <br> E_FAIL: the new part operation has not been created.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIMfgProcess.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>MfgItfEnv</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

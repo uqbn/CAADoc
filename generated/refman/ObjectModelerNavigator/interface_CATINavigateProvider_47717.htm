@@ -1,0 +1,88 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ObjectModelerNavigator Interface CATINavigateProvider</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ObjectModelerNavigator.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATINavigateProvider','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATINavigateProvider','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATINavigateProvider','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATINavigateProvider','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ObjectModelerNavigator Interface CATINavigateProvider</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATINavigateProvider_47717','CATINavigateProvider','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATINavigateProvider</b>
+</p>
+<p>
+<b><i> Interface used to delegate to application the addition of children in CATINavigateObject implementation.</i></b><br>
+
+ <b>Role:</b> the provider algorithm handles the applicative children in order to
+ display them in the navigation tree. 
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATINavigateObject','');return false">CATINavigateObject</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetChildren(CATBaseUnknown*,CATLISTP(CATBaseUnknown)**)"><b>GetChildren</b></a>(CATBaseUnknown*,CATLISTP(CATBaseUnknown)**)
+<dd>  Returns a list of the children of a base object.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetChildren"></a><a name="GetChildren(CATBaseUnknown*,CATLISTP(CATBaseUnknown)**)"></a> <dt> o <b>GetChildren</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetChildren</b>(<td><script type="text/javascript"> activateLink('CATBaseUnknown','CATBaseUnknown*')</script> <td><tt>iObj</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATLISTP(CATBaseUnknown)','CATLISTP(CATBaseUnknown)**')</script> <td><tt>ioProvidedChildren</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns a list of the children of a base object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iObj</tt>
+   <dd>    The base feature object.
+    <br><b>Legal values</b>: it must not be NULL.
+ </dd>
+    <dt><tt> ioListChildren</tt>
+   <dd>    The list of the children of the base object known by applicative code.
+    <br><b>Legal values</b>: 
+       ioProvidedChildren must not be NULL. *ioProvidedChildren may be NULL or a pointer to a valid CATLISTP(CATBaseUnknown).
+    <br><b>Lifecycle rules deviation</b>
+       When *ioProvidedChildren is not NULL, it has to be kept by callee as input argument.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATINavigateProvider.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATObjectModelerNavigator</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>XMLParser Global Function CreateCATIXMLDOMDocumentBuilder</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../XMLParser.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a></pre>
+<hr>
+<h1>XMLParser Global Function CreateCATIXMLDOMDocumentBuilder</h1>
+
+<br><dt><table><tr><td>  <script type="text/javascript"> activateLink('HRESULT','extern "C"  HRESULT')</script>  <b>CreateCATIXMLDOMDocumentBuilder</b>(<td><script type="text/javascript"> activateLink('CATIXMLDOMDocumentBuilder_var','CATIXMLDOMDocumentBuilder_var&amp;')</script> <td><tt>oBuilder</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CLSID','CLSID&amp;')</script> <td><tt>iClsId</tt><td><tt>= CLSID_XML4C_DOM</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns the root object which corresponds to a specific DOM implementation.
+ This object is an instance of 
+<a href="#" onClick="openLink('CATIXMLDOMDocumentBuilder','');return false">CATIXMLDOMDocumentBuilder</a>. 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oBuilder</tt>
+   <dd> The resulting <tt>CATIXMLDOMDocumentBuilder</tt>
+ </dd>
+    <dt><tt> iClsId</tt>
+   <dd> The CLSID of the <tt>CATIXMLDOMDocumentBuilder</tt> to instantiate.
+ <br><b>Legal values</b>:
+ <tt>CLSID_XML4C_DOM</tt> Use this value to instantiate the implementation based on XML4C 3.0 from IBM. 
+ This implementation supports DTD validation but not XML schema validation.
+ <tt>CLSID_XML4C5_DOM</tt> Use this value to instantiate the implementation based on XML4C 5.0 from IBM.
+ This implementation supports both DTD and XML schema validation.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIXMLDOMDocumentBuilder.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATXMLParserItf</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

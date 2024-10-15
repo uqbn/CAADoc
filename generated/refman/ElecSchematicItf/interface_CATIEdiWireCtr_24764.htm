@@ -1,0 +1,173 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ElecSchematicItf Interface CATIEdiWireCtr</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ElecSchematicItf.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIEdiWireCtr','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIEdiWireCtr','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIEdiWireCtr','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIEdiWireCtr','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ElecSchematicItf Interface CATIEdiWireCtr</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIEdiWireCtr_24764','CATIEdiWireCtr','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATIEdiWireCtr</b>
+</p>
+<p>
+<b><i> Interface to manage an electrical schematic Wire connector.</i></b><br>
+ This interface will
+ replace CATIEdiWireExtremity.
+ <b>Role</b>:This interfaces describes the electrical object Wire connector.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Connect(CATIEdiCableExtremity*,CATIEdiPin*)"><b>Connect</b></a>(CATIEdiCableExtremity*,CATIEdiPin*)
+<dd>  Connects the wire connector to a Pin Connector.
+ <dt> o 
+    <a href="#Disconnect(CATIEdiPin*)"><b>Disconnect</b></a>(CATIEdiPin*)
+<dd>  Disconnects the cable extremity.
+ <dt> o 
+    <a href="#GetCableExtremity(CATIEdiCableExtremity**,CATIEdiCableExtremity**)"><b>GetCableExtremity</b></a>(CATIEdiCableExtremity**,CATIEdiCableExtremity**)
+<dd>   Gets the cable extremity connectors.
+ <dt> o 
+    <a href="#GetConnectedPin(CATIEdiCableExtremity*,CATIEdiPin**)"><b>GetConnectedPin</b></a>(CATIEdiCableExtremity*,CATIEdiPin**)
+<dd>  Gets Connected Pin connector.
+ <dt> o 
+    <a href="#GetNumber(int*)"><b>GetNumber</b></a>(int*)
+<dd>  Get the number of the wire extremity connector.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Connect"></a><a name="Connect(CATIEdiCableExtremity*,CATIEdiPin*)"></a> <dt> o <b>Connect</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>Connect</b>(<td> const <script type="text/javascript"> activateLink('CATIEdiCableExtremity','CATIEdiCableExtremity*')</script> <td><tt>iEdiCableExtrCtr</tt>,<tr><td></td><td> const <script type="text/javascript"> activateLink('CATIEdiPin','CATIEdiPin*')</script> <td><tt>iEdiPin</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Connects the wire connector to a Pin Connector.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEdiCableExtrCtr</tt>
+   <dd>   The Cable extremity connector whoes connection includes the next input: iEdiPin
+ </dd>
+    <dt><tt> iEdiPin</tt>
+   <dd>   The Pin Connector to connect</dd>
+</dl>
+</dl>
+</dl>
+<a name="Disconnect"></a><a name="Disconnect(CATIEdiPin*)"></a> <dt> o <b>Disconnect</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>Disconnect</b>(<td> const <script type="text/javascript"> activateLink('CATIEdiPin','CATIEdiPin*')</script> <td><tt>iEdiPin</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Disconnects the cable extremity.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEdiPin</tt>
+   <dd>   The Pin Connector to disconnect</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetCableExtremity"></a><a name="GetCableExtremity(CATIEdiCableExtremity**,CATIEdiCableExtremity**)"></a> <dt> o <b>GetCableExtremity</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetCableExtremity</b>(<td><script type="text/javascript"> activateLink('CATIEdiCableExtremity','CATIEdiCableExtremity**')</script> <td><tt>oCableExtremity1</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIEdiCableExtremity','CATIEdiCableExtremity**')</script> <td><tt>oCableExtremity2</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+  Gets the cable extremity connectors.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oCableExtremity1</tt>
+   <dd>   The Cable extremities connector 1
+ </dd>
+    <dt><tt> oCableExtremity1</tt>
+   <dd>   The Cable extremities connector 2
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="GetConnectedPin"></a><a name="GetConnectedPin(CATIEdiCableExtremity*,CATIEdiPin**)"></a> <dt> o <b>GetConnectedPin</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetConnectedPin</b>(<td> const <script type="text/javascript"> activateLink('CATIEdiCableExtremity','CATIEdiCableExtremity*')</script> <td><tt>iEdiCableExtrCtr</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATIEdiPin','CATIEdiPin**')</script> <td><tt>oEdiPin</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Gets Connected Pin connector.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEdiCableExtrCtr</tt>
+   <dd>   The Cable extremity connector whoes connection includes this wire connector
+ </dd>
+    <dt><tt> oEdiPin</tt>
+   <dd>   The Pin object</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetNumber"></a><a name="GetNumber(int*)"></a> <dt> o <b>GetNumber</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetNumber</b>(<td><script type="text/javascript"> activateLink('int','int*')</script> <td><tt>oNumber</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get the number of the wire extremity connector.
+
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oNumber</tt>
+   <dd>   The number of the wire extremity connector.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIEdiWireCtr.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

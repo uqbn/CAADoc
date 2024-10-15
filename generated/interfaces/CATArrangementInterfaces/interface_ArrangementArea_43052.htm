@@ -1,0 +1,158 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATArrangementInterfaces ArrangementArea (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATArrangementInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('ArrangementArea','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ArrangementArea','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('ArrangementArea','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('ArrangementArea','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ArrangementArea<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_ArrangementArea_43052','ArrangementArea','0');</script>
+<b><i>   Use this object to access an ArrangementArea object's properties and functions.</i></b><br>
+
+ <b> Role: </b>
+ The ArrangementArea object is a type of Arrangement Object defining an 
+ area containing other objects.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#ArrangementContours"><b>ArrangementContours</b></a>
+<dd>  Returns the ArrangementContours collection object associated with an ArrangementArea object.
+ <dt>
+    <a href="#Height"><b>Height</b></a>
+<dd>  Returns or sets the Height of an ArrangementArea object.
+ <dt>
+    <a href="#Size"><b>Size</b></a>
+<dd>  Returns the Size of the ArrangementArea.
+ <dt>
+    <a href="#VisuMode"><b>VisuMode</b></a>
+<dd>  Returns or sets the Visualization Mode for an ArrangementArea object.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetTechnologicalObject"><b>GetTechnologicalObject</b></a>
+<dd>  Returns the applicative data whose type is the given parameter.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="ArrangementContours"><dt>
+
+<table><tr><td>o Property <b>ArrangementContours</b>(<td>) As <script type="text/javascript"> activateLink('ArrangementContours','ArrangementContours')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the ArrangementContours collection object associated with an ArrangementArea object.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves the ArrangementContours collection object for the <tt>objArea1</tt>
+ object.
+ <pre>
+ Dim objArrContours   As ArrangementContours
+ Set objArrContours  = objArea1.<font color="red">ArrangementContours</font>
+ </pre>
+ </dl>
+</dl>
+<a name="Height"><dt>
+
+<table><tr><td>o Property <b>Height</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the Height of an ArrangementArea object.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves the Height for the <tt>objArea1</tt>
+ object.
+ <pre>
+ Dim dblAreaHeight   As Double
+ dblAreaHeight  = objArea1.<font color="red">Height</font>
+ </pre>
+ </dl>
+</dl>
+<a name="Size"><dt>
+
+<table><tr><td>o Property <b>Size</b>(<td>) As <script type="text/javascript"> activateLink('double','double')</script>  (Read Only)</table></dt>
+<dl>
+  <dd>
+ Returns the Size of the ArrangementArea.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves the Size of the <tt>objArea1</tt> object.
+ <pre>
+ Dim dblAreaSize   As Double
+ dblAreaSize  = objArea1.<font color="red">Size</font>
+ </pre>
+ </dl>
+</dl>
+<a name="VisuMode"><dt>
+
+<table><tr><td>o Property <b>VisuMode</b>(<td>) As <script type="text/javascript"> activateLink('CATArrangementAreaVisuMode','CATArrangementAreaVisuMode')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the Visualization Mode for an ArrangementArea object.
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example sets the Visualization Mode for the <tt>objArea1</tt>
+ object to <tt>CatArrangementAreaVisuModeVolume</tt>.
+ <pre>
+ objArea1.<font color="red">VisuMode</font> = CatArrangementAreaVisuModeVolume
+ </pre>
+ </dl>
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetTechnologicalObject"><dt>
+
+<table><tr><td>o Func <b>GetTechnologicalObject</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iApplicationType</tt>) As <script type="text/javascript"> activateLink('CATBaseDispatch','CATBaseDispatch')</script> </table></dt>
+<dl>
+  <dd>
+ Returns the applicative data whose type is the given parameter.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iApplicationType</tt>
+   <dd>   The type of applicative data searched.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  oApplicativeObj   The matched applicative object. 
+ <! @sample >
+ <dl>
+ <dt><b>Example:</b>
+ <dd>
+ This example retrieves the desired applicative object from the <tt>objArea1</tt> object.
+ <pre>
+ Dim objProd   As Product
+ objProd  = objArea1.<font color="red">GetTechnologicalObject("Product")</font>
+ </pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

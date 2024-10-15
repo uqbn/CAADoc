@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<ITEM name="Interfaces" type="interface"  ctype="class" >
+<ITEM type="interface" name="CATIMeasurable" href="interface_CATIMeasurable_44471.htm" />
+<ITEM type="interface" name="CATIMeasurableAxisSystem" href="interface_CATIMeasurableAxisSystem_64074.htm" />
+<ITEM type="interface" name="CATIMeasurableCircle" href="interface_CATIMeasurableCircle_54354.htm" />
+<ITEM type="interface" name="CATIMeasurableCone" href="interface_CATIMeasurableCone_50551.htm" />
+<ITEM type="interface" name="CATIMeasurableCurve" href="interface_CATIMeasurableCurve_52812.htm" />
+<ITEM type="interface" name="CATIMeasurableCylinder" href="interface_CATIMeasurableCylinder_59031.htm" />
+<ITEM type="interface" name="CATIMeasurableLine" href="interface_CATIMeasurableLine_50587.htm" />
+<ITEM type="interface" name="CATIMeasurablePlane" href="interface_CATIMeasurablePlane_52451.htm" />
+<ITEM type="interface" name="CATIMeasurablePoint" href="interface_CATIMeasurablePoint_52894.htm" />
+<ITEM type="interface" name="CATIMeasurableSphere" href="interface_CATIMeasurableSphere_54665.htm" />
+<ITEM type="interface" name="CATIMeasurableSurface" href="interface_CATIMeasurableSurface_56593.htm" />
+<ITEM type="interface" name="CATIMeasurableVolume" href="interface_CATIMeasurableVolume_54938.htm" />
+</ITEM>
+<ITEM name="Classes" type="class"  ctype="class" >
+</ITEM>
+<ITEM name="Collections" type="collection"  ctype="class" >
+</ITEM>
+<ITEM name="Exceptions" type="exception"  ctype="class" >
+</ITEM>
+<ITEM name="Notifications" type="notification"  ctype="class" >
+</ITEM>
+<ITEM name="Enumerations" type="enum"  ctype="enum" >
+<ITEM type="enum" name="CATExtend" href="enum_CATExtend_35853.htm" />
+<ITEM type="enum" name="CATIMeasurableType" href="enum_CATIMeasurableType_47948.htm" />
+<ITEM type="enum" name="CATMeasResultData" href="enum_CATMeasResultData_45921.htm" />
+<ITEM type="enum" name="CATMeasurableName" href="enum_CATMeasurableName_45827.htm" />
+<ITEM type="enum" name="CATSiCalculationType" href="enum_CATSiCalculationType_52041.htm" />
+<ITEM type="enum" name="CATSiMeasureEdgeType" href="enum_CATSiMeasureEdgeType_51394.htm" />
+<ITEM type="enum" name="CATSiMeasureSurfaceType" href="enum_CATSiMeasureSurfaceType_58259.htm" />
+</ITEM>
+</Root>

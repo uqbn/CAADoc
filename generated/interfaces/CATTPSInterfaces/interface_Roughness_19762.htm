@@ -1,0 +1,132 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATTPSInterfaces Roughness (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATTPSInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Roughness','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Roughness','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Roughness','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Roughness','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Roughness<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Roughness_19762','Roughness','0');</script>
+<b><i> Interface to manage Roughness TPS.</i></b><br>
+
+ TPS for Technological Product Specifications.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#Applicability"><b>Applicability</b></a>
+<dd>  Retrieves or sets roughness applicability.
+ <dt>
+    <a href="#Obtention"><b>Obtention</b></a>
+<dd>  Retrieves or sets roughness obtention mode.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#Field"><b>Field</b></a>
+<dd>  Retrieves roughness field.
+ <dt>
+    <a href="#SetField"><b>SetField</b></a>
+<dd>  Set roughness field.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="Applicability"><dt>
+
+<table><tr><td>o Property <b>Applicability</b>(<td>) As <script type="text/javascript"> activateLink('short','short')</script> </table></dt>
+<dl>
+  <dd>
+ Retrieves or sets roughness applicability.
+</dl>
+<a name="Obtention"><dt>
+
+<table><tr><td>o Property <b>Obtention</b>(<td>) As <script type="text/javascript"> activateLink('short','short')</script> </table></dt>
+<dl>
+  <dd>
+ Retrieves or sets roughness obtention mode.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="Field"><dt>
+
+<table><tr><td>o Func <b>Field</b>(<td><script type="text/javascript"> activateLink('short','short')</script> <td><tt>iIndex</tt>) As <script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> </table></dt>
+<dl>
+  <dd>
+ Retrieves roughness field.
+ <pre>
+ <r>                                     Field 4
+ <r>                     Field 1     ------------------
+ <r>                                /         (Field 9)
+ <r>                     Field 2   /
+ <r>                              / (Field 8)  Field 5
+ <r>                         \   /
+ <r>               Field 3    \ /    Field 7   Field 6
+ <r>
+ <r> Pour le champs 7 les lettres autorisees sont :
+ <r> M, C, R, P, X, = ,L (symbole perpendicularite de la DSES)
+ </pre>
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>     Field index, from 1 to 9 from V5R13 (Fields 8 and 9 added).
+                  from 1 to 7 before V5R13
+   </dd>
+    <dt><tt> oField</tt>
+   <dd>     The contain of the iIndex field.</dd>
+</dl>
+</dl>
+</dl>
+<a name="SetField"><dt>
+
+<table><tr><td>o Sub <b>SetField</b>(<td><script type="text/javascript"> activateLink('short','short')</script> <td><tt>iIndex</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iField</tt>)</table></dt>
+<dl>
+  <dd>
+ Set roughness field.
+ <pre>
+ <r>                                     Field 4
+ <r>                     Field 1     ------------------
+ <r>                                /         (Field 9)
+ <r>                     Field 2   /
+ <r>                              / (Field 8)  Field 5
+ <r>                         \   /
+ <r>               Field 3    \ /    Field 7   Field 6
+ <r>
+ <r> Pour le champs 7 les lettres autorisees sont :
+ <r> M, C, R, P, X, = ,L (symbole perpendicularite de la DSES)
+ </pre>
+   
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iIndex</tt>
+   <dd>     Field index, from 1 to 9 from V5R13 (Fields 8 and 9 added).
+                  from 1 to 7 before V5R13
+   </dd>
+    <dt><tt> iField</tt>
+   <dd>     The contain of the iIndex field.</dd>
+</dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

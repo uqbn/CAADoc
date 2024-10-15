@@ -1,0 +1,151 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>System MemoryWarningSettingAtt (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../System.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('MemoryWarningSettingAtt','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('MemoryWarningSettingAtt','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('MemoryWarningSettingAtt','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('MemoryWarningSettingAtt','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>MemoryWarningSettingAtt<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_MemoryWarningSettingAtt_31753','MemoryWarningSettingAtt','0');</script>
+<b><i> Represents the base object to handle the parameters of memory warning 
+ mechanism.</i></b><br>
+ This mechanism informs the user when the process memory use exceeds
+ a given percentage of the address space usage. This mechanism warns you that 
+ because the amout of remaining memory is becoming low, you should save your data
+ and leave the session.<hr>
+<dl>
+ <h2><a name="PropertyIndex"></a>Property Index</h2>
+ <dt>
+    <a href="#ActivationState"><b>ActivationState</b></a>
+<dd>  Returns or sets the activation state of the memory warning mechanism.
+ <dt>
+    <a href="#MemoryStopperState"><b>MemoryStopperState</b></a>
+<dd>  Returns or sets the activation state of the memory stopper mechanism.
+ <dt>
+    <a href="#UsageLimit"><b>UsageLimit</b></a>
+<dd>  Returns or sets the alert percentage.
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetActivationStateInfo"><b>GetActivationStateInfo</b></a>
+<dd>  Retrieves environment informations for the memory warning mechanism.
+ <dt>
+    <a href="#GetMemoryStopperStateInfo"><b>GetMemoryStopperStateInfo</b></a>
+<dd>  Retrieves environment informations for the memory stopper mechanism.
+ <dt>
+    <a href="#GetUsageLimitInfo"><b>GetUsageLimitInfo</b></a>
+<dd>  Retrieves environment informations for the alert percentage.
+ <dt>
+    <a href="#SetActivationStateLock"><b>SetActivationStateLock</b></a>
+<dd>  Locks or unlocks the activation mode of the memory warning mechanism.
+ <dt>
+    <a href="#SetMemoryStopperStateLock"><b>SetMemoryStopperStateLock</b></a>
+<dd>  Locks or unlocks the activation mode of the memory stopper mechanism.
+ <dt>
+    <a href="#SetUsageLimitLock"><b>SetUsageLimitLock</b></a>
+<dd>  Locks or unlocks the the alert percentage.
+</dl>
+ <h2><a name="Properties"></a>Properties</h2> <br>
+<a name="ActivationState"><dt>
+
+<table><tr><td>o Property <b>ActivationState</b>(<td>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the activation state of the memory warning mechanism.
+ <br><b>Role</b>: Returns or sets the value of of the memory warning.
+</dl>
+<a name="MemoryStopperState"><dt>
+
+<table><tr><td>o Property <b>MemoryStopperState</b>(<td>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the activation state of the memory stopper mechanism.
+ <br><b>Role</b>: Returns or sets the value of of the memory stopper.
+</dl>
+<a name="UsageLimit"><dt>
+
+<table><tr><td>o Property <b>UsageLimit</b>(<td>) As <script type="text/javascript"> activateLink('long','long')</script> </table></dt>
+<dl>
+  <dd>
+ Returns or sets the alert percentage.
+ <br><b>Role</b>: Returns or sets the percentage of the address space usage 
+ that can be used by the process before sending the warning.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetActivationStateInfo"><dt>
+
+<table><tr><td>o Func <b>GetActivationStateInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>AdminLevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oLocked</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+ Retrieves environment informations for the memory warning mechanism.
+ <br>Refer to 
+<a href="#" onClick="openLink('SettingController','');return false">SettingController</a> for a detailled description.
+</dl>
+<a name="GetMemoryStopperStateInfo"><dt>
+
+<table><tr><td>o Func <b>GetMemoryStopperStateInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>AdminLevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oLocked</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+ Retrieves environment informations for the memory stopper mechanism.
+ <br>Refer to 
+<a href="#" onClick="openLink('SettingController','');return false">SettingController</a> for a detailled description.
+</dl>
+<a name="GetUsageLimitInfo"><dt>
+
+<table><tr><td>o Func <b>GetUsageLimitInfo</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>AdminLevel</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>oLocked</tt>) As <script type="text/javascript"> activateLink('boolean','boolean')</script> </table></dt>
+<dl>
+  <dd>
+ Retrieves environment informations for the alert percentage.
+ <br>Refer to 
+<a href="#" onClick="openLink('SettingController','');return false">SettingController</a> for a detailled description.
+</dl>
+<a name="SetActivationStateLock"><dt>
+
+<table><tr><td>o Sub <b>SetActivationStateLock</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLocked</tt>)</table></dt>
+<dl>
+  <dd>
+ Locks or unlocks the activation mode of the memory warning mechanism.
+ <br>Refer to 
+<a href="#" onClick="openLink('SettingController','');return false">SettingController</a> for a detailled description.
+</dl>
+<a name="SetMemoryStopperStateLock"><dt>
+
+<table><tr><td>o Sub <b>SetMemoryStopperStateLock</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLocked</tt>)</table></dt>
+<dl>
+  <dd>
+ Locks or unlocks the activation mode of the memory stopper mechanism.
+ <br>Refer to 
+<a href="#" onClick="openLink('SettingController','');return false">SettingController</a> for a detailled description.
+</dl>
+<a name="SetUsageLimitLock"><dt>
+
+<table><tr><td>o Sub <b>SetUsageLimitLock</b>(<td><script type="text/javascript"> activateLink('boolean','boolean')</script> <td><tt>iLocked</tt>)</table></dt>
+<dl>
+  <dd>
+ Locks or unlocks the the alert percentage.
+ <br>Refer to 
+<a href="#" onClick="openLink('SettingController','');return false">SettingController</a> for a detailled description.
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

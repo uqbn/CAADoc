@@ -1,0 +1,75 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>FittingInterfaces SampledsNode (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../FittingInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SampledsNode','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SampledsNode','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SampledsNode','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SampledsNode','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SampledsNode<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SampledsNode_24619','SampledsNode','0');</script>
+<b><i> The interface to access a CATIASampledsNode.</i></b><br>
+
+ <b>Role:</b> The SampledsNode interface can be used to obtain different types
+ of <a href="#" onClick="openLink('Sampled','');return false">Sampled</a> based collections from within the current action document.
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetSampleds"><b>GetSampleds</b></a>
+<dd>  Retrieves a sampleds based collection of objects
+ 
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetSampleds"><dt>
+
+<table><tr><td>o Func <b>GetSampleds</b>(<td><script type="text/javascript"> activateLink('CATBSTR','CATBSTR')</script> <td><tt>iCollectionName</tt>) As <script type="text/javascript"> activateLink('CATBaseDispatch','CATBaseDispatch')</script> </table></dt>
+<dl>
+  <dd>
+ Retrieves a sampleds based collection of objects
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iCollectionName</tt>
+   <dd>    The name of the collection to retrieve.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>  The requested collection
+ <! @sample>
+ <dt><b>Example:</b>
+ <dd>
+ The following example retrieves the collection of 
+<a href="#" onClick="openLink('Track','');return false">Track</a> objects  (called <tt>CATIATracks</tt>) from within the current document.
+
+ <pre>
+ Dim myTracks as Tracks
+ Set myTracks = SampledsNode.<font color="red">GetSampleds</font> ("Tracks")
+ </pre>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

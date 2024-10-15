@@ -1,0 +1,103 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>System Notification CATNotification</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../System.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATNotification','notification','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATNotification','notification','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATNotification','notification','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATNotification','notification','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>System Notification CATNotification</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('class_CATNotification_13810','CATNotification','0');</script>
+<p><b>Usage: you can derive this class.</b></p>
+<hr>
+<p>
+ public class <b>CATNotification</b>
+</p>
+<p>
+<b><i> Base class for notifications.</i></b><br>
+
+ <b>Role</b>: Notifications are objects that make other objects collaborate
+ by conveying information from an object to another.
+ They are intensively used by the Send/Receive communication protocol
+ that make <a href="#" onClick="openLink('CATCommand','');return false">CATCommand</a> instance collaborate.
+</p>
+<hr>
+ <h2>Constructor and Destructor Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#CATNotification(int)"><b>CATNotification</b></a>(int)
+<dd>  Constructs a notification.
+ <dt> o 
+    <a href="#~CATNotification()"><b>~CATNotification</b></a>()
+<dd> </dl>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetNotificationName()"><b>GetNotificationName</b></a>()
+<dd>  returns the class name of the CATNotification instance.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Constructor and Destructor</h2> <br>
+<a name="CATNotification"></a><a name="CATNotification(int)"></a> <dt> o <b>CATNotification</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('','')</script>  <b>CATNotification</b>(<td><script type="text/javascript"> activateLink('int','int')</script> <td><tt>iAutomaticDelete</tt><td><tt>=CATNotificationDeleteOff</tt>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ Constructs a notification.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iAutomaticDelete</tt>
+   <dd>   Specifies whether the notification should be deleted at the end of the next transaction.
+   <br><b>Legal values</b>: can be set to <tt>CATNotificationDeleteOn</tt> to delete
+   the notification, or to <tt>CATNotificationDeleteOff</tt> to keep it.
+   The notification is kept by default.</dd>
+</dl>
+</dl>
+</dl>
+<a name="~CATNotification"></a><a name="~CATNotification()"></a> <dt> o <b>~CATNotification</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('','')</script>  <b>~CATNotification</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetNotificationName"></a><a name="GetNotificationName()"></a> <dt> o <b>GetNotificationName</b>
+
+<dt>  <table><tr><td>  public <script type="text/javascript"> activateLink('char','const char *')</script>  <b>GetNotificationName</b>(<td>)<script type="text/javascript"> activateLink('','')</script>  </table></dt>
+<dl>
+  <dd>
+ returns the class name of the CATNotification instance.
+</dl>
+<hr>
+ This object is included in the file: <b>CATNotification.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>JS0GROUP</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,300 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>PartInterfaces Trim (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../PartInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('Trim','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Trim','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('Trim','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('Trim','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>Trim<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_Trim_13859','Trim','0');</script>
+<b><i> Represents the Trim, or union trim boolean operation.</i></b><br>
+
+ It is performed between a body and the current shape.<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#AddFaceToKeep"><b>AddFaceToKeep</b></a>
+<dd>  Adds a new face to be kept (if face is not divided by operation).
+ <dt>
+    <a href="#AddFaceToKeep2"><b>AddFaceToKeep2</b></a>
+<dd>  Adds a new face to be kept (if face is divided by operation).
+ <dt>
+    <a href="#AddFaceToRemove"><b>AddFaceToRemove</b></a>
+<dd>  Adds a new face to be Removed (if face not divided by operation).
+ <dt>
+    <a href="#AddFaceToRemove2"><b>AddFaceToRemove2</b></a>
+<dd>  Adds a new face to be Removed (if face is divided by operation).
+ <dt>
+    <a href="#WithdrawFaceToKeep"><b>WithdrawFaceToKeep</b></a>
+<dd>  Withdraws an existing Kept face (if face is not divided by operation) .
+ <dt>
+    <a href="#WithdrawFaceToKeep2"><b>WithdrawFaceToKeep2</b></a>
+<dd>  Withdraws an existing Kept face (if face is divided by operation).
+ <dt>
+    <a href="#WithdrawFaceToRemove"><b>WithdrawFaceToRemove</b></a>
+<dd>  Withdraws an existing Removed face (if face not divided by operation).
+ <dt>
+    <a href="#WithdrawFaceToRemove2"><b>WithdrawFaceToRemove2</b></a>
+<dd>  Withdraws an existing Removed face (if face is divided by operation).
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="AddFaceToKeep"><dt>
+
+<table><tr><td>o Sub <b>AddFaceToKeep</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iFaceToKeep</tt>)</table></dt>
+<dl>
+  <dd>
+ Adds a new face to be kept (if face is not divided by operation). 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFaceToKeep</tt>
+   <dd>   The new face to process<br>
+ The following </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object is supported:  
+<a href="#" onClick="openLink('Face','');return false">Face</a>. <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example adds the new face <tt>face</tt>
+ to Keep for the Trim <tt>firstTrim</tt>:
+ <pre>
+ call firstTrim.<font color="red">AddFaceToKeep</font>(face)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="AddFaceToKeep2"><dt>
+
+<table><tr><td>o Sub <b>AddFaceToKeep2</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iFaceToKeep</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iFaceAdjacentForKeep</tt>)</table></dt>
+<dl>
+  <dd>
+ Adds a new face to be kept (if face is divided by operation). 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFaceToKeep</tt>
+   <dd>   The new face to process<br>
+ The following </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object is supported:  
+<a href="#" onClick="openLink('Face','');return false">Face</a>. 
+    <dt><tt> iFaceAdjacentForKeep</tt>
+   <dd>   An adjacent face of iFaceToKeep belonging to the other operand<br>
+ The following </dd>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object is supported:  
+<a href="#" onClick="openLink('Face','');return false">Face</a>. <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example adds the new face <tt>face</tt>
+ to Keep for the Trim <tt>firstTrim</tt>:
+ <pre>
+ call firstTrim.<font color="red">AddFaceToKeep</font>(face)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="AddFaceToRemove"><dt>
+
+<table><tr><td>o Sub <b>AddFaceToRemove</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iFaceToRemove</tt>)</table></dt>
+<dl>
+  <dd>
+ Adds a new face to be Removed (if face not divided by operation). 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFaceToRemove</tt>
+   <dd>   The new face to process<br>
+ The following </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object is supported:  
+<a href="#" onClick="openLink('Face','');return false">Face</a>. <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example adds the new face <tt>face</tt>
+ to Remove for the Trim <tt>firstTrim</tt>:
+ <pre>
+ call firstTrim.<font color="red">AddFaceToRemove</font>(face)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="AddFaceToRemove2"><dt>
+
+<table><tr><td>o Sub <b>AddFaceToRemove2</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iFaceToRemove</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iFaceAdjacentForRemove</tt>)</table></dt>
+<dl>
+  <dd>
+ Adds a new face to be Removed (if face is divided by operation). 
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFaceToRemove</tt>
+   <dd>   The new face to process<br>
+ The following </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object is supported:  
+<a href="#" onClick="openLink('Face','');return false">Face</a>. 
+    <dt><tt> iFaceAdjacentForRemove</tt>
+   <dd>   An adjacent face of iFaceToRemove belonging to the other operand<br>
+ The following </dd>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object is supported:  
+<a href="#" onClick="openLink('Face','');return false">Face</a>. <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example adds the new face <tt>face</tt>
+ to Remove for the Trim <tt>firstTrim</tt>:
+ <pre>
+ call firstTrim.<font color="red">AddFaceToRemove</font>(face)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="WithdrawFaceToKeep"><dt>
+
+<table><tr><td>o Sub <b>WithdrawFaceToKeep</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iFaceToWithdraw</tt>)</table></dt>
+<dl>
+  <dd>
+ Withdraws an existing Kept face (if face is not divided by operation) .
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFaceToWithdraw</tt>
+   <dd>   The face to withdraw<br>
+ The following </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object is supported:  
+<a href="#" onClick="openLink('Face','');return false">Face</a>. <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example withdraws the existing <tt>face</tt> Kept
+ face from the Trim <tt>firstTrim</tt>:
+ <pre>
+ call firstTrim.<font color="red">WithdrawFaceToKeep</font>(face)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="WithdrawFaceToKeep2"><dt>
+
+<table><tr><td>o Sub <b>WithdrawFaceToKeep2</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iFaceToWithdraw</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iFaceAdjacentForKeep</tt>)</table></dt>
+<dl>
+  <dd>
+ Withdraws an existing Kept face (if face is divided by operation).
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFaceToWithdraw</tt>
+   <dd>   The face to withdraw<br>
+ The following </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object is supported:  
+<a href="#" onClick="openLink('Face','');return false">Face</a>. 
+    <dt><tt> iFaceAdjacentForKeep</tt>
+   <dd>   An adjacent face of iFaceToKeep belonging to the other operand<br>
+ The following </dd>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object is supported:  
+<a href="#" onClick="openLink('Face','');return false">Face</a>. <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example withdraws the existing <tt>face</tt> Kept
+ face from the Trim <tt>firstTrim</tt>:
+ <pre>
+ call firstTrim.<font color="red">WithdrawFaceToKeep</font>(face)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="WithdrawFaceToRemove"><dt>
+
+<table><tr><td>o Sub <b>WithdrawFaceToRemove</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iFaceToWithdraw</tt>)</table></dt>
+<dl>
+  <dd>
+ Withdraws an existing Removed face (if face not divided by operation).
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFaceToWithdraw</tt>
+   <dd>   The face to withdraw<br>
+ The following </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object is supported:  
+<a href="#" onClick="openLink('Face','');return false">Face</a>. <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example withdraws the existing <tt>face</tt> Removed
+ face from the Trim <tt>firstTrim</tt>:
+ <pre>
+ call firstTrim.<font color="red">WithdrawFaceToRemove</font>(face)
+ </pre>
+ </dl>
+</dl>
+</dl>
+<a name="WithdrawFaceToRemove2"><dt>
+
+<table><tr><td>o Sub <b>WithdrawFaceToRemove2</b>(<td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iFaceToWithdraw</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('Reference','Reference')</script> <td><tt>iFaceAdjacentForRemove</tt>)</table></dt>
+<dl>
+  <dd>
+ Withdraws an existing Removed face (if face is divided by operation).
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iFaceToWithdraw</tt>
+   <dd>   The face to withdraw<br>
+ The following </dd>
+</dl>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object is supported:  
+<a href="#" onClick="openLink('Face','');return false">Face</a>. 
+    <dt><tt> iFaceAdjacentForRemove</tt>
+   <dd>   An adjacent face of iFaceToRemove belonging to the other operand<br>
+ The following </dd>
+<a href="#" onClick="openLink('Boundary','');return false">Boundary</a> object is supported:  
+<a href="#" onClick="openLink('Face','');return false">Face</a>. <! @sample >
+ </dl>
+ <dt><b>Example:</b>
+ <dd>The following example withdraws the existing <tt>face</tt> Removed
+ face from the Trim <tt>firstTrim</tt>:
+ <pre>
+ call firstTrim.<font color="red">WithdrawFaceToRemove</font>(face)
+ </pre>
+ </dl>
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

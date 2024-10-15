@@ -1,0 +1,150 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces Interface CATISchGRRCntr</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATISchGRRCntr','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchGRRCntr','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATISchGRRCntr','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATISchGRRCntr','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>CATSchPlatformInterfaces Interface CATISchGRRCntr</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATISchGRRCntr_40843','CATISchGRRCntr','0');</script>
+<p><b>Usage: an implementation of this interface is supplied and you must use it as is. You should not reimplement it.</b></p>
+<hr>
+<p>
+ interface <b>CATISchGRRCntr</b>
+</p>
+<p>
+<b><i> Interface to manage the representation of Schematic connector
+ graphic objects.</i></b><br>
+
+ <b>Role</b>: To modify or query a connector's symbol 
+ or graphic representation.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetSymbol(CATISchGRR**,CATSchCntrSymbolType*)"><b>GetSymbol</b></a>(CATISchGRR**,CATSchCntrSymbolType*)
+<dd>  Get the graphical primitive of a connector.
+ <dt> o 
+    <a href="#RemoveSymbol()"><b>RemoveSymbol</b></a>()
+<dd>  Remove the graphical primitive used as the connector's symbol.
+ <dt> o 
+    <a href="#SetSymbol(CATISchGRR*,CATSchCntrSymbolType)"><b>SetSymbol</b></a>(CATISchGRR*,CATSchCntrSymbolType)
+<dd>  Set the symbol or graphics used to represent a connector.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetSymbol"></a><a name="GetSymbol(CATISchGRR**,CATSchCntrSymbolType*)"></a> <dt> o <b>GetSymbol</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetSymbol</b>(<td><script type="text/javascript"> activateLink('CATISchGRR','CATISchGRR**')</script> <td><tt>oGRR</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSchCntrSymbolType','CATSchCntrSymbolType*')</script> <td><tt>oESymbolType</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Get the graphical primitive of a connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oGRR</tt>
+   <dd>   The graphical primitive (ditto) used to represent a connector.
+ </dd>
+    <dt><tt> oESymbolType</tt>
+   <dd>   Connector symbol type such as: point, point/vector,
+   OnOffSheet, LineBoundary.
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATSchCntrSymbolType','');return false">CATSchCntrSymbolType</a>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="RemoveSymbol"></a><a name="RemoveSymbol()"></a> <dt> o <b>RemoveSymbol</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>RemoveSymbol</b>(<td>)<script type="text/javascript"> activateLink('0','= 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Remove the graphical primitive used as the connector's symbol.
+ The default connector's symbol type will be set to point.
+ 
+<dl>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<a name="SetSymbol"></a><a name="SetSymbol(CATISchGRR*,CATSchCntrSymbolType)"></a> <dt> o <b>SetSymbol</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>SetSymbol</b>(<td><script type="text/javascript"> activateLink('CATISchGRR','CATISchGRR*')</script> <td><tt>iGRRSymbol</tt>,<tr><td></td><td><script type="text/javascript"> activateLink('CATSchCntrSymbolType','CATSchCntrSymbolType')</script> <td><tt>iESymbolType</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Set the symbol or graphics used to represent a connector.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iGRRSymbol</tt>
+   <dd>   The graphical primitive (detail) to be used as the connector's symbol.
+   iGRRSymbol can be NULL if iESymbolType is a point or point/vector.
+ </dd>
+    <dt><tt> iESymbolType</tt>
+   <dd>   Connector symbol type such as: point, point/vector,
+   OnOffSheet, LineBoundary.
+   </dd>
+</dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATSchCntrSymbolType','');return false">CATSchCntrSymbolType</a>
+  <dt> <b>Returns:</b> 
+  <dd>    An HRESULT value.
+   <br><b>Legal values</b>:
+   <dl>
+     <dt>S_OK</dt>
+     <dd>operation is successful</dd>
+     <dt>E_FAIL</dt>
+     <dd>operation failed</dd>
+   </dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATISchGRRCntr.h</b><br>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

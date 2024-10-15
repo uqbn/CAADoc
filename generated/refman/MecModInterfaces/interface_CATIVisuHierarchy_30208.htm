@@ -1,0 +1,101 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>MecModInterfaces Interface CATIVisuHierarchy</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../MecModInterfaces.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIVisuHierarchy','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIVisuHierarchy','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIVisuHierarchy','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIVisuHierarchy','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>MecModInterfaces Interface CATIVisuHierarchy</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIVisuHierarchy_30208','CATIVisuHierarchy','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATIVisuHierarchy</b>
+</p>
+<p>
+<b><i> Interface to define the visual hierarchy of a mechanical feature.</i></b><br>
+
+ <b>Role</b>: Implement this interface if you want to override the default
+ feature hierarchy used to visualize. Both GetVisualizedChildren and
+ GetVisualizingParent return an iterator you should implement by deriving
+ CATVisuFeatureIterator.
+ <dl>
+  <dt> <b>See also:</b> 
+  <dd> <a href="#" onClick="openLink('CATVisuFeatureIterator','');return false">CATVisuFeatureIterator</a>
+</dl>
+</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#GetVisualizedChildren(CATVisuFeatureIterator*&amp;)"><b>GetVisualizedChildren</b></a>(CATVisuFeatureIterator*&amp;)
+<dd>  Returns an iterator to parse the children that should be visualized.
+ <dt> o 
+    <a href="#GetVisualizingParent(CATVisuFeatureIterator*&amp;)"><b>GetVisualizingParent</b></a>(CATVisuFeatureIterator*&amp;)
+<dd>  Returns an iterator to parse the parents that visualize an object.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="GetVisualizedChildren"></a><a name="GetVisualizedChildren(CATVisuFeatureIterator*&amp;)"></a> <dt> o <b>GetVisualizedChildren</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetVisualizedChildren</b>(<td><script type="text/javascript"> activateLink('CATVisuFeatureIterator','CATVisuFeatureIterator*&amp;')</script> <td><tt>oIterator</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns an iterator to parse the children that should be visualized.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oIterator</tt>
+   <dd> The iterator on all visualized children. Delete the iterator after use.</dd>
+</dl>
+</dl>
+</dl>
+<a name="GetVisualizingParent"></a><a name="GetVisualizingParent(CATVisuFeatureIterator*&amp;)"></a> <dt> o <b>GetVisualizingParent</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('HRESULT','HRESULT')</script>  <b>GetVisualizingParent</b>(<td><script type="text/javascript"> activateLink('CATVisuFeatureIterator','CATVisuFeatureIterator*&amp;')</script> <td><tt>oIterator</tt>)<script type="text/javascript"> activateLink('0',' = 0')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns an iterator to parse the parents that visualize an object.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oIterator</tt>
+   <dd> The iterator on all visualizing parents. Delete the iterator after use.</dd>
+</dl>
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIVisuHierarchy.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATMecModInterfaces</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

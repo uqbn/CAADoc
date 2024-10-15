@@ -1,0 +1,100 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+ <meta http-equiv="Content-Language" content="en-us"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+ <meta name="Generator" content="CppGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>ObjectModelerBase Interface CATIGenericFactory</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Class Hierarchy</a>  <a href="../ObjectModelerBase.htm">This Framework</a>  <a href="../_index/HomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('CATIGenericFactory','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIGenericFactory','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('CATIGenericFactory','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('CATIGenericFactory','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>ObjectModelerBase Interface CATIGenericFactory</h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_CATIGenericFactory_33193','CATIGenericFactory','0');</script>
+<p><b>Usage: you can freely reimplement this interface.</b></p>
+<hr>
+<p>
+ interface <b>CATIGenericFactory</b>
+</p>
+<p>
+<b><i> Interface to generically define factories.</i></b><br>
+
+ <b> Role: </b> some commands like Edit/Properties or Tools/Options 
+ need to instanciate components programmed by applications. These applications
+ has to provide a factory to enable the instantiation of a component.
+ Usually, an object factory creates one and only one object type.
+ <br><b> Note: </b> There is no adapter to implement this interface, but some 
+ commands provide macro to generate such factories. 
+ <br><b> Usage: </b> In order to create a factory, an application defines a new 
+ interface derived from CATIGenericFactory, implements  this interface as an extension 
+ of a given component, and inserts apropriate declarations in .dic and .fact dictionnaries.</p>
+<hr>
+ <h2>Method Index</h2> <br>
+<dl>
+ <dt> o 
+    <a href="#Create(CATUnicodeString&amp;)"><b>Create</b></a>(CATUnicodeString&amp;)
+<dd>  Creates object and returns a pointer to a given interface.
+ <dt> o 
+    <a href="#Support(CATUnicodeString&amp;)"><b>Support</b></a>(CATUnicodeString&amp;)
+<dd>  Returns whether a given object type can be created using the factory.
+</dl>
+<dl>
+</dl>
+<dl>
+</dl>
+ <h2>Methods</h2> <br>
+<a name="Create"></a><a name="Create(CATUnicodeString&amp;)"></a> <dt> o <b>Create</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('CATBaseUnknown','CATBaseUnknown*')</script>  <b>Create</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iIntfName</tt>)<script type="text/javascript"> activateLink('0','const = 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Creates object and returns a pointer to a given interface.
+ <br><b> Note </b> that the given interface is supposed to be implemented by the
+ created object.
+ 
+<dl>
+</dl>
+</dl>
+<a name="Support"></a><a name="Support(CATUnicodeString&amp;)"></a> <dt> o <b>Support</b>
+
+<dt>  <table><tr><td>  public virtual <script type="text/javascript"> activateLink('char','unsigned char')</script>  <b>Support</b>(<td> const <script type="text/javascript"> activateLink('CATUnicodeString','CATUnicodeString&amp;')</script> <td><tt>iEditName</tt>)<script type="text/javascript"> activateLink('0','const = 0 ')</script>  </table></dt>
+<dl>
+  <dd>
+ Returns whether a given object type can be created using the factory.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEditName</tt>
+   <dd>        name of object.
+ </dd>
+</dl>
+  <dt> <b>Returns:</b> 
+  <dd>         1 if the object type is supported.
+</dl>
+</dl>
+<hr>
+ This object is included in the file: <b>CATIGenericFactory.h</b><br>
+If needed, your Imakefile.mk should include the module: <b>CATObjectModelerBase</b>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>

@@ -1,0 +1,156 @@
+<html>
+<head>
+ <meta name="Generator" content="mihGene v1.1">
+ <meta http-equiv="Expires" content="Tue, 04 Dec 1993 21:29:02 GMT">
+ <title>CATSchPlatformInterfaces SchInternalFlow (Object)</title>
+<link rel="Stylesheet" type="text/css" href="../../../caav5.css">
+<script language="Javascript" src="../_index/jslink.js"></script> 
+<script language="Javascript" src="jsFwLink.js"></script> 
+<script language="Javascript" type="text/javascript" src="../_index/jsTree.js"></script>  
+</head>
+<body>
+<pre><a href="../_index/main.htm">All Frameworks</a>  <a href="../_index/tree.htm">Object Hierarchy</a>  <a href="../CATSchPlatformInterfaces.htm">This Framework</a>  <a href="../_index/CAAHomeIdx.htm">Indexes</a>  <script type="text/javascript"> 
+ var test=locateObject('SchInternalFlow','interface','0'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchInternalFlow','interface','0');return false\">Previous</a> "); 
+ } 
+ test=locateObject('SchInternalFlow','interface','1'); 
+ if(test==1){ 
+     document.write("<a href=\"#\" onclick=\"openLinkNP('SchInternalFlow','interface','1');return false\">Next</a> "); 
+ } 
+ </script> 
+</pre>
+<hr>
+<h1>SchInternalFlow<font size=-1> (Object)</font></h1>
+<script type="text/javascript" > 
+ generatedFatherClass('interface_SchInternalFlow_43253','SchInternalFlow','0');</script>
+<b><i>  Represents the internal flow object in a schematic component.</i></b><br>
+<hr>
+<dl>
+</dl>
+<dl>
+ <h2><a name="MethodIndex"></a>Method Index</h2>
+ <dt>
+    <a href="#GetInsertionType"><b>GetInsertionType</b></a>
+<dd>  Get insertion flow type.
+ <dt>
+    <a href="#GetStatus"><b>GetStatus</b></a>
+<dd>  Get insertion flow status.
+ <dt>
+    <a href="#ListSchConnectors"><b>ListSchConnectors</b></a>
+<dd>  List all schematic connectors associated with an internal flow.
+ <dt>
+    <a href="#SetStatus"><b>SetStatus</b></a>
+<dd>  Set insertion flow status.
+</dl>
+ <h2><a name="Methods"></a>Methods</h2> <br>
+<a name="GetInsertionType"><dt>
+
+<table><tr><td>o Sub <b>GetInsertionType</b>(<td><script type="text/javascript"> activateLink('CatSchIDLInternalFlowType','CatSchIDLInternalFlowType')</script> <td><tt>oEInternalFlowType</tt>)</table></dt>
+<dl>
+  <dd>
+ Get insertion flow type.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oEInternalFlowType</tt>
+   <dd>   Internal flow type.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchInternalFlow
+
+  ...
+ objThisIntf.<font color="red">GetInsertionType</font>CatSchIDLInternalFlowType_Enum
+ </pre>
+
+</dl>
+</dl>
+<a name="GetStatus"><dt>
+
+<table><tr><td>o Sub <b>GetStatus</b>(<td><script type="text/javascript"> activateLink('CatSchIDLInternalFlowStatus','CatSchIDLInternalFlowStatus')</script> <td><tt>oEInternalFlowStatus</tt>)</table></dt>
+<dl>
+  <dd>
+ Get insertion flow status.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oEInternalFlowStatus</tt>
+   <dd>   Internal flow status.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchInternalFlow
+
+  ...
+ objThisIntf.<font color="red">GetStatus</font>CatSchIDLInternalFlowStatus_Enum
+ </pre>
+
+</dl>
+</dl>
+<a name="ListSchConnectors"><dt>
+
+<table><tr><td>o Func <b>ListSchConnectors</b>(<td>) As <script type="text/javascript"> activateLink('SchListOfObjects','SchListOfObjects')</script> </table></dt>
+<dl>
+  <dd>
+ List all schematic connectors associated with an internal flow.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> oLSchCntrs</tt>
+   <dd>   A list of schematic connector objects
+   (members are CATISchCntrLocation interface pointers).
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchInternalFlow
+ Dim objArg1 As SchListOfObjects
+  ...
+ Set objArg1 = objThisIntf.<font color="red">ListSchConnectors</font>
+ </pre>
+
+</dl>
+</dl>
+<a name="SetStatus"><dt>
+
+<table><tr><td>o Sub <b>SetStatus</b>(<td><script type="text/javascript"> activateLink('CatSchIDLInternalFlowStatus','CatSchIDLInternalFlowStatus')</script> <td><tt>iEInternalFlowStatus</tt>)</table></dt>
+<dl>
+  <dd>
+ Set insertion flow status.
+ 
+<dl>
+  <dt> <b>Parameters:</b>
+  <dd>
+    <dl>
+    <dt><tt> iEInternalFlowStatus</tt>
+   <dd>   Internal flow status.
+    
+ </dd>
+</dl>
+  <dt> <b>Example:</b> 
+  <dd>  <pre>
+ Dim objThisIntf As SchInternalFlow
+
+  ...
+ objThisIntf.<font color="red">SetStatus</font>CatSchIDLInternalFlowStatus_Enum
+ </pre>
+
+</dl>
+</dl>
+
+</body>
+<hr><p><i>
+Copyright &#169; 1999-2011, Dassault Syst&#232;mes. All rights reserved.</i></p>
+</html>
